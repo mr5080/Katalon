@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>dummy test</name>
+   <tag></tag>
+   <comment>john test below is not working</comment>
+   <testCaseGuid>e25c6e03-ebbb-461e-b64b-edf0badea6fa</testCaseGuid>
+</TestCaseEntity>
