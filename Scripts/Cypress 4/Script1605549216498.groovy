@@ -25,10 +25,12 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 int randomFLaddress = 2 + ((Math.random() * ((124 - 2) + 1 // 612 = number addresses in excel file
     )) as int)
 
-int randomFLaddressPrior = 2 + ((Math.random() * ((124 - 2) + 1 // 612 = number addresses in excel file
+int randomFLaddressPrior = 2 + ((Math.random() * ((118 - 2) + 1 // 612 = number addresses in excel file
     )) as int)
 
 System.out.println(randomFLaddress)
+
+
 
 // Risk Adddress
 // minus 1 because first line is header in excel file
@@ -619,7 +621,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 //}
 	randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
 if(randomNumber2 == 0)
-{
+{	
 	'Check'
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
