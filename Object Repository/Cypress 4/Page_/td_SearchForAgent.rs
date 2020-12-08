@@ -7,7 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//td[contains(.,'TEST AGENCY')]</value>
+         <value>//td[text()='TEST AGENCY']
+
+
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -47,4 +50,16 @@
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test</value>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//td[contains(text(),'IVANS TEST AGENCY 002')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//td[contains(.,'TEST AGENCY')]</value>
+   </webElementXpaths>
 </WebElementEntity>

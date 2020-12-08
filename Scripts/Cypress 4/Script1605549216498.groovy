@@ -234,7 +234,7 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
 'Quick Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Quick Quote'))
 
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'), 30)) // works!
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'), 40)) // works!
 {
     quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'), 'innerHTML')
 
@@ -252,7 +252,7 @@ catch (Exception e) {
 
 
 'Agent Producer'
-if(agent != true)
+if(agent == false)
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 	
@@ -627,49 +627,52 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
-
-//for(int z = 0; z < 100; z++){
-	randomNumber2 = ((Math.random() * 3) as int) // generates random number, either 0, 1, 2 used to randomize payment method
-	System.out.println('randomNumber2 = ' + randomNumber2 )
-//}
-	randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
-if(randomNumber2 == 0)
-{	
-	'Check'
-	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), year)
-}
-else if(randomNumber2 == 1)
+// if agent == true, they cant take a check
+if(agent == false)
 {
-	'Credit Card'
-	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
-	
-	WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))	// click Enter Credit Card Information button
-//	WebUI.delay(10)  // CC window takes forever to open...
-	WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-	
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/21')
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
-	// clicking button above should work, but there is a defect in about enter cc info , defect 268
+	//for(int z = 0; z < 100; z++){
+		randomNumber2 = ((Math.random() * 3) as int) // generates random number, either 0, 1, 2 used to randomize payment method
+		System.out.println('randomNumber2 = ' + randomNumber2 )
+	//}
+		randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
+	if(randomNumber2 == 0)
+	{	
+		'Check'
+		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), year)
+	}
+	else if(randomNumber2 == 1)
+	{
+		'Credit Card'
+		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
+		
+		WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))	// click Enter Credit Card Information button
+	//	WebUI.delay(10)  // CC window takes forever to open...
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
+		
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/21')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
+		// clicking button above should work, but there is a defect in about enter cc info , defect 268
+	}
+	else if(randomNumber2 == 2)
+	{
+		'EFT'
+		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT Name'), fullName)
+		WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumber') , '031318745')	// york traditions routing number
+		WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumberVerify'), '031318745')	// york traditions routing number
+		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account Number'), '8032654815')
+		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account NumberVerify'), '8032654815')
+		WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
+	}
 }
-else if(randomNumber2 == 2)
-{
-	'EFT'
-	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT Name'), fullName)
-	WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumber') , '031318745')	// york traditions routing number
-	WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumberVerify'), '031318745')	// york traditions routing number
-	WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account Number'), '8032654815')
-	WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account NumberVerify'), '8032654815')
-	WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
-}
-
+	
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'))
 'Bind Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
@@ -742,7 +745,7 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
     catch (Exception e) {
         System.out.println(e)
 
-        WebUI.delay(10)
+        WebUI.delay(20)
 
         FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 
@@ -754,3 +757,4 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
     System.out.println('in the else, FAILED to find policy number')
 }
 
+WebUI.closeBrowser()
