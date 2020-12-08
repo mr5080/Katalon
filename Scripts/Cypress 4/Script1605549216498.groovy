@@ -22,10 +22,10 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
     'FL Addresses', true)
 
 // random num between 2 - 120 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((124 - 2) + 1 // 612 = number addresses in excel file
+int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1 // 612 = number addresses in excel file
     )) as int)
 
-int randomFLaddressPrior = 2 + ((Math.random() * ((118 - 2) + 1 // 612 = number addresses in excel file
+int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1 // 612 = number addresses in excel file
     )) as int)
 
 System.out.println(randomFLaddress)
@@ -138,6 +138,17 @@ WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypres
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
+
+'Internal vs Agent, agent = true, false = internal '
+// Change to agent
+Boolean agent = false
+System.out.println('agent = ' + agent)
+if(agent == true)
+{
+	WebUI.selectOptionByLabel( findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES', false)
+	System.out.println('should have set to agent 10100 - JHUGHES' )
+}
+
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_CondoHO3 (EG)Homeowners'), 'HO3', true)
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
@@ -239,16 +250,18 @@ catch (Exception e) {
     System.out.println('FDRC already accepted today')
 } 
 
+
 'Agent Producer'
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
-
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
-
-WebUI.delay(1 // wait for dynamic table to populate?
-    )
-
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
-
+if(agent != true)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
+	
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
+	
+	// wait for dynamic table to populate?
+	WebUI.delay(1)	
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
+}
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
 // 
 //need to click somewhere to get rid of the datepicker popup.
