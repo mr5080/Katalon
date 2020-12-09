@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__ApplicantAddress2</name>
+   <name>input_ZipCurrentMailingAddress</name>
    <tag></tag>
-   <elementGuidId>e05b056e-caac-4fa6-84bf-dec4bb1fa39e</elementGuidId>
+   <elementGuidId>7f2eceee-4d67-4bbf-a2a1-2671892d8cf5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ApplicantAddress2']
-</value>
+         <value>//input[@id='ApplicantZip']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -32,14 +31,14 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ApplicantAddress2</value>
+      <value>ApplicantCity</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ApplicantAddress2</value>
+      <value>ApplicantCity</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,7 +59,7 @@
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>GMJSDataManager('0','VERISK');MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','','',getMostRelevantPolicyTypeCodeValue(document.getElementById('PolicyTypeCode'),'',''),'0'); </value>
+      <value>MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','');GMJSDataManager('0','VERISK'); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,34 +73,34 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ApplicantAddress2&quot;)</value>
+      <value>id(&quot;ApplicantCity&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress Obj Repo/iframe_RTR Quotes_MainIS20test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='ApplicantAddress2']</value>
+      <value>//input[@id='PreviousCity']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='QuoteAddress2']/td[2]/input</value>
+      <value>//div[@id='zipcodeCityText']/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[7]/td[2]/input</value>
+      <value>//td[2]/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

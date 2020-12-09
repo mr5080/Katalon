@@ -133,8 +133,8 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypress
 WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
     '1w8xCCmEypU3q31XlL176w==')
 
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
-    Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), Keys.chord(Keys.ENTER))
+
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
@@ -213,16 +213,15 @@ catch (Exception e) {
     System.out.println('No addres validation alert')
 } */
 //WebUI.delay(30)
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_NOTE The address above has beensuccessfu_ffdc37'))
+//WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
 String geoCodeStatus = ''
 
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 
-    30)) // 
+//  if( WebUI.waitForElementVisible(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
+if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30))  
 {
     //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
-    geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 
-        'innerHTML')
+    geoCodeStatus = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
 
     System.out.println('geoCodeStatus = ' + geoCodeStatus)
 } else {
@@ -368,12 +367,14 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
         WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_ALASKAALABAMAARKANSASARIZONACALIFORN_001ed4 - Prior Mailing Address'), 
             stateFLPrior, false)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior) // International address
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior) //
         // outputs dropdown label
         // street adddress
         // city, province, zip,  PreviousAddress2
         // country name
-    } else {
+    } 
+	else 
+	{
         WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
 
         String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 
@@ -502,6 +503,60 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
+
+
+
+
+
+
+
+
+'Set Current Mailing Address to international address on the Policy screen'
+
+
+	randomNumber = ((Math.random() * 2) as int) // generates random number, either 0 or 1, used to randomize US/international
+
+	randomNumber = 0	// force International or not. 0 = US, 1 = International
+	System.out.println('randomNumber = ' + randomNumber)
+
+	if (randomNumber == 0) // fill out US prior mailing address
+	{
+	/*	//  dont think i need to update Current Mailing address, its automatically populated with Risk Address if its US address
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1 - International'), addressFLPrior)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1City - International'), cityFLPrior)
+		WebUI.selectOptionByValue( findTestObject('Object Repository/Cypress 4/Page_/select_StateCurrentMailingAddress') , stateFLPrior, false)		
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_ZipCurrentMailingAddress'), zipFLPrior) //
+		WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress2') , '')  		// set this to blank - //input[@id='ApplicantAddress2']		 
+	*/	
+	}
+	else  // fill out International Current Mailing Address
+	{
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType - Policy')  , 1)
+		selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'),	'value')
+		System.out.println('selectedAddressType = ' + selectedAddressType)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1 - International'), 'Piazza Guglielmo Pepe 114')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1City - International'), 'Villa A Roggio, Lucca, 55060')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
+		try {
+			WebUI.acceptAlert()		
+			System.out.println('Accept address validation has not been validated, international address')
+		}
+		catch (Exception e) {
+			System.out.println('No addres validation alert')
+		}
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
