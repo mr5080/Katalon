@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_ALASKAALABAMAARKANSASARIZONACALIFORN_001ed4</name>
+   <name>select_Renewal Billed To</name>
    <tag></tag>
-   <elementGuidId>1411c406-ea21-4ce1-ad12-6dfcefc7ff24</elementGuidId>
+   <elementGuidId>b09b2d0a-f335-4a46-b1de-018bfed465c0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='SelectedStateAgentCode']</value>
+         <value>//select[@id='BillPolicyRen']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,20 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>size</name>
+      <type>Main</type>
+      <value>1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-disablemessagetrigger</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
@@ -29,16 +43,30 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>BillPolicyRen</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>SelectedStateAgentCode</value>
+      <value>BillPolicyRen</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onblur</name>
+      <type>Main</type>
+      <value> GlobalOnBlur(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>CheckEntertedInputValue(this,'https://cypresstest.cogisi.com/is/', 'AgentCode', 'SubAgentCode'); GlobalOnChange(); </value>
+      <value> GlobalOnChange(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,121 +74,23 @@
       <name>text</name>
       <type>Main</type>
       <value>
-										
-											ALASKA
-										
-											ALABAMA
-										
-											ARKANSAS
-										
-											ARIZONA
-										
-											CALIFORNIA
-										
-											COLORADO
-										
-											CONNECTICUT
-										
-											DIST.OF COL.
-										
-											DELAWARE
-										
-											FLORIDA
-										
-											GEORGIA
-										
-											HAWAII
-										
-											IOWA
-										
-											IDAHO
-										
-											ILLINOIS
-										
-											INDIANA
-										
-											KANSAS
-										
-											KENTUCKY
-										
-											LOUISIANA
-										
-											MASSACHUSETTS
-										
-											MARYLAND
-										
-											MAINE
-										
-											MICHIGAN
-										
-											MINNESOTA
-										
-											MISSOURI
-										
-											MISSISSIPPI
-										
-											MONTANA
-										
-											NORTH CAROLINA
-										
-											NORTH DAKOTA
-										
-											NEBRASKA
-										
-											NEW HAMPSHIRE
-										
-											NEW JERSEY
-										
-											NEW MEXICO
-										
-											NEVADA
-										
-											NEW YORK
-										
-											OHIO
-										
-											OKLAHOMA
-										
-											OREGON
-										
-											PENNSYLVANIA
-										
-											PUERTO RICO
-										
-											RHODE ISLAND
-										
-											SOUTH CAROLINA
-										
-											SOUTH DAKOTA
-										
-											TENNESSEE
-										
-											TEXAS
-										
-											UTAH
-										
-											VIRGINIA
-										
-											U.S.VIRGIN IS.
-										
-											VERMONT
-										
-											WASHINGTON
-										
-											WISCONSIN
-										
-											WEST VIRGINIA
-										
-											WYOMING
-										
-									</value>
+							
+									
+										Please Select
+									
+								
+									
+										CHARLES  MANSON 
+									
+								
+						</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;SelectedStateAgentCode&quot;)</value>
+      <value>id(&quot;BillPolicyRen&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -174,48 +104,48 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='SelectedStateAgentCode']</value>
+      <value>//select[@id='BillPolicyRen']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='AgentLookUpModal']/div/div/div[2]/div/div[2]/select</value>
+      <value>//div[@id='Wrapper-Left-BillPolicyRen']/div[2]/div/div/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='State'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='On Renewal, Bill Policy to'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Term'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Premiums Should be Billed To'])[1]/following::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter data in above fields'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Payment Schedule'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No data found for current search'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Deposit Paid:'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//select</value>
+      <value>//div[3]/div[2]/div/div/select</value>
    </webElementXpaths>
 </WebElementEntity>

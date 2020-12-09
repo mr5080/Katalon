@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_CentralElectricCentralOilCentralGasC_93816b</name>
+   <name>select_Foundation Type</name>
    <tag></tag>
-   <elementGuidId>e6b0a5ed-3e14-4762-a653-deb61fd72c23</elementGuidId>
+   <elementGuidId>7d456b6e-c66b-4431-a99c-d0c594f63148</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='HeatType1_1']</value>
+         <value>//select[@id='FoundationType_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -45,14 +45,14 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>HeatType1_1</value>
+      <value>FoundationType_1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>HeatType1_1</value>
+      <value>FoundationType_1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -80,31 +80,19 @@
 									
 								
 									
-										Central/Electric
+										Basement
 									
 								
 									
-										Central/Oil
+										Concrete Slab
 									
 								
 									
-										Central/Gas
+										Monolithic Slab
 									
 								
 									
-										Central/Gas Pump
-									
-								
-									
-										Window Units-Prof installed
-									
-								
-									
-										Furnace-w/ Thermostat
-									
-								
-									
-										None
+										Solid Enclosed Crawlspace
 									
 								
 						</value>
@@ -114,7 +102,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;HeatType1_1&quot;)</value>
+      <value>id(&quot;FoundationType_1&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -128,48 +116,48 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='HeatType1_1']</value>
+      <value>//select[@id='FoundationType_1']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Right-HeatType1_1']/div/div/select</value>
+      <value>//div[@id='Wrapper-Right-FoundationType_1']/div/div/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Primary Heat System'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Foundation Type'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of units within firewall'])[1]/following::select[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Foundation'])[1]/following::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Square feet'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is this policy new to the agency?'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Garage Type'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Protection Information'])[1]/preceding::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div[12]/div/div/select</value>
+      <value>//div[6]/div/div[6]/div/div/select</value>
    </webElementXpaths>
 </WebElementEntity>

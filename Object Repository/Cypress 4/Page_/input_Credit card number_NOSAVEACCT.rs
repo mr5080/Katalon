@@ -6,12 +6,12 @@
    <elementGuidId>b5091f7d-3297-415e-b750-c8692f3041cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEACCT</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEACCT']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEACCT</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -105,7 +105,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_Enter Credit Card Information_reusab_436954</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_Enter Credit Card Information</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

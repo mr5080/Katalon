@@ -6,12 +6,12 @@
    <elementGuidId>6e0ac152-44e8-4101-beef-c242e7f7ed98</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEEXPDATE</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEEXPDATE']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEEXPDATE</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -84,7 +84,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_Enter Credit Card Information_reusab_436954</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_Enter Credit Card Information</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

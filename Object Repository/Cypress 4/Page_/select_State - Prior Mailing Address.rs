@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_ALASKAALABAMAARKANSASARIZONACALIFORN_001ed4 - Prior Mailing Address</name>
+   <name>select_State - Prior Mailing Address</name>
    <tag></tag>
    <elementGuidId>3cec04da-adee-4d9b-b2a9-ec50497a7834</elementGuidId>
    <selectorCollection>

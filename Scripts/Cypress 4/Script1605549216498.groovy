@@ -233,9 +233,9 @@ if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/td_GeoCodeSucces
 'Quick Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Quick Quote'))
 
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'), 40)) // works!
+if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/div_Quote Number'), 40)) // works!
 {
-    quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'), 'innerHTML')
+    quoteNumber = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Quote Number'), 'innerHTML')
 
     System.out.println('quoteNumber = ' + quoteNumber)
 }
@@ -301,7 +301,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Addr
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), DOB)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_EmployedHomemakerRetiredSelf Employe_88e90c'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Profession'), 
     'EMPLOYED', true)
 
 // set purcahse date = todays date
@@ -364,7 +364,7 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 
             cityFLPrior)
 
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_ALASKAALABAMAARKANSASARIZONACALIFORN_001ed4 - Prior Mailing Address'), 
+        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 
             stateFLPrior, false)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior) //
@@ -475,19 +475,19 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_FrameMasonryMasonry VeneerSuperior'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 
     'F', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Architectural ShinglesComposition Sh_144118'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 
     'ARCHITECTURAL', true)
 
 /* these fields are no longer mandatory
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Responding Fire Department_Responding_eb6df6'), cityFL + 
+WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + 
     ' Fire Department')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123456788B910'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_ad3f5d'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Distance to Fire Hydrant'), 
     '01', true)
 */
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Less than 1000 feetOver 1000 feet'), 
@@ -495,10 +495,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+//WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
@@ -573,7 +573,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - General'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_AttachedDetachedNone'), 'ATTACHED', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_No Garage DoorUnbraceBracedUnknown'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Garage Door Type'), 
     'BRACED', true)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '250000')
@@ -598,21 +598,21 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase P
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_1152253354'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_CentralElectricCentralOilCentralGasC_93816b'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Primary Heat System'), 
     'ELECTRIC', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123'), '2', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ClosedOpen'), 'CLOSED', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Foundation Type'), 
     'BASEMENT', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_YesNo'), 'Y', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_12'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_AsbestosConcrete BlockCoquinaHardboa_c37596'), 
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 
     'CONCRETEBLOCK', true)
 
 'History button'
@@ -663,9 +663,9 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Display Quote'))
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 'Payment information'
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Please SelectCHARLES  MANSON'), 'Applicant1', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Please SelectCHARLES  MANSON_1'), 'Applicant1', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
 
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
@@ -728,7 +728,7 @@ if(agent == false)
 	}
 }
 	
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/div_Quote Number 1687'))
+//WebUI.click(findTestObject('Cypress 4/Page_/div_Quote Number'))
 'Bind Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 

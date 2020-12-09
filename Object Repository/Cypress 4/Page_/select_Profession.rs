@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1 Mile or LessGreater Than 1 to 2 Mi_ad3f5d</name>
+   <name>select_Profession</name>
    <tag></tag>
-   <elementGuidId>1e09ef9e-b489-4b0f-90a1-befa2da7a221</elementGuidId>
+   <elementGuidId>4d3ef221-67cc-43da-8c78-85f9889b4467</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='DistanceFireStation_1']</value>
+         <value>//select[@id='OccupationTypezzzz1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -45,28 +45,28 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>DistanceFireStation_1</value>
+      <value>OccupationTypezzzz1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>DistanceFireStation_1</value>
+      <value>OccupationTypezzzz1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value> GlobalOnBlur();  GlobalCheckDisable(this);  CheckRequired(false);</value>
+      <value> GlobalOnBlur(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
+      <value> GlobalOnChange(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -80,75 +80,27 @@
 									
 								
 									
-										1 Mile or Less
+										Employed
 									
 								
 									
-										Greater Than 1 to 2 Miles
+										Homemaker
 									
 								
 									
-										Greater Than 2 to 3 Miles
+										Retired
 									
 								
 									
-										Greater Than 3 to 4 Miles
+										Self Employed
 									
 								
 									
-										Greater Than 4 to 5 Miles
+										Student
 									
 								
 									
-										Greater Than 5 to 6 Miles
-									
-								
-									
-										Greater Than 6 to Less Than 7 Miles
-									
-								
-									
-										7 to 8 Miles
-									
-								
-									
-										Greater Than 8 to 9 Miles
-									
-								
-									
-										Grreater Than 9 to 10 Miles
-									
-								
-									
-										Greater Than 10 to 11 Miles
-									
-								
-									
-										Greater Than 11 to 12 Miles
-									
-								
-									
-										Greater Than 12 to 13 Miles
-									
-								
-									
-										Greater Than 13 to 14 Miles
-									
-								
-									
-										Greater Than 14 to 15 Miles
-									
-								
-									
-										Greater Than 15 to 16 Miles
-									
-								
-									
-										Greater Than 16 Miles
-									
-								
-									
-										Not Applicable (ex. Unprotected Area)
+										Unemployed
 									
 								
 						</value>
@@ -158,7 +110,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;DistanceFireStation_1&quot;)</value>
+      <value>id(&quot;OccupationTypezzzz1&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -172,48 +124,48 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='DistanceFireStation_1']</value>
+      <value>//select[@id='OccupationTypezzzz1']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Right-DistanceFireStation_1']/div/div/select</value>
+      <value>//div[@id='Wrapper-Right-OccupationTypezzzz1']/div/div/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Distance from Fire Station'])[1]/following::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Occupation'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Protection Class'])[1]/following::select[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date Of Birth'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Distance from Fire Hydrant'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Risk Address'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is this a planned subdivision?'])[1]/preceding::select[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Location Address'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/div[2]/div/div/div[8]/div/div/select</value>
+      <value>//div[4]/div/div/select</value>
    </webElementXpaths>
 </WebElementEntity>
