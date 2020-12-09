@@ -555,20 +555,19 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_1
 'Coverage button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Coverage'))
 
-String replacementCost360 = '250000'
+String replacementCost360 = '245000'
 
-if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != 
-'') {
-    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
-            'innerHTML'))
-
-    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
-        'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
-        )
+if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') 
+{
+    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML'))
+    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML')
+	 //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
+}
+else		// manually set Dwelling Cov A since replacement cost was not returned
+{
+	replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
 }
 
-//else		// dont think this is needed since its set above
-//	replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), 'innerHTML')
 'General button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - General'))
 
@@ -684,7 +683,7 @@ if(agent == false)
 	depositAmount = depositAmount.replaceAll('[^\\d.]', '')
 	
 	System.out.println('depositAmount = ' + depositAmount)
-	randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
+	randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
 	if(randomNumber2 == 0)
 	{	
 		'Check'
@@ -812,5 +811,5 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
 } else {
     System.out.println('in the else, FAILED to find policy number')
 }
-
+WebUI.delay(10)
 WebUI.closeBrowser()
