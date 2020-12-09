@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Suggested Replacement Cost  20988810</name>
+   <name>div_Suggested Replacement Cost</name>
    <tag></tag>
    <elementGuidId>3954ea1c-6b61-4266-b7bc-0e0a8ef114fa</elementGuidId>
    <selectorCollection>

@@ -497,7 +497,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBa
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/div_Suggested Replacement Cost  20988810'))
+//WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
@@ -516,7 +516,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 
 	randomNumber = ((Math.random() * 2) as int) // generates random number, either 0 or 1, used to randomize US/international
 
-	randomNumber = 0	// force International or not. 0 = US, 1 = International
+//	randomNumber = 0	// force International or not. 0 = US, 1 = International
 	System.out.println('randomNumber = ' + randomNumber)
 
 	if (randomNumber == 0) // fill out US prior mailing address
@@ -546,18 +546,6 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 		}
 	}
 
-
-	
-
-
-
-
-
-
-
-
-
-
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
 
@@ -569,12 +557,12 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Coverage'))
 
 String replacementCost360 = '250000'
 
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_Suggested Replacement Cost  20988810'), 'innerHTML') != 
+if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != 
 '') {
-    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_Suggested Replacement Cost  20988810'), 
+    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
             'innerHTML'))
 
-    replacementCost360 = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_Suggested Replacement Cost  20988810'), 
+    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
         'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
         )
 }
@@ -689,13 +677,20 @@ if(agent == false)
 		randomNumber2 = ((Math.random() * 3) as int) // generates random number, either 0, 1, 2 used to randomize payment method
 		System.out.println('randomNumber2 = ' + randomNumber2 )
 	//}
-		randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
+		
+		
+	String depositAmount = WebUI.getAttribute( findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount') , 'innerHTML')
+	System.out.println('depositAmount = ' + depositAmount)
+	depositAmount = depositAmount.replaceAll('[^\\d.]', '')
+	
+	System.out.println('depositAmount = ' + depositAmount)
+	randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 	if(randomNumber2 == 0)
 	{	
 		'Check'
 		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), year)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
 	}
 	else if(randomNumber2 == 1)
 	{
@@ -703,15 +698,17 @@ if(agent == false)
 		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
 		
 		WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))	// click Enter Credit Card Information button
-	//	WebUI.delay(10)  // CC window takes forever to open...
-		WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+		WebUI.delay(5)  // CC window takes forever to open...
+		//WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
 		
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/21')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
 		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
 		// clicking button above should work, but there is a defect in about enter cc info , defect 268
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
 	}
 	else if(randomNumber2 == 2)
 	{
@@ -722,7 +719,11 @@ if(agent == false)
 		WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumberVerify'), '031318745')	// york traditions routing number
 		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account Number'), '8032654815')
 		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account NumberVerify'), '8032654815')
-		WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+		//WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
+		
+		
 		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
 	}
