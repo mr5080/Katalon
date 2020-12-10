@@ -6,6 +6,22 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import internal.GlobalVariable as GlobalVariable
+
+
 
 /*
 for(int z = 0; z < 100; z++)
@@ -18,19 +34,16 @@ for(int z = 0; z < 100; z++)
 //import com.sun.org.apache.bcel.internal.generic.Select
 // Get random address
 // Read in FL address from excel file, true mean the first line consider as a header.
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
-    'FL Addresses', true)
+Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
+
+//WebUI.acceptAlert()
 
 // random num between 2 - 120 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1 // 612 = number addresses in excel file
-    )) as int)
-
-int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1 // 612 = number addresses in excel file
-    )) as int)
-
+int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 System.out.println(randomFLaddress)
 
-
+int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
+System.out.println(randomFLaddressPrior)
 
 // Risk Adddress
 // minus 1 because first line is header in excel file
@@ -133,23 +146,24 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypress
 WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
     '1w8xCCmEypU3q31XlL176w==')
 
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), Keys.chord(Keys.ENTER))
-
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
+    Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
-
-'Internal vs Agent, agent = true, false = internal '
 // Change to agent
-Boolean agent = false
-System.out.println('agent = ' + agent)
-if(agent == true)
-{
-	WebUI.selectOptionByLabel( findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES', false)
-	System.out.println('should have set to agent 10100 - JHUGHES' )
+'Internal vs Agent, isAgent = true, false = internal '
+//Boolean agent = false
+
+System.out.println('$isAgent = ' + isAgent)
+
+if (isAgent == true) {
+    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES',  false)
+    System.out.println('should have set to agent 10100 - JHUGHES')
 }
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_CondoHO3 (EG)Homeowners'), 'HO3', true)
+//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), 'HO3', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), policyType, true)
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
 
@@ -218,8 +232,7 @@ catch (Exception e) {
 String geoCodeStatus = ''
 
 //  if( WebUI.waitForElementVisible(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
-if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30))  
-{
+if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30)) {
     //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
     geoCodeStatus = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
 
@@ -250,17 +263,20 @@ catch (Exception e) {
 } 
 
 
+System.out.println('"$isAgent" = ' + isAgent)
 'Agent Producer'
-if(agent == false)
+if (isAgent == false) 
 {
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
-	
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
-	
-	// wait for dynamic table to populate?
-	WebUI.delay(1)	
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
+    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
+
+    // wait for dynamic table to populate?
+    WebUI.delay(1)
+
+    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
 }
+
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
 // 
 //need to click somewhere to get rid of the datepicker popup.
@@ -301,8 +317,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Addr
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), DOB)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Profession'), 
-    'EMPLOYED', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Profession'), 'EMPLOYED', true)
 
 // set purcahse date = todays date
 System.out.println('trying to set purcahse date to  = ' + todaysDate)
@@ -330,7 +345,8 @@ if (constructionYear.length() > 1) {
 
     constructionYearInt = Integer.valueOf(constructionYear)
 
-    System.out.println('constructionYearInt - IF == ' + constructionYearInt) // (constructionYearInt == '')
+    System.out.println('constructionYearInt - IF == ' + constructionYearInt // (constructionYearInt == '')
+        )
 } else {
     System.out.println('in the else')
 
@@ -347,7 +363,8 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 
     //for(x = 0; x<100; x++)
     //{
-    randomNumber = ((Math.random() * 2) as int) // generates random number, either 0 or 1, used to randomize US/international
+    randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
+        ) as int)
 
     //randomNumber = 1	// force International or not. 0 = US, 1 = International		
     System.out.println('randomNumber = ' + randomNumber)
@@ -364,17 +381,15 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 
             cityFLPrior)
 
-        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 
-            stateFLPrior, false)
+        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), stateFLPrior, 
+            false)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior) //
-        // outputs dropdown label
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior //
+            ) // outputs dropdown label
         // street adddress
         // city, province, zip,  PreviousAddress2
         // country name
-    } 
-	else 
-	{
+    } else {
         WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
 
         String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 
@@ -412,8 +427,8 @@ constructionYearInt = 1950
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == 
 '') {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(
-            year, Keys.TAB) /// this is good
-        )
+            year, Keys.TAB /// this is good
+            ))
 
     System.out.println('set Construction Year')
 
@@ -439,8 +454,8 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
         catch (Exception e) {
             System.out.println(e)
         } 
-    } // need to click off Construction Year input box , dont think i need this since tabbing off it?
-    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))	
+        // need to click off Construction Year input box , dont think i need this since tabbing off it?
+    } //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))	
 }
 
 //Year of Roof, sets it incase it is blank
@@ -475,11 +490,9 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 
-    'F', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'F', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 
-    'ARCHITECTURAL', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 
 /* these fields are no longer mandatory
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + 
@@ -504,47 +517,44 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 
-
-
-
-
-
-
-
 'Set Current Mailing Address to international address on the Policy screen'
-
-
-	randomNumber = ((Math.random() * 2) as int) // generates random number, either 0 or 1, used to randomize US/international
+randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
+    ) as int)
 
 //	randomNumber = 0	// force International or not. 0 = US, 1 = International
-	System.out.println('randomNumber = ' + randomNumber)
+System.out.println('randomNumber = ' + randomNumber)
 
-	if (randomNumber == 0) // fill out US prior mailing address
-	{
-	/*	//  dont think i need to update Current Mailing address, its automatically populated with Risk Address if its US address
+if (randomNumber == 0) // fill out US prior mailing address
+{
+    /*	//  dont think i need to update Current Mailing address, its automatically populated with Risk Address if its US address
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1 - International'), addressFLPrior)
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1City - International'), cityFLPrior)
 		WebUI.selectOptionByValue( findTestObject('Object Repository/Cypress 4/Page_/select_StateCurrentMailingAddress') , stateFLPrior, false)		
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_ZipCurrentMailingAddress'), zipFLPrior) //
 		WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress2') , '')  		// set this to blank - //input[@id='ApplicantAddress2']		 
-	*/	
-	}
-	else  // fill out International Current Mailing Address
-	{
-		WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType - Policy')  , 1)
-		selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'),	'value')
-		System.out.println('selectedAddressType = ' + selectedAddressType)
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1 - International'), 'Piazza Guglielmo Pepe 114')
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1City - International'), 'Villa A Roggio, Lucca, 55060')
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
-		try {
-			WebUI.acceptAlert()		
-			System.out.println('Accept address validation has not been validated, international address')
-		}
-		catch (Exception e) {
-			System.out.println('No addres validation alert')
-		}
-	}
+	*/ // fill out International Current Mailing Address
+} else {
+    WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType - Policy'), 1)
+
+    selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
+
+    System.out.println('selectedAddressType = ' + selectedAddressType)
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1 - International'), 'Piazza Guglielmo Pepe 114')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress1City - International'), 'Villa A Roggio, Lucca, 55060')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
+
+    try {
+        WebUI.acceptAlert()
+
+        System.out.println('Accept address validation has not been validated, international address')
+    }
+    catch (Exception e) {
+        System.out.println('No addres validation alert')
+    } 
+}
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
@@ -557,15 +567,14 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Coverage'))
 
 String replacementCost360 = '245000'
 
-if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') 
-{
-    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML'))
-    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML')
-	 //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
-}
-else		// manually set Dwelling Cov A since replacement cost was not returned
-{
-	replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
+if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') {
+    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
+            'innerHTML'))
+
+    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
+    // manually set Dwelling Cov A since replacement cost was not returned
+} else {
+    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
 }
 
 'General button'
@@ -573,8 +582,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - General'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_AttachedDetachedNone'), 'ATTACHED', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Garage Door Type'), 
-    'BRACED', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Garage Door Type'), 'BRACED', true)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '250000')
 // divide by 100 to make it a whole number
@@ -598,22 +606,19 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase P
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_1152253354'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Primary Heat System'), 
-    'ELECTRIC', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Primary Heat System'), 'ELECTRIC', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123'), '2', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ClosedOpen'), 'CLOSED', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Foundation Type'), 
-    'BASEMENT', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Foundation Type'), 'BASEMENT', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_YesNo'), 'Y', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_12'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 
-    'CONCRETEBLOCK', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 'CONCRETEBLOCK', true)
 
 'History button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - History'))
@@ -670,72 +675,90 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed 
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
 // if agent == true, they cant take a check
-if(agent == false)
-{
-	//for(int z = 0; z < 100; z++){
-		randomNumber2 = ((Math.random() * 3) as int) // generates random number, either 0, 1, 2 used to randomize payment method
-		System.out.println('randomNumber2 = ' + randomNumber2 )
-	//}
-		
-		
-	String depositAmount = WebUI.getAttribute( findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount') , 'innerHTML')
-	System.out.println('depositAmount = ' + depositAmount)
-	depositAmount = depositAmount.replaceAll('[^\\d.]', '')
-	
-	System.out.println('depositAmount = ' + depositAmount)
-	randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
-	if(randomNumber2 == 0)
-	{	
-		'Check'
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
-	}
-	else if(randomNumber2 == 1)
-	{
-		'Credit Card'
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
-		
-		WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))	// click Enter Credit Card Information button
-		WebUI.delay(5)  // CC window takes forever to open...
-		//WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-		
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
-		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
-		// clicking button above should work, but there is a defect in about enter cc info , defect 268
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
-	}
-	else if(randomNumber2 == 2)
-	{
-		'EFT'
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT Name'), fullName)
-		WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumber') , '031318745')	// york traditions routing number
-		WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumberVerify'), '031318745')	// york traditions routing number
-		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account Number'), '8032654815')
-		WebUI.setText( findTestObject('Cypress 4/Page_/input__EFT Account NumberVerify'), '8032654815')
-		//WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+if (isAgent == false) {
+    //for(int z = 0; z < 100; z++){
+    randomNumber2 = ((Math.random() * 3 // generates random number, either 0, 1, 2 used to randomize payment method
+        ) as int)
 
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
-		
-		
-		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
-	}
+    System.out.println('randomNumber2 = ' + randomNumber2)
+
+    //}
+    String depositAmount = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount'), 
+        'innerHTML')
+
+    System.out.println('depositAmount = ' + depositAmount)
+
+    depositAmount = depositAmount.replaceAll('[^\\d.]', '')
+
+    System.out.println('depositAmount = ' + depositAmount)
+
+    randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
+
+    if (randomNumber2 == 0) {
+        'Check'
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount) // click Enter Credit Card Information button
+        // CC window takes forever to open...
+        //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+        // clicking button above should work, but there is a defect in about enter cc info , defect 268
+        // york traditions routing number
+        // york traditions routing number
+        //WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+    } else if (randomNumber2 == 1) {
+        'Credit Card'
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', 
+            false)
+
+        WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
+
+        WebUI.delay(5)
+
+        WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 
+            40)
+
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 
+            'Visa', false)
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+
+        WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
+    } else if (randomNumber2 == 2) {
+        'EFT'
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT Name'), fullName)
+
+        WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumber'), '031318745')
+
+        WebUI.setText(findTestObject('Cypress 4/Page_/input__RoutingNumberVerify'), '031318745')
+
+        WebUI.setText(findTestObject('Cypress 4/Page_/input__EFT Account Number'), '8032654815')
+
+        WebUI.setText(findTestObject('Cypress 4/Page_/input__EFT Account NumberVerify'), '8032654815')
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
+
+        WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
+
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
+    }
 }
-	
+
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Quote Number'))
 'Bind Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 
 //WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
-
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45))
-{
+if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {
     String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
 
     System.out.println('policyNumber = ' + policyNumber)
@@ -811,5 +834,8 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
 } else {
     System.out.println('in the else, FAILED to find policy number')
 }
+
 WebUI.delay(10)
+
 WebUI.closeBrowser()
+

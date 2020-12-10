@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_CondoHO3 (EG)Homeowners</name>
+   <name>select_PolicyType</name>
    <tag></tag>
    <elementGuidId>87f61d23-8f89-4782-b77f-da82a9e26555</elementGuidId>
    <selectorCollection>

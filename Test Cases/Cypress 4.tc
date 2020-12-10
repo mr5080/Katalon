@@ -5,4 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ec98b667-0e47-4658-b959-ac531a6f7e21</testCaseGuid>
+   <variable>
+      <defaultValue>'HO3'</defaultValue>
+      <description></description>
+      <id>091b05b1-5f55-40eb-97ec-a555ca7ab04b</id>
+      <masked>false</masked>
+      <name>policyType</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>776a156b-bb18-4107-bf3e-3d18574d7b9f</id>
+      <masked>false</masked>
+      <name>isAgent</name>
+   </variable>
 </TestCaseEntity>
