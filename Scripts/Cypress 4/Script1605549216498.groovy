@@ -21,8 +21,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-
-
 /*
 for(int z = 0; z < 100; z++)
 {
@@ -34,15 +32,17 @@ for(int z = 0; z < 100; z++)
 //import com.sun.org.apache.bcel.internal.generic.Select
 // Get random address
 // Read in FL address from excel file, true mean the first line consider as a header.
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
+Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
+    'FL Addresses', true)
 
 //WebUI.acceptAlert()
-
 // random num between 2 - 120 (first line in excel file is a header)
 int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
+
 System.out.println(randomFLaddress)
 
 int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
+
 System.out.println(randomFLaddressPrior)
 
 // Risk Adddress
@@ -152,13 +152,15 @@ WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypres
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
 // Change to agent
-'Internal vs Agent, isAgent = true, false = internal '
 //Boolean agent = false
-
+'Internal vs Agent, isAgent = true, false = internal '
 System.out.println('$isAgent = ' + isAgent)
 
+'Change to agent'
 if (isAgent == true) {
-    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES',  false)
+    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES', 
+        false)
+
     System.out.println('should have set to agent 10100 - JHUGHES')
 }
 
@@ -262,11 +264,10 @@ catch (Exception e) {
     System.out.println('FDRC already accepted today')
 } 
 
-
 System.out.println('"$isAgent" = ' + isAgent)
+
 'Agent Producer'
-if (isAgent == false) 
-{
+if (isAgent == false) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
@@ -385,8 +386,8 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
             false)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior //
-            ) // outputs dropdown label
-        // street adddress
+            // outputs dropdown label
+            ) // street adddress
         // city, province, zip,  PreviousAddress2
         // country name
     } else {
@@ -455,7 +456,8 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
             System.out.println(e)
         } 
         // need to click off Construction Year input box , dont think i need this since tabbing off it?
-    } //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))	
+        //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))	
+    }
 }
 
 //Year of Roof, sets it incase it is blank
@@ -571,8 +573,8 @@ if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement
     System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
             'innerHTML'))
 
-    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
-    // manually set Dwelling Cov A since replacement cost was not returned
+    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
+        ) // manually set Dwelling Cov A since replacement cost was not returned
 } else {
     replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
 }
@@ -700,8 +702,8 @@ if (isAgent == false) {
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount) // click Enter Credit Card Information button
-        // CC window takes forever to open...
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount // click Enter Credit Card Information button
+            ) // CC window takes forever to open...
         //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
         // clicking button above should work, but there is a defect in about enter cc info , defect 268
         // york traditions routing number
@@ -835,7 +837,7 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
     System.out.println('in the else, FAILED to find policy number')
 }
 
-WebUI.delay(10)
+WebUI.delay(4)
 
 WebUI.closeBrowser()
 
