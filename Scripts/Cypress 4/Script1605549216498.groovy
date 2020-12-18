@@ -408,13 +408,9 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 }
 
 // need to click somewhere to get rid of the datepicker popup.
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))
+//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
-
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'), 'Geico')
-
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), '9876543210')
 
 /* this was used for faking out the Construction Year logic to test the 40+ Construction Year, can probably be removed
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord('1900', Keys.TAB))  // delete it, not needed, just forces construction year
@@ -557,6 +553,12 @@ if (randomNumber == 0) // fill out US prior mailing address
         System.out.println('No addres validation alert')
     } 
 }
+
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'), 'Geico')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), '9876543210')
+
+
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
