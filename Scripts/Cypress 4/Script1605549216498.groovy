@@ -209,11 +209,10 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAd
 // go back to try catch? even need this??? seems to be automatically accpeted?
 try {
     WebUI.acceptAlert()
-
     System.out.println('Accept address validation has been accepted')
 }
 catch (Exception e) {
-    System.out.println('No addres validation alert')
+    System.out.println('No addres validation alert')	
 } 
 
 /*
@@ -556,7 +555,9 @@ if (randomNumber == 0) // fill out US prior mailing address
 
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'), 'Geico')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), '9876543210')
+String randomPolicy = (Math.random() * 99999) as int
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
+
 
 
 
