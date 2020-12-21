@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__ApplicantAddress2</name>
+   <name>input_Address_ApplicantAddress2TEST</name>
    <tag></tag>
-   <elementGuidId>e05b056e-caac-4fa6-84bf-dec4bb1fa39e</elementGuidId>
+   <elementGuidId>dd363709-9108-44fb-83c4-a973977955c1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[7]/td[2]/input[1]
-</value>
+         <value>//input[@id='ApplicantAddress2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -32,14 +31,14 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ApplicantAddress2</value>
+      <value>ApplicantAddress1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ApplicantAddress2</value>
+      <value>ApplicantAddress1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +73,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ApplicantAddress2&quot;)</value>
+      <value>id(&quot;ApplicantAddress1&quot;)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20testTEST</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -88,13 +94,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//tr[@id='QuoteAddress2']/td[2]/input</value>
+      <value></value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[7]/td[2]/input</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>

@@ -39,6 +39,9 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 // random num between 2 - 120 (first line in excel file is a header)
 int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 
+// override randomness to specifiy address in file to use
+randomFLaddress = 105 // 105 causes address correction to pop
+
 System.out.println(randomFLaddress)
 
 int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
@@ -167,6 +170,7 @@ if (isAgent == true) {
 //WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), 'HO3', true)
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), policyType, true)
 
+//WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'john555')
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), '34698')
@@ -202,45 +206,58 @@ for (int i = 0; i < cityCount; i++) {
     System.out.println('selectedOption  = ' + selectedOption)
 }
 
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'what is going on?')
+
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), addressFL)
 
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input__ApplicantAddress2'))
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 
+//WebUI.switchToFrame( findTestObject('Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20testTEST', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
+/*
 try {
-    WebUI.acceptAlert()
+    // cant access any test object after accepting alert
+	WebUI.delay(5)
+	WebUI.acceptAlert()
     System.out.println('Accept address validation has been accepted')
 }
 catch (Exception e) {
-    System.out.println('No addres validation alert')	
+    System.out.println('Exception - ' + e)
 } 
+*/
+//WebUI.delay(5)
+// seems to be working, if it is can remove the try/catch above - 12/18/20
+boolean elementPresent = WebUI.waitForAlert(10)
 
-/*
-try{
-	if(WebUI.verifyAlertPresent(10)) 	   
-	
-	{
-		WebUI.acceptAlert()
-		System.out.println('Accept address validation has been accepted' )
-	}	
+if (elementPresent == true) {
+    alertText = WebUI.getAlertText()
+    System.out.println('The title of the alert is: \n' + alertText)
+    WebUI.delay(1)
+    WebUI.acceptAlert()
+	System.out.println('Accept address validation has been accepted' )
+	WebUI.switchToDefaultContent()
+//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
 }
-catch (Exception e) {
-    System.out.println('No addres validation alert')
-} */
-//WebUI.delay(30)
+
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
 String geoCodeStatus = ''
+junk = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
+junk2 = WebUI.waitForElementHasAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML', 15)
+junk3 = WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 15)
+System.out.println('junk = ' + junk )
+System.out.println('junk2 = ' + junk2 )
+System.out.println('junk3 = ' + junk3 )
 
-//  if( WebUI.waitForElementVisible(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
-if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 30)) {
+//if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
+if( WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
+{
     //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
-    geoCodeStatus = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
-
+    geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
     System.out.println('geoCodeStatus = ' + geoCodeStatus)
-} else {
-    System.out.println('geoCodeStatus = ' + geoCodeStatus)
-
+} 
+else 
+{
     System.out.println((('need to delete row ' + randomFLaddress) + ' and address = ') + addressFL)
 }
 
@@ -329,8 +346,7 @@ System.out.println('should have set purcahse date to  = ' + todaysDate)
 //WebUI.delay(7)
 //Construction Year - use DOB year if the input box is blank
 //System.out.println("HERE ")
-String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 
-    'value')
+String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
 
 System.out.println('constructionYear  = ' + constructionYear)
 
@@ -386,9 +402,9 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior //
             // outputs dropdown label
-            ) // street adddress
-        // city, province, zip,  PreviousAddress2
-        // country name
+            // street adddress
+            // city, province, zip,  PreviousAddress2
+            ) // country name
     } else {
         WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
 
@@ -408,7 +424,6 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 
 // need to click somewhere to get rid of the datepicker popup.
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))
-
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 
 /* this was used for faking out the Construction Year logic to test the 40+ Construction Year, can probably be removed
@@ -553,13 +568,11 @@ if (randomNumber == 0) // fill out US prior mailing address
     } 
 }
 
-
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'), 'Geico')
-String randomPolicy = (Math.random() * 99999) as int
+
+String randomPolicy = ((Math.random() * 99999) as int)
+
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
-
-
-
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
@@ -577,7 +590,8 @@ if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement
             'innerHTML'))
 
     replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
-        ) // manually set Dwelling Cov A since replacement cost was not returned
+        // manually set Dwelling Cov A since replacement cost was not returned
+        )
 } else {
     replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
 }
@@ -706,9 +720,9 @@ if (isAgent == false) {
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount // click Enter Credit Card Information button
-            ) // CC window takes forever to open...
-        //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-        // clicking button above should work, but there is a defect in about enter cc info , defect 268
+            // CC window takes forever to open...
+            //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+            ) // clicking button above should work, but there is a defect in about enter cc info , defect 268
         // york traditions routing number
         // york traditions routing number
         //WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')

@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_GeoCodeSuccessful</name>
+   <name>td_GeoCodeSuccessfulTEST</name>
    <tag></tag>
-   <elementGuidId>d47872d9-5bb0-4e49-9898-f3b86a3a8e33</elementGuidId>
+   <elementGuidId>073de4a1-ed7d-4022-8774-0b0e260211ba</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'NOTE: The address above has beensuccessfully geocoded.' or . = 'NOTE: The address above has beensuccessfully geocoded.') and @ref_element = 'Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test']</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//tbody/tr[@id='GMDisplayGeocodeSuccess']/td[1]
