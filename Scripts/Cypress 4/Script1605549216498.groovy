@@ -199,10 +199,8 @@ for (int i = 0; i < cityCount; i++) {
 
     if (selectedOption == cityFL) {
         System.out.println((('selectedOption = ' + selectedOption) + ' and cityFL = ') + cityFL)
-
         break
     }
-    
     System.out.println('selectedOption  = ' + selectedOption)
 }
 
@@ -212,7 +210,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_Ap
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 
-//WebUI.switchToFrame( findTestObject('Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20testTEST', ['index' : 2]), 10)
+//WebUI.switchToFrame( findTestObject('Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
 /*
 try {
@@ -242,12 +240,17 @@ if (elementPresent == true) {
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
 String geoCodeStatus = ''
-junk = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
+/*
+ // keep this for references, hard to figure this stuff out
+junk  = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
 junk2 = WebUI.waitForElementHasAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML', 15)
-junk3 = WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 15)
+junk3 = WebUI.waitForElementHasAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'id', 15)
+junk4 = WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 15)
 System.out.println('junk = ' + junk )
 System.out.println('junk2 = ' + junk2 )
 System.out.println('junk3 = ' + junk3 )
+System.out.println('junk4 = ' + junk4 )
+*/
 
 //if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
 if( WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
