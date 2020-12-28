@@ -40,7 +40,7 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-randomFLaddress = 105 // 105 causes address correction to pop
+//randomFLaddress = 105 // 105 causes address correction to pop
 
 System.out.println(randomFLaddress)
 
@@ -258,6 +258,10 @@ if( WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page
     //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
     geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
     System.out.println('geoCodeStatus = ' + geoCodeStatus)
+	
+	geoCodeStatusTest = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'baseURI')
+	System.out.println('geoCodeStatusTest = ' + geoCodeStatusTest)
+	
 } 
 else 
 {
@@ -527,10 +531,11 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
+'Click Rate and Continue button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
-WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
+WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))  // 12/28/20 - nee dto update xpath of buttons, looks like somethin changed
 
 'Set Current Mailing Address to international address on the Policy screen'
 randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
