@@ -42,6 +42,8 @@ int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 // override randomness to specifiy address in file to use
 //randomFLaddress = 105 // 105 causes address correction to pop
 
+
+
 System.out.println(randomFLaddress)
 
 int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
@@ -691,7 +693,13 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAge
 'Display Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Display Quote'))
 
-'Bind Submit Application button'
+
+// get Total Premium and Fees
+//div[@id='Wrapper-Right-TotalPremiumAndFees']
+totalPremium = WebUI.getAttribute(  findTestObject('Object Repository/Cypress 4/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+System.out.println("totalPremium = " + totalPremium)
+WebUI.delay(5)
+'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 'Payment information'
@@ -830,6 +838,8 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
         System.out.println('myDate = ' + policyCreated)
 
         sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+		
+		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
     }
     catch (Exception e) {
         //  Block of code to handle errors
@@ -864,5 +874,5 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
 
 WebUI.delay(4)
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 
