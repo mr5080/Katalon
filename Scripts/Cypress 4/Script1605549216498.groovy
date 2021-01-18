@@ -1,25 +1,14 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import java.time.*
 import java.time.temporal.TemporalAdjusters as TemporalAdjusters
+
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import org.openqa.selenium.Keys as Keys
+
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import internal.GlobalVariable as GlobalVariable
 
 /*
 for(int z = 0; z < 100; z++)
@@ -125,12 +114,14 @@ System.out.println('Fridays date this week = ' + thisFridayDate)
 
 // get todays date
 mydate = new Date()
-
 System.out.println('myDate = ' + mydate)
 
 todaysDate = mydate.format('MM/dd/yyyy')
-
 System.out.println('todaysDate = ' + todaysDate)
+
+todaysTimeStamp =mydate.format('MMddyyyy' + '-' + 'HHmm')
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+
 
 currentYear = Integer.parseInt(mydate.format('yyyy'))
 
@@ -139,6 +130,7 @@ System.out.println('currentYear = ' + currentYear)
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
+
 
 WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 
@@ -292,6 +284,7 @@ catch (Exception e) {
 System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
+
 if (isAgent == false) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
@@ -444,6 +437,17 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Constructi
 year = 1905
 constructionYearInt = 1950
 */
+
+if(policyType == "HO6")
+{
+	//UnitFloorNumber_1 set to first element 1(ground floor)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
+	// set cov A limit since 360 is not run on HO6
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
+	
+	
+	
+}
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == 
 '') {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(
@@ -593,17 +597,22 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_1
 'Coverage button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Coverage'))
 
-String replacementCost360 = '245000'
+String replacementCost360 = '245000.00'
 
-if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') {
-    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
-            'innerHTML'))
-
-    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
-        // manually set Dwelling Cov A since replacement cost was not returned
-        )
-} else {
-    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
+if(policyType == "HO3")
+{
+	if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') 
+	{
+	    System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML'))
+	
+	    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') 
+			//WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
+	        // manually set Dwelling Cov A since replacement cost was not returned	        
+	} 
+	else 
+	{
+	    replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)
+	}
 }
 
 'General button'
@@ -637,15 +646,16 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Primary Heat System'), 'ELECTRIC', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123'), '2', true)
+if(policyType == "HO3")
+{
+	WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_NumStories'), '2', true)
+	WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Foundation Type'), 'BASEMENT', true)
+	WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_RoofLayers'), '1', true)
+}
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ClosedOpen'), 'CLOSED', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Foundation Type'), 'BASEMENT', true)
-
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_YesNo'), 'Y', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_12'), '1', true)
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 'CONCRETEBLOCK', true)
 
@@ -794,6 +804,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 
 //WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
 if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {
+	WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '.jpg')
     String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
 
     System.out.println('policyNumber = ' + policyNumber)
@@ -840,6 +851,10 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
         sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
 		
 		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+		
+		sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+		
+		
     }
     catch (Exception e) {
         //  Block of code to handle errors
@@ -872,7 +887,7 @@ if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page
     System.out.println('in the else, FAILED to find policy number')
 }
 
-WebUI.delay(4)
+WebUI.delay(3)
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
