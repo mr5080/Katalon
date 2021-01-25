@@ -36,11 +36,11 @@ WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/li_Start a New 
 WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_DP3Dwelling Property CitizensDwellin_86c77a'), 
     'HOEG', true)
 
-WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Property Zip Code_ApplicantZip'), '70592')
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Property Zip Code_ApplicantZip'), '70714')
 
-WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Name_ApplicantName'), 'Sally Smith')
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Name_ApplicantName'), 'Stacy Checks')
 
-WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Address_ApplicantAddress1'), '105 3rd st')
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Address_ApplicantAddress1'), '7207 Juno Dr')
 
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input'))
 

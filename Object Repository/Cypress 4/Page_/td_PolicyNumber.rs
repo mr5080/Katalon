@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Number:'])[1]/following::td[1]</value>
+         <value>//body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -92,5 +91,11 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/table/tbody/tr[4]/td[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Number:'])[1]/following::td[1]</value>
    </webElementXpaths>
 </WebElementEntity>
