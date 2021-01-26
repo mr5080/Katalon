@@ -164,3 +164,149 @@ WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input'))
 
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/button_Accept'))
 
+
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/div_Effective Date'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Effective Date_EffectiveDate'), '04/15/2021')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_No Agents Found_form-control btn ISiA_12e04e'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), 'test')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/td_LA TEST AGENT'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Select optionGARBER 6546846846KIMMIC_112e16'),  '18210_JHUGHES', true)
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/div_Quote Number 621689'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-764-4568')
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Cell Phone Number_ApplicantCellPhonezzzz1'), '717-555-1212')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_E-Policy_NOSAVEEDocsOptin'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Email Address_ApplicantEmailzzzz1'), 'test@gmail.com')
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Applicant Date of Birth_ApplicantBirt_cb25ad'),
+	'01/02/1970')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEAnySmokers_1'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_MarriedSingle'), 'S', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_YesNo, I would like to proceed to ge_9be79a'),
+	'Y', true)
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Social Security Number_ApplicantSSNzzzz1'), '666524658')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEPropertyNewPurchase_1'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Is there prior insurance in the past _a714c5'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_No Prior LiabilityFirst Time Owner10_9a006f'),
+	'FIRSTTIMEOWNER', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Protection Class 1Protection Class 2_2c389b'),
+	'6', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_0-7 Road MilesOver 7 Road Miles'),
+	'Under8', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Less than 1000 feetOver 1000 feet'),
+	'Under1000', true)
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEPlannedSubdivision_1'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Lot Size (sq. ft.)_LotSize_1'), '32000')
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Year Built_ConstructionYear_1'), '2016')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Frame (not aluminum or plastic sidin_6d4529'),
+	'V', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Conventional  TraditionalCape Cod  C_7dda68'),
+	'COLONIAL', true)
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Architectural ShinglesComposition Sh_bb97a0'),
+	'ARCHITECTURAL', true)
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Building Area (sq. ft.)_SquareFootage_1'), '2500')
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_First-Floor Living Area (sq. ft.)_Fir_c2b5a5'),
+	'1250')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown123'), '2', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown12'), '1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown1234567891011'), '7', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown123456'), '3', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown0.511.522.533.544.55'), '1.5',
+	true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_UnknownCentralForced AirElectricBase_e0f8af'),
+	'FORCEDAIR', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_UnknownYesNo'), 'Y', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_CarportNo GarageGarage - AttachedGar_52043c'),
+	'1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_UnknownYesNo_1'), 'N', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_UnknownYesNo_1_2'), 'N', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_UnknownYesNo_1_2_3'), 'N', true)
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEHurrWMProof'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_HipOtherGable wBracing (Photo required)'),
+	'HIP', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Level A  UnknownLevel B - 8d nails  _c8ebbe'),
+	'B', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown  OtherHurricane Ties'), 'HURRICANETIES',
+	true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_Unknown  OtherBasic Impact (Class C)_b5ce68'),
+	'BASIC', true)
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Coverage A - Dwelling_DwellingLimit_1'), '250000')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_NoneTheft Central AlarmTheft Local Alarm'),
+	'Local', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_NoneCentral Station Monitored Fire A_cabea0'),
+	'Local', true)
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEWoodStoveSurcharge_1'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/select_NoneLevel 1Level 2Level 3'), '1',
+	true)
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEBookTransferDiscount_1'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Companion Policy Discount_NOSAVECompa_bd95cd'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Auto Policy_NOSAVEAutoPolicy_1'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Auto Policy_NOSAVEAutoPolicy_1'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVECompanionPolicyDiscount_1'))
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Yes_NOSAVEAHICMultiPolicyDiscount_1'))
+
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Number of Paid Losses in the past 3 y_5ba1b6'),
+	'0')
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/button_Rating Results '))
+
+WebUI.closeBrowser()
+
+
