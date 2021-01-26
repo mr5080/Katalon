@@ -15,7 +15,7 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 int randomLAaddress = 2 + ((Math.random() * ((19 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-//randomFLaddress = 105 // 105 causes address correction to pop		// this works for FL, need to find one for LA
+//randomLAaddress = 105 // 105 causes address correction to pop		// this works for FL, need to find one for LA
 System.out.println(randomLAaddress)
 
 int randomLAaddressPrior = 2 + ((Math.random() * ((19 - 2) + 1)) as int)
@@ -47,7 +47,7 @@ System.out.println((((((addressLAPrior + ' ') + cityLAPrior) + ' ') + stateLAPri
 
 
 
-Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx',
+Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LA-EvergreenData.xlsx',
 	'FirstName', false)
 
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
@@ -136,15 +136,17 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/LA Evergreen/Page_/s
 
 WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Property Zip Code_ApplicantZip'), zipLA)
 
+// need to add logic for multiple cities in the zip, get it from cypress 4
+
 WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
 
-WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Address_ApplicantAddress1'), addressLA)
+WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Address_ApplicantAddress1'), addressLA + Keys.chord(Keys.TAB))
 //WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 
 
-WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input'))
 
-WebUI.delay(10)
+
+//WebUI.delay(10)
 
 boolean elementPresent = WebUI.waitForAlert(10)
 
@@ -154,21 +156,44 @@ if (elementPresent == true) {
 	WebUI.delay(1)
 	WebUI.acceptAlert()
 	System.out.println('Accept address validation has been accepted' )
-	//WebUI.switchToDefaultContent()
+	WebUI.switchToDefaultContent()
 //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
 }
 		
+String geoCodeStatus = ''
+// in here need to check for successful geocode div
+if (WebUI.waitForElementVisible(findTestObject('Object Repository/LA Evergreen/Page_/td_GeoCodeSuccessful'), 30)) {
+	geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/LA Evergreen/Page_/td_GeoCodeSuccessful'), 'innerHTML')
+
+	System.out.println('geoCodeStatus = ' + geoCodeStatus)
+
+	geoCodeStatusTest = WebUI.getAttribute(findTestObject('Object Repository/LA Evergreen/Page_/td_GeoCodeSuccessful'), 'baseURI')
+
+	System.out.println('geoCodeStatusTest = ' + geoCodeStatusTest)
+} else {
+	System.out.println((('need to delete row ' + randomLAaddress) + ' and address = ') + addressLA)
+}
+
+
+WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input'))
+
+/*
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_X_GMAcceptButton'))
 
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input'))
 
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/button_Accept'))
+*/
 
 
+//WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/div_Effective Date'))
+System.out.println('apparently need to record the quick quote again as a new test case, then copy into LA Evergreen?')
+
+
 
 WebUI.setText(findTestObject('Object Repository/LA Evergreen/Page_/input_Effective Date_EffectiveDate'), '04/15/2021')
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Object Repository/LA Evergreen/Page_/input_No Agents Found_form-control btn ISiA_12e04e'))
 
