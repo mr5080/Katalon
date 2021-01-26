@@ -18,8 +18,7 @@ for(int z = 0; z < 100; z++)
 //import com.sun.org.apache.bcel.internal.generic.Select
 // Get random address
 // Read in FL address from excel file, true mean the first line consider as a header.
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
-    'FL Addresses', true)
+Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 
 //WebUI.acceptAlert()
 // random num between 2 - 120 (first line in excel file is a header)
