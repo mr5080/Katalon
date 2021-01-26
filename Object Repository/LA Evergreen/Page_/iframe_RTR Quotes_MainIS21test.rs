@@ -98,7 +98,7 @@
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>625px</value>
+      <value>707px</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
