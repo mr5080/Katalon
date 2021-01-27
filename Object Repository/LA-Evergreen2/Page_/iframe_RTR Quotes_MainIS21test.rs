@@ -3,15 +3,19 @@
    <description></description>
    <name>iframe_RTR Quotes_MainIS21test</name>
    <tag></tag>
-   <elementGuidId>f75a1c94-1474-4043-8f72-e5d43113bf03</elementGuidId>
+   <elementGuidId>ae5b9dea-87ed-4294-87f0-76bc9624c460</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#MainIS21test</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//iframe[@id='MainIS21test']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -94,7 +98,7 @@
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>707px</value>
+      <value>625px</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
