@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Please SelectJOHN  SMITH</name>
+   <name>select_Premiums Should be Billed To</name>
    <tag></tag>
    <elementGuidId>bf77cd4d-d5c6-4a71-84a3-547707ce0cee</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='BilLPolicy']</value>
+         <value>//select[@id='BillPolicy']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -108,7 +108,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='BilLPolicy']</value>
+      <value>//select[@id='BillPolicy']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

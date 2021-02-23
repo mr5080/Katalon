@@ -6,11 +6,11 @@
    <elementGuidId>9e59f98f-9f7f-4409-8313-e0113936efdd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -48,7 +48,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

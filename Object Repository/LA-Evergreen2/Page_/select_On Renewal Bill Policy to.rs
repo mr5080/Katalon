@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Please SelectJOHN  SMITH_1</name>
+   <name>select_On Renewal Bill Policy to</name>
    <tag></tag>
    <elementGuidId>d1ae1e19-0ba6-4eaa-bef2-70a967840a2f</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='BillPolicyRen']</value>
+         <value>//*[@id=&quot;BillPolicyRen&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

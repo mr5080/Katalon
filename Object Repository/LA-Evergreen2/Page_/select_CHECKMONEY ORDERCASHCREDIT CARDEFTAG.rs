@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='HowPaidCode']</value>
+         <value>//select[@id='HowPaidCombined']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

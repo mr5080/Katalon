@@ -6,12 +6,12 @@
    <elementGuidId>c64df43b-ff48-4d60-bf22-58797de94fc6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;ConstructionYear_1&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@type = 'text' and @name = 'ConstructionYear_1' and @id = 'ConstructionYear_1' and @ref_element = 'Object Repository/Testing Modal Accept/iframe_RTR Quotes_MainIS20test']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;ConstructionYear_1&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -105,7 +105,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Testing Modal Accept/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

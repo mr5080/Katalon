@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Quick Quote</name>
+   <name>button_Quick Quote</name>
    <tag></tag>
    <elementGuidId>b2a7db36-4d68-4b5e-a938-04545f9d332c</elementGuidId>
    <selectorCollection>
@@ -63,20 +63,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='Quick Quote']</value>
+      <value></value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='QuoteButtonDiv']/input[2]</value>
+      <value></value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td/div/input[2]</value>
+      <value></value>
    </webElementXpaths>
 </WebElementEntity>

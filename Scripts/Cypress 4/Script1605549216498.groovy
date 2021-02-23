@@ -155,7 +155,8 @@ if (isAgent == true) {
     System.out.println('should have set to agent 10100 - JHUGHES')
 }
 
-//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), 'HO3', true)
+WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
+
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), policyType, true)
 
 //WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'john555')
@@ -199,7 +200,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_Ap
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 
-//WebUI.switchToFrame( findTestObject('Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test', ['index' : 2]), 10)
+//WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
 /*
 try {
@@ -285,12 +286,38 @@ System.out.println('"$isAgent" = ' + isAgent)
 if (isAgent == false) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'test')
+
 
     // wait for dynamic table to populate?
     WebUI.delay(1)
 
-    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
+	
+	
+	
+	for(int x = 0; x < 10; x++)
+	{
+		try
+		{
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
+			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
+			// wait for dynamic table to populate?
+			WebUI.delay(1)
+			if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2))
+			{
+				WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
+				break
+			}
+		}
+		catch (def e)
+		{
+			System.out.println('didnt find it, trying again... ' + x )			
+		}
+			
+		}
+	
+	
+	
 }
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
@@ -341,6 +368,7 @@ System.out.println('trying to set purcahse date to  = ' + todaysDate)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), todaysDate)
 
 System.out.println('should have set purcahse date to  = ' + todaysDate)
+
 
 //WebUI.delay(7)
 //Construction Year - use DOB year if the input box is blank
@@ -426,6 +454,9 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 // need to click somewhere to get rid of the datepicker popup.
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
+
+//this line can be removed if 360 is working
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
 
 /* this was used for faking out the Construction Year logic to test the 40+ Construction Year, can probably be removed
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord('1900', Keys.TAB))  // delete it, not needed, just forces construction year
@@ -598,15 +629,13 @@ String replacementCost360 = '245000.00'
 
 if (policyType == 'HO3') {
     if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') {
-        System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 
-                'innerHTML'))
+        System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'),  'innerHTML'))
 
         replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
             // manually set Dwelling Cov A since replacement cost was not returned	        
             )
     } else {
-        replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), 
-            replacementCost360)
+        replacementCost360 = WebUI.getAttribute(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'),            replacementCost360)
     }
 }
 
@@ -705,7 +734,7 @@ totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Pa
 
 System.out.println('totalPremium = ' + totalPremium)
 
-WebUI.delay(5)
+WebUI.delay(1)
 
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
@@ -800,6 +829,7 @@ if (isAgent == false) {
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Quote Number'))
 'Bind Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
+
 
 //WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
 if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {

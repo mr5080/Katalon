@@ -94,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

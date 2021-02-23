@@ -6,12 +6,12 @@
    <elementGuidId>079b3d52-da2e-4a66-b483-83824dbdd30f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEButtonnone_1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEButtonnone_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEButtonnone_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -77,7 +77,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
