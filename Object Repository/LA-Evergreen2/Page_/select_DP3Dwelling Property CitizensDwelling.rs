@@ -6,12 +6,12 @@
    <elementGuidId>30b11420-e716-40bc-a7b6-b505e10992ad</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PolicyTypeCode</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='PolicyTypeCode']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PolicyTypeCode</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,63 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Billing</name>
+   <name>select_AdditionalInterest</name>
    <tag></tag>
-   <elementGuidId>b25ebb5e-4b47-434e-9d69-0c266b0f9abb</elementGuidId>
+   <elementGuidId>f64ac597-9524-45f5-bbab-499ec6224c8c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value> /html/body/div[1]/form/div/div[2]/div[2]/div[3]/button
- /html/body/div[1]/form/div/div[2]/div[2]/div[3]/button</value>
+         <key>CSS</key>
+         <value>#SubAgentCode</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>div.container:nth-child(1) div.ISiA-MainWrapper:nth-child(5) div.ISiA-MainContent.LeftMenuTwoArea div.row.justify-content-md-center div.col-md-3.m-3:nth-child(3) > button.w-100.btn.ISiA-PrimaryButton</value>
+         <key>XPATH</key>
+         <value>//select[@id='TrustBusEntity_1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
+      <value>select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-disablemessagetrigger</name>
+      <type>Main</type>
+      <value>false</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>w-100 btn ISiA-PrimaryButton</value>
+      <value>form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>type</name>
+      <name>name</name>
       <type>Main</type>
-      <value>button</value>
+      <value>SubAgentCode</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>SubAgentCode</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onclick</name>
+      <name>onblur</name>
       <type>Main</type>
-      <value>PageValidation(&quot;NEXTPAGE&quot;) &amp;&amp; processQuoteCurrentPages(1200) &amp;&amp; ShowLoadingSpinner() &amp;&amp; submit();</value>
+      <value> GlobalOnBlur(); </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value> GlobalOnChange(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Billing ></value>
+      <value>Select optionGARBER 6546846846KIMMICH 9874562MARTIN 6466666HUGHES 8671687GALLAGHER 646665LORCH 5551313</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent LeftMenuTwoArea&quot;]/div[@class=&quot;row justify-content-md-center&quot;]/div[@class=&quot;col-md-3 m-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
+      <value>id(&quot;SubAgentCode&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,11 +86,4 @@
       <type>Main</type>
       <value>Object Repository/LA-Evergreen2/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//button[@type='button'])[4]</value>
-   </webElementXpaths>
 </WebElementEntity>

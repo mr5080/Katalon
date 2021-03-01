@@ -41,6 +41,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+
+
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LA-EvergreenData.xlsx', 'LA Addresses', true)
 
@@ -144,6 +147,7 @@ System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 currentYear = Integer.parseInt(mydate.format('yyyy'))
 
 System.out.println('currentYear = ' + currentYear)
+
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
@@ -168,12 +172,13 @@ WebUI.selectOptionByLabel(findTestObject('Object Repository/LA-Evergreen2/Page_/
 
 
 //WebUI.selectOptionByLabel(findTestObject('LA-Evergreen2/Page_/select_DP3Dwelling Property CitizensDwelling'), 'LOUISIANA', true)
+
 WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_DP3Dwelling Property CitizensDwelling'), 'HOEG', true)
+
 
 WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Property Zip Code_ApplicantZip'), zipLA)
 
 WebUI.setText( findTestObject('Object Repository/LA-Evergreen2/Page_/input_Name_ApplicantName')  , fullName.toUpperCase())
-
 
 
 //WebUI.delay(5)
@@ -281,8 +286,12 @@ for(int x = 0; x < 20; x++)
 	try 
 	{
 	    //WebUI.clearText(findTestObject('LA-Evergreen2/Page_/input_SearchAgentCode'), FailureHandling.STOP_ON_FAILURE)
-	    //WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'test')
-		WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA TEST')
+		//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA TEST')
+		
+		
+		
+	    WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), '')
+		WebUI.sendKeys(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA TEST')
 	    //WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
 		//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
 	    // wait for dynamic table to populate?
@@ -407,10 +416,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/
 
 WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_NoneCentral Station Monitored Fire'), 'Local', true)
 
-WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_NoneAutomatic Sprinklers (Partial)Au'), 'PARTIAL', 
+WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_NoneAutomatic Sprinklers (Partial)Au'), 'NONE', 
     true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_NoneLevel 1Level 2Level 3'), '1', 
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_NoneLevel 1Level 2Level 3'), 'NONE', 
     true)
 
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Yes_NOSAVEHaveWoodStoves_1'))
@@ -498,7 +507,10 @@ WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Discoun
 'click Additional Interest button'
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Additional Interests'))
 
-'click Billing button'
+WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_AdditionalInterest'), 'INDIVIDUAL',  true)
+
+
+'click Billing button - uses CSS to locate since no name or ID'
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_Premiums Should be Billed To'), 'Applicant1',  true)
@@ -516,8 +528,11 @@ WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input__Deposit
 
 WebUI.doubleClick(findTestObject('Object Repository/LA-Evergreen2/Page_/input__DepositAmount'))
 
+
+
 'click Bind button'
-//WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Bind'))
+WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Bind'))
+
 
 //WebUI.rightClick(findTestObject('LA-Evergreen2/Page_/a_PolicyNumber'))
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'))
@@ -631,3 +646,5 @@ if (WebUI.waitForElementPresent( findTestObject('Object Repository/LA-Evergreen2
 WebUI.delay(3)
 
 WebUI.closeBrowser()
+
+
