@@ -62,4 +62,10 @@
       <type>Main</type>
       <value>//td[contains(.,'TEST AGENCY')]</value>
    </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//td[text()='10100']</value>
+   </webElementXpaths>
 </WebElementEntity>

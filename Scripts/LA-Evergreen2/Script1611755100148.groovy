@@ -45,6 +45,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 
 
+System.out.println("dontBind = " + dontBind)
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LA-EvergreenData.xlsx', 'LA Addresses', true)
 
 int randomLAaddress = 2 + ((Math.random() * ((110 - 2) + 1)) as int)
@@ -155,8 +156,16 @@ WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://accesshometest.cogisi.com/is/root/logon/index.cfm')
 //WebUI.navigateToUrl('https://accesshomestage.cogisi.com/is/root/logon/index.cfm')
 
-WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_AGENT CODE_userloginid'), 
-    '0')
+// agent 18210
+if(isAgent == true)
+{	
+	WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_AGENT CODE_userloginid'), '18210')
+}
+else
+{
+	WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+}
+
 
 WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_USERNAME_userloginname'), 
     'jhughes')
@@ -277,40 +286,38 @@ catch (Exception e) {
 	System.out.println('FDRC already accepted today')
 }
 
-WebUI.click(findTestObject('LA-Evergreen2/Page_/button_Agent Lookup'))
-
-// wait for dynamic table to populate?
-WebUI.delay(3)
-for(int x = 0; x < 20; x++)
+if(isAgent != true)
 {
-	try 
-	{
-	    //WebUI.clearText(findTestObject('LA-Evergreen2/Page_/input_SearchAgentCode'), FailureHandling.STOP_ON_FAILURE)
-		//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA TEST')
-		
-		
-		
-	    WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), '')
-		WebUI.sendKeys(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA TEST')
-	    //WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
-		//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
-	    // wait for dynamic table to populate?
-	    WebUI.delay(3)
-		if(WebUI.waitForElementVisible(findTestObject('Object Repository/LA-Evergreen2/Page_/td_LA TEST AGENT'), 2))
-		{
-			WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/td_LA TEST AGENT'))
-			break
-		}
-	}
-	catch (def e) 
-	{
-	    System.out.println('didnt find it, trying again... ' + x )	    
-	} 
+	WebUI.click(findTestObject('LA-Evergreen2/Page_/button_Agent Lookup'))
 	
-}
-
-WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_Select Agent'), '18210_JHUGHES', true)
-
+	// wait for dynamic table to populate?
+	//WebUI.delay(3)
+	for(int x = 0; x < 20; x++)
+	{
+		try 
+		{
+		    WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), '')
+			WebUI.sendKeys(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA ')
+			WebUI.sendKeys(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'TEST')  // not sure why, but have to do it 2 steps for the result to be found
+		    //WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
+			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
+		    // wait for dynamic table to populate?
+		    WebUI.delay(3)
+			if(WebUI.waitForElementVisible(findTestObject('Object Repository/LA-Evergreen2/Page_/td_LA TEST AGENT'), 2))
+			{
+				WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/td_LA TEST AGENT'))
+				break
+			}
+		}
+		catch (def e) 
+		{
+		    System.out.println('didnt find it, trying again... ' + x )	    
+		} 
+		
+	}
+	
+	WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_Select Agent'), '18210_JHUGHES', true)
+}	
 //WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/div_Effective Date'))
 
 WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Effective Date_EffectiveDate'), '04/15/2021')
@@ -424,7 +431,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/
 
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Yes_NOSAVEHaveWoodStoves_1'))
 
-WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Yes_NOSAVEBookTransferDiscount_1'))
+if(isAgent != true)
+{
+	WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Yes_NOSAVEBookTransferDiscount_1'))
+}
 
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Yes_NOSAVECompanionPolicyDiscount_1'))
 
@@ -514,6 +524,12 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_Premiums Should be Billed To'), 'Applicant1',  true)
+
+'click Bind button'
+if(dontBind == true)
+{
+	WebUI.closeBrowser()
+}
 
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_BindSubmit Application'))
 System.out.println("before clicking select")
@@ -608,9 +624,9 @@ if (WebUI.waitForElementPresent( findTestObject('Object Repository/LA-Evergreen2
 
 		sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
 
-		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+		//sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 
-		sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+		//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
 	}
 	catch (Exception e) {
 		//  Block of code to handle errors

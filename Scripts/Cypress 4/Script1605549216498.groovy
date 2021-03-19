@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+System.out.println("shouldBind value = " + shouldBind)
 /*
 for(int z = 0; z < 100; z++)
 {
@@ -124,36 +125,37 @@ System.out.println('currentYear = ' + currentYear)
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), 
-    '0')
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_USERNAME_userloginname'), 
-    'JHUGHES')
+if (isAgent == true) 
+	{
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '10100')
+	System.out.println('should be logging in as agent 10100 - JHUGHES')
+}
+else
+{
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '0')
+}
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
-    '1w8xCCmEypU3q31XlL176w==')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_USERNAME_userloginname'), 'JHUGHES')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), '1w8xCCmEypU3q31XlL176w==')
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
     Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
-// Change to agent
-//Boolean agent = false
-'Internal vs Agent, isAgent = true, false = internal '
 System.out.println('$isAgent = ' + isAgent)
 
-'Change to agent'
-if (isAgent == true) {
-    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_Running As'), '10100 - JHUGHES', 
-        false)
 
-    System.out.println('should have set to agent 10100 - JHUGHES')
-}
+junk = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), 'value')  //getText - gets value of input box
+//	   WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'))
+System.out.println('EffectiveDate = ' + junk)
+
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -166,8 +168,8 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), zipFL)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), 'Charles Manson')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), 'JOHN SMITH')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
 
 //check value of city dropdown with what is in cityFL
 int totalCitiesAvailable = WebUI.getNumberOfTotalOption(findTestObject('Object Repository/Cypress 4/Page_/select_City List'))
@@ -215,7 +217,7 @@ catch (Exception e) {
 */
 //WebUI.delay(5)
 // seems to be working, if it is can remove the try/catch above - 12/18/20
-boolean elementPresent = WebUI.waitForAlert(10)
+boolean elementPresent = WebUI.waitForAlert(5)
 
 if (elementPresent == true) {
     alertText = WebUI.getAlertText()
@@ -286,19 +288,16 @@ System.out.println('"$isAgent" = ' + isAgent)
 if (isAgent == false) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
-
-
     // wait for dynamic table to populate?
     WebUI.delay(1)
 
-	
-	
-	
 	for(int x = 0; x < 10; x++)
 	{
 		try
 		{
-			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'TEST ')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
 			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
 			// wait for dynamic table to populate?
@@ -324,7 +323,7 @@ if (isAgent == false) {
 // 
 //need to click somewhere to get rid of the datepicker popup.
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate)	 // no longer needed since Effective date is now being set to todays date (11/16/20)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate)	 // no longer needed since Effective date is now being set to todays date (11/16/20)
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
 int thisYear = Calendar.getInstance().get(Calendar.YEAR) - 19 // this year minus 19 to prevent under 18 year old DOB dates
@@ -354,8 +353,8 @@ String DOB = (((month + '/') + day) + '/') + year
 //}
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + year)
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + 
-    year) + '@gmail.com')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), DOB)
@@ -373,8 +372,7 @@ System.out.println('should have set purcahse date to  = ' + todaysDate)
 //WebUI.delay(7)
 //Construction Year - use DOB year if the input box is blank
 //System.out.println("HERE ")
-String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 
-    'value')
+String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'),  'value')
 
 System.out.println('constructionYear  = ' + constructionYear)
 
@@ -384,13 +382,24 @@ int constructionYearInt = 0
 
 System.out.println('constructionYear.length() SECOND  = ' + constructionYear.length())
 
-if (constructionYear.length() > 1) {
+if (constructionYear.length() > 1) 
+	{
     System.out.println('in the if')
-
     constructionYearInt = Integer.valueOf(constructionYear)
-
-    System.out.println('constructionYearInt - IF == ' + constructionYearInt // (constructionYearInt == '')
-        )
+    System.out.println('constructionYearInt - IF == ' + constructionYearInt) // (constructionYearInt == '')
+	
+	System.out.println("constructionYear.toInteger() = " + constructionYear.toInteger()  )
+	System.out.println("constructionYear.toInteger() - 1= " + constructionYear.toInteger() - 1  )
+	//constructionYear.toInteger() < 2010
+	if(constructionYear.toInteger() < 2010)
+	{
+		constructionYear = 2006
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
+		
+		System.out.println("constructionYear and roof year reset to " + constructionYear)
+	}
+        
 } else {
     System.out.println('in the else')
 
@@ -401,7 +410,8 @@ if (constructionYear.length() > 1) {
 
 System.out.println('constructionYearInt == ' + constructionYearInt)
 
-if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
+// this logic changed week of 3/19/21 should probably update the prior address logic?
+if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
 {
     int randomNumber = 0
 
@@ -456,7 +466,7 @@ if ((currentYear - constructionYearInt) <= 3) //need to fill in Prior Mailing Ad
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 
 //this line can be removed if 360 is working
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
 
 /* this was used for faking out the Construction Year logic to test the 40+ Construction Year, can probably be removed
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord('1900', Keys.TAB))  // delete it, not needed, just forces construction year
@@ -475,11 +485,9 @@ if (policyType == 'HO6') {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
 }
 
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == 
-'') {
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(
-            year, Keys.TAB /// this is good
-            ))
+if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') 
+	{
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(year, Keys.TAB))
 
     System.out.println('set Construction Year')
 
@@ -499,8 +507,7 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
             // need to click Close on popup warning if differenceYears > 40
             WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Close button -Modal window'))
 
-            System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' + 
-                (currentYear - constructionYearInt))
+            System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' + (currentYear - constructionYearInt))
         }
         catch (Exception e) {
             System.out.println(e)
@@ -511,20 +518,23 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
 }
 
 //Year of Roof, sets it incase it is blank
-String roofYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 
-    'value')
+String roofYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 'value')
 
 System.out.println('roofYear = ' + roofYear)
 
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 'value') == 
-'') {
+if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 'value') == '') 
+{
+	if(constructionYear == 2015)
+	{
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
+	}
     // using year for random year
     //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), year)
     // changed to 2018 due to validation of 'Year of Roof cannot be earlier than Construction Year.'
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2020')
 
-    System.out.println('set year' // sets to same as construction year (which is also the same as dob year)
-        )
+	// sets to same as construction year (which is also the same as dob year
+    System.out.println('set year' )
 }
 
 // Square Feet, sets it incase it is blank
@@ -544,7 +554,9 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'F', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
+//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
+
 
 /* these fields are no longer mandatory
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + 
@@ -725,6 +737,12 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAge
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl2_1'))
 
+
+// new billing page
+WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
+
 'Display Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Display Quote'))
 
@@ -739,24 +757,18 @@ WebUI.delay(1)
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
-'Payment information'
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
 
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
 // if agent == true, they cant take a check
-if (isAgent == false) {
-    //for(int z = 0; z < 100; z++){
-    randomNumber2 = ((Math.random() * 3 // generates random number, either 0, 1, 2 used to randomize payment method
-        ) as int)
-
+if (isAgent == false) 
+{
+	// generates random number, either 0, 1, 2 used to randomize payment method
+    randomNumber2 = ((Math.random() * 3 ) as int)
     System.out.println('randomNumber2 = ' + randomNumber2)
 
-    //}
-    String depositAmount = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount'), 
-        'innerHTML')
+    String depositAmount = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount'), 'innerHTML')
 
     System.out.println('depositAmount = ' + depositAmount)
 
@@ -826,95 +838,100 @@ if (isAgent == false) {
     }
 }
 
-//WebUI.click(findTestObject('Cypress 4/Page_/div_Quote Number'))
-'Bind Application button'
-WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
+System.out.println('quoteNumber = ' + quoteNumber)
+System.out.println('fullName = ' + fullName)
+System.out.println('shouldBind = ' + shouldBind)
 
-
-//WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {
-    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
-
-    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
-
-    System.out.println('policyNumber = ' + policyNumber)
-
-    // write last name, first name to excel file
-    FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-    XSSFWorkbook workbook = new XSSFWorkbook(file)
-
-    XSSFSheet sheet = workbook.getSheet('Sheet1')
-
-    //String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
-    //System.out.println(Data_fromCell)
-    // count rows currently in the file
-    'Read data from excel'
-    int rowCount = sheet.getLastRowNum() + 1
-
-    System.out.println('rowCount = ' + rowCount)
-
-    'Write data to excel'
-    try {
-        //  Block of code to try to write to cell
-        sheet.createRow(rowCount //create new row
-            )
-
-        sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
-
-        sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
-
-        sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
-
-        sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-
-        sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
-
-        // removes all chars from string
-        //sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-        sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-
-        policyCreated = new Date()
-
-        System.out.println('myDate = ' + policyCreated)
-
-        sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
-
-        sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
-
-        sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-    }
-    catch (Exception e) {
-        //  Block of code to handle errors
-        //sheet.createRow(rowCount);	//create new row
-        //sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
-        System.out.println(e)
-    } 
-    
-    file.close()
-
-    try {
-        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-        workbook.write(outFile)
-
-        outFile.close()
-    }
-    catch (Exception e) {
-        System.out.println(e)
-
-        WebUI.delay(20)
-
-        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-        workbook.write(outFile)
-
-        outFile.close()
-    } 
-} else {
-    System.out.println('in the else, FAILED to find policy number')
+if(shouldBind == true)
+{
+	'Bind Application button'
+	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
+	
+	//WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
+	if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {
+	    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
+	
+	    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
+	
+	    System.out.println('policyNumber = ' + policyNumber)
+	
+	    // write last name, first name to excel file
+	    FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+	
+	    XSSFWorkbook workbook = new XSSFWorkbook(file)
+	
+	    XSSFSheet sheet = workbook.getSheet('Sheet1')
+	
+	    //String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
+	    //System.out.println(Data_fromCell)
+	    // count rows currently in the file
+	    'Read data from excel'
+	    int rowCount = sheet.getLastRowNum() + 1
+	
+	    System.out.println('rowCount = ' + rowCount)
+	
+	    'Write data to excel'
+	    try {
+	        //  Block of code to try to write to cell
+	        sheet.createRow(rowCount //create new row
+	            )
+	
+	        sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
+	
+	        sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
+	
+	        sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
+	
+	        sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
+	
+	        sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
+	
+	        // removes all chars from string
+	        //sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
+	        sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
+	
+	        policyCreated = new Date()
+	
+	        System.out.println('myDate = ' + policyCreated)
+	
+	        sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+	
+	        sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+	
+	        sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+	    }
+	    catch (Exception e) {
+	        //  Block of code to handle errors
+	        //sheet.createRow(rowCount);	//create new row
+	        //sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
+	        System.out.println(e)
+	    } 
+	    
+	    file.close()
+	
+	    try {
+	        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+	
+	        workbook.write(outFile)
+	
+	        outFile.close()
+	    }
+	    catch (Exception e) {
+	        System.out.println(e)
+	
+	        WebUI.delay(20)
+	
+	        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+	
+	        workbook.write(outFile)
+	
+	        outFile.close()
+	    } 
+	} else {
+	    System.out.println('in the else, FAILED to find policy number')
+	}
 }
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 WebUI.closeBrowser()

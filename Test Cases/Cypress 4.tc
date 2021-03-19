@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>f3f06d5e-eebe-4fef-b431-80ceb3b6f32a</id>
+      <masked>false</masked>
+      <name>shouldBind</name>
+   </variable>
 </TestCaseEntity>
