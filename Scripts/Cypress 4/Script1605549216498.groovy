@@ -8,6 +8,7 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 System.out.println("shouldBind value = " + shouldBind)
+
 /*
 for(int z = 0; z < 100; z++)
 {
