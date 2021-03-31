@@ -6,12 +6,12 @@
    <elementGuidId>1b901449-8fa7-49b9-bdd5-f0abcd4e2863</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#InternalProtectionClass_1</value>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-ProtectionClass_1']/div/div/select</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='InternalProtectionClass_1']</value>
+         <key>CSS</key>
+         <value>#InternalProtectionClass_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

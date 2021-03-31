@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_CHECKMONEY ORDERCASHCREDIT CARDEFTAG</name>
+   <name>select_PaymentMethod</name>
    <tag></tag>
-   <elementGuidId>5387f6b6-2621-43ad-b9b6-c536db958ed0</elementGuidId>
+   <elementGuidId>e70b8274-3462-4a9b-b901-4b5db9794a7a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='HowPaidCombined']
-</value>
+         <value>//select[@id='HowPaidCombined']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#HowPaidCode</value>
+         <value>#BillPolicyRen</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -50,28 +49,28 @@
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>HowPaidCode</value>
+      <value>BillPolicyRen</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>HowPaidCode</value>
+      <value>BillPolicyRen</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value> GlobalOnBlur();  GlobalCheckDisable(this);</value>
+      <value> GlobalOnBlur();   CheckRequired(false);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
+      <value> GlobalOnChange(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -81,31 +80,11 @@
       <value>
 							
 									
-										
+										Please Select
 									
 								
 									
-										CHECK
-									
-								
-									
-										MONEY ORDER
-									
-								
-									
-										CASH
-									
-								
-									
-										CREDIT CARD
-									
-								
-									
-										EFT
-									
-								
-									
-										AGENCY SWEEP
+										JOHN  SMITH 
 									
 								
 						</value>
@@ -115,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;HowPaidCode&quot;)</value>
+      <value>id(&quot;BillPolicyRen&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,53 +103,4 @@
       <type>Main</type>
       <value>Object Repository/LA-Evergreen2/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//select[@id='HowPaidCode']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Right-HowPaidCode']/div/div/select</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Payment Method'])[1]/following::select[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Down Payment Information'])[1]/following::select[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Collect Credit Card Information'])[1]/preceding::select[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter Credit Card Information'])[1]/preceding::select[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/div[2]/div/div/div[2]/div/div/select</value>
-   </webElementXpaths>
 </WebElementEntity>

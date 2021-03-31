@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_ExpectedDepositAmount</name>
+   <name>td_RequiredDepositAmount</name>
    <tag></tag>
    <elementGuidId>6650f6b9-57c6-4537-8344-e0a16e54a088</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-REQUIREDDEPOSITAMOUNT']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Wrapper-Right-ExpectedDeposit']</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

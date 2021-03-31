@@ -168,8 +168,8 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), zipFL)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), 'JOHN SMITH')
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), 'JOHN SMITH')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
 
 //check value of city dropdown with what is in cityFL
 int totalCitiesAvailable = WebUI.getNumberOfTotalOption(findTestObject('Object Repository/Cypress 4/Page_/select_City List'))
@@ -420,10 +420,10 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
     randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
         ) as int)
 
-    //randomNumber = 1	// force International or not. 0 = US, 1 = International		
+    randomNumber = 1	// force International or not. 0 = US, 1 = International		
     System.out.println('randomNumber = ' + randomNumber)
 
-    //randomNumber = 1 // force to be international
+    randomNumber = 0 // 1 = force to be international
     //}
     System.out.println('need to fill in prior mailing address stuff')
 
@@ -435,8 +435,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 
             cityFLPrior)
 
-        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), stateFLPrior, 
-            false)
+        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), stateFLPrior, false)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior //
             // outputs dropdown label
@@ -558,17 +557,17 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'),
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
 
 
-/* these fields are no longer mandatory
-WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + 
-    ' Fire Department')
+// these fields are no longer mandatory
+WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + ' Fire Department')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123456788B910'), '1', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123456788B910'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Distance to Fire Hydrant'), 
-    '01', true)
-*/
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Less than 1000 feetOver 1000 feet'), 
-    'LT1000', true)
+//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Distance to Fire Hydrant'),    '01', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ProtectionClass'), '1', true)
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
@@ -768,7 +767,7 @@ if (isAgent == false)
     randomNumber2 = ((Math.random() * 3 ) as int)
     System.out.println('randomNumber2 = ' + randomNumber2)
 
-    String depositAmount = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_ExpectedDepositAmount'), 'innerHTML')
+    String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
 
     System.out.println('depositAmount = ' + depositAmount)
 

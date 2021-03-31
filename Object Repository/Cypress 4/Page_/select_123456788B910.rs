@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='ProtectionClass_1']</value>
+         <value>//div[@id='Wrapper-Right-ProtectionClass_1']/div/div/select</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

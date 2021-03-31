@@ -45,7 +45,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
 
 
-System.out.println("dontBind = " + dontBind)
+System.out.println("shouldBind = " + shouldBind)
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LA-EvergreenData.xlsx', 'LA Addresses', true)
 
 int randomLAaddress = 2 + ((Math.random() * ((110 - 2) + 1)) as int)
@@ -286,7 +286,7 @@ catch (Exception e) {
 	System.out.println('FDRC already accepted today')
 }
 
-if(isAgent != true)
+if(isAgent != true)		// something wrong with this logic if isAgent = false. worked at one point, but not on 3/31/21
 {
 	WebUI.click(findTestObject('LA-Evergreen2/Page_/button_Agent Lookup'))
 	
@@ -475,8 +475,12 @@ WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Prior 
 WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Prior Policy Number_PriorPolicyNumber_1'), '123456789')
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_Protection Class 1Protection Class 2_2c389b_1'), 
-    '6', true)
+// need to create subdivision selector and fill it in with a try catch
+WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Subdivision'), 'Johns Neighborhood')
+
+
+//WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_Protection Class 1Protection Class 2'), '6', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_Protection Class 1Protection Class 2_2c389b_1'), '6', true)
 
 
 WebUI.setText(findTestObject('LA-Evergreen2/Page_/input_Year Heating System Installed'), '2016')
@@ -525,141 +529,144 @@ WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Billing
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/LA-Evergreen2/Page_/select_Premiums Should be Billed To'), 'Applicant1',  true)
 
-'click Bind button'
-if(dontBind == true)
-{
-	WebUI.closeBrowser()
-}
-
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_BindSubmit Application'))
-System.out.println("before clicking select")
-WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_On Renewal Bill Policy to'), 'Applicant1',  true)
 
-System.out.println("after clicking select")
-WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_CHECKMONEY ORDERCASHCREDIT CARDEFTAG'), 'C', true)
-
-WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Check or Money Order Number_CheckNumber'), '1000')
-
-WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input__DepositAmount'))
-
-WebUI.doubleClick(findTestObject('Object Repository/LA-Evergreen2/Page_/input__DepositAmount'))
-
-
-
-'click Bind button'
-WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Bind'))
-
-
-//WebUI.rightClick(findTestObject('LA-Evergreen2/Page_/a_PolicyNumber'))
-WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'))
-
-
-
-
-if (WebUI.waitForElementPresent( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber')  , 45)) {
-	WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenScreenShots\\' + todaysTimeStamp) + '.jpg')
-
-	try 
-	{
-		policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'textContent')
+if(shouldBind == true)
+{
+		
+	System.out.println("before clicking select")
+	WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_On Renewal Bill Policy to'), 'Applicant1',  true)
+	
+	System.out.println("agent cant take Check payment, option not in dropdown")
+	//WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_CHECKMONEY ORDERCASHCREDIT CARDEFTAG'), 'C', false)
+	
+	WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_PaymentMethod'), 'PR', false)
+	
+	//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Check or Money Order Number_CheckNumber'), '1000')
+	
+	WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/input__DepositAmount'))
+	
+	WebUI.doubleClick(findTestObject('Object Repository/LA-Evergreen2/Page_/input__DepositAmount'))
+	
+	
+	
+	'click Bind button'
+	WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/button_Bind'))
+	
+	
+	//WebUI.rightClick(findTestObject('LA-Evergreen2/Page_/a_PolicyNumber'))
+	WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'))
+	
+	
+	
+	
+	if (WebUI.waitForElementPresent( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber')  , 45)) {
+		WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenScreenShots\\' + todaysTimeStamp) + '.jpg')
+	
+		try 
+		{
+			policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'textContent')
+			System.out.println('policyNumber = ' + policyNumber)
+		}catch(e) {}
+		   
+	/*	String policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'innerHTML')
 		System.out.println('policyNumber = ' + policyNumber)
-	}catch(e) {}
-	   
-/*	String policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'innerHTML')
-	System.out.println('policyNumber = ' + policyNumber)
+		
+		 policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'innerTEXT')
+		System.out.println('policyNumber = ' + policyNumber)
+		
+		try {
+		 policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'outerHTML')
+		System.out.println('policyNumber = ' + policyNumber)
+		}catch(e) {}
+		
+		try {
+		policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'outerTEXT')
+		System.out.println('policyNumber = ' + policyNumber)
+		}catch(e) {}	
+		*/
+		 
 	
-	 policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'innerTEXT')
-	System.out.println('policyNumber = ' + policyNumber)
+		// write last name, first name to excel file
+		FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
 	
-	try {
-	 policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'outerHTML')
-	System.out.println('policyNumber = ' + policyNumber)
-	}catch(e) {}
+		XSSFWorkbook workbook = new XSSFWorkbook(file)
 	
-	try {
-	policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'outerTEXT')
-	System.out.println('policyNumber = ' + policyNumber)
-	}catch(e) {}	
-	*/
-	 
-
-	// write last name, first name to excel file
-	FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
-
-	XSSFWorkbook workbook = new XSSFWorkbook(file)
-
-	XSSFSheet sheet = workbook.getSheet('Sheet1')
-
-	//String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
-	//System.out.println(Data_fromCell)
-	// count rows currently in the file
-	'Read data from excel'
-	int rowCount = sheet.getLastRowNum() + 1
-
-	System.out.println('rowCount = ' + rowCount)
-
-	'Write data to excel'
-	try {
-		//  Block of code to try to write to cell
-		sheet.createRow(rowCount //create new row
-			)
-
-		sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
-
-		sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
-
-		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
-
-		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-
-		sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
-
-		// removes all chars from string
-		//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-		sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-
-		policyCreated = new Date()
-
-		System.out.println('myDate = ' + policyCreated)
-
-		sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
-
-		//sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
-
-		//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-	}
-	catch (Exception e) {
-		//  Block of code to handle errors
-		//sheet.createRow(rowCount);	//create new row
-		//sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
-		System.out.println(e)
+		XSSFSheet sheet = workbook.getSheet('Sheet1')
+	
+		//String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
+		//System.out.println(Data_fromCell)
+		// count rows currently in the file
+		'Read data from excel'
+		int rowCount = sheet.getLastRowNum() + 1
+	
+		System.out.println('rowCount = ' + rowCount)
+	
+		'Write data to excel'
+		try {
+			//  Block of code to try to write to cell
+			sheet.createRow(rowCount //create new row
+				)
+	
+			sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
+	
+			sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
+	
+			sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
+	
+			sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
+	
+			sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
+	
+			// removes all chars from string
+			//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
+			sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
+	
+			policyCreated = new Date()
+	
+			System.out.println('myDate = ' + policyCreated)
+	
+			sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+	
+			//sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+	
+			//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+		}
+		catch (Exception e) {
+			//  Block of code to handle errors
+			//sheet.createRow(rowCount);	//create new row
+			//sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
+			System.out.println(e)
+		}
+		
+		file.close()
+	
+		try {
+			FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
+	
+			workbook.write(outFile)
+	
+			outFile.close()
+		}
+		catch (Exception e) {
+			System.out.println(e)
+	
+			WebUI.delay(20)
+	
+			FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
+	
+			workbook.write(outFile)
+	
+			outFile.close()
+		}
+	} else {
+		System.out.println('in the else, FAILED to find policy number')
 	}
 	
-	file.close()
+	WebUI.delay(3)
 
-	try {
-		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
-
-		workbook.write(outFile)
-
-		outFile.close()
-	}
-	catch (Exception e) {
-		System.out.println(e)
-
-		WebUI.delay(20)
-
-		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\LAEvergreenAutoQuotes.xlsx'))
-
-		workbook.write(outFile)
-
-		outFile.close()
-	}
-} else {
-	System.out.println('in the else, FAILED to find policy number')
 }
 
-WebUI.delay(3)
 
 WebUI.closeBrowser()
 

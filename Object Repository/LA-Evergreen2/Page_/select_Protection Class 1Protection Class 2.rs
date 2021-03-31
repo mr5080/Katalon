@@ -6,12 +6,13 @@
    <elementGuidId>6c5a7223-9b84-483a-bddb-85376456a4b5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#AppProtectionClass_1</value>
+         <key>XPATH</key>
+         <value>//select[@id='InternalProtectionClass_1']
+</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='AppProtectionClass_1']</value>
+         <key>CSS</key>
+         <value>#AppProtectionClass_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

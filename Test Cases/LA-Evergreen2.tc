@@ -6,11 +6,11 @@
    <comment></comment>
    <testCaseGuid>2905bcc6-8303-4789-830b-1900d8377934</testCaseGuid>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>43e099cb-a686-46cb-9aae-7159e12d0f30</id>
       <masked>false</masked>
-      <name>dontBind</name>
+      <name>shouldBind</name>
    </variable>
    <variable>
       <defaultValue>true</defaultValue>

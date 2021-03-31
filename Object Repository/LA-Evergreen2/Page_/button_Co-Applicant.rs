@@ -6,12 +6,13 @@
    <elementGuidId>233fb458-0510-4830-8ade-41d1b3eeb983</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton</value>
+         <key>XPATH</key>
+         <value>//button[contains(text(),'Co-Applicant >')]
+</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[5]</value>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,16 +6,20 @@
    <elementGuidId>b851e6e4-a79c-47d3-bd4b-3709ba36dfc6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.col-md-2.m-3 > button.w-100.btn.ISiA-PrimaryButton</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@value='Rating Results >']
 </value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.col-md-2.m-3 > button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Rating Results >' or . = 'Rating Results >')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
