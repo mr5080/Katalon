@@ -392,9 +392,9 @@ if (constructionYear.length() > 1)
 	System.out.println("constructionYear.toInteger() = " + constructionYear.toInteger()  )
 	System.out.println("constructionYear.toInteger() - 1= " + constructionYear.toInteger() - 1  )
 	//constructionYear.toInteger() < 2010
-	if(constructionYear.toInteger() < 2010)
+	if(constructionYear.toInteger() < 2015)
 	{
-		constructionYear = 2006
+		constructionYear = 2015
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
 		
