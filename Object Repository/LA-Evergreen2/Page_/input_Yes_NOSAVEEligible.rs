@@ -6,12 +6,12 @@
    <elementGuidId>64ae5cf5-bb82-4528-87c3-5bbf4991e100</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEEligibleNo</value>
+         <key>XPATH</key>
+         <value>//div[2]/div[2]/input</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEEligibleNo']</value>
+         <key>CSS</key>
+         <value>#NOSAVEEligibleNo</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -65,10 +65,13 @@ int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
 System.out.println(randomFirstNameRow)
 
 String randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
+String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow-1)
 
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
+randomFirstName = randomFirstNameForInterest.replaceAll('[\\d.]', '')
 
 System.out.println(randomFirstName)
+System.out.println(randomFirstNameForInterest)
 
 // Last name from excel file
 Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
@@ -702,6 +705,19 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - History'))
 'Interests button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Interests'))
 
+'Add Interest info'
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_InterestAdd'))
+WebUI.selectOptionByValue(  findTestObject('Object Repository/Cypress 4/Page_/select_TypeOfAdditionalInterest')  , 'M', true)
+WebUI.delay(3)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestName'), randomFirstNameForInterest + " " + randomLastName)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestAddress'), "PO BOX " + constructionYear)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestCity'), "Jacksonville")
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), "FL", true)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32245")
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), constructionYear+constructionYear)
+
+
 'Statements button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Statements'))
 
@@ -838,9 +854,6 @@ if (isAgent == false)
     }
 }
 
-System.out.println('quoteNumber = ' + quoteNumber)
-System.out.println('fullName = ' + fullName)
-System.out.println('shouldBind = ' + shouldBind)
 
 if(shouldBind == true)
 {
@@ -932,6 +945,87 @@ if(shouldBind == true)
 	}
 }
 
-WebUI.delay(1)
+else // shouldBind = false, still write quote number to file
+{
+	// write last name, first name to excel file
+	FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+
+	XSSFWorkbook workbook = new XSSFWorkbook(file)
+
+	XSSFSheet sheet = workbook.getSheet('Sheet1')
+
+	//String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
+	//System.out.println(Data_fromCell)
+	// count rows currently in the file
+	'Read data from excel'
+	int rowCount = sheet.getLastRowNum() + 1
+
+	System.out.println('rowCount = ' + rowCount)
+
+	'Write data to excel'
+	try 
+	{
+		//  Block of code to try to write to cell
+		sheet.createRow(rowCount)
+
+		sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
+
+		sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
+
+		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
+
+		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
+
+		sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
+
+		// removes all chars from string
+		//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
+		sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
+
+		policyCreated = new Date()
+
+		System.out.println('myDate = ' + policyCreated)
+
+		sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+
+		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+
+		sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+	}
+	catch (Exception e) 
+	{
+		//  Block of code to handle errors
+		//sheet.createRow(rowCount);	//create new row
+		//sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
+		System.out.println(e)
+	}
+	
+	file.close()
+
+	try 
+	{
+		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+
+		workbook.write(outFile)
+
+		outFile.close()
+	}
+	catch (Exception e) 
+	{
+		System.out.println(e)
+
+		WebUI.delay(20)
+
+		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+
+		workbook.write(outFile)
+
+		outFile.close()
+	}
+}
+System.out.println('quoteNumber = ' + quoteNumber)
+System.out.println('fullName = ' + fullName)
+System.out.println('shouldBind = ' + shouldBind)
+
 
 WebUI.closeBrowser()

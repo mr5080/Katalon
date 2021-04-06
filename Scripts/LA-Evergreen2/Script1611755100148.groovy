@@ -476,7 +476,7 @@ WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Prior 
 
 
 // need to create subdivision selector and fill it in with a try catch
-WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Subdivision'), 'Johns Neighborhood')
+//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_Subdivision'), 'Johns Neighborhood')
 
 
 //WebUI.selectOptionByValue(findTestObject('LA-Evergreen2/Page_/select_Protection Class 1Protection Class 2'), '6', true)
@@ -666,7 +666,7 @@ if(shouldBind == true)
 	WebUI.delay(3)
 
 }
-
+System.out.println('quoteNumber = ' + quoteNumber)
 
 WebUI.closeBrowser()
 
