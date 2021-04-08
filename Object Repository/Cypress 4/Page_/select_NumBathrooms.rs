@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1152253354</name>
+   <name>select_NumBathrooms</name>
    <tag></tag>
    <elementGuidId>f52a117f-f0d1-42b7-873d-215f98c5bd55</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='NumberBaths_1']</value>
+         <value>//select[@id='NumBathrooms_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

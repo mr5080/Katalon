@@ -131,11 +131,17 @@ WebUI.openBrowser('')
 
 //WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
-
+if(environment == "TEST")
+{
+	WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+}
+else if(environment == "STAGE")
+{
+	WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
+}
 
 if (isAgent == true) 
-	{
+{
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '10100')
 	System.out.println('should be logging in as agent 10100 - JHUGHES')
 }
@@ -424,7 +430,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
     randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
         ) as int)
 
-    randomNumber = 1	// force International or not. 0 = US, 1 = International		
+    //randomNumber = 1	// force International or not. 0 = US, 1 = International		
     System.out.println('randomNumber = ' + randomNumber)
 
     randomNumber = 0 // 1 = force to be international
@@ -681,7 +687,7 @@ System.out.println('replacementCost360 = ' + replacementCost360)
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), replacementCost360)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_1152253354'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_NumBathrooms'), '2', true)
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Primary Heat System'), 'ELECTRIC', true)
 
@@ -692,6 +698,7 @@ if (policyType == 'HO3') {
 
     WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_RoofLayers'), '1', true)
 }
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ClosedOpen'), 'CLOSED', true)
 
