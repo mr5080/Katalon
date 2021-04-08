@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
+         <value>//div/div/table/tbody/tr[4]/td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -51,41 +51,6 @@
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Number:'])[1]/following::td[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cypress Property &amp; Casualty Insurance Company'])[1]/following::td[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Named Insured:'])[1]/preceding::td[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='THAO GUIDRY'])[1]/preceding::td[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='IFH400011200']/parent::*</value>
-   </webElementXpaths>
-   <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
@@ -96,6 +61,12 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Number:'])[1]/following::td[1]</value>
+      <value>//div[contains(text(),'Policy Number: IFH')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]</value>
    </webElementXpaths>
 </WebElementEntity>

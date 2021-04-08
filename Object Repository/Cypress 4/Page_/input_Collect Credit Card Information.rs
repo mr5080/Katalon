@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEButtonnone_1']</value>
+         <value>//input[@id='NOSAVEButtonnone']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -84,7 +84,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='NOSAVEButtonnone_1']</value>
+      <value>//button[@id='NOSAVEButtonnone']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

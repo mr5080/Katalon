@@ -715,7 +715,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Interests'))
 'Add Interest info'
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_InterestAdd'))
 WebUI.selectOptionByValue(  findTestObject('Object Repository/Cypress 4/Page_/select_TypeOfAdditionalInterest')  , 'M', true)
-WebUI.delay(3)
+//WebUI.delay(3)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestName'), randomFirstNameForInterest + " " + randomLastName)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestAddress'), "PO BOX " + constructionYear)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestCity'), "Jacksonville")
@@ -775,7 +775,7 @@ totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Pa
 
 System.out.println('totalPremium = ' + totalPremium)
 
-WebUI.delay(1)
+//WebUI.delay(1)
 
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
@@ -785,21 +785,19 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
 // if agent == true, they cant take a check
-if (isAgent == false) 
-{
+//if (isAgent == false) 
+//{
 	// generates random number, either 0, 1, 2 used to randomize payment method
     randomNumber2 = ((Math.random() * 3 ) as int)
     System.out.println('randomNumber2 = ' + randomNumber2)
 
     String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
-
     System.out.println('depositAmount = ' + depositAmount)
 
     depositAmount = depositAmount.replaceAll('[^\\d.]', '')
-
     System.out.println('depositAmount = ' + depositAmount)
 
-    randomNumber2 = 0 // credit card and eft have defects, cant bind with them currently, 12/3/20
+    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 
     if (randomNumber2 == 0) {
         'Check'
@@ -815,10 +813,11 @@ if (isAgent == false)
             // york traditions routing number
             //WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
             )
-    } else if (randomNumber2 == 1) {
+    } 
+	else if (randomNumber2 == 1) 
+	{
         'Credit Card'
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', 
-            false)
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
 
         WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
 
@@ -839,7 +838,10 @@ if (isAgent == false)
         WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
-    } else if (randomNumber2 == 2) {
+		
+    } 
+	else if (randomNumber2 == 2) 
+	{
         'EFT'
         WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
 
@@ -859,11 +861,20 @@ if (isAgent == false)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
     }
-}
+//}
+
+
 
 
 if(shouldBind == true)
 {
+	WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
+	WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+	
+	
+	System.out.println('element now clickable')
+//WebUI.delay(5)
+	
 	'Bind Application button'
 	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 	
