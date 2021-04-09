@@ -7,10 +7,15 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
+         <value>body.ISiBody:nth-child(4) div.ISiWhiteCanvasHeader:nth-child(1) table.ISiWhiteCanvas.ISiStandardSpacing.ISiExtraPadding tbody:nth-child(1) tr:nth-child(1) td.ISiPolicyHeader:nth-child(4) > a.DarkLink</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'IFH400011200' or . = 'IFH400011200') and @ref_element = 'Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div/table/tbody/tr[4]/td[2]</value>
+         <value>//body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -53,20 +58,19 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div/table/tbody/tr[4]/td[2]</value>
+      <value>/html/body/div[1]/div/div/div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//div[contains(text(),'Policy Number: IFH')]</value>
+      <value>body > div.acct_content > div > div > div:nth-child(1)</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]</value>
+      <value>document.querySelector(&quot;body > div.acct_content > div > div > div:nth-child(1)&quot;)</value>
    </webElementXpaths>
 </WebElementEntity>

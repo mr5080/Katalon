@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEButtonnone']</value>
+         <value>//button[@id='NOSAVEButtonnone']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

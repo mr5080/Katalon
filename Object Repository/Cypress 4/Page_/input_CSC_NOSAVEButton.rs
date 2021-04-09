@@ -10,11 +10,15 @@
          <value>#NOSAVEButton</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @name = 'NOSAVEButton' and @id = 'NOSAVEButton']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//button[@id='NOSAVEButton']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

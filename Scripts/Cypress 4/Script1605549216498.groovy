@@ -1,11 +1,16 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import java.time.*
-import java.time.temporal.TemporalAdjusters as TemporalAdjusters
-import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
-import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import java.time.temporal.TemporalAdjusters
+import java.lang.Integer as Integer
+
+import org.apache.poi.xssf.usermodel.XSSFSheet
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.openqa.selenium.Keys
+
+import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 
 System.out.println("shouldBind value = " + shouldBind)
 
@@ -797,7 +802,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
     depositAmount = depositAmount.replaceAll('[^\\d.]', '')
     System.out.println('depositAmount = ' + depositAmount)
 
-    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
+//    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 
     if (randomNumber2 == 0) {
         'Check'
@@ -837,7 +842,18 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
         WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
+		//if(Integer.valueOf(depositAmount) > 1000)
+
+		
+		//if(depositAmount.length() >= 7 )
+		//if(Integer.parseInt(depositAmount) > 999)
+		System.out.println("depositAmount = " + depositAmount)
+		//if(depositAmount.toInteger() > 999 )
+		if(Double.parseDouble(depositAmount) > 999)
+		{// CCC deposits cant be more than 1000
+			depositAmount = 999.58
+		}
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
 		
     } 
 	else if (randomNumber2 == 2) 
@@ -868,8 +884,9 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 if(shouldBind == true)
 {
+	//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
 	WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
-	WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+	
 	
 	
 	System.out.println('element now clickable')
@@ -879,7 +896,8 @@ if(shouldBind == true)
 	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 	
 	//WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
-	if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) {
+	if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) 
+		{
 	    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
 	
 	    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
