@@ -6,8 +6,12 @@
    <elementGuidId>d4d34d19-9d5c-4c31-bfe5-8a20b687f710</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value>div.container:nth-child(1) form:nth-child(1) div.ISiA-MainWrapper:nth-child(5) div.row.justify-content-md-center.w-100.px-2.pt-2.flex-nowrap div.col-md-2.mx-3:nth-child(3) > button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//body/div[1]/form[1]/div[1]/div[2]/div[2]/button[1]</value>
+         <value>//body[1]/div[1]/form[1]/div[1]/div[2]/div[3]/button[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -57,21 +61,19 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>css=input.form-control.btn.ISiA-PrimaryButton</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/input</value>
+      <value>//body/div[1]/form[1]/div[1]/div[2]/div[3]/button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//form[@id='mainForm']/div/div[2]/div[3]/input</value>
+      <value>//body[1]/div[1]/form[1]/div[1]/div[2]/div[3]/button[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;mainForm&quot;]/div/div[2]/div[3]/button</value>
    </webElementXpaths>
 </WebElementEntity>

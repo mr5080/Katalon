@@ -586,6 +586,12 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
+// 0 = None, 1 = Edge, 2 = EdgePlus
+randomBundle = ((Math.random() * 2) as int) + 1 // generates random number, either 0 or 1, then + 1 because 0 = none
+System.out.println("randomBundle = " + randomBundle)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
+
+
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
@@ -727,6 +733,16 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestC
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), "FL", true)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32245")
 
+try {
+	// cant access any test object after accepting alert
+	WebUI.delay(1)
+	WebUI.acceptAlert()
+	System.out.println('Accept address validation has been accepted')
+}
+catch (Exception e) {
+	System.out.println('Exception - ' + e)
+}
+
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), constructionYear+constructionYear)
 
 
@@ -785,7 +801,7 @@ System.out.println('totalPremium = ' + totalPremium)
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
-
+//WebUI.delay(30)
 
 //maybe randomize this?
 // random number, 1-3 then selectOptionByIndex with random number
