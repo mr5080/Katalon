@@ -10,8 +10,8 @@ import org.openqa.selenium.Keys
 
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-
+	
+	
 System.out.println("shouldBind value = " + shouldBind)
 
 /*
@@ -32,7 +32,7 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-//randomFLaddress = 105 // 105 causes address correction to pop
+//randomFLaddress = 130 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 System.out.println(randomFLaddress)
 
 int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
@@ -73,7 +73,7 @@ String randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
 String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow-1)
 
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
-randomFirstName = randomFirstNameForInterest.replaceAll('[\\d.]', '')
+randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
 
 System.out.println(randomFirstName)
 System.out.println(randomFirstNameForInterest)
@@ -566,7 +566,7 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'F', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'B', true)
 
 //WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
@@ -587,8 +587,16 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
 // 0 = None, 1 = Edge, 2 = EdgePlus
-randomBundle = ((Math.random() * 2) as int) + 1 // generates random number, either 0 or 1, then + 1 because 0 = none
-System.out.println("randomBundle = " + randomBundle)
+for(int xx = 0; xx < 20; xx++)
+{
+	randomBundle = ((Math.random() * 2) as int) +1  // generates random number, either 0 or 1 or 2,
+	if(policyType == "HO6")
+	{
+		randomBundle = randomBundle - 1   // because HO6 only has 1 bundle option
+	}	
+	System.out.println("randomBundle = " + randomBundle)
+}
+
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
 
 
@@ -731,11 +739,12 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestN
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestAddress'), "PO BOX " + constructionYear)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestCity'), "Jacksonville")
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), "FL", true)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32245")
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32203")
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), Keys.chord(Keys.TAB))
 
 try {
 	// cant access any test object after accepting alert
-	WebUI.delay(1)
+	// WebUI.delay(1)  // not sure if i need this or not? 4/14/21
 	WebUI.acceptAlert()
 	System.out.println('Accept address validation has been accepted')
 }
@@ -820,6 +829,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 //    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 
+	randomNumber2 = 0
     if (randomNumber2 == 0) {
         'Check'
         WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
@@ -889,9 +899,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
 
-        WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT'))
-
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
+        //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
+        //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__EFT-LastName'), randomLastName)
     }
 //}
 
@@ -1080,4 +1089,4 @@ System.out.println('fullName = ' + fullName)
 System.out.println('shouldBind = ' + shouldBind)
 
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
