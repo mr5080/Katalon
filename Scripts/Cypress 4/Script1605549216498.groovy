@@ -351,9 +351,9 @@ int maxDay = ((LocalDate.of(thisYear, 1, 1).toEpochDay()) as int)
 
 //for(int x = 0; x < 100; x++)
 //{
-//long randomDay = minDay + random.nextInt(maxDay - minDay)
+long randomDay = minDay + random.nextInt(maxDay - minDay)
 
-//LocalDate randomBirthDate = LocalDate.ofEpochDay(randomDay)
+LocalDate randomBirthDate = LocalDate.ofEpochDay(randomDay)
 
 String year = randomBirthDate.toString().substring(0, 4)
 
@@ -745,7 +745,7 @@ if(addInterest == true)
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32245")
 	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), Keys.chord(Keys.TAB))
 		
-	elementPresent = WebUI.waitForAlert(5)
+/*	elementPresent = WebUI.waitForAlert(5)
 		if (elementPresent == true) {
 		alertText = WebUI.getAlertText()
 	
@@ -761,7 +761,7 @@ if(addInterest == true)
 		 //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
 			
 	}
-	
+	*/
 	
 	/*
 	try {
@@ -774,7 +774,10 @@ if(addInterest == true)
 		System.out.println('Exception - ' + e)
 	}
 	*/
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), constructionYear+constructionYear)
+	
+	WebUI.switchToDefaultContent()
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'))
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), "465487894")
 }
 
 
