@@ -20,7 +20,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>f3f06d5e-eebe-4fef-b431-80ceb3b6f32a</id>
       <masked>false</masked>
@@ -32,5 +32,19 @@
       <id>0557cac1-788f-4563-9412-f15a489c8a28</id>
       <masked>false</masked>
       <name>environment</name>
+   </variable>
+   <variable>
+      <defaultValue>'FULL'</defaultValue>
+      <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
+      <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
+      <masked>false</masked>
+      <name>payPlanOption</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>6b3cf98e-b3c7-442d-8e6a-85812dccded8</id>
+      <masked>false</masked>
+      <name>addInterest</name>
    </variable>
 </TestCaseEntity>

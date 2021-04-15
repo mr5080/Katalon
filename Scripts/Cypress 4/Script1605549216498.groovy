@@ -306,7 +306,7 @@ if (isAgent == false) {
     // wait for dynamic table to populate?
     WebUI.delay(1)
 
-	for(int x = 0; x < 10; x++)
+	for(int x = 0; x < 5; x++)
 	{
 		try
 		{
@@ -351,9 +351,9 @@ int maxDay = ((LocalDate.of(thisYear, 1, 1).toEpochDay()) as int)
 
 //for(int x = 0; x < 100; x++)
 //{
-long randomDay = minDay + random.nextInt(maxDay - minDay)
+//long randomDay = minDay + random.nextInt(maxDay - minDay)
 
-LocalDate randomBirthDate = LocalDate.ofEpochDay(randomDay)
+//LocalDate randomBirthDate = LocalDate.ofEpochDay(randomDay)
 
 String year = randomBirthDate.toString().substring(0, 4)
 
@@ -587,15 +587,15 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
 // 0 = None, 1 = Edge, 2 = EdgePlus
-for(int xx = 0; xx < 20; xx++)
-{
+//for(int xx = 0; xx < 20; xx++)
+//{
 	randomBundle = ((Math.random() * 2) as int) +1  // generates random number, either 0 or 1 or 2,
 	if(policyType == "HO6")
 	{
 		randomBundle = randomBundle - 1   // because HO6 only has 1 bundle option
 	}	
 	System.out.println("randomBundle = " + randomBundle)
-}
+//}
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
 
@@ -732,27 +732,52 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - History'))
 WebUI.click(findTestObject('Cypress 4/Page_/input - Interests'))
 
 'Add Interest info'
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_InterestAdd'))
-WebUI.selectOptionByValue(  findTestObject('Object Repository/Cypress 4/Page_/select_TypeOfAdditionalInterest')  , 'M', true)
-//WebUI.delay(3)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestName'), randomFirstNameForInterest + " " + randomLastName)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestAddress'), "PO BOX " + constructionYear)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestCity'), "Jacksonville")
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), "FL", true)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32203")
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), Keys.chord(Keys.TAB))
-
-try {
-	// cant access any test object after accepting alert
-	// WebUI.delay(1)  // not sure if i need this or not? 4/14/21
-	WebUI.acceptAlert()
-	System.out.println('Accept address validation has been accepted')
+if(addInterest == true)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_InterestAdd'))
+	WebUI.selectOptionByValue(  findTestObject('Object Repository/Cypress 4/Page_/select_TypeOfAdditionalInterest')  , 'M', true)
+	//WebUI.delay(3)
+	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestName'), randomFirstNameForInterest + " " + randomLastName)
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestName'), "121 FINANCIAL CREDIT UNION")
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestAddress'), "PO BOX 16688")
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestCity'), "Jacksonville")
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), "FL", true)
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), "32245")
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input__InterestZip'), Keys.chord(Keys.TAB))
+		
+	elementPresent = WebUI.waitForAlert(5)
+		if (elementPresent == true) {
+		alertText = WebUI.getAlertText()
+	
+		System.out.println('The title of the alert is: \n' + alertText)
+	
+		WebUI.delay(1)
+	
+		WebUI.acceptAlert()
+	
+		System.out.println('Accept address validation has been accepted')
+	
+		WebUI.switchToDefaultContent()
+		 //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
+			
+	}
+	
+	
+	/*
+	try {
+		// cant access any test object after accepting alert
+		// WebUI.delay(1)  // not sure if i need this or not? 4/14/21
+		WebUI.acceptAlert()
+		System.out.println('Accept address validation has been accepted')
+	}
+	catch (Exception e) {
+		System.out.println('Exception - ' + e)
+	}
+	*/
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), constructionYear+constructionYear)
 }
-catch (Exception e) {
-	System.out.println('Exception - ' + e)
-}
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__InterestLoanNumber'), constructionYear+constructionYear)
+
 
 
 'Statements button'
@@ -793,6 +818,9 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAge
 
 // new billing page
 WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentPlanOption'), payPlanOption, true)
+
+
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
 
@@ -837,6 +865,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__CheckNumber'), year)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount // click Enter Credit Card Information button
+		
             // CC window takes forever to open...
             //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
             // clicking button above should work, but there is a defect in about enter cc info , defect 268
