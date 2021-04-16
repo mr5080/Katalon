@@ -816,8 +816,6 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETr
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl1_1'))
 
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl2_1'))
-
 
 // new billing page
 WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
