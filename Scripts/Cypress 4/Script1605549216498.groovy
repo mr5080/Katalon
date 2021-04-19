@@ -654,6 +654,9 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous C
 
 String randomPolicy = ((Math.random() * 99999) as int)
 
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), todaysDate)
+
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
 
 'Prequalification button'
