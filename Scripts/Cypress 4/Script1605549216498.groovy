@@ -176,16 +176,24 @@ WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLO
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), policyType, true)
 
+//WebUI.setText(findTestObject('Cypress 4/Page_/input_ApplicantFirstName'), 'JOHN SMITH')
+WebUI.setText(findTestObject('Cypress 4/Page_/input_ApplicantFirstName'), randomFirstName.toUpperCase())
+
+WebUI.setText(findTestObject('Cypress 4/Page_/input_ApplicantLastName'), randomLastName.toUpperCase())
+
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'what is going on?')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), addressFL)
+
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
+
 //WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'john555')
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), '34698')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), zipFL)
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), 'JOHN SMITH')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Name_ApplicantName'), fullName.toUpperCase())
-
 //check value of city dropdown with what is in cityFL
 int totalCitiesAvailable = WebUI.getNumberOfTotalOption(findTestObject('Object Repository/Cypress 4/Page_/select_City List'))
 
@@ -212,10 +220,6 @@ for (int i = 0; i < cityCount; i++) {
     System.out.println('selectedOption  = ' + selectedOption)
 }
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'what is going on?')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), addressFL)
-
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 
 //WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
