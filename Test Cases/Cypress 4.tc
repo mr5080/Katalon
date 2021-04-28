@@ -13,7 +13,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>776a156b-bb18-4107-bf3e-3d18574d7b9f</id>
       <masked>false</masked>

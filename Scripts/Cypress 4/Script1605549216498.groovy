@@ -35,7 +35,7 @@ int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
 //randomFLaddress = 130 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 System.out.println(randomFLaddress)
 
-int randomFLaddressPrior = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
+int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 
 System.out.println(randomFLaddressPrior)
 
@@ -184,9 +184,11 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_ApplicantLastName'), randomL
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'what is going on?')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), addressFL)
 
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_ApplicantCity_StartQuote'), cityFL)
 
-//WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'john555')
+
+//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
+
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), '34698')
@@ -195,6 +197,8 @@ WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property 
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
 //check value of city dropdown with what is in cityFL
+WebUI.delay(5)
+/*
 int totalCitiesAvailable = WebUI.getNumberOfTotalOption(findTestObject('Object Repository/Cypress 4/Page_/select_City List'))
 
 System.out.println('totalCitiesAvailable = ' + totalCitiesAvailable)
@@ -219,7 +223,7 @@ for (int i = 0; i < cityCount; i++) {
     
     System.out.println('selectedOption  = ' + selectedOption)
 }
-
+*/
 
 //WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
@@ -236,6 +240,9 @@ catch (Exception e) {
 */
 //WebUI.delay(5)
 // seems to be working, if it is can remove the try/catch above - 12/18/20
+
+// USPS validation removed from Start a new Quote screen 4/23/21
+/*
 boolean elementPresent = WebUI.waitForAlert(5)
 
 if (elementPresent == true) {
@@ -252,6 +259,7 @@ if (elementPresent == true) {
     WebUI.switchToDefaultContent( //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
         )
 }
+*/
 
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
@@ -414,6 +422,9 @@ if (constructionYear.length() > 1)
 	{
 		constructionYear = 2015
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
+		WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
+		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
+		
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
 		
 		System.out.println("constructionYear and roof year reset to " + constructionYear)
@@ -576,16 +587,16 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'),
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
 
 
-// these fields are no longer mandatory
-WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + ' Fire Department')
-
-//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123456788B910'), '1', true)
-
-//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Distance to Fire Hydrant'),    '01', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ProtectionClass'), '1', true)
-
-
+if(isAgent == false)
+{
+	// these fields are no longer mandatory
+	WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + ' Fire Department')
+	
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_123456788B910'), '1', true)
+	//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Distance to Fire Hydrant'),    '01', true)
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ProtectionClass'), '1', true)	
+}
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
@@ -865,7 +876,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 //    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 
-	randomNumber2 = 0
+	randomNumber2 = 1
     if (randomNumber2 == 0) {
         'Check'
         WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
@@ -876,10 +887,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 		
             // CC window takes forever to open...
             //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-            // clicking button above should work, but there is a defect in about enter cc info , defect 268
-            // york traditions routing number
-            // york traditions routing number
-            //WebUI.setText( findTestObject('Object Repository/Cypress 4/Page_/input__DownPaymentAmount'), '1000')
+           
+           
             )
     } 
 	else if (randomNumber2 == 1) 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_City List</name>
+   <name>input_ApplicantLastName</name>
    <tag></tag>
-   <elementGuidId>beec6b3b-926f-4b61-9553-557a0c21f847</elementGuidId>
+   <elementGuidId>af1c03b3-909c-4a24-a0f7-9fd1bc4f89fc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='ApplicantCityCB']</value>
+         <value>//input[@id='ApplicantLast']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,120 +17,63 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>size</name>
+      <name>type</name>
       <type>Main</type>
-      <value>1</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-disablemessagetrigger</name>
-      <type>Main</type>
-      <value>false</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ProtectionClass_1</value>
+      <value>ApplicantName</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ProtectionClass_1</value>
+      <value>ApplicantName</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>size</name>
       <type>Main</type>
-      <value> GlobalOnBlur();   CheckRequired(false);</value>
+      <value>30</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>50</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value> GlobalOnChange(); </value>
+      <value>GMJSDataManager('0','VERISK');MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','','',getMostRelevantPolicyTypeCodeValue(document.getElementById('PolicyTypeCode'),'',''),'0'); </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>onblur</name>
       <type>Main</type>
-      <value>
-							
-									
-										
-									
-								
-									
-										1
-									
-								
-									
-										2
-									
-								
-									
-										3
-									
-								
-									
-										4
-									
-								
-									
-										5
-									
-								
-									
-										6
-									
-								
-									
-										7
-									
-								
-									
-										8
-									
-								
-									
-										8B
-									
-								
-									
-										9
-									
-								
-									
-										10
-									
-								
-						</value>
+      <value>; chkQuotes(this); UpperCase(this) </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ProtectionClass_1&quot;)</value>
+      <value>id(&quot;ApplicantName&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -140,15 +83,24 @@
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='ApplicantCity']</value>
+      <value>//body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[5]/td[2]/input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[8]/td[2]/input[1]</value>
+      <value>//body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[5]/td[2]/input[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[5]/td[2]/input[1]</value>
    </webElementXpaths>
 </WebElementEntity>
