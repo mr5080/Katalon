@@ -13,14 +13,14 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>776a156b-bb18-4107-bf3e-3d18574d7b9f</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>f3f06d5e-eebe-4fef-b431-80ceb3b6f32a</id>
       <masked>false</masked>
@@ -41,7 +41,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>6b3cf98e-b3c7-442d-8e6a-85812dccded8</id>
       <masked>false</masked>

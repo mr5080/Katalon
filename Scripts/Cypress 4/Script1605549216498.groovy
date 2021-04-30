@@ -197,7 +197,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property 
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
 //check value of city dropdown with what is in cityFL
-WebUI.delay(5)
+//WebUI.delay(5)
 /*
 int totalCitiesAvailable = WebUI.getNumberOfTotalOption(findTestObject('Object Repository/Cypress 4/Page_/select_City List'))
 
@@ -903,8 +903,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
         WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 
             40)
 
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 
-            'Visa', false)
+        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
 
@@ -914,6 +913,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
         WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
 
+		WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+			
 		//if(Integer.valueOf(depositAmount) > 1000)
 
 		
@@ -923,7 +924,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 		//if(depositAmount.toInteger() > 999 )
 		if(Double.parseDouble(depositAmount) > 999)
 		{// CCC deposits cant be more than 1000
-			depositAmount = 999.58
+			depositAmount = 100.58
 		}
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input__DepositAmount'), depositAmount)
 		
