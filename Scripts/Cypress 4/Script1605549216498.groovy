@@ -28,8 +28,8 @@ for(int z = 0; z < 100; z++)
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 
 //WebUI.acceptAlert()
-// random num between 2 - 120 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((130 - 2) + 1)) as int)
+// random num between 2 - 500 (first line in excel file is a header)
+int randomFLaddress = 2 + ((Math.random() * ((500 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomFLaddress = 130 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
@@ -340,11 +340,8 @@ if (isAgent == false) {
 			System.out.println('didnt find it, trying again... ' + x )			
 		}
 			
-		}
-	
-	
-	
-}
+		}	
+	}
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
 // 
@@ -491,7 +488,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 }
 
 // need to click somewhere to get rid of the datepicker popup.
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))
+//WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 
 //this line can be removed if 360 is working
@@ -542,7 +539,7 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
             System.out.println(e)
         } 
         // need to click off Construction Year input box , dont think i need this since tabbing off it?
-        //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'))	
+        //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))	
     }
 }
 
@@ -665,15 +662,12 @@ if (randomNumber == 0) // fill out US prior mailing address
     } 
 }
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Carrier_PriorCarrier_1'), 'Geico')
-
+// needed till fix is implemented on Stage
+/*WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 String randomPolicy = ((Math.random() * 99999) as int)
-
-
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), todaysDate)
-
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
-
+*/
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
 

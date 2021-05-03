@@ -27,7 +27,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>0557cac1-788f-4563-9412-f15a489c8a28</id>
       <masked>false</masked>
