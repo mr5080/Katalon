@@ -29,10 +29,10 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 
 //WebUI.acceptAlert()
 // random num between 2 - 500 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((500 - 2) + 1)) as int)
+int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-//randomFLaddress = 130 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
+//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 System.out.println(randomFLaddress)
 
 int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
@@ -48,6 +48,8 @@ String cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
 String stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 
 String zipFL = addressData.getValue(4, randomFLaddress - 1)
+
+
 
 System.out.println((((((addressFL + ' ') + cityFL) + ' ') + stateFL) + ' ') + zipFL)
 
@@ -242,7 +244,17 @@ catch (Exception e) {
 // seems to be working, if it is can remove the try/catch above - 12/18/20
 
 // USPS validation removed from Start a new Quote screen 4/23/21
-/*
+
+// geocode modal
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 10))
+{	
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
+}
+
+
 boolean elementPresent = WebUI.waitForAlert(5)
 
 if (elementPresent == true) {
@@ -256,10 +268,11 @@ if (elementPresent == true) {
 
     System.out.println('Accept address validation has been accepted')
 
-    WebUI.switchToDefaultContent( //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
-        )
+    WebUI.switchToDefaultContent() 
+
+		//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again    
 }
-*/
+
 
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
@@ -325,6 +338,13 @@ if (isAgent == false) {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'TEST ')
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			
+			/* set other Agency
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '0455930')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), ' ')
+			*/
+			
 			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
 			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
 			// wait for dynamic table to populate?
@@ -404,10 +424,8 @@ System.out.println('constructionYear.length()  = ' + constructionYear.length())
 
 int constructionYearInt = 0
 
-System.out.println('constructionYear.length() SECOND  = ' + constructionYear.length())
-
 if (constructionYear.length() > 1) 
-	{
+{
     System.out.println('in the if')
     constructionYearInt = Integer.valueOf(constructionYear)
     System.out.println('constructionYearInt - IF == ' + constructionYearInt) // (constructionYearInt == '')
@@ -427,7 +445,9 @@ if (constructionYear.length() > 1)
 		System.out.println("constructionYear and roof year reset to " + constructionYear)
 	}
         
-} else {
+} 
+else 
+{
     System.out.println('in the else')
 
     constructionYearInt = Integer.valueOf(year)
@@ -494,28 +514,17 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insura
 //this line can be removed if 360 is working
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
 
-/* this was used for faking out the Construction Year logic to test the 40+ Construction Year, can probably be removed
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord('1900', Keys.TAB))  // delete it, not needed, just forces construction year
-//WebUI.delay(1)
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Close button -Modal window'))
-
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '')
-year = 1905
-constructionYearInt = 1950
-*/
-if (policyType == 'HO6') {
-    //UnitFloorNumber_1 set to first element 1(ground floor)
+if (policyType == 'HO6') 
+{
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
-
-    // set cov A limit since 360 is not run on HO6
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') 
-	{
+{
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(year, Keys.TAB))
 
-    System.out.println('set Construction Year')
+    System.out.println('just clicked into, tabbed out of Construction Year')
 
     System.out.println('currentYear = ' + currentYear)
 
@@ -541,6 +550,26 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
         // need to click off Construction Year input box , dont think i need this since tabbing off it?
         //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))	
     }
+}
+else
+{
+	// Construction year is not blank
+	String threeSixtyConstructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
+	
+	System.out.println('threeSixtyConstructionYear = ' + threeSixtyConstructionYear)
+	
+	threeSixtyConstructionYear = Integer.valueOf(threeSixtyConstructionYear)
+	System.out.println('threeSixtyConstructionYear = ' + threeSixtyConstructionYear)
+	
+	System.out.println('currentYear - threeSixtyConstructionYear = ' + currentYear - threeSixtyConstructionYear)
+	if(currentYear - threeSixtyConstructionYear > 41)
+	{
+		System.out.println('need to update Construction Year ')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 2015)
+		
+	}	
+	
+	
 }
 
 //Year of Roof, sets it incase it is blank
@@ -871,7 +900,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 //    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
 
 	randomNumber2 = 1
-    if (randomNumber2 == 0) {
+    if (randomNumber2 == 0) 
+	{
         'Check'
         WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
 

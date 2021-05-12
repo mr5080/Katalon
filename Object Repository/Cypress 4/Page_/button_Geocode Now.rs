@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_SearchForAgent</name>
+   <name>button_Geocode Now</name>
    <tag></tag>
-   <elementGuidId>a398932d-cf3f-4d6f-8619-36173c87b97e</elementGuidId>
+   <elementGuidId>06899e49-e3d1-49e6-a7c5-ffda9dac74ae</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]
-
-
-</value>
+         <value>//input[@id='GMAcceptButton']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,28 +17,49 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>td</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>colspan</name>
+      <name>class</name>
       <type>Main</type>
-      <value>2</value>
+      <value>form-control btn ISiA-PrimaryButton</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-dismiss</name>
+      <type>Main</type>
+      <value>modal</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>setFormFieldValue('', '', 'internalFCRANOSAVE', 'Accept')</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>NOTE: The address above has beensuccessfully geocoded.</value>
+      <value>Accept</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;GMDisplayGeocodeSuccess&quot;)/td[1]</value>
+      <value>id(&quot;popupModalFooter&quot;)/button[@class=&quot;form-control btn ISiA-PrimaryButton&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,30 +72,12 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//td[contains(text(),'IVANS TEST AGENCY 002')]</value>
+      <value>//body[1]/div[2]/div[2]/div[1]/div[3]/input[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//td[contains(.,'TEST AGENCY')]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//td[text()='10100']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//td[text()='TEST AGENCY']</value>
+      <value>/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/input[2]</value>
    </webElementXpaths>
 </WebElementEntity>
