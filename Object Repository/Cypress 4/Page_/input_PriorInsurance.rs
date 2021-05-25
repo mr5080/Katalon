@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='PriorInsurance_1']</value>
+         <value>//input[@id='PriorCarrier_1']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -135,5 +136,11 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//select[@id='PriorInsurance_1']</value>
    </webElementXpaths>
 </WebElementEntity>

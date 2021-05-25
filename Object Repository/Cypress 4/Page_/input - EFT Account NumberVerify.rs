@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__DownPaymentAmount</name>
+   <name>input - EFT Account NumberVerify</name>
    <tag></tag>
-   <elementGuidId>5d9af8fa-ba04-4d2c-a09a-36fae00cd4b1</elementGuidId>
+   <elementGuidId>8dddb60a-fdf4-4adf-a9b0-5cf25faf10b1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='DepositAmount']</value>
+         <value>//input[@id='ACHAccountNumberReenter']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -101,7 +101,8 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value></value>
+      <value>
+</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

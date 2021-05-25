@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='PriorPolicyNumber_1']</value>
+         <value>//input[@id='PriorPolicyNumber_1']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

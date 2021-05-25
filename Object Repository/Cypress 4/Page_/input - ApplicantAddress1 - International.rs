@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input__ApplicantAddress2</name>
+   <name>input - ApplicantAddress1 - International</name>
    <tag></tag>
-   <elementGuidId>e05b056e-caac-4fa6-84bf-dec4bb1fa39e</elementGuidId>
+   <elementGuidId>1e3c4cbf-d5c3-45fe-8a1a-ea912f3c35ae</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[2]/form[1]/table[1]/tbody[1]/tr[7]/td[2]/input[1]
-</value>
+         <value>//input[@id='ApplicantAddress1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -76,25 +75,11 @@
       <type>Main</type>
       <value>id(&quot;ApplicantAddress2&quot;)</value>
    </webElementProperties>
-   <webElementXpaths>
+   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>//input[@id='ApplicantAddress2']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//tr[@id='QuoteAddress2']/td[2]/input</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//tr[7]/td[2]/input</value>
-   </webElementXpaths>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+   </webElementProperties>
 </WebElementEntity>
