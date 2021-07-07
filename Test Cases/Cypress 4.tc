@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'FULL'</defaultValue>
+      <defaultValue>'9PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
       <masked>false</masked>
@@ -53,5 +53,19 @@
       <id>d3912461-1a5e-4008-94ba-88dc3f3438ca</id>
       <masked>false</masked>
       <name>realTestUser</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>6ad070de-145c-48eb-a1fd-44c18be5a042</id>
+      <masked>false</masked>
+      <name>realTransunionCreditReport</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>9e64bae9-51d8-41ef-8953-a077fe071eef</id>
+      <masked>false</masked>
+      <name>realAPlusClaimReport</name>
    </variable>
 </TestCaseEntity>

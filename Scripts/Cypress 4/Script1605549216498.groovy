@@ -66,14 +66,26 @@ String zipFL = addressData.getValue(4, randomFLaddress - 1)
 
 // hard coding to APlus claims data
 /*
-addressFL = ('7999 Macinnes Dr').toUpperCase()
-cityFL = ('Jacksonville').toUpperCase()
-stateFL = 'FL'
-zipFL = 32244
+if(realClaimReport)
+{
+	addressFL = ('7999 Macinnes Dr').toUpperCase()
+	cityFL = ('Jacksonville').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 32244
+}
+
+
+// hard code credit ordering 
+if(realAPlusCreditReport)
+{
+	addressFL = ('1716 Cherry Ln').toUpperCase()
+	cityFL = ('Lakeland').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 33811
+}
 */
 
-
-System.out.println((((((addressFL + ' ') + cityFL) + ' ') + stateFL) + ' ') + zipFL)
+//System.out.println((((((addressFL + ' ') + cityFL) + ' ') + stateFL) + ' ') + zipFL)
 
 // Prior Address, only used if Year Construction < 3 from current year
 String addressFLPrior = addressData.getValue(1, randomFLaddressPrior - 1).toUpperCase()
@@ -84,10 +96,8 @@ String stateFLPrior = addressData.getValue(3, randomFLaddressPrior - 1).toUpperC
 
 String zipFLPrior = addressData.getValue(4, randomFLaddressPrior - 1)
 
-System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
 
-Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
-    'FirstName', false)
+Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx',  'FirstName', false)
 
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
 
@@ -100,13 +110,24 @@ String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
 randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
 // hardcode for Claims
-//randomFirstName = ('Claud').toUpperCase()
-System.out.println(randomFirstName)
-System.out.println(randomFirstNameForInterest)
+/*
+if(realClaimReport)
+{
+	randomFirstName = ('Claud').toUpperCase()
+}
+//hardcode for Credit
+if(realAPlusCreditReport)
+{
+	randomFirstName = ('Mirian').toUpperCase()
+}
+*/
+System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+//System.out.println(randomFirstName)
+//System.out.println(randomFirstNameForInterest)
+
 
 // Last name from excel file
-Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 
-    'LastName', false)
+Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx',  'LastName', false)
 
 int randomLastNameRow = 1 + ((Math.random() * ((900 - 1) + 1)) as int)
 
@@ -118,7 +139,27 @@ String randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
-//randomLastName = ('Summers').toUpperCase()
+// hardcode for claims
+if(realAPlusClaimReport)
+{
+	randomFirstName = ('Claud').toUpperCase()
+	randomLastName = ('Summers').toUpperCase()
+	addressFL = ('7999 Macinnes Dr').toUpperCase()
+	cityFL = ('Jacksonville').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 32244
+}
+//hardcode for Credit
+if(realTransunionCreditReport)
+{
+	randomLastName = ('Kim').toUpperCase()
+	randomFirstName = ('Mirian').toUpperCase()
+	addressFL = ('1716 Cherry Ln').toUpperCase()
+	cityFL = ('Lakeland').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 33811
+}
+
 System.out.println(randomLastName)
 
 String fullName = (randomFirstName + ' ') + randomLastName
