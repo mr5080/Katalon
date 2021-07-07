@@ -7,8 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]
-
+         <value>//body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]
 
 </value>
       </entry>
@@ -79,5 +78,17 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//td[text()='TEST AGENCY']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//td[contains(text(),'TEST AGENCY')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[1]</value>
    </webElementXpaths>
 </WebElementEntity>

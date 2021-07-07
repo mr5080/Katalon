@@ -64,6 +64,13 @@ String stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 
 String zipFL = addressData.getValue(4, randomFLaddress - 1)
 
+// hard coding to APlus claims data
+/*
+addressFL = ('7999 Macinnes Dr').toUpperCase()
+cityFL = ('Jacksonville').toUpperCase()
+stateFL = 'FL'
+zipFL = 32244
+*/
 
 
 System.out.println((((((addressFL + ' ') + cityFL) + ' ') + stateFL) + ' ') + zipFL)
@@ -87,11 +94,13 @@ int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
 System.out.println(randomFirstNameRow)
 
 String randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
+
 String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow-1)
 
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
 randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
-
+// hardcode for Claims
+//randomFirstName = ('Claud').toUpperCase()
 System.out.println(randomFirstName)
 System.out.println(randomFirstNameForInterest)
 
@@ -109,6 +118,7 @@ String randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
+//randomLastName = ('Summers').toUpperCase()
 System.out.println(randomLastName)
 
 String fullName = (randomFirstName + ' ') + randomLastName
@@ -150,7 +160,7 @@ currentYear = Integer.parseInt(mydate.format('yyyy'))
 System.out.println('currentYear = ' + currentYear)
 
 
-WebUI.delay(5)
+//WebUI.delay(5)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_PHPortal-Login'), 15)
 
@@ -172,6 +182,16 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DAT
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 
     Keys.chord(Keys.ENTER))
+
+
+if(realTestUser == true)
+{
+	///html[1]/body[1]/div[1]/font[1]/form[1]/select[1]/option[4928]WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "2258280/CYP2258280", true)
+	//WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "2258280 - CYP2258280", false)
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'))
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "3184819")  // Agent Code
+	
+}
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
@@ -334,7 +354,8 @@ catch (Exception e) {
 System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
-if (isAgent == false) {
+if (isAgent == false && realTestUser == false) 
+	{
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
     // wait for dynamic table to populate?
@@ -400,6 +421,8 @@ String day = randomBirthDate.toString().substring(8, 10)
 String month = randomBirthDate.toString().substring(5, 7)
 
 String DOB = (((month + '/') + day) + '/') + year
+//hardcode for APlus claims
+//DOB = '04/13/1982'
 
 //System.out.println("users generated DOB = " + DOB)
 //System.out.println("Random Date = " + randomBirthDate);
@@ -608,7 +631,7 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'),
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
 
 
-if(isAgent == false)
+if(isAgent == false && realTestUser == false)
 {
 	// these fields are no longer mandatory
 	WebUI.setText(findTestObject('Cypress 4/Page_/input_Responding Fire Department_Responding'), cityFL + ' Fire Department')
@@ -687,10 +710,12 @@ if (randomNumber == 0) // fill out US prior mailing address
 }
 
 // needed till fix is implemented on Stage
+
 WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 String randomPolicy = ((Math.random() * 99999) as int)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), todaysDate)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
+
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
@@ -853,7 +878,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETr
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl1_1'))
 
 
-// new billing page
+'Billing button'
 WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentPlanOption'), payPlanOption, true)
 
@@ -871,7 +896,6 @@ totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Pa
 System.out.println('totalPremium = ' + totalPremium)
 
 //WebUI.delay(1)
-
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 

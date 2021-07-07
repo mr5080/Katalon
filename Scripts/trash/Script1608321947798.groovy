@@ -20,21 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Trash/Page_/select_Additional InsuredAdditional Interes_343c35'), 'M', true)
+WebUI.click(findTestObject('Object Repository/Page_/button_Proceed to Application'))
 
-WebUI.setText(findTestObject('Object Repository/Trash/Page_/input_City, State, Zip, Zip4_InterestZipxxxx1_1'), '99999')
-
-WebUI.setText(findTestObject('Object Repository/Trash/Page_/input_Interest Name_InterestNamexxxx1_1'), 'billy bon')
-
-WebUI.setText(findTestObject('Object Repository/Trash/Page_/input_Address_InterestAddress1xxxx1_1'), '123 nowhere')
-
-WebUI.setText(findTestObject('Object Repository/Trash/Page_/input_City, State, Zip, Zip4_InterestCityxxxx1_1'), 'orlando')
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Trash/Page_/select_StateAKALARAZCACOCTDCDEFLGAHIIAIDILI_28d72e'), 'FL', true)
-
-WebUI.setText(findTestObject('Object Repository/Trash/Page_/input_Loan Number_LoanNumberxxxx1_1'), '999999999')
-
-WebUI.click(findTestObject('Object Repository/Trash/Page_/button_Statements'))
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Page_/button_Prequalification'))
 

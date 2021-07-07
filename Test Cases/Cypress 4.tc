@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'4PAY'</defaultValue>
+      <defaultValue>'FULL'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
       <masked>false</masked>
@@ -46,5 +46,12 @@
       <id>6b3cf98e-b3c7-442d-8e6a-85812dccded8</id>
       <masked>false</masked>
       <name>addInterest</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>d3912461-1a5e-4008-94ba-88dc3f3438ca</id>
+      <masked>false</masked>
+      <name>realTestUser</name>
    </variable>
 </TestCaseEntity>
