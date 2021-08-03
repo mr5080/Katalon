@@ -16,6 +16,8 @@ System.out.println("shouldBind value = " + shouldBind)
 
 WebUI.openBrowser('')
 
+WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
+
 //WebUI.maximizeWindow()
 
 if(environment == "TEST")
@@ -235,7 +237,7 @@ if(realTestUser == true)
 }
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
-
+//WebUI.delay(5)
 System.out.println('$isAgent = ' + isAgent)
 
 
@@ -471,7 +473,7 @@ String DOB = (((month + '/') + day) + '/') + year
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + year)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), DOB)
@@ -520,19 +522,6 @@ if (constructionYear.length() > 1)
 	}
         
 } 
-/*  remove? 5.12.21
-else 
-{
-    System.out.println('in the else')
-
-    constructionYearInt = Integer.valueOf(year)
-
-    System.out.println('constructionYearInt  - ELSE == ' + constructionYearInt)
-}
-
-System.out.println('constructionYearInt == ' + constructionYearInt)
-*/
-
 
 // this logic changed week of 3/19/21 should probably update the prior address logic?
 if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
@@ -586,8 +575,8 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
 // need to click somewhere to get rid of the datepicker popup.
 //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
-
+//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 //this line can be removed if 360 is working
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
 
@@ -595,6 +584,7 @@ if (policyType == 'HO6')
 {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 1)
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') 
@@ -751,12 +741,13 @@ if (randomNumber == 0) // fill out US prior mailing address
 }
 
 // needed till fix is implemented on Stage
-
+WebUI.delay(10)
 WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 String randomPolicy = ((Math.random() * 99999) as int)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), todaysDate)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
 
+System.out.println('trying to click PreQUALIFICATION BUTTON')
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
@@ -963,7 +954,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
     if (randomNumber2 == 0) 
 	{
         'Check'
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Check', false)
+        WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'C', false)
 
         WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
 
@@ -976,7 +967,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 	else if (randomNumber2 == 1) 
 	{
         'Credit Card'
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'Credit Card', false)
+        WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'P', false)
 
         WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
 
@@ -1014,7 +1005,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 	else if (randomNumber2 == 2) 
 	{
         'EFT'
-        WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'EFT', false)
+        WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'E', false)
 
         WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
 

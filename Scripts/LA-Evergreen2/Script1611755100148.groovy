@@ -170,8 +170,9 @@ else
 WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_USERNAME_userloginname'), 
     'jhughes')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_PASSWORD_password'), 
-    '1w8xCCmEypU3q31XlL176w==')
+//WebUI.setEncryptedText(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_PASSWORD_password'),   '1w8xCCmEypU3q31XlL176w==')
+WebUI.sendkeys(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_PASSWORD_password'), 'goHome1!')
+WebUI.sendKeys(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), 'LA ')
 
 WebUI.click(findTestObject('Object Repository/LA-Evergreen2/Page_TEST DATA accesshometest.cogisi.com/input_PASSWORD_LoginButton'))
 

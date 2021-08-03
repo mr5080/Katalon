@@ -10,6 +10,10 @@
          <value>//body/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]
 </value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @ref_element = 'Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
