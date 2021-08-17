@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'FULL'</defaultValue>
+      <defaultValue>'4PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
       <masked>false</masked>

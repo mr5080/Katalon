@@ -144,12 +144,12 @@ randomLastName = randomLastName.replaceAll('[\\d.]', '')
 // hardcode for claims
 if(realAPlusClaimReport)
 {
-	randomFirstName = ('Claud').toUpperCase()
-	randomLastName = ('Summers').toUpperCase()
-	addressFL = ('7999 Macinnes Dr').toUpperCase()
-	cityFL = ('Jacksonville').toUpperCase()
+	randomFirstName = ('Corine').toUpperCase()
+	randomLastName = ('Green').toUpperCase()
+	addressFL = ('1139 Riverscape St').toUpperCase()
+	cityFL = ('Bradenton').toUpperCase()
 	stateFL = 'FL'
-	zipFL = 32244
+	zipFL = 34208
 }
 //hardcode for Credit
 if(realTransunionCreditReport)
@@ -584,7 +584,7 @@ if (policyType == 'HO6')
 {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 1)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') 
