@@ -12,13 +12,10 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 	
 	
-System.out.println("shouldBind value = " + shouldBind)
-
 WebUI.openBrowser('')
 
-WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
+//WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
 
-//WebUI.maximizeWindow()
 
 if(environment == "TEST")
 {
@@ -29,22 +26,9 @@ else if(environment == "STAGE")
 	WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 }
 
-//WebUI.waitForPageLoad(5)
-
-/*
-for(int z = 0; z < 100; z++)
-{
-	randomNumber = ((Math.random() * 3) as int) // generates random number, either 0, 1, 2 used to randomize payment method
-	System.out.println('randomNumber = ' + randomNumber )
-}
-*/
-//import com.kms.katalon.core.webui.common.WebUiCommonHelper
-//import com.sun.org.apache.bcel.internal.generic.Select
-// Get random address
 // Read in FL address from excel file, true mean the first line consider as a header.
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 
-//WebUI.acceptAlert()
 // random num between 2 - 500 (first line in excel file is a header)
 int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 
@@ -66,29 +50,7 @@ String stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 
 String zipFL = addressData.getValue(4, randomFLaddress - 1)
 
-// hard coding to APlus claims data
-/*
-if(realClaimReport)
-{
-	addressFL = ('7999 Macinnes Dr').toUpperCase()
-	cityFL = ('Jacksonville').toUpperCase()
-	stateFL = 'FL'
-	zipFL = 32244
-}
-
-
-// hard code credit ordering 
-if(realAPlusCreditReport)
-{
-	addressFL = ('1716 Cherry Ln').toUpperCase()
-	cityFL = ('Lakeland').toUpperCase()
-	stateFL = 'FL'
-	zipFL = 33811
-}
-*/
-
-//System.out.println((((((addressFL + ' ') + cityFL) + ' ') + stateFL) + ' ') + zipFL)
-
+ 
 // Prior Address, only used if Year Construction < 3 from current year
 String addressFLPrior = addressData.getValue(1, randomFLaddressPrior - 1).toUpperCase()
 
@@ -97,7 +59,6 @@ String cityFLPrior = addressData.getValue(2, randomFLaddressPrior - 1).toUpperCa
 String stateFLPrior = addressData.getValue(3, randomFLaddressPrior - 1).toUpperCase()
 
 String zipFLPrior = addressData.getValue(4, randomFLaddressPrior - 1)
-
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx',  'FirstName', false)
 
@@ -111,29 +72,14 @@ String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow
 
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
 randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
-// hardcode for Claims
-/*
-if(realClaimReport)
-{
-	randomFirstName = ('Claud').toUpperCase()
-}
-//hardcode for Credit
-if(realAPlusCreditReport)
-{
-	randomFirstName = ('Mirian').toUpperCase()
-}
-*/
+
 System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
-//System.out.println(randomFirstName)
-//System.out.println(randomFirstNameForInterest)
 
 
 // Last name from excel file
 Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx',  'LastName', false)
 
 int randomLastNameRow = 1 + ((Math.random() * ((900 - 1) + 1)) as int)
-
-System.out.println(randomLastNameRow)
 
 //String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
 String randomLastName = lastNameData.getValue(1, randomLastNameRow)
@@ -144,12 +90,22 @@ randomLastName = randomLastName.replaceAll('[\\d.]', '')
 // hardcode for claims
 if(realAPlusClaimReport)
 {
+	
+	randomFirstName = ('Lillie').toUpperCase()
+	randomLastName = ('Green').toUpperCase()
+	addressFL = ('1139 Riverscape St').toUpperCase()
+	cityFL = ('Bradenton').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 34208	
+	
+	/* second claim test case
 	randomFirstName = ('Corine').toUpperCase()
 	randomLastName = ('Green').toUpperCase()
 	addressFL = ('1139 Riverscape St').toUpperCase()
 	cityFL = ('Bradenton').toUpperCase()
 	stateFL = 'FL'
 	zipFL = 34208
+	*/
 }
 //hardcode for Credit
 if(realTransunionCreditReport)
@@ -161,8 +117,17 @@ if(realTransunionCreditReport)
 	stateFL = 'FL'
 	zipFL = 33811
 }
+//hardcode for Address
+if(manualNameAddress)
+{
+	randomLastName = ('leslie').toUpperCase()
+	randomFirstName = ('diaz').toUpperCase()
+	addressFL = ('78659 goldfinch lane').toUpperCase()
+	cityFL = ('yulee').toUpperCase()
+	stateFL = 'FL'
+	zipFL = 32097
+}
 
-System.out.println(randomLastName)
 
 String fullName = (randomFirstName + ' ') + randomLastName
 
@@ -229,22 +194,12 @@ WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypres
 
 if(realTestUser == true)
 {
-	///html[1]/body[1]/div[1]/font[1]/form[1]/select[1]/option[4928]WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "2258280/CYP2258280", true)
-	//WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "2258280 - CYP2258280", false)
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'))
 	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/Select_Agent List'), "3184819")  // Agent Code
 	
 }
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
-//WebUI.delay(5)
-System.out.println('$isAgent = ' + isAgent)
-
-
-junk = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), 'value')  //getText - gets value of input box
-//	   WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'))
-System.out.println('EffectiveDate = ' + junk)
-
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -411,16 +366,7 @@ if (isAgent == false && realTestUser == false)
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'TEST ')
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
-			
-			/* set other Agency
-			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '0455930')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), ' ')
-			*/
-			
-			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.TAB))
-			//WebUI.setText(findTestObject('Object Repository/LA-Evergreen2/Page_/input_SearchAgentCode'), Keys.chord(Keys.ENTER))
-			// wait for dynamic table to populate?
+					
 			WebUI.delay(1)
 			if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2))
 			{
@@ -615,8 +561,6 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_C
         catch (Exception e) {
             System.out.println(e)
         } 
-        // need to click off Construction Year input box , dont think i need this since tabbing off it?
-        //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))	
     }
 }
 
@@ -953,13 +897,13 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 	//randomNumber2 = 0
     if (randomNumber2 == 0) 
 	{
-        'Check'
-        WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'C', false)
+        'Mailed Check'
+        WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false)
 
-        WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
+        //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
 
 		//WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
-		WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
+		//WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
 			// CC window takes forever to open...
 			//WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 		   
@@ -1025,6 +969,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 //}
 
 
+// commented out very temporityily 8.25.21 PUT BACK IN ASAP
 
 
 if(shouldBind == true)
@@ -1210,3 +1155,6 @@ System.out.println('shouldBind = ' + shouldBind)
 
 
 //WebUI.closeBrowser()
+	
+	
+	

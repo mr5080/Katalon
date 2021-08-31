@@ -68,4 +68,11 @@
       <masked>false</masked>
       <name>realAPlusClaimReport</name>
    </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>805de48f-9fee-4ef9-8763-5a62f8d93716</id>
+      <masked>false</masked>
+      <name>manualNameAddress</name>
+   </variable>
 </TestCaseEntity>
