@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>ec98b667-0e47-4658-b959-ac531a6f7e21</testCaseGuid>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description></description>
       <id>091b05b1-5f55-40eb-97ec-a555ca7ab04b</id>
       <masked>false</masked>
@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'4PAY'</defaultValue>
+      <defaultValue>'FULL'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
       <masked>false</masked>

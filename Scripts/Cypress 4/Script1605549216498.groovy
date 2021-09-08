@@ -87,6 +87,8 @@ String randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
+ 
+
 // hardcode for claims
 if(realAPlusClaimReport)
 {
@@ -96,7 +98,7 @@ if(realAPlusClaimReport)
 	addressFL = ('1139 Riverscape St').toUpperCase()
 	cityFL = ('Bradenton').toUpperCase()
 	stateFL = 'FL'
-	zipFL = 34208	
+	zipFL = 34208
 	
 	/* second claim test case
 	randomFirstName = ('Corine').toUpperCase()
@@ -520,7 +522,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/inpu
 if (policyType == 'HO6') 
 {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
-    //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
+    //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')  // 360 now ordered on HO6
 	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
 }
 
@@ -633,8 +635,7 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
-WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application' // 12/28/20 - nee dto update xpath of buttons, looks like somethin changed
-        ))
+WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'   ))
 
 'Set Current Mailing Address to international address on the Policy screen'
 randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
@@ -699,7 +700,8 @@ if (policyType == 'HO3') {
     if (WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML') != '') {
         System.out.println('replacementCost360 = ' + WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'),  'innerHTML'))
 
-        replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' //WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
+        replacementCost360 = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'), 'innerHTML' 
+			//WebUI.setText(findTestObject('Cypress3/Page_/div_Suggested Replacement Cost  27005867'), replacementCost360)        
             // manually set Dwelling Cov A since replacement cost was not returned	        
             )
     } else {
@@ -875,17 +877,21 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 //{
 	// generates random number, either 0, 1, 2 used to randomize payment method
     randomNumber2 = ((Math.random() * 3 ) as int)
-    System.out.println('randomNumber2 = ' + randomNumber2)
-
+    	
+	randomNumber2 = 3
+	
     String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
     System.out.println('depositAmount = ' + depositAmount)
 
     depositAmount = depositAmount.replaceAll('[^\\d.]', '')
     System.out.println('depositAmount = ' + depositAmount)
 
-//    randomNumber2 = 1 // credit card and eft have defects, cant bind with them currently, 12/3/20
-
-	//randomNumber2 = 0
+	if(Double.parseDouble(depositAmount) > 999)	// force EFT since CC cant bind over 1000
+	{
+			randomNumber2 = 2	// force EFT
+			System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
+	}
+	
     if (randomNumber2 == 0) 
 	{
         'Mailed Check'
@@ -923,6 +929,10 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 		WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
 			
+
+		/*
+		 * Can no longer bind over 1000 with CC
+		 
 		//if(Integer.valueOf(depositAmount) > 1000)
 
 		
@@ -935,7 +945,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 			depositAmount = 100.58
 		}
 		WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-		
+		*/
     } 
 	else if (randomNumber2 == 2) 
 	{
@@ -957,113 +967,45 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
         //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
         //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
     }
+	
+	/*  should work, but makes method to large error :( 9/8/21
+	else if (randomNumber2 == 3)
+		{
+			'EFT Recurring'
+			WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
+	
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
+	
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
+	
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
+	
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
+	
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
+	
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - EFT RecurringVerifyLastName'), randomLastName)
+			WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+			
+			
+			//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
+			//WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
+		}
+		*/
 //}
 
 
 // commented out very temporityily 8.25.21 PUT BACK IN ASAP
 
+	
+// rework this
+// write to file, leave file open
+//	if shouldBind == true, click it, wait for td_policyNumber
+//	finish writing file
+//	close file
 
-if(shouldBind == true)
-{
-	//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-	WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
 	
-	
-	
-	System.out.println('element now clickable')
-//WebUI.delay(5)
-	
-	'Bind Application button'
-	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
-	
-	//WebUI.rightClick(findTestObject('Cypress 4/Page_/td_PolicyNumber'))
-	if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) 
-		{
-	    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
-	
-	    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
-	
-	    System.out.println('policyNumber = ' + policyNumber)
-	
-	    // write last name, first name to excel file
-	    FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-	
-	    XSSFWorkbook workbook = new XSSFWorkbook(file)
-	
-	    XSSFSheet sheet = workbook.getSheet('Sheet1')
-	
-	    //String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
-	    //System.out.println(Data_fromCell)
-	    // count rows currently in the file
-	    'Read data from excel'
-	    int rowCount = sheet.getLastRowNum() + 1
-	
-	    System.out.println('rowCount = ' + rowCount)
-	
-	    'Write data to excel'
-	    try {
-	        //  Block of code to try to write to cell
-	        sheet.createRow(rowCount //create new row
-	            )
-	
-	        sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
-	
-	        sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
-	
-	        sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
-	
-	        sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-	
-	        sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
-	
-	        // removes all chars from string
-	        //sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-	        sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-	
-	        policyCreated = new Date()
-	
-	        System.out.println('myDate = ' + policyCreated)
-	
-	        sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
-	
-	        sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
-	
-	        sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-	    }
-	    catch (Exception e) {
-	        //  Block of code to handle errors
-	        //sheet.createRow(rowCount);	//create new row
-	        //sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
-	        System.out.println(e)
-	    } 
-	    
-	    file.close()
-	
-	    try {
-	        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-	
-	        workbook.write(outFile)
-	
-	        outFile.close()
-	    }
-	    catch (Exception e) {
-	        System.out.println(e)
-	
-	        WebUI.delay(20)
-	
-	        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-	
-	        workbook.write(outFile)
-	
-	        outFile.close()
-	    } 
-	} else {
-	    System.out.println('in the else, FAILED to find policy number')
-	}
-}
-
-else // shouldBind = false, still write quote number to file
-{
+// start of rewrite
 	// write last name, first name to excel file
 	FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 
@@ -1080,7 +1022,7 @@ else // shouldBind = false, still write quote number to file
 	System.out.println('rowCount = ' + rowCount)
 
 	'Write data to excel'
-	try 
+	try
 	{
 		//  Block of code to try to write to cell
 		sheet.createRow(rowCount)
@@ -1093,53 +1035,73 @@ else // shouldBind = false, still write quote number to file
 
 		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
 
-		sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
-
-		// removes all chars from string
-		//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-		sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-
-		policyCreated = new Date()
-
-		System.out.println('myDate = ' + policyCreated)
-
-		sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
-
-		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
-
-		sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-	}
-	catch (Exception e) 
-	{
-		//  Block of code to handle errors
-		//sheet.createRow(rowCount);	//create new row
-		//sheet.getRow(rowCount).createCell(0).setCellValue('catchRebecca')
-		System.out.println(e)
-	}
+		if(shouldBind == false)
+		{
+			sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
+		}
+		else if(shouldBind == true)
+		{
+			//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+			WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
+				
+			'Bind Application > button'
+			WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
+			
+			if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) 
+			{
+			    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
+			
+			    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
+			
+		        sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
+			}
+		}	
+	        // removes all chars from string
+	        //sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
+	        sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
 	
-	file.close()
+	        policyCreated = new Date()
+	
+	        System.out.println('myDate = ' + policyCreated)
+	
+	        sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+	
+	        sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+	
+	        sheet.getRow(rowCount).createCell(8).setCellValue(policyType)		   
+		    
+		    file.close()
+		
+		    try {
+		        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+		
+		        workbook.write(outFile)
+		
+		        outFile.close()
+		    }
+		    catch (Exception e) {
+		        System.out.println(e)
+		
+		        WebUI.delay(20)
+				// try to write again, file is probably open...
+		        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+		
+		        workbook.write(outFile)
+		
+		        outFile.close()
+		    } 
+		}
+		catch (Exception e) 
+		{
+			System.out.println(e)
+		}
+	/*
+	 else {
+		    System.out.println('in the else, FAILED to find policy number')
+		}
+	*/
+	
 
-	try 
-	{
-		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-		workbook.write(outFile)
-
-		outFile.close()
-	}
-	catch (Exception e) 
-	{
-		System.out.println(e)
-
-		WebUI.delay(20)
-
-		FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-		workbook.write(outFile)
-
-		outFile.close()
-	}
-}
 System.out.println('quoteNumber = ' + quoteNumber)
 System.out.println('fullName = ' + fullName)
 System.out.println('shouldBind = ' + shouldBind)
