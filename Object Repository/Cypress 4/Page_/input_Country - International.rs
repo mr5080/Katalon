@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ApplicantCountryName']</value>
+         <value>//input[@id='PreviousCountryName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

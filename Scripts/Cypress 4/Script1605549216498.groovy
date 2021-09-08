@@ -115,17 +115,17 @@ if(realTransunionCreditReport)
 	addressFL = ('1716 Cherry Ln').toUpperCase()
 	cityFL = ('Lakeland').toUpperCase()
 	stateFL = 'FL'
-	zipFL = 33811
+	zipFL = 33811	
 }
 //hardcode for Address
 if(manualNameAddress)
 {
-	randomLastName = ('leslie').toUpperCase()
-	randomFirstName = ('diaz').toUpperCase()
-	addressFL = ('78659 goldfinch lane').toUpperCase()
-	cityFL = ('yulee').toUpperCase()
+	randomLastName = ('jack').toUpperCase()
+	randomFirstName = ('Money').toUpperCase()
+	addressFL = ('2965 Sunset ST').toUpperCase()
+	cityFL = ('JACKSONVILLE').toUpperCase()
 	stateFL = 'FL'
-	zipFL = 32097
+	zipFL = 32254
 }
 
 
@@ -177,7 +177,6 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/bu
 if (isAgent == true) 
 {
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '10100')
-	System.out.println('should be logging in as agent 10100 - JHUGHES')
 }
 else
 {
@@ -321,8 +320,6 @@ if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page
     //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
     geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
 
-    System.out.println('geoCodeStatus = ' + geoCodeStatus)
-
     geoCodeStatusTest = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'baseURI')
 
     System.out.println('geoCodeStatusTest = ' + geoCodeStatusTest)
@@ -353,7 +350,7 @@ System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
 if (isAgent == false && realTestUser == false) 
-	{
+{
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
 
     // wait for dynamic table to populate?
@@ -380,7 +377,7 @@ if (isAgent == false && realTestUser == false)
 		}
 			
 		}	
-	}
+}
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
 // 
@@ -399,6 +396,7 @@ int maxDay = ((LocalDate.of(thisYear, 1, 1).toEpochDay()) as int)
 
 //for(int x = 0; x < 100; x++)
 //{
+
 long randomDay = minDay + random.nextInt(maxDay - minDay)
 
 LocalDate randomBirthDate = LocalDate.ofEpochDay(randomDay)
@@ -410,8 +408,7 @@ String day = randomBirthDate.toString().substring(8, 10)
 String month = randomBirthDate.toString().substring(5, 7)
 
 String DOB = (((month + '/') + day) + '/') + year
-//hardcode for APlus claims
-//DOB = '04/13/1982'
+
 
 //System.out.println("users generated DOB = " + DOB)
 //System.out.println("Random Date = " + randomBirthDate);
@@ -473,17 +470,11 @@ if (constructionYear.length() > 1)
 if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
 {
     int randomNumber = 0
+	// generates random number, either 0 or 1, used to randomize US/international
+    randomNumber = ((Math.random() * 2 ) as int)
 
-    //for(x = 0; x<100; x++)
-    //{
-    randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
-        ) as int)
 
-    //randomNumber = 1	// force International or not. 0 = US, 1 = International		
-    System.out.println('randomNumber = ' + randomNumber)
-
-    randomNumber = 0 // 1 = force to be international
-    //}
+    randomNumber = 0 // force International or not. 0 = US, 1 = International
     System.out.println('need to fill in prior mailing address stuff')
 
     if (randomNumber == 0) // fill out US prior mailing address
@@ -529,7 +520,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/inpu
 if (policyType == 'HO6') 
 {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
+    //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')
 	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
 }
 
