@@ -122,12 +122,12 @@ if(realTransunionCreditReport)
 //hardcode for Address
 if(manualNameAddress)
 {
-	randomLastName = ('jack').toUpperCase()
-	randomFirstName = ('Money').toUpperCase()
-	addressFL = ('2965 Sunset ST').toUpperCase()
-	cityFL = ('JACKSONVILLE').toUpperCase()
+	randomLastName = ('Sarah').toUpperCase()
+	randomFirstName = ('Critches').toUpperCase()
+	addressFL = ('1116 Haley Ln').toUpperCase()
+	cityFL = ('Dunedin').toUpperCase()	// Jacksonville allows sinkhole coverage
 	stateFL = 'FL'
-	zipFL = 32254
+	zipFL = 34698
 }
 
 
@@ -459,7 +459,10 @@ if (constructionYear.length() > 1)
 		constructionYear = 2015
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
 		WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
-		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
+		if(policyType == 'HO3')	// maybe the popup is only for HO3
+		{	
+			WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
+		}
 		
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
 		
@@ -476,7 +479,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
     randomNumber = ((Math.random() * 2 ) as int)
 
 
-    randomNumber = 0 // force International or not. 0 = US, 1 = International
+    randomNumber = 1 // force International or not. 0 = US, 1 = International
     System.out.println('need to fill in prior mailing address stuff')
 
     if (randomNumber == 0) // fill out US prior mailing address
@@ -506,7 +509,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), 
             '9584 saint international st')
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 100034')
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
     }
@@ -523,7 +526,7 @@ if (policyType == 'HO6')
 {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
     //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')  // 360 now ordered on HO6
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 1)
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') 
@@ -878,7 +881,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 	// generates random number, either 0, 1, 2 used to randomize payment method
     randomNumber2 = ((Math.random() * 3 ) as int)
     	
-	randomNumber2 = 3
+	//randomNumber2 = 3
 	
     String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
     System.out.println('depositAmount = ' + depositAmount)
@@ -886,9 +889,9 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
     depositAmount = depositAmount.replaceAll('[^\\d.]', '')
     System.out.println('depositAmount = ' + depositAmount)
 
-	if(Double.parseDouble(depositAmount) > 999)	// force EFT since CC cant bind over 1000
+	if(Double.parseDouble(depositAmount) > 999)	// force EFT Recurring since CC cant bind over 1000
 	{
-			randomNumber2 = 2	// force EFT
+			randomNumber2 = 3	// force EFT Recurring
 			System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
 	}
 	
@@ -929,13 +932,9 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 		WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
 			
-
 		/*
-		 * Can no longer bind over 1000 with CC
-		 
+		 * Can no longer bind over 1000 with CC		 
 		//if(Integer.valueOf(depositAmount) > 1000)
-
-		
 		//if(depositAmount.length() >= 7 )
 		//if(Integer.parseInt(depositAmount) > 999)
 		System.out.println("depositAmount = " + depositAmount)
@@ -967,10 +966,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
         //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
         //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
     }
-	
-	/*  should work, but makes method to large error :( 9/8/21
 	else if (randomNumber2 == 3)
-		{
+	{
 			'EFT Recurring'
 			WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
 	
@@ -991,7 +988,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 			//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
 			//WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
 		}
-		*/
+		
 //}
 
 
