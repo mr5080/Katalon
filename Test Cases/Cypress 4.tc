@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>ec98b667-0e47-4658-b959-ac531a6f7e21</testCaseGuid>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description></description>
       <id>091b05b1-5f55-40eb-97ec-a555ca7ab04b</id>
       <masked>false</masked>
@@ -41,7 +41,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>6b3cf98e-b3c7-442d-8e6a-85812dccded8</id>
       <masked>false</masked>
