@@ -20,7 +20,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>f3f06d5e-eebe-4fef-b431-80ceb3b6f32a</id>
       <masked>false</masked>
@@ -62,7 +62,7 @@
       <name>realTransunionCreditReport</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>9e64bae9-51d8-41ef-8953-a077fe071eef</id>
       <masked>false</masked>
@@ -74,5 +74,19 @@
       <id>805de48f-9fee-4ef9-8763-5a62f8d93716</id>
       <masked>false</masked>
       <name>manualNameAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>['9PAY', '4PAY', 'QUARTERLY', 'SEMI', 'FULL']</defaultValue>
+      <description></description>
+      <id>bc56f79a-8e92-4478-8008-3ada70b42d28</id>
+      <masked>false</masked>
+      <name>testMap</name>
+   </variable>
+   <variable>
+      <defaultValue>[:]</defaultValue>
+      <description></description>
+      <id>4a7d0981-a797-4a62-af41-2044b1088c93</id>
+      <masked>false</masked>
+      <name>variable</name>
    </variable>
 </TestCaseEntity>
