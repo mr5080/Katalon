@@ -28,7 +28,6 @@ import internal.GlobalVariable as GlobalVariable
 //System.out.println('testMap[1] = ' + (testMap[1]))
 //System.out.println('testMap[2] = ' + (testMap[2]))
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType], FailureHandling.STOP_ON_FAILURE)	// works
-//WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   ('payPlanOption') : payPlanOption     ], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -45,8 +44,8 @@ System.out.println(realAPlusClaimReport)
 
 System.out.println(manualNameAddress)
 
-//if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &&   		manualNameAddress == false)
-//{
+if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &&   		manualNameAddress == false)
+{
 // Read in FL address from excel file, true mean the first line consider as a header.
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 
@@ -109,7 +108,7 @@ String randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
-//} // end if
+} // end if
 System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
 
 // hardcode for claims
@@ -978,7 +977,8 @@ if (randomNumber2 == 0) {
     WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
 
     WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-} else if (randomNumber2 == 3) {
+} 
+else if (randomNumber2 == 3) {
     'EFT Recurring'
     WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
 
@@ -1000,7 +1000,9 @@ if (randomNumber2 == 0) {
 //}
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   ('payPlanOption') : payPlanOption     ], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   
+// pass vars to write the file  9.16.21
+WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), 
+	[('policyType') : policyType,   
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
@@ -1009,7 +1011,6 @@ WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : poli
 	('policyType') : policyType,
 	('shouldBind') : shouldBind,
 	('todaysTimeStamp') : todaysTimeStamp	
-	
 	     ], FailureHandling.STOP_ON_FAILURE)
 // vars to pass
 /*
