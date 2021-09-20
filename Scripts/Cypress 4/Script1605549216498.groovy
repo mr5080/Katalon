@@ -22,6 +22,24 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+String fullName
+String firstName
+String lastName
+String randomFirstName
+String randomLastName
+
+String addressFL
+String cityFL
+String stateFL
+String zipFL
+
+String addressFLPrior
+String cityFLPrior 
+String stateFLPrior
+String zipFLPrior 
+
+//String fullName
+
 // xpath helpers 
 //button[contains(text(),'Add')]
 // not used, just playing
@@ -47,69 +65,77 @@ System.out.println(manualNameAddress)
 if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &&   		manualNameAddress == false)
 {
 // Read in FL address from excel file, true mean the first line consider as a header.
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
-
-// random num between 2 - 500 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
-
-// override randomness to specifiy address in file to use
-//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
-System.out.println(randomFLaddress)
-
-int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
-
-System.out.println(randomFLaddressPrior)
-
-// Risk Adddress
-// minus 1 because first line is header in excel file
-String addressFL = addressData.getValue(1, randomFLaddress - 1).toUpperCase()
-
-String cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
-
-String stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
-
-String zipFL = addressData.getValue(4, randomFLaddress - 1)
-
-// Prior Address, only used if Year Construction < 3 from current year
-String addressFLPrior = addressData.getValue(1, randomFLaddressPrior - 1).toUpperCase()
-
-String cityFLPrior = addressData.getValue(2, randomFLaddressPrior - 1).toUpperCase()
-
-String stateFLPrior = addressData.getValue(3, randomFLaddressPrior - 1).toUpperCase()
-
-String zipFLPrior = addressData.getValue(4, randomFLaddressPrior - 1)
-
-Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
-
-int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
-
-System.out.println(randomFirstNameRow)
-
-String randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
-
-System.out.println('randomFirstName  =====    ' + randomFirstName)
-
-String randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow - 1)
-
-randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
-
-randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
-
-System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
-
-// Last name from excel file
-Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
-
-int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
-
-//String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
-String randomLastName = lastNameData.getValue(1, randomLastNameRow)
-
-// removes any numbers from last name
-randomLastName = randomLastName.replaceAll('[\\d.]', '')
+	Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
+	
+	// random num between 2 - 500 (first line in excel file is a header)
+	int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+	
+	// override randomness to specifiy address in file to use
+	//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
+	System.out.println(randomFLaddress)
+	
+	int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+	
+	System.out.println(randomFLaddressPrior)
+	
+	// Risk Adddress
+	// minus 1 because first line is header in excel file
+	addressFL = addressData.getValue(1, randomFLaddress - 1).toUpperCase()
+	
+	cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
+	
+	stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
+	
+	zipFL = addressData.getValue(4, randomFLaddress - 1)
+	
+	// Prior Address, only used if Year Construction < 3 from current year
+	addressFLPrior = addressData.getValue(1, randomFLaddressPrior - 1).toUpperCase()
+	
+	cityFLPrior = addressData.getValue(2, randomFLaddressPrior - 1).toUpperCase()
+	
+	stateFLPrior = addressData.getValue(3, randomFLaddressPrior - 1).toUpperCase()
+	
+	zipFLPrior = addressData.getValue(4, randomFLaddressPrior - 1)
+	
+	Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
+	
+	int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
+	
+	System.out.println(randomFirstNameRow)
+	
+	 randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
+	
+	System.out.println('randomFirstName  =====    ' + randomFirstName)
+	
+	 randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow - 1)
+	
+	randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
+	
+	randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
+	
+	System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+	
+	// Last name from excel file
+	Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
+	
+	int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
+	
+	//String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
+	 randomLastName = lastNameData.getValue(1, randomLastNameRow)
+	
+	// removes any numbers from last name
+	randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
 } // end if
-System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+//System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+else
+{ 	// need to manually set these for the hardcoded data below
+	addressFLPrior = '6035 W Last Chance Ln'.toUpperCase()
+	cityFLPrior = 'Dunnellon'.toUpperCase()
+	stateFLPrior = 'FL'
+	zipFLPrior = 34433
+
+}
 
 // hardcode for claims
 if (realAPlusClaimReport) {
@@ -164,9 +190,9 @@ if (manualNameAddress) {
     zipFL = 33040
 }
 
-System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+//System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
 
-String fullName = (randomFirstName + ' ') + randomLastName
+fullName = (randomFirstName + ' ') + randomLastName
 
 // Gets this Fridays date
 LocalDate dt = LocalDate.now()
@@ -900,7 +926,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 // generates random number, either 0, 1, 2 used to randomize payment method
 randomNumber2 = ((Math.random() * 3) as int)
 
-randomNumber2 = 3 // 3 = recurring EFT
+randomNumber2 = 1		// 1= CC // 3 = recurring EFT
 
 String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
 
@@ -999,6 +1025,7 @@ else if (randomNumber2 == 3) {
 
 //}
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   ('payPlanOption') : payPlanOption     ], FailureHandling.STOP_ON_FAILURE)
+
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), 
