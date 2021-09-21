@@ -41,7 +41,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>6b3cf98e-b3c7-442d-8e6a-85812dccded8</id>
       <masked>false</masked>
@@ -62,14 +62,14 @@
       <name>realTransunionCreditReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>9e64bae9-51d8-41ef-8953-a077fe071eef</id>
       <masked>false</masked>
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>805de48f-9fee-4ef9-8763-5a62f8d93716</id>
       <masked>false</masked>
