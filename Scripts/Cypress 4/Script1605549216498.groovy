@@ -62,6 +62,14 @@ System.out.println(realAPlusClaimReport)
 
 System.out.println(manualNameAddress)
 
+
+
+// start here wednesday and redo tuesdays work
+// create new test case and pass in the 3 vars below.
+// pass back the results in a Map
+//https://forum.katalon.com/t/how-to-return-values-from-a-testcase-without-using-calltestcase-feature/12185/12
+
+
 if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &&   		manualNameAddress == false)
 {
 // Read in FL address from excel file, true mean the first line consider as a header.
