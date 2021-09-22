@@ -22,12 +22,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-String fullName
-//String firstName
-//String lastName
-
-//String fullName
-
 // xpath helpers 
 //button[contains(text(),'Add')]
 // not used, just playing
@@ -44,13 +38,6 @@ if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 }
 
-System.out.println(realTransunionCreditReport)
-
-System.out.println(realAPlusClaimReport)
-
-System.out.println(manualNameAddress)
-
-
 // pass vars to write the file  9.16.21
 def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
 	[('realTransunionCreditReport') : realTransunionCreditReport,
@@ -58,9 +45,7 @@ def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
 	('manualNameAddress') : manualNameAddress	
 		 ], FailureHandling.STOP_ON_FAILURE)
 
-
-WebUI.comment('back from test case')
-WebUI.comment(nameAddressData['randomFirstName'])
+//WebUI.comment(nameAddressData['randomFirstName'])
 
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
@@ -78,27 +63,9 @@ String zipFLPrior = nameAddressData['zipFLPrior']
 
 //System.exit(0)
 
-// start here wednesday and redo tuesdays work
-// create new test case and pass in the 3 vars below.
-// pass back the results in a Map
-//https://forum.katalon.com/t/how-to-return-values-from-a-testcase-without-using-calltestcase-feature/12185/12
-
-
-
-
-// move all this to test case
-
-///  end of moving to test case
-
-
-
-
-
-
-
 //System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
 
-fullName = (randomFirstName + ' ') + randomLastName
+String fullName = (randomFirstName + ' ') + randomLastName
 
 // Gets this Fridays date
 LocalDate dt = LocalDate.now()
@@ -330,8 +297,7 @@ if ((isAgent == false) && (realTestUser == false)) {
     }
 }
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_Producer'), '10100_JHUGHES', false) 	// Selecting a Producer no longer needed 12/2/20
-// 
+ 
 //need to click somewhere to get rid of the datepicker popup.
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate // no longer needed since Effective date is now being set to todays date (11/16/20)
@@ -823,13 +789,7 @@ System.out.println('totalPremium = ' + totalPremium)
 'Bind/Submit Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
-//WebUI.delay(30)
-//maybe randomize this?
-// random number, 1-3 then selectOptionByIndex with random number
-// if agent == true, they cant take a check
-//if (isAgent == false) 
-//{
-// generates random number, either 0, 1, 2 used to randomize payment method
+// generates random number, either 0, 1, 2 used to randomize payment method, if one is not set
 randomNumber2 = ((Math.random() * 4) as int)
 randomNumber2 = 1		// 1= CC // 4 = recurring EFT
 
@@ -848,138 +808,11 @@ if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC can
     System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
 }
 
-if (howPayDeposit == 0) {
-    'Setup random using logic above'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
-        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
-        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
-        // CC window takes forever to open...
-        ) //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-    /*
-		 * Can no longer bind over 1000 with CC		 
-		//if(Integer.valueOf(depositAmount) > 1000)
-		//if(depositAmount.length() >= 7 )
-		//if(Integer.parseInt(depositAmount) > 999)
-		System.out.println("depositAmount = " + depositAmount)
-		//if(depositAmount.toInteger() > 999 )
-		if(Double.parseDouble(depositAmount) > 999)
-		{// CCC deposits cant be more than 1000
-			depositAmount = 100.58
-		}
-		WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-		*/
-    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
-    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
-    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-} else if (howPayDeposit == 1) {
-    'Credit Card'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'P', false)
-
-    WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
-
-    WebUI.delay(5)
-
-    WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-
-    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
-
-    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
-
-    WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-}
-else if (howPayDeposit == 2) {
-    'Recurring Credit Card'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'PR', false)
-
-    WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
-
-    //WebUI.delay(5)
-
-    WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-
-    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
-
-    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
-	WebUI.setText(findTestObject('Cypress 4/Page_/input - RecurringVerifyLastName'), randomLastName)
-	
-
-    WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-}
- else if (howPayDeposit == 3) {
-    'EFT'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'E', false)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-} 
-else if (howPayDeposit == 4) {
-    'EFT Recurring'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RecurringVerifyLastName'), randomLastName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-}
-else if (howPayDeposit == 5) {
-    'Mailed Check'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
-        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
-        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
-        // CC window takes forever to open...
-        ) //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-    /*
-		 * Can no longer bind over 1000 with CC		 
-		//if(Integer.valueOf(depositAmount) > 1000)
-		//if(depositAmount.length() >= 7 )
-		//if(Integer.parseInt(depositAmount) > 999)
-		System.out.println("depositAmount = " + depositAmount)
-		//if(depositAmount.toInteger() > 999 )
-		if(Double.parseDouble(depositAmount) > 999)
-		{// CCC deposits cant be more than 1000
-			depositAmount = 100.58
-		}
-		WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-		*/
-    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
-    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
-    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-} 
-//}
-//WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   ('payPlanOption') : payPlanOption     ], FailureHandling.STOP_ON_FAILURE)
-
+//select payment method logic
+WebUI.callTestCase(findTestCase('selectPaymentType'),
+	[('howPayDeposit') : howPayDeposit,
+	 ('randomLastName') : randomLastName		
+		 ], FailureHandling.STOP_ON_FAILURE)
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('WriteFile'), 
@@ -992,113 +825,8 @@ WebUI.callTestCase(findTestCase('WriteFile'),
 	('policyType') : policyType,
 	('shouldBind') : shouldBind,
 	('todaysTimeStamp') : todaysTimeStamp	
-	     ], FailureHandling.STOP_ON_FAILURE)
-// vars to pass
-/*
-randomLastName
-randomFirstName
-quoteNumber
-todaysDate
-totalPremium
-policyType
+	    ], FailureHandling.STOP_ON_FAILURE)
 
-*/
-// commented out very temporityily 9.16.21 PUT BACK IN ASAP -- heap size error
-// write last name, first name to excel file
-/*
-	FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-
-	XSSFWorkbook workbook = new XSSFWorkbook(file)
-
-	XSSFSheet sheet = workbook.getSheet('Sheet1')
-
-	//String Data_fromCell = sheet.getRow(0).getCell(0).getStringCellValue()
-	//System.out.println(Data_fromCell)
-	// count rows currently in the file
-	'Read data from excel'
-	int rowCount = sheet.getLastRowNum() + 1
-
-	System.out.println('rowCount = ' + rowCount)
-
-	'Write data to excel'
-	try
-	{
-		//  Block of code to try to write to cell
-		sheet.createRow(rowCount)
-
-		sheet.getRow(rowCount).createCell(0).setCellValue((randomLastName + ', ') + randomFirstName)
-
-		sheet.getRow(rowCount).createCell(1).setCellValue(randomFirstName)
-
-		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
-
-		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-
-		if(shouldBind == false)
-		{
-			sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
-		}
-		else if(shouldBind == true)
-		{
-			//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-			WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
-				
-			'Bind Application > button'
-			WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
-			
-			if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45)) 
-			{
-			    WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
-			
-			    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
-			
-		        sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
-			}
-		}	
-	        // removes all chars from string
-	        //sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-	        sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-	
-	        policyCreated = new Date()
-	
-	        System.out.println('myDate = ' + policyCreated)
-	
-	        sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
-	
-	        sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
-	
-	        sheet.getRow(rowCount).createCell(8).setCellValue(policyType)		   
-		    
-		    file.close()
-		
-		    try {
-		        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-		
-		        workbook.write(outFile)
-		
-		        outFile.close()
-		    }
-		    catch (Exception e) {
-		        System.out.println(e)
-		
-		        WebUI.delay(20)
-				// try to write again, file is probably open...
-		        FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-		
-		        workbook.write(outFile)
-		
-		        outFile.close()
-		    } 
-		}
-		catch (Exception e) 
-		{
-			System.out.println(e)
-		}
-	/*
-	 else {
-		    System.out.println('in the else, FAILED to find policy number')
-		}
-	*/
 System.out.println('quoteNumber = ' + quoteNumber)
 
 System.out.println('fullName = ' + fullName)
