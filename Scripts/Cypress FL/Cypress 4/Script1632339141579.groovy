@@ -45,6 +45,7 @@ def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSet
 	('manualNameAddress') : manualNameAddress	
 		 ], FailureHandling.STOP_ON_FAILURE)
 
+
 //WebUI.comment(nameAddressData['randomFirstName'])
 var client = new nameAddressStuff()
 
@@ -53,6 +54,7 @@ String randomFirstName = client.randomFirstName
 
 //String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
+
 
 String addressFL = nameAddressData['addressFL']
 String cityFL = nameAddressData['cityFL']
