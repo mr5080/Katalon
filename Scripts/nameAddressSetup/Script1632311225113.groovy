@@ -19,7 +19,9 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		// override randomness to specifiy address in file to use
 		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 		System.out.println(randomFLaddress)
-	
+		System.out.println(randomFLaddress)
+		
+		
 			
 		int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 		
