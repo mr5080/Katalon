@@ -38,6 +38,7 @@ if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 }
 
+
 // pass vars to write the file  9.16.21
 def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSetup'),
 	[('realTransunionCreditReport') : realTransunionCreditReport,
