@@ -34,7 +34,7 @@ if (howPayDeposit == 0) {
 
 	WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
 
-	WebUI.delay(5)
+	//WebUI.delay(5)
 
 	WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 

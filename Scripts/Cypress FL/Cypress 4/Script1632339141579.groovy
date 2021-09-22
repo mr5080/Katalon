@@ -39,15 +39,18 @@ if (environment == 'TEST') {
 }
 
 // pass vars to write the file  9.16.21
-def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
+def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSetup'),
 	[('realTransunionCreditReport') : realTransunionCreditReport,
 	('realAPlusClaimReport') : realAPlusClaimReport,
 	('manualNameAddress') : manualNameAddress	
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 //WebUI.comment(nameAddressData['randomFirstName'])
+var client = new nameAddressStuff()
 
-String randomFirstName = nameAddressData['randomFirstName']
+String randomFirstName = client.randomFirstName
+
+//String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
 String addressFL = nameAddressData['addressFL']
@@ -791,7 +794,6 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 // generates random number, either 0, 1, 2 used to randomize payment method, if one is not set
 randomNumber2 = ((Math.random() * 4) as int)
-randomNumber2 = 1		// 1= CC // 4 = recurring EFT
 
 String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
 
@@ -809,13 +811,13 @@ if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC can
 }
 
 //select payment method logic
-WebUI.callTestCase(findTestCase('selectPaymentType'),
+WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
 	 ('randomLastName') : randomLastName		
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 // pass vars to write the file  9.16.21
-WebUI.callTestCase(findTestCase('writeFile'), 
+WebUI.callTestCase(findTestCase('Cypress FL/writeFile'), 
 	[('policyType') : policyType,   
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,
