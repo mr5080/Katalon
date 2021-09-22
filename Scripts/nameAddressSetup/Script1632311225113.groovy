@@ -96,6 +96,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		cityFLPrior = 'Dunnellon'.toUpperCase()
 		stateFLPrior = 'FL'
 		zipFLPrior = 34433
+		randomFirstNameForInterest = "JOHN"
 	
 	}
 	
@@ -143,9 +144,8 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		randomFirstName = 'Critches'.toUpperCase()
 	
 		addressFL = '317 Whitehead St'.toUpperCase()
-	
-		cityFL = 'Key West'.toUpperCase( // Jacksonville allows sinkhole coverage
-			)
+		// Jacksonville allows sinkhole coverage
+		cityFL = 'Key West'.toUpperCase()
 	
 		stateFL = 'FL'
 	
@@ -154,8 +154,23 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	
 	
-	def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
-	WebUI.comment(nameAddressData)
+	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
+	def nameAddressData = ['randomFirstName': randomFirstName, 
+		'randomLastName': randomLastName,
+		'randomFirstNameForInterest': randomFirstNameForInterest,
+		'addressFL': addressFL,
+		'cityFL': cityFL,
+		'stateFL': stateFL,
+		'zipFL': zipFL,
+		'addressFLPrior': addressFLPrior,
+		'cityFLPrior': cityFLPrior,
+		'stateFLPrior': stateFLPrior,
+		'zipFLPrior': zipFLPrior		
+		]
+		
+	//WebUI.comment(nameAddressData['randomFirstName'])
+	//WebUI.comment(nameAddressData['randomLastName'])
+	//System.exit(0)
 	return nameAddressData
 	
 	/*

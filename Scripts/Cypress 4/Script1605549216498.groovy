@@ -72,7 +72,7 @@ def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
 
 
 WebUI.comment('back from test case')
-WebUI.comment(nameAddressData[name])
+WebUI.comment(nameAddressData['randomFirstName'])
 System.exit(0)
 
 // start here wednesday and redo tuesdays work
