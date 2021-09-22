@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input - EFT RecurringVerifyLastName</name>
+   <name>input - RecurringVerifyLastName</name>
    <tag></tag>
    <elementGuidId>706fd645-79fe-4e27-a22b-f868126b22ec</elementGuidId>
    <selectorCollection>

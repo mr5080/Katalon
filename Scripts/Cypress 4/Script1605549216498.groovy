@@ -23,20 +23,8 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
 String fullName
-String firstName
-String lastName
-String randomFirstName
-String randomLastName
-
-String addressFL
-String cityFL
-String stateFL
-String zipFL
-
-String addressFLPrior
-String cityFLPrior 
-String stateFLPrior
-String zipFLPrior 
+//String firstName
+//String lastName
 
 //String fullName
 
@@ -46,7 +34,7 @@ String zipFLPrior
 //System.out.println('testMap[1] = ' + (testMap[1]))
 //System.out.println('testMap[2] = ' + (testMap[2]))
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType], FailureHandling.STOP_ON_FAILURE)	// works
-/*
+
 WebUI.openBrowser('')
 
 //WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
@@ -61,7 +49,7 @@ System.out.println(realTransunionCreditReport)
 System.out.println(realAPlusClaimReport)
 
 System.out.println(manualNameAddress)
-*/
+
 
 // pass vars to write the file  9.16.21
 def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
@@ -73,7 +61,22 @@ def nameAddressData = WebUI.callTestCase(findTestCase('nameAddressSetup'),
 
 WebUI.comment('back from test case')
 WebUI.comment(nameAddressData['randomFirstName'])
-System.exit(0)
+
+String randomFirstName = nameAddressData['randomFirstName']
+String randomLastName = nameAddressData['randomLastName']
+
+String addressFL = nameAddressData['addressFL']
+String cityFL = nameAddressData['cityFL']
+String stateFL = nameAddressData['stateFL']
+String zipFL = nameAddressData['zipFL']
+
+String addressFLPrior = nameAddressData['addressFLPrior']
+String cityFLPrior = nameAddressData['cityFLPrior']
+String stateFLPrior = nameAddressData['stateFLPrior']
+String zipFLPrior = nameAddressData['zipFLPrior']
+
+
+//System.exit(0)
 
 // start here wednesday and redo tuesdays work
 // create new test case and pass in the 3 vars below.
@@ -827,9 +830,8 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 //if (isAgent == false) 
 //{
 // generates random number, either 0, 1, 2 used to randomize payment method
-randomNumber2 = ((Math.random() * 3) as int)
-
-randomNumber2 = 1		// 1= CC // 3 = recurring EFT
+randomNumber2 = ((Math.random() * 4) as int)
+randomNumber2 = 1		// 1= CC // 4 = recurring EFT
 
 String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
 
@@ -841,12 +843,116 @@ System.out.println('depositAmount = ' + depositAmount)
 
 if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC cant bind over 1000
 {
-    randomNumber2 = 3 // force EFT Recurring
+    howPayDeposit = 4 // force EFT Recurring
 
     System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
 }
 
-if (randomNumber2 == 0) {
+if (howPayDeposit == 0) {
+    'Setup random using logic above'
+    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
+        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
+        //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
+        // CC window takes forever to open...
+        ) //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+    /*
+		 * Can no longer bind over 1000 with CC		 
+		//if(Integer.valueOf(depositAmount) > 1000)
+		//if(depositAmount.length() >= 7 )
+		//if(Integer.parseInt(depositAmount) > 999)
+		System.out.println("depositAmount = " + depositAmount)
+		//if(depositAmount.toInteger() > 999 )
+		if(Double.parseDouble(depositAmount) > 999)
+		{// CCC deposits cant be more than 1000
+			depositAmount = 100.58
+		}
+		WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+		*/
+    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
+    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
+    //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
+    //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
+} else if (howPayDeposit == 1) {
+    'Credit Card'
+    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'P', false)
+
+    WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
+
+    WebUI.delay(5)
+
+    WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+
+    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+
+    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
+
+    WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+}
+else if (howPayDeposit == 2) {
+    'Recurring Credit Card'
+    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'PR', false)
+
+    WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
+
+    //WebUI.delay(5)
+
+    WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+
+    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
+
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+
+    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
+	WebUI.setText(findTestObject('Cypress 4/Page_/input - RecurringVerifyLastName'), randomLastName)
+	
+
+    WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
+}
+ else if (howPayDeposit == 3) {
+    'EFT'
+    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'E', false)
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+} 
+else if (howPayDeposit == 4) {
+    'EFT Recurring'
+    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - RecurringVerifyLastName'), randomLastName)
+
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+}
+else if (howPayDeposit == 5) {
     'Mailed Check'
     WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
         //WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
@@ -870,68 +976,13 @@ if (randomNumber2 == 0) {
     //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
     //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
     //WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-} else if (randomNumber2 == 1) {
-    'Credit Card'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'P', false)
-
-    WebUI.click(findTestObject('Cypress 4/Page_/input_Collect Credit Card Information'))
-
-    WebUI.delay(5)
-
-    WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-
-    WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
-
-    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
-
-    WebUI.waitForElementNotVisible(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-} else if (randomNumber2 == 2) {
-    'EFT'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'E', false)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
 } 
-else if (randomNumber2 == 3) {
-    'EFT Recurring'
-    WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'ER', false)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Name'), fullName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumber'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - RoutingNumberVerify'), '031318745')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account Number'), '8032654815')
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - EFT RecurringVerifyLastName'), randomLastName)
-
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
-}
-
 //}
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType,   ('payPlanOption') : payPlanOption     ], FailureHandling.STOP_ON_FAILURE)
 
 
 // pass vars to write the file  9.16.21
-WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), 
+WebUI.callTestCase(findTestCase('WriteFile'), 
 	[('policyType') : policyType,   
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,

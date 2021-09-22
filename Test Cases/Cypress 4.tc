@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'4PAY'</defaultValue>
+      <defaultValue>'9PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>4c5607f3-f9bf-456b-930b-43d04d21d9db</id>
       <masked>false</masked>
@@ -69,11 +69,18 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>805de48f-9fee-4ef9-8763-5a62f8d93716</id>
       <masked>false</masked>
       <name>manualNameAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
+      <id>32c109be-f0a6-4419-8c3e-39d8067e0dae</id>
+      <masked>false</masked>
+      <name>howPayDeposit</name>
    </variable>
    <variable>
       <defaultValue>['9PAY', '4PAY', 'QUARTERLY', 'SEMI', 'FULL']</defaultValue>
