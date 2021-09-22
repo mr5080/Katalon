@@ -4,7 +4,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.comment("howPayDeposit = " + howPayDeposit)
 
-
 if (howPayDeposit == 0) {
 	'Setup random using logic above'
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)

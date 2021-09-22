@@ -89,17 +89,13 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	// hardcode for claims
 	if (realAPlusClaimReport) {
-		randomFirstName = 'Lillie'.toUpperCase()
-	
-		randomLastName = 'Green'.toUpperCase()
-	
+		randomFirstName = 'Lillie'.toUpperCase()	
+		randomLastName = 'Green'.toUpperCase()	
 		addressFL = '1139 Riverscape St'.toUpperCase()
-	
 		cityFL = 'Bradenton'.toUpperCase()
-	
 		stateFL = 'FL'
-	
-		zipFL = 34208 /* second claim test case
+		zipFL = 34208 
+		/* second claim test case
 		randomFirstName = ('Corine').toUpperCase()
 		randomLastName = ('Green').toUpperCase()
 		addressFL = ('1139 Riverscape St').toUpperCase()
@@ -134,9 +130,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		stateFL = 'FL'
 		zipFL = 32254
 	}
-	
-	
-	
+		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
 	def nameAddressData = ['randomFirstName': randomFirstName, 
 		'randomLastName': randomLastName,
@@ -149,26 +143,8 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		'cityFLPrior': cityFLPrior,
 		'stateFLPrior': stateFLPrior,
 		'zipFLPrior': zipFLPrior		
-		
 		]
 		
 	WebUI.comment(nameAddressData['randomFirstName'])
-	//WebUI.comment(nameAddressData['randomLastName'])
 	//System.exit(0)
 	return nameAddressData
-	
-	/*
-	things to pass back
-	randomLastName
-	randomFirstName
-	randomFirstNameForInterest
-	addressFL
-	cityFL
-	stateFL
-	zipFL
-	
-	addressFLPrior
-	cityFLPrior
-	stateFLPrior
-	zipFLPrior
-	*/

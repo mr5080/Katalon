@@ -815,7 +815,7 @@ WebUI.callTestCase(findTestCase('selectPaymentType'),
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 // pass vars to write the file  9.16.21
-WebUI.callTestCase(findTestCase('WriteFile'), 
+WebUI.callTestCase(findTestCase('writeFile'), 
 	[('policyType') : policyType,   
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,
