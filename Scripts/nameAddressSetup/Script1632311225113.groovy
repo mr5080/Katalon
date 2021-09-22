@@ -1,0 +1,175 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+
+/*
+def value = "Hello, ${realTransunionCreditReport}"
+WebUI.comment("in subcase realTransunionCreditReport === " + realTransunionCreditReport)
+return value
+*/
+if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &&   		manualNameAddress == false)
+	{
+	// Read in FL address from excel file, true mean the first line consider as a header.
+		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
+		
+		// random num between 2 - 500 (first line in excel file is a header)
+		int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+		
+		// override randomness to specifiy address in file to use
+		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
+		System.out.println(randomFLaddress)
+	
+			
+		int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+		
+		System.out.println(randomFLaddressPrior)
+		
+		// Risk Adddress
+		// minus 1 because first line is header in excel file
+		addressFL = addressData.getValue(1, randomFLaddress - 1).toUpperCase()
+		
+		cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
+		
+		stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
+		
+		zipFL = addressData.getValue(4, randomFLaddress - 1)
+		
+		// Prior Address, only used if Year Construction < 3 from current year
+		addressFLPrior = addressData.getValue(1, randomFLaddressPrior - 1).toUpperCase()
+		
+		cityFLPrior = addressData.getValue(2, randomFLaddressPrior - 1).toUpperCase()
+		
+		stateFLPrior = addressData.getValue(3, randomFLaddressPrior - 1).toUpperCase()
+		
+		zipFLPrior = addressData.getValue(4, randomFLaddressPrior - 1)
+		
+		Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
+		
+		int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
+		
+		System.out.println(randomFirstNameRow)
+		
+		 randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
+		
+		System.out.println('randomFirstName  =====    ' + randomFirstName)
+		
+		 randomFirstNameForInterest = firstNameData.getValue(1, randomFirstNameRow - 1)
+		
+		randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
+		
+		randomFirstNameForInterest = randomFirstNameForInterest.replaceAll('[\\d.]', '')
+		
+		System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+		
+		// Last name from excel file
+		Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
+		
+		int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
+		
+		//String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
+		 randomLastName = lastNameData.getValue(1, randomLastNameRow)
+		
+		// removes any numbers from last name
+		randomLastName = randomLastName.replaceAll('[\\d.]', '')
+	
+	} // end if
+	//System.out.println((((((addressFLPrior + ' ') + cityFLPrior) + ' ') + stateFLPrior) + ' ') + zipFLPrior)
+	else
+	{ 	// need to manually set these for the hardcoded data below
+		addressFLPrior = '6035 W Last Chance Ln'.toUpperCase()
+		cityFLPrior = 'Dunnellon'.toUpperCase()
+		stateFLPrior = 'FL'
+		zipFLPrior = 34433
+	
+	}
+	
+	// hardcode for claims
+	if (realAPlusClaimReport) {
+		randomFirstName = 'Lillie'.toUpperCase()
+	
+		randomLastName = 'Green'.toUpperCase()
+	
+		addressFL = '1139 Riverscape St'.toUpperCase()
+	
+		cityFL = 'Bradenton'.toUpperCase()
+	
+		stateFL = 'FL'
+	
+		zipFL = 34208 /* second claim test case
+		randomFirstName = ('Corine').toUpperCase()
+		randomLastName = ('Green').toUpperCase()
+		addressFL = ('1139 Riverscape St').toUpperCase()
+		cityFL = ('Bradenton').toUpperCase()
+		stateFL = 'FL'
+		zipFL = 34208
+		*/
+	}
+	
+	//hardcode for Credit
+	if (realTransunionCreditReport) {
+		randomLastName = 'Kim'.toUpperCase()
+	
+		randomFirstName = 'Mirian'.toUpperCase()
+	
+		addressFL = '1716 Cherry Ln'.toUpperCase()
+	
+		cityFL = 'Lakeland'.toUpperCase()
+	
+		stateFL = 'FL'
+	
+		zipFL = 33811
+	}
+	
+	//hardcode for Address
+	if (manualNameAddress) {
+		randomLastName = 'Sarah'.toUpperCase()
+	
+		randomFirstName = 'Critches'.toUpperCase()
+	
+		addressFL = '317 Whitehead St'.toUpperCase()
+	
+		cityFL = 'Key West'.toUpperCase( // Jacksonville allows sinkhole coverage
+			)
+	
+		stateFL = 'FL'
+	
+		zipFL = 33040
+	}
+	
+	
+	
+	def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
+	WebUI.comment(nameAddressData)
+	return nameAddressData
+	
+	/*
+	things to pass back
+	randomLastName
+	randomFirstName
+	randomFirstNameForInterest
+	addressFL
+	cityFL
+	stateFL
+	zipFL
+	
+	addressFLPrior
+	cityFLPrior
+	stateFLPrior
+	zipFLPrior
+	*/
