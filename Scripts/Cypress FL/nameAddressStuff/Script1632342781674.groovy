@@ -1,4 +1,4 @@
-
+/*
 public class nameAndAddress{
 	
 	public String randomFirstName
@@ -17,4 +17,4 @@ public class nameAndAddress{
 	
 	
 	
-	}
+	}*/

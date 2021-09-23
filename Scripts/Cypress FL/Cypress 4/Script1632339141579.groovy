@@ -49,12 +49,12 @@ def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSet
 
 
 //WebUI.comment(nameAddressData['randomFirstName'])
-var client = new nameAddressStuff()
+//var client = new nameAddressStuff()
 
-String randomFirstName = client.randomFirstName
+//String randomFirstName = client.randomFirstName
 
 
-//String randomFirstName = nameAddressData['randomFirstName']
+String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
 
@@ -818,6 +818,7 @@ if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC can
 //select payment method logic
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
+		('fullName') : fullName,
 	 ('randomLastName') : randomLastName		
 		 ], FailureHandling.STOP_ON_FAILURE)
 
