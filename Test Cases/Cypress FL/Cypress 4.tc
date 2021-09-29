@@ -13,7 +13,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -34,7 +34,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'9PAY'</defaultValue>
+      <defaultValue>'4PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>381dc27f-85ef-46d9-a4be-54cedeb1a9f7</id>
       <masked>false</masked>
@@ -76,7 +76,7 @@
       <name>manualNameAddress</name>
    </variable>
    <variable>
-      <defaultValue>4</defaultValue>
+      <defaultValue>1</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>

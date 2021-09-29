@@ -106,7 +106,7 @@ else if (howPayDeposit == 4) {
 
 	WebUI.setText(findTestObject('Cypress 4/Page_/input - RecurringVerifyLastName'), randomLastName)
 
-	WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+	//WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
 }
 else if (howPayDeposit == 5) {
 	'Mailed Check'

@@ -450,7 +450,7 @@ if (policyType == 'HO6') {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
 
     //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')  // 360 now ordered on HO6
-    WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 1)
+    WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') {
@@ -601,7 +601,7 @@ if (randomNumber == 0) // fill out US prior mailing address
 }
 
 // needed till fix is implemented on Stage
-WebUI.delay(10)
+//WebUI.delay(10)
 
 WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 

@@ -122,13 +122,13 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	//hardcode for Address
 	if (manualNameAddress) {
-		randomLastName = 'Minney'.toUpperCase()
-		randomFirstName = 'Mouse'.toUpperCase()
-		addressFL = '2965 Sunset st'.toUpperCase()
+		randomFirstName = 'Goofy'.toUpperCase()
+		randomLastName = 'Disney'.toUpperCase()		
+		addressFL = '1803 SUNSET DR'.toUpperCase()
 		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details
-		cityFL = 'Jacksonville'.toUpperCase()
+		cityFL = 'Clearwater'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 32254
+		zipFL = 33755
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
