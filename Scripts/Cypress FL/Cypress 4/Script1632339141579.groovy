@@ -308,8 +308,9 @@ if ((isAgent == false) && (realTestUser == false)) {
  
 //need to click somewhere to get rid of the datepicker popup.
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate // no longer needed since Effective date is now being set to todays date (11/16/20)
-    )
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
+	
+	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '09/25/2021')
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
