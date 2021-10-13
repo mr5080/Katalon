@@ -107,24 +107,19 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	//hardcode for Credit
 	if (realTransunionCreditReport) {
-		randomLastName = 'Kim'.toUpperCase()
-	
+		randomLastName = 'Kim'.toUpperCase()	
 		randomFirstName = 'Mirian'.toUpperCase()
-	
-		addressFL = '1716 Cherry Ln'.toUpperCase()
-	
+		addressFL = '1716 Cherry Ln'.toUpperCase()	
 		cityFL = 'Lakeland'.toUpperCase()
-	
 		stateFL = 'FL'
-	
 		zipFL = 33811
 	}
 	
 	//hardcode for Address
 	if (manualNameAddress) {
-		randomFirstName = 'Goofy'.toUpperCase()
-		randomLastName = 'Disney'.toUpperCase()		
-		addressFL = '1803 SUNSET DR'.toUpperCase()
+		randomFirstName = 'Jennifer'.toUpperCase()
+		randomLastName = 'Grimes'.toUpperCase()		
+		addressFL = '210 Baker Ave'.toUpperCase()
 		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details
 		cityFL = 'Clearwater'.toUpperCase()
 		stateFL = 'FL'
