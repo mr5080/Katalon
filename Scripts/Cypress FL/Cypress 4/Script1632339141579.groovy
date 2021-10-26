@@ -29,6 +29,34 @@ import internal.GlobalVariable as GlobalVariable
 //System.out.println('testMap[2] = ' + (testMap[2]))
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType], FailureHandling.STOP_ON_FAILURE)	// works
 
+
+
+
+
+
+
+/* random number example
+for(int xx = 0; xx < 100; xx++)
+{
+	randomBundle = (((Math.random() * 5) as int) + 1)
+	System.out.println('randomBundle = ' + randomBundle)
+}
+
+for(g = 0; g<100; g++)
+{
+		howPayDeposit = (((Math.random() * 5) as int) + 1)
+		WebUI.comment("howPayDeposit = " + howPayDeposit)
+}
+	
+	exit(0)
+*/
+
+
+
+
+
+
+	
 WebUI.openBrowser('')
 
 //WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
@@ -390,7 +418,7 @@ if (constructionYear.length() > 1) {
 
         if (policyType == 'HO3') // maybe the popup is only for HO3
         {
-            WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
+            //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
         }
         
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
@@ -799,7 +827,7 @@ System.out.println('totalPremium = ' + totalPremium)
 WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Submit Application'))
 
 // generates random number, either 0, 1, 2 used to randomize payment method, if one is not set
-randomNumber2 = ((Math.random() * 4) as int)
+//randomNumber2 = ((Math.random() * 4) as int)
 
 String depositAmount = WebUI.getAttribute(findTestObject('Cypress 4/Page_/td_RequiredDepositAmount'), 'innerHTML')
 

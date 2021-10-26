@@ -2,15 +2,22 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.comment("howPayDeposit = " + howPayDeposit)
+
 
 if (howPayDeposit == 0) {
 	'Setup random using logic above'
-	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
+//	for(g = 0; g<100; g++)
+//	{
+			howPayDeposit = (((Math.random() * 5) as int) + 1)
+			WebUI.comment("howPayDeposit = " + howPayDeposit)
+			// might fail on CC and RCC due to 1000 limit
+//	}
+	
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MC', false //WebUI.setText(findTestObject('Cypress 4/Page_/input - CheckNumber'), year)
 		//WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount )
 		//WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), '105.58' )
 		// CC window takes forever to open...
-		) //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
+		//) //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 	/*
 		 * Can no longer bind over 1000 with CC
 		//if(Integer.valueOf(depositAmount) > 1000)
@@ -28,7 +35,9 @@ if (howPayDeposit == 0) {
 	//WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
 	//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NO_ActivateReocurringEFT')) // no longer used
 	//WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT-LastName'), randomLastName)
-} else if (howPayDeposit == 1) {
+} 
+
+if (howPayDeposit == 1) {
 	'Credit Card'
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'P', false)
 

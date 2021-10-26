@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[4]/div[2]/div[1]/img[1]</value>
+         <value>//body/div[@id='popover358358']/div[2]/div[1]/img[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -84,5 +84,11 @@
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>/html/body/div[4]/div[2]/div/img</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[4]/div[2]/div[1]/img[1]</value>
    </webElementXpaths>
 </WebElementEntity>
