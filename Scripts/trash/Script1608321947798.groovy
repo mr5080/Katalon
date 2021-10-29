@@ -20,7 +20,15 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 
-WebUI.click(findTestObject('Object Repository/Page_/button_Proceed to Application'))
+WebUI.setText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '0')
 
-WebUI.click(findTestObject('Object Repository/Page_/button_Prequalification'))
+WebUI.setText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'jhughes')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), '1w8xCCmEypU3q31XlL176w==')
+
+WebUI.click(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
+
+WebUI.click(findTestObject('Object Repository/junk/Page_/li_Start a New Quote'))
+
+WebUI.setText(findTestObject('Object Repository/junk/Page_/input_Effective Date_EffectiveDate'), '12/31/2021')
 

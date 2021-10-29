@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Effective Date_EffectiveDate</name>
+   <name>input_Effective Date_EffectiveDate---DELETE</name>
    <tag></tag>
    <elementGuidId>c2e79758-3408-459e-8357-f7c53698e99b</elementGuidId>
    <selectorCollection>

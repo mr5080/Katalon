@@ -30,32 +30,14 @@ import internal.GlobalVariable as GlobalVariable
 //WebUI.callTestCase(findTestCase('Cypress 4 - WriteFile'), [('policyType') : policyType], FailureHandling.STOP_ON_FAILURE)	// works
 
 
-
-
-
-
-
-/* random number example
-for(int xx = 0; xx < 100; xx++)
+/*
+ for(int yy = 0; yy < 100; yy++)
 {
-	randomBundle = (((Math.random() * 5) as int) + 1)
-	System.out.println('randomBundle = ' + randomBundle)
-}
-
-for(g = 0; g<100; g++)
-{
-		howPayDeposit = (((Math.random() * 5) as int) + 1)
-		WebUI.comment("howPayDeposit = " + howPayDeposit)
-}
-	
-	exit(0)
-*/
-
-
-
-
-
-
+	 randomCC = (((Math.random() * 4) as int) + 0)   // 0, 1,2,3 
+	 System.out.println('randomCC = ' + randomCC)
+ }
+ exit(0)
+ */
 	
 WebUI.openBrowser('')
 
@@ -164,6 +146,11 @@ if (realTestUser == true) {
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quote'))
 
+
+
+
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '12/31/2021')
+
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PolicyType'), policyType, true)
@@ -185,6 +172,9 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), zipFL)
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
+
+WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '12/31/2021')
+WebUI.sendKeys(findTestObject('Cypress 4/Page_/input_Effective Date'), Keys.chord(Keys.TAB))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
 //check value of city dropdown with what is in cityFL

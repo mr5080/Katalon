@@ -47,13 +47,45 @@ if (howPayDeposit == 1) {
 
 	WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 
-	WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
-
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
+	
+	
+	
+	// random type of CC
+	// for(int xy = 0; xy < 100; xy++)
+	// {
+		 randomCC = (((Math.random() * 4) as int) + 0)	// 0, 1, 2, 3
+		 System.out.println('randomCC = ' + randomCC)
+	 //}
+	 
+	//randomCC = 0
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), randomCC)
+	if(randomCC == 0)	// american express
+	{
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '378282246310005')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '1234')		
+	}
+	else if(randomCC == 1)	// discover
+	{
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '6011111111111117')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+		
+	}
+	else if(randomCC == 2)	// mastercard
+	{
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '5555555555554444')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')		
+	}
+	else if(randomCC == 3)	// visa
+		{
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111111111111111')
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')			
+		}
+	//WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
+	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
 
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
 
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
+	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_CVV2'), '123')
 
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_CSC_NOSAVEButton'))
 
