@@ -173,7 +173,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Z
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
-WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '12/31/2021')
+//WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '12/31/2021')
 WebUI.sendKeys(findTestObject('Cypress 4/Page_/input_Effective Date'), Keys.chord(Keys.TAB))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
@@ -424,8 +424,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
-
-    randomNumber = 1 // force International or not. 0 = US, 1 = International
+    //randomNumber = 1 // force International or not. 0 = US, 1 = International
 
     System.out.println('need to fill in prior mailing address stuff')
 

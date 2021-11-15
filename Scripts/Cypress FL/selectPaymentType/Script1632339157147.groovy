@@ -129,7 +129,8 @@ else if (howPayDeposit == 2) {
 
 	WebUI.setText(findTestObject('Cypress 4/Page_/input - EFT Account NumberVerify'), '8032654815')
 
-	WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+//	WebUI.setText(findTestObject('Cypress 4/Page_/input - DepositAmount'), depositAmount)
+	      
 }
 else if (howPayDeposit == 4) {
 	'EFT Recurring'

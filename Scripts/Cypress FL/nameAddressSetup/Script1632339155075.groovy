@@ -89,12 +89,21 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	// hardcode for claims
 	if (realAPlusClaimReport) {
+		
+		randomFirstName = ('Amal').toUpperCase()
+		randomLastName = ('Owens').toUpperCase()
+		addressFL = ('4183 Orchid Dr').toUpperCase()
+		cityFL = ('Hernando Beach').toUpperCase()
+		stateFL = 'FL'
+		zipFL = 34607
+		/*
 		randomFirstName = 'Lillie'.toUpperCase()	
 		randomLastName = 'Green'.toUpperCase()	
 		addressFL = '1139 Riverscape St'.toUpperCase()
 		cityFL = 'Bradenton'.toUpperCase()
 		stateFL = 'FL'
 		zipFL = 34208 
+		*/
 		/* second claim test case
 		randomFirstName = ('Corine').toUpperCase()
 		randomLastName = ('Green').toUpperCase()
@@ -117,13 +126,17 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	//hardcode for Address
 	if (manualNameAddress) {
-		randomFirstName = 'Jennifer'.toUpperCase()
-		randomLastName = 'Grimes'.toUpperCase()		
-		addressFL = '210 Baker Ave'.toUpperCase()
-		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details
-		cityFL = 'Clearwater'.toUpperCase()
+		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details		
+		randomFirstName = 'Test'.toUpperCase()
+		randomLastName = 'Address'.toUpperCase()		
+		addressFL = '9503 Lovage ln'.toUpperCase()		
+		cityFL = 'Dinsmore'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 33755
+		zipFL = 32219
+		
+		
+	
+		
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
