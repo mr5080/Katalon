@@ -163,6 +163,9 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_ApplicantLastName'), randomL
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'what is going on?')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), addressFL)
 
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2'), 'STE 55446688')
+
+
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_ApplicantCity_StartQuote'), cityFL)
 
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
@@ -207,17 +210,18 @@ for (int i = 0; i < cityCount; i++) {
 */
 //WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
-/*
+
 try {
     // cant access any test object after accepting alert
 	WebUI.delay(5)
-	WebUI.acceptAlert()
+	//WebUI.acceptAlert()
+	WebUI.dismissAlert()
     System.out.println('Accept address validation has been accepted')
 }
 catch (Exception e) {
     System.out.println('Exception - ' + e)
 } 
-*/
+
 //WebUI.delay(5)
 // seems to be working, if it is can remove the try/catch above - 12/18/20
 // USPS validation removed from Start a new Quote screen 4/23/21
