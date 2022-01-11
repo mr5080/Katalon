@@ -127,16 +127,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	//hardcode for Address
 	if (manualNameAddress) {
 		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details		
-		randomFirstName = 'Test'.toUpperCase()
-		randomLastName = 'Address'.toUpperCase()		
-		addressFL = '9503 Lovage ln'.toUpperCase()		
-		cityFL = 'Dinsmore'.toUpperCase()
+		randomFirstName = 'killy'.toUpperCase()
+		randomLastName = 'kox'.toUpperCase()		
+		addressFL = '6380 WATERCREST WAY 402 UNIT  '.toUpperCase()		
+		cityFL = '402 LAKEWOOD RANCH'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 32219
-		
-		
-	
-		
+		zipFL = 34202
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]

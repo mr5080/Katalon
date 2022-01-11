@@ -57,13 +57,6 @@ def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSet
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 
-
-//WebUI.comment(nameAddressData['randomFirstName'])
-//var client = new nameAddressStuff()
-
-//String randomFirstName = client.randomFirstName
-
-
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
@@ -127,14 +120,17 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/bu
 // add wait for policy holder portal logic
 if (isAgent == true) {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '10100')
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goJ@maica15!')
 } else {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '0')
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goHome1!')
 }
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_USERNAME_userloginname'), 'JHUGHES')
 
 //WebUI.setEncryptedText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), '1w8xCCmEypU3q31XlL176w==')
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goHome3!')
+
+//
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), Keys.chord(Keys.ENTER))
 
@@ -150,7 +146,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '12/31/2021')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '03/10/2022')
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -333,7 +329,7 @@ if ((isAgent == false) && (realTestUser == false)) {
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
-	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '09/25/2021')
+	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '03/10/2022')
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
@@ -775,6 +771,8 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQ
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQOtherInsurance_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyDogs_1'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyPets3_1'))
 
