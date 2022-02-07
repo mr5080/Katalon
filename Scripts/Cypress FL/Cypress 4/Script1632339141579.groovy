@@ -173,7 +173,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Z
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
-//WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '12/31/2021')
+WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '02/01/2022')
 WebUI.sendKeys(findTestObject('Cypress 4/Page_/input_Effective Date'), Keys.chord(Keys.TAB))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
@@ -402,9 +402,8 @@ if (constructionYear.length() > 1) {
     //constructionYear.toInteger() < 2010
     if (constructionYear.toInteger() < 2015) {
         constructionYear = 2015
-
+	
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
-
         WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
         if (policyType == 'HO3') // maybe the popup is only for HO3
@@ -412,7 +411,7 @@ if (constructionYear.length() > 1) {
             //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
         }
         
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
 
         System.out.println('constructionYear and roof year reset to ' + constructionYear)
     }
@@ -771,8 +770,15 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQ
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQOtherInsurance_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyDogs_1'))
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
+
+// these 2 are only present if EffectiveDate is 2/1/22 (or some date around there) or after
+/*try {
+	
+}
+catch (e)
+{
+	WebUI.comment('could not find new elements')
+}*/
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyPets3_1'))
 
@@ -793,6 +799,9 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQ
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEOccupiedDayCare_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETrampoline_1'))
+
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl1_1'))
 
@@ -853,6 +862,7 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 	('totalPremium') : totalPremium,
 	('policyType') : policyType,
 	('shouldBind') : shouldBind,
+	('environment') : environment,
 	('todaysTimeStamp') : todaysTimeStamp	
 	    ], FailureHandling.STOP_ON_FAILURE)
 

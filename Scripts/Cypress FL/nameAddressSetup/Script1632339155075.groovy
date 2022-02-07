@@ -14,7 +14,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 		
 		// random num between 2 - 500 (first line in excel file is a header)
-		int randomFLaddress = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+		int randomFLaddress = 2 + ((Math.random() * ((220 - 2) + 1)) as int)
 		
 		// override randomness to specifiy address in file to use
 		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
@@ -129,10 +129,10 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details		
 		randomFirstName = 'killy'.toUpperCase()
 		randomLastName = 'kox'.toUpperCase()		
-		addressFL = '6380 WATERCREST WAY 402 UNIT  '.toUpperCase()		
-		cityFL = '402 LAKEWOOD RANCH'.toUpperCase()
+		addressFL = '11949 w olive treen ln'.toUpperCase()		
+		cityFL = 'Crystal River'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 34202
+		zipFL = 34428
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]

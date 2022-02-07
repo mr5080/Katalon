@@ -97,6 +97,10 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 	
 			sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
 			
+			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
+			
+			
+			
 			file.close()
 		
 			try {
