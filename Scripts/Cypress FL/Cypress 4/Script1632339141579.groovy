@@ -803,6 +803,17 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETr
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
 
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnrepairedDamage'))
+
+
+
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEPriorLawsuit'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnsettledClaim'))
+
+//NOSAVEUnsettledClaim_1No
+
+
+
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl1_1'))
 
 'Billing button'
