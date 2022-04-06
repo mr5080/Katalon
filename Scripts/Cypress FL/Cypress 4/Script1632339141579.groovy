@@ -120,7 +120,7 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/bu
 // add wait for policy holder portal logic
 if (isAgent == true) {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '10100')
-	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goJ@maica15!')
+	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goHome1!')
 } else {
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '0')
 	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_PASSWORD_password'), 'goHome1!')
@@ -146,7 +146,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '03/10/2022')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '01/01/2022')
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -165,6 +165,9 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_Ap
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_ApplicantCity_StartQuote'), cityFL)
 
+//WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '01/01/2022')
+//WebUI.sendKeys(findTestObject('Cypress 4/Page_/input_Effective Date'), Keys.chord(Keys.TAB))
+
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1'), Keys.chord(Keys.TAB))
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'))
 
@@ -173,8 +176,6 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Z
 
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
-WebUI.setText(findTestObject('Cypress 4/Page_/input_Effective Date'), '02/01/2022')
-WebUI.sendKeys(findTestObject('Cypress 4/Page_/input_Effective Date'), Keys.chord(Keys.TAB))
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
 //check value of city dropdown with what is in cityFL
@@ -302,13 +303,14 @@ if ((isAgent == false) && (realTestUser == false)) {
     // wait for dynamic table to populate?
     WebUI.delay(1)
 
-    for (int x = 0; x < 5; x++) {
+    for (int x = 0; x < 5; x++) 
+	{
         try {
             WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 
-            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'TEST ')
-
+            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
             WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+//			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
             WebUI.delay(1)
 
@@ -329,7 +331,7 @@ if ((isAgent == false) && (realTestUser == false)) {
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
-	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '03/10/2022')
+//	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '01/01/2022')
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
@@ -420,7 +422,7 @@ if (constructionYear.length() > 1) {
 // this logic changed week of 3/19/21 should probably update the prior address logic?
 if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
 {
-    int randomNumber = 0
+    int randomNumber = 1
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
@@ -534,7 +536,7 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'B', true)
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
 
 //WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
@@ -562,7 +564,7 @@ if (policyType == 'HO6') {
     randomBundle = (randomBundle - 1 // because HO6 only has 1 bundle option
     )
 }
-
+randomBundle = 0
 System.out.println('randomBundle = ' + randomBundle)
 
 //}
@@ -771,14 +773,6 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEGQ
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyDogs_1'))
 
-// these 2 are only present if EffectiveDate is 2/1/22 (or some date around there) or after
-/*try {
-	
-}
-catch (e)
-{
-	WebUI.comment('could not find new elements')
-}*/
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAnyPets3_1'))
 
@@ -800,17 +794,24 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEOc
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETrampoline_1'))
 
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
-
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnrepairedDamage'))
 
 
+// these 2 are only present if EffectiveDate is 2/1/22 (or some date around there) or after
+try {
 
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEPriorLawsuit'))
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnsettledClaim'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEPriorLawsuit'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnsettledClaim'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEFirstParyLawsuit'))
 
-//NOSAVEUnsettledClaim_1No
+}
+catch (e)
+{
+	WebUI.comment('could not find new elements')
+}
+
 
 
 
@@ -873,7 +874,9 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 	('totalPremium') : totalPremium,
 	('policyType') : policyType,
 	('shouldBind') : shouldBind,
+	('stateFL') : stateFL,
 	('environment') : environment,
+	
 	('todaysTimeStamp') : todaysTimeStamp	
 	    ], FailureHandling.STOP_ON_FAILURE)
 

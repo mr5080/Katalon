@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEGQPriorLawSuit_1No']</value>
+         <value>//input[@id='NOSAVEUnsettledClaim_1No']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

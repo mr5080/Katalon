@@ -99,6 +99,10 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
+			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
+			
+			
+			
 			
 			
 			file.close()
