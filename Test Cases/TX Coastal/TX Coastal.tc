@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TX Coastal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90a9641d-7be3-4461-8372-69ac86f19fca</testCaseGuid>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>44997f11-b564-403d-9255-8c20fb0069e8</id>
+      <masked>false</masked>
+      <name>shouldBind</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>c05e9996-0229-4509-a2dc-c178aadcf429</id>
+      <masked>false</masked>
+      <name>isAgent</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>65d1f7d9-6de4-44ef-8b4b-a1515c9d71bb</id>
+      <masked>false</masked>
+      <name>realTransunionCreditReport</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>fc27400f-1bce-47d8-9083-3591fb1d3adc</id>
+      <masked>false</masked>
+      <name>realAPlusClaimReport</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>8e4a8d38-84f6-41fd-bf5a-feaae521a52f</id>
+      <masked>false</masked>
+      <name>manualNameAddress</name>
+   </variable>
+</TestCaseEntity>
