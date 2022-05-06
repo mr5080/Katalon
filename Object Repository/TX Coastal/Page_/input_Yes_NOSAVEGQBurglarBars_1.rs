@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_City, State, Zip, Zip4_InterestZipxxxx1_1</name>
+   <name>input_Yes_NOSAVEGQBurglarBars_1</name>
    <tag></tag>
-   <elementGuidId>ebf5463d-7c80-4200-bd0b-3fad5813d9dd</elementGuidId>
+   <elementGuidId>127f7457-7c4a-40f4-b7e8-704246b21f42</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='InterestZipxxxx1_1']</value>
+         <key>CSS</key>
+         <value>#NOSAVEGQUnsettledClaim_1No</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#InterestZipxxxx1_1</value>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEBurglarBars_1No']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,101 +24,80 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control numberAddressWidget</value>
+      <value>form-check-input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>type</name>
       <type>Main</type>
-      <value>Zip Code*</value>
+      <value>radio</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
+      <name>data-disablemessagetrigger</name>
       <type>Main</type>
-      <value>5</value>
+      <value>false</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>InterestZipxxxx1_1</value>
+      <value>NOSAVEGQUnsettledClaim_1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>InterestZipxxxx1_1</value>
+      <value>NOSAVEGQUnsettledClaim_1No</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>value</name>
       <type>Main</type>
-      <value>addressRemoveInvalid(this);ISiA_QuickZipCheck(this);USPSRealtimeAddressValidation('a81749532539536508i08067215s1732490862284420i85671','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','Zip',0,0);GlobalOnBlur();</value>
+      <value>N</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
+      <value>updateYesNoValue(this);  GlobalOnChange(); </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>numbertype</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>PositiveInteger</value>
+      <value>;</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onblur</name>
+      <type>Main</type>
+      <value> GlobalOnBlur();   CheckRequired(false);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;InterestZipxxxx1_1&quot;)</value>
+      <value>id(&quot;NOSAVEGQUnsettledClaim_1No&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Trash/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <value>Object Repository/TX Coastal/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestZipxxxx1_1']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestZipxxxx1_1']/div/input</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[4]/div/input</value>
-   </webElementXpaths>
 </WebElementEntity>

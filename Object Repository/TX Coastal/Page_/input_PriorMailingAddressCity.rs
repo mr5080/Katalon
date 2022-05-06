@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Interest Name_InterestNamexxxx1_1</name>
+   <name>input_PriorMailingAddressCity</name>
    <tag></tag>
-   <elementGuidId>ec11c768-4e67-448d-9468-4a1fc4194808</elementGuidId>
+   <elementGuidId>f2bc89df-aa75-4f6a-89ed-caacda9671b7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='InterestNamexxxx1_1']</value>
+         <value>//*[@id=&quot;PreviousCity&quot;]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#InterestNamexxxx1_1</value>
+         <value>#ApplicantBirthDatezzzz1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -35,111 +35,69 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control textWidget ISiA-Force-Uppercase</value>
+      <value>dateWidget form-control Both datepickerForDateWidgetApplicantBirthDatezzzz1 TextboxOnly hasDatepicker</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>InterestNamexxxx1_1</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-disablemessagetrigger</name>
-      <type>Main</type>
-      <value>false</value>
+      <value>ApplicantBirthDatezzzz1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>InterestNamexxxx1_1</value>
+      <value>ApplicantBirthDatezzzz1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>mm/dd/yyyy</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>validateTextInput(this);; GlobalOnBlur(); </value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onchange</name>
-      <type>Main</type>
-      <value>; GlobalOnChange(); </value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>inputtype</name>
-      <type>Main</type>
-      <value>Text</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>uppercase</name>
-      <type>Main</type>
-      <value>No</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>issensitive</name>
-      <type>Main</type>
-      <value>false</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>searchclass</name>
-      <type>Main</type>
-      <value>Any</value>
+      <value>isDateJS(this);  GlobalOnBlur();   CheckRequired(false);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onkeyup</name>
       <type>Main</type>
-      <value>maskText(this, event)</value>
+      <value>maskDate(this,event);</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxvalue</name>
+      <type>Main</type>
+      <value>03/03/2022</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>minvalue</name>
+      <type>Main</type>
+      <value>01/01/1800</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;InterestNamexxxx1_1&quot;)</value>
+      <value>id(&quot;ApplicantBirthDatezzzz1&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Trash/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <value>Object Repository/TX Coastal/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestNamexxxx1_1']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Right-InterestNamexxxx1_1']/div/input</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[2]/div/div[2]/div/input</value>
-   </webElementXpaths>
 </WebElementEntity>

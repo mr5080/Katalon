@@ -18,17 +18,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 
-WebUI.setText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+WebUI.setText(findTestObject('Object Repository/Trash/Page_TEST DATA cypressstage.cogisi.com/input_AGENT CODE_userloginid'), '0')
 
-WebUI.setText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'jhughes')
+WebUI.setText(findTestObject('Object Repository/Trash/Page_TEST DATA cypressstage.cogisi.com/input_USERNAME_userloginname'), 'jhughes')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), '1w8xCCmEypU3q31XlL176w==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Trash/Page_TEST DATA cypressstage.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
 
-WebUI.click(findTestObject('Object Repository/junk/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
+WebUI.click(findTestObject('Object Repository/Trash/Page_TEST DATA cypressstage.cogisi.com/input_PASSWORD_LoginButton'))
 
-WebUI.click(findTestObject('Object Repository/junk/Page_/li_Start a New Quote'))
+WebUI.click(findTestObject('Object Repository/Trash/Page_/label_Start'))
 
-WebUI.setText(findTestObject('Object Repository/junk/Page_/input_Effective Date_EffectiveDate'), '12/31/2021')
+WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))
 

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Start a New Quote</name>
+   <name>a_Start a New Quote</name>
    <tag></tag>
-   <elementGuidId>70aa2463-45ec-44fa-af38-dd1b4d923134</elementGuidId>
+   <elementGuidId>775c890b-0951-422d-b67e-9ec6432ca0b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#ISiLeftAccordion-NewQuote</value>
+         <value>li > a</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[@id='ISiLeftAccordion-NewQuote']
-</value>
+         <value>//tr[@id='TopDropMenuID']/td/ul/li/ul/li/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,35 +21,21 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>li</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>ISiLeftAccordion-QuickStart-child</value>
+      <value>a</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>target</name>
       <type>Main</type>
-      <value>ISiLeftAccordion-sub</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onclick</name>
-      <type>Main</type>
-      <value>location.href='main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote';</value>
+      <value>MainIS21StageTest</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>href</name>
       <type>Main</type>
-      <value>ISiLeftAccordion-NewQuote</value>
+      <value>main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -64,56 +49,49 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ISiLeftAccordion-NewQuote&quot;)</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/TX Coastal/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <value>id(&quot;TopDropMenuID&quot;)/td[1]/ul[@class=&quot;ISiTopMenu&quot;]/li[1]/ul[@class=&quot;ISiTopMenu-submenu&quot;]/li[1]/a[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//li[@id='ISiLeftAccordion-NewQuote']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ISiLeftAccordionID']/ul/li[2]</value>
+      <value>//tr[@id='TopDropMenuID']/td/ul/li/ul/li/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Start a New Quote')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='QUICK START'])[1]/following::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='X'])[1]/following::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Quote'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='View Quotes'])[1]/preceding::li[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View Quotes'])[1]/preceding::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='View an Existing Policy'])[1]/preceding::li[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View a Policy'])[1]/preceding::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,20 +103,15 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//body[1]/div[3]/ul[1]/li[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//*[@id=&quot;ISiLeftAccordion-NewQuote&quot;]</value>
+      <value>//li/a</value>
    </webElementXpaths>
 </WebElementEntity>

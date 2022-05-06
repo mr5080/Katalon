@@ -14,7 +14,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
 		
 		// random num between 2 - 500 (first line in excel file is a header)
-		int randomTXaddress = 2 + ((Math.random() * ((4 - 2) + 1)) as int)
+		int randomTXaddress = 2 + ((Math.random() * ((200 - 2) + 1)) as int)
 		
 		// override randomness to specifiy address in file to use
 		//randomTXaddress = 510 
@@ -89,12 +89,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	// hardcode for claims
 	if (realAPlusClaimReport) {
 		
-		randomFirstName = ('Amal').toUpperCase()
-		randomLastName = ('Owens').toUpperCase()
-		addressTX = ('4183 Orchid Dr').toUpperCase()
-		cityTX = ('Hernando Beach').toUpperCase()
-		stateTX = 'FL'
-		zipTX = 34607
+		randomFirstName = ('claud').toUpperCase()
+		randomLastName = ('summers').toUpperCase()
+		addressTX = ('4245 ARCHDALE DR').toUpperCase()
+		cityTX = ('CORPUS CHRISTI').toUpperCase()
+		stateTX = 'TX'
+		zipTX = 78416
 		/*
 		randomFirstName = 'Lillie'.toUpperCase()	
 		randomLastName = 'Green'.toUpperCase()	
@@ -126,12 +126,39 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	//hardcode for Address
 	if (manualNameAddress) {
 		// Jacksonville allows sinkhole coverage, jacksonville is Duval, has restrictions, defect 1432 has details		
-		randomFirstName = 'billy'.toUpperCase()
-		randomLastName = 'yox'.toUpperCase()		
-		addressTX = '1014 paseo castalla'.toUpperCase()		
-		cityTX = 'west palm beach'.toUpperCase()
+		/*randomFirstName = 'protection'.toUpperCase()
+		randomLastName = 'class-10'.toUpperCase()		
+		addressTX = '1156 RABBIT RUN'.toUpperCase()		
+		cityTX = 'CORPUS CHRISTI'.toUpperCase()
 		stateTX = 'TX'
-		zipTX = 33405
+		zipTX = 78415
+		*/
+		/*
+		randomFirstName = 'protection'.toUpperCase()
+		randomLastName = 'class-10'.toUpperCase()
+		addressTX = '13417 SILVER EGRET LANE'.toUpperCase()
+		cityTX = 'Texas City'.toUpperCase()
+		stateTX = 'TX'
+		zipTX = 77510		*/
+		
+		randomFirstName = 'vicky'.toUpperCase()
+		randomLastName = 'sakes'.toUpperCase()
+		addressTX = '1108 PINE ST'.toUpperCase()
+		cityTX = 'Victoria'.toUpperCase()
+		stateTX = 'TX'
+		zipTX = 77901		
+		
+	}
+	
+	if (closedZip) {
+		
+		randomFirstName = 'closed'.toUpperCase()
+		randomLastName = 'zippy'.toUpperCase()
+		addressTX = '5303 Jackwood St'.toUpperCase()
+		cityTX = 'Houston'.toUpperCase()
+		stateTX = 'TX'
+		zipTX = 77096
+		
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]

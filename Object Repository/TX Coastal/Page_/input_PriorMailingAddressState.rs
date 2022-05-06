@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iframe_RTR Quotes_MainIS21test</name>
+   <name>input_PriorMailingAddressState</name>
    <tag></tag>
-   <elementGuidId>3a61c02f-fac6-41c6-8490-c0448d6403ea</elementGuidId>
+   <elementGuidId>95fbd71d-ec12-46a3-a515-5f6856282cd3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#MainIS21test</value>
+         <key>XPATH</key>
+         <value>//select[@id='PreviousState']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//td[@id='MainFrameContainer']/iframe</value>
+         <key>CSS</key>
+         <value>#ApplicantBirthDatezzzz1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,103 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>iframe</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dateWidget form-control Both datepickerForDateWidgetApplicantBirthDatezzzz1 TextboxOnly hasDatepicker</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>MainIS21test</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Main</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>src</name>
-      <type>Main</type>
-      <value>./main.cfm?view=home&amp;TabView=</value>
+      <value>ApplicantBirthDatezzzz1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>MainIS21test</value>
+      <value>ApplicantBirthDatezzzz1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>mm/dd/yyyy</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>width</name>
+      <name>onblur</name>
       <type>Main</type>
-      <value>100%</value>
+      <value>isDateJS(this);  GlobalOnBlur();   CheckRequired(false);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>marginwidth</name>
+      <name>onkeyup</name>
       <type>Main</type>
-      <value>0</value>
+      <value>maskDate(this,event);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>marginheight</name>
+      <name>maxvalue</name>
       <type>Main</type>
-      <value>0</value>
+      <value>03/03/2022</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>align</name>
+      <name>minvalue</name>
       <type>Main</type>
-      <value>middle</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>scrolling</name>
-      <type>Main</type>
-      <value>yes</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>frameborder</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>693px</value>
+      <value>01/01/1800</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;MainIS21test&quot;)</value>
+      <value>id(&quot;ApplicantBirthDatezzzz1&quot;)</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
+   <webElementProperties>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>//iframe</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value></value>
-   </webElementXpaths>
+      <value>Object Repository/TX Coastal/Page_/iframe_RTR Quotes_MainIS21test</value>
+   </webElementProperties>
 </WebElementEntity>

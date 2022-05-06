@@ -6,12 +6,12 @@
    <elementGuidId>7b48bf32-44eb-483a-9aef-76654c3d6e4f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;mainForm&quot;]/div/div[2]/div[2]/button</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[8]</value>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

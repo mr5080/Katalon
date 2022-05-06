@@ -13,7 +13,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -41,7 +41,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d18f6552-abc0-440f-b52d-a10ef69aed84</id>
       <masked>false</masked>
@@ -62,7 +62,7 @@
       <name>realTransunionCreditReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>6b1e8d37-b114-489b-a67b-3a58f0fbe586</id>
       <masked>false</masked>

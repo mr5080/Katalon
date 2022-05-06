@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_City, State, Zip, Zip4_InterestCityxxxx1_1</name>
+   <name>input_PriorMailingAddress</name>
    <tag></tag>
-   <elementGuidId>a0e7bb7f-cf57-42c6-86cd-8402e704b775</elementGuidId>
+   <elementGuidId>0a80a57d-2f2c-4e74-8adb-5cb8deeb24ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='InterestCityxxxx1_1']</value>
+         <value>//input[@id='PreviousAddress1']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#InterestCityxxxx1_1</value>
+         <value>#ApplicantBirthDatezzzz1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -35,90 +35,69 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>City*</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
-      <type>Main</type>
-      <value>35</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>InterestCityxxxx1_1</value>
+      <value>dateWidget form-control Both datepickerForDateWidgetApplicantBirthDatezzzz1 TextboxOnly hasDatepicker</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>InterestCityxxxx1_1</value>
+      <value>ApplicantBirthDatezzzz1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>ApplicantBirthDatezzzz1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>mm/dd/yyyy</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>addressRemoveInvalid(this);USPSRealtimeAddressValidation('a81749532539536508i08067215s1732490862284420i85671','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','City',0,0);GlobalOnBlur();</value>
+      <value>isDateJS(this);  GlobalOnBlur();   CheckRequired(false);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onchange</name>
+      <name>onkeyup</name>
       <type>Main</type>
-      <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
+      <value>maskDate(this,event);</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
+      <name>maxvalue</name>
       <type>Main</type>
-      <value>this.select();</value>
+      <value>03/03/2022</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>minvalue</name>
+      <type>Main</type>
+      <value>01/01/1800</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;InterestCityxxxx1_1&quot;)</value>
+      <value>id(&quot;ApplicantBirthDatezzzz1&quot;)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Trash/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <value>Object Repository/TX Coastal/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestCityxxxx1_1']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestCityxxxx1_1']/div/input</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[5]/div[2]/div/input</value>
-   </webElementXpaths>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>fab3382d-deba-4bde-8ebb-08a870b2b863</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;mainForm&quot;]/div/div[2]/div[2]/button</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[6]</value>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -113,5 +113,17 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/div[2]/button</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;mainForm&quot;]/div/div[2]/div[2]/button</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html/body/div[1]/form/div/div[2]/div[2]/button</value>
    </webElementXpaths>
 </WebElementEntity>

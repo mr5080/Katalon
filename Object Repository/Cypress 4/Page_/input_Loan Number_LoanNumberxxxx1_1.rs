@@ -6,12 +6,12 @@
    <elementGuidId>dc572b77-9842-4300-8fd5-6c2a65e14f51</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#LoanNumberxxxx1_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='LoanNumberxxxx1_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LoanNumberxxxx1_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -120,13 +120,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;LoanNumberxxxx1_1&quot;)</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/Trash/Page_/iframe_RTR Quotes_MainIS21test</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
