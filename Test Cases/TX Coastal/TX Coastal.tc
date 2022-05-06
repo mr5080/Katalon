@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>90a9641d-7be3-4461-8372-69ac86f19fca</testCaseGuid>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>44997f11-b564-403d-9255-8c20fb0069e8</id>
       <masked>false</masked>
@@ -60,5 +60,12 @@
       <id>aa3d82fc-504b-462d-bbb2-10ae6056de81</id>
       <masked>false</masked>
       <name>howPayDeposit</name>
+   </variable>
+   <variable>
+      <defaultValue>'HO3'</defaultValue>
+      <description></description>
+      <id>90b31d09-0d8e-48af-a31b-4ce1ae9c91ef</id>
+      <masked>false</masked>
+      <name>policyType</name>
    </variable>
 </TestCaseEntity>

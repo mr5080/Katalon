@@ -65,7 +65,14 @@ String zipTXPrior = nameAddressData['zipTXPrior']
 */
 System.out.println('randomFirstName = ' + randomFirstName)
 
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
+System.out.println('todaysDate = ' + todaysDate)
 
+todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
 WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'JHUGHES')
 
@@ -117,6 +124,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/TX Coastal/Page_/t
 
 'Click QQ button'
 WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input'))
+quoteNumber = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Quote Number'), 'innerHTML')
 
 
 'Testing Rate and Continue button Click Rate and Continue button'
@@ -345,6 +353,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/sel
 
 WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Display Quote'))
 
+totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+
 WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_BindSubmit Application'))
 
 
@@ -355,10 +365,31 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 
+WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
+	[('policyType') : policyType,
+	('randomLastName') : randomLastName,
+	('randomFirstName') : randomFirstName,
+	('quoteNumber') : quoteNumber,
+	('todaysDate') : todaysDate,
+	('totalPremium') : totalPremium,
+	('policyType') : policyType,
+	('shouldBind') : shouldBind,
+	('stateFL') : stateTX,
+	('environment') : environment,
+	('isAgent') : isAgent,
+	('todaysTimeStamp') : todaysTimeStamp
+		], FailureHandling.STOP_ON_FAILURE)
+
+System.out.println('quoteNumber = ' + quoteNumber)
+
+System.out.println('fullName = ' + fullName)
+
+System.out.println('shouldBind = ' + shouldBind)
+
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
 
 //WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input__DepositAmount'), '100.00')
-
+/*
 if(shouldBind == true)
 {
 	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Bind Application'))
@@ -372,3 +403,4 @@ if(shouldBind == true)
 	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/b_Account ID 116044'))
 }
 	
+*/
