@@ -143,7 +143,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 		randomFirstName = 'vicky'.toUpperCase()
 		randomLastName = 'sakes'.toUpperCase()
-		addressTX = '1108 PINE ST'.toUpperCase()
+		addressTX = '3606 FLAMINGO DR'.toUpperCase()
 		cityTX = 'Victoria'.toUpperCase()
 		stateTX = 'TX'
 		zipTX = 77901		
