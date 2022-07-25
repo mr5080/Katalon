@@ -98,7 +98,7 @@ else if (environment == 'STAGE')
 
 }
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Effective Date_EffectiveDate'), '04/03/2022')
+//WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Effective Date_EffectiveDate'), '04/03/2022')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_FLORIDATEXAS'), '42', true)
 
@@ -265,7 +265,7 @@ WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Email Add
 
 WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Carrier_PriorCarrier_1'), 'geico')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), '03/03/2022')
+WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), todaysDate)
 
 WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Policy_PriorPolicyNumber_1'), '555666888')
 

@@ -19,9 +19,6 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		// override randomness to specifiy address in file to use
 		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 		System.out.println(randomFLaddress)
-		System.out.println(randomFLaddress)
-		
-		
 			
 		int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 		
@@ -144,12 +141,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		zipFL = 33603
 		*/
 		
-		randomFirstName = 'sinkhole'.toUpperCase()
-		randomLastName = 'Yes'.toUpperCase()
-		addressFL = '155 SE 34th PL'.toUpperCase()
-		cityFL = 'Homestead'.toUpperCase()
+		randomFirstName = 'GEOCODING'.toUpperCase()
+		randomLastName = 'TESTERING'.toUpperCase()
+		addressFL = '15236  blue bay cir'.toUpperCase()
+		cityFL = 'fort myers'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 33033
+		zipFL = 33913
 		
 	}
 		

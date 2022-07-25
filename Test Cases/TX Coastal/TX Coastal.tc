@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>90a9641d-7be3-4461-8372-69ac86f19fca</testCaseGuid>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>44997f11-b564-403d-9255-8c20fb0069e8</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>c05e9996-0229-4509-a2dc-c178aadcf429</id>
       <masked>false</masked>

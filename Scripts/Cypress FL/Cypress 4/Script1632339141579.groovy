@@ -331,7 +331,7 @@ if ((isAgent == false) && (realTestUser == false)) {
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
-//	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '01/01/2022')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '08/01/2022')
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
@@ -875,6 +875,7 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 //	('policyType') : policyType,
 	('shouldBind') : shouldBind,
 	('stateFL') : stateFL,
+	('isAgent') : isAgent,
 	('environment') : environment,
 	
 	('todaysTimeStamp') : todaysTimeStamp	

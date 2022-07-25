@@ -14,7 +14,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
 		
 		// random num between 2 - 500 (first line in excel file is a header)
-		int randomTXaddress = 2 + ((Math.random() * ((200 - 2) + 1)) as int)
+		int randomTXaddress = 2 + ((Math.random() * ((190 - 2) + 1)) as int)
 		
 		// override randomness to specifiy address in file to use
 		//randomTXaddress = 510 
@@ -141,12 +141,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		stateTX = 'TX'
 		zipTX = 77510		*/
 		
-		randomFirstName = 'vicky'.toUpperCase()
-		randomLastName = 'sakes'.toUpperCase()
-		addressTX = '3606 FLAMINGO DR'.toUpperCase()
-		cityTX = 'Victoria'.toUpperCase()
+		randomFirstName = 'andrea'.toUpperCase()
+		randomLastName = 'bledey'.toUpperCase()
+		addressTX = '404 WARWICK ST'.toUpperCase()
+		cityTX = 'Galveston'.toUpperCase()
 		stateTX = 'TX'
-		zipTX = 77901		
+		zipTX = 77551
 		
 	}
 	

@@ -5,6 +5,84 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>6e06d343-87c2-4143-b230-3b7166aaa51e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e8b080f9-add2-4b14-a930-a0b43bed39e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bd5da895-e697-47c1-a638-4f75ceb89187</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8ae164bd-a990-4a61-86bc-caedd27fc51a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ba2e8535-dca9-4655-8035-60d080537613</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>381dc27f-85ef-46d9-a4be-54cedeb1a9f7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d18f6552-abc0-440f-b52d-a10ef69aed84</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b90ad34a-d06a-4412-8bb1-ce8bfa3a0696</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9428647b-03b5-47e4-b285-2c304c3e479f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6b1e8d37-b114-489b-a67b-3a58f0fbe586</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0f55fb94-4037-49e1-8157-77b70da486e1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>444aedf9-b9e1-495f-81a1-95af3aeb75c0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>85e07ab8-0c62-4cee-89e8-a3794319a292</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6babfdf4-8c25-4456-8c38-afe8ff8349ef</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'HO3'</defaultValue>
       <description></description>
@@ -41,7 +119,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d18f6552-abc0-440f-b52d-a10ef69aed84</id>
       <masked>false</masked>
@@ -76,7 +154,7 @@
       <name>manualNameAddress</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>
