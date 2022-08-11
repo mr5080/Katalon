@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Wrapper-Right-TotalPremiumAndFees']</value>
+         <value>//div[@id='Wrapper-Right-TotalPremium']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -18,6 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
+      <webElementGuid>ad995262-9171-479e-96ef-5b8fbda12efe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +26,7 @@
       <name>id</name>
       <type>Main</type>
       <value>Wrapper-Left-QuoteNumber</value>
+      <webElementGuid>3b9d7ff3-12c2-4ac0-a3f7-cb8580bd95b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>col-md-3 p-1  </value>
+      <webElementGuid>67f54215-901d-4c59-a081-bc985c725088</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,6 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Quote Number: 1687  </value>
+      <webElementGuid>ab43845f-f6e1-4f40-973f-f9d5f98b1fb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Wrapper-Left-QuoteNumber&quot;)</value>
+      <webElementGuid>e211396f-bcf3-4c32-8377-540e63447a5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,5 +58,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>339e82bd-af44-4b61-bac2-7a713eb36984</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
