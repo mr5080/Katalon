@@ -141,12 +141,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		zipFL = 33603
 		*/
 		
-		randomFirstName = 'GEOCODING'.toUpperCase()
-		randomLastName = 'TESTERING'.toUpperCase()
-		addressFL = '15236  blue bay cir'.toUpperCase()
-		cityFL = 'fort myers'.toUpperCase()
+		randomFirstName = 'three'.toUpperCase()
+		randomLastName = 'sixty'.toUpperCase()
+		addressFL = '3814 Canal St'.toUpperCase()
+		cityFL = 'jacksonville'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 33913
+		zipFL = 32209
 		
 	}
 		

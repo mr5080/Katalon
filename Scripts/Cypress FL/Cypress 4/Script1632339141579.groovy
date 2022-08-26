@@ -146,7 +146,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '10/18/2022')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '10/18/2022')
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -227,10 +227,11 @@ catch (Exception e) {
 //WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
 //WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+/*
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 10)) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
 }
-
+*/
 boolean elementPresent = WebUI.waitForAlert(5)
 
 if (elementPresent == true) {
@@ -284,7 +285,7 @@ if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/div_Quote Number
 
     System.out.println('quoteNumber = ' + quoteNumber)
 }
-
+/*
 'Accpet FDRC modal'
 try {
     // need to figure this out    
@@ -293,7 +294,7 @@ try {
 catch (Exception e) {
     System.out.println('FDRC already accepted today')
 } 
-
+*/
 System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
@@ -465,7 +466,22 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250250')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350250')
+
+
+if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
+{
+	System.out.println('360Value not returned, manually entering limit (because 360Value wont use ecomny)')
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '305080')
+}
+else
+{
+	System.out.println(WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') + '  <---- from 360Value')
+}
+
+
+PurchasePrice_1 = 150250
+
 if (policyType == 'HO6') {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
 
@@ -663,7 +679,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Garage Door Type'), 'BRACED', true)
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '250000')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '150000')
 // divide by 100 to make it a whole number
 replacementCost360 = replacementCost360.replaceAll('[^\\d.]', '')
 
