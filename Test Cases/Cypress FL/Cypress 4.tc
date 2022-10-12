@@ -83,6 +83,12 @@
       <value></value>
       <variableId>6babfdf4-8c25-4456-8c38-afe8ff8349ef</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9c91a35f-64b8-409a-ad44-109a1ee4ec49</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'HO3'</defaultValue>
       <description></description>
@@ -91,7 +97,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -173,5 +179,12 @@
       <id>6babfdf4-8c25-4456-8c38-afe8ff8349ef</id>
       <masked>false</masked>
       <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>'10/05/2022'</defaultValue>
+      <description></description>
+      <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
+      <masked>false</masked>
+      <name>EffectiveDate</name>
    </variable>
 </TestCaseEntity>

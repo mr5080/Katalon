@@ -146,7 +146,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), '10/18/2022')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), EffectiveDate)
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -208,10 +208,10 @@ for (int i = 0; i < cityCount; i++) {
 */
 //WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 // go back to try catch? even need this??? seems to be automatically accpeted?
-
+/*
 try {
     // cant access any test object after accepting alert
-	WebUI.delay(5)
+// 8.29.22 commented out to get rid of only WARNING during execution	WebUI.delay(5)
 	//WebUI.acceptAlert()
 	WebUI.dismissAlert()
     System.out.println('Accept address validation has been accepted')
@@ -219,7 +219,7 @@ try {
 catch (Exception e) {
     System.out.println('Exception - ' + e)
 } 
-
+*/
 //WebUI.delay(5)
 // seems to be working, if it is can remove the try/catch above - 12/18/20
 // USPS validation removed from Start a new Quote screen 4/23/21
@@ -232,6 +232,8 @@ if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
 }
 */
+
+/*
 boolean elementPresent = WebUI.waitForAlert(5)
 
 if (elementPresent == true) {
@@ -247,7 +249,7 @@ if (elementPresent == true) {
 
     WebUI.switchToDefaultContent( //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again    
         )
-}
+}*/
 
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))
 'Accept address validation'
@@ -332,7 +334,7 @@ if ((isAgent == false) && (realTestUser == false)) {
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), '08/01/2022')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), EffectiveDate)
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
@@ -382,11 +384,18 @@ System.out.println('should have set purcahse date to  = ' + todaysDate)
 //WebUI.delay(7)
 //Construction Year - use DOB year if the input box is blank
 //System.out.println("HERE ")
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
+
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
-
 System.out.println('constructionYear  = ' + constructionYear)
-
 System.out.println('constructionYear.length()  = ' + constructionYear.length())
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
+
+
+//String constTest = WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
+//System.out.println('constTest  = ' + constTest)
+
 
 int constructionYearInt = 0
 
@@ -396,7 +405,7 @@ if (constructionYear.length() > 1) {
     constructionYearInt = Integer.valueOf(constructionYear)
 
     System.out.println('constructionYearInt - IF == ' + constructionYearInt // (constructionYearInt == '')
-        )
+		        )
 
     System.out.println('constructionYear.toInteger() = ' + constructionYear.toInteger())
 
@@ -409,16 +418,12 @@ if (constructionYear.length() > 1) {
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
         WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
-        if (policyType == 'HO3') // maybe the popup is only for HO3
-        {
-            //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - ConstructionYearPopup'))
-        }
-        
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), constructionYear)
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
 
         System.out.println('constructionYear and roof year reset to ' + constructionYear)
     }
 }
+
 
 // this logic changed week of 3/19/21 should probably update the prior address logic?
 if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
@@ -643,7 +648,7 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 
 String randomPolicy = ((Math.random() * 99999) as int)
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), todaysDate)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), EffectiveDate)
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
 
@@ -679,7 +684,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Garage Door Type'), 'BRACED', true)
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '150000')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
 // divide by 100 to make it a whole number
 replacementCost360 = replacementCost360.replaceAll('[^\\d.]', '')
 
@@ -697,7 +702,7 @@ System.out.println('replacementCost360 2 = ' + replacementCost360)
 
 System.out.println('replacementCost360 = ' + replacementCost360)
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), replacementCost360)
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Price_PurchasePrice_1'), replacementCost360)
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_NumBathrooms'), '2', true)
 

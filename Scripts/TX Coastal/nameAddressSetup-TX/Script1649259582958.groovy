@@ -18,9 +18,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 		// override randomness to specifiy address in file to use
 		//randomTXaddress = 510 
-		System.out.println(randomTXaddress)
-		
-		
+		System.out.println(randomTXaddress)	
 			
 		int randomTXaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
 		

@@ -141,12 +141,14 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		zipFL = 33603
 		*/
 		
+	
+		
 		randomFirstName = 'three'.toUpperCase()
 		randomLastName = 'sixty'.toUpperCase()
-		addressFL = '3814 Canal St'.toUpperCase()
-		cityFL = 'jacksonville'.toUpperCase()
+		addressFL = '10331 AUTUMN BREEZE DR 201'.toUpperCase()
+		cityFL = 'BONITA SPRINGS'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 32209
+		zipFL = 34135
 		
 	}
 		
