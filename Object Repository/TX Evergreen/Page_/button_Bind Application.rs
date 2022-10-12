@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Bind Application</name>
+   <tag></tag>
+   <elementGuidId>d082ce5a-7455-427a-a739-28bc790e191f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[9]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>05afd0a5-56da-4a0e-ba58-700e5f426447</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-PrimaryButton NoPaddingOnShort</value>
+      <webElementGuid>a2a4bd3d-ce7b-48af-bc6f-8f9fd2c9988c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>7e2d3017-a72f-4e60-923c-6d17e4130644</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp;  AddAction('BIND') &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
+      <webElementGuid>ec63a3db-62b1-4b37-8062-74cc62072327</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Bind Application ></value>
+      <webElementGuid>d4c9bf5d-eb8a-4f1d-a946-19ba7aac1ecc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent TopMenuOneArea&quot;]/div[@class=&quot;row justify-content-md-center flex-nowrap NoPaddingOnShort&quot;]/div[@class=&quot;col-md-3 m-3 NoPaddingOnShort&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton NoPaddingOnShort&quot;]</value>
+      <webElementGuid>6115c324-5f3c-42ef-969e-e0143b872f81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/TX Evergreen/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>d48e1213-2e64-47ba-8fef-144602e2da6f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[9]</value>
+      <webElementGuid>b089464a-9a90-4e59-b155-214580228b3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div[2]/div[2]/button</value>
+      <webElementGuid>0d37bdea-702e-4db5-9b07-6e16aeea109a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Display Quote'])[2]/following::button[1]</value>
+      <webElementGuid>68a866ec-0130-4a7e-b3e2-b0d9896d6449</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Send Email'])[1]/following::button[2]</value>
+      <webElementGuid>269bc8d9-f51a-4778-a8c2-db20740262ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
+      <webElementGuid>7da99814-8a06-4d3e-8235-9aa3fda95357</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::button[3]</value>
+      <webElementGuid>73de55df-007e-405e-8a7f-8ae4d8501dfa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div[2]/button</value>
+      <webElementGuid>dff6f965-eb7f-4e46-9c2f-1a005cb72398</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Bind Application >' or . = 'Bind Application >')]</value>
+      <webElementGuid>c54c1ff4-b235-4b53-9216-7cba35d3c2ef</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
