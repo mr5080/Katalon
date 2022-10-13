@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TX Evergreen HO6</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35dbb1fc-dc15-4fdb-9d5f-189dcfadc732</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3d975428-83a2-4225-94fb-0f910a0afc78</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a1c2a984-d6f9-4566-a04a-0337a9c47aa8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>66a84668-f5a6-4620-ae7a-fba438311414</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>3d975428-83a2-4225-94fb-0f910a0afc78</id>
+      <masked>false</masked>
+      <name>shouldBind</name>
+   </variable>
+   <variable>
+      <defaultValue>'TEST'</defaultValue>
+      <description></description>
+      <id>a1c2a984-d6f9-4566-a04a-0337a9c47aa8</id>
+      <masked>false</masked>
+      <name>environment</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>66a84668-f5a6-4620-ae7a-fba438311414</id>
+      <masked>false</masked>
+      <name>isAgent</name>
+   </variable>
+</TestCaseEntity>
