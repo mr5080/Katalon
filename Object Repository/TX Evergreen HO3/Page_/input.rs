@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='Full Quote']</value>
+         <value>//tbody/tr[10]/td[1]/div[1]/input[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>030f06f2-df6c-4b95-8b3f-61365f54e1b6</webElementGuid>
+      <webElementGuid>12b81fef-06e6-4816-88c0-263a8a88dd07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +29,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d4e62ccb-f14c-4df6-aee4-13646c80506b</webElementGuid>
+      <webElementGuid>dfaaf8f3-dfab-4fa5-a10d-9560011a18e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Full Quote</value>
-      <webElementGuid>474e88ed-2331-4c04-a996-030f6420f037</webElementGuid>
+      <webElementGuid>09cc8e8f-6937-410a-8afa-98dcceee4e39</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>GenerateApplicantName();Submit2(this.form, 'Unified,2');</value>
-      <webElementGuid>1c11d5f5-f85b-4a3c-a457-9d638e78a431</webElementGuid>
+      <webElementGuid>a8b1a1a9-1ee8-450c-8896-abb02d8a34ab</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;QuoteButtonDiv&quot;)/input[2]</value>
-      <webElementGuid>6912c120-2f49-41ca-817a-ca6e01a3071b</webElementGuid>
+      <webElementGuid>5163eff7-f0d1-4995-bce4-84bd87b5872d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +61,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX Evergreen HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>acb9f81d-85a8-4062-9323-816e1b89cca7</webElementGuid>
+      <webElementGuid>4651625f-a1a2-4717-8629-c7ad4738df36</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='Full Quote']</value>
-      <webElementGuid>b10455ee-5359-47f2-a6a7-90fb41b0b00d</webElementGuid>
+      <webElementGuid>1065251b-1a5a-4dc2-a77c-df8723bcf805</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='QuoteButtonDiv']/input[2]</value>
-      <webElementGuid>a7b74f28-f7ee-4ed0-b2d4-1c7ab9179ad8</webElementGuid>
+      <webElementGuid>902ba37c-2558-473e-9f59-35993da89756</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/div/input[2]</value>
-      <webElementGuid>b30f0d39-bebf-4793-98a6-680e1ece0fff</webElementGuid>
+      <webElementGuid>ac216947-c98a-454b-b8dc-17af110a36f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button']</value>
-      <webElementGuid>3cc32a3f-5a5b-40b2-b037-74f00bd6a4a6</webElementGuid>
+      <webElementGuid>ba2660a5-8067-4c56-8629-0f94e0533775</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

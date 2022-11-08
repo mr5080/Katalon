@@ -143,12 +143,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 	
 		
-		randomFirstName = 'three'.toUpperCase()
-		randomLastName = 'sixty'.toUpperCase()
-		addressFL = '10331 AUTUMN BREEZE DR 201'.toUpperCase()
-		cityFL = 'BONITA SPRINGS'.toUpperCase()
+		randomFirstName = 'Barky'.toUpperCase()
+		randomLastName = 'howard'.toUpperCase()
+		addressFL = '123 nowhere Florida Ave'.toUpperCase()
+		cityFL = 'Quincy'.toUpperCase()
 		stateFL = 'FL'
-		zipFL = 34135
+		zipFL = 32351
 		
 	}
 		
