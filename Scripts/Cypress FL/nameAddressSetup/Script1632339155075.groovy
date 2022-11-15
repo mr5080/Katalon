@@ -143,12 +143,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 	
 		
-		randomFirstName = 'Barky'.toUpperCase()
-		randomLastName = 'howard'.toUpperCase()
-		addressFL = '123 nowhere Florida Ave'.toUpperCase()
-		cityFL = 'Quincy'.toUpperCase()
+		randomFirstName = 'Barky'
+		randomLastName = 'howard'
+		addressFL = '4201 Almeda St, Jacksonville'
+		cityFL = 'Jacksonville'
 		stateFL = 'FL'
-		zipFL = 32351
+		zipFL = 32209
 		
 	}
 		

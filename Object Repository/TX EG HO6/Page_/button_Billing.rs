@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>//button[@type = 'button' and (text() = 'Billing >')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>fb50365a-4d88-4ac8-92f5-ff5eabffe21b</webElementGuid>
+      <webElementGuid>a41f139f-e0e5-4036-9c7a-3181a5407d35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>f7126a4f-48fa-41ae-aa27-cb03f7e9c187</webElementGuid>
+      <webElementGuid>39ecffcc-3c1b-4b7c-b1b1-2e4bf66421d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>0578a6c4-5d05-4779-b10e-9e0117cd6cca</webElementGuid>
+      <webElementGuid>0ca30812-6b96-41c0-b1e6-c7d75768df07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(950) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>c4db5e3d-44d3-4c85-848a-c02383ed8918</webElementGuid>
+      <webElementGuid>818362ac-f287-436b-955e-2e716ff2ff97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Billing ></value>
-      <webElementGuid>64efce47-a19a-454c-b795-10b3816854c2</webElementGuid>
+      <webElementGuid>8eed625e-1402-4e3e-8ee4-ca35ae4b2230</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-3 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>f646216b-2666-4362-9140-0abc6ae47a47</webElementGuid>
+      <webElementGuid>245bd416-7779-4be5-82d0-615f0a8700f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>3c594583-43aa-44c8-94c2-d3025660a9bc</webElementGuid>
+      <webElementGuid>5c3d8d8a-5d48-476f-af8d-4f1d36bbee6e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>748de69e-5dfa-46d4-ae7a-6e25685fa2a4</webElementGuid>
+      <webElementGuid>e53b726d-6ed5-49e2-a661-7e6d43a0c8e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[2]/div[2]/button</value>
-      <webElementGuid>7279ac04-18c9-4177-acd1-b20152d91c8d</webElementGuid>
+      <webElementGuid>834f84e3-1153-43bc-91ea-bf6e77e75330</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Interests'])[1]/following::button[1]</value>
-      <webElementGuid>4c2c6665-e5fa-4cc1-9d8a-6026ba92f92c</webElementGuid>
+      <webElementGuid>46fcab93-27cf-428f-af4d-c93e112a1d57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Statements'])[1]/following::button[2]</value>
-      <webElementGuid>ae825599-8e67-4f51-a424-e8467c599785</webElementGuid>
+      <webElementGuid>415a2e0f-4d8e-4120-ad64-42dca31d8341</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
-      <webElementGuid>f6308ad9-ad67-4303-bdf3-4f6a3ff39edc</webElementGuid>
+      <webElementGuid>ec76e6a7-e065-4d43-aa6d-023bf5b2f1ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Quote Number: 1049475'])[1]/preceding::button[2]</value>
-      <webElementGuid>48530a14-1938-478e-a105-f57035126627</webElementGuid>
+      <webElementGuid>875a6979-c1fe-4164-a406-d497e6042e76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Billing >']/parent::*</value>
-      <webElementGuid>d404cd5c-ed37-4119-a303-fe4bbc847fe7</webElementGuid>
+      <webElementGuid>2fbd3d5e-12cc-4271-9427-62e42e6a357e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button</value>
-      <webElementGuid>c9f6df87-a51c-4e33-a23c-0a9d712d0ec8</webElementGuid>
+      <webElementGuid>b5c6eec8-0925-4922-9e9a-5990cfe743ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Billing >' or . = 'Billing >')]</value>
-      <webElementGuid>0378e04e-b977-4028-8914-9a3832da5cc5</webElementGuid>
+      <webElementGuid>6577b069-fc2f-42a4-b014-6680858052ca</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

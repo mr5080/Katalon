@@ -35,6 +35,7 @@ String cityTX = nameAddressData['cityTX']
 String stateTX = nameAddressData['stateTX']
 String zipTX = nameAddressData['zipTX']
 
+String fullName = (randomFirstName + ' ') + randomLastName
 
 WebUI.openBrowser('')
 
@@ -60,7 +61,11 @@ WebUI.setEncryptedText(findTestObject('Object Repository/TX EG HO3/Page_TEST DAT
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+//WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), effectiveDate)	
+WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
+WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FLORIDATEXAS'), '42', true)
 
@@ -105,13 +110,15 @@ if (isAgent == false) {
 
 	
 	/// update this to key down and then key up, can do the same thing for date pickers!
-	for (int x = 0; x < 5; x++)
+	for (int x = 0; x < 1; x++)
 	{
 		try {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			// add key down/up here
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.TAB))
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
 			WebUI.delay(1)
@@ -262,7 +269,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), '10/27/2022')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), effectiveDate)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Policy_PriorPolicyNumber_1'), '123456123456')
 
@@ -339,7 +346,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEGQ
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Billing'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '4PAY', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '9PAY', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR'), 'Applicant1', true)
 
@@ -349,7 +356,13 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quo
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
-
+//select payment method logic
+WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
+	[('howPayDeposit') : howPayDeposit,
+		('fullName') : fullName,
+		('randomLastName') : randomLastName
+		 ], FailureHandling.STOP_ON_FAILURE)
+/*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'PR', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Enter Credit Card Information'))
@@ -366,6 +379,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Card Secur
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Authorize Credit Card'))
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized User Agreement_RecurPayAuthorize'), randomLastName)
+*/
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
 

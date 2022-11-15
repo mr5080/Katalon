@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[5]</value>
+         <value>//button[@type = 'button' and (text() = 'Interests >')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>cccbbf19-da7b-4d96-8f78-5070e8f08acd</webElementGuid>
+      <webElementGuid>4ffccfd0-87d7-418d-bc4c-fc216540b2e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton NoPaddingOnShort</value>
-      <webElementGuid>b5ad2334-c72a-4185-9de9-f24803d51aa1</webElementGuid>
+      <webElementGuid>e1e7f7b4-3d90-401e-991f-a3a873d0010f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>3d7f810a-f5df-4330-a96c-508838368d11</webElementGuid>
+      <webElementGuid>76b98c2f-8cc9-4eaf-9830-0e91b42f0779</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(800) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>c623e49b-e776-40a6-b2e8-0318d9f32968</webElementGuid>
+      <webElementGuid>a5121585-2281-4eee-941b-19af40eec52e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Interests ></value>
-      <webElementGuid>2fc13290-cf55-4f9c-9d24-824621775b58</webElementGuid>
+      <webElementGuid>41e2f557-e1b8-4b8a-a3e8-b4f1732bbacb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent TopMenuOneArea&quot;]/div[@class=&quot;row justify-content-md-center flex-nowrap NoPaddingOnShort&quot;]/div[@class=&quot;col-md-3 m-3 NoPaddingOnShort&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton NoPaddingOnShort&quot;]</value>
-      <webElementGuid>f2de84bc-e0da-4752-bb58-8d80bc842984</webElementGuid>
+      <webElementGuid>92c0c84b-9f0c-4b66-98ee-6cf572b3f09d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>c73d1d94-7d75-4c8b-bd5e-6627d3de0507</webElementGuid>
+      <webElementGuid>440fb7e5-413f-4f54-a4f5-fd9806b33db5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[5]</value>
-      <webElementGuid>5415854b-9967-4f76-92c0-fc5bfd27cf9f</webElementGuid>
+      <webElementGuid>8c680e28-16cf-415f-814e-0069f6d1a01b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[3]/div[2]/div[2]/button</value>
-      <webElementGuid>33127407-a9cd-4f1e-9e48-521de15c80a3</webElementGuid>
+      <webElementGuid>b1d54ac6-8faf-4724-8cd7-e1d45b36abb8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; General'])[2]/following::button[1]</value>
-      <webElementGuid>cdbeebdb-7144-4f6e-b115-8fb9ff81a338</webElementGuid>
+      <webElementGuid>190245cb-f56c-4874-ac09-9076d98f4c74</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loss History Information'])[2]/following::button[2]</value>
-      <webElementGuid>2c02a2f5-6e54-407e-b11e-c0c816e325a0</webElementGuid>
+      <webElementGuid>d48b73e5-f75c-4830-9b3f-18f3ab46c2d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
-      <webElementGuid>1229ba93-53f7-475e-bd61-c62a4e3fc13e</webElementGuid>
+      <webElementGuid>87eeb9a6-abce-47a5-b8af-ad9ebabb1dc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::button[3]</value>
-      <webElementGuid>c424d136-4602-4b21-b832-cb6ce71b56d1</webElementGuid>
+      <webElementGuid>92f26dc9-c680-4df8-a345-255ca88c6ef4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/div[2]/button</value>
-      <webElementGuid>9b3e17c4-efbb-4104-b24c-cc4aeb505944</webElementGuid>
+      <webElementGuid>6bc8b98a-5458-46eb-91ba-b5b848d9d8f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Interests >' or . = 'Interests >')]</value>
-      <webElementGuid>32a8544e-c302-4593-8cb0-8a666e39ee68</webElementGuid>
+      <webElementGuid>dbe0bdbc-17bd-45a1-b0e3-d7e7213468da</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

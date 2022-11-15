@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEWindMitigationProof_1No']</value>
+         <value>//select[@id='WindMitigationProof_1']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>41e3063c-fae0-446d-bcac-86ba503e1c50</webElementGuid>
+      <webElementGuid>33deadbf-fccf-4884-901c-feb0cbaa38fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-check-input</value>
-      <webElementGuid>0b24ca07-045c-4557-9496-e83944e02146</webElementGuid>
+      <webElementGuid>94abed7a-003c-403d-aee1-b060462077d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>64fe73d5-8fb2-4ca2-aebb-20fa4d55910c</webElementGuid>
+      <webElementGuid>3a39bf5e-07c2-4605-bd76-99d3b25603d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>9f6422a8-4227-4176-b216-5d68796a596f</webElementGuid>
+      <webElementGuid>118d3cc6-4f1b-4432-8533-63591983e6b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEWindMitigationProof_1</value>
-      <webElementGuid>077eaa7e-5917-4067-bfb6-966c9cda72ed</webElementGuid>
+      <webElementGuid>976dd08c-f2f1-4200-a3b7-34ffbca64044</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEWindMitigationProof_1No</value>
-      <webElementGuid>e89d450a-ca4d-4d85-8fd1-cd2572e82380</webElementGuid>
+      <webElementGuid>68843b07-023e-414e-9e12-31c506efdac9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>value</name>
       <type>Main</type>
       <value>N</value>
-      <webElementGuid>f4eb5a2e-3340-4f7a-a580-84b345780922</webElementGuid>
+      <webElementGuid>8c9823c1-3563-47b8-9e83-408faa04e7c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>updateYesNoValue(this);  GlobalOnChange(); </value>
-      <webElementGuid>4552d89c-cebe-4cb8-a7f6-8c9e36a5c165</webElementGuid>
+      <webElementGuid>00d5bc47-939d-49eb-9435-123f5ff7ea98</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>f5ac6cfd-8ed0-4c30-a4da-376b96db1850</webElementGuid>
+      <webElementGuid>8ccc03f6-b51a-473d-baa1-1166092673b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalOnBlur();   CheckRequired(false);</value>
-      <webElementGuid>467c7dc9-2cab-4778-9b1d-08d58d7d2297</webElementGuid>
+      <webElementGuid>67a7d867-555c-4347-b182-264be2eb1aba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEWindMitigationProof_1No&quot;)</value>
-      <webElementGuid>60b7dd85-9e3f-45c8-8353-783eac9144ad</webElementGuid>
+      <webElementGuid>80ba6c17-cb96-4cef-87c9-7387b401e09c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>24e5b035-1c38-4d95-b866-d82548a6cf25</webElementGuid>
+      <webElementGuid>fab8d15e-5920-40c0-89ba-a508108e7575</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='NOSAVEWindMitigationProof_1No']</value>
-      <webElementGuid>b3be618b-fa25-4920-a6b6-2c962cfb8588</webElementGuid>
+      <webElementGuid>b7cd1de6-b93c-4b77-8dd3-7c44bb8c8678</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-WindMitigationProof_1']/div[2]/input</value>
-      <webElementGuid>9343270b-9ae3-41c0-b7cb-3379b03b2936</webElementGuid>
+      <webElementGuid>52d93776-75ce-4795-b3a3-cc74611bca48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/input</value>
-      <webElementGuid>c399647c-3daa-4a2e-8ef8-fb34d351a3bf</webElementGuid>
+      <webElementGuid>34c5a9c8-2efa-46a6-82ac-6dcb30255b33</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'radio' and @name = 'NOSAVEWindMitigationProof_1' and @id = 'NOSAVEWindMitigationProof_1No']</value>
-      <webElementGuid>ce63d295-5cad-4905-a8a8-ccbed6cc62e5</webElementGuid>
+      <webElementGuid>fdbb1986-1859-4c35-bdd0-2202272c0090</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

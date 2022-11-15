@@ -35,6 +35,8 @@ String cityTX = nameAddressData['cityTX']
 String stateTX = nameAddressData['stateTX']
 String zipTX = nameAddressData['zipTX']
 
+String fullName = (randomFirstName + ' ') + randomLastName
+
 
 WebUI.openBrowser('')
 
@@ -116,13 +118,16 @@ if (isAgent == false) {
 	// wait for dynamic table to populate?
 	WebUI.delay(1)
 
-	for (int x = 0; x < 5; x++)
+	for (int x = 0; x < 1; x++)
 	{
 		try {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			// add key down/up here
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.TAB))
+			
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
 			WebUI.delay(1)
@@ -228,9 +233,9 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_General'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
 
-WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Is this a protected subdivision_NOSAV_0a5ef2'))
+//WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Is this a protected subdivision_NOSAV_0a5ef2'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
+//WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_History'))
 
@@ -276,7 +281,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSAVEGQ
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Billing'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '4PAY', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '9PAY', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectJOHN P SMITH SR'), 'Applicant1', true)
 
@@ -287,6 +292,12 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Display Quo
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_BindSubmit Application'))
 
 
+WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
+	[('howPayDeposit') : howPayDeposit,
+		('fullName') : fullName,
+		('randomLastName') : randomLastName
+		 ], FailureHandling.STOP_ON_FAILURE)
+/*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'PR', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Enter Credit Card Information'))
@@ -303,10 +314,10 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Card Secur
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Authorize Credit Card'))
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized User Agreement_RecurPayAuthorize'), randomLastName)
+*/
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
 
-//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
-
-//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
 if (shouldBind == true)
 {
