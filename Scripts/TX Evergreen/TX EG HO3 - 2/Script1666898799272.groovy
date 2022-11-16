@@ -299,6 +299,17 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownNo ProtectionWood ShuttersBas_8ed146'), 'SHUTTERS', true)
 
+String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/select_ProtectionClass'), 'value') // gets dropdown value
+System.out.println("protectionClass = " + protectionClass)		// outputs dropdown value
+
+if(Integer.valueOf(protectionClass) == 10)
+{
+	//click yes to subdivision
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSubdivision'))
+	//add subdivision name
+	WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_SubdivisonName'), "Terra Cotta Woods")
+}	
+
 'Click History button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_History'))
 

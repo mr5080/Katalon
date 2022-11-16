@@ -237,6 +237,21 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
 
+
+String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/select_ProtectionClass'), 'value') // gets dropdown value
+System.out.println("protectionClass = " + protectionClass)		// outputs dropdown value
+
+if(Integer.valueOf(protectionClass) == 10)
+{
+	//click yes to subdivision
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSubdivision'))
+	//add subdivision name
+	WebUI.sendKeys(findTestObject('Object Repository/TX EG HO6/Page_/input_SubdivisonName'), "Terra Cotta Woods")
+}
+
+
+
+
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_History'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Interests'))
