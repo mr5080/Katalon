@@ -121,6 +121,8 @@ if (isAgent == false) {
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.TAB))
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
+
+			
 			WebUI.delay(1)
 
 			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) {
@@ -172,9 +174,16 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEScreenedEnclosure_1'))
 
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '2084')
+
+String squareFoot = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), 'value') 
+System.out.println("squareFoot = " + squareFoot)		// outputs default squareFoot value
+if(squareFoot.length() < 3)
+{
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1333')
+	System.out.println("set squareFoot = 1333")
+}
+
 
 WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'))
 
@@ -301,15 +310,20 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/select_ProtectionClass'), 'value') // gets dropdown value
 System.out.println("protectionClass = " + protectionClass)		// outputs dropdown value
+System.out.println("protectionClass.length() = " + protectionClass.length())		// outputs dropdown value
 
-if(Integer.valueOf(protectionClass) == 10)
-{
-	//click yes to subdivision
-	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSubdivision'))
-	//add subdivision name
-	WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_SubdivisonName'), "Terra Cotta Woods")
-}	
+if(protectionClass.length() > 0)
+{	
+	if(Integer.valueOf(protectionClass) == 10)
+	{
+		//click yes to subdivision
+		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSubdivision'))
+		//add subdivision name
+		WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_SubdivisonName'), "Terra Cotta Woods")
+	}	
+}
 
+System.exit(0)
 'Click History button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_History'))
 

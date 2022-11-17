@@ -3,19 +3,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 
-if(manualAddress == 'manual')
+if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'Manuel',
-		'randomLastName': 'Tens',
-			'addressTX': '4613 DODY ST',
-			'cityTX': 'CORPUS CHRISTI',
+	def nameAddressData = ['randomFirstName': 'PC0',
+		'randomLastName': 'NOPC',
+			'addressTX': '5402 AVENUE Q 1/2',
+			'cityTX': 'GALVESTON',
 			'stateTX': 'TX',
-			'zipTX': '78411'
+			'zipTX': '77551'
 		]
 	return nameAddressData	
 }	
 
-else if(manualAddress == 'PC10')
+else if(manualAddress == 'PC10')	// address returns PC10
 	{
 		def nameAddressData = ['randomFirstName': 'Procy',
 			'randomLastName': 'Tens',
@@ -25,14 +25,18 @@ else if(manualAddress == 'PC10')
 			'zipTX': '76571'
 			]
 		return nameAddressData
-	}
-	
-	
-	
+	}	
 
-else if(manualAddress == 'credit')
+else if(manualAddress == 'truerisk')
 {
-	// fill in eventually
+	def nameAddressData = ['randomFirstName': 'Victoria',
+			'randomLastName': 'Alsip',
+			'addressTX': '201 Yorkshire',
+			'cityTX': 'Victoria',
+			'stateTX': 'TX',
+			'zipTX': '77904'
+			]
+		return nameAddressData
 }
 else if(manualAddress == 'claims')
 {
