@@ -22,6 +22,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+
+
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('TX Evergreen/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
@@ -36,6 +38,11 @@ String stateTX = nameAddressData['stateTX']
 String zipTX = nameAddressData['zipTX']
 
 String fullName = (randomFirstName + ' ') + randomLastName
+
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
 
 WebUI.openBrowser('')
 
@@ -87,19 +94,35 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Z
 
 WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
-WebUI.delay(5)
+//WebUI.delay(5)
+/*
+if(WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5))
+{
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	System.out.println('clicked GEOCODE button')
+}
+else
+{
+	System.out.println('NO GEOCODE button')
+}*/
 
 try {
-	WebUI.click(findTestObject('Object Repository/TX Evergreen HO6/Page_/input_X_GMAcceptButton'))
+//	WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
 	System.out.println('clicked GEOCODE button')
+	WebUI.delay(6)
 }
 catch (Exception e) {
 	System.out.println('Exception - ' + e)
 }
 
+
 WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 10)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input'))
+
+quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/div_Quote Number'), 'innerHTML')
+System.out.println('quoteNumber = ' + quoteNumber )
 
 'Agent Producer'
 if (isAgent == false) {
@@ -110,24 +133,31 @@ if (isAgent == false) {
 
 	
 	/// update this to key down and then key up, can do the same thing for date pickers!
-	for (int x = 0; x < 1; x++)
+	for (int x = 0; x < 5; x++)
 	{
 		try {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
+		//	if(environment == "TEST")
+		//	{
+				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
+				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+		//	}
+		//	else if(environment == "STAGE")
+		//	{
+			//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+		//	}
 
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 			// add key down/up here
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.TAB))
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))  // was .TAB, trying soemthing new 11.17.22
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
 
 			
-			WebUI.delay(1)
+		//	WebUI.delay(1)
 
-			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) {
+			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) 
+			{
 				WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
-
 				break
 			}
 		}
@@ -142,7 +172,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase D
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-5555')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerstone.com')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))
 
@@ -323,7 +353,6 @@ if(protectionClass.length() > 0)
 	}	
 }
 
-System.exit(0)
 'Click History button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_History'))
 
@@ -406,29 +435,47 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Authorize C
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized User Agreement_RecurPayAuthorize'), randomLastName)
 */
 
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
-
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
-
 if (shouldBind == true)
-	{
-		WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_Bind Application'))
-	
-		String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX Evergreen HO3/Page_/PolicyID'), 'innerHTML')
-	
-		System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
-	}
-	else
-	{
-		WebUI.comment('shouldBind = ' + shouldBind)
-		// forces last name to be saved for RCC
-		WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_GoBackOnePage'))
-		WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_GoForwardOnePage'))
-		
-	}
-	
+{
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Bind Application'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/TX EG HO3/Page_/button_Send to Company'), 10)
+	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
 
-//WebUI.closeBrowser()
+	System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
+}
+else
+{
+	WebUI.comment('shouldBind = ' + shouldBind)
+	// forces last name to be saved for Recurring payments
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoBackOnePage'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoForwardOnePage'))
+	
+	/*
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
+	*/
+	
+}
+	
+// pass vars to write for TX  11.18.22
+WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
+	[
+//	('policyType') : policyType,
+	('randomLastName') : randomLastName,
+	('randomFirstName') : randomFirstName,
+	('quoteNumber') : quoteNumber,
+	('todaysDate') : todaysDate,
+//	('totalPremium') : totalPremium,
+	('policyType') : 'HO3',
+//	('shouldBind') : shouldBind,
+	('stateTX') : stateTX,
+	('isAgent') : isAgent,
+	('environment') : environment
+//	,('todaysTimeStamp') : todaysTimeStamp
+		], FailureHandling.STOP_ON_FAILURE)
 
+
+//WebUI.waitForElementPresent(findTestObject('Object Repository/TX EG HO3/Page_/button_Send to Company'), 10)
+
+WebUI.closeBrowser()
+System.out.println('quoteNumber = ' + quoteNumber )

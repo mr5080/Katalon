@@ -5,12 +5,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'PC0',
-		'randomLastName': 'NOPC',
-			'addressTX': '5402 AVENUE Q 1/2',
-			'cityTX': 'GALVESTON',
+	def nameAddressData = ['randomFirstName': 'Julie',
+		'randomLastName': 'Hasson',
+			'addressTX': '105 Robert Garza',
+			'cityTX': 'Rio Hondo',
 			'stateTX': 'TX',
-			'zipTX': '77551'
+			'zipTX': '78583'
 		]
 	return nameAddressData	
 }	
@@ -47,7 +47,7 @@ else if(manualAddress == 'claims')
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
-int randomTXaddress = 2 + ((Math.random() * ((320 - 2) + 1)) as int)
+int randomTXaddress = 2 + ((Math.random() * ((310 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomTXaddress = 510

@@ -6,12 +6,12 @@
    <elementGuidId>11262827-e423-4ff7-8d0d-d5ead4b3119d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#MainIS21test</value>
+         <key>XPATH</key>
+         <value>//td[@id='MainFrameContainer']/iframe</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe[@id='MainIS21test']</value>
+         <key>CSS</key>
+         <value>#MainIS21test</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>iframe</value>
-      <webElementGuid>6dc7ddf2-a7d4-4c9e-b9f1-1b058005ddf0</webElementGuid>
+      <webElementGuid>47a2c713-03b5-4e5b-963e-9f82bfaf316b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>MainIS21test</value>
-      <webElementGuid>ce758bf3-a3ca-4123-99f0-02e2786e8bc3</webElementGuid>
+      <webElementGuid>6e7d1d15-dc72-4b52-93f3-624e8c32de79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Main</value>
-      <webElementGuid>ad4b8221-dc7c-4809-b387-9a2572d78110</webElementGuid>
+      <webElementGuid>04a89e76-d12e-47ff-915c-c9b5bdbcef46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>src</name>
       <type>Main</type>
       <value>./main.cfm?view=home&amp;TabView=</value>
-      <webElementGuid>d883202e-f079-4b87-9ab3-ecd956166876</webElementGuid>
+      <webElementGuid>8b07b264-eb6c-49f2-b669-25a707d373d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>MainIS21test</value>
-      <webElementGuid>4c2976b8-bd02-4381-a896-df48fd75acfe</webElementGuid>
+      <webElementGuid>48259b4d-962c-4f26-a6c8-25e0619071ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>width</name>
       <type>Main</type>
       <value>100%</value>
-      <webElementGuid>7b589cb5-a3d1-4e26-b400-31784ac740c0</webElementGuid>
+      <webElementGuid>c70f7928-31ca-4972-b04e-b4fe326c9374</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>marginwidth</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>b401b5d0-2327-4dfc-bd6a-db3b55904d54</webElementGuid>
+      <webElementGuid>d53c72bf-0de0-4e0c-bd53-eea782466801</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>marginheight</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>4188acaa-979f-4ba5-a9ef-2747a1b3bcaa</webElementGuid>
+      <webElementGuid>f55f0a99-afa4-43f2-b410-4935b36c2be2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>align</name>
       <type>Main</type>
       <value>middle</value>
-      <webElementGuid>1245b7d3-57d1-44e4-8e23-d281c5c9d261</webElementGuid>
+      <webElementGuid>0a7d73dc-3e6c-4ee7-9332-7923e6ec76e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>scrolling</name>
       <type>Main</type>
       <value>yes</value>
-      <webElementGuid>05445886-b25d-4976-a7d2-555340753ed4</webElementGuid>
+      <webElementGuid>9da6fd58-15de-427a-bd89-df935df2aab7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>frameborder</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>f17b2cf7-1306-43c3-a28f-7cb1b4ebf01f</webElementGuid>
+      <webElementGuid>ca8a14ba-8c5b-49ea-a19a-694f2840fe4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>height</name>
       <type>Main</type>
       <value>711px</value>
-      <webElementGuid>951e0f27-6d1e-4411-93b7-bc5ec9ff48f7</webElementGuid>
+      <webElementGuid>5991551d-fef5-4a20-a020-0a00d03d6a75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;MainIS21test&quot;)</value>
-      <webElementGuid>f10f6c5c-f751-4207-b8f5-cb810ceae76f</webElementGuid>
+      <webElementGuid>31759e58-4fe4-4ba9-8478-b191939b64a2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//iframe[@id='MainIS21test']</value>
-      <webElementGuid>859ed6ba-6be6-4b9a-93b3-9d7ca78e9db8</webElementGuid>
+      <webElementGuid>768c743c-35f7-41bf-8527-a9a894a75041</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//td[@id='MainFrameContainer']/iframe</value>
-      <webElementGuid>6b01e8a8-16cc-4d53-8935-ae540633320e</webElementGuid>
+      <webElementGuid>c9bb93f6-836a-414b-a682-b94cfca287b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//iframe</value>
-      <webElementGuid>7f237c79-a37f-46df-a6a5-c2c3a727ac1f</webElementGuid>
+      <webElementGuid>1e0ff1d5-76c6-45a5-acf5-c5370ec5ce27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//iframe[@id = 'MainIS21test' and @title = 'Main' and @src = './main.cfm?view=home&amp;TabView=' and @name = 'MainIS21test']</value>
-      <webElementGuid>a0687c0c-22ea-4a81-b080-acf6151926fc</webElementGuid>
+      <webElementGuid>3e7e699d-29cf-4e68-b65f-960bb06fbf94</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

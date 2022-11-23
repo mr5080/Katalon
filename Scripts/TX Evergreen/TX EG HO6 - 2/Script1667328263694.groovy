@@ -37,6 +37,10 @@ String zipTX = nameAddressData['zipTX']
 
 String fullName = (randomFirstName + ' ') + randomLastName
 
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
 
 WebUI.openBrowser('')
 
@@ -93,23 +97,23 @@ WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property 
 WebUI.delay(5)
 
 try {
-	WebUI.click(findTestObject('Object Repository/TX Evergreen HO6/Page_/input_X_GMAcceptButton'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
 	System.out.println('clicked GEOCODE button')
+	WebUI.delay(6)
 }
 catch (Exception e) {
 	System.out.println('Exception - ' + e)
 }
-try {
-	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
-}
-catch(e)
-{}
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/TX EG HO6/Page_/td_NOTE The address above has beensuccessfu_ffdc37'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/TX EG HO6/Page_/div_Quote Number 1049475'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/TX EG HO6/Page_/div_Quote Number'), 10)
+
+quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_Quote Number'), 'innerHTML')
+System.out.println('quoteNumber = ' + quoteNumber )
+
 
 'Agent Producer'
 if (isAgent == false) {
@@ -118,23 +122,33 @@ if (isAgent == false) {
 	// wait for dynamic table to populate?
 	WebUI.delay(1)
 
-	for (int x = 0; x < 1; x++)
+	
+	/// update this to key down and then key up, can do the same thing for date pickers!
+	for (int x = 0; x < 5; x++)
 	{
 		try {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
+		//	if(environment == "TEST")
+		//	{
+				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
+				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+		//	}
+		//	else if(environment == "STAGE")
+		//	{
+			//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+		//	}
 
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 			// add key down/up here
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.TAB))
-			
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))  // was .TAB, trying soemthing new 11.17.22
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 
-			WebUI.delay(1)
 
-			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) {
+			
+		//	WebUI.delay(1)
+
+			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) 
+			{
 				WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
-
 				break
 			}
 		}
@@ -196,9 +210,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125_1_2'), '5', true)
 
-WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-
+//WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '250000')
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
@@ -346,15 +360,15 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Authorize C
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized User Agreement_RecurPayAuthorize'), randomLastName)
 */
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
 
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
+//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
+//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
 if (shouldBind == true)
 {
-	WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_Bind Application'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Bind Application'))
 
-	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX Evergreen HO3/Page_/PolicyID'), 'innerHTML')
+	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/PolicyID'), 'innerHTML')
 
 	System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
 }
@@ -362,17 +376,34 @@ else
 {
 	WebUI.comment('shouldBind = ' + shouldBind)
 	// forces last name to be saved for RCC
-	WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_GoBackOnePage'))
-	WebUI.click(findTestObject('Object Repository/TX Evergreen HO3/Page_/button_GoForwardOnePage'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoBackOnePage'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoForwardOnePage'))
 	
 }
 	
+// pass vars to write for TX  11.18.22
+WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
+	[
+//	('policyType') : policyType,
+	('randomLastName') : randomLastName,
+	('randomFirstName') : randomFirstName,
+	('quoteNumber') : quoteNumber,
+	('todaysDate') : todaysDate,
+//	('totalPremium') : totalPremium,
+	('policyType') : 'HO6',
+//	('shouldBind') : shouldBind,
+	('stateTX') : stateTX,
+	('isAgent') : isAgent,
+	('environment') : environment
+//	,('todaysTimeStamp') : todaysTimeStamp
+		], FailureHandling.STOP_ON_FAILURE)
+
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/TX EG HO3/Page_/button_Send to Company'), 10)
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
-
+System.out.println('quoteNumber = ' + quoteNumber )
 
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
