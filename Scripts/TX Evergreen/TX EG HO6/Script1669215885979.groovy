@@ -224,7 +224,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,0003,0004,0005,000'), '3000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), 'CONDO', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), 'CONDO', true)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
@@ -331,6 +331,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectJOHN P SMITH SR'), 'Applicant1', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectJOHN P SMITH SR_1'), 'Applicant1', true)
+
+//return;
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Display Quote'))
 

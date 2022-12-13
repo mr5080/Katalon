@@ -97,7 +97,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -153,7 +153,7 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>
@@ -181,7 +181,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'11/21/2022'</defaultValue>
+      <defaultValue>'12/21/2022'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>

@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TX Evergreen HO6</name>
+   <name>TX Evergreen HO3-TRASH</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>35dbb1fc-dc15-4fdb-9d5f-189dcfadc732</testCaseGuid>
+   <testCaseGuid>a0f74896-0c8a-4224-b718-f5d6d8f77b6d</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3d975428-83a2-4225-94fb-0f910a0afc78</variableId>
+      <variableId>d22837b9-c4a5-489f-8a80-0b5347e701b0</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a1c2a984-d6f9-4566-a04a-0337a9c47aa8</variableId>
+      <variableId>350aed9a-a889-4123-b7e5-720f5bd4cd98</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>66a84668-f5a6-4620-ae7a-fba438311414</variableId>
+      <variableId>b67a16be-4a1a-4eb7-a609-b7627d95a340</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>99dd7b38-7b68-4e8b-9a63-7f79e14658f7</variableId>
+      <variableId>6b67f20a-c36d-4ac2-abe8-4ba2b1fb81d2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>fb90c2fe-4f1e-4b99-ad64-eb14056c6adb</variableId>
+      <variableId>6d5bc16f-92c9-4727-be3a-79b900743924</variableId>
    </variableLinks>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>3d975428-83a2-4225-94fb-0f910a0afc78</id>
+      <id>d22837b9-c4a5-489f-8a80-0b5347e701b0</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
       <defaultValue>'TEST'</defaultValue>
-      <description></description>
-      <id>a1c2a984-d6f9-4566-a04a-0337a9c47aa8</id>
+      <description>TEST or STAGE</description>
+      <id>350aed9a-a889-4123-b7e5-720f5bd4cd98</id>
       <masked>false</masked>
       <name>environment</name>
    </variable>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
-      <id>66a84668-f5a6-4620-ae7a-fba438311414</id>
+      <id>b67a16be-4a1a-4eb7-a609-b7627d95a340</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
       <defaultValue>'10/27/2022'</defaultValue>
       <description></description>
-      <id>99dd7b38-7b68-4e8b-9a63-7f79e14658f7</id>
+      <id>6b67f20a-c36d-4ac2-abe8-4ba2b1fb81d2</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>manual, claim, truerisk</description>
-      <id>fb90c2fe-4f1e-4b99-ad64-eb14056c6adb</id>
+      <description>manual, claim, truerisk, PC10</description>
+      <id>6d5bc16f-92c9-4727-be3a-79b900743924</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>

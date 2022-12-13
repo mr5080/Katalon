@@ -117,7 +117,7 @@ catch (Exception e) {
 }
 
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 10)
+WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 15)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input'))
 
@@ -187,6 +187,43 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birt
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1980')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'M', true)
+
+// prior mailing address stuff
+// generates random number, either 0 or 1, used to randomize US/international
+randomNumber = ((Math.random() * 2) as int)
+int randomNumber = 0
+
+System.out.println('need to fill in prior mailing address stuff')
+
+if (randomNumber == 0) // fill out US prior mailing address
+{
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 Queen ST')
+
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Steelton')
+
+	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'PA', false)
+
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '17113')
+} 
+else 
+{
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/Select_AddressType'), 1)
+
+	String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
+
+	System.out.println('selectedAddressType = ' + selectedAddressType)
+
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '9584 saint international st')
+
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 10010001')
+
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'Germany')
+}
+
+
+
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
 
@@ -405,6 +442,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR'), 'Applicant1', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR_1'), 'Applicant1', true)
+
+
+//return ;
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote'))
 
