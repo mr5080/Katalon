@@ -18,7 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>785282a3-9b5e-4216-a251-ce8bea3e6afe</webElementGuid>
+      <webElementGuid>4dd4078b-e967-4e07-9cb9-d19adb781c27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,7 +26,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>97e43aad-3708-4bdc-a233-a56abe4f8da7</webElementGuid>
+      <webElementGuid>5d118dc9-51e6-4f40-bfae-22df54f4dae1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget fromPageValidated</value>
-      <webElementGuid>95d8acc5-a714-45ee-92e6-c4da4aea43b7</webElementGuid>
+      <webElementGuid>5891d8ee-ed43-4934-a5b2-763c63c0d7c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -42,7 +42,7 @@
       <name>name</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
-      <webElementGuid>6b6e0797-6de2-4f55-8081-ffae1ba92374</webElementGuid>
+      <webElementGuid>bb9d96b2-8d6f-4e56-8893-2071719d5c75</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,7 +50,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>7bd3184c-2b1f-45cd-adde-80de3d8fb075</webElementGuid>
+      <webElementGuid>4f92e4f3-61c6-46bd-9ae2-477d42a50c62</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>id</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
-      <webElementGuid>733d370b-e6a6-4200-bd6f-c9663cb54c4f</webElementGuid>
+      <webElementGuid>65f4060b-c26b-4479-bf25-73c082cdcfd0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this);; GlobalOnBlur();   CheckRequired(false);</value>
-      <webElementGuid>81e1d95f-7c05-4614-a7c0-a1f8bf9d9535</webElementGuid>
+      <webElementGuid>5eeabb18-88c2-4a3b-a2cf-c27ba05d3e9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>; GlobalOnChange(); </value>
-      <webElementGuid>65b46fe1-d187-47ab-bb40-7ce0ae2cd487</webElementGuid>
+      <webElementGuid>294c6b2d-ee7e-4ed7-9272-88167f96871d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>integer</value>
-      <webElementGuid>5f54df84-8c36-4f88-8793-d25d061ef480</webElementGuid>
+      <webElementGuid>1cf909e3-a796-4f65-ba20-bfe1f17ba69f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>popover464756</value>
-      <webElementGuid>9d20f589-8b08-4c36-a488-e26db9bfeef0</webElementGuid>
+      <webElementGuid>e66d1aca-43cb-4df2-9938-ea6b99b7af6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -98,14 +98,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;SquareFootage_1&quot;)</value>
-      <webElementGuid>b169da8a-b063-4f7c-bf47-c5db962c378a</webElementGuid>
+      <webElementGuid>5be1b9ce-7a11-4a78-b13c-cdd54214b154</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Testing Modal Accept/iframe_RTR Quotes_MainIS20test</value>
-      <webElementGuid>3594e0b3-5c25-44b2-a8ab-f7c3c5fc6c61</webElementGuid>
+      <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>34cdd847-798c-41ba-80b4-87856974c8e8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

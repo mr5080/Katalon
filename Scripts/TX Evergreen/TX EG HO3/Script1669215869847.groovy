@@ -191,8 +191,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
-int randomNumber = 0
-
+//int randomNumber = 0
 System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
@@ -209,7 +208,7 @@ else
 {
 	WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/Select_AddressType'), 1)
 
-	String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
+	String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/Select_AddressType'), 'value')
 
 	System.out.println('selectedAddressType = ' + selectedAddressType)
 
@@ -318,7 +317,18 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEMu
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEPaidInFull_1'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_NoneEvergreen Edge CoverageEvergreen_d28c8c'), 'NONE', true) //EDGE NONE EDGEPLUS
+
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_NoneEvergreen Edge CoverageEvergreen_d28c8c'), 'NONE', true) //EDGE NONE EDGEPLUS
+// 0 = None, 1 = Edge, 2 = EdgePlus
+// generates random number, either 0 or 1 or 2,
+randomBundle = (((Math.random() * 2) as int) + 1) 
+
+System.out.println('randomBundle = ' + randomBundle)
+
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
+
+
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 

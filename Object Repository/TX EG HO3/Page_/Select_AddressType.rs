@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>4a9a92bb-3f41-4a85-87f1-8684bee0a82a</webElementGuid>
+      <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>8bcf4817-792f-411f-a650-094a4ff84611</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
