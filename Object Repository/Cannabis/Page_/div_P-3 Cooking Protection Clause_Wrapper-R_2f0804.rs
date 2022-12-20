@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_P-3 Cooking Protection Clause_Wrapper-R_2f0804</name>
+   <tag></tag>
+   <elementGuidId>1e942878-ce55-4f55-95f2-47fe225122e3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Right-ExclusionP3_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-ExclusionP3_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f267b2cb-65d8-4661-a94b-88150b56331c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Right-ExclusionP3_1</value>
+      <webElementGuid>d44f060c-3784-4a07-b76c-f5e8359ee5ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-1 p-1</value>
+      <webElementGuid>4321a950-994b-4128-8eab-b62733eacdc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Right-ExclusionP3_1&quot;)</value>
+      <webElementGuid>48639bd4-a82e-4bc0-8fba-b38a38b360a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>2861d4cc-f6da-47f3-9396-00bee1b36d9b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Right-ExclusionP3_1']</value>
+      <webElementGuid>f15b1132-a6a0-4c6b-926e-527fc3c9ca43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='collapseNumberOfRisks1']/div/div[4]/div[2]/div/div/div[4]</value>
+      <webElementGuid>1f7b1666-63b4-417e-a721-54a32d20a574</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='P-3 Cooking Protection Clause'])[1]/following::div[1]</value>
+      <webElementGuid>70d7eb37-e0b7-485d-bf48-9cd08a47d51f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='P-1 Sprinkler Clause'])[1]/following::div[3]</value>
+      <webElementGuid>f35757ee-7669-483d-8e7b-4d794d08d5da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='P-5 Video Surveillance Clause'])[1]/preceding::div[1]</value>
+      <webElementGuid>effcb5ba-25ba-43ed-a3b4-68646bf1f293</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='P-2 Fire Alarm Clause'])[1]/preceding::div[3]</value>
+      <webElementGuid>68818ad3-fb15-434b-9230-a3c33fc1e718</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[4]/div[2]/div/div/div[4]</value>
+      <webElementGuid>5bfccb01-33c0-4219-b08c-4e485b3be302</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Right-ExclusionP3_1']</value>
+      <webElementGuid>b6639a33-41e1-4847-9f2d-aa673f9e7d01</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

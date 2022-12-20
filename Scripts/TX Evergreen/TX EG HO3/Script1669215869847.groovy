@@ -60,18 +60,14 @@ if (isAgent == true) {
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '0')
 }
 
-//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
-
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'JHUGHES')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
 
-//WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), effectiveDate)	
 WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
-
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FLORIDATEXAS'), '42', true)
@@ -172,7 +168,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase D
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-5555')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerstone.com')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))
 
@@ -218,11 +214,6 @@ else
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'Germany')
 }
-
-
-
-
-
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
 
@@ -453,9 +444,6 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR_1'), 'Applicant1', true)
 
-
-//return ;
-
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
@@ -466,24 +454,6 @@ WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
 		('fullName') : fullName,
 		('randomLastName') : randomLastName
 		 ], FailureHandling.STOP_ON_FAILURE)
-/*
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'PR', true)
-
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Enter Credit Card Information'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
-
-
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Credit Card Number_NOSAVEACCT'), '4111 1111 1111 1111')
-
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Card Expiration Date_NOSAVEEXPDATE'), '11/25')
-
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Card Security Code_CVV2'), '111')
-
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Authorize Credit Card'))
-
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized User Agreement_RecurPayAuthorize'), randomLastName)
-*/
 
 if (shouldBind == true)
 {
