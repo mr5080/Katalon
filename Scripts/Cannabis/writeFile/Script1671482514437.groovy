@@ -27,10 +27,10 @@ System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 //System.out.println("totalPremium(from childTestCase) = " + totalPremium)
-System.out.println("policyType(from childTestCase) = " + policyType)
+//System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
-System.out.println("stateTX(from childTestCase) = " + stateTX)
+System.out.println("stateAZ(from childTestCase) = " + stateAZ)
 
 
 
@@ -40,7 +40,7 @@ System.out.println("stateTX(from childTestCase) = " + stateTX)
 
 // copied from Cypress 4
 
-FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressTXEvergreenAutoQuote.xlsx'))
+FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
 
 	XSSFWorkbook workbook = new XSSFWorkbook(file)
 
@@ -100,17 +100,17 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 	
 	//		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
-			sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+//			sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
-			sheet.getRow(rowCount).createCell(10).setCellValue(stateTX)
+			sheet.getRow(rowCount).createCell(10).setCellValue(stateAZ)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
 			file.close()
 		
 			try {
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressTXEvergreenAutoQuote.xlsx'))
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
 		
 				workbook.write(outFile)
 		
@@ -121,7 +121,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 		
 				WebUI.delay(20)
 				// try to write again, file is probably open...
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressTXEvergreenAutoQuote.xlsx'))
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
 		
 				workbook.write(outFile)
 		

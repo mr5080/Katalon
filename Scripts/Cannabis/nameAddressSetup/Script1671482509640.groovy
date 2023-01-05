@@ -7,10 +7,10 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'Mani',
 		'randomLastName': 'Marson',
-			'addressAZ': '14825 E SHEA BLVD',
-			'cityAZ': 'Fountain Hills',
+			'addressAZ': '3191 S WHITE MOUNTAIN RD STE A',
+			'cityAZ': 'Show Low',
 			'stateAZ': 'AZ',
-			'zipAZ': '85268'
+			'zipAZ': '85901'
 		]
 	return nameAddressData	
 }	
@@ -45,20 +45,20 @@ else if(manualAddress == 'claims')
 	
 
 
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
+Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'AZ Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
-int randomTXaddress = 2 + ((Math.random() * ((310 - 2) + 1)) as int)
+int randomAZaddress = 2 + ((Math.random() * ((125 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-//randomTXaddress = 510
-System.out.println(randomTXaddress)
+//randomAZaddress = 510
+System.out.println(randomAZaddress)
 	
 // Risk Adddress
 // minus 1 because first line is header in excel file
-addressTX = addressData.getValue(1, randomTXaddress - 1).toUpperCase()
-cityTX = addressData.getValue(2, randomTXaddress - 1).toUpperCase()
-stateTX = addressData.getValue(3, randomTXaddress - 1).toUpperCase()
-zipTX = addressData.getValue(4, randomTXaddress - 1)
+addressAZ = addressData.getValue(1, randomAZaddress - 1).toUpperCase()
+cityAZ = addressData.getValue(2, randomAZaddress - 1).toUpperCase()
+stateAZ = addressData.getValue(3, randomAZaddress - 1).toUpperCase()
+zipAZ = addressData.getValue(4, randomAZaddress - 1)
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
@@ -79,10 +79,10 @@ randomLastName = randomLastName.replaceAll('[\\d.]', '')
 //def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
 def nameAddressData = ['randomFirstName': randomFirstName,
 	'randomLastName': randomLastName,
-	'addressTX': addressTX,
-	'cityTX': cityTX,
-	'stateTX': stateTX,
-	'zipTX': zipTX
+	'addressAZ': addressAZ,
+	'cityAZ': cityAZ,
+	'stateAZ': stateAZ,
+	'zipAZ': zipAZ
 	]
 	
 //WebUI.comment(nameAddressData['randomFirstName'])

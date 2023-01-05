@@ -76,14 +76,14 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>

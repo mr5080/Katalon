@@ -145,8 +145,10 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 
+WebUI.clearText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'))
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(EffectiveDate, Keys.TAB))
+//WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'), EffectiveDate)
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
 
@@ -334,7 +336,8 @@ if ((isAgent == false) && (realTestUser == false)) {
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), EffectiveDate)
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), EffectiveDate)
+//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(EffectiveDate, Keys.TAB))
 
 //WebUI.delay(10)
 // calculates a DOB that is at least 18 years old and fills in the DOB field
@@ -695,8 +698,14 @@ int stringLength = replacementCost360.length()
 
 System.out.println('stringLength = ' + stringLength)
 
-replacementCost360 = replacementCost360.substring(0, replacementCost360.indexOf('.'))
-
+if(stringLength > 0)
+{	
+	replacementCost360 = replacementCost360.substring(0, replacementCost360.indexOf('.'))
+}
+else
+{
+	replacementCost360 = 245000
+}
 //replacementCost360 = replacementCost360.
 System.out.println('replacementCost360 2 = ' + replacementCost360)
 

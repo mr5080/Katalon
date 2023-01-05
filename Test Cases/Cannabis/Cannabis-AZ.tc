@@ -56,7 +56,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'12/25/2022'</defaultValue>
+      <defaultValue>'01/05/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -70,7 +70,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'manual'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, or xxxxx</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>

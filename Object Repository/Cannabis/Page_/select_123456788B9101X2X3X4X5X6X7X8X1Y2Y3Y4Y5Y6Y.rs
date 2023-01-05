@@ -6,12 +6,12 @@
    <elementGuidId>e9897ac1-8659-4cae-888d-492acc483df8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ProtectionClass_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='ProtectionClass_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ProtectionClass_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>c19250ce-7818-4678-afb0-fb6ba50baf64</webElementGuid>
+      <webElementGuid>f00933db-02b9-4bfd-847d-92a52c5d8bb3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>2cd69c9e-c2cc-4804-8dd3-6e52cbbbdb17</webElementGuid>
+      <webElementGuid>65585be9-b9a1-4175-b977-216c2454c2c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5a8f9f0a-0842-49d1-b086-35e534770c08</webElementGuid>
+      <webElementGuid>e37033b4-d52c-45a7-8dc5-de9f3b742dc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control </value>
-      <webElementGuid>0a167da3-436d-4157-b833-3506559fc892</webElementGuid>
+      <webElementGuid>ca69950e-5354-4d1c-b285-4930a2564bfe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ProtectionClass_1</value>
-      <webElementGuid>a0fbae4b-2dda-4bf0-abcf-957b76939a39</webElementGuid>
+      <webElementGuid>cb9fc80c-c53c-4def-888c-3ec39b443229</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ProtectionClass_1</value>
-      <webElementGuid>4ea36d52-cbc0-409e-bd12-7964ab19ff21</webElementGuid>
+      <webElementGuid>87bce17c-3347-4e39-85f7-a8309b65b25f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>  CheckRequired(false);</value>
-      <webElementGuid>e407b587-7106-4f2a-870e-0f4dbebce8a8</webElementGuid>
+      <webElementGuid>60635a64-4ee0-4006-a191-5672030754b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -184,7 +184,7 @@
 								
 								
 				</value>
-      <webElementGuid>b3a723b7-d117-47e1-b80b-9b7773c9fcf5</webElementGuid>
+      <webElementGuid>caf40093-ec86-471c-94bc-1d7a8385851b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -192,7 +192,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ProtectionClass_1&quot;)</value>
-      <webElementGuid>dcf1a2cf-fc82-4bb6-ad67-b1651576eb77</webElementGuid>
+      <webElementGuid>81865e3b-5cc7-4ee3-b7b7-dc7c94f2766f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -200,7 +200,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>1ebb8fe3-bba6-4a7b-96fc-eadcedf74e7e</webElementGuid>
+      <webElementGuid>ad2601e5-98d8-47f5-802f-b082d02c269c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -208,7 +208,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='ProtectionClass_1']</value>
-      <webElementGuid>97a3164b-e5f5-45e8-8e2f-faedb7f935c0</webElementGuid>
+      <webElementGuid>207cf0ae-2f28-4852-8764-8f6943333340</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -216,7 +216,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ProtectionClass_1']/select</value>
-      <webElementGuid>28a27613-66f2-4a5e-ba11-ecb293eed152</webElementGuid>
+      <webElementGuid>8b87563c-27bd-40ba-9de5-9fe91a18bf01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -224,7 +224,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Protection Class'])[1]/following::select[1]</value>
-      <webElementGuid>b54c455e-5f0b-4c69-a12c-d727a9ba2342</webElementGuid>
+      <webElementGuid>d7b9f652-d729-48de-82c8-d2914471087d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -232,7 +232,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Distance from Fire Station'])[1]/preceding::select[1]</value>
-      <webElementGuid>9ac36578-c56f-4998-8d7e-0eddb61d9f5f</webElementGuid>
+      <webElementGuid>6163316c-17c4-453e-88f7-8b5ff15a2b4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -240,7 +240,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Distance from Fire Hydrant'])[1]/preceding::select[2]</value>
-      <webElementGuid>26eaff90-0b9d-40d5-b55a-fa5710d5bee6</webElementGuid>
+      <webElementGuid>52c2ad38-0058-468e-a049-b03f70e0cba4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -248,7 +248,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div[2]/select</value>
-      <webElementGuid>3faadf6e-6fbe-4d79-ab69-a4640a821ac2</webElementGuid>
+      <webElementGuid>a484a504-3636-48fe-8c3a-baaaa6ce3b27</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -468,6 +468,6 @@
 								
 								
 				')]</value>
-      <webElementGuid>07b74243-30c4-4b06-8958-8c3622336d9b</webElementGuid>
+      <webElementGuid>1390af94-f12d-4bea-8148-0bf08f46ec50</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

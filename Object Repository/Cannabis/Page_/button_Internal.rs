@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[2]</value>
+         <value>//button[@type = 'button' and (text() = 'Internal >')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>9794230c-8138-4ebd-9525-029256c09914</webElementGuid>
+      <webElementGuid>c2a35777-431c-4fae-b569-6b94de8e9e34</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>0be4457e-2238-4abc-8162-3f09f1e6c4df</webElementGuid>
+      <webElementGuid>336f9d03-b242-44b0-91c9-5bc6029466fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>471881e2-83f6-47b7-8239-96b7546efc41</webElementGuid>
+      <webElementGuid>62f4089b-bc20-4294-9329-ff3ca1743aef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(500) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>551a7a4e-d980-4b14-baf9-2104de0fcf41</webElementGuid>
+      <webElementGuid>ed46f93d-59d2-431a-bf39-63da1d002792</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Internal ></value>
-      <webElementGuid>3f5c5275-bbc2-48ca-b450-c1ab1c76dd2e</webElementGuid>
+      <webElementGuid>27b30c3c-4b8f-43ea-ad7a-c557c3192eb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-2 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>77be582d-d384-44f3-a0d0-0221a593d186</webElementGuid>
+      <webElementGuid>205a2bf8-5138-474e-8fd0-461eadb2b053</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>ed8d3ee2-b0fa-449d-a964-01560c50b0df</webElementGuid>
+      <webElementGuid>81a04b7b-42a1-4d33-9dfa-a22c29158221</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>2b63b0ec-943e-477f-9096-cfca1efaa929</webElementGuid>
+      <webElementGuid>41bce7eb-e535-48a6-9db4-f73ef6c35e43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[2]/div[2]/button</value>
-      <webElementGuid>028e4142-3d26-44f2-8c66-efbdcccc0b96</webElementGuid>
+      <webElementGuid>7df591fa-7141-48dc-b650-bf5dc3135ac7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Additional Insureds'])[1]/following::button[1]</value>
-      <webElementGuid>78426d05-78fb-4cf4-80f6-c962b2626658</webElementGuid>
+      <webElementGuid>140f04ee-3f47-4447-bcbe-4bfc9912ea37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='History'])[1]/following::button[2]</value>
-      <webElementGuid>0abe3be9-cf44-4b2d-a60e-efc2cd0a0732</webElementGuid>
+      <webElementGuid>a33b78f2-4961-4ec1-ab5f-d514074fdc5e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
-      <webElementGuid>b47c6cfd-6575-4b8c-8b08-e24a538b88f9</webElementGuid>
+      <webElementGuid>c4346de3-306f-4a0a-b624-22954223fad5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[1]/preceding::button[2]</value>
-      <webElementGuid>a3dd925f-19e0-4bef-87f0-29a6939625e0</webElementGuid>
+      <webElementGuid>21e84920-6945-407d-a728-9cb9cb9ab313</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Internal >']/parent::*</value>
-      <webElementGuid>9c3db5fa-79b8-422b-845e-e56ded8f51dd</webElementGuid>
+      <webElementGuid>b032096b-562a-423b-ad4e-ff1dd22cef77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button</value>
-      <webElementGuid>d4816255-08f8-44ea-b110-0b8603e2d38e</webElementGuid>
+      <webElementGuid>ef897fc8-7b7b-49a5-87c0-72ad084b513e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Internal >' or . = 'Internal >')]</value>
-      <webElementGuid>8280ca7e-44d6-420f-b461-c0d19f93e4a6</webElementGuid>
+      <webElementGuid>aa82be35-58b2-44fa-93ae-d39c9f25c9a3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

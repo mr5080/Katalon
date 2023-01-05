@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[12]</value>
+         <value>//button[@type = 'button' and (text() = 'Display Quote >')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>69d69b4c-d537-4629-8f3e-84477782164f</webElementGuid>
+      <webElementGuid>ba52dda7-ce7c-45bb-9869-f5956e166047</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton NoPaddingOnShort</value>
-      <webElementGuid>444abc46-59e0-420d-902f-35e2c55a7429</webElementGuid>
+      <webElementGuid>ca6179f3-554e-4810-beba-b40d61205518</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>2d63d569-ae36-4e32-8e8b-d6b6b8b66550</webElementGuid>
+      <webElementGuid>2764ef7a-4223-4255-a2e6-ed0297d0e6d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(2500) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>3312b36f-b70a-4bfc-8bcd-0db02e2bc762</webElementGuid>
+      <webElementGuid>bcd3d896-e975-4d6c-9973-7b2b4e394331</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Display Quote ></value>
-      <webElementGuid>c4d0b3d4-87c2-47e5-bf9b-3be38f166d57</webElementGuid>
+      <webElementGuid>94f8bcd0-2f4f-4c59-876e-e4cfaa3c2a66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent TopMenuOneArea&quot;]/div[@class=&quot;row justify-content-md-center flex-nowrap NoPaddingOnShort&quot;]/div[@class=&quot;col-md-2 m-3 NoPaddingOnShort&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton NoPaddingOnShort&quot;]</value>
-      <webElementGuid>11be365b-6316-4a6f-b609-7ca76489b2b1</webElementGuid>
+      <webElementGuid>27575b2b-28b0-4600-ba3c-4e3b1fb789ee</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>c080f6fd-3243-44e1-95d7-7d332461ef48</webElementGuid>
+      <webElementGuid>587b69ae-ebf0-44fd-8b61-5cf6220a01cf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[12]</value>
-      <webElementGuid>ab8590d4-e15d-48c0-a56b-91620a9c51a8</webElementGuid>
+      <webElementGuid>e10e9c48-fe41-4434-9ef9-3fe01d2c6be2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[3]/div[2]/div[2]/button</value>
-      <webElementGuid>e9589830-2ea0-4b23-8f06-5471b0862ec1</webElementGuid>
+      <webElementGuid>a8cbb186-3f7f-4dbb-b52e-d2df1d368de1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Prequalification'])[2]/following::button[1]</value>
-      <webElementGuid>dc6a88f8-62aa-478f-8eaf-271eea4414db</webElementGuid>
+      <webElementGuid>1e0b02f0-b6f8-44ae-af11-cd175ed93be6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loss History'])[1]/following::button[2]</value>
-      <webElementGuid>25cb690c-acdf-4b9a-9611-30c84a1a7dc2</webElementGuid>
+      <webElementGuid>6b97fd86-43da-43b3-8b77-4e244cadd84b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
-      <webElementGuid>63aa8c6d-c88e-4eff-a056-380e072e6bd3</webElementGuid>
+      <webElementGuid>e7cd553e-31a0-4878-bad0-40bc7001c5a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[2]/preceding::button[2]</value>
-      <webElementGuid>31ec5fe7-78b1-4b8a-893d-9821a6224efe</webElementGuid>
+      <webElementGuid>b9cac03f-fcb2-4a85-9d2f-cf0300c3593e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/div[2]/button</value>
-      <webElementGuid>18bc5915-20db-4849-ae78-bd5a4bb160c8</webElementGuid>
+      <webElementGuid>ce2c930a-d284-476f-9f03-d2c88d613541</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Display Quote >' or . = 'Display Quote >')]</value>
-      <webElementGuid>c2653fae-ce0c-428e-9f5f-0c707ca02b86</webElementGuid>
+      <webElementGuid>6d9e1b8f-6107-401b-b554-2cc0f3e96839</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

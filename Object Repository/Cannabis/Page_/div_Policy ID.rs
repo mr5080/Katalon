@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Policy ID 1009</name>
+   <name>div_Policy ID</name>
    <tag></tag>
    <elementGuidId>35c52ce0-88a3-4d07-83fe-ea25c29e48de</elementGuidId>
    <selectorCollection>

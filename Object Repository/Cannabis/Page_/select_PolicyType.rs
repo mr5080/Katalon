@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_PolicyType</name>
+   <tag></tag>
+   <elementGuidId>49372f1e-9926-4cc5-9ff8-2166f796007d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#StateCode</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PolicyTypeCode']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>07fbc9a7-5c79-42e9-9ead-5730f4ce4410</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>StateCode</value>
+      <webElementGuid>7cde8f91-fc68-4ce2-b71a-841a9e03338c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>StateCode</value>
+      <webElementGuid>1686f2ac-bcf0-48b5-8164-30293eda1cc9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onblur</name>
+      <type>Main</type>
+      <value>; chkQuotes(this) </value>
+      <webElementGuid>9e59c6e5-2768-4fe4-a7a4-4c6913973cf6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>UpdateCompanyList(this.form,'StateCode');document.getElementById('ApplicantState').selectedIndex=this.selectedIndex;GMJSDataManager('0',document.getElementById('RealtimeGeocodingProviderSelector').value);MakeVerifyStreetAddressCall('https://alchemytest.cogisi.com/is/',this.form,'Applicant','','',getMostRelevantPolicyTypeCodeValue(document.getElementById('PolicyTypeCode'),'',''),'0');</value>
+      <webElementGuid>019bbc7c-fbc7-4b20-9da8-8dd779ec3923</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+					
+							ARIZONA
+						
+							COLORADO
+						
+							OKLAHOMA
+						
+				</value>
+      <webElementGuid>d9ce965f-5683-486d-ba53-ddf851c05885</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;StateCode&quot;)</value>
+      <webElementGuid>da366a66-8d96-4a2f-a9e8-47e6e149c31c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>bcb000e0-5542-49d4-8c1c-e78c6c390c3b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
