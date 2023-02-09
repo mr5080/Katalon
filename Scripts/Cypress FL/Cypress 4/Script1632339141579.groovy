@@ -49,7 +49,7 @@ if (environment == 'TEST') {
 }
 
 
-// pass vars to write the file  9.16.21
+// pass vars to different file  9.16.21
 def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSetup'),
 	[('realTransunionCreditReport') : realTransunionCreditReport,
 	('realAPlusClaimReport') : realAPlusClaimReport,
@@ -474,7 +474,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350250')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250800')
 
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
@@ -595,6 +595,11 @@ System.out.println('randomBundle = ' + randomBundle)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
 
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
+
+if(stopQQ)
+{
+		System.exit(0)
+}
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')

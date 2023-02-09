@@ -6,12 +6,12 @@
    <elementGuidId>145d3c9b-ce3d-4ba9-8639-44866fbd0a6e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEHas24VideoYes</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEHas24VideoYes']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEHas24VideoYes</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a0c138ef-49ec-4cc7-b8a2-ce3ba8fd56c4</webElementGuid>
+      <webElementGuid>15207c0a-8336-49ba-876d-75eb8974120f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-check-input</value>
-      <webElementGuid>37c9c69a-c3c6-43be-a9ce-85a3ec47c008</webElementGuid>
+      <webElementGuid>c19cc207-3511-4245-8eb0-6a7119fb311b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>c0421650-5a2c-4c45-b800-62cf23ad7550</webElementGuid>
+      <webElementGuid>d128ab3c-f6c9-465f-b25a-f411963a093a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ccc73732-ba94-444c-a2fd-4e608e970646</webElementGuid>
+      <webElementGuid>2e1966fe-b390-4b31-bb5e-4169d50e992d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEHas24Video</value>
-      <webElementGuid>d6ae840f-ef97-42e6-95f8-a3e743147c7c</webElementGuid>
+      <webElementGuid>bc4e7245-d0a3-4efd-810d-cea8f279d4f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEHas24VideoYes</value>
-      <webElementGuid>512e55d0-5f40-4255-a977-ffd822fd4a83</webElementGuid>
+      <webElementGuid>ace6efd4-5a1b-41ac-8e28-226b86d11a93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Y</value>
-      <webElementGuid>f44055f6-59df-48f5-b0c4-9073d79ce5bd</webElementGuid>
+      <webElementGuid>a10a2bdb-b710-40c8-a60b-2dfe25ae7166</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>updateYesNoValue(this); </value>
-      <webElementGuid>4177f4a4-d7b7-483d-9c77-e68c7d82a3e8</webElementGuid>
+      <webElementGuid>35108681-f81a-48a5-be39-a05c775c6453</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>f660f6cc-672d-408b-9617-6eeb2fa0a30b</webElementGuid>
+      <webElementGuid>43523d83-ce78-42b4-b512-0978cf975fbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>  CheckRequired(false);</value>
-      <webElementGuid>5f1d2362-c553-4d20-b6b5-2d8990ddab87</webElementGuid>
+      <webElementGuid>ec9d8fe0-5549-44cf-88ca-60b95fde6de5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEHas24VideoYes&quot;)</value>
-      <webElementGuid>5575143d-644f-4863-b89a-6c93e39dbfb0</webElementGuid>
+      <webElementGuid>b3d260df-04cc-411e-bb02-56c522e0a0d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>a80c7525-195a-4e62-9b66-abd65dbe3049</webElementGuid>
+      <webElementGuid>24b0d846-2cbf-480a-bf81-a0e406f81fa5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='NOSAVEHas24VideoYes']</value>
-      <webElementGuid>112b6bda-3b34-4369-9161-cd96f0ad51cf</webElementGuid>
+      <webElementGuid>f529e6f0-8e4f-4989-9996-093cd1f28a9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-Has24Video']/div/input</value>
-      <webElementGuid>c85f1ec8-be5f-4f35-a6d0-cda86e9a1073</webElementGuid>
+      <webElementGuid>9c821816-06ce-430f-87c0-9eaf70aaf4d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[15]/div/div[2]/div/input</value>
-      <webElementGuid>aa1d81bb-0f88-4e90-95de-7cbd534ef86c</webElementGuid>
+      <webElementGuid>a60dcb0a-2e06-4424-a771-d41c3cbed141</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'radio' and @name = 'NOSAVEHas24Video' and @id = 'NOSAVEHas24VideoYes']</value>
-      <webElementGuid>6ca05ede-f65e-4614-820c-7558beb43d9c</webElementGuid>
+      <webElementGuid>218a5e6a-62a1-46a4-a4bf-59d6f8ac9fa1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

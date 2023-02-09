@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_IncludedExcluded_1</name>
+   <name>select_Terrorism</name>
    <tag></tag>
    <elementGuidId>9f71422e-e334-4657-8a25-7e995ab5be1d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Terrorism</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='Terrorism']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Terrorism</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

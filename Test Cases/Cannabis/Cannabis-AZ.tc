@@ -41,8 +41,14 @@
       <value></value>
       <variableId>d07258dc-6700-4f9e-98bb-6b60f7b2c75d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9e44cbf1-6885-4155-a273-13679ab4a881</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bc1ac551-8185-43cb-bc1f-70ee11de8c7d</id>
       <masked>false</masked>
@@ -56,7 +62,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'01/05/2023'</defaultValue>
+      <defaultValue>'02/10/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -82,5 +88,12 @@
       <id>d07258dc-6700-4f9e-98bb-6b60f7b2c75d</id>
       <masked>false</masked>
       <name>stopQQ</name>
+   </variable>
+   <variable>
+      <defaultValue>'BOPA'</defaultValue>
+      <description>BOPA, BOPD, BOPW</description>
+      <id>9e44cbf1-6885-4155-a273-13679ab4a881</id>
+      <masked>false</masked>
+      <name>policyType</name>
    </variable>
 </TestCaseEntity>
