@@ -6,12 +6,12 @@
    <elementGuidId>aaca54aa-ed48-42b4-976e-d66476157c88</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ElectronicDataLmt</value>
+         <key>XPATH</key>
+         <value>//input[@id='ElectronicDataLimit']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ElectronicDataLmt']</value>
+         <key>CSS</key>
+         <value>#ElectronicDataLmt</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>1c1b3ec1-b5f5-48ec-9a0b-9acfb186ca27</webElementGuid>
+      <webElementGuid>c034a6e2-3824-4db9-bc78-8ec7cd7e1fb1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>0c129234-c01e-4f6a-84c1-1d541c329233</webElementGuid>
+      <webElementGuid>13264b84-4570-495c-9b5c-4a26bafad3aa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget </value>
-      <webElementGuid>a61c0515-7ede-4172-be0c-a08f4251e6d7</webElementGuid>
+      <webElementGuid>1cf0acd3-3399-4cb9-9f01-6732d8e5843d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ElectronicDataLmt</value>
-      <webElementGuid>a45fd181-6ffb-4f19-aee8-6753d2f390cd</webElementGuid>
+      <webElementGuid>be8413a0-f787-40ec-80e4-525a9e870e71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>data-previousvalue</name>
       <type>Main</type>
       <value>10000.00</value>
-      <webElementGuid>101e4b5b-c0eb-47da-b109-b4216019ca1a</webElementGuid>
+      <webElementGuid>0dc38864-7b7f-4dc5-8cc5-8edd69ee6ea5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6b083f1b-6522-4671-a4a1-a231fe9b4359</webElementGuid>
+      <webElementGuid>c3aa97f3-d556-4240-b621-66e37c57d8be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>data-disabletohide</name>
       <type>Main</type>
       <value>DisableElement_ElectronicDataLmt</value>
-      <webElementGuid>c6edf28b-ebb8-4138-830f-958252781015</webElementGuid>
+      <webElementGuid>39174482-2c0e-4ba3-af13-950b717fa515</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ElectronicDataLmt</value>
-      <webElementGuid>46c62f51-eb99-46e8-a4c4-92d5342c59db</webElementGuid>
+      <webElementGuid>0d2e55f9-3ef7-4bb5-8834-9a8564f589c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>value</name>
       <type>Main</type>
       <value>10000.00</value>
-      <webElementGuid>8e3dc9a5-9f4a-46eb-bfeb-455916605bda</webElementGuid>
+      <webElementGuid>b2585546-2f69-4b5c-a4de-70b590e29bfb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this); </value>
-      <webElementGuid>cf0ac4aa-0c1f-4bff-9243-5eaecd9fe4e6</webElementGuid>
+      <webElementGuid>ec53773c-5acd-4833-adad-a0cb4e6bc22e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>Money</value>
-      <webElementGuid>2d29fed6-00c9-48e8-8f76-270524abe16a</webElementGuid>
+      <webElementGuid>b8a93108-34b4-4b7d-aa8c-5665927af0e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>maxvalue</name>
       <type>Main</type>
       <value>50000.00</value>
-      <webElementGuid>9eaea77e-6b2b-4d7d-bfa8-87890f66842f</webElementGuid>
+      <webElementGuid>40ace901-0f3b-4c8e-87d8-086b69beba09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>minvalue</name>
       <type>Main</type>
       <value>10000.00</value>
-      <webElementGuid>394927b5-b464-4b6e-857c-7070db2f4096</webElementGuid>
+      <webElementGuid>bc1de354-f177-4e74-bb65-82c7ee07cc80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>decimalplaces</name>
       <type>Main</type>
       <value>2</value>
-      <webElementGuid>7fe49db0-91f6-423d-80c6-85ef5d6af5d8</webElementGuid>
+      <webElementGuid>e73d1b19-ff30-4e94-a3b8-621f8ab1bd70</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ElectronicDataLmt&quot;)</value>
-      <webElementGuid>8f025377-5cea-4ccf-954a-2d9beafebf95</webElementGuid>
+      <webElementGuid>632c8aec-2329-48b0-b940-add7641d15c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -142,7 +142,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>62b409a0-0c9f-42f5-a8b8-b3ea4357595c</webElementGuid>
+      <webElementGuid>ef012f6d-5d21-4250-9eee-03839ce05441</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='ElectronicDataLmt']</value>
-      <webElementGuid>85fb2a29-b9c1-4876-ab03-72efd98820c8</webElementGuid>
+      <webElementGuid>394f7fe3-852f-4553-bbfe-acb3d1a16184</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +158,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ElectronicDataLmt']/div/input</value>
-      <webElementGuid>196a7fd4-e056-47ac-a95d-a246b42d18d1</webElementGuid>
+      <webElementGuid>d83fee0d-a2b5-4e3d-82f8-3359690128b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[6]/div/input</value>
-      <webElementGuid>03e1811b-c2ff-41a5-aaac-2ff3834fc36f</webElementGuid>
+      <webElementGuid>9596644e-2bcc-4bac-a51d-34273ffa8ecb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -174,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'ElectronicDataLmt' and @id = 'ElectronicDataLmt']</value>
-      <webElementGuid>df55d599-8294-4907-9568-21c4d7f6f7c7</webElementGuid>
+      <webElementGuid>c9c5f22c-4b8e-4d58-a958-55ea80bf8e66</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

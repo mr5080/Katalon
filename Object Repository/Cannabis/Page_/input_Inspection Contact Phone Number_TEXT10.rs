@@ -6,12 +6,12 @@
    <elementGuidId>9baf8339-fdfb-4175-8ea5-74fc8a02ed58</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#TEXT10</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;InspectionContactPhone&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='TEXT10']</value>
+         <key>CSS</key>
+         <value>#TEXT10</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>18b2f9de-df5d-486d-8906-6bf5fff8a25a</webElementGuid>
+      <webElementGuid>8de22613-1f16-44d5-ba1d-3396e79c34f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>d4d450a1-f63a-4d39-90a7-5a991c1682d3</webElementGuid>
+      <webElementGuid>d062bee6-1644-4326-b0c3-3ff94128fab9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-format</name>
       <type>Main</type>
       <value>ddd-ddd-dddd</value>
-      <webElementGuid>29a83e8b-aacf-465e-8e3b-51282eea5bb3</webElementGuid>
+      <webElementGuid>7f0bf095-e970-4a65-8077-6c3a44478ae3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control phoneWidget</value>
-      <webElementGuid>e75c9363-07a0-462f-b8e8-4fcf50c4faf4</webElementGuid>
+      <webElementGuid>27f70cf4-ffc9-4152-bad7-1f82c85e50ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>TEXT10</value>
-      <webElementGuid>de373474-b184-4c96-b912-895a7584cd2b</webElementGuid>
+      <webElementGuid>8180fe50-36d4-4930-9420-0be683d92e93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>12</value>
-      <webElementGuid>fc658f8b-498f-4d92-b57c-e4b68ccc4ae5</webElementGuid>
+      <webElementGuid>930b2117-cfbc-4255-8671-fc2408dec27d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>TEXT10</value>
-      <webElementGuid>654986af-6468-494c-87d0-216236e0b766</webElementGuid>
+      <webElementGuid>5e5d710c-243e-46b3-96da-b7a4621bd4e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>validatePhoneNumber(this);</value>
-      <webElementGuid>cf0f821f-649c-4660-bf2e-a4edc7e8d60b</webElementGuid>
+      <webElementGuid>650f7d8c-c9b9-4816-a86f-bb7ac728b94f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskPhoneNumber(this, event);</value>
-      <webElementGuid>fb947fe0-3f4d-4888-981c-5dfa27cd335e</webElementGuid>
+      <webElementGuid>347d07a2-270f-402f-95de-ebbff38848bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;TEXT10&quot;)</value>
-      <webElementGuid>4be3365d-85bd-4ab6-8e00-613ad3f738f1</webElementGuid>
+      <webElementGuid>e8610f42-c24f-4d22-a889-410370eee279</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -102,7 +102,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>d9f0a9dc-4b59-490e-b970-d52e085b50c2</webElementGuid>
+      <webElementGuid>1927f54c-ff91-48f7-b6b6-7da4559a7d86</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='TEXT10']</value>
-      <webElementGuid>15f2d5bb-4d04-4f9a-b77d-d3fb49a077cb</webElementGuid>
+      <webElementGuid>224927db-c1f7-4dbf-a6fc-ebade88044db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-TEXT10']/input</value>
-      <webElementGuid>f514987b-1043-493a-9468-99cf76977fa2</webElementGuid>
+      <webElementGuid>d20550d3-d379-4a6c-948b-ea82d007f96b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[9]/div/div[2]/input</value>
-      <webElementGuid>07c7d24e-2635-42b2-b7ee-58cf04bac276</webElementGuid>
+      <webElementGuid>d8c84743-1a19-4f5d-bac8-51705b0431ea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'TEXT10' and @id = 'TEXT10']</value>
-      <webElementGuid>22e3a1e5-5245-4dca-8403-1216fa637063</webElementGuid>
+      <webElementGuid>86320f67-5c34-4183-a957-1a030088fcd9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_Lightspeed</name>
+   <tag></tag>
+   <elementGuidId>862855a7-b2db-402b-bea2-208b9362a9d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Lightspeed Testing']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[type=&quot;button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>220ff02a-210d-4ee3-9123-617abaf5eeb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>89eb9b64-8f04-4073-a4f3-badd627f7fa7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Application</value>
+      <webElementGuid>e911a6df-3e02-4387-9382-3dec8aa1173a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>Submit2(this.form, 'Unified,1');</value>
+      <webElementGuid>e1ed1a79-dc0d-4cd4-988c-806c317450f7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;QuoteButtonDiv&quot;)/input[1]</value>
+      <webElementGuid>a1d4b4f3-eae2-43b7-a972-c8fbe3f46656</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>656037b3-b75e-4718-8bb6-699c1d8bcf7a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

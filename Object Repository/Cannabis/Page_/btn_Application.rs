@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input</name>
+   <name>btn_Application</name>
    <tag></tag>
    <elementGuidId>a1b1acc7-8c06-47f2-97d8-b07370601dd4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input[type=&quot;button&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@value='Application']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[type=&quot;button&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

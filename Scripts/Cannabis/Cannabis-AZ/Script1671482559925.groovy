@@ -99,7 +99,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_PolicyType'), policyType, true)
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Location BusinessName'), 'The Pot Shop')
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Applicant Last Name_ApplicantLastzzzz1'), randomFirstName + '\'s' + ' Pot Shop')
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + '\'s' + ' Pot Shop')
 
 
 
@@ -117,7 +117,34 @@ WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_City_Appli
 	//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again)
 
 
-WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input'))
+// lightspeed stuff
+if(lightSpeed)
+{
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed'))
+	try {
+		WebUI.acceptAlert()
+	
+		System.out.println('Accept address validation has been validated')
+	}
+	catch (Exception e) {
+		System.out.println('No addres validation alert')
+	}
+	
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_LightspeedLocation'))
+	//WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/input_LightspeedLocation'), 1)
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed - SaveContinue'))
+	
+
+	
+	
+	
+}
+else
+{
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Application'))
+}
+
+//WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Application'))
 try {
 	WebUI.acceptAlert()
 
@@ -129,7 +156,7 @@ catch (Exception e) {
 
 WebUI.switchToDefaultContent()
 
-
+	
 
 
 'Agent Producer'
@@ -198,11 +225,15 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Phone Numbe
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
+'new paperless button'
+//WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_PaperlessDelivery'))
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Website_Websitezzzz1'), 'www.google.com')
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_IndividualPartnershipLimited Liabili_a20400'), 'LLC', true)
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_IndividualPartnershipLimited Liabili_a20400'), 2)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_LegalEntity'), 1)
+
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + '\'s' + ' Pot Shop Stop')
 
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Name_CorpApplicantLastzzzz1'), 'CBD JUICE')
@@ -217,7 +248,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Applicant F
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Applicant Middle Name_ApplicantMiddlezzzz1'), 'Pat')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Applicant Last Name_ApplicantLastzzzz1'), randomLastName)
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomLastName)
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Applicant Suffix_ApplicantSuffixzzzz1'), 'jr')
 */
@@ -294,7 +325,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
-
+/*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '1', true)
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Electrical Updates_LastElectricalUpdate_1'), '2020')
@@ -304,7 +335,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Upd
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Plumbing Updates_LastPlumbingUpdate_1'), '2020')
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Heating Updates_LastHeatingUpdate_1'), '2020')
-
+*/
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_1234'), '1', true)
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Occupied Square Footage_SqFoota_678e18'), '4500')
@@ -367,7 +398,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_300,000500,0001,000,000_1'), '500000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_100,000250,000300,000500,0001,000,000'), '250000', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_100,000250,000300,000500,0001,000,000'), '250000', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Terrorism'), 'Y', true)
 
@@ -437,10 +468,7 @@ if(isAgent == false)
 }
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/button_Statements'))
-if(stopQQ)
-	{
-		System.exit(0)
-	}
+
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Date business started_BusinessStartDate'), '02/02/2022')
 WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_Date business started_BusinessStartDate'), Keys.chord('02/02/2022', Keys.TAB))
 
@@ -583,7 +611,7 @@ WebUI.callTestCase(findTestCase('Cannabis/writeFile'),
 	('todaysDate') : todaysDate,
 //	('totalPremium') : totalPremium,
 //	('policyType') : 'HO3',
-//	('shouldBind') : shouldBind,
+	('lightSpeed') : lightSpeed,
 	('stateAZ') : stateAZ,
 	('isAgent') : isAgent,
 	('environment') : environment

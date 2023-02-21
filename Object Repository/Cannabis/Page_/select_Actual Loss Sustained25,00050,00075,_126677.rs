@@ -6,12 +6,12 @@
    <elementGuidId>67254eb4-3d19-41e4-b7ff-f2bca4b91f5e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#BusIncExtraExpLmt_1</value>
+         <key>XPATH</key>
+         <value>//select[@id='BusIncExtraExpLimit_1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='BusIncExtraExpLmt_1']</value>
+         <key>CSS</key>
+         <value>#BusIncExtraExpLmt_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>7eb8db67-4d2a-4eba-b283-80879172cd06</webElementGuid>
+      <webElementGuid>279f5857-512d-414c-979d-e5b156bd6260</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>222166ed-ed8f-4748-b89d-fa9b1295ab43</webElementGuid>
+      <webElementGuid>8ea7aa20-7919-4b3c-8718-94b2ffa5be3b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>d0083f9c-36f5-4f4f-8df0-1319989e7255</webElementGuid>
+      <webElementGuid>489e44dc-194a-4e64-8229-568911673455</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control </value>
-      <webElementGuid>de385e14-a34d-4bb3-bdda-ef8ef4638216</webElementGuid>
+      <webElementGuid>fe5bf73a-760c-4d22-b1eb-4ec12dea8280</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>BusIncExtraExpLmt_1</value>
-      <webElementGuid>6cdee623-62c8-4c6e-8f45-34748252d427</webElementGuid>
+      <webElementGuid>c31e7936-0349-431a-a3a7-202e8f7aec59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>BusIncExtraExpLmt_1</value>
-      <webElementGuid>a0a19ce7-c013-4888-9e42-d1407bd906f7</webElementGuid>
+      <webElementGuid>39f8d39a-bab9-423f-bcdb-acf33e58bbda</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalCheckDisable(this);</value>
-      <webElementGuid>4b65e497-58cd-472a-98fa-172141831633</webElementGuid>
+      <webElementGuid>ae4605ca-9d21-4834-a903-2215d2a6d52f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value> GlobalCheckDisable(this);</value>
-      <webElementGuid>e7e29dcb-a19b-4d20-9378-0ce7c32380fb</webElementGuid>
+      <webElementGuid>e82495a4-e618-4d97-899e-37aa1ce683d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -172,7 +172,7 @@
 								
 								
 				</value>
-      <webElementGuid>d459b8c9-2185-443c-9604-cf99b31242cf</webElementGuid>
+      <webElementGuid>03921f1c-1c9c-4ea3-93f3-48c50f71d98a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -180,7 +180,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;BusIncExtraExpLmt_1&quot;)</value>
-      <webElementGuid>a4f2bfb7-4219-46eb-900c-1c1ead828a41</webElementGuid>
+      <webElementGuid>5a83b066-5957-4080-8cfb-a2d25ee29551</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -188,7 +188,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>6b1f7134-a1c6-417f-be96-f2372e2b6a39</webElementGuid>
+      <webElementGuid>4951bf1c-1328-46ff-88de-5c8115cfb0eb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -196,7 +196,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='BusIncExtraExpLmt_1']</value>
-      <webElementGuid>11695af6-6e63-412e-b028-0e95fd41d0b0</webElementGuid>
+      <webElementGuid>ebc97c84-89a6-45c1-a0e5-80d15c79e164</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -204,7 +204,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-BusIncExtraExpLmt_1']/select</value>
-      <webElementGuid>bef0cf47-fafb-4046-a98b-c0478262ff0f</webElementGuid>
+      <webElementGuid>449a6073-6c6f-4944-8807-befab85db2f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -212,7 +212,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='BP 14 06'])[1]/following::select[1]</value>
-      <webElementGuid>4edf9ab9-712a-42e4-9ba9-fd5c714dbf97</webElementGuid>
+      <webElementGuid>25656be2-a557-4ab8-b5c3-7d9a4997a7aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -220,7 +220,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='AOP Deductible'])[1]/preceding::select[1]</value>
-      <webElementGuid>c108d452-88c8-4ebe-977b-dd500048ef43</webElementGuid>
+      <webElementGuid>60300f22-f1c5-40ba-aa43-a3b628786307</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -228,7 +228,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div/div[4]/select</value>
-      <webElementGuid>dc464877-ffd3-4238-8509-702acf8b0cec</webElementGuid>
+      <webElementGuid>303c525b-6929-40d2-b46c-cd787e40c20b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -408,6 +408,6 @@
 								
 								
 				')]</value>
-      <webElementGuid>aacfb887-cad9-41bd-8fb9-1ef3336ca3f9</webElementGuid>
+      <webElementGuid>ca7d7ad8-3f6a-4f6d-9774-bc3fc221222d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

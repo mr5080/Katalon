@@ -271,7 +271,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'))
-//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '201500')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '201500')
 
 // check this div for 0.00, if it contains 0.00 then populate dwellingLimit_1 with something
 

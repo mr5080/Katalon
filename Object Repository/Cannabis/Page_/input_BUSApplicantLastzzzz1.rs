@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Applicant Last Name_ApplicantLastzzzz1</name>
+   <name>input_BUSApplicantLastzzzz1</name>
    <tag></tag>
    <elementGuidId>546ce97b-66a8-4e8d-9287-00c1a2409218</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantLastzzzz1</value>
+         <key>XPATH</key>
+         <value>//input[@name='NOSAVE-BUSApplicantLastzzzz1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ApplicantLastzzzz1']</value>
+         <key>CSS</key>
+         <value>#ApplicantLastzzzz1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>7d918a12-7046-4065-93bc-08c9a5253c56</webElementGuid>
+      <webElementGuid>20c2c53e-adaa-4ed6-b277-9c9e8095f970</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>3ba6f1f3-36e4-4339-9384-e80920060fd9</webElementGuid>
+      <webElementGuid>84ffab9a-4300-44ff-abaf-1c215e2e1403</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>CheckRequired(false);</value>
-      <webElementGuid>5066e0af-65f6-443a-9339-aa7e997b377d</webElementGuid>
+      <webElementGuid>e1398df5-2c99-464e-9af9-b610eca1894d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control ISiA-RequiredInput ISiA-Force-Uppercase</value>
-      <webElementGuid>432f08fa-9ee0-48e6-bff0-60a4e9ef2d90</webElementGuid>
+      <webElementGuid>41fef592-61e9-4c2b-b9f7-bbc5f06881cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Last Name</value>
-      <webElementGuid>4c84dc49-1f23-4a4d-ae4a-193c474768b0</webElementGuid>
+      <webElementGuid>6f82536d-853e-47d9-a78b-7db1b19b3a64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ApplicantLastzzzz1</value>
-      <webElementGuid>9e972f2e-4bc2-4380-a413-ca27d2e66e39</webElementGuid>
+      <webElementGuid>efb4369e-42d9-430e-9365-0f5640b02b25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ApplicantLastzzzz1</value>
-      <webElementGuid>02cd544b-603c-4cb3-81e3-11292cf48ead</webElementGuid>
+      <webElementGuid>aaa9d8b7-474b-4cbd-98ed-9e36972828df</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>50</value>
-      <webElementGuid>6c059753-6b6e-4509-99fe-f2c5b6396657</webElementGuid>
+      <webElementGuid>a2da0046-e364-485a-9518-00b7db88c79a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ApplicantLastzzzz1&quot;)</value>
-      <webElementGuid>354f2aa8-132f-44a0-918e-317f85a2c597</webElementGuid>
+      <webElementGuid>6500ab2a-b145-40b9-95c5-b2cdebbf420a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,15 +94,15 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>9ec4c422-5cfb-458a-a1a5-949360c99d14</webElementGuid>
+      <webElementGuid>a94d0d78-050a-4f08-a380-da568f91358d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='ApplicantLastzzzz1']</value>
-      <webElementGuid>13e40e0c-9193-4d49-877a-0cc64e73a014</webElementGuid>
+      <value>//input[@id='NOSAVE-BUSApplicantLastzzzz1']</value>
+      <webElementGuid>fb9336c5-4553-496c-b4ad-059740fd7d29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-ApplicantLastzzzz1']/input</value>
-      <webElementGuid>d5231e14-4879-423d-a46d-3ad55b801aac</webElementGuid>
+      <webElementGuid>91183631-3115-44fe-87bf-e33c8d7c4997</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,14 +118,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/input</value>
-      <webElementGuid>7cefdb60-1ee4-4014-ae73-c8e568dfd683</webElementGuid>
+      <webElementGuid>cb9bc786-56b6-49d1-ba91-ddbb40a5cf11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Last Name' and @name = 'ApplicantLastzzzz1' and @id = 'ApplicantLastzzzz1']</value>
-      <webElementGuid>85273ad3-8db1-483e-b955-7afcf4885d46</webElementGuid>
+      <value>//input[@type = 'text' and @placeholder = 'Business Name']</value>
+      <webElementGuid>658ee61b-27e4-4a0b-a71a-9b1ea938576f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -47,6 +47,12 @@
       <value></value>
       <variableId>9e44cbf1-6885-4155-a273-13679ab4a881</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>56b1122d-9d91-447d-9506-49ed0f771550</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
@@ -62,7 +68,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'02/10/2023'</defaultValue>
+      <defaultValue>'02/28/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -77,7 +83,7 @@
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>manual, or xxxxx</description>
+      <description>manual, lightspeed, or xxxxx</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>
       <name>manualAddress</name>
@@ -95,5 +101,12 @@
       <id>9e44cbf1-6885-4155-a273-13679ab4a881</id>
       <masked>false</masked>
       <name>policyType</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>56b1122d-9d91-447d-9506-49ed0f771550</id>
+      <masked>false</masked>
+      <name>lightSpeed</name>
    </variable>
 </TestCaseEntity>

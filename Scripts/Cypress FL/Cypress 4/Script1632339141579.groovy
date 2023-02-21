@@ -371,6 +371,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_Appl
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
+
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), DOB)
 
@@ -601,6 +602,7 @@ if(stopQQ)
 		System.exit(0)
 }
 
+
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 'Click Rate and Continue button'
@@ -608,6 +610,9 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
+
+'new paperless buttons'
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
 
 'Set Current Mailing Address to international address on the Policy screen'
 randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
