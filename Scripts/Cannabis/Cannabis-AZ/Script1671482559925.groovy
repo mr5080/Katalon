@@ -233,7 +233,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Website_Web
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_IndividualPartnershipLimited Liabili_a20400'), 2)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_LegalEntity'), 1)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + '\'s' + ' Pot Shop Stop')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + 's One Stop Pot Shop')
 
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Name_CorpApplicantLastzzzz1'), 'CBD JUICE')
@@ -448,7 +448,7 @@ if(isAgent == false)
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Management_Management'), '1')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Location_Location'), '2')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_IRPMLocation'), '2')
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Features_BuildingFeatures'), '3')
 	
@@ -458,11 +458,11 @@ if(isAgent == false)
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Protection_Protection'), '6')
 	
-	WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_A. Description And Location of Premi_736a26'), 'A. Description And Location of Premises', true)
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_A. Description And Location of Premi_736a26'), 'A', true)
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Schedule_ExclusionSchedule'), 'Some Schedule')
 	
-	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/div_'))
+	//WebUI.click(findTestObject('Object Repository/Cannabis/Page_/div_'))
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input__FacultativeReinPrem'), '2500')
 }

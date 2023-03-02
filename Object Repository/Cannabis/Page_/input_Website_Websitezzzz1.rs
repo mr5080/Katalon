@@ -6,12 +6,13 @@
    <elementGuidId>17f3a7d5-0d16-4800-b3c6-1a5cabb68da9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Websitezzzz1</value>
+         <key>XPATH</key>
+         <value>//input[@id='BusinessWebsitezzzz1']
+</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Websitezzzz1']</value>
+         <key>CSS</key>
+         <value>#Websitezzzz1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>075ba900-290f-4643-b974-4d0bdcfaaefe</webElementGuid>
+      <webElementGuid>09e05f20-8e21-48b5-8065-0c4b6d323a2e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>781d688a-0789-4d49-ad0a-52accb7bb494</webElementGuid>
+      <webElementGuid>1ca04f77-c9e1-4ece-8efc-9c73b7c926d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control textWidget ISiA-Force-Uppercase</value>
-      <webElementGuid>baf06017-a25d-40fb-9c44-5e5e3dfccb19</webElementGuid>
+      <webElementGuid>0f943633-f03e-41bc-9f3e-8d6e3d3a0e42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +47,7 @@
       <name>id</name>
       <type>Main</type>
       <value>Websitezzzz1</value>
-      <webElementGuid>fae41cfa-83f8-44d0-afa9-3ff91eea5d73</webElementGuid>
+      <webElementGuid>7f95c0b3-1fe2-4a0c-8d8e-31752398ec71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +55,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>f1d3ed8c-e4d7-4b3f-8db3-5593f64fddca</webElementGuid>
+      <webElementGuid>ad8cf88b-8580-4dff-bf29-569d9bef4bad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +63,7 @@
       <name>name</name>
       <type>Main</type>
       <value>Websitezzzz1</value>
-      <webElementGuid>2c9b0881-3683-4e33-b372-bc137efea810</webElementGuid>
+      <webElementGuid>822a5310-8700-4489-a646-2f6127647dec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>validateTextInput(this); </value>
-      <webElementGuid>7da9a0e7-347c-4335-85d8-4421fea6aad6</webElementGuid>
+      <webElementGuid>fe956277-bfab-4943-bfa3-8fe2a05a7894</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>cf93782b-97b1-49b5-ad8b-46f413212f00</webElementGuid>
+      <webElementGuid>89c9efb6-26fb-4d5f-ac6e-802f6b83c185</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>inputtype</name>
       <type>Main</type>
       <value>Text</value>
-      <webElementGuid>ede155d4-f099-46ba-af0b-6867d25c32e8</webElementGuid>
+      <webElementGuid>90c1f5ba-3acb-4f40-81b3-e046c0972e3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +95,7 @@
       <name>uppercase</name>
       <type>Main</type>
       <value>No</value>
-      <webElementGuid>ad1b68fe-106a-4999-ae9e-67128677fdd4</webElementGuid>
+      <webElementGuid>79d5164d-70a4-4163-a4df-a5a806b77ace</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>issensitive</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5ae43bdd-4639-4d68-9c53-6e2a7480f5e6</webElementGuid>
+      <webElementGuid>da786eaf-613d-4a96-8b59-f1f8b445ae97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>searchclass</name>
       <type>Main</type>
       <value>Any</value>
-      <webElementGuid>5eecb954-be38-4fc6-9802-9053d1363999</webElementGuid>
+      <webElementGuid>2125b762-e986-4d51-b7d9-c1bd506136cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +119,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskText(this, event)</value>
-      <webElementGuid>3fe81b53-315c-4be5-8532-92b7bc671f10</webElementGuid>
+      <webElementGuid>283b6f02-d1ec-4e95-8840-17015203dbbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +127,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Websitezzzz1&quot;)</value>
-      <webElementGuid>63c3163f-b5a5-4cb2-a0d3-10494c6d9d33</webElementGuid>
+      <webElementGuid>c4bf5f05-e998-45a3-a151-3bf008ffb7ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -134,7 +135,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>3ac9f8d1-ad78-43fa-b180-3b28120e90a9</webElementGuid>
+      <webElementGuid>f61ea024-c142-43fb-b522-d91a796e7e31</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -142,7 +143,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='Websitezzzz1']</value>
-      <webElementGuid>eb1e3f9d-21a5-48ab-bd40-f441140db755</webElementGuid>
+      <webElementGuid>8af36aa0-de61-4897-9ba0-db1386d6a54c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +151,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-Websitezzzz1']/div[2]/div/input</value>
-      <webElementGuid>cce63c1c-9a33-44d0-ad8f-0bb0fb050818</webElementGuid>
+      <webElementGuid>29ed0480-bd07-4601-ae2e-602964145cc3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +159,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[2]/div/input</value>
-      <webElementGuid>4bc7728d-eaa1-4457-adce-bfe52d430109</webElementGuid>
+      <webElementGuid>e1aa3c0b-0e04-4560-b8d5-d9c4f50b8280</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +167,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @id = 'Websitezzzz1' and @name = 'Websitezzzz1']</value>
-      <webElementGuid>1ceb1c37-63e3-4775-874e-3341836fed69</webElementGuid>
+      <webElementGuid>faa161df-3a64-48e0-8d25-f78085fe84fa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
