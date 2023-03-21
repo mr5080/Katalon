@@ -29,6 +29,8 @@ System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
+System.out.println("censusBlock(from childTestCase) = " + censusBlock)
+
 
 
 //System.out.println("payPlanOption(from childTestCase) = " + payPlanOption)
@@ -105,6 +107,9 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
+			
+			sheet.getRow(rowCount).createCell(12).setCellValue(censusBlock)
+			
 			
 			
 			

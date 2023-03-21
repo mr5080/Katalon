@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>56feb62e-8d96-4d61-92c6-f64aa0a4c747</webElementGuid>
+      <webElementGuid>077cbf96-8614-41d1-bf9b-1c93c06ebebb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>d09bb3b8-fce7-4ebc-b99d-0bbed641252e</webElementGuid>
+      <webElementGuid>e31330b3-7fce-470c-8b70-4e18c01c351f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b8b046c0-65fa-447c-8ec3-9a9054193e3f</webElementGuid>
+      <webElementGuid>3edea178-7216-4fa4-a57d-79012f46fa0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control </value>
-      <webElementGuid>8dac133b-1aee-45c6-b64f-f04f5b231b0f</webElementGuid>
+      <webElementGuid>dd3d9b67-adc1-4667-87e7-601ccf6ab69c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>11a1145b-1a7f-44c8-95cc-46f7379df615</webElementGuid>
+      <webElementGuid>f7ba2c64-e906-4736-96fc-8a8c45da44cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>c6214dc8-8e79-4dc7-96a9-9d0f4327f7ea</webElementGuid>
+      <webElementGuid>d19c6ee4-6921-46d9-b4c1-375966ac7066</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalOnBlur();  GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>d64a937e-4c22-4a70-a3a2-885fb812a61a</webElementGuid>
+      <webElementGuid>553e1dc6-0a49-4fba-8b12-e56bc3c7b834</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
-      <webElementGuid>74583a40-5fdb-4826-9bc1-02c064f2266c</webElementGuid>
+      <webElementGuid>4fc8a148-a9d1-4a57-85f0-63a4d6830e5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -108,7 +108,7 @@
 								
 								
 				</value>
-      <webElementGuid>be66a13e-1bdc-4d03-8311-d55909bd5a67</webElementGuid>
+      <webElementGuid>67ff86e9-6c5f-4ca2-9473-3c3b1cb4e1ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -116,7 +116,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ConstructionType_1&quot;)</value>
-      <webElementGuid>3963b559-4347-4833-b78a-4a4d962aa7e9</webElementGuid>
+      <webElementGuid>4111e766-0b41-46f7-a115-02de37740d95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,7 +124,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>9c1ddf82-eb18-4364-847d-9feba581b6b1</webElementGuid>
+      <webElementGuid>35aa7748-675c-420c-af4c-62410be69b8d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -132,7 +132,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='ConstructionType_1']</value>
-      <webElementGuid>dbb3ab76-18a3-4fd4-a0dd-9a398a7e0c02</webElementGuid>
+      <webElementGuid>69c219ff-d9d5-4e2c-af7f-32223b2934f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -140,7 +140,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ConstructionType_1']/select</value>
-      <webElementGuid>b1579e43-b7dc-48bc-a232-a9ebbdac7f92</webElementGuid>
+      <webElementGuid>3cbbfba4-96cc-43e3-8e90-f2bd70c03c43</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -148,7 +148,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Construction Type'])[1]/following::select[1]</value>
-      <webElementGuid>0953e9c2-f8da-4aad-9006-271aea9e5252</webElementGuid>
+      <webElementGuid>680625ab-0c1c-49d4-a7c5-a904d8d1789d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -156,7 +156,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='General Information'])[1]/following::select[1]</value>
-      <webElementGuid>e8c7a492-19d2-4590-b2f8-c92bc05c02e5</webElementGuid>
+      <webElementGuid>bce05c0b-02dd-4fb3-9b1f-a96a682a6967</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -164,7 +164,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Construction Year'])[1]/preceding::select[1]</value>
-      <webElementGuid>12ef3834-9ffe-4dc5-a4fb-fa3218825951</webElementGuid>
+      <webElementGuid>5a52ec91-b152-4bb2-9659-082c3b1278d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -172,7 +172,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Screened Enclosure on Property?'])[1]/preceding::select[1]</value>
-      <webElementGuid>fb57fec8-a827-4c1f-8a62-f4baed9601c9</webElementGuid>
+      <webElementGuid>a7fcfed2-0cc4-4ffc-9d4a-7a3677714f8e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -180,7 +180,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div[2]/select</value>
-      <webElementGuid>7b808af5-39d7-438e-b480-a13ce52499d8</webElementGuid>
+      <webElementGuid>ff4d4706-1873-439e-b7dc-f360cbde8ab3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -232,6 +232,6 @@
 								
 								
 				')]</value>
-      <webElementGuid>69ddd65d-e079-47ff-8c78-fac114cabd7c</webElementGuid>
+      <webElementGuid>53c106f3-9b0b-4cf1-b431-e35f468d0a76</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

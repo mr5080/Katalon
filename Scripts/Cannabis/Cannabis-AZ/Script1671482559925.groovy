@@ -24,6 +24,9 @@ import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import org.openqa.selenium.JavascriptExecutor
+
+
 
 
 
@@ -118,8 +121,10 @@ WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_City_Appli
 
 
 // lightspeed stuff
-if(lightSpeed)
+//if(lightSpeed)
+if(manualAddress == 'lightspeed')
 {
+	System.out.print('manualAddress = lightspeed')
 	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed'))
 	try {
 		WebUI.acceptAlert()
@@ -174,7 +179,7 @@ if (isAgent == false) {
 		//	if(environment == "TEST")
 		//	{
 				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '9942300')
 		//	}
 		//	else if(environment == "STAGE")
 		//	{
@@ -233,12 +238,12 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Website_Web
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_IndividualPartnershipLimited Liabili_a20400'), 2)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_LegalEntity'), 1)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + 's One Stop Pot Shop')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + 'S ONE STOP POT SHOP')
 
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Name_CorpApplicantLastzzzz1'), 'CBD JUICE')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_DBA Name_DBANamezzzz1'), 'CBD FOR ALL')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_DBA Name_DBANamezzzz1'), 'CBD FOR YOU AND ME')
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_FEIN_FEIN'), '123456789')
 
@@ -322,7 +327,18 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_NonePartialComplete'), 'COMPLETE', true)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
+
+// get construction year
+String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), 'value')
+System.out.println("constructionYear = " + constructionYear)
+System.out.println("constructionYear.length() = " + constructionYear.length())
+if(constructionYear.length() == 0)
+{
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
+}
+
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
 /*
@@ -611,7 +627,7 @@ WebUI.callTestCase(findTestCase('Cannabis/writeFile'),
 	('todaysDate') : todaysDate,
 //	('totalPremium') : totalPremium,
 //	('policyType') : 'HO3',
-	('lightSpeed') : lightSpeed,
+	('manualAddress') : manualAddress,
 	('stateAZ') : stateAZ,
 	('isAgent') : isAgent,
 	('environment') : environment

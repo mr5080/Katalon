@@ -62,7 +62,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'03/09/2023'</defaultValue>
+      <defaultValue>'04/16/2023'</defaultValue>
       <description></description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
@@ -76,7 +76,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>

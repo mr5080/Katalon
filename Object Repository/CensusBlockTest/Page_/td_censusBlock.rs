@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_censusBlock</name>
+   <tag></tag>
+   <elementGuidId>5dd57560-e95c-4356-a3a0-01d6839f5bf7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='GMFIPS_1'])[1]/following::td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>048e2c61-4414-4b62-a16b-70974b738693</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>121150001022008</value>
+      <webElementGuid>7329f3cb-1a83-43da-b351-ef44a8f94e57</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;DebugWDDX&quot;)/table[@class=&quot;table table-condensed table-hover table-striped&quot;]/tbody[1]/tr[53]/td[2]</value>
+      <webElementGuid>f5335b0f-44d2-4eb0-bb81-8a233a7df1ff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CensusBlockTest/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>3d05155e-9d2d-4870-9518-04e0dd456f74</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='DebugWDDX']/table/tbody/tr[53]/td[2]</value>
+      <webElementGuid>04f49405-4f25-49aa-8021-f312bedc6e3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMFIPS_1'])[1]/following::td[1]</value>
+      <webElementGuid>50dcd17a-9e81-4740-9d56-40e0254bcf0d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMCounty_1'])[1]/following::td[3]</value>
+      <webElementGuid>66353511-be45-48cb-8ae6-d86bc5e580e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMGeocodeFormSubmitAlert_1'])[1]/preceding::td[1]</value>
+      <webElementGuid>31cc6b16-bfae-4c12-9334-a43d1b8a4a29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[10]/preceding::td[2]</value>
+      <webElementGuid>0d48d900-2920-497d-8a98-a70d215a79ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[53]/td[2]</value>
+      <webElementGuid>df14a3ab-d96c-4917-a999-de0c4d3993df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '121150001022008' or . = '121150001022008')]</value>
+      <webElementGuid>d574db32-4e47-43ee-b87d-9e89d0acd65e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//div[@id='DebugWDDX']/table/tbody/tr[53]/td[2]</value>
+      <webElementGuid>4c15e7c3-7a23-4f55-9511-cbfbc1523354</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -217,7 +217,6 @@ else
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_PrimarySecondarySeasonal'), 'PRIMARY', true)
 
@@ -230,6 +229,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 'FINISHED', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEScreenedEnclosure_1'))
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 3)
 
 
 

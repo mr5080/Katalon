@@ -54,7 +54,7 @@
       <variableId>56b1122d-9d91-447d-9506-49ed0f771550</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bc1ac551-8185-43cb-bc1f-70ee11de8c7d</id>
       <masked>false</masked>
@@ -68,7 +68,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'02/28/2023'</defaultValue>
+      <defaultValue>'03/28/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -82,7 +82,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'lightspeed'</defaultValue>
       <description>manual, lightspeed, or xxxxx</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>
@@ -107,6 +107,6 @@
       <description></description>
       <id>56b1122d-9d91-447d-9506-49ed0f771550</id>
       <masked>false</masked>
-      <name>lightSpeed</name>
+      <name>lightSpeedDontNeedAnymore</name>
    </variable>
 </TestCaseEntity>

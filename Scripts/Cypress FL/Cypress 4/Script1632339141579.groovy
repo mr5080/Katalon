@@ -389,6 +389,34 @@ System.out.println('should have set purcahse date to  = ' + todaysDate)
 //Construction Year - use DOB year if the input box is blank
 //System.out.println("HERE ")
 
+/*
+if(censusBlockTest)
+{
+	String censusBlock = WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_CensusBlock'))
+	
+	// pass vars to write the file  9.16.21
+	WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
+		[('policyType') : policyType,
+		('randomLastName') : randomLastName,
+		('randomFirstName') : randomFirstName,
+		('quoteNumber') : quoteNumber,
+		('todaysDate') : todaysDate,
+		('totalPremium') : totalPremium,
+	//	('policyType') : policyType,
+		('shouldBind') : shouldBind,
+		('stateFL') : stateFL,
+		('isAgent') : isAgent,
+		('environment') : environment,
+		('censusBlock') : censusBlock,
+		('todaysTimeStamp') : todaysTimeStamp
+			], FailureHandling.STOP_ON_FAILURE)
+	
+	if(stopQQ)
+	{
+		System.exit(0)
+	}
+}
+*/
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
 
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
@@ -596,12 +624,12 @@ System.out.println('randomBundle = ' + randomBundle)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
 
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
-
+/*
 if(stopQQ)
 {
 		System.exit(0)
 }
-
+*/
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
