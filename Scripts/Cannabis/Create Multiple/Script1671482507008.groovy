@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 
 int counter = 0
-while(counter < 50)
+while(counter < 10)
 {
 	WebUI.callTestCase(findTestCase('Cannabis/Cannabis-AZ'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Number Of Employees_NumberEmployees</name>
+   <name>input_NumberEmployees</name>
    <tag></tag>
    <elementGuidId>2f844872-da46-45d5-9a35-96aefc7a6257</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NumberEmployees']</value>
+         <value>//input[@id='NumberEmployees_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>589bd2e0-682d-4037-b0e1-fa06f1252ae8</webElementGuid>
+      <webElementGuid>93637539-64dc-4d90-868c-97190406b41c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>46814837-494e-4aef-ad18-b3aad8173d7d</webElementGuid>
+      <webElementGuid>5d95cd79-8385-4f4d-8787-37079992b2f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget</value>
-      <webElementGuid>7976f175-dd47-4c1b-9f54-65ed59b168cb</webElementGuid>
+      <webElementGuid>f6e68219-85a5-4e7d-9d22-cf9452f79a18</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NumberEmployees</value>
-      <webElementGuid>6de6d2df-2dc0-43ce-979e-be132b1028db</webElementGuid>
+      <webElementGuid>dd29cf6e-bdc9-4b79-a8bd-9ad84d447223</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2a0fe649-171c-4bf6-8d4d-bc26738019e4</webElementGuid>
+      <webElementGuid>b81fb544-9aa3-442e-b346-13e527b7d522</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NumberEmployees</value>
-      <webElementGuid>2be2a4fa-9f72-425b-a393-38ea064f3727</webElementGuid>
+      <webElementGuid>83fc7ab4-6d0e-49ed-a350-92403dc87e17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this);   CheckRequired(false);</value>
-      <webElementGuid>e13d3895-aa94-4173-bd78-21d507c901df</webElementGuid>
+      <webElementGuid>2570d9cd-b286-4003-a4a5-3d27e5dc9b84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>integer</value>
-      <webElementGuid>1dfa5004-e0d2-4c3d-825c-4318ac120339</webElementGuid>
+      <webElementGuid>31c788f5-74f3-42d7-b2fb-9f7ec634246f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>minvalue</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>d532d9c9-bb14-417f-8031-e36bb4cde98b</webElementGuid>
+      <webElementGuid>9dbdf876-050f-47bc-a124-d1251076ba27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>decimalplaces</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>27087ea7-dd0b-49e5-ae8b-a22717c7cee2</webElementGuid>
+      <webElementGuid>031224dc-6040-40a0-b2a0-f312691651d1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NumberEmployees&quot;)</value>
-      <webElementGuid>35fa8bb2-26da-4077-a6ba-7b234017075e</webElementGuid>
+      <webElementGuid>3daabd80-6892-47c8-96ad-bdd4b609d3bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>f8a0fd61-6a4f-4148-b872-d7b35ecb524d</webElementGuid>
+      <webElementGuid>530ea293-52b2-45fb-a975-8552d0af1e13</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='NumberEmployees']</value>
-      <webElementGuid>c98b0761-ad20-4ee2-bc79-6502fd9cf129</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Right-NumberEmployees']/input</value>
-      <webElementGuid>b0cecd14-bdf5-4af8-87e5-c26699a6f60d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/div[2]/div[2]/div/div[4]/input</value>
-      <webElementGuid>e673a949-5b99-42ed-8b52-dfa86dfea7dc</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'NumberEmployees' and @id = 'NumberEmployees']</value>
-      <webElementGuid>04f1d458-91e6-4705-a802-e85750f35491</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

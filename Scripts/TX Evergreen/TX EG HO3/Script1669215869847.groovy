@@ -192,9 +192,9 @@ System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
 {
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 Queen ST')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 QUEEN ST')
 
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Steelton')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'HARRISBURG')
 
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
@@ -351,6 +351,10 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous C
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), effectiveDate)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Policy_PriorPolicyNumber_1'), '123456123456')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle - BobTransfer'), 'N', true)
+
+
 
 'Click Prequalification button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Prequalification'))

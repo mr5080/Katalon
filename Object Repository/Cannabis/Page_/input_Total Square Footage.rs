@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Total Square Footage of Building_SqFo_d74970</name>
+   <name>input_Total Square Footage</name>
    <tag></tag>
    <elementGuidId>a9650432-f140-4a14-8861-1ed5a7e3cc71</elementGuidId>
    <selectorCollection>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769</name>
+   <name>select_DistanceFireStation</name>
    <tag></tag>
    <elementGuidId>3a2d1cbb-79e5-4b84-bac0-a2fdc8471671</elementGuidId>
    <selectorCollection>

@@ -282,6 +282,8 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_City, State
 
 //WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Location Address_LocationAddress1_1'))
 
+/*
+ // commented this block out when Address fields IDs changed. 
 if(isAgent == false)
 {
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Location Address_LocationAddress1_1'), addressAZ)
@@ -300,7 +302,7 @@ if(isAgent == false)
 	
 	WebUI.switchToDefaultContent()
 }
-
+*/
 /*WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_StateAKALARAZCACOCTDCDEFLGAHIIAIDILI_28d72e_1'), stateAZ, true)
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_City, State, Zip, Zip4_LocationZip_1'), zipAZ)
@@ -317,17 +319,75 @@ catch (Exception e) {
 WebUI.switchToDefaultContent()
 */
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_123456788B9101X2X3X4X5X6X7X8X1Y2Y3Y4Y5Y6Y'), 2)
+//WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_123456788B9101X2X3X4X5X6X7X8X1Y2Y3Y4Y5Y6Y'), 2)
+//get PC
+String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_123456788B9101X2X3X4X5X6X7X8X1Y2Y3Y4Y5Y6Y'), 'value')
+System.out.println("protectionClass = " + protectionClass)
+System.out.println("protectionClass.length() = " + protectionClass.length())
+if(protectionClass.length() == 0)
+{
+	//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/select_123456788B9101X2X3X4X5X6X7X8X1Y2Y3Y4Y5Y6Y'), 3)
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_123456788B9101X2X3X4X5X6X7X8X1Y2Y3Y4Y5Y6Y'), '5', true)
+}
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Responding Fire Department_Responding_eb6df6'), cityAZ + ' FD')
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'MASONRY', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), '02', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_NonePartialComplete'), 'COMPLETE', true)
 
 
+ //get distance fire station
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_DistanceFireStation'), '02', true)
+ String fireStation = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_DistanceFireStation'), 'value')
+ System.out.println("fireStation = " + fireStation)
+ System.out.println("fireStation.length() = " + fireStation.length())
+ if(fireStation.length() == 0)
+ {
+	 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/select_DistanceFireStation'), 3)
+	 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_DistanceFireStation'), '05', true)
+	 
+ }
+ 
+ //get distance fire hydrant
+ //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_DistanceFireStation'), '02', true)
+  String fireHydrant = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_fireHydrant'), 'value')
+  System.out.println("fireHydrant = " + fireHydrant)
+  System.out.println("fireHydrant.length() = " + fireHydrant.length())
+  if(fireHydrant.length() == 0)
+  {
+	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_fireHydrant'), 'LT1000', true)
+  }
+ 
+  // get responding fire dept
+  String respondingFireDept = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Responding Fire Department'), 'value')
+  System.out.println("respondingFireDept = " + respondingFireDept)
+  System.out.println("respondingFireDept.length() = " + respondingFireDept.length())
+  if(respondingFireDept.length() == 0)
+  {
+	  WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Responding Fire Department'), cityAZ + ' FD')
+  }
+ 
+
+
+  
+  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'COMPLETE', true)
+  //get Sprinkler - blank is never an option, so dont need to set it with code, so i commented this out
+ /* String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
+  System.out.println("sprinkler = " + sprinkler)
+  System.out.println("sprinkler.length() = " + sprinkler.length())
+  if(sprinkler.length() == 0)
+  {
+	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'PARTIAL', true)
+  }*/
+  
+  // BCEG is not required, so dont need to set it
+  
+  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'MASONRY', true)
+  String masonryType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'value')
+  //String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
+  System.out.println("masonryType = " + masonryType)
+  System.out.println("sprinkler.length() = " + masonryType.length())
+  if(masonryType.length() == 0)
+  {
+	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), '3', true)
+  }
+  
 // get construction year
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), 'value')
 System.out.println("constructionYear = " + constructionYear)
@@ -337,10 +397,20 @@ if(constructionYear.length() == 0)
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
 }
 
+// get Total Square Footage of Building
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), '3500')
+String totalSquareFootage = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), 'value')
+System.out.println("totalSquareFootage = " + totalSquareFootage)
+System.out.println("totalSquareFootage.length() = " + totalSquareFootage.length())
+if(constructionYear.length() == 0)
+{
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), '3210')
+}
 
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
+
+
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '1', true)
 
@@ -362,7 +432,6 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Owner Tenant Lessor'), 'OWNER', true)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage of Building_SqFo_d74970'), '3500')
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Limit_BuildingLimit_1'), '500000')
 
@@ -373,6 +442,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Projected Annual Gross Receipts (Loca_05b23c'), '750000')
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Prior Year Annual Gross Receipts (Loc_419881'), '650000')
+
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '5')
+
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Money  Securities Inside the Premise_37be17'), 'MONEYINSIDE', true)
 
@@ -399,7 +471,7 @@ if(isAgent == false)
 //WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Exclude Equipment Breakdown Protectio_4805de'))
 //WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Employee Dishonesty_NOSAVEDishonestyLmt'))
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input__AcctReceivables'), '20000.00')
-//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Number Of Employees_NumberEmployees'), '5')
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '5')
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input__ValuableRecords'), '16000.00')
 */
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input__ElectronicDataLmt'), '15000.00')
@@ -464,15 +536,15 @@ if(isAgent == false)
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Management_Management'), '1')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_IRPMLocation'), '2')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_IRPMLocation'), '1.11')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Features_BuildingFeatures'), '3')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Features_BuildingFeatures'), '1.13')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Premises And Equipment_PremisesAndEquipment'), '4')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Premises And Equipment_PremisesAndEquipment'), '0.29')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Employees_Employees'), '5')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Employees_Employees'), '1.25')
 	
-	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Protection_Protection'), '6')
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Protection_Protection'), '1.05')
 	
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_A. Description And Location of Premi_736a26'), 'A', true)
 	
