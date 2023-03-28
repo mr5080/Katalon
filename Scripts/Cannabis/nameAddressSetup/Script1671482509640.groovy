@@ -7,10 +7,10 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'Mani',
 		'randomLastName': 'Marson',
-			'addressAZ': '1732 W COMMERCE POINT PL',
-			'cityAZ': 'SAHUARITA',
+			'addressAZ': '9897 W MCDOWELL RD',
+			'cityAZ': 'TOLLESON',
 			'stateAZ': 'AZ',
-			'zipAZ': '85614'
+			'zipAZ': '85353'
 		]
 
 	// actually a lightspeed address for testing the buttons Application/Lightspeed
@@ -56,16 +56,16 @@ else if(manualAddress == 'claims')
 //C:\Users\john.hughes\CORNERSTONE OPERATIONS GROUP\Cannabis - Documents\Product Startup\Product Development\Approved for COG\Third Party\Verisk\LightSpeed
 else if(manualAddress == 'lightspeed')
 	{
-	/*	def nameAddressData = ['randomFirstName': 'Victoria',
+		def nameAddressData = ['randomFirstName': 'Victoria',
 				'randomLastName': 'Lighty',
 				'addressAZ': '124 S MONTEZUMA ST',
 				'cityAZ': 'PRESCOTT',
 				'stateAZ': 'AZ',
 				'zipAZ': '86303'
 				]
-	*/			
 				
-		def nameAddressData = ['randomFirstName': 'LARRY',
+				
+	/*	def nameAddressData = ['randomFirstName': 'LARRY',
 			'randomLastName': 'LIGHTY',
 			'addressAZ': '21 E SPEEDWAY BLVD',
 			'cityAZ': 'TUCSON',

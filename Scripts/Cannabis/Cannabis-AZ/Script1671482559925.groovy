@@ -120,8 +120,9 @@ WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_City_Appli
 	//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again)
 
 
-// lightspeed stuff
+// lightspeed button removed 3.27.23
 //if(lightSpeed)
+/*
 if(manualAddress == 'lightspeed')
 {
 	System.out.print('manualAddress = lightspeed')
@@ -137,19 +138,28 @@ if(manualAddress == 'lightspeed')
 	
 	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_LightspeedLocation'))
 	//WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/input_LightspeedLocation'), 1)
-	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed - SaveContinue'))
-	
-
-	
-	
-	
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed - SaveContinue'))	
 }
 else
 {
 	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Application'))
-}
+}*/
 
-//WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Application'))
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Application'))
+
+try {
+	WebUI.acceptAlert()
+
+	System.out.println('Accept address validation has been validated')
+}
+catch (Exception e) {
+	System.out.println('No addres validation alert')
+}
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_LightspeedLocation'))
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Lightspeed - SaveContinue'))
+/*
 try {
 	WebUI.acceptAlert()
 
@@ -160,7 +170,7 @@ catch (Exception e) {
 }
 
 WebUI.switchToDefaultContent()
-
+*/
 	
 
 
@@ -238,7 +248,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Website_Web
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_IndividualPartnershipLimited Liabili_a20400'), 2)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cannabis/Page_/select_LegalEntity'), 1)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + 'S ONE STOP POT SHOP')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_BUSApplicantLastzzzz1'), randomFirstName + 'S ONE STOP SUPER POT SHOP')
 
 
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Name_CorpApplicantLastzzzz1'), 'CBD JUICE')
@@ -389,13 +399,35 @@ if(protectionClass.length() == 0)
   }
   
 // get construction year
-String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), 'value')
+String constructionYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), 'value'))
 System.out.println("constructionYear = " + constructionYear)
-System.out.println("constructionYear.length() = " + constructionYear.length())
+//System.out.println("constructionYear.length() = " + constructionYear.length())
 if(constructionYear.length() == 0)
 {
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
 }
+
+//constructionYearInt = Integer.valueOf(constructionYear)
+
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), '2020')
+// get Roofing Updates year
+String roofingYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), 'value'))
+System.out.println("roofingYear = " + roofingYear)
+//System.out.println("roofingYear.length() = " + roofingYear.length())
+
+
+//System.out.println('roofingYear.toInteger() - constructionYear.toInteger() ==== ' + roofingYear - constructionYear)
+
+if(    Integer.valueOf(roofingYear.toInteger()) < Integer.valueOf(constructionYear.toInteger())   )
+{
+	//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), constructionYear)
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), constructionYear)
+}
+
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), constructionYear)
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), '2020')
+
+
 
 // get Total Square Footage of Building
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), '3500')
@@ -443,7 +475,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Projected A
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Prior Year Annual Gross Receipts (Loc_419881'), '650000')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '5')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '4')
 
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Money  Securities Inside the Premise_37be17'), 'MONEYINSIDE', true)
