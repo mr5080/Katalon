@@ -27,10 +27,6 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import org.openqa.selenium.JavascriptExecutor
 
 
-
-
-
-
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('Cannabis/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
@@ -71,7 +67,7 @@ if (isAgent == true) {
 }
 
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'), 'joseph')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'), 'jhughes')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
 
