@@ -31,6 +31,7 @@ import org.openqa.selenium.JavascriptExecutor
 def nameAddressData = WebUI.callTestCase(findTestCase('Cannabis/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
 
+
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
