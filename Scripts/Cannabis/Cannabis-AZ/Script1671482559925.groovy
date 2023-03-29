@@ -403,6 +403,7 @@ if(constructionYear.length() == 0)
 }
 
 
+
 // get Roofing Updates year
 int roofingYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), 'value'))
 System.out.println("roofingYear = " + roofingYear)
