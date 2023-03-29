@@ -71,7 +71,7 @@ if (isAgent == true) {
 }
 
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'), 'jhughes')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'), 'joseph')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
 
@@ -407,34 +407,22 @@ if(constructionYear.length() == 0)
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), '2015')
 }
 
-//constructionYearInt = Integer.valueOf(constructionYear)
-
-//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), '2020')
 // get Roofing Updates year
-String roofingYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), 'value'))
+int roofingYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), 'value'))
 System.out.println("roofingYear = " + roofingYear)
 //System.out.println("roofingYear.length() = " + roofingYear.length())
 
-
-//System.out.println('roofingYear.toInteger() - constructionYear.toInteger() ==== ' + roofingYear - constructionYear)
-
-if(    Integer.valueOf(roofingYear.toInteger()) < Integer.valueOf(constructionYear.toInteger())   )
+if(    roofingYear < Integer.valueOf(constructionYear)   )
 {
-	//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), constructionYear)
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), constructionYear)
 }
-
-//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), constructionYear)
-//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Roofing Updates_LastRoofUpdate_1'), '2020')
-
-
 
 // get Total Square Footage of Building
 //WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), '3500')
 String totalSquareFootage = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), 'value')
 System.out.println("totalSquareFootage = " + totalSquareFootage)
 System.out.println("totalSquareFootage.length() = " + totalSquareFootage.length())
-if(constructionYear.length() == 0)
+if(totalSquareFootage.length() == 0)
 {
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Square Footage'), '3210')
 }
