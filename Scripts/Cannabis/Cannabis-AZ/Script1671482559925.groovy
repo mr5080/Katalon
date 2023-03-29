@@ -372,16 +372,23 @@ if(protectionClass.length() == 0)
 
   
   //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'COMPLETE', true)
-  //get Sprinkler - blank is never an option, so dont need to set it with code, so i commented this out
- /* String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
+  String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
   System.out.println("sprinkler = " + sprinkler)
   System.out.println("sprinkler.length() = " + sprinkler.length())
   if(sprinkler.length() == 0)
   {
 	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'PARTIAL', true)
-  }*/
+  }
   
-  // BCEG is not required, so dont need to set it
+  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'COMPLETE', true)
+  String BCEG = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'value')
+  System.out.println("BCEG = " + BCEG)
+  System.out.println("BCEG.length() = " + BCEG.length())
+  if(BCEG.length() == 0)
+  {
+	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), '3', true)
+  }
+  
   
   //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'MASONRY', true)
   String masonryType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'value')
