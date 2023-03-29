@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_GMFIPS_1</name>
+   <tag></tag>
+   <elementGuidId>13244074-33b8-4f30-8731-935263a1ae1f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='DebugWDDX']/table/tbody/tr[53]/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>12c01a03-c38a-4286-86ff-65afe69ae9b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>GMFIPS_1</value>
+      <webElementGuid>d4f63087-c6cb-4a08-a68d-ed1818aad790</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;DebugWDDX&quot;)/table[@class=&quot;table table-condensed table-hover table-striped&quot;]/tbody[1]/tr[53]/td[1]</value>
+      <webElementGuid>44636043-1932-4269-9e81-ff46e6812bd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/CensusBlockTest/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>5c9e9f3a-1c4e-4490-849e-82b9b46bd768</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='DebugWDDX']/table/tbody/tr[53]/td</value>
+      <webElementGuid>0f18edad-c6ef-4f13-b981-e687e147f8a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMCounty_1'])[1]/following::td[2]</value>
+      <webElementGuid>4f19621a-ddc7-493a-ae7b-5beeecd5c4e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMFIPS'])[1]/following::td[4]</value>
+      <webElementGuid>168b1172-78f5-4d4f-9a96-74dff71d0a5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GMGeocodeFormSubmitAlert_1'])[1]/preceding::td[2]</value>
+      <webElementGuid>38c9de3c-fe51-4238-94d4-a36e0e474f7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[10]/preceding::td[3]</value>
+      <webElementGuid>40876c1a-4ced-4553-95b3-dc587c0fbb2d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='GMFIPS_1']/parent::*</value>
+      <webElementGuid>a0a18139-673b-468f-98c8-39a9b7f63fd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[53]/td</value>
+      <webElementGuid>69983b1f-e251-42a9-8f9f-77c6bb94df21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'GMFIPS_1' or . = 'GMFIPS_1')]</value>
+      <webElementGuid>a107a017-64f7-4949-96d4-578c5c96da34</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

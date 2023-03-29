@@ -31,4 +31,7 @@ WebUI.click(findTestObject('Object Repository/Trash/Page_TEST DATA cypressstage.
 WebUI.click(findTestObject('Object Repository/Trash/Page_/label_Start'))
 
 WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))
-
+WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))
+WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))
+WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))
+WebUI.click(findTestObject('Object Repository/Trash/Page_/a_Start a New Quote'))

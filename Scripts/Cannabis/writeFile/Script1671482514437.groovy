@@ -31,7 +31,7 @@ System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("stateAZ(from childTestCase) = " + stateAZ)
-System.out.println("lightSpeed(from childTestCase) = " + lightSpeed)
+System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 
 
 
@@ -68,7 +68,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
 
 //		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-		sheet.getRow(rowCount).createCell(3).setCellValue((quoteNumber + ', LightSpeed = ') + lightSpeed)
+		sheet.getRow(rowCount).createCell(3).setCellValue((quoteNumber + ', AddressType = ') + manualAddress)
 		
 
 /*		if(shouldBind == false)

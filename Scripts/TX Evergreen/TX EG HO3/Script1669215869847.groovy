@@ -166,6 +166,8 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Da
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2019')
 
+
+
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-5555')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
@@ -192,9 +194,9 @@ System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
 {
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 Queen ST')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 QUEEN ST')
 
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Steelton')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'HARRISBURG')
 
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
@@ -217,7 +219,6 @@ else
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_PrimarySecondarySeasonal'), 'PRIMARY', true)
 
@@ -230,6 +231,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 'FINISHED', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEScreenedEnclosure_1'))
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 3)
 
 
 
@@ -336,6 +340,9 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Da
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'))
 
+'new paperless buttons'
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDelivery'))
+
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'))
@@ -349,6 +356,10 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous C
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), effectiveDate)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Previous Policy_PriorPolicyNumber_1'), '123456123456')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle - BobTransfer'), 'N', true)
+
+
 
 'Click Prequalification button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Prequalification'))
@@ -376,19 +387,23 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownNo ProtectionWood ShuttersBas_8ed146'), 'SHUTTERS', true)
 
-String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/select_ProtectionClass'), 'value') // gets dropdown value
-System.out.println("protectionClass = " + protectionClass)		// outputs dropdown value
-System.out.println("protectionClass.length() = " + protectionClass.length())		// outputs dropdown value
 
-if(protectionClass.length() > 0)
-{	
-	if(Integer.valueOf(protectionClass) == 10)
-	{
-		//click yes to subdivision
-		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSubdivision'))
-		//add subdivision name
-		WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_SubdivisonName'), "Terra Cotta Woods")
-	}	
+if (isAgent == false)
+{
+	String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/select_ProtectionClass'), 'value') // gets dropdown value
+	System.out.println("protectionClass = " + protectionClass)		// outputs dropdown value
+	System.out.println("protectionClass.length() = " + protectionClass.length())		// outputs dropdown value
+	
+	if(protectionClass.length() > 0)
+	{	
+		if(Integer.valueOf(protectionClass) == 10)
+		{
+			//click yes to subdivision
+			WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSubdivision'))
+			//add subdivision name
+			WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_SubdivisonName'), "Terra Cotta Woods")
+		}	
+	}
 }
 
 'Click History button'
@@ -447,6 +462,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
+
+//new paperless radio button
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDeliveryAcknowledge'))
 
 //select payment method logic
 WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),

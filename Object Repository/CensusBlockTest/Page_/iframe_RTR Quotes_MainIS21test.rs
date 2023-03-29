@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Total Square Footage of Building_SqFo_d74970</name>
+   <name>iframe_RTR Quotes_MainIS21test</name>
    <tag></tag>
-   <elementGuidId>a9650432-f140-4a14-8861-1ed5a7e3cc71</elementGuidId>
+   <elementGuidId>d5f858c6-5285-468a-b430-43c90fd2c7eb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#SqFootageBldg_1</value>
+         <key>XPATH</key>
+         <value>//iframe[@id='MainIS21test']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='SqFootageBldg_1']</value>
+         <key>CSS</key>
+         <value>#MainIS21test</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,135 +21,135 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>ac66523d-9087-43b4-b26f-4436bc15dec5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>e1b8755f-b3ef-416d-ad7c-b982142f46b3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control numberWidget</value>
-      <webElementGuid>92bb1743-725c-4011-9b56-ad153c549ffc</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>SqFootageBldg_1</value>
-      <webElementGuid>7856fa90-b3d9-453b-901b-c1c6d4d7ac82</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>data-disablemessagetrigger</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>a1d6e570-5b55-4276-a8a0-d3b5c10365c5</webElementGuid>
+      <value>iframe</value>
+      <webElementGuid>3fc10191-2b87-4448-b4be-fd84d7f72be7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>SqFootageBldg_1</value>
-      <webElementGuid>ac50c498-65bc-4630-9bf2-0f88e36ce118</webElementGuid>
+      <value>MainIS21test</value>
+      <webElementGuid>8cfc861d-bb77-4b5b-9094-b7786d506019</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>title</name>
       <type>Main</type>
-      <value>isNumberJS(this);ConditionalOnChangeAlert(this,'ISOReplacementCost_1,&lt;>,0;ISOReplacementCost_1,&lt;>,BLANK;AND','_1','Required data has been changed since valuation. Select Get Replacement Cost button to recalculate and provide updated amount. Endorsement will be referred to UW.','false','false');   CheckRequired(false);</value>
-      <webElementGuid>f4c8b0c3-2bb2-45a0-b74a-0a0da9ead7ad</webElementGuid>
+      <value>Main</value>
+      <webElementGuid>b6c74417-28a6-432e-901c-40664b309371</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>numbertype</name>
+      <name>src</name>
       <type>Main</type>
-      <value>integer</value>
-      <webElementGuid>5a7de0f5-6376-41fb-aaf5-ae90ac9281c8</webElementGuid>
+      <value>./main.cfm?view=home&amp;TabView=</value>
+      <webElementGuid>fdf70692-52a7-4f44-af55-d25dc6e299a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>maxvalue</name>
+      <name>name</name>
       <type>Main</type>
-      <value>99999</value>
-      <webElementGuid>9ce3bc8c-a0b8-4056-8129-57ee3c20590e</webElementGuid>
+      <value>MainIS21test</value>
+      <webElementGuid>a2e8f836-b0e5-4cd5-ba90-ba13681e4ed9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>minvalue</name>
+      <name>width</name>
       <type>Main</type>
-      <value>100</value>
-      <webElementGuid>98f67c0b-bb8a-4488-9c0f-1fc93aef9705</webElementGuid>
+      <value>100%</value>
+      <webElementGuid>32c54a2e-7b1a-4ae6-b37c-44b62d408d20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>decimalplaces</name>
+      <name>marginwidth</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>5b188f2c-8e76-42eb-bbe4-fb425b839c58</webElementGuid>
+      <webElementGuid>11b56549-a5f2-4714-94b3-fc39152c8d4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>marginheight</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>05992ef2-242c-4455-b4f9-3e81b6cfde0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>middle</value>
+      <webElementGuid>5e5dae99-6a21-4b5f-be45-783231fc1d7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scrolling</name>
+      <type>Main</type>
+      <value>yes</value>
+      <webElementGuid>ec3ff5f9-a5ce-43a8-8770-06ef1c6b0456</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>frameborder</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>7b2de70d-0356-49a4-af0b-fe268ffe90e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>693px</value>
+      <webElementGuid>9d384c34-7c98-497d-8608-f1c5fa62f937</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;SqFootageBldg_1&quot;)</value>
-      <webElementGuid>c066e8b3-d8ae-4f40-a91b-68a2d4b73559</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>2e852a65-a2d7-4724-a986-095c3686b12c</webElementGuid>
+      <value>id(&quot;MainIS21test&quot;)</value>
+      <webElementGuid>c475d345-daba-427c-9c63-27fbe7507c19</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='SqFootageBldg_1']</value>
-      <webElementGuid>310fbbcb-a61e-4608-87d8-162d21d4bfbd</webElementGuid>
+      <value>//iframe[@id='MainIS21test']</value>
+      <webElementGuid>58dd334a-b2d7-47e4-90ae-389687ccb308</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Right-SqFootageBldg_1']/input</value>
-      <webElementGuid>eeb9d623-9030-4a50-9145-955f5e2ace06</webElementGuid>
+      <value>//td[@id='MainFrameContainer']/iframe</value>
+      <webElementGuid>09487251-1b8a-45d8-aa11-d72ee38dc5d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[6]/input</value>
-      <webElementGuid>b84ef48b-74c6-4fd1-a02f-75f40800d732</webElementGuid>
+      <value>//iframe</value>
+      <webElementGuid>d6f7bda3-dc8d-4b06-a2c1-6dc3f639589e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @name = 'SqFootageBldg_1' and @id = 'SqFootageBldg_1']</value>
-      <webElementGuid>f7fbffa5-b958-4f67-9ac5-cab922cb8091</webElementGuid>
+      <value>//iframe[@id = 'MainIS21test' and @title = 'Main' and @src = './main.cfm?view=home&amp;TabView=' and @name = 'MainIS21test']</value>
+      <webElementGuid>6d7fb0e2-bc65-4603-b798-8d9541bd0a79</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

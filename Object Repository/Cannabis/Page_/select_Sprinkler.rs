@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_NonePartialComplete</name>
+   <name>select_Sprinkler</name>
    <tag></tag>
    <elementGuidId>327e92d5-36e1-4774-bb30-f8496bf2fd25</elementGuidId>
    <selectorCollection>

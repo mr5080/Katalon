@@ -7,12 +7,22 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'Mani',
 		'randomLastName': 'Marson',
-			'addressAZ': '465 Jordan Rd',
-			'cityAZ': 'sEDONA',
+			'addressAZ': '9897 W MCDOWELL RD',
+			'cityAZ': 'TOLLESON',
 			'stateAZ': 'AZ',
-			'zipAZ': '86336'
+			'zipAZ': '85353'
 		]
-	return nameAddressData	
+
+	// actually a lightspeed address for testing the buttons Application/Lightspeed
+/*	def nameAddressData = ['randomFirstName': 'LARRY',
+			'randomLastName': 'LIGHTY',
+			'addressAZ': '21 E SPEEDWAY BLVD',
+			'cityAZ': 'TUCSON',
+			'stateAZ': 'AZ',
+			'zipAZ': '85705'
+			]
+*/			
+		return nameAddressData	
 }	
 
 else if(manualAddress == 'PC10')	// address returns PC10
@@ -47,13 +57,32 @@ else if(manualAddress == 'claims')
 else if(manualAddress == 'lightspeed')
 	{
 		def nameAddressData = ['randomFirstName': 'Victoria',
-				'randomLastName': 'Lilly',
-				'addressAZ': 'Speeder',
+				'randomLastName': 'Lighty',
+				'addressAZ': '124 S MONTEZUMA ST',
 				'cityAZ': 'PRESCOTT',
 				'stateAZ': 'AZ',
 				'zipAZ': '86303'
 				]
-			return nameAddressData
+				
+				
+	/*	def nameAddressData = ['randomFirstName': 'LARRY',
+			'randomLastName': 'LIGHTY',
+			'addressAZ': '21 E SPEEDWAY BLVD',
+			'cityAZ': 'TUCSON',
+			'stateAZ': 'AZ',
+			'zipAZ': '85705'
+			]	
+	/*
+		def nameAddressData = ['randomFirstName': 'LARRY',
+			'randomLastName': 'LIGHTY',
+			'addressAZ': '10261 N SCOTTSDALE RD',
+			'cityAZ': 'SCOTTSDALE',
+			'stateAZ': 'AZ',
+			'zipAZ': '85253'
+			]
+	*/		
+		return nameAddressData
+			
 	}
 
 

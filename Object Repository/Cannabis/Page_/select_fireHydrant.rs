@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Less than 1000 feetOver 1000 feet</name>
+   <name>select_fireHydrant</name>
    <tag></tag>
    <elementGuidId>bf6994c3-419b-4ebc-ab20-0c3a66a5e521</elementGuidId>
    <selectorCollection>
