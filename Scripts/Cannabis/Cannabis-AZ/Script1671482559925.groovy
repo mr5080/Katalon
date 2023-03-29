@@ -35,8 +35,6 @@ def nameAddressData = WebUI.callTestCase(findTestCase('Cannabis/nameAddressSetup
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
-
-
 String addressAZ = nameAddressData['addressAZ']
 String cityAZ = nameAddressData['cityAZ']
 String stateAZ = nameAddressData['stateAZ']
