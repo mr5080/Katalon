@@ -30,7 +30,6 @@ import org.openqa.selenium.JavascriptExecutor
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('Cannabis/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
-
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
 
