@@ -534,12 +534,11 @@ WebUI.click(findTestObject('Object Repository/Cannabis/Page_/button_Additional I
 
 
 
-if(addInterests > 0)
+if(addInterest)
 {	
-	int counter = 0;
-	while(counter < addInterests)
-	{
-		WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Add Interest'))
+	//int randomInterest = 2 + ((Math.random() * ((11 - 2) + 1)) as int)
+	
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Add Interest'))
 		
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_LocationOfAdditionalInterest'), '1', true)
 		
@@ -570,11 +569,7 @@ if(addInterests > 0)
 		WebUI.switchToDefaultContent()
 		
 		WebUI.click(findTestObject('Object Repository/Cannabis/Page_/btn_Save Interest'))
-		
-		
-		counter++;
-	}
-}
+}		
 
 
 

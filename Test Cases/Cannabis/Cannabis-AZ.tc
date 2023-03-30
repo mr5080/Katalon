@@ -103,10 +103,10 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>11e4d215-ef54-4817-b075-e402554a0049</id>
       <masked>false</masked>
-      <name>addInterests</name>
+      <name>addInterest</name>
    </variable>
 </TestCaseEntity>
