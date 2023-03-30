@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_StateAKALARAZCACOCTDCDEFLGAHIIAIDILI_28d72e_1_2</name>
+   <name>select_AddInterestState</name>
    <tag></tag>
    <elementGuidId>e38d66c6-75fd-49df-bfde-b71340445d5e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#InterestStatexxxx1</value>
+         <key>XPATH</key>
+         <value>//select[@id='InterestStatexxxx1_1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='InterestStatexxxx1']</value>
+         <key>CSS</key>
+         <value>#InterestStatexxxx1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>376c264e-a9a2-463d-ab36-d596524afa74</webElementGuid>
+      <webElementGuid>05524909-2ef0-4c80-97b3-9998286c0f4f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>2ff7ed70-84f1-487f-a31e-3a261b5e1477</webElementGuid>
+      <webElementGuid>2e31b47e-b265-46df-932b-06cd2d259554</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>name</name>
       <type>Main</type>
       <value>InterestStatexxxx1</value>
-      <webElementGuid>8d50f8bd-1cec-415f-a357-a759d1d42569</webElementGuid>
+      <webElementGuid>30737a22-da17-402c-b455-445bccf650cd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>InterestStatexxxx1</value>
-      <webElementGuid>4745e0d4-dd81-4d16-8a32-b61fe3c462ff</webElementGuid>
+      <webElementGuid>6a2c715c-1958-469b-af17-0932638a7142</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>ISiA_QuickStateCheck(this);USPSRealtimeAddressValidation('a68768558542518765i49962214s2932970492472841i29721','https://alchemytest.cogisi.com/is/','8001030','Interest','xxxx1','State',0,0);</value>
-      <webElementGuid>94040d28-d0cf-48d0-a788-ecec0b837e60</webElementGuid>
+      <webElementGuid>abb26dcb-10e7-424d-8fc9-37b4c8001f6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1').value='0';</value>
-      <webElementGuid>468fe52c-0c98-4936-b981-06dd95ce2bd0</webElementGuid>
+      <webElementGuid>ae20886d-6e43-47f6-8d82-08ed88adbe85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -180,7 +180,7 @@
 								WY
 							
 						</value>
-      <webElementGuid>9304154c-38cc-484e-84a4-1fc74f76a823</webElementGuid>
+      <webElementGuid>f41583b6-85fe-43c3-822e-868928e4435e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -188,7 +188,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;InterestStatexxxx1&quot;)</value>
-      <webElementGuid>5aa926ad-9708-46ac-b684-5ade794259ba</webElementGuid>
+      <webElementGuid>cbefc1fb-7be6-4d37-b1f9-56ebd368f217</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -196,7 +196,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>f6e4d1e7-1d71-4fa5-af3b-45e72a359d4e</webElementGuid>
+      <webElementGuid>4e43ee9e-c226-48e0-ace7-46e6611493ea</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -204,7 +204,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='InterestStatexxxx1']</value>
-      <webElementGuid>f930b232-fd36-4ce0-8d66-9166e3833ef7</webElementGuid>
+      <webElementGuid>37d886cb-b12e-4575-942b-f4f1dad11749</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -212,7 +212,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-InterestStatexxxx1']/div/select</value>
-      <webElementGuid>19a89746-a0ad-413c-9002-d6b0f78d7d3e</webElementGuid>
+      <webElementGuid>4444d09b-75af-4290-96f3-f40c375809ab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -220,7 +220,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='City, State, Zip Code, Zip4'])[1]/following::select[2]</value>
-      <webElementGuid>495ab796-ecd0-470c-a450-21e4cdf6ccc6</webElementGuid>
+      <webElementGuid>caed3473-7a13-4895-bfa6-7591250c8679</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -228,7 +228,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Extended Mailing Address'])[1]/following::select[3]</value>
-      <webElementGuid>46bf2722-8d16-4c79-8d1d-21c7c33bc553</webElementGuid>
+      <webElementGuid>10990d2f-85b1-47bb-a7c9-8c793d5b997e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -236,7 +236,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Country Name'])[1]/preceding::select[1]</value>
-      <webElementGuid>f92fe787-4319-4d4d-9989-1ffa3278f7c2</webElementGuid>
+      <webElementGuid>7b456253-bfbf-4c2d-97b5-febe2b67be29</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -244,7 +244,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loan Number'])[1]/preceding::select[1]</value>
-      <webElementGuid>e4e36b90-3c9f-4ede-9bc1-cd4812ccfc74</webElementGuid>
+      <webElementGuid>83a54567-5ee3-4d16-9b0f-8f8b7854c3c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -252,7 +252,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/select</value>
-      <webElementGuid>5b13c1d7-27b9-44d3-9171-95419c068cea</webElementGuid>
+      <webElementGuid>ba2f1666-80fc-4af6-9b7e-70e82ae6979c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -480,6 +480,6 @@
 								WY
 							
 						')]</value>
-      <webElementGuid>19c7c097-fe62-4f3c-8f79-bbf5afa814f5</webElementGuid>
+      <webElementGuid>70bacbf7-7dad-4e49-b505-e30677ef9f4c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

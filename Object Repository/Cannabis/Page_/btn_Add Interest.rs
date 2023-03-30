@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Additional Insureds_addDetailButtonAd_c8a715</name>
+   <name>btn_Add Interest</name>
    <tag></tag>
    <elementGuidId>a0ede060-ab7d-4b07-aaa5-e8b4fc8c004d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#addDetailButtonAdditionalInterests</value>
+         <key>XPATH</key>
+         <value>//button[contains(text(),'Add Interest')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='addDetailButtonAdditionalInterests']</value>
+         <key>CSS</key>
+         <value>#addDetailButtonAdditionalInterests</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>647c83f3-4b47-4183-af83-c9b1886916d6</webElementGuid>
+      <webElementGuid>195b5709-4c3d-4929-b009-6a01513b197d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton ISiA-SmallButton</value>
-      <webElementGuid>561b25e0-f33c-414c-a0f6-1c975c21c148</webElementGuid>
+      <webElementGuid>8b97a85a-eb19-4349-bfd7-e7dafa851e9f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>54181444-21a5-435b-8796-c81806e63acb</webElementGuid>
+      <webElementGuid>393a071d-a530-4cc4-aeb5-0415bb929a43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>addDetailButtonAdditionalInterests</value>
-      <webElementGuid>5e066ee8-360f-4d21-a036-e28a62407016</webElementGuid>
+      <webElementGuid>e5e659e6-b2a1-4f27-81da-a09f5ddc063d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Add</value>
-      <webElementGuid>268bfa04-095e-44e5-96b7-04a4fb434b0e</webElementGuid>
+      <webElementGuid>5f540334-b8e0-4648-b15b-e669ae8365dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>AddAccordionPage('AdditionalInterests', '', 201, 2, 1, 1, 'detail', 'DeleteButtonJS(this, [AdditionalInterests, NOSAVEShowDetailItemAdditionalInterests], &quot;&quot;, )','https://alchemytest.cogisi.com/is/root/','internal')</value>
-      <webElementGuid>5004e904-3f5d-4d90-822f-7edc47fd5183</webElementGuid>
+      <webElementGuid>34b5774f-9590-4cb3-99ba-c489a9f27d1e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;addDetailButtonAdditionalInterests&quot;)</value>
-      <webElementGuid>a4fbefdb-8296-4e1d-9fdf-c28a48f49c5c</webElementGuid>
+      <webElementGuid>86e5109d-c142-4314-b169-320dbcf04894</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,38 +78,13 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>251c2c93-3a1e-488d-aaaf-8d483b50e9e6</webElementGuid>
+      <webElementGuid>b7923377-43c0-4737-ba47-142938459329</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='addDetailButtonAdditionalInterests']</value>
-      <webElementGuid>8b02b417-306a-49ef-92a0-465303fa85ff</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Left-AdditionalInterests']/div[3]/div/div/div[2]/input</value>
-      <webElementGuid>a53688b1-ebd8-42d3-ac7e-394485e57605</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[2]/input</value>
-      <webElementGuid>d069bf20-09d3-4eac-af3f-7d435e270ee8</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'button' and @id = 'addDetailButtonAdditionalInterests']</value>
-      <webElementGuid>c57ff273-974d-4222-a76b-639f6afc4d31</webElementGuid>
+      <value>//button[contains(text(),'Add Interest')]</value>
+      <webElementGuid>d3cc125d-ba6d-43a3-8d48-65e402751dce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

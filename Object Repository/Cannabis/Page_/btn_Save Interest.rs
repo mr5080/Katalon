@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_Save Interest</name>
+   <tag></tag>
+   <elementGuidId>3a65ab1a-c6f4-47c2-9d59-4cb3826e7302</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(text(),'Save Interest')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#addDetailButtonAdditionalInterests</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>f395765f-492c-4dbc-b4cf-c077a77dcb2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-PrimaryButton ISiA-SmallButton</value>
+      <webElementGuid>edb6ce67-2dad-45e1-81e9-4b263a754315</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ecc50c1f-10e5-4749-8585-c4538fc889f2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>addDetailButtonAdditionalInterests</value>
+      <webElementGuid>3cde5844-8e84-4acb-8085-74c856648c76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Add</value>
+      <webElementGuid>d9df88cd-f152-4b12-a8a9-93c1c86770a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>AddAccordionPage('AdditionalInterests', '', 201, 2, 1, 1, 'detail', 'DeleteButtonJS(this, [AdditionalInterests, NOSAVEShowDetailItemAdditionalInterests], &quot;&quot;, )','https://alchemytest.cogisi.com/is/root/','internal')</value>
+      <webElementGuid>76caa53a-cc6b-4a5c-b6bd-e20d2eca0e0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;addDetailButtonAdditionalInterests&quot;)</value>
+      <webElementGuid>a7f0432c-00b5-493f-92be-848de21664cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>0f85afdd-7474-409a-962a-66b089912634</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value></value>
+      <webElementGuid>25650af4-271d-4074-a36b-6ed988c85eb0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
