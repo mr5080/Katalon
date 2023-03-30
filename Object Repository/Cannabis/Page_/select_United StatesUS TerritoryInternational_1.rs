@@ -6,12 +6,12 @@
    <elementGuidId>25577eb4-60cb-440f-816d-58c33745df6f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#InterestAddressTypexxxx1</value>
+         <key>XPATH</key>
+         <value>//select[@id='InterestAddressTypexxxx1_1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='InterestAddressTypexxxx1']</value>
+         <key>CSS</key>
+         <value>#InterestAddressTypexxxx1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>7ca5eb77-a736-488f-88f3-66edb7e91f0a</webElementGuid>
+      <webElementGuid>ef204f40-8540-408c-a2e0-7e67f142d771</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>d4e7b6e8-013e-4996-b5a3-92312bccb2e1</webElementGuid>
+      <webElementGuid>83de8046-c3f2-4166-bdf0-8e69660ef503</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>InterestAddressTypexxxx1</value>
-      <webElementGuid>9caacf28-bf62-4b6c-ab5d-9fdf0fe96172</webElementGuid>
+      <webElementGuid>095e5130-44f9-43be-81bd-7c3a204ebd57</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>InterestAddressTypexxxx1</value>
-      <webElementGuid>a757399a-867a-486a-a2a8-6e6c1e640a88</webElementGuid>
+      <webElementGuid>39ad8646-aa37-4c6d-8bba-9b25a8870cc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>ResetDomesticInternationalAddressFieldsets('Interest','xxxx1','8001030');</value>
-      <webElementGuid>d022bb04-0da2-4a5d-8548-c351181f529d</webElementGuid>
+      <webElementGuid>bd5db6d6-d64c-40e2-80ca-159b22a863a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
 											International
 										
 									</value>
-      <webElementGuid>28e25f7d-9fcb-4a8d-8a86-6991c1935a02</webElementGuid>
+      <webElementGuid>b006c9ba-0752-4288-9f8a-2ee2083a3f15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;InterestAddressTypexxxx1&quot;)</value>
-      <webElementGuid>905778f0-e3f3-48ac-892e-bb18dcc4b9cb</webElementGuid>
+      <webElementGuid>01c0ae5d-5f07-461f-9e0b-1412bef3128a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -86,7 +86,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>a4fd2181-c9b0-4899-9d85-15c3a052dad0</webElementGuid>
+      <webElementGuid>62f6fe79-66ff-4fdd-ac90-272d96e88e76</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='InterestAddressTypexxxx1']</value>
-      <webElementGuid>7631765a-ea20-428f-ba77-9e314781920c</webElementGuid>
+      <webElementGuid>14b4f890-9cce-4b17-a21b-ec1d8f93b7c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-InterestCountryNamexxxx1']/div/select</value>
-      <webElementGuid>4dda03a9-7761-4a9c-929d-f419b5c5566f</webElementGuid>
+      <webElementGuid>bb084de2-d019-41ab-b014-39b5752a155e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Address Type'])[1]/following::select[1]</value>
-      <webElementGuid>913f4e97-745f-4228-b0a0-573daf204225</webElementGuid>
+      <webElementGuid>eca08ae2-34a3-4b29-a914-2d5e2d44deac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/following::select[1]</value>
-      <webElementGuid>97319de8-3543-4696-99d8-6f8eb9833ea3</webElementGuid>
+      <webElementGuid>e098a3d2-b983-4b10-8305-e2dce14e1bb1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mailing Address'])[1]/preceding::select[1]</value>
-      <webElementGuid>744e40c9-5566-411c-83b5-47adbe92ca04</webElementGuid>
+      <webElementGuid>8821e2c0-171d-448e-be6f-b464e9c260b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Extended Mailing Address'])[1]/preceding::select[2]</value>
-      <webElementGuid>a68a3633-236a-4b5c-8821-503bd6c67c68</webElementGuid>
+      <webElementGuid>d7c89be6-a4c9-49bd-a5e8-504366b42f21</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/select</value>
-      <webElementGuid>5db93fba-2d6d-48e3-ba5f-c0079cde51b5</webElementGuid>
+      <webElementGuid>c9998f19-293c-422c-bccd-54eff31cc6a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +166,6 @@
 											International
 										
 									')]</value>
-      <webElementGuid>90afefa7-8db1-465b-96f1-100f6c3c71ed</webElementGuid>
+      <webElementGuid>20cce983-2e8b-40a1-8ebb-cc448f367379</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

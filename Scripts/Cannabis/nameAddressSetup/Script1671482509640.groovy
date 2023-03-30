@@ -5,8 +5,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'Mani',
-		'randomLastName': 'Marson',
+	def nameAddressData = ['randomFirstName': 'MANNI',
+		'randomLastName': 'MANUAL',
 			'addressAZ': '9949 E APACHE TRAIL',
 			'cityAZ': 'MESA',
 			'stateAZ': 'AZ',
@@ -56,8 +56,8 @@ else if(manualAddress == 'claims')
 //C:\Users\john.hughes\CORNERSTONE OPERATIONS GROUP\Cannabis - Documents\Product Startup\Product Development\Approved for COG\Third Party\Verisk\LightSpeed
 else if(manualAddress == 'lightspeed')
 	{
-		def nameAddressData = ['randomFirstName': 'Victoria',
-				'randomLastName': 'Lighty',
+		def nameAddressData = ['randomFirstName': 'LIGHTY',
+				'randomLastName': 'LIGHTERS',
 				'addressAZ': '124 S MONTEZUMA ST',
 				'cityAZ': 'PRESCOTT',
 				'stateAZ': 'AZ',

@@ -47,8 +47,14 @@
       <value></value>
       <variableId>9e44cbf1-6885-4155-a273-13679ab4a881</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>11e4d215-ef54-4817-b075-e402554a0049</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>bc1ac551-8185-43cb-bc1f-70ee11de8c7d</id>
       <masked>false</masked>
@@ -62,7 +68,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'04/08/2023'</defaultValue>
+      <defaultValue>'04/01/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -70,7 +76,7 @@
    </variable>
    <variable>
       <defaultValue>'TEST'</defaultValue>
-      <description></description>
+      <description>TEST, STAGE</description>
       <id>ab6d4271-308e-4c22-8689-d2b299b07364</id>
       <masked>false</masked>
       <name>environment</name>
@@ -95,5 +101,12 @@
       <id>9e44cbf1-6885-4155-a273-13679ab4a881</id>
       <masked>false</masked>
       <name>policyType</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>11e4d215-ef54-4817-b075-e402554a0049</id>
+      <masked>false</masked>
+      <name>addInterests</name>
    </variable>
 </TestCaseEntity>
