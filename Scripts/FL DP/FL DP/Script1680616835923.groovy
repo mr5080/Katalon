@@ -1,0 +1,288 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+
+
+//  pass vars to another test case
+def nameAddressData = WebUI.callTestCase(findTestCase('FL DP/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
+
+
+String randomFirstName = nameAddressData['randomFirstName']
+String randomLastName = nameAddressData['randomLastName']
+
+String addressFL = nameAddressData['addressFL']
+String cityFL = nameAddressData['cityFL']
+String stateFL = nameAddressData['stateFL']
+String zipFL = nameAddressData['zipFL']
+
+String fullName = (randomFirstName + ' ') + randomLastName
+
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
+
+
+WebUI.openBrowser('')
+
+if (environment == 'TEST') {
+	WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+} else if (environment == 'STAGE') {
+	WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
+}
+
+
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+if (isAgent == true) {
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
+} else {
+	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_TEST DATA alchemytest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+}
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'JHUGHES')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/FL DP/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'), '04/09/2023')
+WebUI.clearText(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'), Keys.chord('04/09/2023', Keys.TAB))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_DwellingHomeownersHomeowners - Legac_cd4163'), 'DP3', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_First Name_ApplicantFirst'), randomFirstName)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Middle Name_ApplicantMiddle'), 'ann')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Last Name_ApplicantLast'), randomLastName)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Suffix_ApplicantSuffix'), 'jr')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddress1'), addressFL)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_ApplicantCity'), cityFL)
+
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(zipFL, Keys.TAB))
+
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 20)
+
+'click Quick Quote button'
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Quick Quote'))
+
+'click Full Quote button'
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Full Quote'))
+
+WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'))
+quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'), 'innerHTML')
+System.out.println('quoteNumber = ' + quoteNumber )
+
+
+
+
+
+'Internal'
+if (isAgent == false) {
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Agent Lookup'))
+
+	// wait for dynamic table to populate?
+	WebUI.delay(1)
+
+	/// update this to key down and then key up, can do the same thing for date pickers!
+	for (int x = 0; x < 5; x++)
+	{
+		try {
+			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
+		//	if(environment == "TEST")
+		//	{
+				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
+				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'),  Keys.chord('10100', Keys.ENTER))
+		//	}
+		//	else if(environment == "STAGE")
+		//	{
+			//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+		//	}
+
+			// add key down/up here
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))  // was .TAB, trying soemthing new 11.17.22
+//			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+
+
+			
+		//	WebUI.delay(1)
+
+			if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2))
+			{
+				WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
+				break
+			}
+		}
+		catch (def e) {
+			System.out.println('didnt find it, trying again... ' + x)
+		}
+	}
+}
+
+
+
+
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), '09/03/2018')
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('09/03/2018', Keys.TAB))
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '02/02/1980')
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('02/02/1980', Keys.TAB))
+
+'Prior Insurance'
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
+
+'BOB Transfer'
+WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
+
+WebUI.selectOptionByIndex(findTestObject('Object Repository/FL DP/Page_/select_All areas West of the East bank of t_b58b59'), 1)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_FrameFrame with HardiplankMasonryMas_3f1d9f'), 'V', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ResidencyType'), 'TENANT', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1234'), '2', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHouse_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHouse_1'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'OIL', true)
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'ELECTRIC', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Square Feet_SquareFootage_1'), '2546')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '11')
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_InOut'), 'N', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/div_No'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVENearSinkhole_1'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_3-Tab ShingleArchitectural ShinglesC_1b7158'), '3TAB', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ExcellentAbove AverageAveragePoor'), 'ABOVEAVERAGE', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ClosedOpen'), 'CLOSED', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 'BASEMENT', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'))
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
+
+if(isAgent == false)
+{
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater')
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12345678910'), '1', true)	// PC
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableOther Roof ShapeHip Ro_0f14e0'), 'HIP', true)
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableNoneHurricane-Windows _4e2d22'), 'BASIC', true)
+	
+	
+}
+
+
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_ad3f5d'), '02', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Mitigation Premium_WindMitPremium_1'), '15000')
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Yes SWRNo SWR'), 'Y', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Yes SWRNo SWR'), 'N', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableFBC EquivalentNon-FBC _2d03d2'), 'FBC', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableA - 6d  612B - 8d  612_c831a0'), 'NA', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableClipsReinf Concrete Ro_7662b1'), 'CLIPS', true)
+
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicablePart EnclosedEnclosed'), 'PARTIAL', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_2 Hurricane5 Hurricane10 Hurricane50_883f7d'), '5', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_5001,0002,5005,000'), '5000', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input__DwellingLimit_1'))
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input__DwellingLimit_1'), '300000')
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 of Cov A2 of Cov A5 of Cov A10 of _f74192'), '1', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 of Cov A2 of Cov A5 of Cov A10 of _f74192'), '2', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '25000')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_No Liability100,000 300,000'), '100000', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_No Medical1,000 3,000 5,000'), '5000', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NonePoliceCentral StationLocal'), 'CENTRAL', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NoneCentral Station ReportingLocal F_34ac8d'), 'CENTRAL', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NonePartialComplete'), 'PARTIAL', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NoneSingle Entry24 Hour Security Pat_b9275c'), 'SINGLEENTRY', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVECoveredPorch_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEOpenWaterExposure_1'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo'), 'N', true)
+
+
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
+
+System.out.println('quoteNumber = ' + quoteNumber )

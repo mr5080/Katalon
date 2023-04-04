@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_NOTE The address above has beensuccessfu_ffdc37</name>
+   <tag></tag>
+   <elementGuidId>aa7dba16-6c91-4974-9c74-5157b0a8c69e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='GMDisplayGeocodeSuccess']/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#GMDisplayGeocodeSuccess > td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>f77badb2-1be3-45c8-aa70-37c500891299</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>2</value>
+      <webElementGuid>ad49b077-8350-4c71-a74e-ddfa4c4d84bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>NOTE: The address above has beensuccessfully geocoded.</value>
+      <webElementGuid>a3e98245-c51d-4a35-9ef1-f458d9da33a5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;GMDisplayGeocodeSuccess&quot;)/td[1]</value>
+      <webElementGuid>b0a037fb-0b6c-418b-bcee-2d36e5622235</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>13eedc9b-f337-4914-9f4d-f2b2bd3cff7c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='GMDisplayGeocodeSuccess']/td</value>
+      <webElementGuid>20d47143-14d9-4443-bb68-ae0863e28c3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Property Zip Code:'])[1]/following::td[3]</value>
+      <webElementGuid>9b21d9ba-3183-47bb-b3e6-3a5bb69b8481</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prev'])[1]/preceding::td[1]</value>
+      <webElementGuid>c0e9da28-84f2-4a81-aae6-7bf34d61dde1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next'])[1]/preceding::td[1]</value>
+      <webElementGuid>28d0a330-c49c-4e4e-9b95-3a1a83cbdb24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='NOTE: The address above has been']/parent::*</value>
+      <webElementGuid>8aaf1b94-faa9-49d4-ac44-49791366a05b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[11]/td</value>
+      <webElementGuid>ece71010-25bb-43a6-a5f3-6090f4ad428b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'NOTE: The address above has beensuccessfully geocoded.' or . = 'NOTE: The address above has beensuccessfully geocoded.')]</value>
+      <webElementGuid>2fd3d26c-49c9-4559-930f-6a6164f5b43e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
