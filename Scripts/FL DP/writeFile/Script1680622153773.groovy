@@ -30,8 +30,8 @@ System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 //System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
-System.out.println("stateAZ(from childTestCase) = " + stateAZ)
-System.out.println("manualAddress(from childTestCase) = " + manualAddress)
+System.out.println("stateFL(from childTestCase) = " + stateFL)
+//System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 
 
 
@@ -41,7 +41,7 @@ System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 
 // copied from Cypress 4
 
-FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
+FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 
 	XSSFWorkbook workbook = new XSSFWorkbook(file)
 
@@ -68,7 +68,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
 
 //		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
-		sheet.getRow(rowCount).createCell(3).setCellValue((quoteNumber + ', AddressType = ') + manualAddress)
+//		sheet.getRow(rowCount).createCell(3).setCellValue((quoteNumber + ', AddressType = ') + manualAddress)
 		
 
 /*		if(shouldBind == false)
@@ -107,13 +107,13 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
-			sheet.getRow(rowCount).createCell(10).setCellValue(stateAZ)
+			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
 			file.close()
 		
 			try {
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 		
 				workbook.write(outFile)
 		
@@ -124,7 +124,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 		
 				WebUI.delay(20)
 				// try to write again, file is probably open...
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CannabisAutoQuote.xlsx'))
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 		
 				workbook.write(outFile)
 		

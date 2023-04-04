@@ -436,13 +436,13 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 // pass vars to write the file  9.16.21
-WebUI.callTestCase(findTestCase('FL DP/writeFile'),
-	[('policyType') : policyType,
+WebUI.callTestCase(findTestCase('FL DP/writeFile'),[
+//	('policyType') : policyType,
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
 	('todaysDate') : todaysDate,
-	('totalPremium') : totalPremium,
+//	('totalPremium') : totalPremium,
 //	('policyType') : policyType,
 	('shouldBind') : shouldBind,
 	('stateFL') : stateFL,
@@ -462,7 +462,7 @@ System.out.println('shouldBind = ' + shouldBind)
 
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
 
 
 if(shouldBind)
