@@ -86,9 +86,9 @@ WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_Effective 
 //WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
 
 if(stopQQ)
-	{
-	//	System.exit(0)
-	}
+{
+//	System.exit(0)
+}
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ARIZONACOLORADOOKLAHOMA'), '2', true)
