@@ -17,6 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import java.time.*
+import java.time.temporal.TemporalAdjusters as TemporalAdjusters
+import java.lang.Integer as Integer
+import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
+import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
+import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import org.openqa.selenium.JavascriptExecutor
 
 
 //  pass vars to another test case
@@ -32,12 +40,28 @@ String stateFL = nameAddressData['stateFL']
 String zipFL = nameAddressData['zipFL']
 
 String fullName = (randomFirstName + ' ') + randomLastName
-
+/*
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+*/
+// get todays date
+mydate = new Date()
 
+System.out.println('myDate = ' + mydate)
+
+todaysDate = mydate.format('MM/dd/yyyy')
+
+System.out.println('todaysDate = ' + todaysDate)
+
+todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
+
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+
+currentYear = Integer.parseInt(mydate.format('yyyy'))
+
+System.out.println('currentYear = ' + currentYear)
 
 WebUI.openBrowser('')
 
@@ -161,7 +185,8 @@ WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
 
 'BOB Transfer'
-WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
+//WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'), 'N', true)
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/FL DP/Page_/select_All areas West of the East bank of t_b58b59'), 1)
 
@@ -284,5 +309,173 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Y
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
+
+
+
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_PreviousAddress1'), '850 Queen St')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousCity'), 'Harrisburg')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PreviousState'), 'PA', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousZip'), '17113')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '04/30/2023')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), '2313564897')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Prequalification'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Coverage'))
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate'))
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_FloodZone'), 'A', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Flood Insurance Carrier_FloodCarrier_1'), 'free water')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Flood Policy_FloodPolicyNum_1'), '651561651651')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_General'))
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Wiring Year Completed_LastElectricalUpdate_1'), '2018')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Roof Year Completed_LastRoofUpdate_1'), '2019')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Plumbing Year completed_LastPlumbingUpdate_1'), '2020')
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Heating system year completed_LastHea_8ccefb'), '2021')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_History'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/body_Policy Prequalification Coverage Gener_128a19'))
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Interests'))
+
+if(addInterest)
+{	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_AddAdditionalIntresttButton'))
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_AdditionalIntrerestType'), 'M', true)
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_InterestCityxxxx1_1'), 'MIDDLETOWN')
+	
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_InterestState'), 'PA', true)
+		
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_InterestZipxxxx1_1'), '17057')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+}
+
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Statements'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEOccupiedComm_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQOtherInsurance_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEAnyPets1_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQConverted_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVESwimmingPool_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQDeclineInsurance_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVELeadPaint_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEAnyClaims_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQOwnedByTrust_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEBuiltonStilts_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Billing'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PaymentPlan'), '4PAY', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PremiumBilledTo'), 'Applicant1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_RenewalBilledTo'), 'Applicant1', true)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Display Quote'))
+
+
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitApplication'))
+
+
+
+
+//select payment method logic
+WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
+	[('howPayDeposit') : howPayDeposit,
+		('fullName') : fullName,
+	 ('randomLastName') : randomLastName
+		 ], FailureHandling.STOP_ON_FAILURE)
+
+// pass vars to write the file  9.16.21
+WebUI.callTestCase(findTestCase('FL DP/writeFile'),
+	[('policyType') : policyType,
+	('randomLastName') : randomLastName,
+	('randomFirstName') : randomFirstName,
+	('quoteNumber') : quoteNumber,
+	('todaysDate') : todaysDate,
+	('totalPremium') : totalPremium,
+//	('policyType') : policyType,
+	('shouldBind') : shouldBind,
+	('stateFL') : stateFL,
+	('isAgent') : isAgent,
+	('environment') : environment,
+	
+	('todaysTimeStamp') : todaysTimeStamp
+		], FailureHandling.STOP_ON_FAILURE)
+
+System.out.println('quoteNumber = ' + quoteNumber)
+
+System.out.println('fullName = ' + fullName)
+
+System.out.println('shouldBind = ' + shouldBind)
+
+
+
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
+
+
+if(shouldBind)
+{	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_MORE'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/div_PolicyID'))
+	
+	WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_PolicyNumber'), 0)
+}
+
+
 
 System.out.println('quoteNumber = ' + quoteNumber )
