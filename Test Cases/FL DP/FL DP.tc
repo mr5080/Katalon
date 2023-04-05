@@ -54,7 +54,7 @@
       <variableId>143fbec3-766d-4e44-986a-66fe0dbde3b1</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>7e79f726-c71d-4e96-a14f-3958c961d218</id>
       <masked>false</masked>
@@ -82,7 +82,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'manual'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual or xxxx</description>
       <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
       <masked>false</masked>

@@ -241,10 +241,10 @@ if(isAgent == false)
 	
 	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater')
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12345678910'), '1', true)	// PC
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableOther Roof ShapeHip Ro_0f14e0'), 'HIP', true)
-	
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableNoneHurricane-Windows _4e2d22'), 'BASIC', true)
 	
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
 	
 }
 
@@ -259,6 +259,8 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Mitigation Pre
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Yes SWRNo SWR'), 'Y', true)
 
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableOther Roof ShapeHip Ro_0f14e0'), 'HIP', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Yes SWRNo SWR'), 'N', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableFBC EquivalentNon-FBC _2d03d2'), 'FBC', true)
@@ -271,7 +273,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_N
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicablePart EnclosedEnclosed'), 'PARTIAL', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_2 Hurricane5 Hurricane10 Hurricane50_883f7d'), '5', true)
 
