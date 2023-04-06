@@ -9,7 +9,7 @@ if(manualAddress == 'manual')	// set to something I want
 		'randomLastName': 'MANUAL',
 			'addressFL': '1020 SUNSET POINT RD',
 			'cityFL': 'CLEARWATER',
-			'stateFL': 'AZ',
+			'stateFL': 'FL',
 			'zipFL': '33755'
 		]
 

@@ -67,11 +67,11 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 
 		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
 
-//		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
+		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
 //		sheet.getRow(rowCount).createCell(3).setCellValue((quoteNumber + ', AddressType = ') + manualAddress)
 		
 
-/*		if(shouldBind == false)
+		if(shouldBind == false)
 		{
 			sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
 		}
@@ -92,7 +92,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 				sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 			}
 		}
-		*/
+		
 			// removes all chars from string
 			//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
 			sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
@@ -103,7 +103,8 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 	
 	//		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
-//			sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+			//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
+			sheet.getRow(rowCount).createCell(8).setCellValue("FL Dwelling")
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
