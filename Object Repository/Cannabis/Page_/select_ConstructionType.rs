@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Frame Joisted MasonryMasonry Non-Com_36cb0e</name>
+   <name>select_ConstructionType</name>
    <tag></tag>
    <elementGuidId>d7a182e7-ea48-41af-aabe-eb779032c92d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ConstructionType_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='ConstructionType_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ConstructionType_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>e2e130c9-3f89-4224-8f4a-bf5b971bdd97</webElementGuid>
+      <webElementGuid>3f6c1877-addd-4c17-82c1-f3275f95b009</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>5f509462-c5e8-45aa-a5cc-4d94cfe1b847</webElementGuid>
+      <webElementGuid>e4e4bdcd-2ced-4348-a2f1-c5c85ea20318</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6cd592ca-af26-4e77-afd6-d6fed0e6b5c6</webElementGuid>
+      <webElementGuid>88fbe6e6-4046-4213-8edd-a67202f9945e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control </value>
-      <webElementGuid>4d3464d1-2acd-40b2-b0fe-af0d6c066d87</webElementGuid>
+      <webElementGuid>dfb607b6-dd97-4689-9bee-74f1dfa20340</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>5f1c784f-f93d-4d2f-a8e5-adf9a466d3a8</webElementGuid>
+      <webElementGuid>7f47a4d1-c619-4617-86c8-13d474316cd2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>314de53b-edc3-4793-a989-417222bb99cf</webElementGuid>
+      <webElementGuid>ab87f7ae-d35d-421e-998c-bee442e0266f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>  CheckRequired(false);</value>
-      <webElementGuid>fc2e18c7-f3d9-4a0e-88a1-08deb3e5f3e3</webElementGuid>
+      <webElementGuid>e0200d60-15b0-42ee-b951-5252a6ce5df6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -108,7 +108,7 @@
 								
 								
 				</value>
-      <webElementGuid>4fc3be62-bc5b-48a5-931f-f970cad45a16</webElementGuid>
+      <webElementGuid>85b0e733-880f-4878-a8c4-86e37b8cc26a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -116,7 +116,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ConstructionType_1&quot;)</value>
-      <webElementGuid>234aee6c-8ba8-42ce-b8e9-052d5d80569f</webElementGuid>
+      <webElementGuid>cccfd9f9-7aec-4e20-a419-675863f2eb88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -124,7 +124,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cannabis/Page_/iframe_System FAQ_MainIS28test</value>
-      <webElementGuid>954ca20d-1c7b-4730-9785-52eee226d251</webElementGuid>
+      <webElementGuid>242c3948-3fc5-49d0-bea7-73facadca544</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -132,7 +132,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='ConstructionType_1']</value>
-      <webElementGuid>df22f915-978a-4c67-8893-420e22a8b45a</webElementGuid>
+      <webElementGuid>c8b28e95-7559-40c2-b6a4-88150e44bbf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -140,7 +140,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ConstructionType_1']/select</value>
-      <webElementGuid>0e62f283-8f70-4c9f-a22b-2edc37fd82c7</webElementGuid>
+      <webElementGuid>93b6d533-29a3-4310-96a4-880cae1621ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -148,7 +148,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Construction Type'])[1]/following::select[1]</value>
-      <webElementGuid>ee125780-579c-495f-bd65-1dcdb89bc9e6</webElementGuid>
+      <webElementGuid>8d12ff66-4afd-4bdb-a335-009dcfc2145e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -156,7 +156,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Building Code Effectiveness Grade'])[1]/following::select[2]</value>
-      <webElementGuid>b685cbf1-0033-444b-afe3-1d6f87e30f3f</webElementGuid>
+      <webElementGuid>c46c4e4c-b3f9-444e-bb3f-1e33b0b01bda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -164,7 +164,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Year Built'])[1]/preceding::select[1]</value>
-      <webElementGuid>0163c82c-6b00-4a12-99ec-21ff6bb47051</webElementGuid>
+      <webElementGuid>1e93bc68-10e9-4ecd-b3b2-a9a076ff0f8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -172,7 +172,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Building Improvements (Enter Year)'])[1]/preceding::select[1]</value>
-      <webElementGuid>e096c53c-47c5-4925-a7bd-4405306e2ceb</webElementGuid>
+      <webElementGuid>4bf51d5f-d997-4cbf-aef5-009ee1ccb20e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -180,7 +180,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div/div[2]/select</value>
-      <webElementGuid>0049207b-61fd-4c40-aa5a-ec0470986d5a</webElementGuid>
+      <webElementGuid>e3474496-d2dc-4834-bc56-f26b2481a572</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -248,6 +248,6 @@
 								
 								
 				')]</value>
-      <webElementGuid>d6d80685-8390-4f96-bb93-488a2a4faad0</webElementGuid>
+      <webElementGuid>b412ca08-c0c8-4c34-942f-69fccb20d347</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

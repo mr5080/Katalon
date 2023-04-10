@@ -54,7 +54,7 @@
       <variableId>11e4d215-ef54-4817-b075-e402554a0049</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bc1ac551-8185-43cb-bc1f-70ee11de8c7d</id>
       <masked>false</masked>

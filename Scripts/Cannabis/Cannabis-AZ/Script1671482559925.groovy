@@ -184,7 +184,8 @@ if (isAgent == false) {
 		//	if(environment == "TEST")
 		//	{
 				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '9942300')
+				//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '9942300')
+				WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
 		//	}
 		//	else if(environment == "STAGE")
 		//	{
@@ -388,14 +389,14 @@ if(protectionClass.length() == 0)
 	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), '3', true)
   }
     
-  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'MASONRY', true)
-  String masonryType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), 'value')
+  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'MASONRY', true)
+  String ConstructionType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'value')
   //String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
-  System.out.println("masonryType = " + masonryType)
-  System.out.println("sprinkler.length() = " + masonryType.length())
-  if(masonryType.length() == 0)
+  System.out.println("ConstructionType = " + ConstructionType)
+  System.out.println("ConstructionType.length() = " + ConstructionType.length())
+  if(ConstructionType.length() == 0)
   {
-	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Frame Joisted MasonryMasonry Non-Com_36cb0e'), '3', true)
+	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), '3', true)
   }
   
 // get construction year
