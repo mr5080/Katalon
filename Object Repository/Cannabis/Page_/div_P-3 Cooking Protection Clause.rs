@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_P-3 Cooking Protection Clause_Wrapper-R_2f0804</name>
+   <name>div_P-3 Cooking Protection Clause</name>
    <tag></tag>
    <elementGuidId>1e942878-ce55-4f55-95f2-47fe225122e3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Wrapper-Right-ExclusionP3_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='Wrapper-Right-ExclusionP3_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Right-ExclusionP3_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

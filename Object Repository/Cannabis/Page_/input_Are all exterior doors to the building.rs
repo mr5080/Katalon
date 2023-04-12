@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Are all exterior doors to the buildin_cf60fc</name>
+   <name>input_Are all exterior doors to the building</name>
    <tag></tag>
    <elementGuidId>232e03d8-a75d-4d68-b8a9-97b2cc1aba48</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEHasReinforcedSteelYes</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEHasReinforcedSteelYes']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEHasReinforcedSteelYes</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

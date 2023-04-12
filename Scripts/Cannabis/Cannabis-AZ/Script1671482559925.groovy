@@ -456,17 +456,17 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Owner Tenant Lessor'), 'OWNER', true)
 
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Limit_BuildingLimit_1'), '400000')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Limit_BuildingLimit_1'), '300000')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Personal Property_BPPLimit_1'), '400001')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Personal Property_BPPLimit_1'), '300001')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Actual Loss Sustained25,00050,00075,_126677'), '175000', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Actual Loss Sustained25,00050,00075,_126677'), '200000', true)
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Projected Annual Gross Receipts (Loca_05b23c'), '650000')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Projected Annual Gross Receipts (Loca_05b23c'), '250000')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Prior Year Annual Gross Receipts (Loc_419881'), '550000')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Prior Year Annual Gross Receipts (Loc_419881'), '245000')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '3')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_NumberEmployees'), '4')
 
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Money  Securities Inside the Premise_37be17'), 'MONEYINSIDE', true)
@@ -513,7 +513,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/selec
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Terrorism'), 'Y', true)
 
-//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Additional Insureds  Waiver of Transf_66abe6'), '3') // question removed from page
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Additional Insureds Waiver of Transfer'), '3') // question removed from page
 
               
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_CBP 40 05_NOSAVEHiredAuto'))
@@ -578,7 +578,7 @@ if(isAgent == false)
 {
 	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/button_Internal'))
 
-	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/div_Scheduled ModificationIRPM 0 Management_9c37d3'))
+	WebUI.click(findTestObject('Object Repository/Cannabis/Page_/div_Scheduled ModificationIRPM'))
 	
 	WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Management_Management'), '1')
 	
@@ -641,7 +641,7 @@ WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVEIsR
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVESyntheticSales'))
 
-WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are all cannabis products the applica_e79dfe'))
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are all cannabis products'))
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_No_NOSAVEHasCOAs'))
 
@@ -681,7 +681,7 @@ WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_No_NOSAVEHasS
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_No_NOSAVEHasEmployeeRequirements'))
 
-WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are all exterior doors to the buildin_cf60fc'))
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are all exterior doors to the building'))
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_concat(Do all entry doors have a , , _49c4e8'))
 
@@ -691,7 +691,7 @@ WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_No_NOSAVEIsWi
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Is window fortification permanently a_740e72'))
 
-WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are daily bank deposits made_NOSAVEHa_6a17f5'))
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Are daily bank deposits made'))
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Does the applicant vary their time an_708721'))
 
@@ -711,7 +711,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Routing Num
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Re-enter Routing Number_ACHRoutingNum_faa2b1'), '031318745')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Account Number_ACHAccountNumber'), '456456')
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Account Number_ACH'), '456456')
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Re-enter Account Number_ACHAccountNum_eba26a'), '456456')
 */

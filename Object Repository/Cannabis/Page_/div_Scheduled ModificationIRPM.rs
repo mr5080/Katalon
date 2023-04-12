@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Scheduled ModificationIRPM 0 Management_9c37d3</name>
+   <name>div_Scheduled ModificationIRPM</name>
    <tag></tag>
    <elementGuidId>644be0e7-89f4-4c91-bffd-295aaf975ede</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//form[@id='mainForm']/div/div[3]/div/div[2]/div/div[2]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

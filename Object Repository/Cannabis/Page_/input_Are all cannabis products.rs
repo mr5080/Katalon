@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Are all cannabis products the applica_e79dfe</name>
+   <name>input_Are all cannabis products</name>
    <tag></tag>
    <elementGuidId>8e5a6cab-b5af-419a-9d05-0816e17c495d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEIsLicensedPurchaseYes</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEIsLicensedPurchaseYes']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEIsLicensedPurchaseYes</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
