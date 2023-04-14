@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>EZLinx</name>
+   <name>Cypress</name>
    <tag></tag>
    <UUID>d9ce165c-de93-4f5f-9619-204ac748796b</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\john.hughes\git\Katalon3\EZLinx.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\john.hughes\git\Katalon\EZLinx.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -25,5 +25,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>WEBUI</type>
 </Project>

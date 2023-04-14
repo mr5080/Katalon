@@ -339,7 +339,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Proceed to 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'))
-
+//WebUI.delay(6)
 'new paperless buttons'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDelivery'))
 

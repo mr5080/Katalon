@@ -200,16 +200,17 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHouse_1'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHouse_1'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHouse_1'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'OIL', true)
+// question missing as of 4.13.23
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'OIL', true)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'ELECTRIC', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Square Feet_SquareFootage_1'), '2546')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '4')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_InOut'), 'N', true)
@@ -218,23 +219,23 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/div_No'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVENearSinkhole_1'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_3-Tab ShingleArchitectural ShinglesC_1b7158'), '3TAB', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ExcellentAbove AverageAveragePoor'), 'ABOVEAVERAGE', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ExcellentAbove AverageAveragePoor'), 'ABOVEAVERAGE', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ClosedOpen'), 'CLOSED', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ClosedOpen'), 'CLOSED', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 'BASEMENT', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 'BASEMENT', true)
 
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'))
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
 
 if(isAgent == false)
 {
@@ -352,6 +353,36 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Flood Insuranc
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Flood Policy_FloodPolicyNum_1'), '651561651651')
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_General'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'ELECTRIC', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ExcellentAbove AverageAveragePoor'), 'ABOVEAVERAGE', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ClosedOpen'), 'CLOSED', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 'BASEMENT', true)
+
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
+
+
+// try to click subdivision NO, 4.14.23. should not be displaying always, but currently is 
+try {
+
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_SubDivision'))
+	
+}
+catch (def e) {
+	System.out.println('error for some reason  ' + e)
+}
+
+
+
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Wiring Year Completed_LastElectricalUpdate_1'), '2018')
 

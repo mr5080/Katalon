@@ -638,7 +638,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
-
+//WebUI.delay(5)
 'new paperless buttons'
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
 

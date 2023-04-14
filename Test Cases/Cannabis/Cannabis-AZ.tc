@@ -82,7 +82,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, lightspeed, or xxxxx</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>
