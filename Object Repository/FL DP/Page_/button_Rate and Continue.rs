@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'][normalize-space()='Rate and Continue >'])[1]</value>
+         <value>(//button[@type='button'][normalize-space()='Rate and Continue >'])[1]
+</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b2cebf45-5124-4b93-bb90-0119422fff8a</webElementGuid>
+      <webElementGuid>f6f47dc6-15a5-4b84-919f-0f07581ecf8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>96f42a28-ae2f-40c2-8ee0-362fab7c5aeb</webElementGuid>
+      <webElementGuid>153d052b-d159-4365-8002-73555ef274b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bccb7751-c16c-4925-bc81-7cff08a4f2d4</webElementGuid>
+      <webElementGuid>fd581dee-774e-497a-b604-922d2be4b203</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(101) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>6fcc1d93-b3bd-47c1-92a8-9ba0e73eb262</webElementGuid>
+      <webElementGuid>d9dcf2c9-bf00-4bca-a3ed-5a4c092f4369</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +55,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Rate and Continue ></value>
-      <webElementGuid>a14882eb-3adc-4d39-a2d0-7bb40bf2c22e</webElementGuid>
+      <webElementGuid>103b19cd-af3b-4fc6-8d33-0dd33ced983b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent TopMenuOneArea&quot;]/div[@class=&quot;ISiA-BorderBox ISiA-FillHeight&quot;]/div[@class=&quot;row justify-content-md-center flex-nowrap&quot;]/div[@class=&quot;col-md-2 m-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>351b36f7-e184-4505-8f8d-901b9243560f</webElementGuid>
+      <webElementGuid>57637981-3b9c-410a-810e-a4983c55e507</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +71,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>a9132ac5-9cf8-44cb-b09c-105698e9f5a3</webElementGuid>
+      <webElementGuid>a47f40e8-7736-4d1c-bdd4-6a6cdfade274</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[8]</value>
-      <webElementGuid>66ac67bc-a9bf-4ca1-8d7f-23f52b8fba72</webElementGuid>
+      <webElementGuid>aacde375-f58c-4083-8c9b-8fee51b1fe9c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[3]/div/div[3]/div[3]/button</value>
-      <webElementGuid>a8991c53-9cef-4805-8ffe-4f0fb233bc07</webElementGuid>
+      <webElementGuid>c666ce16-43ba-439e-91cc-e32d947c17b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +95,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='DP 04 72'])[4]/following::button[1]</value>
-      <webElementGuid>5bfd63a8-e749-4d87-a299-f7ecc9726d3e</webElementGuid>
+      <webElementGuid>7809414d-5818-413b-a131-b7560b2bdb5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
-      <webElementGuid>d8d03477-caa6-4a51-8d24-2e855cdca5cd</webElementGuid>
+      <webElementGuid>16f7a47b-db7d-4951-99e1-4215a93a2cb2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[2]/preceding::button[2]</value>
-      <webElementGuid>1ee1b7b3-a7f9-410e-ad74-819c96d0c9b4</webElementGuid>
+      <webElementGuid>6bce772b-d065-402a-9426-8a5f1c44bc41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +119,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[3]/button</value>
-      <webElementGuid>361ca702-5404-487a-b7cb-5c0a53258b15</webElementGuid>
+      <webElementGuid>3b37dd62-bb4f-419a-a178-eae2ab43be0b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,13 +127,20 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Rate and Continue >' or . = 'Rate and Continue >')]</value>
-      <webElementGuid>9e76b83a-1bb1-4e7b-922f-adb6487ee018</webElementGuid>
+      <webElementGuid>3602f218-ca6c-4e01-9444-d4269e6684d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//input[@value='Rate and Continue >']</value>
-      <webElementGuid>88a97555-55a0-41d4-b75c-878e9682bf57</webElementGuid>
+      <webElementGuid>0d3ce61f-da60-455e-bf9d-a3a3b3c6d512</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>(//button[@type='button'][normalize-space()='Rate and Continue >'])[1]</value>
+      <webElementGuid>191eae98-9cd1-4027-8ec5-2fcdedcaaddd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

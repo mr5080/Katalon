@@ -282,7 +282,7 @@ if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page
 
 'Quick Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Quick Quote'))
-
+//WebUI.delay(6)
 if (WebUI.waitForElementPresent(findTestObject('Cypress 4/Page_/div_Quote Number'), 40)) // works!
 {
     quoteNumber = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Quote Number'), 'innerHTML')
@@ -517,7 +517,7 @@ else
 }
 
 
-PurchasePrice_1 = 150250
+//PurchasePrice_1 = 150250
 
 if (policyType == 'HO6') {
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)

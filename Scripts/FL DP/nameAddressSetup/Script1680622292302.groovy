@@ -7,10 +7,10 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'MANNI',
 		'randomLastName': 'MANUAL',
-			'addressFL': '2880 SE 18TH AVE',
-			'cityFL': 'GAINESVILLE',
+			'addressFL': '781 N LINCOLN CT',
+			'cityFL': 'JACKSONVILLE',
 			'stateFL': 'FL',
-			'zipFL': '32641'
+			'zipFL': '32209'
 		]
 
 	// actually a lightspeed address for testing the buttons Application/Lightspeed

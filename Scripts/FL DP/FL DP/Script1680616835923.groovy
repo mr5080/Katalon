@@ -88,13 +88,13 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_TEST DATA cypresstest.c
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'), '04/09/2023')
 WebUI.clearText(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
-WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'), Keys.chord('04/09/2023', Keys.TAB))
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_DwellingHomeownersHomeowners - Legac_cd4163'), 'DP3', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_First Name_ApplicantFirst'), randomFirstName)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Middle Name_ApplicantMiddle'), 'ann')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Middle Name_ApplicantMiddle'), 'EMILEEE')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Last Name_ApplicantLast'), randomLastName)
 
@@ -186,7 +186,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_P
 
 'BOB Transfer'
 //WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'), 'N', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'), 'N', true)
 
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/FL DP/Page_/select_All areas West of the East bank of t_b58b59'), 1)
 
@@ -308,17 +308,22 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEOpenWa
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo'), 'N', true)
 
 
+if(stopQQ)
+{
+	System.exit(0)
+}
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))	// click Rate and Continue on QQ
 
-//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))
 
 
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))	// on QQ Rating page
 
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
 
@@ -444,6 +449,8 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQOwne
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEBuiltonStilts_1'))
 
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEShortSale_1'))
+
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PaymentPlan'), '4PAY', true)
@@ -454,15 +461,35 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_R
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Display Quote'))
 
+// get Total Premium and Fees
+//div[@id='Wrapper-Right-TotalPremiumAndFees']
+totalPremium = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+
+System.out.println('totalPremium = ' + totalPremium)
 
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitApplication'))
 
-
+if (shouldBind == true)
+	{
+		//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Bind Application'))
+	
+		//String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
+	
+		//System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
+	}
+	else
+	{
+		WebUI.comment('shouldBind = ' + shouldBind)
+		// forces last name to be saved for Recurring payments
+		WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_GoBackOnePage'))
+		WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_GoForwardOnePage'))				
+	}
 
 
 //select payment method logic
-WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
+//WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
+WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
 		('fullName') : fullName,
 	 ('randomLastName') : randomLastName
@@ -475,7 +502,7 @@ WebUI.callTestCase(findTestCase('FL DP/writeFile'),[
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
 	('todaysDate') : todaysDate,
-//	('totalPremium') : totalPremium,
+	('totalPremium') : totalPremium,
 //	('policyType') : policyType,
 	('shouldBind') : shouldBind,
 	('stateFL') : stateFL,
