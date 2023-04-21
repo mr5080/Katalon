@@ -159,7 +159,7 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>

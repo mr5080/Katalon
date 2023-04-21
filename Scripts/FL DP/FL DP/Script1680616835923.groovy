@@ -115,7 +115,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Quick Q
 'click Full Quote button'
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Full Quote'))
 
-WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'))
+//WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'))
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'), 'innerHTML')
 System.out.println('quoteNumber = ' + quoteNumber )
 
@@ -179,7 +179,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_A
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '02/02/1980')
-WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('02/02/1980', Keys.TAB))
+WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('01/31/1969', Keys.TAB))
 
 'Prior Insurance'
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
@@ -243,14 +243,9 @@ if(isAgent == false)
 	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater')
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12345678910'), '1', true)	// PC
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableNoneHurricane-Windows _4e2d22'), 'BASIC', true)
-	
-	
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
 	
 }
-
-
-
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_ad3f5d'), '2', true)
 
