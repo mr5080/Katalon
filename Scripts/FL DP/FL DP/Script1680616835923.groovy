@@ -210,7 +210,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVERowHou
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'ELECTRIC', true)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Square Feet_SquareFootage_1'), '2546')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Square Feet_SquareFootage_1'), '1946')
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
@@ -305,6 +305,56 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEOpenWa
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo'), 'N', true)
 
+
+// add optional coverages
+
+
+
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/Page_/div_Optional Coverage List'))
+if(optionalCoverages)
+{	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVROOF', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'MOLDFUNGI', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'LOSSLIAB', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ORDINANCELAW', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'INCIDENTALOCC', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNoPermittedIncidentalOccupancy'), 'Y', true)
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Permitted Incidental Occupancy - Limit'), '25456')
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Description of Other Structures'), 'tall building')
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Business Description_IncidentalOccupancy'), 'selling stuff')
+		//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo_1PermittedIncidentalOccupancy'), 'N', true)
+		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo_1PermittedIncidentalOccupancy'), 'Y', true)
+		
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'PPRC', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'REFRIGPROP', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'SCREENENCL', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'THEFT', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'WATERDMG', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ANIMAL', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/checkbox_Sinkhole'))
+		
+//	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'LOSSLIAB', true)
+//	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+}
+else
+{	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVLS', true)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+}	
 
 if(stopQQ)
 {
