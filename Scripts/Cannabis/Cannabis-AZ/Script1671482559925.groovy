@@ -234,7 +234,9 @@ System.out.println('quoteNumber = ' + quoteNumber )
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Phone Number_ApplicantPhonezzzz1'), '717-762-5080')
 
-WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+//WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 'new paperless button'
 //WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_PaperlessDelivery'))
@@ -380,24 +382,40 @@ if(protectionClass.length() == 0)
 	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'PARTIAL', true)
   }
   
-  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'COMPLETE', true)
-  String BCEG = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'value')
-  System.out.println("BCEG = " + BCEG)
-  System.out.println("BCEG.length() = " + BCEG.length())
-  if(BCEG.length() == 0)
+  
+  //String BCEGtest = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'value') 
+  try 
   {
-	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), '3', true)
+	  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'COMPLETE', true)
+	  String BCEG = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), 'value')
+	  System.out.println("BCEG = " + BCEG)
+	  System.out.println("BCEG.length() = " + BCEG.length())
+	  if(BCEG.length() == 0)
+	  {
+		  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_BCEG'), '3', true)
+	  }
   }
+  catch(e)
+  {
+	  System.out.println("problem getting BCEG from dropdown - is it disabled?")
+  }	
     
-  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'MASONRY', true)
-  String ConstructionType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'value')
-  //String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
-  System.out.println("ConstructionType = " + ConstructionType)
-  System.out.println("ConstructionType.length() = " + ConstructionType.length())
-  if(ConstructionType.length() == 0)
-  {
-	  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), '3', true)
+  try {
+	  //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'MASONRY', true)
+	  String ConstructionType = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), 'value')
+	  //String sprinkler = WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/select_Sprinkler'), 'value')
+	  System.out.println("ConstructionType = " + ConstructionType)
+	  System.out.println("ConstructionType.length() = " + ConstructionType.length())
+	  if(ConstructionType.length() == 0)
+	  {
+		  WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ConstructionType'), '3', true)
+	  }
   }
+  catch(e)
+  {
+	  System.out.println("problem getting ConstructionType from dropdown - is it disabled?")
+  }
+  
   
 // get construction year
 String constructionYear = Integer.valueOf(WebUI.getAttribute(findTestObject('Object Repository/Cannabis/Page_/input_Year Built_ConstructionYear_1'), 'value'))
@@ -445,7 +463,14 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Plumbing Up
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Heating Updates_LastHeatingUpdate_1'), '2020')
 */
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_1234'), '1', true)
+
+try {
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_1234'), '1', true)
+}
+catch(e)
+{
+	System.out.println("problem getting Number of Stories from dropdown - is it disabled?")
+}
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Total Occupied Square Footage_SqFoota_678e18'), '4500')
 

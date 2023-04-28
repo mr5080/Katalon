@@ -75,7 +75,7 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST, STAGE</description>
       <id>ab6d4271-308e-4c22-8689-d2b299b07364</id>
       <masked>false</masked>

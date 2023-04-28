@@ -5,8 +5,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
+	// returns split Protection Class
 	def nameAddressData = ['randomFirstName': 'MANNI',
-		'randomLastName': 'MANUAL',
+		'randomLastName': 'SPLITTY',
 			'addressFL': '781 N LINCOLN CT',
 			'cityFL': 'JACKSONVILLE',
 			'stateFL': 'FL',

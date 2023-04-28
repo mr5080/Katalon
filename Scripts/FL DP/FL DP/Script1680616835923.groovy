@@ -176,7 +176,10 @@ WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+
+
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '02/02/1980')
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('01/31/1969', Keys.TAB))
@@ -318,7 +321,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Appl
 
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))
 
-//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
 
@@ -465,6 +468,16 @@ System.out.println('totalPremium = ' + totalPremium)
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitApplication'))
 
+
+//select payment method logic
+//WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
+WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'),
+	[('howPayDeposit') : howPayDeposit,
+		('fullName') : fullName,
+	 ('randomLastName') : randomLastName
+		 ], FailureHandling.STOP_ON_FAILURE)
+
+
 if (shouldBind == true)
 	{
 		//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Bind Application'))
@@ -481,14 +494,6 @@ if (shouldBind == true)
 		WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_GoForwardOnePage'))				
 	}
 
-
-//select payment method logic
-//WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
-WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'),
-	[('howPayDeposit') : howPayDeposit,
-		('fullName') : fullName,
-	 ('randomLastName') : randomLastName
-		 ], FailureHandling.STOP_ON_FAILURE)
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('FL DP/writeFile'),[

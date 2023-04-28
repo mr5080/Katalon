@@ -5,12 +5,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'MANNI',
-		'randomLastName': 'MANUAL',
-			'addressAZ': '9949 E APACHE TRAIL',
-			'cityAZ': 'MESA',
+	def nameAddressData = ['randomFirstName': 'SPLITTY',
+		'randomLastName': 'MC SPLITSTER',
+			'addressAZ': '5390 W INA RD',
+			'cityAZ': 'TUCSON',
 			'stateAZ': 'AZ',
-			'zipAZ': '85207'
+			'zipAZ': '85743'
 		]
 
 	// actually a lightspeed address for testing the buttons Application/Lightspeed

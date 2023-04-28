@@ -164,7 +164,10 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Numb
 
 
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
+//WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
+int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1980')
 
