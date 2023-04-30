@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>1efcea3c-4a5e-4b52-abc3-5b4ad5fef3d3</webElementGuid>
+      <webElementGuid>67bbe700-f79a-4f69-9d1e-7e345d5b1f1f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn buttonWidget ISiA-SmallButton ISiA-PrimaryButton</value>
-      <webElementGuid>57ca72bd-43f8-4917-939a-005703a6de53</webElementGuid>
+      <webElementGuid>c91cba43-d264-4239-845f-65305916ebd2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>83392c8f-d0f0-4a63-acd7-66162ea205df</webElementGuid>
+      <webElementGuid>4bdb5eb3-41e6-4a69-9acf-03d2364cf10e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Add Coverage ></value>
-      <webElementGuid>d1df0659-ea4f-461b-9873-2a24ca3d6e49</webElementGuid>
+      <webElementGuid>e6d1b376-6629-48e8-b3b5-27e761a31826</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>if ((typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set'))) { processDynamicAddAccordion(this,'OptionalCoveragesList_1','OptionalCoverages','_1','999','2','1','1');  };</value>
-      <webElementGuid>66c53630-3891-4fe4-8b95-e41e7019ce0a</webElementGuid>
+      <webElementGuid>ea50c5e9-94f7-44f0-baca-3bd38e7e83ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEButtonOptionalCoverageCode_1</value>
-      <webElementGuid>32516432-74ed-4c44-bde5-a9693db4f59c</webElementGuid>
+      <webElementGuid>1b6157bf-ad03-41e3-abfc-7c1815630380</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEButtonOptionalCoverageCode_1</value>
-      <webElementGuid>9246010f-d7df-4f5b-b32c-693a956a4fe9</webElementGuid>
+      <webElementGuid>71905d57-6e6d-4b1d-acd2-287211ee0e6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Add Coverage ></value>
-      <webElementGuid>650d47a3-ef3a-4448-a18c-4e0c78cce06a</webElementGuid>
+      <webElementGuid>2e1d1b74-0fdb-4346-84a3-a7bfeceb0572</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEButtonOptionalCoverageCode_1&quot;)</value>
-      <webElementGuid>e66ce7cb-bae5-4e56-9c8b-fea46fb28ca8</webElementGuid>
+      <webElementGuid>0dfcd462-a35b-4b00-9f34-07ccbdd16f5c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>7a188b14-e517-4d24-b512-f9e7e293eb5a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +102,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='NOSAVEButtonOptionalCoverageCode_1']</value>
-      <webElementGuid>ad25912e-6953-494c-ad04-3fca157e6556</webElementGuid>
+      <webElementGuid>77256403-5837-4fb1-a720-acfeddf84885</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +110,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-OptionalCoverageCode_1']/div/button</value>
-      <webElementGuid>d45845be-c4d8-4f41-927e-b9eab1b7c008</webElementGuid>
+      <webElementGuid>9c0196f9-351b-4577-b6cf-2018810bcda4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Optional Coverage List (Select All that apply)'])[1]/following::button[1]</value>
-      <webElementGuid>b1ac46e5-4c13-4f9f-b0e4-04cfd6b8ae34</webElementGuid>
+      <webElementGuid>92391c84-29aa-419d-875f-56ebfa9af245</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Optional Coverage'])[1]/following::button[1]</value>
-      <webElementGuid>14089ef5-bfcd-4e04-85e0-b79f81c3ce78</webElementGuid>
+      <webElementGuid>a069d524-4c75-4183-925c-bff0b61699d4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Current Optional Coverages:'])[1]/preceding::button[1]</value>
-      <webElementGuid>d6f6e9f8-0bb8-48d5-a48c-9057bf424505</webElementGuid>
+      <webElementGuid>0af476a9-8634-4587-a768-97b809fd5537</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Add Coverage >']/parent::*</value>
-      <webElementGuid>e71a6a44-750c-4b7c-9273-6dcbbe962a10</webElementGuid>
+      <webElementGuid>488fd9e9-eac1-409d-9f99-6885e6c63bef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +150,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div[4]/div/div/div/button</value>
-      <webElementGuid>34e3c181-d495-41e7-8daf-baada170243d</webElementGuid>
+      <webElementGuid>ea7b7602-adc6-4124-9765-2632d45743fc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,6 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @name = 'NOSAVEButtonOptionalCoverageCode_1' and @id = 'NOSAVEButtonOptionalCoverageCode_1' and (text() = 'Add Coverage >' or . = 'Add Coverage >')]</value>
-      <webElementGuid>44161b94-32bf-415c-aa8f-cc00848195df</webElementGuid>
+      <webElementGuid>bcaacfae-98b8-43cc-94e7-bc7142da4879</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

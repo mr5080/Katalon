@@ -105,4 +105,23 @@ import org.openqa.selenium.Keys as Keys
 			 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Loan Number_LoanNumberxxxx3_1'), '5008050080')
 		 }
 		 
+		 if (interestCounter == 4)
+			 {
+				 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+			 
+				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/select_AdditionalIntrerestType4'), 'S', true)
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Interest Name_InterestNamexxxx4_1'), 'Colleen Snooker')
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Address_InterestAddress1xxxx4_1'), '850 QueeN St')
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_City_InterestCityxxxx4_1'), 'HarrISBurg')
+							  
+				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/select_InterestState4'), 'PA', true)
+					 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_InterestZipxxxx4_1'), '17113')
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Loan Number_LoanNumberxxxx4_1'), '5008050080')
+			 }
+		 
  }
