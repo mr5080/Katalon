@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_City_InterestCityxxxx1_1</name>
+   <name>input_City_InterestCityxxxx3_1</name>
    <tag></tag>
-   <elementGuidId>0aac8c80-9667-44ef-b3b7-691bb8022d67</elementGuidId>
+   <elementGuidId>a681ba20-2ce5-4c9a-800f-ca94728daf0a</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='InterestCityxxxx1_1']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#InterestCityxxxx1_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='InterestCityxxxx3_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>53a38279-c07d-4457-807e-13637ace5678</webElementGuid>
+      <webElementGuid>230a7c39-448d-4c2f-b7c9-967ecb744383</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>f080c3ed-5627-4d21-85c7-79317a4d1829</webElementGuid>
+      <webElementGuid>eb539588-6848-43df-8d96-9a1bf1a8079f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>fae66502-b4ab-4aac-be31-2c370d3162ae</webElementGuid>
+      <webElementGuid>f870fa99-fff1-408c-93d1-bd48564814b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>City*</value>
-      <webElementGuid>c5dc8b10-b560-43cc-8c70-4ff5c5120537</webElementGuid>
+      <webElementGuid>9c9e79f8-c5e2-4245-b4bf-d8b1264c99f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>35</value>
-      <webElementGuid>1d630f39-7f27-4870-aa32-2ba1369508cb</webElementGuid>
+      <webElementGuid>f0fb373d-a5c3-4062-9c2f-81c8d2fa5aaa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>InterestCityxxxx1_1</value>
-      <webElementGuid>7652bc14-956d-4e30-aa31-6ade8dad83f3</webElementGuid>
+      <webElementGuid>60537a17-d000-49e9-8eee-6df1767f0602</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>InterestCityxxxx1_1</value>
-      <webElementGuid>7045da03-0bde-49b0-b812-9708d31a9e81</webElementGuid>
+      <webElementGuid>bbb0617b-8fc7-4d40-8093-99c1e98a1a0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>addressRemoveInvalid(this);USPSRealtimeAddressValidation('a82741540573558027i15151613s3902970422694160i54330','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','City',0,0);</value>
-      <webElementGuid>d55b03ac-afc0-4561-a081-b9628a4439e8</webElementGuid>
+      <webElementGuid>81f0a8cb-c2ec-475e-bbc3-cd88d02d22bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
-      <webElementGuid>7bfee598-aaae-415e-8621-bc2f79f3fb18</webElementGuid>
+      <webElementGuid>03b8588e-8fb6-4233-8f39-25d6de851e30</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>this.select();</value>
-      <webElementGuid>80c87eaf-454f-4304-8cb4-6bc6b4019eeb</webElementGuid>
+      <webElementGuid>7d79b04b-2613-412d-b3dd-f8ef6adc9f71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;InterestCityxxxx1_1&quot;)</value>
-      <webElementGuid>0c7c4161-f10e-4bd1-a836-0b1694f260fe</webElementGuid>
+      <webElementGuid>bcdd57f4-e351-48e7-af39-e43e05287f21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>b74d10d7-2add-405d-b535-9a441a52acd4</webElementGuid>
+      <webElementGuid>99b86916-961b-40f4-bdba-c504ad0adc11</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestCityxxxx1_1']</value>
-      <webElementGuid>88a06eb8-b9a3-4858-9837-09d8deda09cb</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestCityxxxx1_1']/div/input</value>
-      <webElementGuid>b1a4eb99-5d40-404a-8bf3-7d85d7f8cca7</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[5]/div[2]/div/input</value>
-      <webElementGuid>0bb807e1-9afe-4c74-ab67-1c97cb1dd0c6</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'City*' and @name = 'InterestCityxxxx1_1' and @id = 'InterestCityxxxx1_1']</value>
-      <webElementGuid>9c4a5d6c-d5cb-472b-8723-77801fdcb77e</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

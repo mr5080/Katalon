@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_InterestZipxxxx1_1</name>
+   <name>input_InterestZipxxxx2_1</name>
    <tag></tag>
-   <elementGuidId>1c1de6cc-1db7-44c3-b8a4-577a00bd4701</elementGuidId>
+   <elementGuidId>01bea6a8-4c2d-402b-b474-cd992d21ce55</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='InterestZipxxxx1_1']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#InterestZipxxxx1_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='InterestZipxxxx2_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2722e27d-6247-4a7a-b876-2c189500bc11</webElementGuid>
+      <webElementGuid>da8cf14a-12a7-4587-8298-8c35bb22220f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>5a1307d2-380b-493f-9821-5643ad10d42b</webElementGuid>
+      <webElementGuid>9db047bf-3158-46a6-9154-7e8f11beb826</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberAddressWidget</value>
-      <webElementGuid>e978a20c-1ba7-4ac0-ab81-0646bc7519a8</webElementGuid>
+      <webElementGuid>a7278d61-5891-4c47-8cde-631be634382b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Zip Code*</value>
-      <webElementGuid>f31d2ae8-84f2-470f-8bb0-aa07843d9c93</webElementGuid>
+      <webElementGuid>1fae3697-5823-4a99-b99d-77d7d104679b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>5</value>
-      <webElementGuid>831233cb-043a-4809-bc5d-3eec1df23dd0</webElementGuid>
+      <webElementGuid>bfa7b4ef-8ed5-4bec-8e63-635ac6708625</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>InterestZipxxxx1_1</value>
-      <webElementGuid>287386c1-4c5f-48ae-8760-18346696791b</webElementGuid>
+      <webElementGuid>fa8f8aab-3f41-4e38-9d93-8a119d64dc84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>InterestZipxxxx1_1</value>
-      <webElementGuid>d122776c-f90b-4df7-8ed0-ce245e0b9442</webElementGuid>
+      <webElementGuid>9c592573-98b0-4b88-93c6-c720f826d0f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>addressRemoveInvalid(this);ISiA_QuickZipCheck(this);USPSRealtimeAddressValidation('a82741540573558027i15151613s3902970422694160i54330','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','Zip',0,0);</value>
-      <webElementGuid>65ae179f-7e8d-47aa-8771-d4c05aa46707</webElementGuid>
+      <webElementGuid>2098a612-bcfa-417e-befa-99d643234225</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
-      <webElementGuid>5d4f1a9f-da85-43e7-98f0-4290cfa6bef0</webElementGuid>
+      <webElementGuid>d04833a7-c9ac-4024-8307-73bf36804d9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>PositiveInteger</value>
-      <webElementGuid>aec98936-1d04-4f5e-bcd4-9d44465267fc</webElementGuid>
+      <webElementGuid>a124d001-d383-47ce-94c6-607ffba6752f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;InterestZipxxxx1_1&quot;)</value>
-      <webElementGuid>4ec1fbb8-bb83-4b78-88f7-c7702b18dcd4</webElementGuid>
+      <webElementGuid>f8389e86-7e48-45ea-b661-49041944acf0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>b8089366-bd1d-4e3d-a1a2-53a6fbee5535</webElementGuid>
+      <webElementGuid>9d43b16d-fb3d-4376-81a8-c353e1bfff5d</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestZipxxxx1_1']</value>
-      <webElementGuid>3ff837fb-e088-4598-9f6f-d57ecbfbde21</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestZipxxxx1_1']/div/input</value>
-      <webElementGuid>d465b632-5f29-4067-99e7-20f3691ecbcd</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[4]/div/input</value>
-      <webElementGuid>8a28ae4e-a518-4cf2-8bd1-22289efbc48c</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Zip Code*' and @name = 'InterestZipxxxx1_1' and @id = 'InterestZipxxxx1_1']</value>
-      <webElementGuid>dc340419-74c1-410f-956a-c2bf3bafc32b</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

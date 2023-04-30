@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Address_InterestAddress1xxxx1_1</name>
+   <name>input_Address_InterestAddress1xxxx3_1</name>
    <tag></tag>
-   <elementGuidId>3fca3ad7-0e56-4bf8-907f-4c98ddc820fd</elementGuidId>
+   <elementGuidId>35d26a59-48a2-4076-a485-b3c4c7d2ba44</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='InterestAddress1xxxx1_1']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#InterestAddress1xxxx1_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='InterestAddress1xxxx3_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>37ef1961-f6b1-41a4-b2d9-188eea93fdbf</webElementGuid>
+      <webElementGuid>cc089805-f85a-4be5-97cd-998442248b43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>abe804a6-866e-4bc5-9db3-6280e0b52eb6</webElementGuid>
+      <webElementGuid>d3995335-2154-4fef-b985-7b1eb173b07f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>a64c64c1-9983-4862-9e5f-b27b2bb7b611</webElementGuid>
+      <webElementGuid>8193fc69-6e7e-4d29-95cb-68672c80e98f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Address1*</value>
-      <webElementGuid>6e4aac46-2dda-44d2-bd01-e00bfe5cb6cf</webElementGuid>
+      <webElementGuid>8dfdcca3-a7e6-4413-a712-939c3b67ab7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>50</value>
-      <webElementGuid>3054aaba-ddf9-473f-9477-10f3e506cfef</webElementGuid>
+      <webElementGuid>e7b6dc17-99dd-4d10-b22e-7d46179ad9c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>InterestAddress1xxxx1_1</value>
-      <webElementGuid>ecad7a33-4ebb-41df-b174-199826786a0d</webElementGuid>
+      <webElementGuid>a1903192-96e6-41f2-91e9-6c9e84c7240d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>id</name>
       <type>Main</type>
       <value>InterestAddress1xxxx1_1</value>
-      <webElementGuid>358c312c-2cfe-49a6-9a89-070ac86a7e09</webElementGuid>
+      <webElementGuid>70ca0b8c-1bee-4883-ad92-16b61bce762b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>addressRemoveInvalid(this);USPSRealtimeAddressValidation('a82741540573558027i15151613s3902970422694160i54330','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','Address1',0,0);</value>
-      <webElementGuid>03f93d26-2729-428b-b7b8-58508e17fe61</webElementGuid>
+      <webElementGuid>ee9bafc8-3176-4f87-a55e-72186523341b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
-      <webElementGuid>f6d9d0f9-274a-4273-82b7-eae423f691c9</webElementGuid>
+      <webElementGuid>3148c4ed-a596-4242-a844-8a521a8a9f8f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onfocus</name>
       <type>Main</type>
       <value>this.select();</value>
-      <webElementGuid>68f8ade5-c1b8-4bec-9b7e-edd7079d33af</webElementGuid>
+      <webElementGuid>f9d5dde1-3be8-4d1a-9a37-32e97bc5c4b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;InterestAddress1xxxx1_1&quot;)</value>
-      <webElementGuid>2ff9b44a-e9fe-46b1-938d-6dd2ab364160</webElementGuid>
+      <webElementGuid>972d33bf-2833-46f8-801c-999d2a19a1c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>afc70b68-95b4-43d6-8859-d75cb32cc7a0</webElementGuid>
+      <webElementGuid>a36ef9ec-0a23-4ca0-b702-726c35f20c81</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='InterestAddress1xxxx1_1']</value>
-      <webElementGuid>0dcbf665-39f7-424c-9516-7917f8ba1040</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestAddress1xxxx1_1']/div/input[3]</value>
-      <webElementGuid>10d70b4c-9e3e-4054-a3d0-0d343175a01b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[3]/div[2]/div/input[3]</value>
-      <webElementGuid>985a9303-e6ef-43d8-91e1-21e91f39888f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Address1*' and @name = 'InterestAddress1xxxx1_1' and @id = 'InterestAddress1xxxx1_1']</value>
-      <webElementGuid>b80daca4-0542-416e-877c-fdf3aa59d30c</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>
