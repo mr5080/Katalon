@@ -136,14 +136,6 @@
       <value>id(&quot;IncidentalOccupancyBusDesc_1&quot;)</value>
       <webElementGuid>0ea2f3d6-13a2-4702-ab6c-f07544b1f68b</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>b0a0658c-b84b-48c0-b279-e6d07993b11c</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

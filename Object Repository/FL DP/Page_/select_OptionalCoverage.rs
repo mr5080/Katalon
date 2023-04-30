@@ -134,14 +134,6 @@
       <value>id(&quot;OptionalCoveragesList_1&quot;)</value>
       <webElementGuid>7e8d2d18-307e-46eb-8c66-29bf432c6539</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>f293ab5a-cc84-44fa-9b93-28e9cbfe87cf</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

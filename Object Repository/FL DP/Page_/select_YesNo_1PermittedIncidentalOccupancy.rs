@@ -83,14 +83,6 @@
       <value>id(&quot;IncidentalLiabilityLimit_1&quot;)</value>
       <webElementGuid>cc1bcd77-0351-4173-85f9-c023cd0eec09</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>67e71338-2163-4ac0-84b7-04cc08c5cbd6</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

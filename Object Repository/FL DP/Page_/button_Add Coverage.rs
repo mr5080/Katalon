@@ -88,14 +88,6 @@
       <value>id(&quot;NOSAVEButtonOptionalCoverageCode_1&quot;)</value>
       <webElementGuid>e66ce7cb-bae5-4e56-9c8b-fea46fb28ca8</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>c1086a0e-bae9-41ce-a6cb-2aa3e828738a</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

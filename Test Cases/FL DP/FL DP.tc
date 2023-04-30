@@ -59,6 +59,12 @@
       <value></value>
       <variableId>cb7994ad-a4f9-4e16-afcf-649cedc936b7</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
@@ -116,10 +122,17 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
       <masked>false</masked>
       <name>optionalCoverages</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
+      <masked>false</masked>
+      <name>numInterests</name>
    </variable>
 </TestCaseEntity>

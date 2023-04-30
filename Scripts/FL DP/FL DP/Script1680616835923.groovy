@@ -101,13 +101,23 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Last Name_Appl
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Suffix_ApplicantSuffix'), 'jr')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddress1'), addressFL)
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddressExt'), 'SUITE 007')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_ApplicantCity'), cityFL)
 
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(zipFL, Keys.TAB))
+//WebUI.switchToDefaultContent()
+try {
+	WebUI.acceptAlert()
+
+	System.out.println('Accept address validation - needed because of adding the SUITE 007')
+}
+catch (Exception e) {
+	System.out.println('No address validation alert')
+}
 
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 20)
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 25)
 
 'click Quick Quote button'
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Quick Quote'))
@@ -309,8 +319,6 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Y
 // add optional coverages
 
 
-
-//WebUI.click(findTestObject('Object Repository/FL DP/Page_/Page_/div_Optional Coverage List'))
 if(optionalCoverages)
 {	
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVROOF', true)
@@ -352,8 +360,8 @@ if(optionalCoverages)
 }
 else
 {	
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVLS', true)
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVLS', true)
+	//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 }	
 
 if(stopQQ)
@@ -376,6 +384,8 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Docume
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_PreviousAddress1'), '850 Queen St')
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_PreviousAddress2'), 'SUITE 007')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousCity'), 'Harrisburg')
 
@@ -453,28 +463,85 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Interests'))
 
-if(addInterest)
+
+if(numInterests > 0)
 {	
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_AddAdditionalIntresttButton'))
-	
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_AdditionalIntrerestType'), 'M', true)
-	
-	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
-	
-	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
-	
-	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_InterestCityxxxx1_1'), 'MIDDLETOWN')
-	
-	
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_InterestState'), 'PA', true)
-		
-	
-	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_InterestZipxxxx1_1'), '17057')
-	
-	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+WebUI.callTestCase(findTestCase('FL DP/addInterests'),
+	[('numInterests') : numInterests //,
+		//('fullName') : fullName,
+	 //('randomLastName') : randomLastName
+		 ], FailureHandling.STOP_ON_FAILURE)
 }
 
+/*
+if(addInterest)
+{	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_City_InterestCityxxxx1_1'), 'MIDDLETOWN')
+	
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_InterestState'), 'PA', true)
+		
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_InterestZipxxxx1_1'), '17057')
+	
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+}
 
+for(int interestCounter = 1; interestCounter <= numInterests; interestCounter++ )
+{
+	if (interestCounter == 1)
+	{
+		WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+	
+		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
+		
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
+		
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
+		
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_City_InterestCityxxxx1_1'), 'MIDDLETOWN')
+		
+		
+		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_InterestState'), 'PA', true)
+			
+		
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_InterestZipxxxx1_1'), '17057')
+		
+		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+	}	
+	
+	if (interestCounter == 2)
+	{
+		WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+		
+			WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/select_AdditionalIntrerestType2'), 'A', true)
+			
+			WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/input_Interest Name_InterestNamexxxx' + interestCounter + '_1'), 'jennifer bowman')
+			
+			WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/input_Address_InterestAddress1xxxx' + interestCounter + '_1'), '900 WOODRIDGE DR')
+			
+			WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/input_City_InterestCityxxxx' + interestCounter + '_1'), 'MIDDLETOWN')
+						
+			WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_InterestState' + interestCounter), 'PA', true)
+			
+			WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/input_InterestZipxxxx' + interestCounter + '_1'), '17057')
+			
+			//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+	}
+}
+*/	
+	
+	
+	
+	
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Statements'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEOccupiedComm_1'))

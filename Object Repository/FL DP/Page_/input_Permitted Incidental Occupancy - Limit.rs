@@ -128,14 +128,6 @@
       <value>id(&quot;IncidentalOccupancyLimit_1&quot;)</value>
       <webElementGuid>093bef46-15f1-4f29-a3e4-32dd3dc151ee</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>d5b922dc-1ed9-4ba6-a511-2d2866d4b56c</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

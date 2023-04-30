@@ -136,14 +136,6 @@
       <value>id(&quot;IncidentalOccupancyStructDesc_1&quot;)</value>
       <webElementGuid>c0b19d46-7bce-4fa2-a80e-134e2344327c</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>1404e3ae-b01d-4f59-8f73-ce7ef81761f6</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

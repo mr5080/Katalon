@@ -91,14 +91,6 @@
       <value>id(&quot;IncidentalOccupancyInDwelling_1&quot;)</value>
       <webElementGuid>d8b434c3-aae2-4190-b8ac-3a0e345da717</webElementGuid>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>c4e87d0c-2a33-4b7e-ad7c-52ba0bfb198b</webElementGuid>
-   </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

@@ -73,19 +73,19 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Interests'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_AddAdditionalIntresttButton'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_AdditionalIntrerestType'), 'M', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_InterestAddress1xxxx1_1'), '904 Woodridge drive')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Address_InterestAddress1xxxx1_1'), '904 Woodridge drive')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_InterestCityxxxx1_1'), 'middletown')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_City_InterestCityxxxx1_1'), 'middletown')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_InterestZipxxxx1_1'), '17257')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_InterestZipxxxx1_1'), '17257')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Statements'))
 

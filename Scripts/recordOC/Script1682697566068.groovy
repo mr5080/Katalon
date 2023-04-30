@@ -29,13 +29,13 @@ WebUI.setEncryptedText(findTestObject('Object Repository/FL DP/Page_/Page_TEST D
 
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), Keys.chord(Keys.ENTER))
 
-WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/Page_/select_OptionalCoverage2'))
+WebUI.mouseOver(findTestObject('null'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/Page_/div_Optional Coverage List'))
+WebUI.click(findTestObject('null'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVROOF', true)
 
@@ -65,7 +65,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_O
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/Page_/h4_Loss Assessment - Property'))
+WebUI.click(findTestObject('null'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNoPermittedIncidentalOccupancy'), 'Y', true)
 
