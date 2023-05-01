@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_AddAdditionalIntrestButton</name>
+   <name>input_AdditionalIntrestButton</name>
    <tag></tag>
    <elementGuidId>f6bc5c63-b69e-460d-9c3c-9694083d7b95</elementGuidId>
    <selectorCollection>

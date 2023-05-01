@@ -73,7 +73,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Interests'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
 

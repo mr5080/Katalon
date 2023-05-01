@@ -6,12 +6,12 @@
    <elementGuidId>b5da0e85-0e8f-4da5-bff6-b14bdf4a2b6c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEOccupiedComm_1No']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEOccupiedComm_1No</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEOccupiedComm_1No']                         </value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f17a9b9e-8b29-472a-b1cc-286ced9e8090</webElementGuid>
+      <webElementGuid>da6dad1a-4b33-43c4-be0f-4517faa713b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-check-input</value>
-      <webElementGuid>c3304919-68a1-45a7-b171-f64d42c02ad4</webElementGuid>
+      <webElementGuid>39464879-5e2a-4dc7-81f8-9ebd1c04244f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>b3b222f9-498c-4ff7-b152-0b6b4a5f8244</webElementGuid>
+      <webElementGuid>b5bc903f-a991-417a-a2a4-d3b4a1be6ff8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>59e9532b-e4fc-41a1-ad8b-b80ca3d87f9b</webElementGuid>
+      <webElementGuid>6d62bee1-240b-4982-8855-82b751bbb19c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEOccupiedComm_1</value>
-      <webElementGuid>6dac897a-a355-4190-b204-d6df9ab0c737</webElementGuid>
+      <webElementGuid>e0ea138b-0daa-47d6-a88b-6f29534b05a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEOccupiedComm_1No</value>
-      <webElementGuid>3e6b16b5-5f34-4720-8fc4-66c4ce300510</webElementGuid>
+      <webElementGuid>965fb4f5-22ec-47e7-b057-81cebe0c6819</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>value</name>
       <type>Main</type>
       <value>N</value>
-      <webElementGuid>7fdece3c-7e84-49b2-8ed9-3b0aa78fb19a</webElementGuid>
+      <webElementGuid>cb35a8c5-ead1-4c76-92c6-dd3ddfd276cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>updateYesNoValue(this);  GlobalCheckDisable(this);</value>
-      <webElementGuid>641059ea-a1d4-4422-b95b-c4f89c49af35</webElementGuid>
+      <webElementGuid>1c846e06-e6b5-42f2-9197-c39aac79fe25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>364535aa-0b04-441b-b790-883a57b4ebda</webElementGuid>
+      <webElementGuid>c3de5916-d694-43ad-be91-0557de1f5fc0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>837302b5-4fbb-4a26-bfe1-27a3db7b7e88</webElementGuid>
+      <webElementGuid>01932e4f-3917-416c-8d91-5605885b5db2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEOccupiedComm_1No&quot;)</value>
-      <webElementGuid>c71178b1-3320-44bb-acd5-dc1e2399b761</webElementGuid>
+      <webElementGuid>9cf7553f-c476-4df7-99bd-15230ae1c697</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>dfe9b7f1-9ff2-41ff-aedc-2c93a6ec43d2</webElementGuid>
+      <webElementGuid>c96e32b8-fda7-4fba-a1e4-377d171fa752</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='NOSAVEOccupiedComm_1No']</value>
-      <webElementGuid>73ebbb31-a2f9-4293-8948-e53717b88012</webElementGuid>
+      <webElementGuid>a92668fe-e27f-4092-b180-86098a5f80ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-OccupiedComm_1']/div[2]/input</value>
-      <webElementGuid>5f9f0adf-f27a-47f8-8f11-181550e04c14</webElementGuid>
+      <webElementGuid>8f50e40e-adfe-4316-a456-31a8f0ed930c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/input</value>
-      <webElementGuid>2eb30440-94ea-4cf3-b4d4-8c369e337726</webElementGuid>
+      <webElementGuid>69292fe5-6624-4067-b501-973604919c41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'radio' and @name = 'NOSAVEOccupiedComm_1' and @id = 'NOSAVEOccupiedComm_1No']</value>
-      <webElementGuid>4aabfc25-2a68-4b82-9c8b-2832648ac1e6</webElementGuid>
+      <webElementGuid>c7ee59d5-56d4-418a-b396-b307072d1b53</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

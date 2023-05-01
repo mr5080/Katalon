@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>e1bab016-c4dd-465a-9476-a405c5a2a0bd</webElementGuid>
+      <webElementGuid>ad25fd8c-1481-42c6-bc44-446dca8455e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>87257d8e-0757-4f10-b958-700219cb5bfb</webElementGuid>
+      <webElementGuid>291bd2dc-eaa5-489d-b163-2861a5dfc8c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control textWidget ISiA-Force-Uppercase</value>
-      <webElementGuid>58cff908-90e8-4229-aae0-041d21ed9cc0</webElementGuid>
+      <webElementGuid>aed8e2d1-6fbc-4100-9e96-f17fe50351d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>IncidentalOccupancyStructDesc_1</value>
-      <webElementGuid>303e2aaf-bb00-431a-b777-8a0c46ebe54f</webElementGuid>
+      <webElementGuid>dbc25deb-b765-4872-a8d9-3ad58910cdb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2de43395-3588-4342-ba5b-67e645f099d4</webElementGuid>
+      <webElementGuid>c9e7d987-d76b-4d66-a5e4-cfcdabaf0af0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>name</name>
       <type>Main</type>
       <value>IncidentalOccupancyStructDesc_1</value>
-      <webElementGuid>d5530868-21a9-4ed9-888d-e2a6dab22d0d</webElementGuid>
+      <webElementGuid>80855ea8-ca58-4152-bae0-a4370fbc6fc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>validateTextInput(this);   CheckRequired(false);</value>
-      <webElementGuid>0d4092f6-4dc8-4fbc-b95d-a729e3f509f9</webElementGuid>
+      <webElementGuid>94578ed2-7426-45cc-b90e-b6574e1c6897</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>c7457e19-c351-463d-a12b-f443a1bb1f2f</webElementGuid>
+      <webElementGuid>2481a5ae-b27e-41c2-ae5b-9cbf86daf177</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>inputtype</name>
       <type>Main</type>
       <value>Text</value>
-      <webElementGuid>43893836-37b7-49a4-b38a-b1a8a886370c</webElementGuid>
+      <webElementGuid>f525ff13-c983-4a7e-a8b2-61ea51ac4dd1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>uppercase</name>
       <type>Main</type>
       <value>No</value>
-      <webElementGuid>8b730957-376a-4365-a92e-0baf71924169</webElementGuid>
+      <webElementGuid>354a80a5-e3de-4f74-84e4-73fe3182b311</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>issensitive</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>12f40a40-8eae-460c-a60a-83e14beecec7</webElementGuid>
+      <webElementGuid>5cf90965-e387-4955-90cb-ea219c2989e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>searchclass</name>
       <type>Main</type>
       <value>Any</value>
-      <webElementGuid>85a0a416-088c-46b8-a8d4-83cd7ccdaec4</webElementGuid>
+      <webElementGuid>01883f7e-d612-4db3-9cc9-700bf448a0c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskText(this, event)</value>
-      <webElementGuid>737afc7f-f9cf-44e3-8f88-8e8760dd7c40</webElementGuid>
+      <webElementGuid>8791f140-d231-46eb-83f4-6a5904c2f65f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>35</value>
-      <webElementGuid>e94ab397-2dd6-4a8a-98b3-4a82443c7b20</webElementGuid>
+      <webElementGuid>bc1c0a94-d1c3-4f98-9f0f-92708e43e1ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -134,7 +134,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;IncidentalOccupancyStructDesc_1&quot;)</value>
-      <webElementGuid>c0b19d46-7bce-4fa2-a80e-134e2344327c</webElementGuid>
+      <webElementGuid>b142ade0-c468-4fe7-94f2-44e427a519c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>e4ff917d-3cc7-44fb-b97d-35cb81c16627</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -142,7 +150,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='IncidentalOccupancyStructDesc_1']</value>
-      <webElementGuid>5f9404a9-bc5b-4128-bcc4-e39656869bf6</webElementGuid>
+      <webElementGuid>b5c039b5-1802-4cb1-8c4b-2af8988093fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +158,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-IncidentalOccupancyStructDesc_1']/div/input</value>
-      <webElementGuid>62fe6581-80b7-47ef-9299-9f24d83d52d3</webElementGuid>
+      <webElementGuid>770deea8-a8c0-4223-bcf5-3e3c23689fc1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +166,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div[2]/div/input</value>
-      <webElementGuid>14adf1bc-2e2a-48fa-907f-ef9086106949</webElementGuid>
+      <webElementGuid>71f4e130-e312-4cb3-bef8-6e868c9758e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +174,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @id = 'IncidentalOccupancyStructDesc_1' and @name = 'IncidentalOccupancyStructDesc_1']</value>
-      <webElementGuid>17f919c5-365f-49c2-88e6-ddef77da627b</webElementGuid>
+      <webElementGuid>6ed050bf-91d5-44e2-be25-cf3f077b9a86</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

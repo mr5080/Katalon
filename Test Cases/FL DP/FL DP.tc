@@ -109,15 +109,15 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
       <masked>false</masked>
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>4</defaultValue>
-      <description>0 - 4, add more </description>
+      <defaultValue>6</defaultValue>
+      <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>
       <name>numInterests</name>

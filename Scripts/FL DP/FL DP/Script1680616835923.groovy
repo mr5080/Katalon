@@ -101,7 +101,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Last Name_Appl
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Suffix_ApplicantSuffix'), 'jr')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddress1'), addressFL)
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddressExt'), 'SUITE 007')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_ApplicantAddressExt'), 'SUITE 007')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_ApplicantCity'), cityFL)
 
@@ -128,10 +128,6 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Quick Q
 //WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'))
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'), 'innerHTML')
 System.out.println('quoteNumber = ' + quoteNumber )
-
-
-
-
 
 'Internal'
 if (isAgent == false) {
@@ -325,8 +321,8 @@ if(optionalCoverages)
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))	
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'MOLDFUNGI', true)
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'LOSSLIAB', true)
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'LOSSLIAB', true)
+	//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ORDINANCELAW', true)
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'INCIDENTALOCC', true)

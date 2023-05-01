@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 /*
  if(addInterest)
  {
-	 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+	 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
 	 
 	 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
 	 
@@ -48,9 +48,9 @@ import org.openqa.selenium.Keys as Keys
  {
 	 if (interestCounter == 1)
 	 {
-		 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+		 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
 	 
-		 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
+		 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)	//mortgagee
 		 
 		 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
 		 
@@ -67,11 +67,11 @@ import org.openqa.selenium.Keys as Keys
 		 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
 	 }
 	 
-	 if (interestCounter == 2)
+	 else if (interestCounter == 2)
 	 {
-		 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+		 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
 		 
-			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/select_AdditionalIntrerestType2'), 'A', true)
+			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/select_AdditionalIntrerestType2'), 'A', true)	// additional insured
 			 
 			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/input_Interest Name_InterestNamexxxx' + interestCounter + '_1'), 'andrea bowman')
 			 
@@ -86,11 +86,11 @@ import org.openqa.selenium.Keys as Keys
 			 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
 	 }
 	 
-	 if (interestCounter == 3)
+	 else if (interestCounter == 3)
 		 {
-			 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+			 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
 		 
-			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/select_AdditionalIntrerestType3'), 'O', true)
+			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/select_AdditionalIntrerestType3'), 'O', true)	// additional interest
 			 
 			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Interest Name_InterestNamexxxx3_1'), 'emilee matin')
 			 
@@ -105,11 +105,11 @@ import org.openqa.selenium.Keys as Keys
 			 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Loan Number_LoanNumberxxxx3_1'), '5008050080')
 		 }
 		 
-		 if (interestCounter == 4)
+		else if (interestCounter == 4)
 			 {
-				 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AddAdditionalIntrestButton'))
+				 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))					
 			 
-				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/select_AdditionalIntrerestType4'), 'S', true)
+				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/select_AdditionalIntrerestType4'), 'S', true)	//second mortgagee
 				 
 				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Interest Name_InterestNamexxxx4_1'), 'Colleen Snooker')
 				 
@@ -121,7 +121,58 @@ import org.openqa.selenium.Keys as Keys
 					 
 				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_InterestZipxxxx4_1'), '17113')
 				 
-				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Loan Number_LoanNumberxxxx4_1'), '5008050080')
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Loan Number_LoanNumberxxxx4_1'), Keys.chord('5008050080', Keys.TAB, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))		
+								 
 			 }
 		 
+		 else if (interestCounter == 5)
+		 {
+			 //WebUI.scrollToElement(WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton')), 10)
+			 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
+			 // cant scroll up for some reason, so cant click the button
+			 //WebUI.delay(15)
+			// WebUI.scrollToElement(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'), 1)
+			 
+			 
+			 //WebUI.delay(15)
+			 //WebUI.scrollToElement(findTestObject('Object Repository/FL DP/Page_/div_Quote Number'), 1)
+			 
+			 
+			 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
+			 
+		 
+			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/select_AdditionalIntrerestType5'), 'A', true)	// Additional insured
+			 
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/input_Interest Name_InterestNamexxxx5_1'), 'Shaney Smiles')
+			 
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/input_Address_InterestAddress1xxxx5_1'), '820 Queen St')
+			 
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/input_City_InterestCityxxxx5_1'), 'Harrisburg')
+						  
+			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/select_InterestState5'), 'PA', true)
+				 
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/input_InterestZipxxxx5_1'), Keys.chord('17113', Keys.TAB, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
+			 
+			 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFive/input_Loan Number_LoanNumberxxxx5_1'), '10310300123')
+		 }
+		
+		else if (interestCounter == 6)
+			 {
+				 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
+			 
+				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/select_AdditionalIntrerestType6'), 'O', true)	// additional interest
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Interest Name_InterestNamexxxx6_1'), 'cansandra propps')
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Address_InterestAddress1xxxx6_1'), '850 QueeN St')
+				 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_City_InterestCityxxxx6_1'), 'HarrISBurg')
+							  
+				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/select_InterestState6'), 'PA', true)
+					 
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_InterestZipxxxx6_1'), Keys.chord('17113', Keys.TAB, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))				
+				 
+				 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Loan Number_LoanNumberxxxx6_1'), '5008050080')
+			 }
+	
  }

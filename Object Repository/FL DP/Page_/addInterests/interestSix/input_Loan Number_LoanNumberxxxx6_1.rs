@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Permitted Incidental Occupancy - Limit</name>
+   <name>input_Loan Number_LoanNumberxxxx6_1</name>
    <tag></tag>
-   <elementGuidId>5ad8adbd-9f46-4e7c-9369-7f122d4cb090</elementGuidId>
+   <elementGuidId>6257cb4f-13dd-41c2-be66-ea9bf0c48c51</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#IncidentalOccupancyLimit_1</value>
+         <value>#LoanNumberxxxx1_1</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='IncidentalOccupancyLimit_1']</value>
+         <value>//input[@id='LoanNumberxxxx6_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>566e6ee0-2adc-40ed-a6b0-7aa68fc914ff</webElementGuid>
+      <webElementGuid>8c94ecf5-5936-46a7-9ca8-74a62fda7197</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>3d1c1b6a-5923-4f79-b5aa-29d8655e9abb</webElementGuid>
+      <webElementGuid>fc64687b-b2b7-4c8c-94c8-190f8a737dd5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +38,15 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control textWidget ISiA-Force-Uppercase</value>
-      <webElementGuid>c2129628-0283-43b6-8883-edd2d73a72a9</webElementGuid>
+      <webElementGuid>5b7af9ae-935b-4c97-a5fa-3ff5595688fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>IncidentalOccupancyLimit_1</value>
-      <webElementGuid>ffaa63bb-9508-4c7b-9ea6-2f06565268ff</webElementGuid>
+      <value>LoanNumberxxxx1_1</value>
+      <webElementGuid>b229b3c9-a01c-48e3-bd30-e05751e91315</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,15 +54,15 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b62992aa-96d8-42b7-b591-266eaedd2582</webElementGuid>
+      <webElementGuid>271913c6-fec9-4d28-bd89-af7b5e82e0b1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>IncidentalOccupancyLimit_1</value>
-      <webElementGuid>50749b26-d40a-4504-8b6d-a9b688fda462</webElementGuid>
+      <value>LoanNumberxxxx1_1</value>
+      <webElementGuid>ea3fc806-c5e6-4d16-ab8c-b6ae22192308</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>validateTextInput(this);   CheckRequired(false);</value>
-      <webElementGuid>b26feb9b-43cf-4b53-a4fd-5b7e9b52a343</webElementGuid>
+      <webElementGuid>59af2579-2671-4895-862e-86f130c527de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>db3fed71-fd28-407b-8ed2-aa3cca8ce292</webElementGuid>
+      <webElementGuid>a0bdaef4-2a8c-4f9d-b222-211f1fe81ad4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>inputtype</name>
       <type>Main</type>
       <value>Text</value>
-      <webElementGuid>4dd5e68d-62f7-4050-87b0-d9334e6449fc</webElementGuid>
+      <webElementGuid>86b29e07-80ba-46b8-a3b8-7fddc5479d07</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>uppercase</name>
       <type>Main</type>
       <value>No</value>
-      <webElementGuid>a1092958-1e6e-41ed-b41b-b36e1ac1bf44</webElementGuid>
+      <webElementGuid>f606d7a5-3cf2-4525-9daa-8fbfac9b13fb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>issensitive</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>a429536c-7d0e-4c80-91c0-d96e4c3868d5</webElementGuid>
+      <webElementGuid>faee135d-1feb-4ddc-bec8-02b842e90cef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>searchclass</name>
       <type>Main</type>
       <value>Any</value>
-      <webElementGuid>fc53429e-54ef-4f75-b4cc-43e94aabea23</webElementGuid>
+      <webElementGuid>9fc2fa81-7603-46f9-ac1e-eb51dc054e0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -118,15 +118,23 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskText(this, event)</value>
-      <webElementGuid>c226b723-1dd3-48a6-8063-d477661c65c3</webElementGuid>
+      <webElementGuid>4f57a181-40b6-493b-9cf2-de1cfdbcdd62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>50</value>
+      <webElementGuid>110163ef-a50e-4649-9ed1-2399d4b04af6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;IncidentalOccupancyLimit_1&quot;)</value>
-      <webElementGuid>f40af0c9-be8d-4323-99e1-e927eeb60b49</webElementGuid>
+      <value>id(&quot;LoanNumberxxxx1_1&quot;)</value>
+      <webElementGuid>67cacbaf-7f63-4ca5-afbf-07a0925ea98e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -134,38 +142,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>b5583dad-2818-41f6-af6c-809528257208</webElementGuid>
+      <webElementGuid>320528e6-b799-4df3-8213-264ee0e70c85</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='IncidentalOccupancyLimit_1']</value>
-      <webElementGuid>d2b5d338-995a-48fa-9865-5c713328c0d7</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Right-IncidentalOccupancyLimit_1']/div/input</value>
-      <webElementGuid>8095c7c7-e0ad-4024-b3d3-8de10b356b9b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div/div/div/div/div/div/div/div/div[6]/div/input</value>
-      <webElementGuid>d853c31b-0eba-4af1-a06a-c7035bbef3e5</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'text' and @id = 'IncidentalOccupancyLimit_1' and @name = 'IncidentalOccupancyLimit_1']</value>
-      <webElementGuid>452a68db-6cf1-48c9-9876-5674b809a664</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>
