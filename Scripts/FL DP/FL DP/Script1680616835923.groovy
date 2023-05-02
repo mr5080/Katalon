@@ -378,7 +378,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Appl
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
-
+/*
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_PreviousAddress1'), '850 Queen St')
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Address_PreviousAddress2'), 'SUITE 007')
@@ -388,7 +388,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousCity')
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PreviousState'), 'PA', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousZip'), '17113')
-
+*/
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '04/30/2023')
@@ -397,7 +397,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Polic
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Prequalification'))
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_1'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_1'))	// set all to No
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Coverage'))
 
@@ -416,7 +416,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_General'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_CentralElectricCentralOilCentralGasC_83a204'), 'ELECTRIC', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
@@ -427,7 +427,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_C
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_BasementConcrete SlabMonolithic Slab_1e5bf3'), 'BASEMENT', true)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
 
 
 // try to click subdivision NO, 4.14.23. should not be displaying always, but currently is 
@@ -492,6 +492,8 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEGQOwne
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEBuiltonStilts_1'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVEShortSale_1'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVETrampoline_1'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Billing'))
 
