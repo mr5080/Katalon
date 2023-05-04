@@ -30,6 +30,12 @@ import org.openqa.selenium.JavascriptExecutor
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('FL DP/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
+/*
+ // this section is incase you want to loop through an excel file, line by line. need to specify what tab in the excel fill inside of nameAddressSetup
+  counter is set in Create Multiple test case
+//counter = 2	// this hard codes it to a line in the excel file
+def nameAddressData = WebUI.callTestCase(findTestCase('FL DP/nameAddressSetup'),	[('manualAddress') : manualAddress, ('counter') : counter], FailureHandling.STOP_ON_FAILURE)
+*/
 
 String randomFirstName = nameAddressData['randomFirstName']
 String randomLastName = nameAddressData['randomLastName']
@@ -39,6 +45,18 @@ String cityFL = nameAddressData['cityFL']
 String stateFL = nameAddressData['stateFL']
 String zipFL = nameAddressData['zipFL']
 
+String countyFL = nameAddressData['countyFL']
+String yearOfConstFL = nameAddressData['yearOfConstFL']
+System.out.println('yearOfConstFL = ' + yearOfConstFL)
+
+/*
+ 	/ uncomment if testing capacity rules, looping through excel file that contain YOC
+yearOfConstFLInt = Integer.parseInt(nameAddressData['yearOfConstFL'])
+yearOfConstFLInt += 1
+System.out.println('yearOfConstFLInt = ' + yearOfConstFLInt)
+String updatedYOC = yearOfConstFLInt 
+		//System.exit(0)
+*/
 String fullName = (randomFirstName + ' ') + randomLastName
 /*
 // get todays date
@@ -107,17 +125,37 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_City_Applicant
 
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(zipFL, Keys.TAB))
 //WebUI.switchToDefaultContent()
+
 try {
 	WebUI.acceptAlert()
 
-	System.out.println('Accept address validation - needed because of adding the SUITE 007')
+	System.out.println('Accept address validation')
 }
 catch (Exception e) {
 	System.out.println('No address validation alert')
 }
 
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 25)
+/*
+ boolean elementPresent = WebUI.waitForAlert(5)
+ 
+ if (elementPresent == true) {
+	 alertText = WebUI.getAlertText()
+ 
+	 System.out.println('The title of the alert is: \n' + alertText)
+ 
+	 WebUI.delay(1)
+ 
+	 WebUI.acceptAlert()
+ 
+	 System.out.println('Accept address validation has been accepted')
+ 
+	 WebUI.switchToDefaultContent( //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
+		 )
+ }
+*/
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 30)
 
 'click Quick Quote button'
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_button - Quick Quote'))
@@ -177,8 +215,8 @@ if (isAgent == false) {
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
 
-//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), '09/03/2018')
-WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('09/03/2018', Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), '09/03/2018')
+//WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('09/03/2022', Keys.TAB))
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
 
@@ -191,7 +229,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('01/31/1969', Keys.TAB))
 
 'Prior Insurance'
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'N', true)
 
 'BOB Transfer'
 //WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
@@ -202,6 +240,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_P
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_FrameFrame with HardiplankMasonryMas_3f1d9f'), 'V', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), yearOfConstFL)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ResidencyType'), 'TENANT', true)
 
@@ -233,6 +272,8 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVENearSi
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Year of Roof_RoofConstructionYear_1'), yearOfConstFL)
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_3-Tab ShingleArchitectural ShinglesC_1b7158'), '3TAB', true)
 
@@ -360,13 +401,32 @@ else
 	//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 }	
 
-if(stopQQ)
-{
-	System.exit(0)
-}
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))	// click Rate and Continue on QQ for first time
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
+
+/*	// uncomment this section to take screenshots of validations displayed
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'N', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
+
+
+WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\county-' + countyFL + "-YOC-" + yearOfConstFL) + '.jpg')	// take first screenshot
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), updatedYOC)	// update YOC to be one year newer
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Year of Roof_RoofConstructionYear_1'), updatedYOC)	// update roof year to be one year newer
+
+
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))	// click Rate and Continue on QQ
+WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\county-' + countyFL + "-YOC-" + updatedYOC) + '.jpg')	// take first screenshot
+*/
 
-
+if(stopQQ)
+	{
+		System.out.println('quoteNumber = ' + quoteNumber )
+		return
+		//System.exit(0)
+	}
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue'))	// click Rate and Continue on QQ for first time
+	
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))	// on QQ Rating page
 
@@ -391,7 +451,7 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousZip'),
 */
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '04/30/2023')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '05/09/2023')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), '2313564897')
 

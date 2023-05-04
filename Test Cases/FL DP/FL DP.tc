@@ -89,7 +89,7 @@
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>manual or xxxx</description>
+      <description>manual, aplus, or xxxx</description>
       <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
       <masked>false</masked>
       <name>manualAddress</name>
@@ -109,14 +109,14 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
       <masked>false</masked>
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>6</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>

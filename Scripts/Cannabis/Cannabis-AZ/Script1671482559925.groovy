@@ -39,7 +39,7 @@ String cityAZ = nameAddressData['cityAZ']
 String stateAZ = nameAddressData['stateAZ']
 String zipAZ = nameAddressData['zipAZ']
 
-String fullName = (randomFirstName + ' ') + randomLastName
+String fullName = (addressAZ + ' ') + addressAZ
 
 // get todays date
 mydate = new Date()

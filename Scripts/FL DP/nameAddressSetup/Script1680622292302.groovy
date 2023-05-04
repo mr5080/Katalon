@@ -3,6 +3,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 
+//System.out.println("counter passed in = " + counter)
+
+
 if(manualAddress == 'manual')	// set to something I want
 {
 	// returns split Protection Class
@@ -49,9 +52,16 @@ else if(manualAddress == 'truerisk')
 			]
 		return nameAddressData
 }
-else if(manualAddress == 'claims')
+else if(manualAddress == 'aplus')
 {
-	// fill in eventually
+	def nameAddressData = ['randomFirstName': 'JORI',
+			'randomLastName': 'PORCHER',
+			'addressFL': '3850 VICKERS LAKE DR',
+			'cityFL': 'JACKSONVILLE',
+			'stateFL': 'FL',
+			'zipFL': '32224'
+			]
+		return nameAddressData
 }
 	
 //C:\Users\john.hughes\CORNERSTONE OPERATIONS GROUP\Cannabis - Documents\Product Startup\Product Development\Approved for COG\Third Party\Verisk\LightSpeed
@@ -92,7 +102,7 @@ Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.
 int randomFLaddress = 2 + ((Math.random() * ((125 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
-//randomAZaddress = 510
+//randomFLaddress = counter	// uncomment this to use the exel file and look though it
 System.out.println(randomFLaddress)
 	
 // Risk Adddress
@@ -101,6 +111,8 @@ addressFL = addressData.getValue(1, randomFLaddress - 1).toUpperCase()
 cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
 stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 zipFL = addressData.getValue(4, randomFLaddress - 1)
+countyFL = addressData.getValue(5, randomFLaddress - 1)
+yearOfConstFL = addressData.getValue(7, randomFLaddress - 1)
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
@@ -118,6 +130,9 @@ randomLastName = lastNameData.getValue(1, randomLastNameRow)
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
 
 
+
+
+
 //def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
 def nameAddressData = ['randomFirstName': randomFirstName,
 	'randomLastName': randomLastName,
@@ -125,6 +140,9 @@ def nameAddressData = ['randomFirstName': randomFirstName,
 	'cityFL': cityFL,
 	'stateFL': stateFL,
 	'zipFL': zipFL
+	
+	,'countyFL': countyFL	// uncomment to loop through capacity excel file
+	,'yearOfConstFL': yearOfConstFL	// uncomment to loop through capacity excel file
 	]
 	
 //WebUI.comment(nameAddressData['randomFirstName'])

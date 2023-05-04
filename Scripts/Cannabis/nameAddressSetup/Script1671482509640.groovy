@@ -3,7 +3,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 
-if(manualAddress == 'manual')	// set to something I want
+if(manualAddress == 'splitPC')	// address that returns split PC
 {
 	def nameAddressData = ['randomFirstName': 'SPLITTY',
 		'randomLastName': 'MC SPLITSTER',
@@ -23,7 +23,29 @@ if(manualAddress == 'manual')	// set to something I want
 			]
 */			
 		return nameAddressData	
-}	
+}
+
+else if(manualAddress == 'manual')	// manual address
+	{
+		def nameAddressData = ['randomFirstName': 'MANNY',
+			'randomLastName': 'MANNUALEL',
+				'addressAZ': '5390 W INA RD',
+				'cityAZ': 'TUCSON',
+				'stateAZ': 'AZ',
+				'zipAZ': '85743'
+			]
+	
+		// actually a lightspeed address for testing the buttons Application/Lightspeed
+	/*	def nameAddressData = ['randomFirstName': 'LARRY',
+				'randomLastName': 'LIGHTY',
+				'addressAZ': '21 E SPEEDWAY BLVD',
+				'cityAZ': 'TUCSON',
+				'stateAZ': 'AZ',
+				'zipAZ': '85705'
+				]
+	*/
+			return nameAddressData
+	}
 
 else if(manualAddress == 'PC10')	// address returns PC10
 	{

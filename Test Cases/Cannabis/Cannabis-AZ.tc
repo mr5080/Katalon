@@ -82,8 +82,8 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>manual, lightspeed, or xxxxx</description>
+      <defaultValue>'splitPC'</defaultValue>
+      <description>manual, lightspeed, splitPC, or xxxxx</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>
       <name>manualAddress</name>

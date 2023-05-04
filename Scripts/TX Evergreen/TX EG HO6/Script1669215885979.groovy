@@ -169,7 +169,7 @@ int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
 
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1980')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'),  Keys.chord('09/01/2000', Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M', true)
 
@@ -177,7 +177,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
-int randomNumber = 0
+int randomNumber = 1
 
 System.out.println('need to fill in prior mailing address stuff')
 
