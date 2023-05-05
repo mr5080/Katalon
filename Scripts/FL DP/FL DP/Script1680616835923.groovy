@@ -221,8 +221,8 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
 
 int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
-
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '02/02/1980')
@@ -576,7 +576,6 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitAppli
 
 
 //select payment method logic
-//WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
 		('fullName') : fullName,
@@ -586,11 +585,11 @@ WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'),
 
 if (shouldBind == true)
 	{
-		//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Bind Application'))
+		WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))			
 	
-		//String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
+		String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
 	
-		//System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
+		System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
 	}
 	else
 	{
@@ -630,7 +629,7 @@ System.out.println('shouldBind = ' + shouldBind)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
 
-
+/*
 if(shouldBind)
 {	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
@@ -642,6 +641,6 @@ if(shouldBind)
 	WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_PolicyNumber'), 0)
 }
 
-
+*/
 
 System.out.println('quoteNumber = ' + quoteNumber )

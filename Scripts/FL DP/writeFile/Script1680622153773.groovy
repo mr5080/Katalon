@@ -35,7 +35,7 @@ System.out.println("stateFL(from childTestCase) = " + stateFL)
 
 
 
-//System.out.println("payPlanOption(from childTestCase) = " + payPlanOption)
+System.out.println("trying to write file for FL DP")
 
 
 
@@ -78,10 +78,10 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 		else if(shouldBind == true)
 		{
 			//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-			WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
+			//WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
 				
 			'Bind Application > button'
-			WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
+		//	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 			
 			if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45))
 			{
@@ -141,3 +141,5 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			System.out.println('in the else, FAILED to find policy number')
 		}
 	*/	
+		
+		System.out.println("trying to write file for FL DP trying to write file part 2")

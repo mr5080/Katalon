@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b654b674-db85-4260-920b-81f7b45f71ce</webElementGuid>
+      <webElementGuid>4b22a7d2-96ac-42a7-924c-a0514c9a5ee3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>2e85f614-bfc1-46d3-b0c8-2129b5271155</webElementGuid>
+      <webElementGuid>4d8621a3-947e-4d4b-aca7-556434c72c61</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>f4c623c9-8a59-43ff-8729-e3c8997d713c</webElementGuid>
+      <webElementGuid>288dde3d-6e3c-4b78-8112-ffd35c18e5ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp;  AddAction('BIND') &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>078c2ca4-1e26-45fc-8b12-67f54d20bb6b</webElementGuid>
+      <webElementGuid>0155f4e5-c28e-4ee8-b1a1-3a736d2697a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Bind Application ></value>
-      <webElementGuid>01d3f77a-091c-441e-95fe-2403e3962f63</webElementGuid>
+      <webElementGuid>a24740df-11ca-4048-87a5-5322f9fb8945</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,15 +62,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-2 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>5bec6ed2-f884-4c39-b7be-b037d16e57a0</webElementGuid>
+      <webElementGuid>51b6f57d-4a60-4e4f-976f-bcb92a0cbd53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test (1)</value>
-      <webElementGuid>49ce0b34-458a-44da-8675-a40a8da52dc9</webElementGuid>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>620f8e96-9f00-4d05-ad3c-9620721a8efb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>a6ef3e90-9c7e-4769-b975-673d9ad7e4df</webElementGuid>
+      <webElementGuid>f9ce026f-2d8d-4d89-9ff7-008d7a83e18f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[2]/div[2]/button</value>
-      <webElementGuid>b4565d79-6ab9-4177-adec-82c2358049de</webElementGuid>
+      <webElementGuid>4422edd8-baa2-4025-9236-fc1f3d26050b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Display Quote'])[1]/following::button[1]</value>
-      <webElementGuid>5060ca49-5076-4758-aefb-755e82dd7dd8</webElementGuid>
+      <webElementGuid>f926dcca-3145-4806-8ff6-b8ec9b4c25b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Bind/Submit Application'])[1]/following::button[2]</value>
-      <webElementGuid>48c00e3e-b4a0-49ee-8930-945653734844</webElementGuid>
+      <webElementGuid>125343bd-7594-44b4-aba5-00b18bf7335c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
-      <webElementGuid>8e9f6e40-eb4c-45fc-8329-bd75b246d201</webElementGuid>
+      <webElementGuid>a1d4ed46-434f-490d-87f6-77a5320e3d30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[1]/preceding::button[2]</value>
-      <webElementGuid>a2b5a0d1-f209-4b03-9bc7-c5ddcc958645</webElementGuid>
+      <webElementGuid>6df703e1-4f30-4685-9cda-f65e3b01771a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Bind Application >']/parent::*</value>
-      <webElementGuid>d524b6bc-a46b-4628-a956-3668c0bdfdde</webElementGuid>
+      <webElementGuid>24acacd4-710e-4cbe-8e5d-62611d153443</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button</value>
-      <webElementGuid>1df370bb-e433-46ae-ba58-b614fbf1e704</webElementGuid>
+      <webElementGuid>39316bd4-5db5-4128-97d1-0fd484cc4327</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,6 +142,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Bind Application >' or . = 'Bind Application >')]</value>
-      <webElementGuid>f5953ec7-14fa-4c06-b294-2ebd10901bff</webElementGuid>
+      <webElementGuid>8d03717d-a0ca-4514-af0f-9ce6a3d3fb7b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
