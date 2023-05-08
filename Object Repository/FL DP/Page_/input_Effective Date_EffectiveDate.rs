@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>84deb0cf-1d51-47bd-bc53-245d5be4dbde</webElementGuid>
+      <webElementGuid>cbc2adc2-ca16-4252-920e-e25c88332bc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>af468151-28fb-4b59-8551-83672d15fa84</webElementGuid>
+      <webElementGuid>e7df1331-7770-4311-afd9-004fcca10cae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>EffectiveDate</value>
-      <webElementGuid>fbe9b62f-c01d-4650-8f5a-fb03bab12d6d</webElementGuid>
+      <webElementGuid>e1256a8b-c7bf-428b-8079-e9d1f03f1dc7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>EffectiveDate</value>
-      <webElementGuid>b139b6d1-aa1a-4eb5-a8b2-db3def36f708</webElementGuid>
+      <webElementGuid>b2cb8224-fbb2-4c98-9d08-18cf1536d7eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>value</name>
       <type>Main</type>
       <value>04/04/2023</value>
-      <webElementGuid>59301ab2-1114-49ad-a5bc-d803d9674c92</webElementGuid>
+      <webElementGuid>a68bac41-8ff3-4d13-ba66-dcc32aeb44bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>; chkDate(this) </value>
-      <webElementGuid>b53e26aa-ea61-40e3-b343-94e2bfc7441a</webElementGuid>
+      <webElementGuid>67825b86-4600-4b23-9ff0-8ae2a8f31936</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskDate(this)</value>
-      <webElementGuid>48c42380-0010-4694-aba7-72adff660135</webElementGuid>
+      <webElementGuid>3abb84df-3ef7-468e-86a7-bf5f1a465ee3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>mm/dd/yyyy</value>
-      <webElementGuid>139ebdc5-9765-4e0f-bfd8-d64ed21c545a</webElementGuid>
+      <webElementGuid>1af67690-9a6e-4786-97b1-118f712ae57c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>class</name>
       <type>Main</type>
       <value>hasDatepicker</value>
-      <webElementGuid>1edc56b1-cea1-4d60-93e8-bee607e113ea</webElementGuid>
+      <webElementGuid>e9801f23-00a5-4040-962c-0e82ade9d4ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;EffectiveDate&quot;)</value>
-      <webElementGuid>00ba741d-d407-47a0-a224-0d3e2f664cf1</webElementGuid>
+      <webElementGuid>f5d6db1b-1991-46bc-b54d-04d818445303</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -102,7 +102,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>fb1f694d-f8d0-4684-b83b-765970a81831</webElementGuid>
+      <webElementGuid>09ecf9df-fa32-429e-b988-01d20ef7ed31</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='EffectiveDate']</value>
-      <webElementGuid>4679acc4-6cf3-4842-998a-160369447036</webElementGuid>
+      <webElementGuid>694ffbb0-dbb1-4748-8d55-be8854d640cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='StartANewQuoteFormTable']/tbody/tr/td[2]/input</value>
-      <webElementGuid>63512c5f-d6a4-4825-a9b5-75b010e49c48</webElementGuid>
+      <webElementGuid>0ae83340-3f3b-4d11-b71a-5f14af4e4fea</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/input</value>
-      <webElementGuid>68fb18b8-6658-4f8a-8e92-8e2e41509374</webElementGuid>
+      <webElementGuid>cf10f6b7-1f91-46b7-bf5d-dea0fe08efa7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @id = 'EffectiveDate' and @name = 'EffectiveDate' and @placeholder = 'mm/dd/yyyy']</value>
-      <webElementGuid>6d1a4bae-85c4-4353-83b2-e30738b3243f</webElementGuid>
+      <webElementGuid>7d65506a-6f35-4e4d-968f-1e7358283c1d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

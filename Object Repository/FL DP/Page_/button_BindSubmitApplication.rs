@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type = 'button' and (text() = 'Bind/Submit Application >')]</value>
+         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[4]/div[2]/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>0760ea7b-1131-4e94-8d98-aa58d01dcdc3</webElementGuid>
+      <webElementGuid>5808b81d-cc94-4f8d-be8b-c49677b4da47</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>7689d806-f689-439f-9081-dad099bd98db</webElementGuid>
+      <webElementGuid>87c1e62e-3471-4f5f-a1c0-36217ac99059</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>79651821-4c90-4c3c-996b-c68859a45dfa</webElementGuid>
+      <webElementGuid>7be75e35-2856-4e19-9840-d725dc532f2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(950) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>f10cb26e-14f0-412e-8d75-f596ec91fee4</webElementGuid>
+      <webElementGuid>1ae4e6d8-54cb-4b40-b492-a261c5703cc7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Billing ></value>
-      <webElementGuid>b0a01949-1a61-4758-9670-1958771769d0</webElementGuid>
+      <webElementGuid>1e93f46e-9e95-4443-8362-c01ee54a52ff</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-2 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>5788c6c9-5bd9-40fa-b024-f92406c785cc</webElementGuid>
+      <webElementGuid>85e63984-6cd8-4a06-a4e9-c6a75576b98c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>8f256ae2-b9a2-4840-98a8-5fb630bf77b2</webElementGuid>
+      <webElementGuid>bfc5b468-91e8-4e7e-878b-25f13a13210c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,6 +78,13 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>245825ad-be95-41e1-9b24-9c586d0d5ce9</webElementGuid>
+      <webElementGuid>efafa75e-ddbc-43cd-a9a4-2cfa748280ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Bind/Submit Application >')]</value>
+      <webElementGuid>adeff43f-a0c6-4b57-9d55-1b3259722c74</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

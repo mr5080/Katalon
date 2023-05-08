@@ -6,12 +6,12 @@
    <elementGuidId>81276f8e-224e-4ea6-8a31-4ca26008339f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#IncidentalLiabilityLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='IncidentalLiabilityLimit_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#IncidentalLiabilityLimit_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

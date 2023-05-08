@@ -22,12 +22,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+
 System.out.println("randomLastName(from childTestCase) = " + randomLastName)
 System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 System.out.println("totalPremium(from childTestCase) = " + totalPremium)
-//System.out.println("policyType(from childTestCase) = " + policyType)
+System.out.println("policyType(from childTestCase) = " + shouldBind)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("stateFL(from childTestCase) = " + stateFL)
@@ -83,11 +84,11 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			'Bind Application > button'
 		//	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 			
-			if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 45))
+			if (WebUI.waitForElementPresent(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 45))
 			{
 				WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
 			
-				String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_PolicyNumber'), 'innerHTML')
+				String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 'innerHTML')
 			
 				sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 			}
@@ -99,6 +100,8 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 	
 			policyCreated = new Date()
 			System.out.println('myDate = ' + policyCreated)
+			
+			
 			sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
 	
 			sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
@@ -111,6 +114,9 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
+			sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
+			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)
+			
 			file.close()
 		
 			try {

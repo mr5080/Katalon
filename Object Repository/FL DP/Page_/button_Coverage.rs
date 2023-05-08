@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type = 'button' and (text() = 'Coverage >')]</value>
+         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[4]/div[2]/button[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>714f07ca-fe78-43db-baa2-584511e82059</webElementGuid>
+      <webElementGuid>0db4b005-c14c-484a-a449-fc1bb04a7556</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton</value>
-      <webElementGuid>ce072a4a-43c7-475a-bb8d-e472d360a826</webElementGuid>
+      <webElementGuid>51973e5a-07c4-4488-ba61-6cba68637008</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>3346b17a-c914-4eec-862a-9b33335d792c</webElementGuid>
+      <webElementGuid>4091d53f-5bac-44f3-914b-52035493a007</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(500) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
-      <webElementGuid>42731d08-0826-4260-997d-87569aad5637</webElementGuid>
+      <webElementGuid>587135c7-2e76-4a0f-99a5-24e623d6ae2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Coverage ></value>
-      <webElementGuid>5dfd0568-2d2c-4bd2-a520-7edd379b216c</webElementGuid>
+      <webElementGuid>30bbc0e9-7307-4eb2-ae4a-c5d4a53e2704</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-2 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
-      <webElementGuid>6fc9e1d6-d9a8-4d55-aa4b-df080942f96d</webElementGuid>
+      <webElementGuid>29ee612b-cdab-4a1c-9c9a-4fc1b3cdb531</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,78 +70,13 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>538e4220-b396-4ebb-9e04-e5d48b7b0ffe</webElementGuid>
+      <webElementGuid>b078cebd-9e60-493b-a5e7-7a738e7a9810</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>(//button[@type='button'])[2]</value>
-      <webElementGuid>152e7508-900b-4bd1-9fb0-9c2838465c1f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='mainForm']/div/div[2]/div[2]/button</value>
-      <webElementGuid>dcefed71-0541-49de-953b-e4506ce693c8</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Policy'])[1]/following::button[1]</value>
-      <webElementGuid>d59c055e-a9cc-42f3-bef6-14d7a7ab37b1</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prequalification'])[1]/following::button[2]</value>
-      <webElementGuid>64d65f3f-c7fb-4c3b-9a3b-00bfe00b3054</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
-      <webElementGuid>eda57e9a-c21c-4d41-9af4-b70bc872dd9b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[1]/preceding::button[2]</value>
-      <webElementGuid>406956a4-638e-4a4e-94b4-0302edc9aa1a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Coverage >']/parent::*</value>
-      <webElementGuid>c1d4addd-8474-4dde-a9fe-c8437b47d993</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[2]/button</value>
-      <webElementGuid>e27f3ec3-174c-4703-97a4-0857c0229d23</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//button[@type = 'button' and (text() = 'Coverage >' or . = 'Coverage >')]</value>
-      <webElementGuid>98133203-81d1-404a-93bd-a9f64e8b84eb</webElementGuid>
+      <value>//button[@type = 'button' and (text() = 'Coverage >')]</value>
+      <webElementGuid>f0c31a83-dbaa-42eb-9cf2-595c123eb5f5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

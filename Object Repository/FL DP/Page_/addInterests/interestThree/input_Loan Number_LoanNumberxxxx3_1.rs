@@ -6,12 +6,12 @@
    <elementGuidId>9f9ec675-4f98-4d3d-b604-c971cc3039ca</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#LoanNumberxxxx1_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='LoanNumberxxxx3_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LoanNumberxxxx1_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

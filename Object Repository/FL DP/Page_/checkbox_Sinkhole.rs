@@ -6,12 +6,12 @@
    <elementGuidId>cc080003-9e0a-4f31-b4d0-c589e744f8f0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#LimitedWaterDmg_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVESinkholeLimit_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LimitedWaterDmg_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

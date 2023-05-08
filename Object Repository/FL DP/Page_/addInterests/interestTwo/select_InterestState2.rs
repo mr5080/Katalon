@@ -6,12 +6,12 @@
    <elementGuidId>3bdb4be5-66be-483b-97dd-49d441afc5de</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#RoofLayers_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='InterestStatexxxx2_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#RoofLayers_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

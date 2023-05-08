@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>242a2d2c-3270-4e75-a61b-2677e23dff29</webElementGuid>
+      <webElementGuid>66e25dcf-ff84-40e6-bb1a-0205c416bd66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>navButton</value>
-      <webElementGuid>f6362bfd-6084-49f3-8be7-1c0a7ce7eaa0</webElementGuid>
+      <webElementGuid>34bb1ba9-4335-4fa9-ab9a-fb627c3c50ba</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ISiSilverButton</value>
-      <webElementGuid>c0667544-f5ba-4acf-a72a-a8a8144e58e6</webElementGuid>
+      <webElementGuid>b826f3ae-fb72-4a2b-8426-341fccc8d98e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>MORE ↓</value>
-      <webElementGuid>dca511c0-2e67-41f1-9b5e-0e679a310c39</webElementGuid>
+      <webElementGuid>14572e01-8058-4331-a377-6be5f0c9ed66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,15 +54,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[1]/td[1]/button[@id=&quot;navButton&quot;]</value>
-      <webElementGuid>23e8cb52-77fd-49de-9b94-b742be85e5ca</webElementGuid>
+      <webElementGuid>443d13d3-6124-431c-9ffc-435fd5fb39bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test (1)</value>
-      <webElementGuid>0338fe2c-2321-44a0-b018-43524707f02f</webElementGuid>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>06b2be04-c162-44e7-b73f-f6958ee6a384</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'MORE')]</value>
-      <webElementGuid>e53ed1fd-446d-42b6-ab8c-2f9dd8de929e</webElementGuid>
+      <webElementGuid>2ba707ab-8039-4046-ac02-12b182fc829f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='acct_header_table']/tbody/tr/td/button</value>
-      <webElementGuid>0952a07b-1205-46c8-a048-4087383e553c</webElementGuid>
+      <webElementGuid>70681aa0-e86a-4c3f-a89d-576c06689973</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading....'])[1]/following::button[1]</value>
-      <webElementGuid>a7a05429-64ff-425b-9da2-0cfd690a20a0</webElementGuid>
+      <webElementGuid>17cedd12-ad2f-47f7-83a2-8b6a8dc02be4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send a Message to the Insured'])[1]/following::button[1]</value>
-      <webElementGuid>12c4c1e3-bd14-42b0-b27e-16f1e3ea2402</webElementGuid>
+      <webElementGuid>ead3d062-f51c-4ea3-90a7-fc8dd421fd4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='john.hughes@cornerops.com'])[1]/preceding::button[1]</value>
-      <webElementGuid>bf4d0734-d757-4c9b-9e39-e9d9682b3fca</webElementGuid>
+      <webElementGuid>6031ef5b-e568-4242-8149-6822e252d094</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='MORE ↓']/parent::*</value>
-      <webElementGuid>c9d38e0c-efc6-4c03-b20f-0837425cab2d</webElementGuid>
+      <webElementGuid>9f4674ed-194f-4dc8-b15e-30560e7d29dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button</value>
-      <webElementGuid>ac7c4fd7-2e24-4b04-908c-8b3543648b48</webElementGuid>
+      <webElementGuid>6a7f670d-0080-4a44-9fc8-e8bd27d32490</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@id = 'navButton' and (text() = 'MORE ↓' or . = 'MORE ↓')]</value>
-      <webElementGuid>f31544d4-870f-479a-a2ae-28860e9f2eae</webElementGuid>
+      <webElementGuid>3deb5fd5-5ac8-468e-be07-cd10b8b11e67</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

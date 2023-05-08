@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iframe_RTR Quotes_MainIS21test (1)</name>
+   <name>iframe_RTR Quotes_MainIS21test (1)-trashThis</name>
    <tag></tag>
    <elementGuidId>cf9a35ea-945a-454b-9b79-585dc782e5a1</elementGuidId>
    <selectorCollection>

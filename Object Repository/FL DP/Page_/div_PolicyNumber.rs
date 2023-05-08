@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>a532dd2c-613e-4136-ad99-034f219d071f</webElementGuid>
+      <webElementGuid>9d96c064-b76d-45bf-b18b-ba3cb895832c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>DarkLink</value>
-      <webElementGuid>58db251e-b16d-4632-941d-0cda47e19304</webElementGuid>
+      <webElementGuid>1886e3c7-7ba0-4868-ac30-54dc9609c718</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +37,7 @@
       <name>target</name>
       <type>Main</type>
       <value>Content</value>
-      <webElementGuid>9fe4a464-f304-48be-acdb-0677112d395a</webElementGuid>
+      <webElementGuid>749de261-b019-4a34-aa92-c8689f176fec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +45,7 @@
       <name>href</name>
       <type>Main</type>
       <value>main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=300310&amp;DisplayAcctFrame=false</value>
-      <webElementGuid>54b46be2-2fca-4f79-af0b-63603476a372</webElementGuid>
+      <webElementGuid>b70283a3-3d46-430c-ba98-0d58e544a6a4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>IFD4105919-00</value>
-      <webElementGuid>00a0bee3-73c1-47b1-b03d-3520027f0493</webElementGuid>
+      <webElementGuid>2a1bb48c-3e6b-4c52-872a-da2b28d53529</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,15 +61,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[1]/td[@class=&quot;ISiPolicyHeader&quot;]/a[@class=&quot;DarkLink&quot;]</value>
-      <webElementGuid>5a07383a-cace-4693-895b-f322ca306f9b</webElementGuid>
+      <webElementGuid>775c92c1-0de7-4179-93a1-44b564a1fa9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test (1)</value>
-      <webElementGuid>3e03049d-b874-4e3d-b9e1-921beb1b0595</webElementGuid>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>e4f69f4a-8c36-4ab6-9b9c-d3df0186a046</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='acct_header_table']/tbody/tr/td[4]/a</value>
-      <webElementGuid>b10ea656-53d5-4847-9cde-e7db84310916</webElementGuid>
+      <webElementGuid>8f32c18b-7e67-4cb2-a67d-700b6d4073be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'IFD4105919-00')]</value>
-      <webElementGuid>81e97b7a-80c8-470d-8ab1-03e8493b2198</webElementGuid>
+      <webElementGuid>5fc0cf78-ff4b-4ceb-86e6-0d9edf2230db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='FLORIDA Dwelling'])[1]/preceding::a[1]</value>
-      <webElementGuid>3cc74406-5841-4b53-8922-4060df78e1a5</webElementGuid>
+      <webElementGuid>53c09e24-79d5-4924-9f53-3e2af5e5953c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cypress Property &amp; Casualty Insurance Company'])[1]/preceding::a[1]</value>
-      <webElementGuid>59ebaf18-0d28-48a8-a040-9b932ca1a55c</webElementGuid>
+      <webElementGuid>fb88dee3-4fca-486f-a1f0-49c7d16c5a53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='IFD4105919-00']/parent::*</value>
-      <webElementGuid>fab6c979-e76b-4e4b-8fc1-7baf79bdba6f</webElementGuid>
+      <webElementGuid>20764da5-a2de-4ed8-ab36-6fee674b6260</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +117,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=300310&amp;DisplayAcctFrame=false')]</value>
-      <webElementGuid>fb8dbfc1-1d41-47e5-8e3f-0a8b642d7d3f</webElementGuid>
+      <webElementGuid>323c87df-b87e-411e-8684-de9c1b72716f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/a</value>
-      <webElementGuid>05a6deb7-becc-4d3c-bae3-8da06486dc24</webElementGuid>
+      <webElementGuid>fa62b187-10f5-483b-9c1c-66a83b0b97ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=300310&amp;DisplayAcctFrame=false' and (text() = 'IFD4105919-00' or . = 'IFD4105919-00')]</value>
-      <webElementGuid>c3575c9f-6d17-4c18-b831-d5421397f26c</webElementGuid>
+      <webElementGuid>345fc79a-7610-4715-b05d-35c973884469</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

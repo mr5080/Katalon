@@ -6,12 +6,12 @@
    <elementGuidId>e521272b-fa82-404b-ba0c-ef084a31186c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#OptionalCoveragesList_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='OptionalCoveragesList_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#OptionalCoveragesList_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

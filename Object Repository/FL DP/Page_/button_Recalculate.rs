@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d8aea020-deda-468e-9ed3-258a3533e988</webElementGuid>
+      <webElementGuid>cc681f88-6b9b-4807-8812-0772a755d791</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn buttonWidget ISiA-PrimaryButton</value>
-      <webElementGuid>2811b3e3-6554-47de-bcb4-7c0fcc4f0d4a</webElementGuid>
+      <webElementGuid>224d0330-a95d-45a3-973f-c7feec30a818</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>073967fe-b28d-4ee7-80e4-a759526be740</webElementGuid>
+      <webElementGuid>092adbc6-89eb-46b3-9060-c9fa5225320e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>if ((typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set'))) { LookupButtonClickJS('751','3','reusableModalBody','https://cypresstest.cogisi.com/is/root/','1','ISO360');  };</value>
-      <webElementGuid>f6d2fe52-a882-47d8-8762-2ef28f0ac515</webElementGuid>
+      <webElementGuid>5904fcb7-5aba-48c7-9714-658908b6c570</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEButtonISOReplacementCost_1</value>
-      <webElementGuid>79c12d06-b739-4095-b1e9-03ac60a11198</webElementGuid>
+      <webElementGuid>3e00b569-d010-49d4-a405-d6637061d51d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEButtonISOReplacementCost_1</value>
-      <webElementGuid>94956053-4812-4ea6-8a07-c5f1c90a9fba</webElementGuid>
+      <webElementGuid>abe37bfc-2efc-4266-9710-b4ece88c6bb5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Recalculate</value>
-      <webElementGuid>61bf9720-1a5c-4384-a09a-ed90da642b28</webElementGuid>
+      <webElementGuid>54cec1d7-dbbb-4c33-af88-4d94b4a132eb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,15 +78,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEButtonISOReplacementCost_1&quot;)</value>
-      <webElementGuid>df35b0a6-84d4-4664-a741-b3d221de1e3c</webElementGuid>
+      <webElementGuid>437c05c4-52d0-4560-b0c3-e4dc0675f08e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test (1)</value>
-      <webElementGuid>df5da9da-9d83-4903-aaf3-377411a443ee</webElementGuid>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>b8ea5b8d-cdc5-4952-9159-7484d202cf4d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='NOSAVEButtonISOReplacementCost_1']</value>
-      <webElementGuid>0d3e6a06-825f-45c9-93f2-882eedbd09c0</webElementGuid>
+      <webElementGuid>a7da62ad-1fb0-4a91-b419-9e4633ab9fe4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ISOReplacementCost_1']/div/div/button</value>
-      <webElementGuid>6a22ad28-a28f-4fa9-aa00-821a505170c6</webElementGuid>
+      <webElementGuid>be9ae5ce-c829-42ae-b411-2c04af42acf9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ISO 360Value Replacement Cost Calculation'])[1]/following::button[1]</value>
-      <webElementGuid>b8b54693-273e-4187-883a-24c71f567097</webElementGuid>
+      <webElementGuid>e5fe0dfb-aa86-4797-8ec7-e8db553b324d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Replacement Cost'])[1]/following::button[1]</value>
-      <webElementGuid>e196bccd-d04b-4834-a305-88e334beb4d9</webElementGuid>
+      <webElementGuid>1fb46ded-1c40-4fac-83f6-5944f2be0122</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rating Variables'])[1]/preceding::button[1]</value>
-      <webElementGuid>11f3941c-4e80-400f-80f4-738421de9eae</webElementGuid>
+      <webElementGuid>a1143acb-381d-4c02-8a73-07f873a57064</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Burglar Alarm'])[1]/preceding::button[1]</value>
-      <webElementGuid>062663af-9c43-487a-847c-a5e4688abb8d</webElementGuid>
+      <webElementGuid>c89e3a3d-ea9f-42eb-81cb-ddfafab7f15b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Recalculate']/parent::*</value>
-      <webElementGuid>d9640c7b-1721-47aa-bae4-725a97d3f5dc</webElementGuid>
+      <webElementGuid>4c58821b-c87c-47dd-be90-c22efc7166e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +150,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/button</value>
-      <webElementGuid>28c77b5d-2f03-46f0-8467-36a12201c4cb</webElementGuid>
+      <webElementGuid>8aad91a2-7b1a-4fc2-9458-a454b52b14c9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,6 +158,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @name = 'NOSAVEButtonISOReplacementCost_1' and @id = 'NOSAVEButtonISOReplacementCost_1' and (text() = 'Recalculate' or . = 'Recalculate')]</value>
-      <webElementGuid>9daeee48-a9a1-463c-aadc-ffd4fd9c7210</webElementGuid>
+      <webElementGuid>afa1fdfd-5ce2-478a-806d-84550cec2f13</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

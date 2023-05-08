@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Address_InterestAddress1xxxx4_1</name>
+   <name>iframe_RTR Quotes_MainIS21testFOOTER</name>
    <tag></tag>
-   <elementGuidId>0eae0313-929e-4e63-aa1d-7883d25ebb43</elementGuidId>
+   <elementGuidId>594fc63b-654c-4047-8671-340a3d75a512</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='InterestAddress1xxxx4_1']</value>
+         <value>//iframe[@id='reusableiFrameFooter']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#InterestAddress1xxxx1_1</value>
+         <value>#MainIS21test</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,127 +21,135 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>d45b31fc-b0a3-4c66-8598-3b73b679b017</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>19b067e8-349b-4233-af8e-897e3a5a3ab9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>1973c5df-8574-41f2-bbfb-d57961db147e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>Address1*</value>
-      <webElementGuid>9e188df5-78e5-43e9-b297-730be782e469</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
-      <type>Main</type>
-      <value>50</value>
-      <webElementGuid>28b20f4d-571c-4b27-ae79-5de48e4c8c55</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>InterestAddress1xxxx1_1</value>
-      <webElementGuid>83d4abb9-f40e-4c83-bcae-0bbb1a608d06</webElementGuid>
+      <value>iframe</value>
+      <webElementGuid>083d964e-a6f7-41dc-8061-31266b5dbe93</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>InterestAddress1xxxx1_1</value>
-      <webElementGuid>03937ba3-4095-48b1-b5ad-05fd88594eb4</webElementGuid>
+      <value>MainIS21test</value>
+      <webElementGuid>54130dfb-3395-4ec9-81f7-8d380eb74e61</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Main</value>
+      <webElementGuid>813bde8e-754d-4dd7-bd00-905605aa46dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>./main.cfm?view=home&amp;TabView=</value>
+      <webElementGuid>3e4fa591-7446-42f0-a36a-50ad26693df8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>MainIS21test</value>
+      <webElementGuid>7a31d68f-f96c-4bf9-b092-19e977b31984</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>width</name>
       <type>Main</type>
-      <value>addressRemoveInvalid(this);USPSRealtimeAddressValidation('a82741540573558027i15151613s3902970422694160i54330','https://cypresstest.cogisi.com/is/','1701030','Interest','xxxx1_1','Address1',0,0);</value>
-      <webElementGuid>e991ab78-4300-496d-b495-7364e36ae3f6</webElementGuid>
+      <value>100%</value>
+      <webElementGuid>4f5ba4d1-cc32-4015-9d8e-752d7522eab2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onchange</name>
+      <name>marginwidth</name>
       <type>Main</type>
-      <value>document.getElementById('USPSCompleteAddressCheckedOnce-Interestxxxx1_1').value='0';</value>
-      <webElementGuid>3688b6fe-84c4-46d2-8aa9-44689530a6bc</webElementGuid>
+      <value>0</value>
+      <webElementGuid>448368f0-3d2d-4799-b03e-61aff3ccd37b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onfocus</name>
+      <name>marginheight</name>
       <type>Main</type>
-      <value>this.select();</value>
-      <webElementGuid>d26f849c-c06d-4136-a25e-fe987a83a20d</webElementGuid>
+      <value>0</value>
+      <webElementGuid>3000c756-f587-42a5-9339-fb29b9d1acdb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>middle</value>
+      <webElementGuid>1dacb144-8410-449b-bdb6-a39adeb23624</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>scrolling</name>
+      <type>Main</type>
+      <value>yes</value>
+      <webElementGuid>0d9e7354-7501-4c5b-9e1d-7559262de3f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>frameborder</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>f6040f6c-137d-46aa-9b28-7d6d976e558b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>693px</value>
+      <webElementGuid>999acdf0-6495-4a5f-a560-adc12e09b71a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;InterestAddress1xxxx1_1&quot;)</value>
-      <webElementGuid>3d5a457a-541c-44f8-89ea-7fa884956aa4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
-      <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>9f96d298-c1b6-416d-ab3a-7e4dcf9a782f</webElementGuid>
+      <value>id(&quot;MainIS21test&quot;)</value>
+      <webElementGuid>f0ed5496-89ed-4596-9b11-025d1e1b0497</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='InterestAddress1xxxx1_1']</value>
-      <webElementGuid>ee202a28-5273-4b26-97a0-7f01665002a6</webElementGuid>
+      <value>//iframe[@id='MainIS21test']</value>
+      <webElementGuid>c9807a9d-3824-41e9-b9da-4cffe77215df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Left-InterestAddress1xxxx1_1']/div/input[3]</value>
-      <webElementGuid>52299f01-df29-451d-aba3-24620b99d561</webElementGuid>
+      <value>//td[@id='MainFrameContainer']/iframe</value>
+      <webElementGuid>a735bf43-73ba-43c3-88da-2c91291985b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div[2]/div/input[3]</value>
-      <webElementGuid>3ae9d76e-8a3a-41da-866a-7348fbd7c930</webElementGuid>
+      <value>//iframe</value>
+      <webElementGuid>4b72e81c-dedd-4d40-8e9e-d0c23051232e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @placeholder = 'Address1*' and @name = 'InterestAddress1xxxx1_1' and @id = 'InterestAddress1xxxx1_1']</value>
-      <webElementGuid>67674777-4a07-4bb3-b590-32c42c1df573</webElementGuid>
+      <value>//iframe[@id = 'MainIS21test' and @title = 'Main' and @src = './main.cfm?view=home&amp;TabView=' and @name = 'MainIS21test']</value>
+      <webElementGuid>e7a04f4b-6b52-449b-b20f-447449806fce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_No</name>
+   <name>td_PolicyNumber</name>
    <tag></tag>
-   <elementGuidId>b8e12a3b-9c75-404e-bd1f-ce8d719ffffd</elementGuidId>
+   <elementGuidId>f4bf9a79-cb00-44df-961c-9735d3e94c0d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='Wrapper-Right-NearSinkhole_1']/div[2]</value>
+         <value>//body[1]/div[3]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'IFH400011200' or . = 'IFH400011200') and @ref_element = 'Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test']</value>
       </entry>
       <entry>
          <key>CSS</key>
+         <value>body.ISiBody:nth-child(4) div.ISiWhiteCanvasHeader:nth-child(1) table.ISiWhiteCanvas.ISiStandardSpacing.ISiExtraPadding tbody:nth-child(1) tr:nth-child(1) td.ISiPolicyHeader:nth-child(4) > a.DarkLink</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,35 +25,32 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>852a9b0f-a5d8-475c-859e-b5ffe76d95e3</webElementGuid>
+      <value>td</value>
+      <webElementGuid>8e734947-7a1e-4098-9466-a55b33a90b21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-check form-check-inline</value>
-      <webElementGuid>d52f9136-a94b-4012-81ed-185cbef57b4f</webElementGuid>
+      <value>decpagecell</value>
+      <webElementGuid>4fbc048e-d115-4500-984a-af8b7d2c3809</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-					
-					No
-				</value>
-      <webElementGuid>456d4755-9992-4acf-884d-e229fdf4616f</webElementGuid>
+      <value>IFH400011200</value>
+      <webElementGuid>624fbcef-1e17-438f-bf05-cce6bcee2610</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;Wrapper-Right-NearSinkhole_1&quot;)/div[@class=&quot;form-check form-check-inline&quot;]</value>
-      <webElementGuid>57b6aaa6-8a46-42a1-a8a1-34ee7f7139cc</webElementGuid>
+      <value>/html[1]/body[@class=&quot;ISiBody&quot;]/div[@class=&quot;acct_content&quot;]/div[1]/table[@class=&quot;table2&quot;]/tbody[1]/tr[4]/td[@class=&quot;decpagecell&quot;]</value>
+      <webElementGuid>f9ecbb12-3fb8-4705-92f1-7e9cafd9f29a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -56,60 +58,48 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>f0b83b8e-77e0-4d33-9f0e-1259628fcf6e</webElementGuid>
+      <webElementGuid>3ab91f98-b2b0-4d8d-9be0-dbd29fd593af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Right-NearSinkhole_1']/div[2]</value>
-      <webElementGuid>7016b89c-09df-48dc-a90c-ca0af9299190</webElementGuid>
+      <value>//div[contains(text(),'Policy Number *')]</value>
+      <webElementGuid>9104031e-b1d1-42d0-9cc5-db3259ca2b89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yes'])[3]/following::div[1]</value>
-      <webElementGuid>174242f0-0336-4255-8aed-cff074114ace</webElementGuid>
+      <value>//body[1]/div[3]/div[1]/div[1]/div[1]</value>
+      <webElementGuid>bb39a5f2-9246-4000-bb22-020c6484bca0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Is the dwelling within 1/2 mile of sinkhole?'])[1]/following::div[3]</value>
-      <webElementGuid>6dc74e68-ec4b-433d-aba4-790d6f8ba25d</webElementGuid>
+      <value>/html/body/div[3]/div/div/div[1]</value>
+      <webElementGuid>852f095c-c4b7-417e-bff8-828b6e15643d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Roof Layers'])[1]/preceding::div[1]</value>
-      <webElementGuid>eaae8cf8-3f48-4c96-bdb3-175665c0166d</webElementGuid>
+      <value>//body/div[3]/div[1]/div[1]/div[1]</value>
+      <webElementGuid>e4ea57da-95d7-4266-938f-5a84bcc5063e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[6]/div/div[4]/div[2]</value>
-      <webElementGuid>e27b7b37-6abd-4d41-9fba-4077acdbe38d</webElementGuid>
+      <value>//*[@id=&quot;acct_header_table&quot;]/tbody/tr[1]/td[4]/a</value>
+      <webElementGuid>795861d7-ce30-4d48-bed4-d39c0877ed2a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '
-					
-					No
-				' or . = '
-					
-					No
-				')]</value>
-      <webElementGuid>fd307cde-80e6-4842-8b49-839d7e373439</webElementGuid>
+      <value>/html/body/div[3]/table/tbody/tr/td[2]/div/div[1]/table/tbody/tr[1]/td[4]/a</value>
+      <webElementGuid>fcf2aa6e-1578-4587-acc5-e455bb4956e5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

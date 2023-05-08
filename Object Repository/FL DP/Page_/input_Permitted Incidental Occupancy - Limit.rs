@@ -6,12 +6,12 @@
    <elementGuidId>5ad8adbd-9f46-4e7c-9369-7f122d4cb090</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#IncidentalOccupancyLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='IncidentalOccupancyLimit_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#IncidentalOccupancyLimit_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

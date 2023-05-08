@@ -6,12 +6,12 @@
    <elementGuidId>82233fcd-26f5-4226-be6f-88103a938940</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEButtonOptionalCoverageCode_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='NOSAVEButtonOptionalCoverageCode_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEButtonOptionalCoverageCode_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

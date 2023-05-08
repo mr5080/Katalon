@@ -16,16 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-import java.time.*
-import java.time.temporal.TemporalAdjusters as TemporalAdjusters
-import java.lang.Integer as Integer
+	
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import org.openqa.selenium.JavascriptExecutor
-
 
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('FL DP/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
@@ -221,15 +217,15 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
 
 int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
-//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '02/02/1980')
 WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('01/31/1969', Keys.TAB))
 
 'Prior Insurance'
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'N', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PriorInsurance'), 'Y', true)
 
 'BOB Transfer'
 //WebUI.mouseOver(findTestObject('Object Repository/FL DP/Page_/select_NoBOBTransfer'))
@@ -369,8 +365,8 @@ if(optionalCoverages)
 	WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'INCIDENTALOCC', true)
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNoPermittedIncidentalOccupancy'), 'Y', true)
-		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Permitted Incidental Occupancy - Limit'), '25456')
-		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Description of Other Structures'), 'tall building')
+		//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Permitted Incidental Occupancy - Limit'), '25456')
+		//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Description of Other Structures'), 'tall building')
 		WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Business Description_IncidentalOccupancy'), 'selling stuff')
 		//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo_1PermittedIncidentalOccupancy'), 'N', true)
 		WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_YesNo_1PermittedIncidentalOccupancy'), 'Y', true)
@@ -453,12 +449,24 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Carri
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '05/09/2023')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), '2313564897')
+
+
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), Keys.chord('544818888', Keys.TAB, Keys.ENTER))
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), '84881516888')
+
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Prequalification'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_1'))	// set all to No
 
+
+//WebUI.switchToFrame(findTestObject('Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21testFOOTER'), 10)
+//WebUI.switchToFrame( findTestObject('Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
+
+
+
+//reusableiFrameFooter
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Coverage'))
 
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate'))
@@ -613,6 +621,8 @@ WebUI.callTestCase(findTestCase('FL DP/writeFile'),[
 	('stateFL') : stateFL,
 	('isAgent') : isAgent,
 	('environment') : environment,
+	('optionalCoverages') : optionalCoverages,
+	('numInterests') : numInterests,
 	
 	('todaysTimeStamp') : todaysTimeStamp
 		], FailureHandling.STOP_ON_FAILURE)

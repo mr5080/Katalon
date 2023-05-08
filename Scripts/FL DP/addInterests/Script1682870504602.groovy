@@ -3,6 +3,17 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import com.google.common.collect.FilteredEntryMultimap.Keys
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.Keys as Keys
+
+
+/*import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,33 +27,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+*/
 
-/*
- if(addInterest)
- {
-	 WebUI.click(findTestObject('Object Repository/FL DP/Page_/addInterests/input_AdditionalIntrestButton'))
-	 
-	 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)
-	 
-	 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
-	 
-	 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
-	 
-	 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_City_InterestCityxxxx1_1'), 'MIDDLETOWN')
-	 
-	 
-	 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_InterestState'), 'PA', true)
-		 
-	 
-	 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_InterestZipxxxx1_1'), '17057')
-	 
-	 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Loan Number_LoanNumberxxxx1_1'), '000000235')
- }
- */
- 
- 
- 
- 
  
  for(int interestCounter = 1; interestCounter <= numInterests; interestCounter++ )
  {
@@ -52,7 +38,7 @@ import org.openqa.selenium.Keys as Keys
 	 
 		 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/select_AdditionalIntrerestType'), 'M', true)	//mortgagee
 		 
-		 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'jennifer grimes')
+		 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Interest Name_InterestNamexxxx1_1'), 'emily martin')
 		 
 		 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestOne/input_Address_InterestAddress1xxxx1_1'), '904 WOODRIDGE DR')
 		 
@@ -73,7 +59,7 @@ import org.openqa.selenium.Keys as Keys
 		 
 			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/select_AdditionalIntrerestType2'), 'A', true)	// additional insured
 			 
-			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/input_Interest Name_InterestNamexxxx' + interestCounter + '_1'), 'andrea bowman')
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/input_Interest Name_InterestNamexxxx' + interestCounter + '_1'), 'jennifer bowman')
 			 
 			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestTwo/input_Address_InterestAddress1xxxx' + interestCounter + '_1'), '900 WOODRIDGE DR')
 			 
@@ -92,15 +78,15 @@ import org.openqa.selenium.Keys as Keys
 		 
 			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/select_AdditionalIntrerestType3'), 'O', true)	// additional interest
 			 
-			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Interest Name_InterestNamexxxx3_1'), 'emilee matin')
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Interest Name_InterestNamexxxx3_1'), 'andrea matin')
 			 
-			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Address_InterestAddress1xxxx3_1'), '850 QueeN St')
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Address_InterestAddress1xxxx3_1'), '880 QueeN St')
 			 
 			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_City_InterestCityxxxx3_1'), 'HarrISBurg')
 			 			 
 			 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/select_InterestState3'), 'PA', true)
 				 
-			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_InterestZipxxxx3_1'), '17113')
+			 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_InterestZipxxxx3_1'), Keys.chord('17113', Keys.TAB, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
 			 
 			 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestThree/input_Loan Number_LoanNumberxxxx3_1'), '5008050080')
 		 }
@@ -111,7 +97,7 @@ import org.openqa.selenium.Keys as Keys
 			 
 				 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/select_AdditionalIntrerestType4'), 'S', true)	//second mortgagee
 				 
-				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Interest Name_InterestNamexxxx4_1'), 'Colleen Snooker')
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Interest Name_InterestNamexxxx4_1'), 'Anna Snooker')
 				 
 				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestFour/input_Address_InterestAddress1xxxx4_1'), '850 QueeN St')
 				 
@@ -164,7 +150,7 @@ import org.openqa.selenium.Keys as Keys
 				 
 				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Interest Name_InterestNamexxxx6_1'), 'cansandra propps')
 				 
-				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Address_InterestAddress1xxxx6_1'), '850 QueeN St')
+				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_Address_InterestAddress1xxxx6_1'), '800 QueeN St')
 				 
 				 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/addInterests/interestSix/input_City_InterestCityxxxx6_1'), 'HarrISBurg')
 							  

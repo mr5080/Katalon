@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>b</value>
-      <webElementGuid>88ca1567-8aea-4135-a9a8-b3b64381cac2</webElementGuid>
+      <webElementGuid>3f7fdf08-5a3a-4081-8a09-0c8c89db9811</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Account ID: 300310</value>
-      <webElementGuid>e9751f2d-23e0-4934-9365-f30227f07ab1</webElementGuid>
+      <webElementGuid>9c28d675-b992-4c84-b6aa-7b8a086f7502</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,15 +38,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[@id=&quot;extended_header&quot;]/td[1]/table[@class=&quot;ExpandedHeader ISiRowHighlighting&quot;]/tbody[1]/tr[1]/td[@class=&quot;ExpandedHeader ISiPolicyHeader&quot;]/b[1]</value>
-      <webElementGuid>827f78e2-1c48-4335-8710-82d81ada5aa2</webElementGuid>
+      <webElementGuid>5f860919-6fcf-461a-92a3-3d2f66a35e43</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test (1)</value>
-      <webElementGuid>2867c35d-ba9d-46b9-9e5a-1338c6eec172</webElementGuid>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>25fe7fdb-ea57-4f35-aace-fe8ec4778e7e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='extended_header']/td/table/tbody/tr/td/b</value>
-      <webElementGuid>3dcaecd8-44ea-4aa2-ba12-5789eda20320</webElementGuid>
+      <webElementGuid>8b3864b3-9458-415b-a3cf-15451dec2dd3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='test.agency@cornerops.com'])[1]/following::b[1]</value>
-      <webElementGuid>acdaafdf-558c-4363-9b12-a126ab75ee81</webElementGuid>
+      <webElementGuid>1abd5fa3-a9e5-430e-9f2d-42df330ca272</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Current:'])[1]/preceding::b[1]</value>
-      <webElementGuid>93b4848e-7418-475c-b4cf-a861fa05b735</webElementGuid>
+      <webElementGuid>04bf1ced-5858-4825-869f-abe53a0389ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='300310']/parent::*</value>
-      <webElementGuid>2fe2069f-0d67-4e90-9433-845227212689</webElementGuid>
+      <webElementGuid>a1f2b440-b8e3-4f93-b74a-b047f6b1b1f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/b</value>
-      <webElementGuid>06fc8728-5d34-4161-855d-bce47641949f</webElementGuid>
+      <webElementGuid>b93f6f34-f3ce-4148-8ea1-0503600802f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//b[(text() = 'Account ID: 300310' or . = 'Account ID: 300310')]</value>
-      <webElementGuid>55e0e5c2-1cda-49ff-b908-5a86c63b363d</webElementGuid>
+      <webElementGuid>990f8742-1cd9-4333-a279-40f5fb6ce80e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
