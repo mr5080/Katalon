@@ -116,7 +116,7 @@
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>6</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>

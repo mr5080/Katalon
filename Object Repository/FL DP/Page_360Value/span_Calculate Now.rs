@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Calculate Now</name>
+   <tag></tag>
+   <elementGuidId>0aee9ea5-8077-444a-842d-65e25735b6f9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='iv360-calculate_now']/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#iv360-calculate_now > span.mat-button-wrapper > span.iv360-button-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6bfbafc6-0de8-49ac-9421-8340a00f87cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>iv360-button-text</value>
+      <webElementGuid>b4f74615-4c9a-43d4-8bd1-455d6097efcc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Calculate Now</value>
+      <webElementGuid>e62c5740-96af-4d3c-9216-1b2cc723b311</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;iv360-calculate_now&quot;)/span[@class=&quot;mat-button-wrapper&quot;]/span[@class=&quot;iv360-button-text&quot;]</value>
+      <webElementGuid>2a1f4732-cf7a-47d7-9fa1-3e92250f6b31</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='iv360-calculate_now']/span/span</value>
+      <webElementGuid>16acdaf3-766f-49b5-8129-d0a3c6072a63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter More Details'])[1]/following::span[4]</value>
+      <webElementGuid>f00e9a16-42d0-4f88-8561-a644945400b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[14]</value>
+      <webElementGuid>4a533272-7f12-49e1-b023-29553a62f225</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::span[4]</value>
+      <webElementGuid>d893b181-357d-4476-9132-45106eb4aa48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[2]/preceding::span[5]</value>
+      <webElementGuid>e77c7e80-6b00-4738-9d5a-a3af0aaddb3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Calculate Now']/parent::*</value>
+      <webElementGuid>094229b5-defb-4cb7-b4d8-0af16bb660ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/iv360-nav-button/button/span/span</value>
+      <webElementGuid>4a60ffad-3b70-4051-ada5-d39a92e444f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Calculate Now' or . = 'Calculate Now')]</value>
+      <webElementGuid>2ef5b1aa-3a5b-4225-91ce-7850b7b540cc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

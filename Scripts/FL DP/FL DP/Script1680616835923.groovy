@@ -188,8 +188,6 @@ if (isAgent == false) {
 			// add key down/up here
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))  // was .TAB, trying soemthing new 11.17.22
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-
-
 			
 		//	WebUI.delay(1)
 
@@ -204,9 +202,6 @@ if (isAgent == false) {
 		}
 	}
 }
-
-
-
 
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
@@ -333,6 +328,33 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Personal Prope
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_No Liability100,000 300,000'), '100000', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_No Medical1,000 3,000 5,000'), '5000', true)
+
+
+
+// 360 value
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate'))		// opens 360 value modal
+
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/div_360'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
+
+WebUI.switchToWindowTitle('360Value')
+// sometimes results will not be returned due to error/not enough info on the 360 site. figure out how to click these buttons maybe? 5.9.23
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Standard_mat-radio-outer-circle_1'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Standard_mat-radio-outer-circle_1_2'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Standard_mat-radio-outer-circle_1_2_3'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
+//WebUI.switchToWindowTitle('')
+WebUI.closeWindowTitle('360Value')
+
+//WebUI.delay(2)
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 0)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NonePoliceCentral StationLocal'), 'CENTRAL', true)
 
@@ -461,17 +483,9 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Prequalificatio
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_1'))	// set all to No
 
 
-//WebUI.switchToFrame(findTestObject('Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21testFOOTER'), 10)
 //WebUI.switchToFrame( findTestObject('Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
 
-
-
-//reusableiFrameFooter
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Coverage'))
-
-//WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate'))
-
-//WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_FloodZone'), 'A', true)
 

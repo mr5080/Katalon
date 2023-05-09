@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_360</name>
+   <tag></tag>
+   <elementGuidId>f564f23a-72d2-4b38-8dc4-4178afc02120</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>
+</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='reusableModal']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>107b7a3a-d5eb-4959-98bd-01167c109092</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-check form-check-inline</value>
+      <webElementGuid>c43907c8-f2b9-49b8-a4c0-c368fe6d7b6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+					
+					No
+				</value>
+      <webElementGuid>e0b682a7-87c2-45dd-8c16-511b48cff5aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Right-NearSinkhole_1&quot;)/div[@class=&quot;form-check form-check-inline&quot;]</value>
+      <webElementGuid>6934e034-02b0-44d3-8186-41eaa05e5194</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>94e03a0d-ab12-435d-9f3f-36bd13eecbf0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

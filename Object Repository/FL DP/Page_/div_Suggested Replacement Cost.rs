@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Suggested Replacement Cost</name>
+   <tag></tag>
+   <elementGuidId>8662a0e5-05d0-4118-903c-7d03ed275c1c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#PlaceholderISOReplacementCost_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PlaceholderISOReplacementCost_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>69046ecc-e62f-4843-b8eb-190acc7d67e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-8 px-1</value>
+      <webElementGuid>244163c2-9708-49c5-b4e6-429f7c59738a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>PlaceholderISOReplacementCost_1</value>
+      <webElementGuid>be7c7cd3-6835-4399-93d3-f35f87b58a7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Suggested Replacement Cost = $376,500.00</value>
+      <webElementGuid>eaa675e3-1bbf-42f6-b6c6-4c95097d3203</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PlaceholderISOReplacementCost_1&quot;)</value>
+      <webElementGuid>16ac4262-12f3-4ebb-b9b3-880c17d5084a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>d95ccb22-07fd-45a1-9c12-291927b4f5a9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='PlaceholderISOReplacementCost_1']</value>
+      <webElementGuid>97eb140a-9e96-42d2-bd7c-135ec4eab3e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Right-ISOReplacementCost_1']/div/div[2]</value>
+      <webElementGuid>a2717f78-23dc-4f92-a152-a7af8a7035df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Recalculate'])[1]/following::div[1]</value>
+      <webElementGuid>8d4e3671-5b35-4d05-aaf4-809c7ca4da4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ISO 360Value Replacement Cost Calculation'])[1]/following::div[4]</value>
+      <webElementGuid>4c040373-eaa2-45d7-bbbd-55ae27e32446</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rating Variables'])[1]/preceding::div[3]</value>
+      <webElementGuid>3a6fb292-a6d4-4abf-bddb-f630d4dcf317</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Burglar Alarm'])[1]/preceding::div[4]</value>
+      <webElementGuid>fbad4db2-29fd-4536-b368-73d0276e0ed8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Suggested Replacement Cost = $376,500.00']/parent::*</value>
+      <webElementGuid>d9e38fbc-e98b-44d3-ba21-fd3ed6f9f936</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div[2]</value>
+      <webElementGuid>efafb673-4870-44cf-a8e1-e198b66d7ab0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'PlaceholderISOReplacementCost_1' and (text() = 'Suggested Replacement Cost = $376,500.00' or . = 'Suggested Replacement Cost = $376,500.00')]</value>
+      <webElementGuid>d8b4da0a-4cdc-44f9-9fa5-8482da7bd1da</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
