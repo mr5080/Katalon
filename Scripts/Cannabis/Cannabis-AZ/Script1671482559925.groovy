@@ -485,7 +485,7 @@ WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Building Li
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Business Personal Property_BPPLimit_1'), '300001')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Actual Loss Sustained25,00050,00075,_126677'), '200000', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_Actual Loss Sustained25,00050,00075,_126677'), '25000', true)
 
 WebUI.setText(findTestObject('Object Repository/Cannabis/Page_/input_Projected Annual Gross Receipts (Loca_05b23c'), '250000')
 
@@ -637,6 +637,8 @@ WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVECla
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVEFelonyConviction'))
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVEPreviousJudgement'))
+
+WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Does the applicant no existing violations'))
 
 WebUI.click(findTestObject('Object Repository/Cannabis/Page_/input_Yes_NOSAVEDeniedRenewal'))
 

@@ -26,13 +26,13 @@ if(manualAddress == 'splitPC')	// address that returns split PC
 }
 
 else if(manualAddress == 'manual')	// manual address
-	{
+	{			//5444 E Washington St #3, Phoenix, AZ 85034
 		def nameAddressData = ['randomFirstName': 'MANNY',
 			'randomLastName': 'MANNUALEL',
-				'addressAZ': '5390 W INA RD',
-				'cityAZ': 'TUCSON',
+				'addressAZ': '1711 N CIRCLE DR',
+				'cityAZ': 'Tempe',
 				'stateAZ': 'AZ',
-				'zipAZ': '85743'
+				'zipAZ': '85288'
 			]
 	
 		// actually a lightspeed address for testing the buttons Application/Lightspeed

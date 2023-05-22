@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Standard_mat-radio-outer-circle_1_2</name>
+   <name>span_Interior</name>
    <tag></tag>
    <elementGuidId>71514168-381a-48dd-877f-42db40b61452</elementGuidId>
    <selectorCollection>

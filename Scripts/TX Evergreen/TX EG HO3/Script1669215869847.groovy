@@ -90,7 +90,10 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Z
 
 WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
-//WebUI.delay(5)
+
+//WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
+//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+
 /*
 if(WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5))
 {

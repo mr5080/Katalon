@@ -7,14 +7,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 if(manualAddress == 'manual')	// set to something I want
+	{
+		def nameAddressData = ['randomFirstName': 'MANNI',
+			'randomLastName': 'EMANUALA',
+				'addressFL': '1505 OVERLOOK DR',	
+				'cityFL': 'MOUNT DORA',
+				'stateFL': 'FL',
+				'zipFL': '32757'
+			]	
+		return nameAddressData
+	}
+	
+	
+else if(manualAddress == 'geocode')	// set to something I want
 {
 	// returns split Protection Class
 	def nameAddressData = ['randomFirstName': 'MANNI',
-		'randomLastName': 'SPLITTY',
-			'addressFL': '781 N LINCOLN CT',
-			'cityFL': 'JACKSONVILLE',
+		'randomLastName': 'EMANUALA',
+			'addressFL': '16588 Kenneth Hutcherson Mem Dr',
+			'cityFL': 'White Springs',
 			'stateFL': 'FL',
-			'zipFL': '32209'
+			'zipFL': '32096'
 		]
 
 	// actually a lightspeed address for testing the buttons Application/Lightspeed
@@ -33,13 +46,23 @@ else if(manualAddress == 'PC10')	// address returns PC10
 	{
 		def nameAddressData = ['randomFirstName': 'Procy',
 			'randomLastName': 'Tens',
-			'addressTX': '1362 E CREEKVIEW DR',
-			'cityTX': 'SALADO',
-			'stateTX': 'TX',
-			'zipTX': '76571'
+			'addressFL': '20 BIRDWELL RD',
+			'cityFL': 'MONTICELLO',
+			'stateFL': 'FL',
+			'zipFL': '32344'
 			]
 		return nameAddressData
-	}	
+		
+		// returns split Protection Class
+/*		def nameAddressData = ['randomFirstName': 'MANNI',
+			'randomLastName': 'SPLITTY',
+				'addressFL': '781 N LINCOLN CT',
+				'cityFL': 'JACKSONVILLE',
+				'stateFL': 'FL',
+				'zipFL': '32209'
+			]
+		return nameAddressData
+*/	}	
 
 else if(manualAddress == 'truerisk')
 {
@@ -96,7 +119,7 @@ else if(manualAddress == 'lightspeed')
 			
 	}
 
-
+// manualAddress  not set, uses random below
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
 int randomFLaddress = 2 + ((Math.random() * ((125 - 2) + 1)) as int)
@@ -112,7 +135,7 @@ cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
 stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 zipFL = addressData.getValue(4, randomFLaddress - 1)
 countyFL = addressData.getValue(5, randomFLaddress - 1)
-yearOfConstFL = addressData.getValue(7, randomFLaddress - 1)
+yearOfConstFL = addressData.getValue(7, randomFLaddress - 1)	// if not found, will return randomly the street address...
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)

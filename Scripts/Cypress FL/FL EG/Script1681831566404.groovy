@@ -226,8 +226,8 @@ catch (Exception e) {
 // seems to be working, if it is can remove the try/catch above - 12/18/20
 // USPS validation removed from Start a new Quote screen 4/23/21
 // geocode modal
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
-//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
+WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
 //WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
 /*
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 10)) {
@@ -627,12 +627,12 @@ System.out.println('randomBundle = ' + randomBundle)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Bundle'), randomBundle)
 
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
-/*
+
 if(stopQQ)
 {
 		System.exit(0)
 }
-*/
+
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')

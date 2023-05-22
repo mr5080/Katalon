@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Cypress Modal</name>
-   <tag></tag>
-   <comment>Need to get this value and use it to set Purcahse price </comment>
-   <testCaseGuid>ea06e82a-fdd9-446f-93cf-204b20297e1c</testCaseGuid>
-</TestCaseEntity>

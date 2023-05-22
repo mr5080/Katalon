@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>recordOC</name>
+   <name>Create Multiple</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>38bc3870-7b30-4e28-bfcc-01a172e13597</testCaseGuid>
+   <testCaseGuid>6acc7573-b687-4bd0-9b41-5e7c1a371576</testCaseGuid>
 </TestCaseEntity>

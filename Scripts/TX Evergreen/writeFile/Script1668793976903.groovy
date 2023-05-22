@@ -22,6 +22,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
 System.out.println("randomLastName(from childTestCase) = " + randomLastName)
 System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
@@ -94,9 +97,18 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
 			sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
 	
-			policyCreated = new Date()
-			System.out.println('myDate = ' + policyCreated)
+			//policyCreated = new Date()
+			//System.out.println('myDate = ' + policyCreated)
+			//sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+			
+			LocalDateTime myDateObj = LocalDateTime.now();
+			//System.out.println("Before formatting: " + myDateObj);
+			DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("HH:mm:ss");
+			
+			String policyCreated = myDateObj.format(myFormatObj);
+			System.out.println("After formatting new policyCreated string: " + policyCreated);
 			sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
+			
 	
 	//		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
