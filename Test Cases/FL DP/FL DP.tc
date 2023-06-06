@@ -74,7 +74,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'05/30/2023'</defaultValue>
+      <defaultValue>'06/10/2023'</defaultValue>
       <description></description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
@@ -95,14 +95,14 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</id>
       <masked>false</masked>
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>4</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
       <masked>false</masked>

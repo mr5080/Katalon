@@ -88,7 +88,8 @@ System.out.println('currentYear = ' + currentYear)
 
 WebUI.openBrowser('')
 
-
+try 
+{
 if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
@@ -311,7 +312,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Mitigation Premium_WindMitPremium_1'), '15000')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Mitigation Premium_WindMitPremium_1'), '15000')
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Yes SWRNo SWR'), 'Y', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableOther Roof ShapeHip Ro_0f14e0'), 'HIP', true)
@@ -376,7 +377,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 0)
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NonePoliceCentral StationLocal'), 'CENTRAL', true)
 
@@ -523,7 +524,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_C
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Price_PurchasePrice_1'), '305080')
 
-//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Rooms_NumRooms_1'), '5')
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12'), '1', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Asbestos ClapboardConcrete BlockCoqu_f829bb'), 'CONCRETEBLOCK', true)
@@ -605,8 +606,21 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Display Quote')
 // get Total Premium and Fees
 //div[@id='Wrapper-Right-TotalPremiumAndFees']
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_TotalPremiumAndFees'), 'innerHTML')
-
 System.out.println('totalPremium = ' + totalPremium)
+
+String premium = totalPremium.toString().substring(1, 10)
+System.out.println('premium = ' + premium)
+premium = premium.replace(',', '')
+System.out.println('premium = ' + premium)
+premium = premium.replace('.00', '')
+System.out.println('premium = ' + premium)
+premium = premium.trim()
+System.out.println('premium = ' + premium)
+
+premiumInt = Integer.valueOf(premium)
+System.out.println('premiumInt = ' + premiumInt)
+
+//exit(0)
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitApplication'))
 
@@ -614,7 +628,11 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitAppli
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_PaperlessDeliveryAcknowledge'))
 
 //select payment method logic
-WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') : howPayDeposit, ('fullName') : fullName, ('randomLastName') : randomLastName], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') : howPayDeposit, 
+	('fullName') : fullName,
+	('premiumInt') : premiumInt,
+	('randomLastName') : randomLastName], 
+	FailureHandling.STOP_ON_FAILURE)
 
 
 
@@ -663,3 +681,13 @@ if(shouldBind)
 */
 System.out.println('quoteNumber = ' + quoteNumber)
 
+}
+catch(e)
+{
+	System.out.println('quoteNumber = ' + quoteNumber)
+	WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+
+}

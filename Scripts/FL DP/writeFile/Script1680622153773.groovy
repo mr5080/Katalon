@@ -88,9 +88,11 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			
 			if (WebUI.waitForElementPresent(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 45))
 			{
-				WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '.jpg')
-			
+				
 				String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 'innerHTML')
+				
+				WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
+							
 			
 				sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 			}

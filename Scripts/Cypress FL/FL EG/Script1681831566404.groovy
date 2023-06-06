@@ -226,9 +226,16 @@ catch (Exception e) {
 // seems to be working, if it is can remove the try/catch above - 12/18/20
 // USPS validation removed from Start a new Quote screen 4/23/21
 // geocode modal
-WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+//WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+try
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+}
+catch(e)
+{
+	System.out.println('Exception - ' + e)
+}
 /*
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 10)) {
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))

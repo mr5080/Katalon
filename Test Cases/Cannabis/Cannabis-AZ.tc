@@ -103,7 +103,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>11e4d215-ef54-4817-b075-e402554a0049</id>
       <masked>false</masked>

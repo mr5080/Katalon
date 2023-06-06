@@ -3,12 +3,16 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
+if(premiumInt > 3000)
+{
+//	howPayDeposit = 4 // REFT forced since CC cant be more than 1000, assuming using 4 pay plan
+}
 
 if (howPayDeposit == 0) {
-	'Setup random using logic above'
+	'Setup random'
 //	for(g = 0; g<100; g++)
 //	{
-			howPayDeposit = (((Math.random() * 5) as int) + 1)
+			howPayDeposit = (((Math.random() * 4) as int) + 1)
 			WebUI.comment("howPayDeposit = " + howPayDeposit)
 			// might fail on CC and RCC due to 1000 limit
 //	}
