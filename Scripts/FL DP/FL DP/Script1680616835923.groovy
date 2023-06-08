@@ -471,6 +471,9 @@ WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressS
 */
 if (stopQQ) {
     System.out.println('quoteNumber = ' + quoteNumber)
+	f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
+	def valueA = quoteNumber + '\n'
+	f.append(valueA)
 
     return //System.exit(0)
 }

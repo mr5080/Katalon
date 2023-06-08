@@ -332,12 +332,22 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
-if(stopQQ)
-{	
-	System.exit(0)
-}
-
+//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Continue'))
+
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
+WebUI.scrollToElement(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), 5)
+
+WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\TXzip\\TXzip-' + zipTX) + '.jpg')	// take first screenshot
+
+if(stopQQ)
+{
+	return
+	//System.exit(0)
+}
+	
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Proceed to Application'))
 

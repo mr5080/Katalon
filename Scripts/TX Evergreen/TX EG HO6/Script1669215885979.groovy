@@ -211,7 +211,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'S', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+//WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), YOC)		// this is year to use with YOC variable
+WebUI.delay(5)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Occupancy'), 'OWNER', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Usage'), 'PRIMARY', true)
@@ -275,11 +277,29 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
+WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
+
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
+
+if(Integer.parseInt(YOC) == 1982)
+{
+	WebUI.scrollToElement(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'), 5)
+}
+
+WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\TXzip\\HO6 screenshots\\TXzip-' + zipTX + 'YOC-' + YOC) + '.jpg')	// take first screenshot
+
 if(stopQQ)
 {
-	System.exit(0)
+	return
+	//System.exit(0)
 }
-WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
+	
+
+
+
+
+
 
 /*
 WebUI.switchToWindowTitle('')

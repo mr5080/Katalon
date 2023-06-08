@@ -19,14 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 
 int counter = 1
-while(counter <= 5)
+while(counter <= 10)
 {
 	WebUI.callTestCase(findTestCase('Cypress FL/FL EG'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 	// use this one if you want to loop through excel file
 //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 	
 	System.out.println("counter = " +counter)
-	if(counter == 5)
+	if(counter == 10)
 	{
 		System.exit(0)
 	}

@@ -47,6 +47,12 @@
       <value></value>
       <variableId>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b4029606-61e4-48d5-9d3d-41a295646921</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
@@ -76,14 +82,14 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
       <masked>false</masked>
@@ -95,5 +101,12 @@
       <id>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</id>
       <masked>false</masked>
       <name>howPayDeposit</name>
+   </variable>
+   <variable>
+      <defaultValue>'1983'</defaultValue>
+      <description>1983 = open for rating, 1982 = closed for rating</description>
+      <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
+      <masked>false</masked>
+      <name>YOC</name>
    </variable>
 </TestCaseEntity>

@@ -513,7 +513,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250800')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250800')
 
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
@@ -635,17 +635,30 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 
-if(stopQQ)
-{
-		System.exit(0)
-}
-
 
 //WebUI.click(findTestObject('Cypress 4/Page_/div_Suggested Replacement Cost'))
 //WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the Past 3'), '0')
 'Click Rate and Continue button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
+if(stopQQ)
+{
+	System.out.println('quoteNumber = ' + quoteNumber)
+	f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-EG-'+policyType+'stoppedAtQQ.txt')		
+	def valueA = quoteNumber + '\n'		
+	f.append(valueA)
+		
+	return	
+	//System.exit(0)
+	/*
+	FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+	
+			workbook.write(outFile)
+	
+			outFile.close()
+			*/
+}
+	
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 //WebUI.delay(5)

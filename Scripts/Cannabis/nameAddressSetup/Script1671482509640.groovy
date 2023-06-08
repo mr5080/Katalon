@@ -106,6 +106,31 @@ else if(manualAddress == 'lightspeed')
 		return nameAddressData
 			
 	}
+	
+else if(manualAddress == 'AZ')
+{
+	def nameAddressData = ['randomFirstName': 'LARRY',
+		'randomLastName': 'LIGHTY',
+		'addressAZ': '10261 N SCOTTSDALE RD',
+		'cityAZ': 'SCOTTSDALE',
+		'stateAZ': 'ARIZONA',
+		'zipAZ': '85253'
+	]
+	return nameAddressData
+}
+
+else if(manualAddress == 'OR')
+{
+	def nameAddressData = ['randomFirstName': 'ORRY',
+		'randomLastName': 'Goniana',
+		'addressAZ': '385 SW COLUMBIA ST',
+		'cityAZ': 'BEND',
+		'stateAZ': 'OREGON',
+		'zipAZ': '97702'
+	]
+	return nameAddressData		
+}
+
 
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'AZ Addresses', true)

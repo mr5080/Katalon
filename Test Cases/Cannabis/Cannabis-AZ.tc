@@ -68,7 +68,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'05/30/2023'</defaultValue>
+      <defaultValue>'06/15/2023'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>
@@ -82,8 +82,8 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>manual, lightspeed, splitPC, or xxxxx</description>
+      <defaultValue>'OR'</defaultValue>
+      <description>manual, lightspeed, splitPC, or xxxxx or 2 letter state</description>
       <id>226740d8-04a7-42cb-bfd4-106745b257ae</id>
       <masked>false</masked>
       <name>manualAddress</name>

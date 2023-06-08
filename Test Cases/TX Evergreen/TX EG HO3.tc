@@ -83,7 +83,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>

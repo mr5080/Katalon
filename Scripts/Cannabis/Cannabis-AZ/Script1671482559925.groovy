@@ -91,7 +91,8 @@ if(stopQQ)
 }
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ARIZONACOLORADOOKLAHOMA'), '2', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_ARIZONACOLORADOOKLAHOMA'), '2', true)
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Cannabis/Page_/select_ARIZONACOLORADOOKLAHOMA'), stateAZ, false)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_PolicyType'), 'BOPA', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cannabis/Page_/select_PolicyType'), policyType, true)

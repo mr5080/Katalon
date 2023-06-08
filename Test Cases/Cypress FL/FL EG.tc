@@ -187,14 +187,14 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'06/09/2023'</defaultValue>
+      <defaultValue>'06/19/2023'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
       <name>EffectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>debbba29-b776-4f55-af4a-308fb85d4088</id>
       <masked>false</masked>
