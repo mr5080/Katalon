@@ -686,11 +686,18 @@ System.out.println('quoteNumber = ' + quoteNumber)
 
 }
 catch(e)
-{
-	System.out.println('quoteNumber = ' + quoteNumber)
+{ 
+	quoteNumber = quoteNumber.replace(':', '')
+	System.out.println('quoteNumber = ' + quoteNumber)	
+	
+	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+	
 	WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
+	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp +  quoteNumber) + 'Failure.jpg')
+	/*
 	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
 		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
 		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
-
+	*/
 }

@@ -337,9 +337,8 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Co
 
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
-WebUI.scrollToElement(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), 5)
-
-WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\TXzip\\TXzip-' + zipTX) + '.jpg')	// take first screenshot
+//WebUI.scrollToElement(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), 5)
+//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\TXzip\\TXzip-' + zipTX) + '.jpg')	// take first screenshot
 
 if(stopQQ)
 {

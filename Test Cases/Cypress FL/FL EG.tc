@@ -117,7 +117,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -145,7 +145,7 @@
       <name>realTestUser</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>9428647b-03b5-47e4-b285-2c304c3e479f</id>
       <masked>false</masked>
@@ -194,7 +194,7 @@
       <name>EffectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>debbba29-b776-4f55-af4a-308fb85d4088</id>
       <masked>false</masked>
