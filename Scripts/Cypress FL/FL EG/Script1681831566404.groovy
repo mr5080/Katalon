@@ -474,7 +474,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
-    //randomNumber = 1 // force International or not. 0 = US, 1 = International
+    randomNumber = 0 // force International or not. 0 = US, 1 = International
 
     System.out.println('need to fill in prior mailing address stuff')
 
@@ -693,7 +693,7 @@ if (randomNumber == 0) // fill out US prior mailing address
 
     WebUI.setText(findTestObject('Cypress 4/Page_/input - ApplicantAddress1City - International'), 'Villa A Roggio, Lucca, 55060')
 
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International Second'), 'CHINA')
 
     try {
         WebUI.acceptAlert()

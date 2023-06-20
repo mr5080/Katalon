@@ -322,8 +322,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Y
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableFBC EquivalentNon-FBC _2d03d2'), 'FBC', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableA - 6d  612B - 8d  612_c831a0'), 'NA', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableClipsReinf Concrete Ro_7662b1'), 'CLIPS', true)
+//exit(0)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableClipsReinf Concrete Ro_7662b1'), 'CLIPS', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicablePart EnclosedEnclosed'), 'PARTIAL', true)
 
@@ -547,6 +547,15 @@ catch (def e) {
     System.out.println('error for some reason  ' + e)
 } 
 
+// only here to populate subdivision. defect 4613
+
+/*if(WebUI.verifyElementPresent(findTestObject('Object Repository/FL DP/Page_/input_SubdivisionHack'), 3))
+{
+	WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_SubdivisionHack'), 'Dream Lake')
+}	
+*/
+
+
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Wiring Year Completed_LastElectricalUpdate_1'), '2018')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Roof Year Completed_LastRoofUpdate_1'), '2019')
@@ -638,9 +647,6 @@ WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') :
 	FailureHandling.STOP_ON_FAILURE)
 
 
-
-
-
 if (shouldBind == true) {
     WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
 
@@ -688,13 +694,13 @@ System.out.println('quoteNumber = ' + quoteNumber)
 catch(e)
 { 
 	quoteNumber = quoteNumber.replace(':', '')
-	System.out.println('quoteNumber = ' + quoteNumber)	
+	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)	
 	
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
-	
+		
 	WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
 	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
-	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp +  quoteNumber) + 'Failure.jpg')
+	
 	/*
 	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
 		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
