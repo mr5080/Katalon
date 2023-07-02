@@ -74,7 +74,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'06/30/2023'</defaultValue>
+      <defaultValue>'07/30/2023'</defaultValue>
       <description></description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
@@ -102,7 +102,7 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
       <masked>false</masked>
@@ -116,7 +116,7 @@
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>1</defaultValue>
       <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>

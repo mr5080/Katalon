@@ -120,7 +120,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_D
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_First Name_ApplicantFirst'), randomFirstName)
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Middle Name_ApplicantMiddle'), 'EMILEEE')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Middle Name_ApplicantMiddle'), 'STEPHIE')
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Last Name_ApplicantLast'), randomLastName)
 
@@ -210,7 +210,8 @@ if (isAgent == false) {
             //	{
             //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
             WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.ENTER))
-
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10101', Keys.ENTER))		//10k report testing
+			
             //	}
             //	else if(environment == "STAGE")
             //	{
@@ -325,7 +326,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_N
 //exit(0)
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableClipsReinf Concrete Ro_7662b1'), 'CLIPS', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicablePart EnclosedEnclosed'), 'PARTIAL', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicablePart EnclosedEnclosed'), 'FBC', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_2 Hurricane5 Hurricane10 Hurricane50_883f7d'), '5', true)
 
@@ -333,7 +334,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_5
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input__DwellingLimit_1'))
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input__DwellingLimit_1'), '300000')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input__DwellingLimit_1'), '999000')
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 of Cov A2 of Cov A5 of Cov A10 of _f74192'), '1', true)
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 of Cov A2 of Cov A5 of Cov A10 of _f74192'), '2', true)
@@ -344,9 +345,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_N
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_No Medical1,000 3,000 5,000'), '5000', true)
 
-// 360 value
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' // opens 360 value modal
-        ))
+
+// opens 360 value modal
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
+       
 
 WebUI.delay(2)
 
@@ -378,6 +380,8 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_NonePoliceCentral StationLocal'), 'CENTRAL', true)
 
@@ -540,13 +544,14 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_B
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
 // try to click subdivision NO, 4.14.23. should not be displaying always, but currently is 
+/*
 try {
     WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_SubDivision'))
 }
 catch (def e) {
     System.out.println('error for some reason  ' + e)
 } 
-
+*/
 // only here to populate subdivision. defect 4613
 
 /*if(WebUI.verifyElementPresent(findTestObject('Object Repository/FL DP/Page_/input_SubdivisionHack'), 3))
@@ -620,7 +625,13 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Display Quote')
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/div_TotalPremiumAndFees'), 'innerHTML')
 System.out.println('totalPremium = ' + totalPremium)
 
-String premium = totalPremium.toString().substring(1, 10)
+String premium = totalPremium.toString()
+//String premium = totalPremium.toString().substring(1, 10)
+
+int premiumLength = premium.length()
+System.out.println('premiumLength = ' + premiumLength )
+premium = premium.substring(1, premium.length())
+
 System.out.println('premium = ' + premium)
 premium = premium.replace(',', '')
 System.out.println('premium = ' + premium)

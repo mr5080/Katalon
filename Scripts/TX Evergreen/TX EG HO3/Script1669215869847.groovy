@@ -342,8 +342,9 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Co
 
 if(stopQQ)
 {
-	return
-	//System.exit(0)
+	
+	//return	// closes window
+	System.exit(0)  // keeps window open
 }
 	
 

@@ -127,6 +127,8 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Doc
 			sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
 			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)
 			
+			//notes = "to be deny'd"
+			//sheet.getRow(rowCount).createCell(14).setCellValue(notes)
 			file.close()
 		
 			try {
