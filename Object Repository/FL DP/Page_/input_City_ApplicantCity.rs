@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>9b930a8b-9933-44d6-9021-9bdb0112407a</webElementGuid>
+      <webElementGuid>801d2cf6-bfba-4066-a2f4-7889f34da137</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>12c9d9df-40b5-42b4-9e6c-3dbb9ee56ee4</webElementGuid>
+      <webElementGuid>77a09dd3-afe9-4336-bdb3-6461a1e68778</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ApplicantCity</value>
-      <webElementGuid>cda54ed7-d3d2-459c-9a7c-af20cebdc43c</webElementGuid>
+      <webElementGuid>4394ab15-a32d-4171-8d6b-c2c74592b8b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ApplicantCity</value>
-      <webElementGuid>73fd015f-7984-4639-9b31-0c929495944c</webElementGuid>
+      <webElementGuid>988cedeb-a1d4-4145-9e41-3a3599f90a2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>size</name>
       <type>Main</type>
       <value>30</value>
-      <webElementGuid>1665b757-70fe-40fe-b1d7-d986102d5ce7</webElementGuid>
+      <webElementGuid>818ec16b-f155-4446-a1c1-4b493bdabffb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>50</value>
-      <webElementGuid>2cd035d7-a009-414f-96d2-54992781cf29</webElementGuid>
+      <webElementGuid>129c4f8c-25a9-4c4f-b00a-a4ce6034f195</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>GMJSDataManager('0',document.getElementById('RealtimeGeocodingProviderSelector').value,'^ConstructionYear_1|');MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','','',getMostRelevantPolicyTypeCodeValue(document.getElementById('PolicyTypeCode'),'',''),'0'); </value>
-      <webElementGuid>39bcfe2b-f2d2-4178-bf9e-329440c22939</webElementGuid>
+      <webElementGuid>69196654-33a1-4a04-97c5-d2b381ca35b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>; chkQuotes(this); UpperCase(this) </value>
-      <webElementGuid>203a100d-ab61-4477-a176-0ac760178d4e</webElementGuid>
+      <webElementGuid>bed876a1-cda8-4602-afce-9fb4bbb7bc23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ApplicantCity&quot;)</value>
-      <webElementGuid>16115095-e40d-4732-aed6-56de8f78ff9f</webElementGuid>
+      <webElementGuid>8cecd037-8400-441c-8a5f-7e394d768fca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,7 +94,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>ee897b2e-8193-4c00-8a7b-5e2b344e4a17</webElementGuid>
+      <webElementGuid>8323344d-6edc-4d5c-b5c9-9832b77da4ca</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='ApplicantCity']</value>
-      <webElementGuid>a8329a9e-4760-483c-b755-df24b0f0fe6c</webElementGuid>
+      <webElementGuid>a9cb2e0b-1d17-428c-b23a-0dec83e6071f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//tr[@id='QuoteAddress3']/td[2]/input</value>
-      <webElementGuid>9e4006f2-39a9-45ac-9624-c3d521075ce3</webElementGuid>
+      <webElementGuid>54a62300-a460-4e73-b31f-86f62c1c6fb9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[8]/td[2]/input</value>
-      <webElementGuid>a5dbf77a-88b2-4126-ac09-8accca70dc33</webElementGuid>
+      <webElementGuid>80f7fd5e-6954-4381-a658-17302ca6d0e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'ApplicantCity' and @id = 'ApplicantCity']</value>
-      <webElementGuid>b95d42fd-dd7c-4800-baee-f4c65b056ba9</webElementGuid>
+      <webElementGuid>ea15e5db-3795-4e0e-a2db-3c742b878ad2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

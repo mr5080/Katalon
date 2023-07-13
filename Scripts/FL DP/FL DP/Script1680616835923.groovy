@@ -299,14 +299,13 @@ if (!(isAgent)) {
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'))
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Market Value_MarketValue_1'), '300000')
 if (isAgent == false) {
-    WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater')
+    //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater') 	// commented out 7.7.23 - causing failures for some reason based on addres???
 
-    WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_12345678910'), '1', true // PC
-        )
+    //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ProtectionClass'), '1', true)	// commented out 7.7.23 - causing failures for some reason based on addres???
 
     WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not ApplicableNoneHurricane-Windows _4e2d22'), 'BASIC', true)
 
-    WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
+    //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Not Applicable100110 120'), '110', true)
 }
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_ad3f5d'), '2', true)

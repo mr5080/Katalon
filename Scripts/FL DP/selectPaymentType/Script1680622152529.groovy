@@ -5,7 +5,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(premiumInt > 3000)
 {
-//	howPayDeposit = 4 // REFT forced since CC cant be more than 1000, assuming using 4 pay plan
+	howPayDeposit = 4 // REFT forced since CC cant be more than 1000, assuming using 4 pay plan
 }
 
 if (howPayDeposit == 0) {
