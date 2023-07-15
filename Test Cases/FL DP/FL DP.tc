@@ -59,6 +59,12 @@
       <value></value>
       <variableId>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3719e49c-24b3-4c87-98ea-2589d78e535b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
@@ -67,14 +73,14 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'07/29/2023'</defaultValue>
+      <defaultValue>'06/29/2023'</defaultValue>
       <description></description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
@@ -102,7 +108,7 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
       <masked>false</masked>
@@ -121,5 +127,12 @@
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>
       <name>numInterests</name>
+   </variable>
+   <variable>
+      <defaultValue>'FULL'</defaultValue>
+      <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
+      <id>3719e49c-24b3-4c87-98ea-2589d78e535b</id>
+      <masked>false</masked>
+      <name>payPlanOption</name>
    </variable>
 </TestCaseEntity>

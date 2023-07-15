@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_12345678910</name>
+   <name>select_ProtectionClass</name>
    <tag></tag>
    <elementGuidId>8ddd420f-83b2-455b-938e-8ba858d073c6</elementGuidId>
    <selectorCollection>

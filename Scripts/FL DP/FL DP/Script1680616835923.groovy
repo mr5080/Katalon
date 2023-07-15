@@ -209,8 +209,8 @@ if (isAgent == false) {
             //	if(environment == "TEST")
             //	{
             //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.ENTER))
-			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10101', Keys.ENTER))		//10k report testing
+            //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.ENTER))
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('12268', Keys.ENTER))		//10k report testing
 			
             //	}
             //	else if(environment == "STAGE")
@@ -474,7 +474,9 @@ WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressS
 */
 if (stopQQ) {
     System.out.println('quoteNumber = ' + quoteNumber)
-	f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
+	//f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
+	f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
+	
 	def valueA = quoteNumber + '\n'
 	f.append(valueA)
 
@@ -611,7 +613,9 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVETrampo
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Billing'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PaymentPlan'), '4PAY', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PaymentPlan'), '4PAY', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PaymentPlan'), payPlanOption, true)
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_PremiumBilledTo'), 'Applicant1', true)
 
@@ -708,7 +712,9 @@ catch(e)
 	
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 		
-	WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	
 	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
 	
 	/*
