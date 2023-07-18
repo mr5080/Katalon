@@ -93,7 +93,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 				String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 'innerHTML')
 				
 				//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
-				WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
+				WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
 			
 				sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 			}
@@ -148,8 +148,6 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 				// try to write again, file is probably open...
 				//FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-				
-		
 				workbook.write(outFile)
 		
 				outFile.close()
