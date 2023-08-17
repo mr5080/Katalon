@@ -61,7 +61,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'06/20/2023'</defaultValue>
+      <defaultValue>'08/20/2023'</defaultValue>
       <description></description>
       <id>2cf2d68c-3623-45b4-b1be-6a846e46ce2a</id>
       <masked>false</masked>
@@ -82,14 +82,14 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'manual'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
       <masked>false</masked>
@@ -103,7 +103,7 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>'1983'</defaultValue>
+      <defaultValue>'2015'</defaultValue>
       <description>1983 = open for rating, 1982 = closed for rating</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>

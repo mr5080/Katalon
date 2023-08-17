@@ -320,9 +320,12 @@ if ((isAgent == false) && (realTestUser == false)) {
         try {
             WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 
-            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
-            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
-//			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+        //    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
+         //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('7177625555',  Keys.TAB))
+			
+			
 
             WebUI.delay(1)
 
@@ -427,7 +430,13 @@ if(censusBlockTest)
 	}
 }
 */
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
+{
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
+}
 
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
 System.out.println('constructionYear  = ' + constructionYear)
@@ -948,12 +957,19 @@ if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC can
     System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
 }
 
+// add confirm to paperless
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_PaperlessConfirm'))
+
 //select payment method logic
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
 		('fullName') : fullName,
 	 ('randomLastName') : randomLastName		
 		 ], FailureHandling.STOP_ON_FAILURE)
+
+
+
+
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('Cypress FL/writeFile'), 

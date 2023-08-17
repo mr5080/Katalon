@@ -96,28 +96,28 @@
       <variableId>debbba29-b776-4f55-af4a-308fb85d4088</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -166,7 +166,7 @@
       <name>manualNameAddress</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>
@@ -187,7 +187,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'06/30/2023'</defaultValue>
+      <defaultValue>'08/17/2023'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>

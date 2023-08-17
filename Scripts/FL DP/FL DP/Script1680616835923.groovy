@@ -209,8 +209,8 @@ if (isAgent == false) {
             //	if(environment == "TEST")
             //	{
             //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST AGENCY')
-            //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.ENTER))
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('12268', Keys.ENTER))		//10k report testing
+            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.ENTER))
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('12268', Keys.ENTER))		//10k report testing agent is setup for ecommission
 			
 			
             //	}
@@ -261,6 +261,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_P
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_FrameFrame with HardiplankMasonryMas_3f1d9f'), 'V', true)
 
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
+{
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
+}
+
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Construction Year_ConstructionYear_1'), yearOfConstFL)
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_ResidencyType'), 'TENANT', true)
@@ -350,7 +355,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_N
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
        
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 

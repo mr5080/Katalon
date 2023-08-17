@@ -80,14 +80,14 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'06/29/2023'</defaultValue>
+      <defaultValue>'08/29/2023'</defaultValue>
       <description></description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST, STAGE</description>
       <id>ec7d9091-ecd4-4a0f-9f5d-2a4eeebcae51</id>
       <masked>false</masked>
@@ -108,7 +108,7 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>4</defaultValue>
+      <defaultValue>2</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
       <masked>false</masked>
@@ -122,14 +122,14 @@
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>6</defaultValue>
+      <defaultValue>3</defaultValue>
       <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>
       <name>numInterests</name>
    </variable>
    <variable>
-      <defaultValue>'FULL'</defaultValue>
+      <defaultValue>'9PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>3719e49c-24b3-4c87-98ea-2589d78e535b</id>
       <masked>false</masked>

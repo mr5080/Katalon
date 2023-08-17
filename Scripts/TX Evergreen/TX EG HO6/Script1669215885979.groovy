@@ -281,14 +281,14 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Co
 
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
-
+/*
 if(Integer.parseInt(YOC) == 1982)
 {
 	WebUI.scrollToElement(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'), 5)
 }
 
-WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\TXzip\\HO6 screenshots\\TXzip-' + zipTX + 'YOC-' + YOC) + '.jpg')	// take first screenshot
-
+WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\TXzip\\HO6 screenshots\\TXzip-' + zipTX + 'YOC-' + YOC) + '.jpg')	// take first screenshot
+*/
 if(stopQQ)
 {
 	return

@@ -17,19 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+int howMany = 40
 
-int howMany = 150
 int counter = 1
-while(counter <= howMany)
-{
-	WebUI.callTestCase(findTestCase('Cypress FL/FL EG'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-	// use this one if you want to loop through excel file
-//	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	System.out.println("counter = " +counter)
-	if(counter == howMany)
-	{
-		System.exit(0)
-	}
-	counter++
-}	
+
+while (counter <= howMany) {
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+
+    // use this one if you want to loop through excel file
+    //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+    System.out.println('counter = ' + counter)
+
+    if (counter == howMany) {
+        System.exit(0)
+    }
+    
+    counter++
+}
+
