@@ -41,6 +41,8 @@ import internal.GlobalVariable as GlobalVariable
 	
 WebUI.openBrowser('')
 
+try {
+
 //WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
 if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
@@ -322,8 +324,8 @@ if ((isAgent == false) && (realTestUser == false)) {
 
         //    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
          //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('7177625555',  Keys.TAB))
+		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.TAB))
 			
 			
 
@@ -483,7 +485,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
-    randomNumber = 0 // force International or not. 0 = US, 1 = International
+    randomNumber = 1 // force International or not. 0 = US, 1 = International
 
     System.out.println('need to fill in prior mailing address stuff')
 
@@ -636,7 +638,7 @@ if (policyType == 'HO6') {
     randomBundle = (randomBundle - 1 // because HO6 only has 1 bundle option
     )
 }
-randomBundle = 0
+//randomBundle = 0
 System.out.println('randomBundle = ' + randomBundle)
 
 //}
@@ -671,8 +673,14 @@ if(stopQQ)
 'Proceed to Application button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 //WebUI.delay(5)
+
+// this needs cleaned up, 8.17.23
 'new paperless buttons'
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
+if(paperless == false)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_Paperless'))
+}
 
 'Set Current Mailing Address to international address on the Policy screen'
 randomNumber = ((Math.random() * 2 // generates random number, either 0 or 1, used to randomize US/international
@@ -958,8 +966,10 @@ if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC can
 }
 
 // add confirm to paperless
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_PaperlessConfirm'))
-
+if(paperless == true)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_PaperlessConfirm'))
+}
 //select payment method logic
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
@@ -983,6 +993,7 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 	('shouldBind') : shouldBind,
 	('stateFL') : stateFL,
 	('isAgent') : isAgent,
+	('paperless') : paperless,
 	('environment') : environment,
 	
 	('todaysTimeStamp') : todaysTimeStamp	
@@ -994,3 +1005,22 @@ System.out.println('fullName = ' + fullName)
 
 System.out.println('shouldBind = ' + shouldBind)
 
+}
+catch(e)
+{
+	quoteNumber = quoteNumber.replace(':', '')
+	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
+	
+	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+		
+	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	
+	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
+	
+	/*
+	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+	*/
+}

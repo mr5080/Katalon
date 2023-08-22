@@ -145,10 +145,10 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		// capacity trigger
 		randomFirstName = 'Island'
 		randomLastName = 'Man'
-		addressFL = '440 Seabreeze Blvd'
-		cityFL = 'Fort Lauderdale'
+		addressFL = '685 FERN ST'
+		cityFL = 'Jacksonville'
 		stateFL = 'FL'
-		zipFL = 33316
+		zipFL = 32206
 		
 	}
 		

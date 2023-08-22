@@ -35,6 +35,7 @@ System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("stateFL(from childTestCase) = " + stateFL)
 //System.out.println("manualAddress(from childTestCase) = " + manualAddress)
+System.out.println("paperless(from childTestCase) = " + paperless)
 
 
 
@@ -127,6 +128,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
 			sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
 			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)
+			sheet.getRow(rowCount).createCell(14).setCellValue(paperless)
 			
 			//notes = "to be deny'd"
 			//sheet.getRow(rowCount).createCell(14).setCellValue(notes)

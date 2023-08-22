@@ -219,8 +219,8 @@ if (isAgent == false) {
             //	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
             //	}
             // add key down/up here
-            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER // was .TAB, trying soemthing new 11.17.22
-                    ))
+			// was .TAB, trying soemthing new 11.17.22
+            WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))
 
             //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
             //	WebUI.delay(1)
@@ -236,9 +236,9 @@ if (isAgent == false) {
     }
 }
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), '09/03/2018')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('02/02/2019', Keys.TAB))
 
 //WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('09/03/2022', Keys.TAB))
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-765-5091')
@@ -497,6 +497,10 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Appl
 
 //WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Proceed to Application'))
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Paperless Document Delivery_NOSAVEPaperless'))
+if(paperless == false)
+{
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_Paperless'))
+}
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Occupation'), 'EMPLOYED', true)
 
@@ -657,7 +661,13 @@ System.out.println('premiumInt = ' + premiumInt)
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_BindSubmitApplication'))
 
 //new paperless radio button
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_PaperlessDeliveryAcknowledge'))
+//WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_PaperlessDeliveryAcknowledge'))
+
+// add confirm to paperless
+if(paperless == true)
+{
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/input_Yes_NOSAVE_PaperlessConfirm'))
+}
 
 //select payment method logic
 WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') : howPayDeposit, 
@@ -686,7 +696,7 @@ if (shouldBind == true) {
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
         ('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
-        , ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+        , ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests,  ('paperless') : paperless, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
