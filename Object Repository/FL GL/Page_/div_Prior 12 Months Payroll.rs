@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Prior 12 Months Payroll</name>
+   <tag></tag>
+   <elementGuidId>02c352ff-079b-4f48-84c4-5d7e36f90417</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-Prior12MonthsPayroll']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Left-Prior12MonthsPayroll</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5d80b331-d77c-4d0a-9962-891aec895d1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Left-Prior12MonthsPayroll</value>
+      <webElementGuid>9c55f62c-3df6-45dc-9c2e-2a25221a6e35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-2 p-1  ISiA-RequiredLabel   </value>
+      <webElementGuid>7657afdd-f4ad-405a-a6ff-b151958f5fc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Prior 12 Months Payroll </value>
+      <webElementGuid>d992c04f-4e79-4bf5-90ea-8dd4ecfc072d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Left-Prior12MonthsPayroll&quot;)</value>
+      <webElementGuid>7b1254a8-55b8-4f72-99c7-fa99821a4958</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>f2c78376-f784-4696-bda4-4f68557957c7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Left-Prior12MonthsPayroll']</value>
+      <webElementGuid>b3093f6b-124d-48b9-bcee-c394e21c7565</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div/div[4]/div[2]/div[2]/div/div</value>
+      <webElementGuid>8c146130-48ee-4721-8019-717ea732e3f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prior Information'])[1]/following::div[6]</value>
+      <webElementGuid>e80f16a1-2cc0-4091-b552-e73ec48b751b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('Insured', &quot;'&quot;, 's Email')])[1]/following::div[9]</value>
+      <webElementGuid>c9ab3e25-cbdd-4e22-9556-22d21c56ff2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$'])[1]/preceding::div[1]</value>
+      <webElementGuid>72ef3768-6ca3-409e-b09a-39cae4e280fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prior 12 Months Subcontracted Costs'])[1]/preceding::div[4]</value>
+      <webElementGuid>d6112ba9-fb4a-4075-aee3-172010f9f9fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Prior 12 Months Payroll']/parent::*</value>
+      <webElementGuid>adf07b55-bd28-49da-acdd-3c403deb64ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div[2]/div/div</value>
+      <webElementGuid>0630dd2d-c922-4b82-8215-ad71a39c0404</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Left-Prior12MonthsPayroll' and (text() = 'Prior 12 Months Payroll ' or . = 'Prior 12 Months Payroll ')]</value>
+      <webElementGuid>6009805c-8ce2-4e91-9067-0ff8d3389611</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Gross Receipts</name>
+   <tag></tag>
+   <elementGuidId>cb75023f-37a3-48b8-8ffb-4106eb3b5fd3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-GrossReceipts']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Left-GrossReceipts</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>549cf39f-1050-4c1b-8578-13d653b4224d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Left-GrossReceipts</value>
+      <webElementGuid>52d132e4-96e2-49c7-9af9-3e50cda6f9fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-8 p-1 ISiA-RequiredLabel</value>
+      <webElementGuid>019e52a2-4d21-4535-9d10-dc78e3f777e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Gross Receipts </value>
+      <webElementGuid>4246315b-4843-4542-9c78-361028fd1bf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Left-GrossReceipts&quot;)</value>
+      <webElementGuid>f7d627bc-3a12-41e9-8fa0-8cbdc2011aba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>14ec56f7-70e7-4144-9eec-dd94b21c9410</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Left-GrossReceipts']</value>
+      <webElementGuid>e758154c-6c91-47cc-9749-c56ee344dda8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div/div[6]/div[2]/div/div/div</value>
+      <webElementGuid>382f6c8e-f441-4baa-9606-6e44c66f0139</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Receipts, Payroll and Cost of Work Details'])[1]/following::div[4]</value>
+      <webElementGuid>b03d9cab-05a1-4e06-a6be-3dcedff0b319</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$5,000'])[1]/following::div[6]</value>
+      <webElementGuid>4c1c7500-478f-4922-b641-3eb1c977744f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Active Owner / Partner'])[1]/preceding::div[2]</value>
+      <webElementGuid>94cfd795-1853-4797-871f-9b74890da2d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of People'])[1]/preceding::div[5]</value>
+      <webElementGuid>42f64d80-1899-4e84-b5f1-1a1c6f6c48df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Gross Receipts']/parent::*</value>
+      <webElementGuid>d592b4b6-5f40-4062-8703-50f4f4551b64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div[2]/div/div/div</value>
+      <webElementGuid>90f79027-d957-462a-8b0d-fe07d2548af5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Left-GrossReceipts' and (text() = 'Gross Receipts ' or . = 'Gross Receipts ')]</value>
+      <webElementGuid>0c19a033-c882-42fd-b086-11665552e315</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

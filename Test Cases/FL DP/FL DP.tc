@@ -79,21 +79,21 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'08/29/2023'</defaultValue>
+      <defaultValue>'09/29/2023'</defaultValue>
       <description></description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST, STAGE</description>
       <id>ec7d9091-ecd4-4a0f-9f5d-2a4eeebcae51</id>
       <masked>false</masked>
@@ -128,7 +128,7 @@
       <name>optionalCoverages</name>
    </variable>
    <variable>
-      <defaultValue>1</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0 - 6, add more </description>
       <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
       <masked>false</masked>

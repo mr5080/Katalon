@@ -517,7 +517,8 @@ WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_PreviousZip'),
 */
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), '05/09/2023')
+WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), Keys.chord(effectiveDate, Keys.TAB))
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Expiration Date'), Keys.chord(effectiveDate))
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), Keys.chord('544818888', Keys.TAB, Keys.ENTER))
 WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Previous Policy_PriorPolicyNumber_1'), '84881516888')

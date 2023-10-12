@@ -142,13 +142,13 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		*/
 		
 	
-		// capacity trigger
-		randomFirstName = 'Island'
+		// Sinkhole = Yes
+		randomFirstName = 'Sinky'
 		randomLastName = 'Man'
-		addressFL = '685 FERN ST'
-		cityFL = 'Jacksonville'
+		addressFL = '1481 VIEUX CARRE DR'
+		cityFL = 'TALLAHASSEE'
 		stateFL = 'FL'
-		zipFL = 32206
+		zipFL = 32308
 		
 	}
 		

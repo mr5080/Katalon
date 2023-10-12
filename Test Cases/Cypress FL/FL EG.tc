@@ -109,21 +109,21 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -165,7 +165,7 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>
@@ -193,11 +193,11 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'08/23/2023'</defaultValue>
+      <defaultValue>'09/30/2023'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
-      <name>EffectiveDate</name>
+      <name>effectiveDate</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>

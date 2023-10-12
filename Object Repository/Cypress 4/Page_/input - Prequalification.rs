@@ -6,13 +6,12 @@
    <elementGuidId>a759b022-a04a-4381-8644-f55f0021bf7a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]
-</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@type = 'button' and @ref_element = 'Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[text()='Prequalification >']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,6 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>8bd726e7-d938-4386-a58f-4eb4debe4b2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,6 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>dad66486-140f-4d11-9b7d-547012cd7ec5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,6 +38,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Quick Quote</value>
+      <webElementGuid>d3b8fe48-b5d7-4ea1-90b7-6bdc11a25ed1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,6 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>Submit2(this.form, 'Unified,1');</value>
+      <webElementGuid>b43db08b-f8c3-43ae-9d4e-bdd78bd457be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -51,6 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;QuoteButtonDiv&quot;)/input[1]</value>
+      <webElementGuid>4f26155f-fd4f-4a0b-8f09-42cbc329a701</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,6 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>493c0f68-5970-4f49-a7d9-668b4f4cb4ba</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -65,6 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>css=input.form-control.btn.ISiA-PrimaryButton</value>
+      <webElementGuid>af094819-0cc0-4a73-af85-9d6391559c4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -72,41 +78,48 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/input</value>
+      <webElementGuid>83b02bb7-c78b-4499-9ea5-0271bc02055e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[2]/div[1]/button[1]</value>
+      <webElementGuid>850b5941-0f18-474b-9fc8-19c898dca794</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//button[contains(text(),'Prequalification >')]</value>
+      <webElementGuid>729d2e90-e59e-4741-9b55-1c813acfeea5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>(//button[@type='button'])[6]</value>
+      <webElementGuid>e7e9403e-8f17-4b90-b827-454461d3d464</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
+      <webElementGuid>fea839ca-f9ec-4e4a-a35e-68d2533a2916</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[2]/preceding::button[2]</value>
+      <webElementGuid>5cf5b517-0fe6-46ff-8095-dfa126fad82e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//div[3]/div[2]/div/button</value>
+      <webElementGuid>eafce165-8e8e-4d16-b649-d66a76aec1f2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

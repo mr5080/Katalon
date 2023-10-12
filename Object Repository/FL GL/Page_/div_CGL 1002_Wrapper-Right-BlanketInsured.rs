@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_CGL 1002_Wrapper-Right-BlanketInsured</name>
+   <tag></tag>
+   <elementGuidId>b878738a-b771-42ab-87f0-e1f73e4cfa53</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-BlanketInsured']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Right-BlanketInsured</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5a419439-4fab-44a1-9363-dd1980a62211</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Right-BlanketInsured</value>
+      <webElementGuid>a51acd1a-218d-4068-898f-b4292230576d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-4 p-1   </value>
+      <webElementGuid>05024276-c19d-4e2c-aea6-97a75481557b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Right-BlanketInsured&quot;)</value>
+      <webElementGuid>9f5d6922-7ad3-4457-aedf-a5e993874a34</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>7e9db37b-0f5f-4201-a3eb-77c395686b17</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Right-BlanketInsured']</value>
+      <webElementGuid>6d2fed95-de6d-4a1d-8416-6320c8453614</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div/div[8]/div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[2]</value>
+      <webElementGuid>dceded09-384d-41b5-b3d0-6944dadf2617</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CGL 1002'])[1]/following::div[1]</value>
+      <webElementGuid>010bdd7d-55da-4075-9bd4-6546deb6dc97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CGL 1003'])[1]/preceding::div[1]</value>
+      <webElementGuid>328ee4cb-fc58-43c1-a5a1-e8f20a8639b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[2]</value>
+      <webElementGuid>39c4baee-2767-4948-9eca-9c7b560c6ca9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Right-BlanketInsured']</value>
+      <webElementGuid>d475e9c0-8e65-43ae-adc5-b672293d9671</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -148,8 +148,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/li_Start a New Quo
 
 
 WebUI.clearText(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'))
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(EffectiveDate, Keys.TAB))
-//WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(effectiveDate, Keys.TAB))
 
 
 WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_StateQQ'), 'FLORIDA', true)
@@ -396,7 +395,7 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Profession'), '
 System.out.println('trying to set purcahse date to  = ' + todaysDate)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), todaysDate)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '01/01/2018')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('01/02/2018', Keys.TAB))
 
 System.out.println('should have set purcahse date to  = ' + todaysDate)
 
@@ -729,7 +728,8 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
 
 String randomPolicy = ((Math.random() * 99999) as int)
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), EffectiveDate)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), Keys.chord(effectiveDate, Keys.TAB))
+
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
 
@@ -905,7 +905,7 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVETr
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnrepairedDamage'))
 
 
-// these 2 are only present if EffectiveDate is 2/1/22 (or some date around there) or after
+// these 2 are only present if effectiveDate is 2/1/22 (or some date around there) or after
 try {
 
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))

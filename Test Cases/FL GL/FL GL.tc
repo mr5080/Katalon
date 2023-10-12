@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FL GL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>69f3968b-913b-495f-91a6-9f524e0ceb3f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>18296c5b-49e5-470b-909b-a592c19c0260</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>18296c5b-49e5-470b-909b-a592c19c0260</id>
+      <masked>false</masked>
+      <name>isAgent</name>
+   </variable>
+</TestCaseEntity>
