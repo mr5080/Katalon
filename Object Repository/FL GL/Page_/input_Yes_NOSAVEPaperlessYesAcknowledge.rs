@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Business Address_ApplicantAddress1</name>
+   <name>input_Yes_NOSAVEPaperlessYesAcknowledge</name>
    <tag></tag>
-   <elementGuidId>9779ee3a-157a-4bae-9531-84a4cabb53be</elementGuidId>
+   <elementGuidId>19a90c6e-32be-4539-a9fe-a909fc7ba233</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ApplicantAddress1']</value>
+         <value>//input[@id='NOSAVEPaperlessAcknowledgeYes']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#ApplicantAddress1</value>
+         <value>#NOSAVEPaperlessNo</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,71 +22,87 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>6c3af0bf-a987-42f8-a3a7-d9d8d8aa1e24</webElementGuid>
+      <webElementGuid>2fe7ad87-f77f-4f71-ba3d-b79760108053</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-check-input</value>
+      <webElementGuid>a1a81d92-5dd5-459f-be3d-67b7185556ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>81f6de9a-04be-4acc-ad0c-cce0127eb171</webElementGuid>
+      <value>radio</value>
+      <webElementGuid>06b3cb42-d0ec-4f8e-819d-01e4e0bd7416</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-disablemessagetrigger</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>df3336d7-2859-4b14-9452-279666093bef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>ApplicantAddress1</value>
-      <webElementGuid>8df003b4-029c-4d78-80a5-dbe34e55b24f</webElementGuid>
+      <value>NOSAVEPaperless</value>
+      <webElementGuid>8faf5d5a-625e-428b-8e46-a49a80930825</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ApplicantAddress1</value>
-      <webElementGuid>4d856e01-48f2-4444-9ac4-8af8603bea10</webElementGuid>
+      <value>NOSAVEPaperlessNo</value>
+      <webElementGuid>12d80f6a-1d4f-4682-8f6d-2e63aef65576</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>size</name>
+      <name>value</name>
       <type>Main</type>
-      <value>30</value>
-      <webElementGuid>c987968a-5ec7-491c-a3fd-bb050ab0b859</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>maxlength</name>
-      <type>Main</type>
-      <value>50</value>
-      <webElementGuid>7202e2ce-d106-4aed-923a-64607cfff9d2</webElementGuid>
+      <value>N</value>
+      <webElementGuid>ff4912da-cc8a-4e6c-8027-04d6f677d113</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>GMJSDataManager('0',document.getElementById('RealtimeGeocodingProviderSelector').value,'^ConstructionYear_1|');MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','','',getMostRelevantPolicyTypeCodeValue(document.getElementById('PolicyTypeCode'),'',''),'0'); </value>
-      <webElementGuid>6f6c94e4-01d8-46ad-8b41-879921a5335e</webElementGuid>
+      <value>updateYesNoValue(this);  GlobalCheckDisable(this);</value>
+      <webElementGuid>8b25b0cc-7577-4be7-b13a-ac91bc302a3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>;</value>
+      <webElementGuid>4ec91471-755f-4146-84bf-abebcfbd2f9b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value>; chkQuotes(this); UpperCase(this) </value>
-      <webElementGuid>a3f3afdf-8944-4dbc-8d5f-0e8dbef630b9</webElementGuid>
+      <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
+      <webElementGuid>5580ce0e-69e1-407f-ba37-c21f08969498</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ApplicantAddress1&quot;)</value>
-      <webElementGuid>4cd1ef16-4198-4358-8e42-ea683c54172c</webElementGuid>
+      <value>id(&quot;NOSAVEPaperlessNo&quot;)</value>
+      <webElementGuid>7377990c-c3cb-4739-8e27-0f35bd2969bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -94,6 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>c61ab8fe-f4eb-4e6e-9a6b-169fad2af77e</webElementGuid>
+      <webElementGuid>4d9be6f4-0107-48f5-bcb4-0fd522f5ce26</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

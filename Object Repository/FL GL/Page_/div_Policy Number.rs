@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_Policy Number IFG6000170-00</name>
+   <name>div_Policy Number</name>
    <tag></tag>
    <elementGuidId>a5f864bd-c6da-458d-a679-af8b2aa7af3f</elementGuidId>
    <selectorCollection>

@@ -11,11 +11,141 @@
       <value></value>
       <variableId>18296c5b-49e5-470b-909b-a592c19c0260</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d64539ab-85af-4871-87cb-16b6960e0d70</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5d2fba57-8901-4079-8020-e390048301d2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>728a1e40-83dc-435b-8383-1087872fd205</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d110b90a-d324-4dac-ad29-92af9747cbe9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>610c5f86-d62a-43fb-a22f-e3afcc1a1856</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0c5799e9-6c4c-4dae-a6b2-28ef6b275365</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>832719eb-e27d-4a1a-9d94-0ad6c3da8ad6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d37b8651-d657-4e9f-955f-6c05934ce3f6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>18296c5b-49e5-470b-909b-a592c19c0260</id>
       <masked>false</masked>
       <name>isAgent</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>d64539ab-85af-4871-87cb-16b6960e0d70</id>
+      <masked>false</masked>
+      <name>shouldBind</name>
+   </variable>
+   <variable>
+      <defaultValue>'11/01/2023'</defaultValue>
+      <description></description>
+      <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
+      <masked>false</masked>
+      <name>effectiveDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'TEST'</defaultValue>
+      <description>TEST or STAGE</description>
+      <id>5d2fba57-8901-4079-8020-e390048301d2</id>
+      <masked>false</masked>
+      <name>environment</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>manual, PC10, aplus, geocode or xxxx</description>
+      <id>728a1e40-83dc-435b-8383-1087872fd205</id>
+      <masked>false</masked>
+      <name>manualAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>d110b90a-d324-4dac-ad29-92af9747cbe9</id>
+      <masked>false</masked>
+      <name>stopQQ</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
+      <id>610c5f86-d62a-43fb-a22f-e3afcc1a1856</id>
+      <masked>false</masked>
+      <name>howPayDeposit</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>0c5799e9-6c4c-4dae-a6b2-28ef6b275365</id>
+      <masked>false</masked>
+      <name>numInterests</name>
+   </variable>
+   <variable>
+      <defaultValue>'FULL'</defaultValue>
+      <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
+      <id>832719eb-e27d-4a1a-9d94-0ad6c3da8ad6</id>
+      <masked>false</masked>
+      <name>payPlanOption</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>d37b8651-d657-4e9f-955f-6c05934ce3f6</id>
+      <masked>false</masked>
+      <name>paperless</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
+      <masked>false</masked>
+      <name>addInsured</name>
    </variable>
 </TestCaseEntity>

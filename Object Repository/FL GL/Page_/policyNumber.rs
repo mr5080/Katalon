@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_6</name>
+   <name>policyNumber</name>
    <tag></tag>
-   <elementGuidId>3379386d-762d-4ffa-8591-731484914237</elementGuidId>
+   <elementGuidId>c4670192-33ba-4d52-93a8-09327d56c506</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[4]/a</value>
+         <value>//table[@id='acct_header_table']/tbody/tr/td[4]/a</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a.ui-state-default.ui-state-hover</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,39 +22,47 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>f944af01-3023-4ce0-ba6e-cce48c0b0769</webElementGuid>
+      <webElementGuid>79039c93-6be8-42df-8fa9-a3d4ac030d4a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui-state-default ui-state-hover</value>
-      <webElementGuid>c930112d-3f15-4376-b180-98a26cb1e9d8</webElementGuid>
+      <value>DarkLink</value>
+      <webElementGuid>147d8628-8b8f-48ba-94eb-b93d141b8d68</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>Content</value>
+      <webElementGuid>d51bdfaa-e523-4197-88f6-1ce4c9482678</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>#</value>
-      <webElementGuid>8b56fe4e-286c-4dee-b572-bd49b0cfd6e7</webElementGuid>
+      <value>main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=312114&amp;DisplayAcctFrame=false</value>
+      <webElementGuid>26da3deb-0120-40d6-92c2-32fa9100b5ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>6</value>
-      <webElementGuid>0c024dc9-dca0-47ec-96b8-77d2e810a405</webElementGuid>
+      <value>IFG6000170-00</value>
+      <webElementGuid>a7eedfb6-88e2-42b6-9317-3419c0fe6556</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ui-datepicker-div&quot;)/table[@class=&quot;ui-datepicker-calendar&quot;]/tbody[1]/tr[2]/td[@class=&quot;&quot;]/a[@class=&quot;ui-state-default ui-state-hover&quot;]</value>
-      <webElementGuid>623d31f6-6260-47d1-a621-ad0ffd5faf03</webElementGuid>
+      <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[1]/td[@class=&quot;ISiPolicyHeader&quot;]/a[@class=&quot;DarkLink&quot;]</value>
+      <webElementGuid>cee992ce-e267-4071-b704-54e54eb31219</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,55 +70,55 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>a7e27f12-c7bd-409d-8d54-e562cd9e6b3b</webElementGuid>
+      <webElementGuid>7a66ea7a-8537-4241-b702-917501498ab1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[4]/a</value>
-      <webElementGuid>6d09b4f2-e39f-4d35-abcf-7dc95021862c</webElementGuid>
+      <value>//table[@id='acct_header_table']/tbody/tr/td[4]/a</value>
+      <webElementGuid>616b4af0-7680-480a-8db2-885dc01b0e08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>//a[contains(text(),'6')]</value>
-      <webElementGuid>d74458bf-ca84-4c87-baff-ead10642db50</webElementGuid>
+      <value>//a[contains(text(),'IFG6000170-00')]</value>
+      <webElementGuid>5c8dec77-a2fa-4fe4-b53f-74930a2a6822</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::a[6]</value>
-      <webElementGuid>9235a589-c171-4724-8326-ce93ebee74ae</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FLORIDA General Liability'])[1]/preceding::a[1]</value>
+      <webElementGuid>d735554b-2f48-48ad-b7dd-8695430b2f0f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fr'])[1]/following::a[6]</value>
-      <webElementGuid>88fae519-306a-452a-ace7-31210a4b1a28</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cypress Property &amp; Casualty Insurance Company'])[1]/preceding::a[1]</value>
+      <webElementGuid>d4332ffa-4aa8-4f93-a99c-4e8673dab4bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='6']/parent::*</value>
-      <webElementGuid>338d16fb-1db1-4d1b-bd17-6f30008b8d26</webElementGuid>
+      <value>//*/text()[normalize-space(.)='IFG6000170-00']/parent::*</value>
+      <webElementGuid>72d3b92b-0b34-4076-b4ff-dc2ca506439b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[6]</value>
-      <webElementGuid>8d2e9212-673f-4172-af86-0eff512b57cc</webElementGuid>
+      <value>//a[contains(@href, 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=312114&amp;DisplayAcctFrame=false')]</value>
+      <webElementGuid>435269a1-9de7-4e12-b07c-a6a4cca05ae6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,14 +126,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/a</value>
-      <webElementGuid>e1e0abad-baf0-4fa0-a542-a7bc741f4075</webElementGuid>
+      <webElementGuid>dace9b7a-9fe5-4acd-9001-41356bdaf934</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//a[@href = '#' and (text() = '6' or . = '6')]</value>
-      <webElementGuid>9687cea1-5e4e-4e10-ad12-acde4224b8e5</webElementGuid>
+      <value>//a[@href = 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=312114&amp;DisplayAcctFrame=false' and (text() = 'IFG6000170-00' or . = 'IFG6000170-00')]</value>
+      <webElementGuid>25da8281-f18d-4afa-ac44-9104ecbac15c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

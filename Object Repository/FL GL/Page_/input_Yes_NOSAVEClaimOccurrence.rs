@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Yes_NOSAVEPaperless</name>
+   <name>input_Yes_NOSAVEClaimOccurrence</name>
    <tag></tag>
-   <elementGuidId>5d031da8-6324-4d82-8bef-044fd5eaf098</elementGuidId>
+   <elementGuidId>ceb9badc-e3fc-4b76-b218-997d4146318f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEPaperlessNo']</value>
+         <value>//input[@id='NOSAVEClaimOccurrenceNo']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#NOSAVEPaperlessNo</value>
+         <value>#NOSAVEDoesUseCranesNo</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f88b1917-95db-4912-9485-37e326a2a7af</webElementGuid>
+      <webElementGuid>2fbf3860-105a-4004-aa92-07d7ba5658c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-check-input</value>
-      <webElementGuid>fb713c7e-1682-4119-b2d6-beda3f46f54f</webElementGuid>
+      <webElementGuid>20b53a35-f923-4f59-9484-fd0f65f28ce8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>af21df5b-70ce-4a87-b897-428d6801f84c</webElementGuid>
+      <webElementGuid>e42ea4f7-4073-4a6b-b9c1-df49ad4e005e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,23 +46,23 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ef700a3f-6ec5-471c-90b5-b69827c798d4</webElementGuid>
+      <webElementGuid>931177ba-d28f-40b9-b6dc-ba3b9251a9e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>NOSAVEPaperless</value>
-      <webElementGuid>633a70f5-4982-4331-87a1-9bc13613bdd5</webElementGuid>
+      <value>NOSAVEDoesUseCranes</value>
+      <webElementGuid>ff246c9b-5ef3-4ea3-8ec0-0cca247b1d06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>NOSAVEPaperlessNo</value>
-      <webElementGuid>3cfaad68-57ca-4d2f-a883-b0cb9e4d9024</webElementGuid>
+      <value>NOSAVEDoesUseCranesNo</value>
+      <webElementGuid>4a36b0bb-9622-4e62-b037-655545e6a506</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,15 +70,15 @@
       <name>value</name>
       <type>Main</type>
       <value>N</value>
-      <webElementGuid>8b1651a8-6a0b-47c0-8030-83f9300e7bd0</webElementGuid>
+      <webElementGuid>51b41757-e9a7-4a7d-84e8-9f59639fe7a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>updateYesNoValue(this);  GlobalCheckDisable(this);</value>
-      <webElementGuid>1fae7214-610e-4275-9cab-de3c7d4a087d</webElementGuid>
+      <value>updateYesNoValue(this);setIfPresent(this,'UseCranesRemarks','','input');  GlobalCheckDisable(this);</value>
+      <webElementGuid>959f51af-87d5-4e74-9932-e3e1ca14bdf5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>56e54d96-71eb-4296-bb9e-ee8249f9aa4d</webElementGuid>
+      <webElementGuid>32ca3af3-5663-49a7-b38f-94f0673ab1fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,15 +94,15 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>f8d84f11-54aa-4a4c-a849-21da4d37de53</webElementGuid>
+      <webElementGuid>739b4bff-31e8-4f4c-bcf2-6eb6803501c2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;NOSAVEPaperlessNo&quot;)</value>
-      <webElementGuid>5ea4e433-f676-4d18-a92f-e4de219a00bd</webElementGuid>
+      <value>id(&quot;NOSAVEDoesUseCranesNo&quot;)</value>
+      <webElementGuid>ae2fb703-37f2-498d-9d93-81d953bd652e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>0948e916-23e3-4804-8603-259973e9563f</webElementGuid>
+      <webElementGuid>37f4c0ec-0911-4aca-a124-ab18c75dc9e1</webElementGuid>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='NOSAVEPaperlessNo']</value>
-      <webElementGuid>1a67b46b-a10f-4180-89b7-6a6ce07eaa51</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='Wrapper-Right-Paperless']/div[2]/input</value>
-      <webElementGuid>b40f800d-a288-4cbb-bd40-6d84ae42df0f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div[2]/div[2]/input</value>
-      <webElementGuid>84bb3bc3-3207-4a41-827e-1718f3f2609e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@type = 'radio' and @name = 'NOSAVEPaperless' and @id = 'NOSAVEPaperlessNo']</value>
-      <webElementGuid>cfb1f654-051b-40bd-8b80-5ddd1a7f4839</webElementGuid>
-   </webElementXpaths>
 </WebElementEntity>

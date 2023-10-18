@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_TotalPremiumAndFees</name>
+   <tag></tag>
+   <elementGuidId>399ec3e9-4de2-4618-803e-de27309ca99e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-TotalPremiumAndFees']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>67d68ac6-3062-49c4-8a86-fba90d500f09</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Left-QuoteNumber</value>
+      <webElementGuid>b4dfe7cb-ed18-4ca6-b1e9-a45616d62f33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-3 p-1  </value>
+      <webElementGuid>5f32e2f9-de94-4ec6-a225-c37ac76d8584</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Quote Number: 1687  </value>
+      <webElementGuid>f0f138d1-4864-4907-839c-10e6ed5650c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Left-QuoteNumber&quot;)</value>
+      <webElementGuid>98dd5726-053e-472a-9dc0-4a41e0b1414a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/FL DP/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>a2832890-2d4b-4596-9484-f31526795ff1</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
