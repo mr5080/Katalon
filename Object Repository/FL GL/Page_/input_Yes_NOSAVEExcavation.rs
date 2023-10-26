@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Payroll_ClassCodePayroll_4</name>
+   <name>input_Yes_NOSAVEExcavation</name>
    <tag></tag>
-   <elementGuidId>a840974a-949c-4b62-a214-e7a0bfb8838d</elementGuidId>
+   <elementGuidId>8e681553-5ff5-4441-aff9-3e212c7f1b16</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ClassCodePayroll_4']</value>
+         <value>//input[@id='NOSAVEDoesExcavationWorkNo']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#ClassCodePayroll_1</value>
+         <value>#NOSAVEDoesRoadsNo</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,31 +22,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>0f098ba4-b649-4a30-8b72-a30a6ce3afb6</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>2fe56dba-7b7a-4f14-adc7-95995e2675de</webElementGuid>
+      <webElementGuid>a4611bfb-000b-4be3-bc64-36c01f297501</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control numberWidget</value>
-      <webElementGuid>6195bf55-15df-43de-8540-ec67d07ff7ee</webElementGuid>
+      <value>form-check-input</value>
+      <webElementGuid>088ec309-6f14-48dc-8733-e27cde8bd243</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>type</name>
       <type>Main</type>
-      <value>ClassCodePayroll_1</value>
-      <webElementGuid>5bb991f0-ba44-44fd-b6d0-4a33cb5b7b76</webElementGuid>
+      <value>radio</value>
+      <webElementGuid>2d7c82f7-4a94-4008-9e6c-b8976b3cb1e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,63 +46,63 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>31c57e2e-d40d-47c9-95f6-7d6c59b226c8</webElementGuid>
+      <webElementGuid>0a1fff6b-60d9-4364-aad2-13cf80883097</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>NOSAVEDoesRoads</value>
+      <webElementGuid>6e620b73-bc2e-49bf-9c1e-820c7d51219e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ClassCodePayroll_1</value>
-      <webElementGuid>1d88d6bd-8bdc-4388-a151-88f98e98e915</webElementGuid>
+      <value>NOSAVEDoesRoadsNo</value>
+      <webElementGuid>5d78449e-8fa3-4380-88db-4875857b230c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>value</name>
       <type>Main</type>
-      <value>isNumberJS(this);   CheckRequired(false);</value>
-      <webElementGuid>c3e98bb6-d0a4-4eee-8163-afe5ef68a46e</webElementGuid>
+      <value>N</value>
+      <webElementGuid>521cde24-4b23-4089-a59a-c7d7ea9681cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onchange</name>
       <type>Main</type>
-      <value>copyFieldValue(this,'NOSAVEPayroll_1'); </value>
-      <webElementGuid>a75a1bf3-1449-407c-bd01-f7541c4b1331</webElementGuid>
+      <value>updateYesNoValue(this);setIfPresent(this,'DoesRoadsRemarks','','input');  GlobalCheckDisable(this);</value>
+      <webElementGuid>9731fbf4-1397-40f1-a660-72a6ede8ccef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>numbertype</name>
+      <name>onclick</name>
       <type>Main</type>
-      <value>integer</value>
-      <webElementGuid>4f3d3721-fb7e-4df9-815a-4a672a1c6b45</webElementGuid>
+      <value>;</value>
+      <webElementGuid>9ef4aab5-613a-41e9-870b-43dd072205ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>minvalue</name>
+      <name>onblur</name>
       <type>Main</type>
-      <value>1000</value>
-      <webElementGuid>d21539b6-c82d-4233-876f-2274d49e906e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>decimalplaces</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>05b197bc-3a41-4aac-9311-424d16129c49</webElementGuid>
+      <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
+      <webElementGuid>1db9a707-3554-4b75-8867-afff65094d97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;ClassCodePayroll_1&quot;)</value>
-      <webElementGuid>583d8af5-74a5-42a1-a30c-ed11bc10371e</webElementGuid>
+      <value>id(&quot;NOSAVEDoesRoadsNo&quot;)</value>
+      <webElementGuid>78280bb0-158a-4236-8220-5fa78e3ac634</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -118,6 +110,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>07cfa1d8-13b8-4baa-903c-10c19c1a02ac</webElementGuid>
+      <webElementGuid>dbf72725-f4fe-42c7-b5ef-24c4b91a336f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
