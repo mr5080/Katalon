@@ -36,6 +36,7 @@ System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("stateFL(from childTestCase) = " + stateFL)
 //System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 System.out.println("paperless(from childTestCase) = " + paperless)
+System.out.println("addClassCodes(from childTestCase) = " + addClassCodes)
 
 
 
@@ -129,6 +130,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			//sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
 			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)
 			sheet.getRow(rowCount).createCell(14).setCellValue(paperless)
+			sheet.getRow(rowCount).createCell(15).setCellValue(addClassCodes)
 			
 			//notes = "to be deny'd"
 			//sheet.getRow(rowCount).createCell(14).setCellValue(notes)

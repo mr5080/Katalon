@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Payroll_ClassCodePayroll_1</name>
+   <name>input_Payroll_ClassCodePayroll_1 - Copy</name>
    <tag></tag>
-   <elementGuidId>5f9832a0-c4c6-4abd-8651-5894da5c38aa</elementGuidId>
+   <elementGuidId>2595ddb0-af1d-4058-be32-5549b4a0a0d0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='ClassCodePayroll_1']</value>
+         <value>//*[@id[starts-with(., 'ClassCode_') ]]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>6646e2a1-6d71-4387-a49f-f38063aeff1f</webElementGuid>
+      <webElementGuid>26ac74cc-7876-4474-a23d-1a12a2a0614a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>2d76b606-cb3f-429a-98c6-7b75198250e3</webElementGuid>
+      <webElementGuid>ffbc3ed6-5e08-46a4-a527-8def1a71f01f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget</value>
-      <webElementGuid>0c5c1002-9562-41eb-a342-195b9506531c</webElementGuid>
+      <webElementGuid>8050cc21-35b7-487b-9860-d0523c953881</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ClassCodePayroll_1</value>
-      <webElementGuid>c1d4edb9-6648-489f-894d-239f01fc4f1c</webElementGuid>
+      <webElementGuid>01bf2098-0408-474d-93a6-9fcd3981d6ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b78b6486-289e-46bc-9f27-9b5da05ac85a</webElementGuid>
+      <webElementGuid>cf714a52-26bc-440e-9c8f-8b2fab7629cb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ClassCodePayroll_1</value>
-      <webElementGuid>2a93fbda-4235-4cad-a44d-fde30f94218c</webElementGuid>
+      <webElementGuid>a570fbea-4208-4f56-92fb-779366519b84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this);   CheckRequired(false);</value>
-      <webElementGuid>967553b5-0eb0-43a0-a863-8296b266a281</webElementGuid>
+      <webElementGuid>0743331c-bae0-4649-ad6f-aeca8c636b79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>copyFieldValue(this,'NOSAVEPayroll_1'); </value>
-      <webElementGuid>6a29a391-f775-4507-bc10-b3ceca3c0917</webElementGuid>
+      <webElementGuid>cd0dfdb6-e78b-4bf4-a4b0-f85597f28350</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>integer</value>
-      <webElementGuid>3fe82b76-4e4c-49f9-9ba8-f19447f66f94</webElementGuid>
+      <webElementGuid>746e826f-c87b-4561-b0d4-81883aca2e1c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>minvalue</name>
       <type>Main</type>
       <value>1000</value>
-      <webElementGuid>3c413ccf-be70-43e2-9ba7-ad6c6a42b74b</webElementGuid>
+      <webElementGuid>54531e07-9985-4f23-90f3-4c749f353ede</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>decimalplaces</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>40761b97-5a0f-42d9-a8b0-729d771a51e9</webElementGuid>
+      <webElementGuid>a12e9a40-f8bf-4f1d-a96a-6ce1b6db3f0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ClassCodePayroll_1&quot;)</value>
-      <webElementGuid>5bf177a3-11bf-48ab-a11f-800630b15542</webElementGuid>
+      <webElementGuid>7d9efdcd-f118-48bf-82d8-6489dd10e085</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -118,7 +118,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>1e2718a7-62b1-4e31-90f2-361323e07ad0</webElementGuid>
+      <webElementGuid>95f40db1-b9ec-4aed-b25e-80c3acae7c36</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='ClassCodePayroll_1']</value>
-      <webElementGuid>71c21a7c-5481-4caf-9b52-8d58e69f82e0</webElementGuid>
+      <webElementGuid>0f13af53-0fe4-4a8a-afcd-3ae9bde07174</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +134,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Left-ClassCodePayroll_1']/div[2]/input</value>
-      <webElementGuid>7692531b-6f01-49a2-aa38-df96f9996694</webElementGuid>
+      <webElementGuid>eea8b55c-3bb0-4e33-b66b-4117ef849edd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +142,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/input</value>
-      <webElementGuid>f023a7e0-c990-49b9-be34-f92fcd22434a</webElementGuid>
+      <webElementGuid>04b1d294-1fb0-48ec-9ca0-357e04c5288d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,13 +150,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @name = 'ClassCodePayroll_1' and @id = 'ClassCodePayroll_1']</value>
-      <webElementGuid>e3f995e5-a50b-4055-a1e5-69586acc959c</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//*[@id[starts-with(., 'ClassCode_') ]]</value>
-      <webElementGuid>fd94d0d9-c5c1-4df0-beb3-dac1649451ac</webElementGuid>
+      <webElementGuid>ae084947-f4b1-4260-a29d-bf7cb16f239c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

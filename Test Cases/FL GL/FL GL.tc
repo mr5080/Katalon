@@ -71,8 +71,14 @@
       <value></value>
       <variableId>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>18296c5b-49e5-470b-909b-a592c19c0260</id>
       <masked>false</masked>
@@ -86,7 +92,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/01/2023'</defaultValue>
+      <defaultValue>'11/11/2023'</defaultValue>
       <description></description>
       <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
       <masked>false</masked>
@@ -135,17 +141,24 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d37b8651-d657-4e9f-955f-6c05934ce3f6</id>
       <masked>false</masked>
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
+      <defaultValue>true</defaultValue>
+      <description>on Coverage screen</description>
       <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
       <masked>false</masked>
       <name>addInsured</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
+      <masked>false</masked>
+      <name>addClassCodes</name>
    </variable>
 </TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Please select a class codeAIR CONDIT_e5d300</name>
+   <name>select_Please select a class code</name>
    <tag></tag>
    <elementGuidId>b66a3645-663a-4f9d-99d6-55bfcdb6bbc9</elementGuidId>
    <selectorCollection>

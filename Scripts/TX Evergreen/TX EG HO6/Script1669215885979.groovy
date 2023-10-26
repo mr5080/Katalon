@@ -67,15 +67,15 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_TEST DATA cypresste
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/li_Start a New Quote'))
 
-WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'))
+//WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_FLORIDATEXAS'), '42', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_HomeownersCondo'), 'HO6', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
 
-WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/a_8'))
+//WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/a_8'))
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_First Name_ApplicantFirst'), randomFirstName)
 
