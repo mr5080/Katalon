@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[4]/div[2]/button[1]</value>
+         <value>//div[@class='row w-100 justify-content-md-center flex-nowrap NoPaddingOnShort']//button[@type='button'][normalize-space()='Bind Application >']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>150109ff-e404-47f8-af3d-683b16451210</webElementGuid>
+      <webElementGuid>a0101c44-001f-4f19-936f-47ba3003fe1d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton NoPaddingOnShort</value>
-      <webElementGuid>309fc30f-1b97-48ff-9ba8-73a12f42602c</webElementGuid>
+      <webElementGuid>795a139e-e104-4b21-88c4-6f3547a98f6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>d51abe12-68a6-498d-8108-9d13c68223fe</webElementGuid>
+      <webElementGuid>3198d669-9e63-4b1d-b0fe-455a16125421</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp;  AddAction('BIND') &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; PostForm('mainForm');</value>
-      <webElementGuid>8362efa1-ec21-4f86-a8f9-cd5f9f44c738</webElementGuid>
+      <webElementGuid>d9c89422-90ae-435a-ade5-98668bae307d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Bind Application ></value>
-      <webElementGuid>07e4ea7f-bd12-4fe4-87e7-ffd549170539</webElementGuid>
+      <webElementGuid>bd202f4b-ab7d-460c-b4ab-368363a646a1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row w-100 justify-content-md-center flex-nowrap NoPaddingOnShort&quot;]/div[@class=&quot;col-md-2 m-3 NoPaddingOnShort&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton NoPaddingOnShort&quot;]</value>
-      <webElementGuid>7468dc4f-301a-44ac-8e9b-41180fcf6a3b</webElementGuid>
+      <webElementGuid>07455527-5240-4d10-ba24-96f343b9c86e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>e7d87afd-59d8-4656-b04b-a82a65d555c6</webElementGuid>
+      <webElementGuid>018a6f7c-f186-431c-bc91-e1285831d557</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[11]</value>
-      <webElementGuid>3aefde9c-d1b5-4bf2-abc5-8d9d64ffcfdd</webElementGuid>
+      <webElementGuid>3d179787-c899-4c97-a10b-c3a83ba8cf4c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[4]/div[2]/button</value>
-      <webElementGuid>1c3637a1-807c-4ab9-bbac-b80de08a2f55</webElementGuid>
+      <webElementGuid>7249b787-ce15-47f4-a068-a642477b4fe9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; General Information'])[2]/following::button[1]</value>
-      <webElementGuid>fc78df23-6841-48a7-829f-f73cca7bcf66</webElementGuid>
+      <webElementGuid>afd3b4ec-c42d-4f1f-bf41-cf3c04f12114</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Send Email'])[1]/following::button[2]</value>
-      <webElementGuid>6d966e0c-28fa-4936-9fa3-b1ca2b8c0cf0</webElementGuid>
+      <webElementGuid>f4c49543-e959-4915-931f-dd826cc0098b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
-      <webElementGuid>84bc5c67-9a98-4a01-9f1b-532d3564b3f8</webElementGuid>
+      <webElementGuid>76509a1c-9873-4659-a3f3-724f8dc72752</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[2]/preceding::button[2]</value>
-      <webElementGuid>ff0eb570-709d-41c6-a04c-d7a864bc0aba</webElementGuid>
+      <webElementGuid>642668f4-0111-49f6-9d1f-74568ff6927d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[2]/button</value>
-      <webElementGuid>b429b0e5-4f5c-4530-a175-75b0b24ed433</webElementGuid>
+      <webElementGuid>18933035-6ec2-4366-9d1e-e2997fefd2aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,13 +134,13 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Bind Application >' or . = 'Bind Application >')]</value>
-      <webElementGuid>6d51b684-96d1-4095-a9d2-893b50746334</webElementGuid>
+      <webElementGuid>076c16e9-1054-4538-a1c8-388d65b94ee0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>(//button[@type='button'])[11]</value>
-      <webElementGuid>dd99e3e3-3d35-439f-965e-a89a1d4934aa</webElementGuid>
+      <webElementGuid>d1567fdc-aa62-4ff2-8588-18f67668f8e5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

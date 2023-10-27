@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body/div[1]/form[1]/div[1]/div[2]/div[2]/button[1]</value>
+         <value>//div[@class='row w-100 justify-content-md-center flex-nowrap NoPaddingOnShort']//button[@type='button'][normalize-space()='General Information >']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a6435a6f-192e-45d2-83d8-355e33ff5148</webElementGuid>
+      <webElementGuid>60a53875-0c9a-4426-b0c3-a12999a03470</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>w-100 btn ISiA-PrimaryButton NoPaddingOnShort</value>
-      <webElementGuid>6a38f2b1-361a-4e3c-a575-369ae9ef9f52</webElementGuid>
+      <webElementGuid>9f7dcd4a-7214-4f55-9b06-14b0c8f25eae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>6e991bda-b85f-41c5-a12d-12c4259a3dc5</webElementGuid>
+      <webElementGuid>2338c021-8c5c-4f83-9670-930485bfd483</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(500) &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; PostForm('mainForm');</value>
-      <webElementGuid>9ce32fcf-7e47-44d5-832b-77e236e3bca6</webElementGuid>
+      <webElementGuid>bb560324-4bdd-4a65-be92-aaabe9ddbba7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Internal ></value>
-      <webElementGuid>ae7b2209-87e5-45a8-a708-4fc869953237</webElementGuid>
+      <webElementGuid>7d120b53-5d46-4cf1-9534-89822798fe9e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-2 m-3 NoPaddingOnShort&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton NoPaddingOnShort&quot;]</value>
-      <webElementGuid>0d8f7cba-8a7f-42c2-9ea6-644fe9fee114</webElementGuid>
+      <webElementGuid>de8c190c-1eb4-4d72-860c-9cca848bb428</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -70,6 +70,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>88723d87-8732-4c57-9b1c-87863f4a57a2</webElementGuid>
+      <webElementGuid>44006b6e-06e3-4425-8883-ed348b069d47</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

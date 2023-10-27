@@ -371,7 +371,10 @@ WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEUsedEq
 
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEClaimOccurrence'))
-//WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECondoWork'))
+if(addClassCodes == false)
+{
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECondoWork'))
+}
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECOI'))
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesTreeRemoval'))
@@ -517,9 +520,33 @@ else
 	
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_Credit CardCredit Card with Recurrin_fded8b'),  'MC', true)
-System.out.println('quoteNumber = ' + quoteNumber)
+System.out.println('quoteNumber ==== ' + quoteNumber)
 
 //System.exit(0)
+
+// click Print Quote button
+
+WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_PrintQuote'))
+WebUI.switchToWindowIndex(1)
+WebUI.delay(15)
+/*
+String errorPresent = WebUI.verifyTextNotPresent('Error 405', false)
+System.out.println('errorPresent = ' + errorPresent)
+if(errorPresent)
+{
+	quoteNumber = quoteNumber.replace(':', '')
+	WebUI.takeScreenshot('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\Quote PDF Failure.jpg')
+	//WebUI.switchToWindowIndex(1)
+	
+	WebUI.takeScreenshot('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '- GL - ' + quoteNumber + ' QuotePDF-Failure.jpg')
+	//WebUI.delay(10)
+	System.exit(0);
+}
+WebUI.delay(10)
+*/
+WebUI.closeWindowIndex(1)
+WebUI.switchToWindowIndex(0)
+
 
 if (shouldBind == true) {
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_Bind Application'))
