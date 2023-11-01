@@ -187,22 +187,21 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_1,000,000500,000'), '500000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_Included500,000'), '500000', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_Included500,000'), '500000', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_2505001,0002,000'), '1000', true)
 
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__GrossReceipts'), Keys.chord('267000', Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB))
 //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'),  Keys.chord('10100', Keys.TAB))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91111', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91150', true)
 //WebUI.delay(5)
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Payroll_ClassCodePayroll'), '16700')
 
 if(addClassCodes)
 {
-	// NOTE adding class codes like this, will result in additional questions on UW Questions that have not been coded for
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_AddClassCode'))
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91150', true)
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '94569', true)
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Payroll_ClassCodePayroll'), '16700')
 	//WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '2')
@@ -367,7 +366,7 @@ WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDenied
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoads'))
 
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesUseCranes'))
-WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEUsedEquipment'))
+//WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEUsedEquipment'))
 
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEClaimOccurrence'))
@@ -409,6 +408,8 @@ if(addClassCodes)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVESalvage'))
 	
 	//below are ClassCodes 11-15
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECarpentryInterior'))
+	
 	WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVESalvage'), Keys.chord(Keys.PAGE_UP, Keys.PAGE_UP))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEExcavation'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEFoundation'))
@@ -427,6 +428,9 @@ if(addClassCodes)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEServiceContracts'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWiringMachinery'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEElectricalWork'))
+	
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEInstallFlooring'))
+	
 	
 	
 	

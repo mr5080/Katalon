@@ -120,7 +120,7 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>1</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>610c5f86-d62a-43fb-a22f-e3afcc1a1856</id>
       <masked>false</masked>
@@ -134,7 +134,7 @@
       <name>numInterests</name>
    </variable>
    <variable>
-      <defaultValue>'FULL'</defaultValue>
+      <defaultValue>'4PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>832719eb-e27d-4a1a-9d94-0ad6c3da8ad6</id>
       <masked>false</masked>
@@ -148,14 +148,14 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description>on Coverage screen</description>
       <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
       <masked>false</masked>
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>

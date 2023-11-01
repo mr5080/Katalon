@@ -194,7 +194,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
-//int randomNumber = 0
+int randomNumber = 0
 System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
@@ -229,7 +229,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownOtherVeneer BrickMasonryAlumi_f7e94c'), 'VENEER', true)
 
@@ -323,7 +323,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEPa
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1 or 2,
 randomBundle = (((Math.random() * 2) as int) + 1) 
-
+randomBundle = 2
 System.out.println('randomBundle = ' + randomBundle)
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
