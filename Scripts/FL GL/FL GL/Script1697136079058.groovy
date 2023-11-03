@@ -195,7 +195,6 @@ WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__GrossReceipts
 //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'),  Keys.chord('10100', Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91150', true)
-//WebUI.delay(5)
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Payroll_ClassCodePayroll'), '16700')
 
 if(addClassCodes)
@@ -289,7 +288,7 @@ if(addClassCodes)
 if (addInsured == true)
 {	
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Additional Insureds_addDetailButtonNu_346875'))	
-	WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_CG 2011 Additional Insured - Manager_784741'), 'CG2011', true)
+	WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_CG 2011 Additional Insured - Manager_784741'), 'CG2028', true)
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Name Of Person or Organization_Applic_d17c67'), 'Frist Addi Ins')
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Mailing Address_ApplicantAddress1zzzz2'), '850 queen st')
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_City, State, Zip, Zip4_ApplicantCityzzzz2'), 'harrisburg')
@@ -365,15 +364,17 @@ WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDenied
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoads'))
 
-WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesUseCranes'))
-//WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEUsedEquipment'))
+//WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesUseCranes'))
+WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEUsedEquipment'))
 
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEClaimOccurrence'))
+/*
 if(addClassCodes == false)
 {
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECondoWork'))
 }
+*/
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECOI'))
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesTreeRemoval'))
@@ -429,13 +430,7 @@ if(addClassCodes)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWiringMachinery'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEElectricalWork'))
 	
-	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEInstallFlooring'))
-	
-	
-	
-	
-	
-	
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEInstallFlooring'))	
 }
 
 
@@ -474,9 +469,12 @@ WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_concat(Insured
 
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_concat(Insured, , s Email)_ApplicantE_08aac7'), 'tester@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_TypeOfLicense'), 'HVAC Liense')
+if(addClassCodes)
+{	
+	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_TypeOfLicense'), 'HVAC Liense') // only applicable for certian class codes - currently logic is backwards for showing this field
+	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_CurrentLicenseNumber'), '54564981561')
+}
 
-WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_CurrentLicenseNumber'), '54564981561')
 
 
 
@@ -484,11 +482,11 @@ WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_CurrentLicense
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/div_Prior 12 Months Payroll'))
 
-WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsPayroll'), '50000')
+WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsPayroll'), '40000')
 
-WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsSubcontractCosts'), '60000')
+WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsSubcontractCosts'), '20000')
 
-WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsGrossReceipts'), '100000')
+WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsGrossReceipts'), '110000')
 
 //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Prior Carrier_PriorCarrier'), 'geico')
 
@@ -532,7 +530,7 @@ System.out.println('quoteNumber ==== ' + quoteNumber)
 
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_PrintQuote'))
 WebUI.switchToWindowIndex(1)
-WebUI.delay(15)
+WebUI.delay(20)
 /*
 String errorPresent = WebUI.verifyTextNotPresent('Error 405', false)
 System.out.println('errorPresent = ' + errorPresent)
@@ -552,15 +550,24 @@ WebUI.closeWindowIndex(1)
 WebUI.switchToWindowIndex(0)
 
 
-if (shouldBind == true) {
-	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_Bind Application'))
-
-	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL GL/Page_/policyNumber'), 'innerHTML')
-
-	System.out.println('policyNumber = ' + policyNumber //WebUI.closeBrowser()
+if (shouldBind == true) 
+{
+	if(isAgent == true && addClassCodes == true)
+	{
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_SendToCompany'))
+		findTestObject('Object Repository/FL GL/Page_/button_SendToCompany')
+	}	
+	
+	else
+	{
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_Bind Application'))
+		String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL GL/Page_/policyNumber'), 'innerHTML')
+		System.out.println('policyNumber = ' + policyNumber) 
+	}		
 		// forces last name to be saved for Recurring payments
-		)
-} else {
+
+} 
+else {
 	WebUI.comment('shouldBind = ' + shouldBind)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoBackOnePage'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoForwardOnePage'))
@@ -569,7 +576,7 @@ if (shouldBind == true) {
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('FL GL/writeFile'), [ //	('policyType') : policyType,
 		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
-		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment,  ('numInterests') : numInterests,  ('paperless') : paperless, ('todaysTimeStamp') : todaysTimeStamp, ('addClassCodes') : addClassCodes], FailureHandling.STOP_ON_FAILURE)
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('addClassCodes') : addClassCodes, ('environment') : environment,  ('numInterests') : numInterests,  ('paperless') : paperless, ('todaysTimeStamp') : todaysTimeStamp, ('addClassCodes') : addClassCodes], FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
