@@ -393,7 +393,7 @@ if(addClassCodes)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesExcavationWork'))  // moved inside here 11.4.23
 
 		
-	
+	WebUI.delay(10)
 	/////////////////////  these need sorted
 	//WebUI.scrollToElement(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWaterProofingRoofs'), 10)
 	//WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWaterProofingRoofs'), Keys.chord(Keys.PAGE_UP))
@@ -406,6 +406,7 @@ if(addClassCodes)
 	/////////////////
 	
 	
+	WebUI.delay(10)
 	
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPoleToPole'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEFence'))  /// not correct?
