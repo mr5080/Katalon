@@ -62,7 +62,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/01/2023'</defaultValue>
+      <defaultValue>'11/08/2023'</defaultValue>
       <description></description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
@@ -83,7 +83,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>

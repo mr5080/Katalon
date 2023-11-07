@@ -654,7 +654,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 if(stopQQ)
 {
 	System.out.println('quoteNumber = ' + quoteNumber)
-	f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-EG-'+policyType+'stoppedAtQQ.txt')		
+	f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\\\FL-EG-'+policyType+'stoppedAtQQ.txt')		
 	def valueA = quoteNumber + '\n'		
 	f.append(valueA)
 		

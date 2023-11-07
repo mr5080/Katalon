@@ -113,8 +113,8 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
+      <defaultValue>true</defaultValue>
+      <description>no actual QQ for FL GL</description>
       <id>d110b90a-d324-4dac-ad29-92af9747cbe9</id>
       <masked>false</masked>
       <name>stopQQ</name>

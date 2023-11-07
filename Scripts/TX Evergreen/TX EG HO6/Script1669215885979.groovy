@@ -291,6 +291,7 @@ WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Ca
 */
 if(stopQQ)
 {
+	WebUI.delay(10)
 	return
 	//System.exit(0)
 }
