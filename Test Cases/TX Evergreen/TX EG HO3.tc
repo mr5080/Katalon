@@ -62,14 +62,14 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/08/2023'</defaultValue>
+      <defaultValue>'11/18/2023'</defaultValue>
       <description></description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>a356da4f-7349-4e28-87b8-2df5d9f8b75b</id>
       <masked>false</masked>

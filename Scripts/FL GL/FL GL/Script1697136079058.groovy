@@ -24,7 +24,6 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('FL GL/nameAddressSetup'), [('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
@@ -72,8 +71,8 @@ String fullName = (randomFirstName + ' ') + randomLastName
  System.out.println('currentYear = ' + currentYear)
  //return //System.exit(0)
  
- RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
- WebUI.openBrowser('')
+RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
+WebUI.openBrowser('')
  
  try
  {
@@ -195,7 +194,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_2
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__GrossReceipts'), Keys.chord('267000', Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB, Keys.TAB))
 //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'),  Keys.chord('10100', Keys.TAB))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91150', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '91150', true)	// original class code -- addClassCodes = false gives correct questions on UW Questions
+//WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'),  '99505', true)
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Payroll_ClassCodePayroll'), '16700')
 
 if(addClassCodes)
@@ -283,6 +283,7 @@ if(addClassCodes)
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Payroll_ClassCodePayroll'), '16700')
 		//WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '15')
+	
 }
 
 
@@ -312,25 +313,25 @@ WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_DisplayQuote'))
 // get Total Premium and Fees
 //div[@id='Wrapper-Right-TotalPremiumAndFees']
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/FL GL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
-System.out.println('totalPremium = ' + totalPremium)
+//System.out.println('totalPremium = ' + totalPremium)
 
 String premium = totalPremium.toString()
 //String premium = totalPremium.toString().substring(1, 10)
 
 int premiumLength = premium.length()
-System.out.println('premiumLength = ' + premiumLength )
+//System.out.println('premiumLength = ' + premiumLength )
 premium = premium.substring(1, premium.length())
 
-System.out.println('premium = ' + premium)
+//System.out.println('premium = ' + premium)
 premium = premium.replace(',', '')
-System.out.println('premium = ' + premium)
+//System.out.println('premium = ' + premium)
 premium = premium.replace('.00', '')
-System.out.println('premium = ' + premium)
+//System.out.println('premium = ' + premium)
 premium = premium.trim()
-System.out.println('premium = ' + premium)
+//System.out.println('premium = ' + premium)
 
 premiumInt = Integer.valueOf(premium)
-System.out.println('premiumInt = ' + premiumInt)
+//System.out.println('premiumInt = ' + premiumInt)
 
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_UWQuestions'))
 
@@ -474,11 +475,26 @@ WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_concat(Insured
 
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_concat(Insured, , s Email)_ApplicantE_08aac7'), 'tester@cornerops.com')
 
-//if(addClassCodes)
-//{	
+int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_concat(Insured, , s Email)_ApplicantE_08aac7'), ('john.hughes+' + randomEmail) + '@cornerops.com')
+
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
+
+
+
+// maybe this needs to be try catch?
+//if(addClassCodes == false)
+//
+try
+{	
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_TypeOfLicense'), 'HVAC Liense') // only applicable for certian class codes - currently logic is backwards for showing this field
 	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_CurrentLicenseNumber'), '54564981561')
-//}
+}
+catch(e)
+{
+	System.out.println('quoteNumber does not require the license field(s) - only certain classcodes require these fields, quoteNumber = ' + quoteNumber)
+	
+}
 
 
 
@@ -614,7 +630,7 @@ WebUI.closeBrowser()
 	// quoteNumber = quoteNumber.replace(':', '')
 	 System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
 	 System.out.println('todaysTimeStamp failed to fully create = ' + todaysTimeStamp)
-	 quoteNumber = quoteNumber.replace(':', '')
+	 //quoteNumber = quoteNumber.replace(':', '')
 	 
 	 		 
 	  WebUI.takeScreenshot('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '- GL - ' + quoteNumber + ' Failure.jpg')

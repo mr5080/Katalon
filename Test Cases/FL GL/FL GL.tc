@@ -92,7 +92,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/09/2023'</defaultValue>
+      <defaultValue>'11/15/2023'</defaultValue>
       <description></description>
       <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
       <masked>false</masked>
@@ -113,7 +113,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description>no actual QQ for FL GL</description>
       <id>d110b90a-d324-4dac-ad29-92af9747cbe9</id>
       <masked>false</masked>
@@ -155,7 +155,7 @@
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>
