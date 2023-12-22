@@ -234,7 +234,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
-//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownOtherVeneer BrickMasonryAlumi_f7e94c'), 'VENEER', true)
 
@@ -407,7 +407,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownNo ProtectionWood ShuttersBas_8ed146'), 'SHUTTERS', true)
 
-
+/*
 if (isAgent == false)
 {
 	String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/select_ProtectionClass'), 'value') // gets dropdown value
@@ -425,6 +425,7 @@ if (isAgent == false)
 		}	
 	}
 }
+*/
 
 'Click History button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_History'))
@@ -473,7 +474,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEGQ
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Billing'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '9PAY', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '4PAY', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR'), 'Applicant1', true)
 

@@ -22,7 +22,7 @@ int counter = 0
 while(counter < 5)
 {
 	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO3'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+//	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 	counter++
 	System.out.println("counter = " +counter)
 }	

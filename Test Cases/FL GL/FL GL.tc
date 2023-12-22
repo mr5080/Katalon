@@ -78,8 +78,8 @@
       <variableId>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
-      <description></description>
+      <defaultValue>false</defaultValue>
+      <description>must be false, Agents not setup with rates 12.11.23</description>
       <id>18296c5b-49e5-470b-909b-a592c19c0260</id>
       <masked>false</masked>
       <name>isAgent</name>
@@ -92,7 +92,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/15/2023'</defaultValue>
+      <defaultValue>'01/25/2023'</defaultValue>
       <description></description>
       <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
       <masked>false</masked>
@@ -148,14 +148,14 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
       <masked>false</masked>
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>

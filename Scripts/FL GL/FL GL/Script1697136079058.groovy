@@ -107,7 +107,10 @@ WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/input_Effective Dat
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_FLORIDATEXAS'), '9', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_DwellingGeneral LiabilityHomeownersH_1b6c19'), 'GL', true)
+WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/select_FLORIDATEXAS'), Keys.chord(Keys.TAB))
+WebUI.delay(3)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_PolicyTypeCode'), 'GL', false)
+//WebUI.selectOptionByLabel(findTestObject('Object Repository/FL GL/Page_/select_PolicyTypeCode'), 'General Liability', false)
 
 
 

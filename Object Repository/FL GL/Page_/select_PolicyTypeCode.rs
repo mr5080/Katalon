@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_DwellingGeneral LiabilityHomeownersH_1b6c19</name>
+   <name>select_PolicyTypeCode</name>
    <tag></tag>
    <elementGuidId>8a3f811c-4521-4e80-ae5e-6745430f0672</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='PolicyTypeCode']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PolicyTypeCode</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PolicyTypeCode']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

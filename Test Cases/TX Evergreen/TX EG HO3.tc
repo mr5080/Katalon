@@ -48,21 +48,21 @@
       <variableId>4b458079-95dd-4909-b01f-e1655c1dec0c</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>4331810b-2976-4406-98c7-47c38b584da1</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
+      <defaultValue>true</defaultValue>
+      <description>agent cant bind due to 360 reqiiremet</description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'11/18/2023'</defaultValue>
+      <defaultValue>'12/02/2023'</defaultValue>
       <description></description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
@@ -76,14 +76,14 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'manual'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>
