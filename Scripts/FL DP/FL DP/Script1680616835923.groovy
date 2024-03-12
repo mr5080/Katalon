@@ -22,6 +22,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+
 
 //			policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'textContent')
 
@@ -85,6 +87,8 @@ currentYear = Integer.parseInt(mydate.format('yyyy'))
 
 System.out.println('currentYear = ' + currentYear)
 //return //System.exit(0)
+
+RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 
 WebUI.openBrowser('')
 

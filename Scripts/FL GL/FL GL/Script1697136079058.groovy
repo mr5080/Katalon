@@ -352,7 +352,8 @@ if(addClassCodes == false)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPriorCypress'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDeniedRenewal'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEResaleEquipment'))
-	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECOI'))	
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECOI'))
+	
 }
 
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesGradingLand'))
@@ -423,6 +424,12 @@ if(addClassCodes)
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEBoats'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDumpster'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesUseCranes'))	// moved inside here 11.4.23
+	
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesIncludeResaleNo'))	// new prior to 3.12.24???
+	
+	
+	
+	
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWelding'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEJanitorial'))
 	WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDrawPlans'))
@@ -443,7 +450,8 @@ if(addClassCodes)
 }
 
 
-
+WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEExceed4Homes'))
+WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWorksInSuperStoresNo'))
 
 WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Residential_ResidentialPercent'), '100')
 

@@ -102,14 +102,14 @@
       <variableId>c623501b-889c-4c00-a879-6a4f78fd4332</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -165,7 +165,7 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>
@@ -193,7 +193,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'12/15/2023'</defaultValue>
+      <defaultValue>'03/15/2024'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>

@@ -234,7 +234,7 @@ catch (Exception e) {
 try
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
-	WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
+	WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 30)
 }
 catch(e)
 {

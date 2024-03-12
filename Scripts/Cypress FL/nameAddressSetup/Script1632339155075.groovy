@@ -113,12 +113,22 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	//hardcode for Credit
 	if (realTransunionCreditReport) {
+		
+		randomLastName = 'Robert'.toUpperCase()
+		randomFirstName = 'Gibson'.toUpperCase()
+		addressFL = '872 BALFREY'.toUpperCase()
+		cityFL = 'WEST PALM BEACH'.toUpperCase()
+		stateFL = 'FL'
+		zipFL = 33413
+		
+		/*
 		randomLastName = 'Kim'.toUpperCase()	
 		randomFirstName = 'Mirian'.toUpperCase()
 		addressFL = '1716 Cherry Ln'.toUpperCase()	
 		cityFL = 'Lakeland'.toUpperCase()
 		stateFL = 'FL'
 		zipFL = 33811
+		*/
 	}
 	
 	//hardcode for Address
@@ -143,12 +153,12 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 	
 		// Sinkhole = Yes
-		randomFirstName = 'Sinky'
-		randomLastName = 'Man'
-		addressFL = '1481 VIEUX CARRE DR'
-		cityFL = 'TALLAHASSEE'
+		randomFirstName = 'Double'
+		randomLastName = 'ValuesAddress'
+		addressFL = '4608 29TH ST SW'
+		cityFL = 'LEHIGH ACRES'
 		stateFL = 'FL'
-		zipFL = 32308
+		zipFL = 33973
 		
 	}
 		

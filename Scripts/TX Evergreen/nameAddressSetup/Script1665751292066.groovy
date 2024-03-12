@@ -29,6 +29,16 @@ else if(manualAddress == 'PC10')	// address returns PC10
 
 else if(manualAddress == 'truerisk')
 {
+	
+	def nameAddressData = ['randomFirstName': 'King',
+			'randomLastName': 'Kimley',
+			'addressTX': '1201 DULLES AV',
+			'cityTX': 'STAFFORD',
+			'stateTX': 'TX',
+			'zipTX': '77477'
+			]
+		return nameAddressData
+	/*
 	def nameAddressData = ['randomFirstName': 'Victoria',
 			'randomLastName': 'Alsip',
 			'addressTX': '201 Yorkshire',
@@ -37,6 +47,7 @@ else if(manualAddress == 'truerisk')
 			'zipTX': '77904'
 			]
 		return nameAddressData
+	*/
 }
 else if(manualAddress == 'claims')
 {
