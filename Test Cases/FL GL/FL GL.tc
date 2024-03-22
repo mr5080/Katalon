@@ -155,7 +155,7 @@
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>
