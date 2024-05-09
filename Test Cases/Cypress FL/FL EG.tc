@@ -101,6 +101,12 @@
       <value></value>
       <variableId>c623501b-889c-4c00-a879-6a4f78fd4332</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'HO3'</defaultValue>
       <description></description>
@@ -193,7 +199,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'03/15/2024'</defaultValue>
+      <defaultValue>'05/11/2024'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
@@ -212,5 +218,12 @@
       <id>c623501b-889c-4c00-a879-6a4f78fd4332</id>
       <masked>false</masked>
       <name>paperless</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</id>
+      <masked>false</masked>
+      <name>valueAdvantage</name>
    </variable>
 </TestCaseEntity>

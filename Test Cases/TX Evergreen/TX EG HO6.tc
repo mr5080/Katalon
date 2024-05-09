@@ -61,21 +61,21 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'12/03/2023'</defaultValue>
+      <defaultValue>'04/03/2023'</defaultValue>
       <description></description>
       <id>2cf2d68c-3623-45b4-b1be-6a846e46ce2a</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</id>
       <masked>false</masked>
@@ -89,7 +89,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
       <masked>false</masked>

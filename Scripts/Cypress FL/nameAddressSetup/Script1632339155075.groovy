@@ -113,22 +113,22 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 	
 	//hardcode for Credit
 	if (realTransunionCreditReport) {
-		
+	/*	
 		randomLastName = 'Robert'.toUpperCase()
 		randomFirstName = 'Gibson'.toUpperCase()
 		addressFL = '872 BALFREY'.toUpperCase()
 		cityFL = 'WEST PALM BEACH'.toUpperCase()
 		stateFL = 'FL'
 		zipFL = 33413
+	*/	
 		
-		/*
 		randomLastName = 'Kim'.toUpperCase()	
 		randomFirstName = 'Mirian'.toUpperCase()
 		addressFL = '1716 Cherry Ln'.toUpperCase()	
 		cityFL = 'Lakeland'.toUpperCase()
 		stateFL = 'FL'
 		zipFL = 33811
-		*/
+		
 	}
 	
 	//hardcode for Address

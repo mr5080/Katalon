@@ -654,6 +654,16 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the
 'Click Rate and Continue button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
+// add click No to value advantage
+if(policyType == 'HO3')
+{
+	if(valueAdvantage)
+		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOValueAdvantage-Yes'))
+	else
+		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOValueAdvantage-No'))
+}
+
+
 if(stopQQ)
 {
 	System.out.println('quoteNumber = ' + quoteNumber)
