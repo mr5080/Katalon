@@ -327,15 +327,12 @@ if ((isAgent == false) && (realTestUser == false)) {
         //    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
          //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.TAB))
-			
-			
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.TAB))			
 
             WebUI.delay(1)
 
             if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'), 2)) {
                 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
-
                 break
             }
         }
@@ -383,9 +380,9 @@ String DOB = (((month + '/') + day) + '/') + year
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + year)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
 
 
 
@@ -487,7 +484,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
-    randomNumber = 1 // force International or not. 0 = US, 1 = International
+   // randomNumber = 1 // force International or not. 0 = US, 1 = International
 
     System.out.println('need to fill in prior mailing address stuff')
 
@@ -526,7 +523,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '250800')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '400000')
 
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
@@ -630,6 +627,45 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBarrierIsland_1'))
 
+
+
+
+// opens 360 value modal
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
+	   
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
+
+WebUI.delay(2)
+
+WebUI.switchToWindowTitle('360Value')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Exterior'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Interior'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Cabinets'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
+
+WebUI.closeWindowTitle('360Value')
+
+//WebUI.delay(2)
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
+// 360 code
+
+
 // 0 = None, 1 = Edge, 2 = EdgePlus
 //for(int xx = 0; xx < 20; xx++)
 //{
@@ -672,14 +708,6 @@ if(stopQQ)
 	f.append(valueA)
 		
 	return	
-	//System.exit(0)
-	/*
-	FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
-	
-			workbook.write(outFile)
-	
-			outFile.close()
-			*/
 }
 	
 'Proceed to Application button'
@@ -722,7 +750,7 @@ if (randomNumber == 0) // fill out US prior mailing address
 
     WebUI.setText(findTestObject('Cypress 4/Page_/input - ApplicantAddress1City - International'), 'Villa A Roggio, Lucca, 55060')
 
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International Second'), 'CHINA')
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International Second'), 'GERMANY')
 
     try {
         WebUI.acceptAlert()
@@ -983,6 +1011,13 @@ if(paperless == true)
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_PaperlessConfirm'))
 }
+
+//  this is only needed if an Agent get the Send to Company button
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_UWStatusText'), 'this is just a bunch of text because it is required to progress')
+
+
+
+
 //select payment method logic
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
@@ -991,8 +1026,12 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 		 ], FailureHandling.STOP_ON_FAILURE)
 
 
-
-
+if (shouldBind == false)
+{
+	WebUI.comment('shouldBind = ' + shouldBind)
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoBackOnePage'))
+	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoForwardOnePage'))
+}
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('Cypress FL/writeFile'), 

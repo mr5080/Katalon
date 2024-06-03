@@ -108,7 +108,7 @@
       <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO3'</defaultValue>
+      <defaultValue>'HO6'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -122,7 +122,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
@@ -199,7 +199,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'05/11/2024'</defaultValue>
+      <defaultValue>'06/30/2024'</defaultValue>
       <description></description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>

@@ -92,7 +92,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'05/20/2024'</defaultValue>
+      <defaultValue>'06/20/2024'</defaultValue>
       <description></description>
       <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
       <masked>false</masked>
@@ -113,7 +113,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description>no actual QQ for FL GL</description>
       <id>d110b90a-d324-4dac-ad29-92af9747cbe9</id>
       <masked>false</masked>

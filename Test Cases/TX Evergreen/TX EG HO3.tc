@@ -55,14 +55,14 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description>agent cant bind due to 360 reqiiremet</description>
+      <defaultValue>true</defaultValue>
+      <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'04/04/2024'</defaultValue>
+      <defaultValue>'06/04/2024'</defaultValue>
       <description></description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>

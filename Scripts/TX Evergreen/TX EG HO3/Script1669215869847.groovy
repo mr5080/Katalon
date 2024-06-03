@@ -235,6 +235,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
+{
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
+}
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownOtherVeneer BrickMasonryAlumi_f7e94c'), 'VENEER', true)
 
@@ -311,6 +316,45 @@ else {
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_2530354045505560657075'), '45', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1,0002,0003,0004,0005,000'), '5000', true)
+
+
+
+// opens 360 value modal
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
+	   
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
+
+WebUI.delay(2)
+
+WebUI.switchToWindowTitle('360Value')
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Exterior'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Interior'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Cabinets'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
+
+WebUI.closeWindowTitle('360Value')
+
+//WebUI.delay(2)
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
+
+WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
+// end 360 code
+
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEBuildersRisk_1'))
 
