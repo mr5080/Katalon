@@ -21,6 +21,8 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
+
 
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('TX Evergreen/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
@@ -42,6 +44,7 @@ mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
 
+RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
 
 //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')

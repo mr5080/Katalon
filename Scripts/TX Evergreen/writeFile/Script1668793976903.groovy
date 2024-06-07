@@ -28,12 +28,14 @@ import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter clas
 System.out.println("randomLastName(from childTestCase) = " + randomLastName)
 System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
+System.out.println("quoteNumber(from childTestCase) = " + policyNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 //System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("stateTX(from childTestCase) = " + stateTX)
+System.out.println("shouldBind(from childTestCase) = " + shouldBind)
 
 
 
@@ -70,6 +72,11 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		sheet.getRow(rowCount).createCell(2).setCellValue(randomLastName)
 
 		sheet.getRow(rowCount).createCell(3).setCellValue(quoteNumber)
+		
+		if(shouldBind == true)
+		{	
+			sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
+		}
 
 /*		if(shouldBind == false)
 		{

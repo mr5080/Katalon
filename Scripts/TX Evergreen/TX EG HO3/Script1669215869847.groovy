@@ -538,17 +538,19 @@ WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
 		('randomLastName') : randomLastName
 		 ], FailureHandling.STOP_ON_FAILURE)
 
+String policyNumber = ''
 if (shouldBind == true)
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Bind Application'))
 
-	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
+	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
 
 	System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
 }
 else
 {
 	WebUI.comment('shouldBind = ' + shouldBind)
+	policyNumber = 'not bound with code'
 	// forces last name to be saved for Recurring payments
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoBackOnePage'))
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoForwardOnePage'))
@@ -567,10 +569,11 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	('randomLastName') : randomLastName,
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
+	('policyNumber') : policyNumber,
 	('todaysDate') : todaysDate,
 //	('totalPremium') : totalPremium,
 	('policyType') : 'HO3',
-//	('shouldBind') : shouldBind,
+	('shouldBind') : shouldBind,
 	('stateTX') : stateTX,
 	('isAgent') : isAgent,
 	('environment') : environment
