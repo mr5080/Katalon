@@ -327,7 +327,8 @@ if ((isAgent == false) && (realTestUser == false)) {
         //    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
          //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.TAB))			
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))			
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP))
 
             WebUI.delay(1)
 
@@ -480,7 +481,7 @@ if (constructionYear.length() > 1) {
 // this logic changed week of 3/19/21 should probably update the prior address logic?
 if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
 {
-    int randomNumber = 1
+    int randomNumber = 0
 
     // generates random number, either 0 or 1, used to randomize US/international
     randomNumber = ((Math.random() * 2) as int)
@@ -522,10 +523,10 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
-//this line can be removed if 360 is working
+//this line can be removed if 360 is working, 360 is not run for HO6
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '400000')
 
-
+/*
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
 {
 	System.out.println('360Value not returned, manually entering limit (because 360Value wont use ecomny)')
@@ -535,7 +536,7 @@ else
 {
 	System.out.println(WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') + '  <---- from 360Value')
 }
-
+*/
 
 //PurchasePrice_1 = 150250
 
@@ -631,39 +632,43 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBa
 
 
 // opens 360 value modal
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
-	   
-WebUI.delay(5)
+if(policyType == 'HO3')
+{	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
+		   
+	WebUI.delay(5)
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
+	
+	WebUI.delay(2)
+	
+	WebUI.switchToWindowTitle('360Value')
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Exterior'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Interior'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Cabinets'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
+	
+	WebUI.closeWindowTitle('360Value')
+	
+	//WebUI.delay(2)
+	WebUI.switchToDefaultContent()
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
+	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
+	
+	WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
+}
+// end 360 code
 
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
-
-WebUI.delay(2)
-
-WebUI.switchToWindowTitle('360Value')
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Exterior'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Interior'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Cabinets'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
-
-WebUI.closeWindowTitle('360Value')
-
-//WebUI.delay(2)
-WebUI.switchToDefaultContent()
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
-
-WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
-// 360 code
 
 
 // 0 = None, 1 = Edge, 2 = EdgePlus
@@ -691,6 +696,7 @@ WebUI.setText(findTestObject('Cypress 4/Page_/input_Number of Paid Losses in the
 WebUI.click(findTestObject('Cypress 4/Page_/input - Rate and Continue'))
 
 // add click No to value advantage
+
 if(policyType == 'HO3')
 {
 	if(valueAdvantage)
