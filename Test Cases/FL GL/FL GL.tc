@@ -92,8 +92,8 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'08/01/2024'</defaultValue>
-      <description></description>
+      <defaultValue>''</defaultValue>
+      <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>b869f6b7-a23b-4fcb-bbd6-c4cfe7b639dc</id>
       <masked>false</masked>
       <name>effectiveDate</name>

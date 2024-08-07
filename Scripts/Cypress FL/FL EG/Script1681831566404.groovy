@@ -102,14 +102,18 @@ thisFridayDate = ((((monthThisFriday + '/') + dayThisFriday) + '/') + yearThisFr
 
 System.out.println('Fridays date this week = ' + thisFridayDate)
 
+
 // get todays date
 mydate = new Date()
-
 System.out.println('myDate = ' + mydate)
-
 todaysDate = mydate.format('MM/dd/yyyy')
-
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
 System.out.println('todaysDate = ' + todaysDate)
+
 
 todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
 
@@ -722,7 +726,7 @@ WebUI.click(findTestObject('Cypress 4/Page_/input - Proceed to Application'))
 
 // this needs cleaned up, 8.17.23
 'new paperless buttons'
-WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery')) // click yes, then no if needed
 if(paperless == false)
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_Paperless'))

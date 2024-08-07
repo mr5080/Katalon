@@ -72,12 +72,15 @@ todaysDate = mydate.format('MM/dd/yyyy')
 */
 // get todays date
 mydate = new Date()
-
 System.out.println('myDate = ' + mydate)
-
 todaysDate = mydate.format('MM/dd/yyyy')
-
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
 System.out.println('todaysDate = ' + todaysDate)
+
 
 todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
 

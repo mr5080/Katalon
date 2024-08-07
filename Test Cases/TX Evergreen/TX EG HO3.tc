@@ -47,6 +47,12 @@
       <value></value>
       <variableId>4b458079-95dd-4909-b01f-e1655c1dec0c</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
@@ -55,15 +61,15 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'08/25/2024'</defaultValue>
-      <description></description>
+      <defaultValue>''</defaultValue>
+      <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
       <name>effectiveDate</name>
@@ -95,5 +101,12 @@
       <id>4b458079-95dd-4909-b01f-e1655c1dec0c</id>
       <masked>false</masked>
       <name>howPayDeposit</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</id>
+      <masked>false</masked>
+      <name>paperless</name>
    </variable>
 </TestCaseEntity>

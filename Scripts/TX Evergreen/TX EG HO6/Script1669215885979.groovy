@@ -43,6 +43,13 @@ String fullName = (randomFirstName + ' ') + randomLastName
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
+System.out.println('todaysDate = ' + todaysDate)
+
 
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
@@ -164,6 +171,7 @@ if (isAgent == false) {
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2019')
 
+
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-2255')
 
 
@@ -217,6 +225,23 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), '2015')
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), YOC)		// this is year to use with YOC variable
+
+
+try {
+	WebUI.delay(1)
+
+	// need to click Close on popup warning if differenceYears > 40
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Close button -Modal window'))
+
+	System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' + (currentYear - constructionYearInt))
+}
+catch (Exception e) {
+	System.out.println(e)
+}
+
+
+
+
 //WebUI.delay(5)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Occupancy'), 'OWNER', true)
@@ -317,8 +342,15 @@ WebUI.switchToWindowTitle('')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Proceed to Application'))
 
+
+
 'new paperless buttons'
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDelivery'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
+if(paperless == false)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_Paperless'))
+}
+
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Previous Carrier_PriorCarrier_1'), 'travelers')
 
@@ -448,12 +480,11 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Authorized
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
+String policyNumber = 'not bound with code'
 if (shouldBind == true)
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Bind Application'))
-
-	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/PolicyID'), 'innerHTML')
-
+	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/PolicyID'), 'innerHTML')
 	System.out.println('policyNumber = ' + policyNumber) //WebUI.closeBrowser()
 }
 else
@@ -464,7 +495,7 @@ else
 	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoForwardOnePage'))
 	
 }
-	
+
 // pass vars to write for TX  11.18.22
 WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	[
@@ -473,9 +504,10 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
 	('todaysDate') : todaysDate,
+	('policyNumber') : policyNumber,
 //	('totalPremium') : totalPremium,
 	('policyType') : 'HO6',
-//	('shouldBind') : shouldBind,
+	('shouldBind') : shouldBind,
 	('stateTX') : stateTX,
 	('isAgent') : isAgent,
 	('environment') : environment

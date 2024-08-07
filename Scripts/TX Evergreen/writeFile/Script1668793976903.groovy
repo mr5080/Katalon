@@ -28,7 +28,7 @@ import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter clas
 System.out.println("randomLastName(from childTestCase) = " + randomLastName)
 System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
-System.out.println("quoteNumber(from childTestCase) = " + policyNumber)
+System.out.println("policyNumber(from childTestCase) = " + policyNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 //System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + policyType)
@@ -77,7 +77,10 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		{	
 			sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 		}
-
+		else
+		{
+			sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")
+		}
 /*		if(shouldBind == false)
 		{
 			sheet.getRow(rowCount).createCell(4).setCellValue("policy not bound with script")

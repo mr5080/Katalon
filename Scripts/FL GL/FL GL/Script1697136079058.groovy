@@ -53,14 +53,17 @@ String fullName = (randomFirstName + ' ') + randomLastName
  System.out.println('myDate = ' + mydate)
  todaysDate = mydate.format('MM/dd/yyyy')
  */
- // get todays date
- mydate = new Date()
- 
- System.out.println('myDate = ' + mydate)
- 
- todaysDate = mydate.format('MM/dd/yyyy')
- 
- System.out.println('todaysDate = ' + todaysDate)
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
+System.out.println('todaysDate = ' + todaysDate)
+
  
  todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
  
@@ -154,7 +157,7 @@ if (isAgent == false) {
 			WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '')
 
 			WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'),  Keys.chord('10100',  Keys.UP, Keys.TAB))
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))
+			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))
 			
 			if (WebUI.waitForElementVisible(findTestObject('Object Repository/FL GL/Page_/td_TEST AGENCY'), 4)) 
 			{

@@ -46,6 +46,13 @@ String fullName = (randomFirstName + ' ') + randomLastName
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
+System.out.println('todaysDate = ' + todaysDate)
+
 
 //WebUI.openBrowser('')
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
@@ -109,7 +116,9 @@ else
 {
 	System.out.println('NO GEOCODE button')
 }*/
-/*
+
+
+// uncommented try catch 8.5.24
 try {
 //	WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
@@ -119,7 +128,7 @@ try {
 catch (Exception e) {
 	System.out.println('Exception - ' + e)
 }
-*/
+
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 30)
 
@@ -405,8 +414,20 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Da
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'))
 //WebUI.delay(6)
+
+
+
+//'new paperless buttons'
+//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDelivery'))
+
 'new paperless buttons'
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDelivery'))
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_PaperlessDelivery'))
+if(paperless == false)
+{
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVE_Paperless'))
+}
+
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'))
 
@@ -530,7 +551,10 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quo
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
 //new paperless radio button
-WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDeliveryAcknowledge'))
+if(paperless)
+{	
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_PaperlessDeliveryAcknowledge'))
+}
 
 //select payment method logic
 WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
