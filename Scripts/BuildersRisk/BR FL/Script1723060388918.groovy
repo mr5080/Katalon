@@ -23,6 +23,56 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
+
+def nameAddressData = WebUI.callTestCase(findTestCase('BuildersRisk/nameAddressSetup'), [('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
+
+String randomFirstName = nameAddressData['randomFirstName']
+
+String randomLastName = nameAddressData['randomLastName']
+
+String addressFL = nameAddressData['addressFL']
+
+String cityFL = nameAddressData['cityFL']
+
+String stateFL = nameAddressData['stateFL']
+
+String zipFL = nameAddressData['zipFL']
+
+String countyFL = nameAddressData['countyFL']
+
+String yearOfConstFL = nameAddressData['yearOfConstFL']
+
+System.out.println('yearOfConstFL = ' + yearOfConstFL)
+String fullName = (randomFirstName + ' ') + randomLastName
+
+/*
+ // get todays date
+ mydate = new Date()
+ System.out.println('myDate = ' + mydate)
+ todaysDate = mydate.format('MM/dd/yyyy')
+ */
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
+if(effectiveDate == '')
+{
+	effectiveDate = todaysDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
+System.out.println('todaysDate = ' + todaysDate)
+
+ 
+ todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
+ 
+ System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+ 
+ currentYear = Integer.parseInt(mydate.format('yyyy'))
+ 
+ System.out.println('currentYear = ' + currentYear)
+ //return //System.exit(0)
+
+
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
 
@@ -33,14 +83,17 @@ if (environment == 'TEST') {
 	WebUI.navigateToUrl('https://buildersriskstage.cogisi.com/is/root/logon/index.cfm')
 }
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), 
-    '0')
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'),   '0')
+if (isAgent == true) {
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
+} else {
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+}
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_USERNAME_userloginname'), 
-    'JHUGHES')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_password'), 
-    'iJIOp32ulZH/iAm5HHInmA==')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_USERNAME_userloginname'),    'JHUGHES')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_password'),    'iJIOp32ulZH/iAm5HHInmA==')
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_LoginButton'))
 
@@ -55,24 +108,20 @@ WebUI.mouseOver(findTestObject('Object Repository/BR FL/Page_/select_One Shot'))
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/strong_Effective Date'))
 
 
-
-
-// randomize name and address
-// up next write to file
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Address_ApplicantAddress1'), '505 MAGNOLIA AVE')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Address_ApplicantAddress1'), addressFL)
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Ext Address_ApplicantAddress2'), 'APT 008')
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City_ApplicantCity'), 'PALM HARBOR')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City_ApplicantCity'), cityFL)
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Zip Code_ApplicantZip'), '34683')
-
-
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Zip Code_ApplicantZip'), zipFL)
 
 
 
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), '08/10/2024')
+
+
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/div_Start a New Quote   Risk StateFLORIDATE_1cee94'))
 
@@ -85,6 +134,12 @@ WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Search Term_NO
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/td_TEST AGENCY'))
 */
 
+quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_Quote Number'), 'innerHTML')
+System.out.println('quoteNumber = ' + quoteNumber)
+
+
+
+findTestObject('Object Repository/BR FL/Page_/div_Quote Number')
 System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
@@ -130,7 +185,8 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Coverage'))
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Phone Number_ApplicantPhonezzzz1'), '717-762-4658')
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
+int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_OwnerBuilderDeveloperRemodeler'), '', true)
 
@@ -140,11 +196,11 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Individual_NOSAV
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Please choose a name type_NOSAVEAppli_f4d688'))
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), 'SHEILA')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), randomFirstName)
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant Middle Name_NOSAVE-INDAppli_24c841'), 'ann')
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'TIGGERS')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), randomLastName)
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'II')
 
@@ -158,10 +214,12 @@ WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City, State, Z
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/input_State'), 'PA', false)
 
-
-
-
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City, State, Zip, Zip4_ApplicantZip'), '17356')
+
+
+WebUI.selectOptionByIndex(findTestObject('Object Repository/BR FL/Page_/select_FireHydrant'), 1)
+
+
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), '300000')
 
@@ -169,7 +227,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1,0002,5005,00010,000'), '5000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_2510Excluded'), '5', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_2510Excluded'), '2', true)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Rating'))
 
@@ -193,7 +251,7 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Add InterestIns
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_History'))
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Statements'))
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Legal name of the builder performing _28237f'), 'Bob the builder')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Legal name of the builder performing _28237f'), randomLastName + ' the builder')
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Legal name of the builder performing _edc60c'))
 
@@ -203,26 +261,46 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEHomeow
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEStiltsPilings_1'))
 
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Internal'))
+if(!isAgent)
+{	// this button is not displayed for agents
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Internal'))
+}
 
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_DisplayQuote'))
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_BindSubmitApp'))
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_BindApplication'))
+if(shouldBind)
+{	
+	System.out.println('in the if')
+	
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_BindApplication'))
+	
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_MORE'))
+	
+	WebUI.waitForElementVisible(findTestObject('Object Repository/BR FL/Page_/policyID'), 10)
+	String policyID = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyID'), 'textContent')
+	//WebUI.comment('policyID = ' + policyID)
+	System.out.println('policyID = ' + policyID)
+	
+	String policyNumberLink = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyNumberLink'), 'innerHTML')
+	WebUI.comment('policyNumberLink = ' + policyNumberLink)
+	System.out.println('policyNumberLink = ' + policyNumberLink)
+	
+	
+	String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/PolicyNumber'), 'innerHTML')
+	WebUI.comment('policyNumber = ' + policyNumber)
+	System.out.println('policyNumber = ' + policyNumber)
+}
+else
+{
+	System.out.println('in the else')
+//	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_GoBackOnePage'))	
+//	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_GoForwardOnePage'))
+		
+}	
+	
+// up next write to file
 
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_MORE'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/BR FL/Page_/policyID'), 10)
-String policyID = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyID'), 'textContent')
-//WebUI.comment('policyID = ' + policyID)
-System.out.println('policyID = ' + policyID)
-
-String policyNumberLink = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyNumberLink'), 'innerHTML')
-WebUI.comment('policyNumberLink = ' + policyNumberLink)
-System.out.println('policyNumberLink = ' + policyNumberLink)
-
-
-String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/PolicyNumber'), 'innerHTML')
-WebUI.comment('policyNumber = ' + policyNumber)
-System.out.println('policyNumber = ' + policyNumber)
-
-
+System.out.println('done with everything')
+System.out.println('quoteNumber = ' + quoteNumber)
