@@ -5,18 +5,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 //System.out.println("counter passed in = " + counter)
 
+System.out.println("manualAddress(from childTestCase) = " + manualAddress)
+
 
 if(manualAddress == 'manual')	// set to something I want
-	{
-		def nameAddressData = ['randomFirstName': 'MANNI',
-			'randomLastName': 'EMANUALA',
-				'addressFL': '2016 Sunrise Key Blvd',
-				'cityFL': 'Fort Lauderdale',
-				'stateFL': 'FL',
-				'zipFL': '33304'
-			]	
-		return nameAddressData
-	}
+{
+	def nameAddressData = ['randomFirstName': 'MANNI',
+		'randomLastName': 'EMANUALA',
+			'addressFL': '2016 Sunrise Key Blvd',
+			'cityFL': 'Fort Lauderdale',
+			'stateFL': 'FL',
+			'zipFL': '33304'
+		]	
+	return nameAddressData
+}
 	
 	
 else if(manualAddress == 'geocode')	// set to something I want
@@ -43,17 +45,17 @@ else if(manualAddress == 'geocode')	// set to something I want
 }	
 
 else if(manualAddress == 'PC10')	// address returns PC10
-	{
-		def nameAddressData = ['randomFirstName': 'Procy',
-			'randomLastName': 'Tens',
-			'addressFL': '20 BIRDWELL RD',
-			'cityFL': 'MONTICELLO',
-			'stateFL': 'FL',
-			'zipFL': '32344'
-			]
-		return nameAddressData
-		
-		// returns split Protection Class
+{
+	def nameAddressData = ['randomFirstName': 'Procy',
+		'randomLastName': 'Tens',
+		'addressFL': '20 BIRDWELL RD',
+		'cityFL': 'MONTICELLO',
+		'stateFL': 'FL',
+		'zipFL': '32344'
+		]
+	return nameAddressData
+	
+	// returns split Protection Class
 /*		def nameAddressData = ['randomFirstName': 'MANNI',
 			'randomLastName': 'SPLITTY',
 				'addressFL': '781 N LINCOLN CT',
@@ -62,7 +64,8 @@ else if(manualAddress == 'PC10')	// address returns PC10
 				'zipFL': '32209'
 			]
 		return nameAddressData
-*/	}	
+*/	
+}	
 
 else if(manualAddress == 'truerisk')
 {
@@ -89,34 +92,48 @@ else if(manualAddress == 'aplus')
 	
 //C:\Users\john.hughes\CORNERSTONE OPERATIONS GROUP\Cannabis - Documents\Product Startup\Product Development\Approved for COG\Third Party\Verisk\LightSpeed
 else if(manualAddress == 'lightspeed')
-	{
-		def nameAddressData = ['randomFirstName': 'LIGHTY',
-				'randomLastName': 'LIGHTERS',
-				'addressAZ': '124 S MONTEZUMA ST',
-				'cityAZ': 'PRESCOTT',
-				'stateAZ': 'AZ',
-				'zipAZ': '86303'
-				]
-				
-				
-	/*	def nameAddressData = ['randomFirstName': 'LARRY',
-			'randomLastName': 'LIGHTY',
-			'addressAZ': '21 E SPEEDWAY BLVD',
-			'cityAZ': 'TUCSON',
+{
+	def nameAddressData = ['randomFirstName': 'LIGHTY',
+			'randomLastName': 'LIGHTERS',
+			'addressAZ': '124 S MONTEZUMA ST',
+			'cityAZ': 'PRESCOTT',
 			'stateAZ': 'AZ',
-			'zipAZ': '85705'
-			]	
-	/*
-		def nameAddressData = ['randomFirstName': 'LARRY',
-			'randomLastName': 'LIGHTY',
-			'addressAZ': '10261 N SCOTTSDALE RD',
-			'cityAZ': 'SCOTTSDALE',
-			'stateAZ': 'AZ',
-			'zipAZ': '85253'
+			'zipAZ': '86303'
 			]
-	*/		
-		return nameAddressData
 			
+/*	def nameAddressData = ['randomFirstName': 'LARRY',
+		'randomLastName': 'LIGHTY',
+		'addressAZ': '21 E SPEEDWAY BLVD',
+		'cityAZ': 'TUCSON',
+		'stateAZ': 'AZ',
+		'zipAZ': '85705'
+		]	
+/*
+	def nameAddressData = ['randomFirstName': 'LARRY',
+		'randomLastName': 'LIGHTY',
+		'addressAZ': '10261 N SCOTTSDALE RD',
+		'cityAZ': 'SCOTTSDALE',
+		'stateAZ': 'AZ',
+		'zipAZ': '85253'
+		]
+*/		
+	return nameAddressData
+		
+}
+	
+	
+else if(manualAddress == 'highCrime')
+{
+	def nameAddressData = ['randomFirstName': 'HIGH',
+			'randomLastName': 'CRIMER',
+			'addressFL': '630 GOODRICH AVE',
+			'cityFL': 'SARASOTA',
+			'stateFL': 'FL',
+			'zipFL': '34236'
+			]
+		System.out.println('got into highCrime else if')
+			
+		return nameAddressData
 	}
 
 // manualAddress  not set, uses random below
@@ -125,7 +142,7 @@ else if(manualAddress == 'lightspeed')
 	Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 //	C:\Users\JohnHughes\OneDrive - Cypress Property and Casualty Insurance Company\ProjectFiles\CypressData.xlsx
 // random num between 2 - 500 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((125 - 2) + 1)) as int)
+int randomFLaddress = 2 + ((Math.random() * ((126 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomFLaddress = counter	// uncomment this to use the exel file and look though it

@@ -43,7 +43,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>ae738418-c220-469f-b118-e1bc2a099fe5</id>
       <masked>false</masked>
@@ -58,7 +58,7 @@
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description></description>
+      <description>highCrime</description>
       <id>be05ae07-3316-4fc9-84a0-e79ca49aeac5</id>
       <masked>false</masked>
       <name>manualAddress</name>

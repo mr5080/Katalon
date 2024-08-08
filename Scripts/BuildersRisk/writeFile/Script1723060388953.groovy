@@ -33,14 +33,26 @@ System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + shouldBind)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
+System.out.println("policyNumberLink(from childTestCase) = " + policyNumberLink)
+
+
 System.out.println("stateFL(from childTestCase) = " + stateFL)
 //System.out.println("manualAddress(from childTestCase) = " + manualAddress)
-System.out.println("paperless(from childTestCase) = " + paperless)
+//System.out.println("paperless(from childTestCase) = " + paperless)
 
-
+/*
+System.out.println('randomLastName ' + randomLastName)
+System.out.println('randomFirstName ' + randomFirstName)
+System.out.println('quoteNumber ' + quoteNumber)
+System.out.println('todaysDate ' + todaysDate)
+System.out.println('shouldBind ' + shouldBind)
+System.out.println('stateFL ' + stateFL)
+System.out.println('isAgent ' + isAgent)
+System.out.println('environment ' + environment)
+System.out.println('todaysTimeStamp ' + todaysTimeStamp)
+*/
 
 //System.out.println("trying to write file for FL DP")
-
 
 
 // copied from Cypress 4
@@ -82,22 +94,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		}
 		else if(shouldBind == true)
 		{
-			//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
-			//WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
-				
-			'Bind Application > button'
-		//	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
-			
-			if (WebUI.waitForElementPresent(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 45))
-			{
-				
-				String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 'innerHTML')
-				
-				//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
-				WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
-			
-				sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
-			}
+			sheet.getRow(rowCount).createCell(4).setCellValue(policyNumberLink)
 		}
 		
 			// removes all chars from string
@@ -119,17 +116,18 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
 			//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-			sheet.getRow(rowCount).createCell(8).setCellValue("FL Dwelling")
+			sheet.getRow(rowCount).createCell(8).setCellValue("BR FL")
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
 			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
+	/*		
 			sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
 			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)
 			sheet.getRow(rowCount).createCell(14).setCellValue(paperless)
-			
+	*/		
 			//notes = "to be deny'd"
 			//sheet.getRow(rowCount).createCell(14).setCellValue(notes)
 			file.close()
@@ -163,6 +161,6 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 	 else {
 			System.out.println('in the else, FAILED to find policy number')
 		}
-	*/	
+	*/
 		
-		System.out.println("trying to write file for FL DP trying to write file part 2")
+		System.out.println("trying to write file for BR FL trying to write file part 2")

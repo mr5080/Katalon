@@ -221,7 +221,10 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/BR FL/Page_/select_F
 
 
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), '300000')
+int randomCompleteValue = 2 + ((Math.random() * ((5) + 1)) as int)
+
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), '300000')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), randomCompleteValue + '00000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1,0002,5005,00010,000'), '', true)
 
@@ -243,8 +246,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1234'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_FrameJoisted MasonryNon-CombustibleM_f412cc'), 
-    'B', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_FrameJoisted MasonryNon-CombustibleM_f412cc'),  'B', true)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Add InterestInsured'))
 
@@ -261,15 +263,69 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEHomeow
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEStiltsPilings_1'))
 
+
+
+// need to check for the presense of questions  if the crime score question come up
+//address for quote 7769
+
+// if the first question is present, need to answer all of them
+
+//WebUI.waitForElementPresent(findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'), 3)
+
+//if(WebUI.waitForElementPresent(findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'), 3))
+try
+{	// these need to be answered if highCrime, quote 7760 example
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) be lit at night_NOSAVENightLit_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will security checks of the jobsite(s) be done at the end of the day_NOSAVESecurityChecks_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will local law enforcement be notified to include the jobsite(s) on routine patrols_NOSAVERoutinePatrols_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will building materials be secured at the jobsite(s)_NOSAVESecuredMaterials_1'))
+	
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will any type of alarm service or electronic surveillance be used at the jobsite(s)_NOSAVEAlarmService_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVEWarningSigns_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVESuspiciousActivity_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in an established subdivision_NOSAVEEstSubdivision_1'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in a gatedguarded subdivision_NOSAVEGatedSubdivision_1'))
+}
+catch(e)
+{
+	System.out.println('Exception - ' + e)
+}
+
+/*
+findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) be lit at night_NOSAVENightLit_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will security checks of the jobsite(s) be done at the end of the day_NOSAVESecurityChecks_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will local law enforcement be notified to include the jobsite(s) on routine patrols_NOSAVERoutinePatrols_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will building materials be secured at the jobsite(s)_NOSAVESecuredMaterials_1')
+
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will any type of alarm service or electronic surveillance be used at the jobsite(s)_NOSAVEAlarmService_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVEWarningSigns_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVESuspiciousActivity_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in an established subdivision_NOSAVEEstSubdivision_1')
+findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in a gatedguarded subdivision_NOSAVEGatedSubdivision_1')
+*/
+
+
+
+
+
+
+
+
 if(!isAgent)
 {	// this button is not displayed for agents
 	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Internal'))
 }
 
-WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_DisplayQuote'))
-WebUI.delay(5)
+
+totalPremium = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+System.out.println('totalPremium = ' + totalPremium)
+
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_BindSubmitApp'))
+
+String policyNumberLink = '' // this is passed to writeFile
 if(shouldBind)
 {	
 	System.out.println('in the if')
@@ -283,7 +339,7 @@ if(shouldBind)
 	//WebUI.comment('policyID = ' + policyID)
 	System.out.println('policyID = ' + policyID)
 	
-	String policyNumberLink = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyNumberLink'), 'innerHTML')
+	policyNumberLink = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/policyNumberLink'), 'innerHTML')
 	WebUI.comment('policyNumberLink = ' + policyNumberLink)
 	System.out.println('policyNumberLink = ' + policyNumberLink)
 	
@@ -301,6 +357,41 @@ else
 }	
 	
 // up next write to file
+/*
+System.out.println('randomLastName ' + randomLastName)
+System.out.println('randomFirstName ' + randomFirstName)
+System.out.println('quoteNumber ' + quoteNumber)
+System.out.println('todaysDate ' + todaysDate)
+System.out.println('shouldBind ' + shouldBind)
+System.out.println('stateFL ' + stateFL)
+System.out.println('isAgent ' + isAgent)
+System.out.println('environment ' + environment)
+System.out.println('todaysTimeStamp ' + todaysTimeStamp)
+System.out.println('totalPremium ' + totalPremium)
+
+System.out.println('policyNumberLink ' + policyNumberLink)
+*/
+
+WebUI.delay(4)
+
+// pass vars to write the file  9.16.21
+WebUI.callTestCase(findTestCase('BuildersRisk/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, 
+		('randomFirstName') : randomFirstName, 
+		('quoteNumber') : quoteNumber, 
+		('todaysDate') : todaysDate, 
+		('totalPremium') : totalPremium, 
+		//	('policyType') : policyType,
+		('shouldBind') : shouldBind, 
+		('stateFL') : stateFL, 
+		('isAgent') : isAgent, 
+		('environment') : environment, 
+//		('optionalCoverages') : optionalCoverages, 
+//		('numInterests') : numInterests,  ('paperless') : paperless, 
+		('policyNumberLink') : policyNumberLink,		
+		('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+
+
 
 System.out.println('done with everything')
 System.out.println('quoteNumber = ' + quoteNumber)

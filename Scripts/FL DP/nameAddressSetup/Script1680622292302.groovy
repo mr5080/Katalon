@@ -118,6 +118,19 @@ else if(manualAddress == 'lightspeed')
 		return nameAddressData
 			
 	}
+	
+else if(manualAddress == 'highCrime')
+{
+	def nameAddressData = ['randomFirstName': 'HIGH',
+			'randomLastName': 'CRIMER',
+			'addressFL': '630 GOODRICH AVE',
+			'cityFL': 'SARASOTA',
+			'stateFL': 'FL',
+			'zipFL': '34236'
+			]
+		return nameAddressData
+	}
+			
 
 // manualAddress  not set, uses random below
 //Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
