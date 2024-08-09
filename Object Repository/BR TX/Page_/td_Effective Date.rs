@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Effective Date</name>
+   <tag></tag>
+   <elementGuidId>b5a53232-3e98-4015-931e-565b4c41b32e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>tr:nth-of-type(3) > td</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='StartANewQuoteFormTable']/tbody/tr[3]/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>1beab871-7101-4283-b793-34a811f865e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>align</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>a1024b11-8197-408d-b5cd-8cb14e7fa3e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Effective Date:</value>
+      <webElementGuid>cd6865e2-1546-41c1-841e-7e88364a0fc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;StartANewQuoteFormTable&quot;)/tbody[1]/tr[3]/td[1]</value>
+      <webElementGuid>ee098e3b-e8f3-4b62-b107-1ea9382ca531</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/BR TX/Page_/iframe_RTR Quotes_MainIS38test</value>
+      <webElementGuid>828616f9-993d-41ac-914b-d645ed67de08</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//table[@id='StartANewQuoteFormTable']/tbody/tr[3]/td</value>
+      <webElementGuid>647a0d89-afa9-4aef-94c7-382480a368e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Type:'])[1]/following::td[2]</value>
+      <webElementGuid>3b9747df-165e-4478-9132-4f23d0c9b72e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='✓'])[1]/following::td[3]</value>
+      <webElementGuid>68d33945-0adc-4d13-8fa4-a0d6a9325ff3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Location Address:'])[1]/preceding::td[2]</value>
+      <webElementGuid>c4abebd0-269b-4549-8878-7586ab160100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td</value>
+      <webElementGuid>d7c10b0f-3918-4c42-be73-de3a752a6c9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Effective Date:' or . = 'Effective Date:')]</value>
+      <webElementGuid>7adf0ed2-8ef9-4724-b0aa-bdcea900c2dd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -24,7 +24,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 
-def nameAddressData = WebUI.callTestCase(findTestCase('BuildersRisk/nameAddressSetup'), [('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
+def nameAddressData = WebUI.callTestCase(findTestCase('BuildersRisk/nameAddressSetupFL'), [('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
 String randomFirstName = nameAddressData['randomFirstName']
 
@@ -78,9 +78,7 @@ WebUI.openBrowser('')
 
 try
 {
-	
-
-WebUI.navigateToUrl('https://buildersrisktest.cogisi.com/is/root/logon/index.cfm')
+//WebUI.navigateToUrl('https://buildersrisktest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
 	WebUI.navigateToUrl('https://buildersrisktest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
@@ -323,12 +321,9 @@ if(!isAgent)
 
 
 if(projectType == 'STRUCTURAL')
-	{
-		WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_judgementRate'), '1.001')
-		
-		
-		
-	}
+{
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_judgementRate'), '1.001')
+}
 	
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_DisplayQuote'))
 

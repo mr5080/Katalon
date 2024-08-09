@@ -86,7 +86,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'08/02/2023'</defaultValue>
       <description>08/02/2024</description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>

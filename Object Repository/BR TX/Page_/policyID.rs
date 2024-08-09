@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>policyID</name>
+   <tag></tag>
+   <elementGuidId>4d75825f-1336-4794-9f1c-3416342b5aee</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>td.ExpandedHeader.ISiPolicyHeader > b</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='extended_header']/td/table/tbody/tr/td/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>2ccc5993-e557-4480-a569-450c42acf582</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Account ID: 3787</value>
+      <webElementGuid>f62ac237-b3e8-4b75-9d57-05a1fbe1e5f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[@id=&quot;extended_header&quot;]/td[1]/table[@class=&quot;ExpandedHeader ISiRowHighlighting&quot;]/tbody[1]/tr[1]/td[@class=&quot;ExpandedHeader ISiPolicyHeader&quot;]/b[1]</value>
+      <webElementGuid>6b5fc91a-31c3-4fa0-b68f-4edf81c69787</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/BR TX/Page_/iframe_RTR Quotes_MainIS38test</value>
+      <webElementGuid>1cb42edd-1703-4dc1-9e88-441f25a2964b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='extended_header']/td/table/tbody/tr/td/b</value>
+      <webElementGuid>fa97572d-68b5-4589-994e-6b3e8348c18e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='agentemail@cornerops.com'])[1]/following::b[1]</value>
+      <webElementGuid>635535fe-c91e-4539-9ec0-e64103be0c81</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Current:'])[1]/preceding::b[1]</value>
+      <webElementGuid>cc19b194-e66c-4464-b818-a85164c9fa2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='3787']/parent::*</value>
+      <webElementGuid>a986ae14-b247-4720-8d5c-f722b3827605</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/b</value>
+      <webElementGuid>52b3f822-7e6a-4fd6-8dfb-45cdfd92c69d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'Account ID: 3787' or . = 'Account ID: 3787')]</value>
+      <webElementGuid>c8da39a9-45e1-44b6-974d-aeae1a6ac101</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

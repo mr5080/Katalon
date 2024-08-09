@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Quote Number</name>
+   <tag></tag>
+   <elementGuidId>f06e1337-5c92-4dd9-838c-707b3f1f4ce6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Left-QuoteNumber</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-QuoteNumber']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>d743fb1e-be4d-4219-94a5-0d2ee13c0e62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Left-QuoteNumber</value>
+      <webElementGuid>d9a3f2a4-3e68-4165-92db-5e16877af327</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-2 p-1    </value>
+      <webElementGuid>1d747ab1-9457-48d4-9df4-531d742a9be2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Quote Number: 7890  </value>
+      <webElementGuid>42242ec0-2d61-401e-b3ff-f8df44bbc775</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Left-QuoteNumber&quot;)</value>
+      <webElementGuid>8574bf9a-8b5a-470b-8c17-d7bfa965840f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/BR TX/Page_/iframe_RTR Quotes_MainIS38test</value>
+      <webElementGuid>dbdc129d-340b-4d70-9364-d09a88d4798c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Left-QuoteNumber']</value>
+      <webElementGuid>a63f8f68-4aed-46eb-8ecc-279e7d70adf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div/div/div/div/div/div</value>
+      <webElementGuid>0f4487d3-256f-49de-9101-6756e5638e8d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Return to Agent'])[1]/following::div[7]</value>
+      <webElementGuid>3621537f-dd08-4664-94c0-b23108826be3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/following::div[8]</value>
+      <webElementGuid>4b9e2c34-02e6-408a-a704-5797894c2003</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Effective Date:'])[1]/preceding::div[1]</value>
+      <webElementGuid>6a7a13b8-f5c2-4bd8-8381-ebf9030bb212</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy Type: OS'])[1]/preceding::div[3]</value>
+      <webElementGuid>f2e61a81-311b-47a7-9ece-b111737bd050</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Quote Number: 7890']/parent::*</value>
+      <webElementGuid>09183248-be8b-4108-96a4-7ce548c42cc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/div/div</value>
+      <webElementGuid>afe2c158-20d4-4c9b-a715-0303b243f989</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Left-QuoteNumber' and (text() = 'Quote Number: 7890  ' or . = 'Quote Number: 7890  ')]</value>
+      <webElementGuid>28367fd1-8b7f-4d9b-856d-8ab954550eb8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
