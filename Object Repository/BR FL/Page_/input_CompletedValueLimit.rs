@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Legal name of the builder performing _edc60c</name>
+   <name>input_CompletedValueLimit</name>
    <tag></tag>
-   <elementGuidId>1f3abc71-c299-4390-9db7-843fc17b8ee9</elementGuidId>
+   <elementGuidId>5b2f788a-7908-4351-80a8-5ebd1dc0e764</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#NOSAVELicensedContractor_1Yes</value>
+         <value>#CompletedValueLimit_1</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVELicensedContractor_1Yes']</value>
+         <value>//input[@id='CompletedValueLimit_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,23 +22,31 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>7420f90a-c982-42e6-bad8-9986d1bed556</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-check-input</value>
-      <webElementGuid>a2e6d45c-5136-4848-92b8-9728dd8562eb</webElementGuid>
+      <webElementGuid>7a4108e7-41e4-47dc-b31f-ea7ed8d8f124</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>radio</value>
-      <webElementGuid>ff01205b-79ac-4830-bfd9-59a69a0a54b2</webElementGuid>
+      <value>text</value>
+      <webElementGuid>25615cce-88b8-46e3-9b76-3a3d7deb7923</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control numberWidget</value>
+      <webElementGuid>a2fe831b-5e56-4c91-bd1e-4f086edb49f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>CompletedValueLimit_1</value>
+      <webElementGuid>a1e98c4f-c9fe-4279-9e83-e79ae8f5df72</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,63 +54,71 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>7af0e1c1-e1eb-403b-b25c-872bb4fad805</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>NOSAVELicensedContractor_1</value>
-      <webElementGuid>3a0cd5d4-da62-4027-a818-3c798ec50272</webElementGuid>
+      <webElementGuid>c8427242-8152-4188-8a6a-65b2625ad505</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>NOSAVELicensedContractor_1Yes</value>
-      <webElementGuid>e1d4b5ba-dec5-4df7-95db-bc8d68de7499</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>Y</value>
-      <webElementGuid>3baa0d2c-53ba-44e5-b158-839b958ee6cc</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onchange</name>
-      <type>Main</type>
-      <value>updateYesNoValue(this);  GlobalCheckDisable(this);</value>
-      <webElementGuid>570e0b09-5873-4a76-a0b4-8bd6f2460fb4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onclick</name>
-      <type>Main</type>
-      <value>;</value>
-      <webElementGuid>1f9b48a2-583a-489a-97cd-6355276e9325</webElementGuid>
+      <value>CompletedValueLimit_1</value>
+      <webElementGuid>433dc4b6-343b-406a-a32b-1a6513d232b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>onblur</name>
       <type>Main</type>
-      <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>623a3eba-9573-4810-b8db-6cdbd81e6efb</webElementGuid>
+      <value>isNumberJS(this);  GlobalCheckDisable(this);  CheckRequired(false);</value>
+      <webElementGuid>f27939e0-6c0d-4701-83e9-ddfe92b7f4d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>  GlobalCheckDisable(this);</value>
+      <webElementGuid>aaf08f1f-96c1-4224-b87b-748590dc269b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>numbertype</name>
+      <type>Main</type>
+      <value>integer</value>
+      <webElementGuid>533acfce-7f96-4f64-b6db-c961f7475f4d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxvalue</name>
+      <type>Main</type>
+      <value>20000000</value>
+      <webElementGuid>884fa9f3-d855-48ba-afae-3fc61e61d57d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>minvalue</name>
+      <type>Main</type>
+      <value>10000</value>
+      <webElementGuid>920030d8-1316-4dd5-b6f6-ca3eb6308ac0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>decimalplaces</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>71668fbe-4fa4-470c-9ef5-4400a163f2a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;NOSAVELicensedContractor_1Yes&quot;)</value>
-      <webElementGuid>31579e30-3fce-40e3-9c7c-fdbcfdec4e28</webElementGuid>
+      <value>id(&quot;CompletedValueLimit_1&quot;)</value>
+      <webElementGuid>79c2f1b4-f282-419b-8099-97d5a3d7531b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -110,38 +126,38 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/BR FL/Page_/iframe_RTR Quotes_MainIS38test</value>
-      <webElementGuid>625a3527-2da1-414f-8b8d-c83d3039014a</webElementGuid>
+      <webElementGuid>7dacb5d6-3183-4918-a9b1-a9b11f683f94</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='NOSAVELicensedContractor_1Yes']</value>
-      <webElementGuid>471fbc42-3265-447b-bf2a-33250d0832ee</webElementGuid>
+      <value>//input[@id='CompletedValueLimit_1']</value>
+      <webElementGuid>f06adf3b-b680-47bf-a4c7-59f2836db991</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Right-LicensedContractor_1']/div/input</value>
-      <webElementGuid>128812fd-3868-4cc3-9a86-259687833a39</webElementGuid>
+      <value>//div[@id='Wrapper-Right-CompletedValueLimit_1']/input</value>
+      <webElementGuid>b6f56431-a154-4da7-81fe-e45c439518aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div[2]/div/input</value>
-      <webElementGuid>731353e4-3528-4383-a5f0-851ee938f650</webElementGuid>
+      <value>//div[5]/div[2]/div/div/div[2]/input</value>
+      <webElementGuid>a23ee352-3751-4ad6-a769-b8cce3cb398f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'radio' and @name = 'NOSAVELicensedContractor_1' and @id = 'NOSAVELicensedContractor_1Yes']</value>
-      <webElementGuid>4e2f5602-3501-4337-ad48-77a7d3829fed</webElementGuid>
+      <value>//input[@type = 'text' and @name = 'CompletedValueLimit_1' and @id = 'CompletedValueLimit_1']</value>
+      <webElementGuid>1c7cfc46-2a5d-4471-96f2-b6a1cbbff5ea</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

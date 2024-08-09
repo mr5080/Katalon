@@ -30,10 +30,11 @@ System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 System.out.println("totalPremium(from childTestCase) = " + totalPremium)
-System.out.println("policyType(from childTestCase) = " + shouldBind)
+//System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("policyNumberLink(from childTestCase) = " + policyNumberLink)
+System.out.println("projectType(from childTestCase) = " + projectType)
 
 
 System.out.println("stateFL(from childTestCase) = " + stateFL)
@@ -123,6 +124,9 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
+			
+			sheet.getRow(rowCount).createCell(12).setCellValue(projectType)
+			
 	/*		
 			sheet.getRow(rowCount).createCell(12).setCellValue(optionalCoverages)
 			sheet.getRow(rowCount).createCell(13).setCellValue(numInterests)

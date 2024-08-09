@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Legal name of the builder performing _28237f</name>
+   <name>input_legalNameBuilder</name>
    <tag></tag>
    <elementGuidId>7bb78b87-1ebb-4653-8161-f6bf76c97602</elementGuidId>
    <selectorCollection>

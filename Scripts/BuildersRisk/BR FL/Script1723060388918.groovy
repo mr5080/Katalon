@@ -76,6 +76,10 @@ System.out.println('todaysDate = ' + todaysDate)
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
 
+try
+{
+	
+
 WebUI.navigateToUrl('https://buildersrisktest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
 	WebUI.navigateToUrl('https://buildersrisktest.cogisi.com/is/root/logon/index.cfm')
@@ -116,30 +120,16 @@ WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City_Applicant
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Zip Code_ApplicantZip'), zipFL)
 
-
-
-
-
-
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/div_Start a New Quote   Risk StateFLORIDATE_1cee94'))
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_button'))		//last button on Start a New Quote
 
-/*
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_button'))
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '10100')
-
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/td_TEST AGENCY'))
-*/
 
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_Quote Number'), 'innerHTML')
 System.out.println('quoteNumber = ' + quoteNumber)
 
-
-
-findTestObject('Object Repository/BR FL/Page_/div_Quote Number')
 System.out.println('"$isAgent" = ' + isAgent)
 
 'Agent Producer'
@@ -156,7 +146,7 @@ if (isAgent == false) {
 		//    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
 		 //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10102',  Keys.UP, Keys.TAB))
 			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP))
 
 			WebUI.delay(1)
@@ -174,10 +164,14 @@ if (isAgent == false) {
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_New ConstructionNon-Structural Renov_d441a3'), 
-    'NEW', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_ProjectType'), projectType, true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_3 Months12 Months'), '12', true)
+
+if(projectType != 'NEW')
+{
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_renovationDetails'), 'building a playhouse')	
+}
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVE_1'))
 
@@ -222,11 +216,29 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/BR FL/Page_/select_F
 
 
 int randomCompleteValue = 2 + ((Math.random() * ((5) + 1)) as int)
-
-//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), '300000')
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Completed Value Limit_CompletedValueLimit_1'), randomCompleteValue + '00000')
+//WebUI.delay(10)
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_CompletedValueLimit'), '300000')
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_CompletedValueLimit'), randomCompleteValue + '00000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1,0002,5005,00010,000'), '', true)
+
+
+int randomValue = 2 + ((Math.random() * ((5) + 1)) as int)
+if(projectType != 'NEW')
+{
+	WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_coverageRequired'), '0', true)
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_workValue'), randomValue + '50800')
+}
+else
+{
+	//WebUI.delay(10)
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_CompletedValueLimit'), randomValue + '50800')
+	//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_CompletedValueLimit'), randomCompleteValue + '00000')
+	
+}
+
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1,0002,5005,00010,000'), '5000', true)
 
@@ -240,6 +252,15 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_General'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_Single family residential dwellingTw_771401'), 'SINGLEFAMILYDWELLING', true)
 
 
+if(projectType != 'NEW')
+{
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesElectric'), '2021')
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesRoof') , '2022')
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesPlumbing') , '2023')
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesHVAC') , '2024')	
+}
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/input_roofMaterial'), 'ARCHITECTURAL', true)
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Total Square Footage_SquareFootage_1'), '1589')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1234'), '', true)
@@ -253,26 +274,29 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Add InterestIns
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_History'))
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Statements'))
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Legal name of the builder performing _28237f'), randomLastName + ' the builder')
-
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Legal name of the builder performing _edc60c'))
-
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_legalNameBuilder'), randomLastName + ' the builder')
+WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_licensedContractor'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_YesNo'), 'N', true)
+if(projectType == 'NEW')
+{
+	
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEHomeownerOccupancy_1'))
+	
+}	
 
-WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEHomeownerOccupancy_1'))
+
+// new questions here
+if(projectType != 'NEW')
+{
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_vacantBuilding'))
+	WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_foreclosureNo'))	
+}
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Yes_NOSAVEStiltsPilings_1'))
 
 
 
 // need to check for the presense of questions  if the crime score question come up
-//address for quote 7769
-
-// if the first question is present, need to answer all of them
-
-//WebUI.waitForElementPresent(findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'), 3)
-
-//if(WebUI.waitForElementPresent(findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'), 3))
 try
 {	// these need to be answered if highCrime, quote 7760 example
 	WebUI.click(findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1'))
@@ -292,32 +316,20 @@ catch(e)
 	System.out.println('Exception - ' + e)
 }
 
-/*
-findfindTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) have security fencing_NOSAVESecurityFence_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will the jobsite(s) be lit at night_NOSAVENightLit_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will security checks of the jobsite(s) be done at the end of the day_NOSAVESecurityChecks_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will local law enforcement be notified to include the jobsite(s) on routine patrols_NOSAVERoutinePatrols_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will building materials be secured at the jobsite(s)_NOSAVESecuredMaterials_1')
-
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Will any type of alarm service or electronic surveillance be used at the jobsite(s)_NOSAVEAlarmService_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVEWarningSigns_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_No_NOSAVESuspiciousActivity_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in an established subdivision_NOSAVEEstSubdivision_1')
-findTestObject('Object Repository/BR FL/Page_/securityQuestions/input_Is the jobsite in a gatedguarded subdivision_NOSAVEGatedSubdivision_1')
-*/
-
-
-
-
-
-
-
-
 if(!isAgent)
 {	// this button is not displayed for agents
 	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Internal'))
 }
 
+
+if(projectType == 'STRUCTURAL')
+	{
+		WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_judgementRate'), '1.001')
+		
+		
+		
+	}
+	
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_DisplayQuote'))
 
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
@@ -372,7 +384,6 @@ System.out.println('totalPremium ' + totalPremium)
 System.out.println('policyNumberLink ' + policyNumberLink)
 */
 
-WebUI.delay(4)
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('BuildersRisk/writeFile'), [ //	('policyType') : policyType,
@@ -381,7 +392,8 @@ WebUI.callTestCase(findTestCase('BuildersRisk/writeFile'), [ //	('policyType') :
 		('quoteNumber') : quoteNumber, 
 		('todaysDate') : todaysDate, 
 		('totalPremium') : totalPremium, 
-		//	('policyType') : policyType,
+		//('policyType') : policyType, 
+		('projectType') : projectType,		
 		('shouldBind') : shouldBind, 
 		('stateFL') : stateFL, 
 		('isAgent') : isAgent, 
@@ -391,7 +403,24 @@ WebUI.callTestCase(findTestCase('BuildersRisk/writeFile'), [ //	('policyType') :
 		('policyNumberLink') : policyNumberLink,		
 		('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
 
-
-
-System.out.println('done with everything')
 System.out.println('quoteNumber = ' + quoteNumber)
+
+}
+catch(e)
+{
+	quoteNumber = quoteNumber.replace(':', '')
+	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
+	
+	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+		
+	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	
+	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
+	
+	/*
+	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+	*/
+}
