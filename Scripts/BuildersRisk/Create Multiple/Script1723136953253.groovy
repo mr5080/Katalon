@@ -23,6 +23,7 @@ int counter = 1
 
 while (counter <= howMany) {
     WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 
     System.out.println('counter = ' + counter)
 
