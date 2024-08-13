@@ -70,15 +70,15 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>84c467d1-b108-4934-8ee2-793ab19e0ca6</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'NONSTRUCTURAL'</defaultValue>
-      <description>NEW, NONSTRUCTURAL, STRUCTURAL</description>
+      <defaultValue>''</defaultValue>
+      <description>NEW, NONSTRUCTURAL, STRUCTURAL, Blank = Random</description>
       <id>3edb4bf0-55f6-496c-9370-af5f071a358b</id>
       <masked>false</masked>
       <name>projectType</name>

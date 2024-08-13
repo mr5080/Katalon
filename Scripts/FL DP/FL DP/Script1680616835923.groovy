@@ -412,9 +412,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Y
 
 // add optional coverages
 if (optionalCoverages) {
-    WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVROOF', true)
-
-    WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
+    //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ACVROOF', true)	// removed from select box effective 8.3.24
+    //WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Add Coverage'))
 
     WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_OptionalCoverage'), 'ANIMAL', true)
 

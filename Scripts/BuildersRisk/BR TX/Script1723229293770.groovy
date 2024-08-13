@@ -39,6 +39,20 @@ String zipTX = nameAddressData['zipTX']
 
 String fullName = (randomFirstName + ' ') + randomLastName
 
+if(projectType == '')
+{
+	int randomProjectType = 1 + ((Math.random() * ((3 - 1) + 1)) as int)
+	
+	if(randomProjectType == 1)
+		projectType = 'NEW'
+	else if(randomProjectType == 2)
+		projectType = 'NONSTRUCTURAL'
+	else if(randomProjectType == 3)
+		projectType = 'STRUCTURAL'
+		
+	System.out.println('projectType  = ' + projectType )
+}
+	
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
@@ -112,7 +126,7 @@ if (isAgent == false) {
 		//    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
 		 //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10102',  Keys.UP, Keys.TAB))
 			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP))
 
 			WebUI.delay(1)
@@ -203,12 +217,15 @@ if(projectType != 'NEW')
 {
 	// check for blank YOC and populate if needed
 		
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_constructionYear') , '2018')
 	WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_updatesElectric'), '2021')
 	WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_updatesRoof') , '2022')
 	WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_updatesPlumbing') , '2023')
 	WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_updatesHVAC') , '2024')
+	
 }
 
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/input_roofMaterial'), 'SLATE', true)
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Total Square Footage_SquareFootage_1'), '2446')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_1234'), '', true)

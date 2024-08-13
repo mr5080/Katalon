@@ -45,6 +45,19 @@ String yearOfConstFL = nameAddressData['yearOfConstFL']
 System.out.println('yearOfConstFL = ' + yearOfConstFL)
 String fullName = (randomFirstName + ' ') + randomLastName
 
+if(projectType == '')
+{
+	int randomProjectType = 1 + ((Math.random() * ((3 - 1) + 1)) as int)
+	
+	if(randomProjectType == 1)
+		projectType = 'NEW'
+	else if(randomProjectType == 2)
+		projectType = 'NONSTRUCTURAL'
+	else if(randomProjectType == 3)
+		projectType = 'STRUCTURAL'
+		
+	System.out.println('projectType  = ' + projectType )
+}
 /*
  // get todays date
  mydate = new Date()
@@ -250,15 +263,19 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_General'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_Single family residential dwellingTw_771401'), 'SINGLEFAMILYDWELLING', true)
 
 
+
+//findTestObject('Object Repository/BR FL/Page_/input_constructionYear')
+
 if(projectType != 'NEW')
 {
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_constructionYear') , '2018')
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesElectric'), '2021')
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesRoof') , '2022')
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesPlumbing') , '2023')
-	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesHVAC') , '2024')	
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_updatesHVAC') , '2024')		
 }
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/input_roofMaterial'), 'ARCHITECTURAL', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/input_roofMaterial'), 'SLATE', true)
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Total Square Footage_SquareFootage_1'), '1589')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1234'), '', true)
