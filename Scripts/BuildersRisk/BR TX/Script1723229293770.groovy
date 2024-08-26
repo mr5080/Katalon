@@ -95,6 +95,8 @@ WebUI.click(findTestObject('Object Repository/BR TX/Page_TEST DATA buildersriskt
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_FLORIDATEXAS'), 'TX', true)
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Location Address_ApplicantAddress1'), addressTX)
+WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Ext Address_ApplicantAddress2'), 'APT 7007')
+
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_City_ApplicantCity'), cityTX)
 
@@ -169,7 +171,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_O
 
 WebUI.click(findTestObject('Object Repository/BR TX/Page_/input_Please choose a name type_NOSAVEAppli_f4d688'))
 
-WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), randomFirstName)
+WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), randomFirstName + '\'' + 'D')
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Applicant Middle Name_NOSAVE-INDAppli_24c841'), 'bee')
 

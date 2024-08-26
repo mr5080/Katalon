@@ -6,12 +6,12 @@
    <elementGuidId>0aeefedc-685f-42e3-829a-6756d608b27c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Wrapper-Right-TotalPremiumAndFees</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='Wrapper-Right-TotalPremiumAndFees']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Right-TotalPremiumAndFees</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>9053a339-e097-4145-a359-e70825879b76</webElementGuid>
+      <webElementGuid>4c616208-a4f9-466a-960e-8b7d641f6525</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>id</name>
       <type>Main</type>
       <value>Wrapper-Right-TotalPremiumAndFees</value>
-      <webElementGuid>76c67663-2f72-4d1a-97f0-9b598f36d0d0</webElementGuid>
+      <webElementGuid>9e3d2864-247a-4258-9d00-37b2bdeb1ddf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>col-md-6 p-1  ISiDarkGrayBox  ISiWhiteText   text-right  </value>
-      <webElementGuid>6f30b2ee-106f-4596-a051-9fe6f9664abc</webElementGuid>
+      <webElementGuid>b5e33853-a860-4604-a360-aca5c97cccb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>$4,947.91 </value>
-      <webElementGuid>26b60b76-4670-495e-8303-6b0be7c88f49</webElementGuid>
+      <webElementGuid>fbc52e17-4af6-4e63-93af-35628052c7c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Wrapper-Right-TotalPremiumAndFees&quot;)</value>
-      <webElementGuid>4ac89bd1-40d0-4e90-9779-022f92f8193d</webElementGuid>
+      <webElementGuid>20e28320-f2d9-409d-8b82-0dd422691043</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/BR TX/Page_/iframe_RTR Quotes_MainIS38test</value>
-      <webElementGuid>319b2fa5-1f49-4534-bf9f-76fb95cc3d82</webElementGuid>
+      <webElementGuid>971e7cef-4783-447e-beed-398f33976f5f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-TotalPremiumAndFees']</value>
-      <webElementGuid>ae9a14e2-5373-4a5b-8490-efc3bf8a963c</webElementGuid>
+      <webElementGuid>e1b1bd5c-1dab-4716-a653-cec5ef3d35e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//form[@id='mainForm']/div/div[3]/div/div[2]/div[2]/div[32]/div/div/div[2]/div/div/div[6]/div/div[2]</value>
-      <webElementGuid>504bc5e3-26f5-4339-910d-c708fb9feee8</webElementGuid>
+      <webElementGuid>05a4cfe1-671b-40dc-b955-25ed5ef253be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Premium, Taxes, and Fees:'])[1]/following::div[1]</value>
-      <webElementGuid>befc0bd5-66a8-4a28-9ac0-9573c82458a1</webElementGuid>
+      <webElementGuid>7a90f9e6-2d2e-4c5a-9af6-7899054628b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='$4,947.91'])[1]/following::div[12]</value>
-      <webElementGuid>cda066f8-4da1-492b-8435-ad65272a8268</webElementGuid>
+      <webElementGuid>85c39f7c-04db-4a37-8abc-932e61ba3da4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rating Results'])[1]/preceding::div[1]</value>
-      <webElementGuid>1b41ea1d-7665-46fe-8b85-a2b50132888b</webElementGuid>
+      <webElementGuid>7c45b63d-cf5c-4798-81eb-f21ffef1605a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[6]/div/div[2]</value>
-      <webElementGuid>404607f4-96fc-45c7-acc2-e5ef6f4b1f8a</webElementGuid>
+      <webElementGuid>96095355-996c-4b90-bf7b-56b725398105</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +118,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[@id = 'Wrapper-Right-TotalPremiumAndFees' and (text() = '$4,947.91 ' or . = '$4,947.91 ')]</value>
-      <webElementGuid>3f2ac5f2-2be6-4235-8cbb-3bd0680b7722</webElementGuid>
+      <webElementGuid>749bf823-026a-405b-8c07-e5c85dfe0d19</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

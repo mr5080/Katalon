@@ -125,7 +125,7 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/strong_Effective Date'
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Address_ApplicantAddress1'), addressFL)
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Ext Address_ApplicantAddress2'), 'APT 008')
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Ext Address_ApplicantAddress2'), 'APT 1008')
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City_ApplicantCity'), cityFL)
 

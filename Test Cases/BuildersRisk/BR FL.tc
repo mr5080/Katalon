@@ -70,7 +70,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>84c467d1-b108-4934-8ee2-793ab19e0ca6</id>
       <masked>false</masked>

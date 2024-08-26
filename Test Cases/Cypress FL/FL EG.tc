@@ -122,7 +122,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
@@ -171,7 +171,7 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>
@@ -220,7 +220,7 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</id>
       <masked>false</masked>

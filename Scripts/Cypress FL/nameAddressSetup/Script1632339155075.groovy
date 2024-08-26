@@ -162,11 +162,11 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		*/
 		 
 		randomFirstName = 'Shaney'
-		randomLastName = 'Fingers'
-		addressFL = '818 Pennsylvania Ave'
-		cityFL = 'ALTAMONTE SPRINGS'
+		randomLastName = 'Ongers'
+		addressFL = '1015 JACARANDA CIR'
+		cityFL = 'ROCKLEDGE'
 		stateFL = 'FL'
-		zipFL = 32701
+		zipFL = 32955
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]

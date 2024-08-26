@@ -37,12 +37,6 @@ System.out.println("stateFL(from childTestCase) = " + stateFL)
 //System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 System.out.println("paperless(from childTestCase) = " + paperless)
 
-
-
-//System.out.println("trying to write file for FL DP")
-
-
-
 // copied from Cypress 4
 
 //FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))

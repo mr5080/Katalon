@@ -107,7 +107,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</id>
       <masked>false</masked>
@@ -121,7 +121,7 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
       <masked>false</masked>
