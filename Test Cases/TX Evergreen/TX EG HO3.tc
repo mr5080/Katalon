@@ -4,6 +4,7 @@
    <name>TX EG HO3</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>8c04433c-12c3-43a2-a0eb-d9a6c8175238</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

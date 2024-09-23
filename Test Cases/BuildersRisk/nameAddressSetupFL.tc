@@ -4,5 +4,6 @@
    <name>nameAddressSetupFL</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>caa4e607-6b30-4894-8d75-a1a3046f2b4d</testCaseGuid>
 </TestCaseEntity>

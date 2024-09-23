@@ -4,6 +4,7 @@
    <name>BR TX</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>618fe0cf-ddda-46cf-aa92-eaf9167c2cf5</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -70,14 +71,14 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'NEW'</defaultValue>
       <description>NEW, NONSTRUCTURAL, STRUCTURAL</description>
       <id>f9334ccc-6267-446d-a345-9d7372d48f57</id>
       <masked>false</masked>
       <name>projectType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description>agents most likely cant bind due to validations</description>
       <id>5b6edba8-5ed5-4dcd-bd19-dcd5f4b6ebbc</id>
       <masked>false</masked>
