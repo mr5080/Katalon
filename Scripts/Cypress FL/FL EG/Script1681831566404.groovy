@@ -528,7 +528,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working, 360 is not run for HO6
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '400000')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '55555')
 
 /*
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 

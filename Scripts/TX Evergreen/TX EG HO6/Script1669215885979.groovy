@@ -279,9 +279,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125_1'), '5', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125_1_2'), '5', true)
-
+//WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '250000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '46000')
 
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
@@ -440,7 +440,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSAVEGQ
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Billing'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '9PAY', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), '4PAY', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectJOHN P SMITH SR'), 'Applicant1', true)
 

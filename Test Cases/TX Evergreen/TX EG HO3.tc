@@ -61,7 +61,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
