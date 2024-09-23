@@ -24,6 +24,9 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
+import java.time.format.DateTimeFormatter
+import java.time.LocalDate
+
 
 //			policyNumber = WebUI.getAttribute( findTestObject('Object Repository/LA-Evergreen2/Page_/td_ PolicyNumber'), 'textContent')
 
@@ -64,29 +67,39 @@ String updatedYOC = yearOfConstFLInt
 */
 String fullName = (randomFirstName + ' ') + randomLastName
 
+// get todays date - after katalon update 9.23.24
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+LocalDate todaysDate = LocalDate.now();
+def mydate = todaysDate.format(formatter)
+def yesterdayDate = todaysDate.minusDays(1).format(formatter)
+def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
+
+System.out.println('mydate = ' + mydate)
+System.out.println('yesterdayDate = ' + yesterdayDate)
+System.out.println('tomorrowDate = ' + tomorrowDate)
+
+
 /*
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
 */
-// get todays date
-mydate = new Date()
-System.out.println('myDate = ' + mydate)
-todaysDate = mydate.format('MM/dd/yyyy')
+
 if(effectiveDate == '')
 {
-	effectiveDate = todaysDate
+	effectiveDate = mydate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('todaysDate = ' + todaysDate)
+System.out.println('mydate = ' + mydate)
 
 
-todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
-
+todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
-currentYear = Integer.parseInt(mydate.format('yyyy'))
+//currentYear = Integer.parseInt(mydate.format('yyyy'))
+currentYear = todaysDate.getYear()
+System.out.println('currentYear = ' + currentYear)
 
 System.out.println('currentYear = ' + currentYear)
 //return //System.exit(0)

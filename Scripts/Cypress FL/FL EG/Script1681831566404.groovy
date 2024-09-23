@@ -1,5 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.time.*
+
+import java.time.format.DateTimeFormatter
+import java.time.LocalDate
+
 import java.time.temporal.TemporalAdjusters as TemporalAdjusters
 import java.lang.Integer as Integer
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
@@ -83,45 +87,43 @@ String zipFLPrior = nameAddressData['zipFLPrior']
 
 String fullName = (randomFirstName + ' ') + randomLastName
 
-// Gets this Fridays date
-LocalDate dt = LocalDate.now()
 
-String thisFridayDate = dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY))
+// get todays date - after katalon update 9.23.24
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+LocalDate todaysDate = LocalDate.now();
+def mydate = todaysDate.format(formatter)
+def yesterdayDate = todaysDate.minusDays(1).format(formatter)
+def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
 
-String yearThisFriday = thisFridayDate.toString().substring(0, 4 // year
-    )
-
-String dayThisFriday = thisFridayDate.toString().substring(8, 10 // day
-    )
-
-String monthThisFriday = thisFridayDate.toString().substring(5, 7 // month
-    )
-
-//System.out.println("Fridays date this week = " + thisFridayDate)
-thisFridayDate = ((((monthThisFriday + '/') + dayThisFriday) + '/') + yearThisFriday)
-
-System.out.println('Fridays date this week = ' + thisFridayDate)
+System.out.println('mydate = ' + mydate)
+System.out.println('yesterdayDate = ' + yesterdayDate)
+System.out.println('tomorrowDate = ' + tomorrowDate)
 
 
+/*
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+*/
+
 if(effectiveDate == '')
 {
-	effectiveDate = todaysDate
+	effectiveDate = mydate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('todaysDate = ' + todaysDate)
+System.out.println('mydate = ' + mydate)
 
 
-todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
-
+todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
-currentYear = Integer.parseInt(mydate.format('yyyy'))
-
+//currentYear = Integer.parseInt(mydate.format('yyyy'))
+currentYear = todaysDate.getYear()
 System.out.println('currentYear = ' + currentYear)
+
+
+
 
 //WebUI.delay(5)
 WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_PHPortal-Login'), 15)
@@ -350,7 +352,6 @@ if ((isAgent == false) && (realTestUser == false)) {
  
 //need to click somewhere to get rid of the datepicker popup.
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), '11/16/2020')
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), thisFridayDate )
 	
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_EffectiveDateStartQuote'), EffectiveDate)
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(EffectiveDate, Keys.TAB))
@@ -382,7 +383,7 @@ String DOB = (((month + '/') + day) + '/') + year
 //System.out.println("users generated DOB = " + DOB)
 //System.out.println("Random Date = " + randomBirthDate);
 //}
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + year)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
@@ -528,7 +529,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 //this line can be removed if 360 is working, 360 is not run for HO6
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '55555')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
 
 /*
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 

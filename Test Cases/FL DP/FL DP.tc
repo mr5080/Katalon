@@ -4,6 +4,7 @@
    <name>FL DP</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>33e55b3c-b328-43ad-9de6-c2d1a3028a28</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

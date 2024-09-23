@@ -23,6 +23,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 
+import java.time.format.DateTimeFormatter
+import java.time.LocalDate
+
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 //  pass vars to another test case
@@ -47,31 +50,39 @@ String yearOfConstFL = nameAddressData['yearOfConstFL']
 System.out.println('yearOfConstFL = ' + yearOfConstFL)
 String fullName = (randomFirstName + ' ') + randomLastName
 
+// get todays date - after katalon update 9.23.24
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+LocalDate todaysDate = LocalDate.now();
+def mydate = todaysDate.format(formatter)
+def yesterdayDate = todaysDate.minusDays(1).format(formatter)
+def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
+
+System.out.println('mydate = ' + mydate)
+System.out.println('yesterdayDate = ' + yesterdayDate)
+System.out.println('tomorrowDate = ' + tomorrowDate)
+
+
 /*
- // get todays date
- mydate = new Date()
- System.out.println('myDate = ' + mydate)
- todaysDate = mydate.format('MM/dd/yyyy')
- */
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+*/
+
 if(effectiveDate == '')
 {
-	effectiveDate = todaysDate
+	effectiveDate = mydate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('todaysDate = ' + todaysDate)
+System.out.println('mydate = ' + mydate)
 
- 
- todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
- 
- System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
- 
- currentYear = Integer.parseInt(mydate.format('yyyy'))
- 
- System.out.println('currentYear = ' + currentYear)
+
+todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+
+//currentYear = Integer.parseInt(mydate.format('yyyy'))
+currentYear = todaysDate.getYear()
+System.out.println('currentYear = ' + currentYear)
  //return //System.exit(0)
  
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web

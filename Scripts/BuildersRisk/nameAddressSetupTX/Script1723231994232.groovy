@@ -9,7 +9,7 @@ if(manualAddress == 'manual')	// set to something I want
 		'randomLastName': 'Marson',
 			'addressTX': '315 W 7TH ST',
 			'cityTX': 'Freeport',
-			'stateTX': 'TX',
+			'state': 'TX',
 			'zipTX': '77541'
 		]
 	return nameAddressData	
@@ -21,7 +21,7 @@ else if(manualAddress == 'PC10')	// address returns PC10
 			'randomLastName': 'Tens',
 			'addressTX': '1362 E CREEKVIEW DR',
 			'cityTX': 'SALADO',
-			'stateTX': 'TX',
+			'state': 'TX',
 			'zipTX': '76571'
 			]
 		return nameAddressData
@@ -34,7 +34,7 @@ else if(manualAddress == 'truerisk')
 			'randomLastName': 'Kimley',
 			'addressTX': '1201 DULLES AV',
 			'cityTX': 'STAFFORD',
-			'stateTX': 'TX',
+			'state': 'TX',
 			'zipTX': '77477'
 			]
 		return nameAddressData
@@ -43,7 +43,7 @@ else if(manualAddress == 'truerisk')
 			'randomLastName': 'Alsip',
 			'addressTX': '201 Yorkshire',
 			'cityTX': 'Victoria',
-			'stateTX': 'TX',
+			'state': 'TX',
 			'zipTX': '77904'
 			]
 		return nameAddressData
@@ -68,7 +68,7 @@ System.out.println(randomTXaddress)
 // minus 1 because first line is header in excel file
 addressTX = addressData.getValue(1, randomTXaddress - 1).toUpperCase()
 cityTX = addressData.getValue(2, randomTXaddress - 1).toUpperCase()
-stateTX = addressData.getValue(3, randomTXaddress - 1).toUpperCase()
+state = addressData.getValue(3, randomTXaddress - 1).toUpperCase()
 zipTX = addressData.getValue(4, randomTXaddress - 1)
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
@@ -92,7 +92,7 @@ def nameAddressData = ['randomFirstName': randomFirstName,
 	'randomLastName': randomLastName,
 	'addressTX': addressTX,
 	'cityTX': cityTX,
-	'stateTX': stateTX,
+	'state': state,
 	'zipTX': zipTX
 	]
 	

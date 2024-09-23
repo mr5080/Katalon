@@ -28,16 +28,17 @@ import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter clas
 System.out.println("randomLastName(from childTestCase) = " + randomLastName)
 System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
-System.out.println("todaysDate(from childTestCase) = " + todaysDate)
+//System.out.println("todaysDate(from childTestCase) = " + todaysDate)
+System.out.println("myDate(from childTestCase) = " + myDate)
 System.out.println("totalPremium(from childTestCase) = " + totalPremium)
+System.out.println("state(from childTestCase) = " + state)
+System.out.println("projectType(from childTestCase) = " + projectType)
 //System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
 System.out.println("policyNumberLink(from childTestCase) = " + policyNumberLink)
-System.out.println("projectType(from childTestCase) = " + projectType)
 
 
-System.out.println("stateFL(from childTestCase) = " + stateFL)
 //System.out.println("manualAddress(from childTestCase) = " + manualAddress)
 //System.out.println("paperless(from childTestCase) = " + paperless)
 
@@ -47,7 +48,7 @@ System.out.println('randomFirstName ' + randomFirstName)
 System.out.println('quoteNumber ' + quoteNumber)
 System.out.println('todaysDate ' + todaysDate)
 System.out.println('shouldBind ' + shouldBind)
-System.out.println('stateFL ' + stateFL)
+System.out.println('state ' + state)
 System.out.println('isAgent ' + isAgent)
 System.out.println('environment ' + environment)
 System.out.println('todaysTimeStamp ' + todaysTimeStamp)
@@ -55,7 +56,7 @@ System.out.println('todaysTimeStamp ' + todaysTimeStamp)
 
 //System.out.println("trying to write file for FL DP")
 
-
+//System.exit(0)
 // copied from Cypress 4
 
 //FileInputStream file = new FileInputStream(new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressAutoQuotes.xlsx'))
@@ -100,8 +101,9 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		
 			// removes all chars from string
 			//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-			sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
-	
+			////sheet.getRow(rowCount).createCell(5).setCellValue(myDate)
+			sheet.getRow(rowCount).createCell(5).setCellValue(myDate)
+			
 			//policyCreated = new Date()
 			//System.out.println('myDate = ' + policyCreated)
 			
@@ -114,6 +116,8 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 						
 			sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
 	
+	
+			
 			sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
 			//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
@@ -121,7 +125,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			
-			sheet.getRow(rowCount).createCell(10).setCellValue(stateFL)
+			sheet.getRow(rowCount).createCell(10).setCellValue(state)
 			
 			sheet.getRow(rowCount).createCell(11).setCellValue(isAgent)
 			

@@ -4,10 +4,10 @@
    <name>Cypress</name>
    <tag></tag>
    <UUID>d9ce165c-de93-4f5f-9619-204ac748796b</UUID>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
-   <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>9.4.0</modifiedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>9.7.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>C:\Users\JohnHughes\git\Katalon\EZLinx.prj</projectFileLocation>
    <sourceContent>

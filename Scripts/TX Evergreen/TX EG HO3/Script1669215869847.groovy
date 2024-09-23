@@ -1,6 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.time.*
 import java.time.temporal.TemporalAdjusters as TemporalAdjusters
+import java.time.format.DateTimeFormatter
+import java.time.LocalDate
+
 import java.lang.Integer as Integer
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
@@ -42,16 +45,40 @@ String zipTX = nameAddressData['zipTX']
 
 String fullName = (randomFirstName + ' ') + randomLastName
 
+// get todays date - after katalon update 9.23.24
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+LocalDate todaysDate = LocalDate.now();
+def mydate = todaysDate.format(formatter)
+def yesterdayDate = todaysDate.minusDays(1).format(formatter)
+def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
+
+System.out.println('mydate = ' + mydate)
+System.out.println('yesterdayDate = ' + yesterdayDate)
+System.out.println('tomorrowDate = ' + tomorrowDate)
+
+
+/*
 // get todays date
 mydate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
+*/
+
 if(effectiveDate == '')
 {
-	effectiveDate = todaysDate
+	effectiveDate = mydate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('todaysDate = ' + todaysDate)
+System.out.println('mydate = ' + mydate)
+
+
+todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+
+//currentYear = Integer.parseInt(mydate.format('yyyy'))
+currentYear = todaysDate.getYear()
+System.out.println('currentYear = ' + currentYear)
+
 
 
 //WebUI.openBrowser('')

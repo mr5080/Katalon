@@ -14,7 +14,7 @@ if(manualAddress == 'manual')	// set to something I want
 		'randomLastName': 'EMANUALA',
 			'addressFL': '2016 Sunrise Key Blvd',
 			'cityFL': 'Fort Lauderdale',
-			'stateFL': 'FL',
+			'state': 'FL',
 			'zipFL': '33304'
 		]	
 	return nameAddressData
@@ -28,7 +28,7 @@ else if(manualAddress == 'geocode')	// set to something I want
 		'randomLastName': 'EMANUALA',
 			'addressFL': '16588 Kenneth Hutcherson Mem Dr',
 			'cityFL': 'White Springs',
-			'stateFL': 'FL',
+			'state': 'FL',
 			'zipFL': '32096'
 		]
 
@@ -50,7 +50,7 @@ else if(manualAddress == 'PC10')	// address returns PC10
 		'randomLastName': 'Tens',
 		'addressFL': '20 BIRDWELL RD',
 		'cityFL': 'MONTICELLO',
-		'stateFL': 'FL',
+		'state': 'FL',
 		'zipFL': '32344'
 		]
 	return nameAddressData
@@ -60,7 +60,7 @@ else if(manualAddress == 'PC10')	// address returns PC10
 			'randomLastName': 'SPLITTY',
 				'addressFL': '781 N LINCOLN CT',
 				'cityFL': 'JACKSONVILLE',
-				'stateFL': 'FL',
+				'state': 'FL',
 				'zipFL': '32209'
 			]
 		return nameAddressData
@@ -84,7 +84,7 @@ else if(manualAddress == 'aplus')
 			'randomLastName': 'PORCHER',
 			'addressFL': '3850 VICKERS LAKE DR',
 			'cityFL': 'JACKSONVILLE',
-			'stateFL': 'FL',
+			'state': 'FL',
 			'zipFL': '32224'
 			]
 		return nameAddressData
@@ -128,7 +128,7 @@ else if(manualAddress == 'highCrime')
 			'randomLastName': 'CRIMER',
 			'addressFL': '630 GOODRICH AVE',
 			'cityFL': 'SARASOTA',
-			'stateFL': 'FL',
+			'state': 'FL',
 			'zipFL': '34236'
 			]
 		System.out.println('got into highCrime else if')
@@ -152,7 +152,7 @@ System.out.println(randomFLaddress)
 // minus 1 because first line is header in excel file
 addressFL = addressData.getValue(1, randomFLaddress - 1).toUpperCase()
 cityFL = addressData.getValue(2, randomFLaddress - 1).toUpperCase()
-stateFL = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
+state = addressData.getValue(3, randomFLaddress - 1).toUpperCase()
 zipFL = addressData.getValue(4, randomFLaddress - 1)
 countyFL = addressData.getValue(5, randomFLaddress - 1)
 yearOfConstFL = addressData.getValue(7, randomFLaddress - 1)	// if not found, will return randomly the street address...
@@ -181,7 +181,7 @@ def nameAddressData = ['randomFirstName': randomFirstName,
 	'randomLastName': randomLastName,
 	'addressFL': addressFL,
 	'cityFL': cityFL,
-	'stateFL': stateFL,
+	'state': state,
 	'zipFL': zipFL
 	
 	,'countyFL': countyFL	// uncomment to loop through capacity excel file

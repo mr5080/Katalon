@@ -4,6 +4,7 @@
    <name>FL EG</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6e06d343-87c2-4143-b230-3b7166aaa51e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
