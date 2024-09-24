@@ -175,7 +175,9 @@ if (isAgent == false) {
 
 //WebUI.click(findTestObject('Object Repository/BR TX/Page_/td_TEST AGENCY'))
 
-WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+//WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date'), effectiveDate)
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_projectType'),   projectType, true)
 

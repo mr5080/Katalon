@@ -281,14 +281,27 @@ WebUI.click(findTestObject('null'))
 WebUI.clearText(findTestObject('null'))
 
 if(WebUI.waitForElementVisible(findTestObject('null'), 2))
+
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
+WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
+
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
-	WebUI.click(findTestObject('null'))
+
+		WebUI.click(findTestObject('null'))
 }
 WebUI.setText(findTestObject('null'), '2015')
 if(WebUI.waitForElementVisible(findTestObject('null'), 2))
 {
 	WebUI.click(findTestObject('null'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
+{
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
+}
+
 
 
 

@@ -11,6 +11,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +19,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>743489d7-4809-4ed1-ace1-b91f8c34e5c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +27,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>66c79c5a-4ad6-4130-8319-0e90c44f5a01</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget fromPageValidated</value>
+      <webElementGuid>8096cad6-ad59-4f1e-9a1f-17bf9c69990e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,6 +43,7 @@
       <name>name</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
+      <webElementGuid>785c20fb-39fe-42af-91c7-3fe7f326f147</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +51,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>f7ffdc78-ce05-484d-b468-6a77faed3139</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,6 +59,7 @@
       <name>id</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
+      <webElementGuid>cf719d5c-f5f2-4452-a942-32145ef280ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,6 +67,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this);; GlobalOnBlur();   CheckRequired(false);</value>
+      <webElementGuid>75b69a67-c0eb-4dff-8449-74eae4f4dc6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,6 +75,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>; GlobalOnChange(); </value>
+      <webElementGuid>ca88366f-9432-4887-b2b9-9f976bd100a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,6 +83,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>integer</value>
+      <webElementGuid>9cb6a76c-f342-485d-a0f7-2426fbeb4891</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,6 +91,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>popover464756</value>
+      <webElementGuid>8a810799-6182-4d99-be49-63ff7ddc3702</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -88,12 +99,14 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;SquareFootage_1&quot;)</value>
+      <webElementGuid>0b61b66e-95fb-4490-b82c-d8cb045679da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Testing Modal Accept/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>2347f280-49a7-45fb-b6e8-19849e706e4a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -50,7 +50,6 @@ WebUI.openBrowser('')
 
 try {
 
-//WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
 if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
