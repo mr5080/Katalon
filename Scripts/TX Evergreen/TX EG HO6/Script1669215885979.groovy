@@ -45,34 +45,34 @@ String fullName = (randomFirstName + ' ') + randomLastName
 // get todays date - after katalon update 9.23.24
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 LocalDate todaysDate = LocalDate.now();
-def mydate = todaysDate.format(formatter)
+def myDate = todaysDate.format(formatter)
 def yesterdayDate = todaysDate.minusDays(1).format(formatter)
 def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
 
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 System.out.println('yesterdayDate = ' + yesterdayDate)
 System.out.println('tomorrowDate = ' + tomorrowDate)
 
 
 /*
 // get todays date
-mydate = new Date()
-System.out.println('myDate = ' + mydate)
-todaysDate = mydate.format('MM/dd/yyyy')
+myDate = new Date()
+System.out.println('myDate = ' + myDate)
+todaysDate = myDate.format('MM/dd/yyyy')
 */
 
 if(effectiveDate == '')
 {
-	effectiveDate = mydate
+	effectiveDate = myDate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 
 
-todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
+todaysTimeStamp = myDate //.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
-//currentYear = Integer.parseInt(mydate.format('yyyy'))
+//currentYear = Integer.parseInt(myDate.format('yyyy'))
 currentYear = todaysDate.getYear()
 System.out.println('currentYear = ' + currentYear)
 
@@ -530,6 +530,7 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	('randomFirstName') : randomFirstName,
 	('quoteNumber') : quoteNumber,
 	('todaysDate') : todaysDate,
+	('myDate') : myDate,
 	('policyNumber') : policyNumber,
 //	('totalPremium') : totalPremium,
 	('policyType') : 'HO6',

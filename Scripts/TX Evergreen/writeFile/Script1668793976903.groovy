@@ -30,6 +30,7 @@ System.out.println("randomFirstName(from childTestCase) = " + randomFirstName)
 System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
 System.out.println("policyNumber(from childTestCase) = " + policyNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
+System.out.println("todaysDate(from childTestCase) = " + myDate)
 //System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
@@ -105,7 +106,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		*/
 			// removes all chars from string
 			//sheet.getRow(rowCount).createCell(4).setCellValue(quoteNumber.replaceAll('[^\\d.]', ''))
-			sheet.getRow(rowCount).createCell(5).setCellValue(todaysDate)
+			sheet.getRow(rowCount).createCell(5).setCellValue(myDate)
 	
 			//policyCreated = new Date()
 			//System.out.println('myDate = ' + policyCreated)

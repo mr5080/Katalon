@@ -48,11 +48,11 @@ String fullName = (randomFirstName + ' ') + randomLastName
 // get todays date - after katalon update 9.23.24
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 LocalDate todaysDate = LocalDate.now();
-def mydate = todaysDate.format(formatter)
+def myDate = todaysDate.format(formatter)
 def yesterdayDate = todaysDate.minusDays(1).format(formatter)
 def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
 
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 System.out.println('yesterdayDate = ' + yesterdayDate)
 System.out.println('tomorrowDate = ' + tomorrowDate)
 
@@ -66,13 +66,13 @@ todaysDate = mydate.format('MM/dd/yyyy')
 
 if(effectiveDate == '')
 {
-	effectiveDate = mydate
+	effectiveDate = myDate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 
 
-todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
+todaysTimeStamp = myDate //.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
 //currentYear = Integer.parseInt(mydate.format('yyyy'))
@@ -271,11 +271,20 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
-if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
+
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
+WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
+
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
+{
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
+}
+
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownOtherVeneer BrickMasonryAlumi_f7e94c'), 'VENEER', true)
@@ -623,6 +632,7 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	('quoteNumber') : quoteNumber,
 	('policyNumber') : policyNumber,
 	('todaysDate') : todaysDate,
+	('myDate') : myDate,
 //	('totalPremium') : totalPremium,
 	('policyType') : 'HO3',
 	('shouldBind') : shouldBind,
