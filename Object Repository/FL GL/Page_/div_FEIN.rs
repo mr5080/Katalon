@@ -6,15 +6,16 @@
    <elementGuidId>94eea9d6-b1aa-4578-89eb-003d01b20b9a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Wrapper-Left-FEINzzzz1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Wrapper-Left-FEINzzzz1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-FEINzzzz1']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

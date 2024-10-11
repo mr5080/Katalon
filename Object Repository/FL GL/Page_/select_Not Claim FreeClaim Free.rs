@@ -6,15 +6,16 @@
    <elementGuidId>9b87e7e8-2c46-4393-a00c-dbe9f3d5700e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='ClaimFree']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ClaimFree</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='ClaimFree']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

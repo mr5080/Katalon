@@ -6,15 +6,16 @@
    <elementGuidId>894ba4c2-97c2-42e2-a5a1-db0113729893</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='UAButton_2400_2400320_1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.row.w-100.justify-content-md-center.flex-nowrap.NoPaddingOnShort > div.col-md-2.m-3.NoPaddingOnShort > button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='UAButton_2400_2400320_1']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

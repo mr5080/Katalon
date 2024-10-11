@@ -6,15 +6,16 @@
    <elementGuidId>5f9832a0-c4c6-4abd-8651-5894da5c38aa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[contains(@id, 'ClassCodePayroll_')]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ClassCodePayroll_1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[contains(@id, 'ClassCodePayroll_')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

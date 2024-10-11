@@ -6,15 +6,16 @@
    <elementGuidId>67b89533-b31b-4d36-901c-d37723494c91</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEDoesWaterRemovalNo']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEDoesRoadsNo</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEDoesWaterRemovalNo']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

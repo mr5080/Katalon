@@ -6,15 +6,16 @@
    <elementGuidId>7cf822f1-528d-4e33-af60-d5ac943fc799</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='row w-100 justify-content-md-center flex-nowrap NoPaddingOnShort']//button[@type='button'][normalize-space()='Underwriting Questions >']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='row w-100 justify-content-md-center flex-nowrap NoPaddingOnShort']//button[@type='button'][normalize-space()='Underwriting Questions >']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

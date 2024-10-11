@@ -6,15 +6,16 @@
    <elementGuidId>dd428b43-9f79-4cf4-a677-1f01acba5faa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='CountyCode']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#CountyCode</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='CountyCode']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

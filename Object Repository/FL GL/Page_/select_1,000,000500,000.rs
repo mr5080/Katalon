@@ -6,15 +6,16 @@
    <elementGuidId>1d289ecf-68e9-480d-8dbd-24cc26d7156d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='AggregateLimit']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#AggregateLimit</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='AggregateLimit']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

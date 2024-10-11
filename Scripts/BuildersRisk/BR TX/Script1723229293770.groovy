@@ -106,7 +106,7 @@ else if (environment == 'STAGE')
 }
 
 if (isAgent == true) {
-	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '10102')
 } else {
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '0')
 }

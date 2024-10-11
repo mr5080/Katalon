@@ -6,15 +6,16 @@
    <elementGuidId>ccbaf9cd-a58f-4e11-b06c-713727e66319</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='PartTimeTotalPayroll']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PartTimeTotalPayroll</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='PartTimeTotalPayroll']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

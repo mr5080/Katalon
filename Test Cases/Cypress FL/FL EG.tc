@@ -109,7 +109,7 @@
       <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO3'</defaultValue>
+      <defaultValue>'HO6'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -130,7 +130,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>

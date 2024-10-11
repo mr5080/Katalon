@@ -6,15 +6,16 @@
    <elementGuidId>db5778dc-5108-4480-8755-f8befcba6a78</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEDoesContactUtilityYes']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEDoesContactUtilityYes</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEDoesContactUtilityYes']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

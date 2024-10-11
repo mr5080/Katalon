@@ -6,15 +6,16 @@
    <elementGuidId>8e8f9c7e-4b94-45af-9035-7b11ba57e787</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='addDetailButtonNumberOfRisks']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='addDetailButtonNumberOfRisks']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

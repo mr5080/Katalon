@@ -6,15 +6,16 @@
    <elementGuidId>99316a02-6606-4f91-8084-8314e86a4e91</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='PriorPolicyNumber']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PriorPolicyNumber</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='PriorPolicyNumber']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

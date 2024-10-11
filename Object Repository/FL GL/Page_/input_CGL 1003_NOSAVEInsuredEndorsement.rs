@@ -6,15 +6,16 @@
    <elementGuidId>64f2d660-6636-4e00-91db-b9a555a5feb9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEInsuredEndorsement']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEInsuredEndorsement</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEInsuredEndorsement']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

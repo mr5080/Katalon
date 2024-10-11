@@ -6,15 +6,16 @@
    <elementGuidId>9fb63b84-3b83-47e8-a670-3d10cfdd4c77</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEAutomaticWaiver']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEAutomaticWaiver</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEAutomaticWaiver']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -6,15 +6,16 @@
    <elementGuidId>de573fcc-42a4-4bab-ac23-fe9a386db28b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='PriorExpirationDate']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#PriorExpirationDate</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='PriorExpirationDate']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

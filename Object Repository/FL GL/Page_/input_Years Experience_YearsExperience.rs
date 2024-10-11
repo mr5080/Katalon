@@ -6,15 +6,16 @@
    <elementGuidId>34f8ed57-dc63-4599-9edf-f49067302190</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='YearsExperience']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#YearsExperience</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='YearsExperience']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

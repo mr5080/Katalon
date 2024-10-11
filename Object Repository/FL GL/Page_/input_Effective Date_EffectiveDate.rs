@@ -6,15 +6,16 @@
    <elementGuidId>19cdec81-c2ab-4a10-bd5f-8e7ee75b2f39</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='EffectiveDate']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#EffectiveDate</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='EffectiveDate']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -6,15 +6,16 @@
    <elementGuidId>75b8f763-28c6-446e-8e6b-e7df89e65bf5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Remarks']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Remarks</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Remarks']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

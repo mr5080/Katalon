@@ -6,15 +6,16 @@
    <elementGuidId>02c352ff-079b-4f48-84c4-5d7e36f90417</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Wrapper-Left-Prior12MonthsPayroll']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Wrapper-Left-Prior12MonthsPayroll</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-Prior12MonthsPayroll']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

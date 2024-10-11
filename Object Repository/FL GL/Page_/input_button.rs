@@ -6,15 +6,16 @@
    <elementGuidId>a593785b-f122-4de8-9261-2af73aa325aa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='Quick Quote']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#QuoteButtonDiv > input[type=&quot;button&quot;]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Quick Quote']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

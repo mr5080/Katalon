@@ -6,15 +6,16 @@
    <elementGuidId>e516322e-42ad-48ce-91fb-4d3091908915</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='extended_header']/td/table/tbody/tr/td/b</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>td.ExpandedHeader.ISiPolicyHeader > b</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='extended_header']/td/table/tbody/tr/td/b</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

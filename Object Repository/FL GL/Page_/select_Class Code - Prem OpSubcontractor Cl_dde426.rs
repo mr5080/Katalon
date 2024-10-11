@@ -6,15 +6,16 @@
    <elementGuidId>77e73d82-6b1b-40f2-8128-af41c9eaf537</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='ClassCodeType_1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ClassCodeType_1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='ClassCodeType_1']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -6,15 +6,16 @@
    <elementGuidId>7ba42242-ffa9-4728-ab21-f11073bc876a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEPaperlessYes']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEPaperlessNo</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEPaperlessYes']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

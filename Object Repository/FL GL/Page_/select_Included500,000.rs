@@ -6,15 +6,16 @@
    <elementGuidId>3a23df7f-2e57-42a1-aa9d-c6df23760f1a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='ProductsAggregate']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ProductsAggregate</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='ProductsAggregate']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

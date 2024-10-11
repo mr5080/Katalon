@@ -6,15 +6,16 @@
    <elementGuidId>07b02911-e7aa-4ce4-b9a4-e04e1410209f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='YearsInBusiness']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#YearsInBusiness</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='YearsInBusiness']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

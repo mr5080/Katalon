@@ -6,15 +6,16 @@
    <elementGuidId>4f7e725a-dbf6-4436-8668-39210181bfa4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//iframe[@id='Content']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Content</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//iframe[@id='Content']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

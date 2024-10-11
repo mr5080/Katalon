@@ -108,7 +108,7 @@ if (environment == 'TEST') {
 
 //WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'),   '0')
 if (isAgent == true) {
-	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '10102')
 } else {
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_TEST DATA buildersrisktest.cogisi.com/input_AGENT CODE_userloginid'), '0')
 }
@@ -133,16 +133,18 @@ WebUI.click(findTestObject('Object Repository/BR FL/Page_/strong_Effective Date'
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Address_ApplicantAddress1'), addressFL)
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Ext Address_ApplicantAddress2'), 'APT 1008')
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Ext Address_ApplicantAddress2'), 'APT 1008')
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_City_ApplicantCity'), cityFL)
 
 WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Location Zip Code_ApplicantZip'), zipFL)
 
-WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+//WebUI.clearText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'))
+//System.out.println('effectiveDate = ' + effectiveDate)
+//WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
+//System.out.println('effectiveDate = ' + effectiveDate)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/div_Start a New Quote   Risk StateFLORIDATE_1cee94'))
-
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_button'))		//last button on Start a New Quote
 
 
@@ -182,6 +184,7 @@ if (isAgent == false) {
 }
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'))
+WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_ProjectType'), projectType, true)
 
@@ -261,7 +264,8 @@ else
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_1,0002,5005,00010,000'), '5000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_2510Excluded'), '2', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/BR FL/Page_/select_2510Excluded'), '2', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/BR FL/Page_/select_2510Excluded'), 1)
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Rating'))
 
@@ -342,18 +346,24 @@ catch(e)
 if(!isAgent)
 {	// this button is not displayed for agents
 	WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_Internal'))
+	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_judgementRate'), '1.001')
 }
 
-
-if(projectType == 'STRUCTURAL')
+/*
+if(projectType == 'STRUCTURAL' && !isAgent)
 {
 	WebUI.setText(findTestObject('Object Repository/BR FL/Page_/input_judgementRate'), '1.001')
 }
-	
+*/
+
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_DisplayQuote'))
 
-totalPremium = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
-System.out.println('totalPremium = ' + totalPremium)
+totalPremium = ''
+if(!isAgent)
+{	
+	totalPremium = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+	System.out.println('totalPremium = ' + totalPremium)
+}
 
 WebUI.click(findTestObject('Object Repository/BR FL/Page_/button_BindSubmitApp'))
 

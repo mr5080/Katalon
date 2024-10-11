@@ -6,15 +6,16 @@
    <elementGuidId>2595ddb0-af1d-4058-be32-5549b4a0a0d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id[starts-with(., 'ClassCode_') ]]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ClassCodePayroll_1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id[starts-with(., 'ClassCode_') ]]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

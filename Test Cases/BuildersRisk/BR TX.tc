@@ -43,15 +43,15 @@
       <variableId>5b6edba8-5ed5-4dcd-bd19-dcd5f4b6ebbc</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>e11273fa-aea9-4d48-807a-8e493e8f7e10</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
+      <defaultValue>'seacoast1'</defaultValue>
+      <description>seacoast1, seacoast2, tier3, dfw, panhandle, remainder</description>
       <id>b3f61504-221a-48bc-89ba-40cce45a9dab</id>
       <masked>false</masked>
       <name>manualAddress</name>
@@ -64,7 +64,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'11/05/2024'</defaultValue>
       <description></description>
       <id>79713c15-3b33-4222-b5da-802b3267e1c7</id>
       <masked>false</masked>
@@ -78,7 +78,7 @@
       <name>projectType</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description>agents most likely cant bind due to validations</description>
       <id>5b6edba8-5ed5-4dcd-bd19-dcd5f4b6ebbc</id>
       <masked>false</masked>

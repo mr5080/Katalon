@@ -6,15 +6,16 @@
    <elementGuidId>9e283184-d9f3-4be8-94e6-8d450f4622b0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[4]/div[1]/button[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.w-100.btn.ISiA-PrimaryButton</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html[1]/body[1]/div[1]/form[1]/div[1]/div[4]/div[1]/button[1]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

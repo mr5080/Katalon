@@ -6,15 +6,16 @@
    <elementGuidId>b237e204-81cd-4167-a3e0-e595051059c5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEagentSearchAgentCode']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEagentSearchAgentCode</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEagentSearchAgentCode']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

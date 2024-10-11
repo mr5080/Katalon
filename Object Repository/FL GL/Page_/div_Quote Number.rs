@@ -6,15 +6,16 @@
    <elementGuidId>572bab3a-182f-495b-a9cb-44106d281fca</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='Wrapper-Left-QuoteNumber']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Wrapper-Left-QuoteNumber</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Left-QuoteNumber']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

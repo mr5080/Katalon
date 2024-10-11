@@ -6,15 +6,16 @@
    <elementGuidId>aa470eee-e724-423b-b097-ea55bdfd2310</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='OccurrenceLimit']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#OccurrenceLimit</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='OccurrenceLimit']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

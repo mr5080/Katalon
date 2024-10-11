@@ -6,15 +6,16 @@
    <elementGuidId>92e49681-3039-4be9-b37b-881bf1f1f8a1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEPriorCypressNo']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEPriorCypressNo</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEPriorCypressNo']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

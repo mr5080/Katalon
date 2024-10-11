@@ -6,15 +6,16 @@
    <elementGuidId>d56b0928-156a-4f70-8589-231d4ee236a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='NOSAVEDeniedRenewalNo']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#NOSAVEDeniedRenewalNo</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='NOSAVEDeniedRenewalNo']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

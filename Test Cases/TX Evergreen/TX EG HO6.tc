@@ -75,21 +75,21 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</id>
       <masked>false</masked>
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'claim'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, claim, truerisk, PC10</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>

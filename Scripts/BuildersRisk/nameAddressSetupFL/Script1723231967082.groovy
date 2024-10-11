@@ -12,10 +12,10 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'MANNI',
 		'randomLastName': 'EMANUALA',
-			'addressFL': '2016 Sunrise Key Blvd',
-			'cityFL': 'Fort Lauderdale',
+			'addressFL': '825 SCENIC GULF DR',
+			'cityFL': 'MIRAMAR BEACH',
 			'state': 'FL',
-			'zipFL': '33304'
+			'zipFL': '32550'
 		]	
 	return nameAddressData
 }
@@ -136,6 +136,36 @@ else if(manualAddress == 'highCrime')
 		return nameAddressData
 	}
 
+else if(manualAddress == 'inland')
+{
+	def nameAddressData = ['randomFirstName': 'In',
+			'randomLastName': 'Lander',
+			'addressFL': '1314 PREAKNESS PT',
+			'cityFL': 'TALLAHASSEE',
+			'state': 'FL',
+			'zipFL': '32308'
+			]
+		System.out.println('got into inland else if')
+			
+		return nameAddressData
+}
+
+else if(manualAddress == 'coastal')
+{
+	def nameAddressData = ['randomFirstName': 'On',
+			'randomLastName': 'Coastal',
+			'addressFL': '825 SCENIC GULF DR',
+			'cityFL': 'MIRAMAR BEACH',
+			'state': 'FL',
+			'zipFL': '32550'
+			]
+		System.out.println('got into coastal else if')
+			
+		return nameAddressData
+}
+		
+	
+	
 // manualAddress  not set, uses random below
 //Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 	

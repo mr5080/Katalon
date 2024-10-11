@@ -49,6 +49,77 @@ else if(manualAddress == 'truerisk')
 		return nameAddressData
 	*/
 }
+
+else if(manualAddress == 'seacoast1')	
+	{
+		def nameAddressData = ['randomFirstName': 'Sea',
+			'randomLastName': 'Coasty1',
+			'addressTX': '1415 SANTA ANA AVE',
+			'cityTX': 'RANCHO VIEJO',
+			'state': 'TX',
+			'zipTX': '78575'
+			]
+		return nameAddressData
+	}
+
+else if(manualAddress == 'seacoast2')
+{
+	def nameAddressData = ['randomFirstName': 'Sea',
+		'randomLastName': 'Coasty2',
+		'addressTX': '1110 Pine St',
+		'cityTX': 'VICTORIA',
+		'state': 'TX',
+		'zipTX': '77901'
+		]
+	return nameAddressData
+}
+
+else if(manualAddress == 'tier3')
+{
+	def nameAddressData = ['randomFirstName': 'Tired',
+		'randomLastName': 'Tier3',
+		'addressTX': '23397 RICHARDS RD',
+		'cityTX': 'HEMPSTEAD',
+		'state': 'TX',
+		'zipTX': '77445'
+		]
+	return nameAddressData
+}
+else if(manualAddress == 'dfw')
+{
+	def nameAddressData = ['randomFirstName': 'Dallas',
+		'randomLastName': 'Dumbo',
+		'addressTX': '808 CROSS LN',
+		'cityTX': 'SOUTHLAKE',
+		'state': 'TX',
+		'zipTX': '76092'
+		]
+	return nameAddressData
+}
+else if(manualAddress == 'panhandle')
+{
+	def nameAddressData = ['randomFirstName': 'Pan',
+		'randomLastName': 'Handler',
+		'addressTX': '1005 TURNER ST',
+		'cityTX': 'VERNON',
+		'state': 'TX',
+		'zipTX': '76384'
+		]
+	return nameAddressData
+}
+else if(manualAddress == 'remainder')
+{
+	def nameAddressData = ['randomFirstName': 'Remi',
+		'randomLastName': 'Remainder',
+		'addressTX': '100 KENDRA',
+		'cityTX': 'CANYON LAKE',
+		'state': 'TX',
+		'zipTX': '78133'
+		]
+	return nameAddressData
+}
+
+
 else if(manualAddress == 'claims')
 {
 	// fill in eventually

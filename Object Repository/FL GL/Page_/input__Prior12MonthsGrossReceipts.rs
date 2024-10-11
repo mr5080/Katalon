@@ -6,15 +6,16 @@
    <elementGuidId>b7acc6b5-04b5-4649-9f67-1d134252a45f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='Prior12MonthsGrossReceipts']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#Prior12MonthsGrossReceipts</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='Prior12MonthsGrossReceipts']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

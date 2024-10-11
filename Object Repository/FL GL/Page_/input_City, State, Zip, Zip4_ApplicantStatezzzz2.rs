@@ -6,15 +6,16 @@
    <elementGuidId>82357f3f-0ce4-4b57-b853-ce9f5cb49658</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//select[@id='ApplicantStatezzzz2'])[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#StateCode</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//select[@id='ApplicantStatezzzz2'])[1]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

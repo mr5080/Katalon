@@ -6,15 +6,16 @@
    <elementGuidId>180c7100-0936-4f88-87b8-196c82ddbb2f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='PriorInsProof']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#AggregateLimit</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='PriorInsProof']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -6,15 +6,16 @@
    <elementGuidId>999a7401-f24c-4bfc-ba69-dfea8853be92</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='navButton']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#navButton</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='navButton']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

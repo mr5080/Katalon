@@ -6,15 +6,16 @@
    <elementGuidId>dcb30172-ee89-462e-97ea-d0a9957c9020</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ApplicantZip']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ApplicantZip</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='ApplicantZip']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

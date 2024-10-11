@@ -6,15 +6,16 @@
    <elementGuidId>9856f092-80b3-4538-a89f-e8c366f6a1b0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//table[@id='displayAgentsTableAgentCode']/tbody/tr/td</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>td.sorting_1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//table[@id='displayAgentsTableAgentCode']/tbody/tr/td</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

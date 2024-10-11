@@ -6,15 +6,16 @@
    <elementGuidId>95973fb6-eb76-4830-87a3-3c551146dfd0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ResidentialPercent']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ResidentialPercent</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='ResidentialPercent']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

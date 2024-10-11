@@ -6,15 +6,16 @@
    <elementGuidId>1a62a229-d73c-4bcc-9d3b-d7af2e18bc78</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='ActiveOwnerNumberOfPeople']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#GrossReceipts</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='ActiveOwnerNumberOfPeople']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

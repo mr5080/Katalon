@@ -6,15 +6,16 @@
    <elementGuidId>4c2de326-41b0-4f1b-aa3f-839c4233b19a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='addDetailButtonNumberOfApplicants']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#addDetailButtonNumberOfApplicants</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='addDetailButtonNumberOfApplicants']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
