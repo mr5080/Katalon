@@ -57,7 +57,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'11/05/2024'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>e7a75ce5-f456-43f9-9b5a-fb582728f7fb</id>
       <masked>false</masked>
@@ -78,7 +78,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'STRUCTURAL'</defaultValue>
+      <defaultValue>'NEW'</defaultValue>
       <description>NEW, NONSTRUCTURAL, STRUCTURAL, Blank = Random</description>
       <id>3edb4bf0-55f6-496c-9370-af5f071a358b</id>
       <masked>false</masked>

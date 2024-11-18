@@ -701,7 +701,7 @@ WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') :
 if (shouldBind == true) {
     WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
 
-    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/PolicyID'), 'innerHTML')
+    String policyNumber = WebUI.getAttribute(findTestObject('null'), 'innerHTML')
 
     System.out.println('policyNumber = ' + policyNumber //WebUI.closeBrowser()
         // forces last name to be saved for Recurring payments

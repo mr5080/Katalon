@@ -82,8 +82,8 @@ WebUI.sendKeys(findTestObject('Object Repository/Cannabis/Page_/input_Effective 
 
 
 
-//WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
-//WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'), Keys.chord(effectiveDate, Keys.TAB))
+//WebUI.sendKeys(findTestObject('null'), Keys.chord(Keys.TAB))
+//WebUI.sendKeys(findTestObject('null'), Keys.chord(effectiveDate, Keys.TAB))
 
 if(stopQQ)
 {
@@ -781,7 +781,7 @@ WebUI.callTestCase(findTestCase('Cannabis/writeFile'),
 		], FailureHandling.STOP_ON_FAILURE)
 
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/TX EG HO3/Page_/button_Send to Company'), 10)
+//WebUI.waitForElementPresent(findTestObject('null'), 10)
 
 WebUI.closeBrowser()
 

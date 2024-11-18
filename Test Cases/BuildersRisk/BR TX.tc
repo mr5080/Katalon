@@ -4,7 +4,6 @@
    <name>BR TX</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>618fe0cf-ddda-46cf-aa92-eaf9167c2cf5</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

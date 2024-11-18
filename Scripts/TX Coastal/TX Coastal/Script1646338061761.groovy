@@ -29,11 +29,11 @@ if (environment == 'TEST') {
 
 if( isAgent == true)
 {
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '10100')
+	WebUI.setText(findTestObject('null'), '10100')
 }
 else
 {
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+	WebUI.setText(findTestObject('null'), '0')
 }
 
 
@@ -74,14 +74,14 @@ System.out.println('todaysDate = ' + todaysDate)
 todaysTimeStamp = mydate.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'JHUGHES')
+WebUI.setText(findTestObject('null'), 'JHUGHES')
 
 'goHome1!'
-WebUI.setEncryptedText(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
+WebUI.setEncryptedText(findTestObject('null'), 'iJIOp32ulZH/iAm5HHInmA==')
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
+WebUI.click(findTestObject('null'))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/TX Coastal/Page_/li_Start a New Quote'), 10)
+//WebUI.waitForElementPresent(findTestObject('null'), 10)
 //WebUI.comment('FOUND START NEW QUOTE BUTTON')
 
 
@@ -89,73 +89,73 @@ WebUI.click(findTestObject('Object Repository/TX Coastal/Page_TEST DATA cypresst
 
 if(environment == 'TEST')
 {
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/li_Start a New Quote'))
+	WebUI.click(findTestObject('null'))
 }
 else if (environment == 'STAGE')
 {
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/label_Start'))
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/a_Start a New Quote'))
+	WebUI.click(findTestObject('null'))
+	WebUI.click(findTestObject('null'))
 
 }
 
-//WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Effective Date_EffectiveDate'), '04/03/2022')
+//WebUI.setText(findTestObject('null'), '04/03/2022')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_FLORIDATEXAS'), '42', true)
+WebUI.selectOptionByValue(findTestObject('null'), '42', true)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_First Name_ApplicantFirst'), randomFirstName)
+WebUI.setText(findTestObject('null'), randomFirstName)
 
-//WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Middle Name_ApplicantMiddle'), 'Ann')
+//WebUI.setText(findTestObject('null'), 'Ann')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Last Name_ApplicantLast'), randomLastName)
+WebUI.setText(findTestObject('null'), randomLastName)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Suffix_ApplicantSuffix'), '')
+WebUI.setText(findTestObject('null'), '')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Address_ApplicantAddress1'), addressTX)
+WebUI.setText(findTestObject('null'), addressTX)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_City_ApplicantCity'), cityTX)
+WebUI.setText(findTestObject('null'), cityTX)
 
 'need to add a TAB'
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Property Zip Code_ApplicantZip'), zipTX)
+WebUI.setText(findTestObject('null'), zipTX)
 
-WebUI.sendKeys(findTestObject('Object Repository/TX Coastal/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
+WebUI.sendKeys(findTestObject('null'), Keys.chord(Keys.TAB))
 
 //WebUI.sendKeys(findTestObject('Cypress 4/Page_/input - InterestZip'), Keys.chord(Keys.TAB))
-WebUI.waitForElementPresent(findTestObject('Object Repository/TX Coastal/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 20)
+WebUI.waitForElementPresent(findTestObject('null'), 20)
 
 'Click QQ button'
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input'))
+WebUI.click(findTestObject('null'))
 quoteNumber = WebUI.getAttribute(findTestObject('Cypress 4/Page_/div_Quote Number'), 'innerHTML')
 
 
 'Testing Rate and Continue button Click Rate and Continue button'
-//WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Rate and Continue')) // clicks the top Rate and Continue button
+//WebUI.click(findTestObject('null')) // clicks the top Rate and Continue button
 
 //WebUI.delay(10)
 
 
 if(isAgent == false)
 {	
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input - Agent Lookup'))
+	WebUI.click(findTestObject('null'))
 	
 	// change to sendkeys!
-	//WebUI.sendKeys(findTestObject('Object Repository/TX Coastal/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), 'cornerstone ')
-	//WebUI.sendKeys(findTestObject('Object Repository/TX Coastal/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), 'test')
+	//WebUI.sendKeys(findTestObject('null'), 'cornerstone ')
+	//WebUI.sendKeys(findTestObject('null'), 'test')
 	
 	
 	for (int x = 0; x < 5; x++)
 	{
 			try {
-				WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '')
+				WebUI.setText(findTestObject('null'), '')
 	
-				WebUI.sendKeys(findTestObject('Object Repository/TX Coastal/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), 'cornerstone ')
-				WebUI.sendKeys(findTestObject('Object Repository/TX Coastal/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), 'test')
+				WebUI.sendKeys(findTestObject('null'), 'cornerstone ')
+				WebUI.sendKeys(findTestObject('null'), 'test')
 	
 				WebUI.delay(1)
 	
-				if (WebUI.waitForElementVisible(findTestObject('Object Repository/TX Coastal/Page_/td_TEST AGENCY'), 2)) 
+				if (WebUI.waitForElementVisible(findTestObject('null'), 2)) 
 				{
 					//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/td_SearchForAgent'))
-					WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/td_TEST AGENCY'))				
+					WebUI.click(findTestObject('null'))				
 					break
 				}
 			}
@@ -164,198 +164,198 @@ if(isAgent == false)
 			}
 	}
 }
-//WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/td_TEST AGENCY'))
+//WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Effective Date_EffectiveDate'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Purchase Date_PurchaseDate_1'), '01/01/2018')
+WebUI.setText(findTestObject('null'), '01/01/2018')
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Purchase Date_NOSAVEAUTHORIZECREDIT'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-1234')
+WebUI.setText(findTestObject('null'), '717-555-1234')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/01/1970')
+WebUI.setText(findTestObject('null'), '01/01/1970')
 
 if(realAPlusClaimReport)
 {
 	// TestData Folder - AplusProperty_Matchtype_FL- Claims.xls
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '04/13/1982')
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_PriorMailingAddress'), '7999 Macinnes Dr')
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_PriorMailingAddressCity'), 'Jacksonville')
-	WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/input_PriorMailingAddressState'), 'FL', true)
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_PriorMailingAddressZip'), '32244')
+	WebUI.setText(findTestObject('null'), '04/13/1982')
+	WebUI.setText(findTestObject('null'), '7999 Macinnes Dr')
+	WebUI.setText(findTestObject('null'), 'Jacksonville')
+	WebUI.selectOptionByValue(findTestObject('null'), 'FL', true)
+	WebUI.setText(findTestObject('null'), '32244')
 }	
 
 
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Please SelectNoYes'), 'Y', true)
+WebUI.selectOptionByValue(findTestObject('null'), 'Y', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_1 Family2 Family'), '1', true)
+WebUI.selectOptionByValue(findTestObject('null'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_123'), '2', true)
+WebUI.selectOptionByValue(findTestObject('null'), '2', true)
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/div_Number of Families 1 Family2 Family Num_b61b69'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Year of Construction_ConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('null'), '2015')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
+WebUI.selectOptionByValue(findTestObject('null'), 'V', true)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Square Footage_SquareFootage_1'), '1555')
+WebUI.setText(findTestObject('null'), '1555')
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX Coastal/Page_/select_Slab - RoofCovering'), 1)
+WebUI.selectOptionByIndex(findTestObject('null'), 1)
 
 
 
-//WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/div_Square Footage  Year of Roof   Roof Con_47c515'))
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX Coastal/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 1)
+//WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('null'), '2015')
+WebUI.selectOptionByIndex(findTestObject('null'), 1)
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Architectural Shingles3-tab ShingleC_cebd15'), 'ARCHITECTURAL', true)
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Census Block_GMFIPS_1'))
+//WebUI.selectOptionByValue(findTestObject('null'), 'ARCHITECTURAL', true)
+WebUI.click(findTestObject('null'))
 
 if(isAgent ==  false)
 {
-	WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Responding Fire Department_Responding_eb6df6'), 'Fire Dept')
+	WebUI.setText(findTestObject('null'), 'Fire Dept')
 }
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Protection Class 1Protection Class 2_2c389b'), '1', true)
+WebUI.selectOptionByValue(findTestObject('null'), '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_5 road miles or lessOver 5 miles'), '01', true)
+WebUI.selectOptionByValue(findTestObject('null'), '01', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
+WebUI.selectOptionByValue(findTestObject('null'), 'LT1000', true)
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEWindMitigationProof_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_125'), '2', true)
+WebUI.selectOptionByValue(findTestObject('null'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_123510'), '2', true)
+WebUI.selectOptionByValue(findTestObject('null'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_1,0002,500125'), '2500', true)
+WebUI.selectOptionByValue(findTestObject('null'), '2500', true)
 
-//WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Coverage A - Dwelling Limit_DwellingLimit_1'), '299999')
+//WebUI.setText(findTestObject('null'), '299999')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_2101520'), '10', true)
+WebUI.selectOptionByValue(findTestObject('null'), '10', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_40455055606570'), '45', true)
+WebUI.selectOptionByValue(findTestObject('null'), '45', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_5001,0002,5005,000'), '1000', true)
+WebUI.selectOptionByValue(findTestObject('null'), '1000', true)
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVESecuredBuildingCredit_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVECompanionPolicyDiscount_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+WebUI.setText(findTestObject('null'), '0')
 
-WebUI.scrollToElement(findTestObject('Object Repository/TX Coastal/Page_/button_Rate and Continue'), 1)
+WebUI.scrollToElement(findTestObject('null'), 1)
 
-//WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Rate and Continue'))
+//WebUI.click(findTestObject('null'))
 
 'Click Rate and Continue button'
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Rate and Continue'))
+WebUI.click(findTestObject('null'))
 
 
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Proceed to Application'))
+WebUI.click(findTestObject('null'))
 
 //exit(0);
 
-//WebUI.rightClick(findTestObject('Object Repository/TX Coastal/Page_/div_Quote Number 945028'))
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+//WebUI.rightClick(findTestObject('null'))
+WebUI.setText(findTestObject('null'), 'john.hughes@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Carrier_PriorCarrier_1'), 'geico')
+WebUI.setText(findTestObject('null'), 'geico')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), todaysDate)
+WebUI.setText(findTestObject('null'), todaysDate)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Previous Policy_PriorPolicyNumber_1'), '555666888')
+WebUI.setText(findTestObject('null'), '555666888')
 
-WebUI.scrollToElement(findTestObject('Object Repository/TX Coastal/Page_/button_Eligibility'), 1)
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Eligibility'))
+WebUI.scrollToElement(findTestObject('null'), 1)
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVE_1'))
+WebUI.click(findTestObject('null'))
 
 'General button'
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_General'))
+WebUI.click(findTestObject('null'))
 
 //WebUI.delay(1)
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEOccupiedComm_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEAnyDogs_1No'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEAnyPets3_1No'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQRenovation_1No'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQDeclineInsurance_1'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQForeclosure_1'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQUnsettledClaim_1'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQBurglarBars_1'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
 
 
 /*
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQDogOwnership_1'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_If yes, provide further details_GQDog_d35011'))
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQFarmAnimal_1'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQExoticAnimal_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEGQConstruction_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Property'))
+WebUI.click(findTestObject('null'))
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_If yes, provide further details_GQDog_d35011'), 'NO')
+WebUI.setText(findTestObject('null'), 'NO')
 */
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Property'))
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX Coastal/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 1)
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_ElectricCentralGasCentralOilCentralS_a19282'), 'Gas', true)
+WebUI.click(findTestObject('null'))
+WebUI.selectOptionByIndex(findTestObject('null'), 1)
+WebUI.selectOptionByValue(findTestObject('null'), 'Gas', true)
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Enter year water heater was installed_fa7ad3'), '2015')
+WebUI.setText(findTestObject('null'), '2015')
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 'BASEMENTUNFIN', true)
-
-
+//WebUI.selectOptionByValue(findTestObject('null'), 'BASEMENTUNFIN', true)
 
 
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Year Primary Heat Type Installed_Year_8d530f'), '2015')
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Square Footage_SquareFootage_1'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
+WebUI.setText(findTestObject('null'), '2015')
 
-WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input_Enter year of last electrical update__603a6b'), '2015')
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Year of Construction_ConstructionYear_1'))
+WebUI.selectOptionByValue(findTestObject('null'), 'COPPER', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_NoneGarage AttachedGarage DetachedCa_f366a9'), '1', true)
+WebUI.setText(findTestObject('null'), '2015')
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Enter year of last plumbing update_La_b385dd'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Year of Roof_RoofConstructionYear_1'))
+WebUI.selectOptionByValue(findTestObject('null'), '1', true)
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Census Block_GMFIPS_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Responding Fire Department_Responding_eb6df6'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/input_Yes_NOSAVEWindMitigationProof_1'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Coverage'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Losses'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Interests'))
+WebUI.click(findTestObject('null'))
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Billing'))
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Full PaySemi-AnnualQuarterly (40 Dow_948f30'), '4PAY', true)
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Please SelectTEST TESTER TESTING JR'), 'Applicant1', true)
+WebUI.click(findTestObject('null'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Please SelectTEST TESTER TESTING JR_1'), 'Applicant1', true)
+WebUI.selectOptionByValue(findTestObject('null'), '4PAY', true)
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Display Quote'))
+WebUI.selectOptionByValue(findTestObject('null'), 'Applicant1', true)
+
+WebUI.selectOptionByValue(findTestObject('null'), 'Applicant1', true)
+
+WebUI.click(findTestObject('null'))
 
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_TotalPremiumAndFees'), 'innerHTML')
 
-WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_BindSubmit Application'))
+WebUI.click(findTestObject('null'))
 
 
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
@@ -386,21 +386,21 @@ System.out.println('fullName = ' + fullName)
 
 System.out.println('shouldBind = ' + shouldBind)
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/TX Coastal/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
+//WebUI.selectOptionByValue(findTestObject('null'), 'MC', true)
 
-//WebUI.setText(findTestObject('Object Repository/TX Coastal/Page_/input__DepositAmount'), '100.00')
+//WebUI.setText(findTestObject('null'), '100.00')
 /*
 if(shouldBind == true)
 {
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_Bind Application'))
+	WebUI.click(findTestObject('null'))
 	
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/div_Policy Number ITC2000002-00'))
+	WebUI.click(findTestObject('null'))
 	
-	WebUI.waitForElementVisible(findTestObject('Object Repository/TX Coastal/Page_/a_ITC2000002-00'), 0)
+	WebUI.waitForElementVisible(findTestObject('null'), 0)
 	
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/button_MORE'))
+	WebUI.click(findTestObject('null'))
 	
-	WebUI.click(findTestObject('Object Repository/TX Coastal/Page_/b_Account ID 116044'))
+	WebUI.click(findTestObject('null'))
 }
 	
 */

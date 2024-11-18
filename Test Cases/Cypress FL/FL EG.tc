@@ -4,7 +4,6 @@
    <name>FL EG</name>
    <tag></tag>
    <comment></comment>
-   <recordOption>OTHER</recordOption>
    <testCaseGuid>6e06d343-87c2-4143-b230-3b7166aaa51e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -109,7 +108,7 @@
       <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -130,7 +129,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -144,7 +143,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d18f6552-abc0-440f-b52d-a10ef69aed84</id>
       <masked>false</masked>

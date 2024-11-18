@@ -11,6 +11,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +19,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>d1191112-7d5f-430f-821d-35f289fb039a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +27,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>66c2761a-b6a4-4eb4-a884-c59b0e15524b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,6 +35,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ApplicantCity</value>
+      <webElementGuid>a0f024c4-0a10-4a91-8520-d26ce0660a25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,6 +43,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ApplicantCity</value>
+      <webElementGuid>07d22a60-58a5-4a01-9d2e-54a5cb1d6210</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +51,7 @@
       <name>size</name>
       <type>Main</type>
       <value>30</value>
+      <webElementGuid>1dcf3186-b910-44b1-aa18-fa5e3703cfb4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,6 +59,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>50</value>
+      <webElementGuid>467424bd-f2df-4e76-8063-4090322c318e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,6 +67,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>MakeVerifyStreetAddressCall('https://cypresstest.cogisi.com/is/',this.form,'Applicant','');GMJSDataManager('0','VERISK'); </value>
+      <webElementGuid>6e9a4854-108f-4df5-8ba4-5666e886a744</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,6 +75,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>; chkQuotes(this); UpperCase(this) </value>
+      <webElementGuid>8e5d5a72-bfb8-4c00-b492-40b75aa17444</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,13 +83,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ApplicantCity&quot;)</value>
+      <webElementGuid>9b9b3082-c5a6-4148-aa72-b865d73c9496</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress Obj Repo/iframe_RTR Quotes_MainIS20test</value>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>9579e316-2da3-43fc-8ae1-e94d1de90638</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -88,6 +99,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='PreviousCity']</value>
+      <webElementGuid>03dd235d-4c1f-4fc8-8a9d-3937d0d6d429</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +107,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='zipcodeCityText']/input</value>
+      <webElementGuid>f936028d-a1e8-4f52-8544-68f4fa2a5019</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,5 +115,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[2]/div/input</value>
+      <webElementGuid>6a822e6b-544c-46aa-98ab-67b8f4cb2e61</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

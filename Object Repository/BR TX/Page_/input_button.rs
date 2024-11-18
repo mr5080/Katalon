@@ -6,15 +6,16 @@
    <elementGuidId>d89c63bf-b177-4a49-bde0-a1fe0c72ca5f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input[type=&quot;button&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@value='Start Quote']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[type=&quot;button&quot;]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a74796c0-3b34-4644-8242-6a1ab3b38740</webElementGuid>
+      <webElementGuid>0e6277b4-8402-4072-a6e6-b50d8b51da64</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7b423256-2c6a-4f75-a7cf-e699595f85be</webElementGuid>
+      <webElementGuid>7322782e-a6f8-4376-b9a3-2819cc989910</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Start Quote</value>
-      <webElementGuid>8f51ace3-4c3e-45ce-8bfc-b5b2dab0ada6</webElementGuid>
+      <webElementGuid>9d4b5640-c422-4952-aa1d-458fa7a6eb96</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +47,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>Submit2(this.form, 'Unified,101');</value>
-      <webElementGuid>50b5d1a7-1162-4005-948d-55ef7577aa97</webElementGuid>
+      <webElementGuid>666b2f24-0337-4671-aa57-f79ddf0115fb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +55,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;QuoteButtonDiv&quot;)/input[1]</value>
-      <webElementGuid>276b5411-6fad-4156-8a2c-bb8cc831bf35</webElementGuid>
+      <webElementGuid>f697752d-9509-4819-987b-bd71ca7738e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +63,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/BR TX/Page_/iframe_RTR Quotes_MainIS38test</value>
-      <webElementGuid>d7759f74-d628-40f8-9a66-44cd85ae0c8c</webElementGuid>
+      <webElementGuid>8df9c23c-4561-440a-9927-b6a66ece183b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -70,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='Start Quote']</value>
-      <webElementGuid>ad81be90-a120-49d6-aeaf-99be5d2f4bda</webElementGuid>
+      <webElementGuid>32a767df-757f-4c9b-8430-d1dfef6d855a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='QuoteButtonDiv']/input</value>
-      <webElementGuid>ce28bc08-375a-4c5c-a762-0926ba8967ba</webElementGuid>
+      <webElementGuid>8542a087-5488-421d-95fd-55a13fa9ae54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +87,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/input</value>
-      <webElementGuid>2f6db169-61ce-4ae4-917c-c505781f58db</webElementGuid>
+      <webElementGuid>68bf436e-1cd9-4516-8320-81ab76ef088c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +95,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'button']</value>
-      <webElementGuid>634d2788-6762-4507-9984-ed16703cb41b</webElementGuid>
+      <webElementGuid>1f7f0184-3197-4558-a7f0-02749c016dcc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

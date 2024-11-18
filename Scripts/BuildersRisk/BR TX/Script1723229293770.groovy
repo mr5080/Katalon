@@ -114,27 +114,29 @@ if (isAgent == true) {
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_TEST DATA buildersrisktest.cogisi.com/input_USERNAME_userloginname'),     'JHUGHES')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/BR TX/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_password'),     'iJIOp32ulZH/iAm5HHInmA==')
+//WebUI.sendKeys(findTestObject('Object Repository/BR TX/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_password'), 'goHome1!')
 WebUI.click(findTestObject('Object Repository/BR TX/Page_TEST DATA buildersrisktest.cogisi.com/input_PASSWORD_LoginButton'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_FLORIDATEXAS'), 'TX', true)
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Location Address_ApplicantAddress1'), addressTX)
-WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Ext Address_ApplicantAddress2'), 'APT 7007')
-
+//WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Ext Address_ApplicantAddress2'), 'APT 7007')
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_City_ApplicantCity'), cityTX)
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Location Zip Code_ApplicantZip'), zipTX)
 
-WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date'), effectiveDate)
+//WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date'), effectiveDate)
 
+WebUI.click(findTestObject('Object Repository/BR TX/Page_/div_Start a New Quote Risk StateTX_1cee94'))
 WebUI.click(findTestObject('Object Repository/BR TX/Page_/input_button'))
+//WebUI.click(findTestObject('Object Repository/BR TX/Page_/input_button'))
 
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/div_Quote Number'), 'innerHTML')
 System.out.println('quoteNumber = ' + quoteNumber)
 
 
-//WebUI.click(findTestObject('Object Repository/BR TX/Page_/input_button'))
+
 
 System.out.println('"$isAgent" = ' + isAgent)
 
@@ -172,6 +174,8 @@ if (isAgent == false) {
 //WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '10100')
 
 //WebUI.click(findTestObject('Object Repository/BR TX/Page_/td_TEST AGENCY'))
+
+WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Effective Date_EffectiveDate'), effectiveDate)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_projectType'),   projectType, true)
 
@@ -232,7 +236,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_1,0002,5005,00010,000'), '5000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_510'), '10', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_510'), '10', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/BR TX/Page_/select_510'), 1)
 
 WebUI.click(findTestObject('Object Repository/BR TX/Page_/button_Rating'))
 

@@ -519,7 +519,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'China')
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
     }
 }
 
