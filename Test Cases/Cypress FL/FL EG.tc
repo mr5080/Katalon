@@ -4,6 +4,7 @@
    <name>FL EG</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>6e06d343-87c2-4143-b230-3b7166aaa51e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -115,7 +116,7 @@
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>bd5da895-e697-47c1-a638-4f75ceb89187</id>
       <masked>false</masked>
@@ -143,7 +144,7 @@
       <name>payPlanOption</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d18f6552-abc0-440f-b52d-a10ef69aed84</id>
       <masked>false</masked>

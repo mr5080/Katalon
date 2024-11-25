@@ -99,11 +99,16 @@ if (isAgent == true) {
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_TEST DATA cypresstestcogisicom/input_AGENT CODE_userloginid'), '0')
 }
 
-WebUI.setText(findTestObject('null'), 'JHUGHES')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_USERNAME_userloginname'), 'JHUGHES')
 
-WebUI.setEncryptedText(findTestObject('null'), 'iJIOp32ulZH/iAm5HHInmA==')
+//WebUI.setText(findTestObject('null'), 'JHUGHES')
+WebUI.setEncryptedText(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
 
-WebUI.click(findTestObject('null'))
+//WebUI.setEncryptedText(findTestObject('null'), 'iJIOp32ulZH/iAm5HHInmA==')
+
+//WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_TEST DATA cypresstest.cogisi.com/input_PASSWORD_LoginButton'))
+
 
 WebUI.clearText(findTestObject('null'))
 WebUI.sendKeys(findTestObject('null'), Keys.chord(effectiveDate, Keys.TAB))
