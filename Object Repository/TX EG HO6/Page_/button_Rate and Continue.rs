@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Rate and Continue</name>
+   <tag></tag>
+   <elementGuidId>1fd4c7ff-99b9-4612-9443-0f46cfdabc3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body/div[1]/form[1]/div[1]/div[3]/div[1]/div[3]/div[3]/button[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>80617d77-6a07-4ec5-9c32-0a28e1bec2f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-PrimaryButton</value>
+      <webElementGuid>db6235a5-57de-44ec-83e1-c7d7955b1a2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>f6d4786b-adcc-48a4-a2fc-1f9e29a2b654</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(101) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
+      <webElementGuid>d509d0b8-2689-4214-8d42-dedded1860b8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Rate and Continue ></value>
+      <webElementGuid>99bda0b7-8df9-4aa3-9979-2ff868249248</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;ISiA-MainContent TopMenuOneArea&quot;]/div[@class=&quot;ISiA-BorderBox ISiA-FillHeight&quot;]/div[@class=&quot;row justify-content-md-center flex-nowrap&quot;]/div[@class=&quot;col-md-2.4 m-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
+      <webElementGuid>a66c928e-46cf-4638-86c7-b72af798ff4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>e83478d9-ebd0-4dd5-b4a1-9e4d563e3f5b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[4]</value>
+      <webElementGuid>99af143b-f2ad-47d9-ae9d-818a8782424f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[3]/div/div[3]/div[3]/button</value>
+      <webElementGuid>4461357e-8795-469a-8e7b-de7bc2e9eb19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of Paid Losses in the Past 3 Years'])[1]/following::button[1]</value>
+      <webElementGuid>6a4ab677-e87d-4402-95eb-b0600b9eae6f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loss History Information'])[1]/following::button[1]</value>
+      <webElementGuid>631a9e30-2c18-4fd0-9948-077922a54ceb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[2]/preceding::button[1]</value>
+      <webElementGuid>0b2d0bb9-5b32-4370-b9fd-7c4e190033de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::button[3]</value>
+      <webElementGuid>dec92c35-bffd-40b9-a38f-61b88743ca26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[3]/button</value>
+      <webElementGuid>b940c651-83bd-40af-9c08-7bd97a7c9688</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Rate and Continue >' or . = 'Rate and Continue >')]</value>
+      <webElementGuid>e68006a3-38ca-457e-ab4a-8729b7c46c5e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

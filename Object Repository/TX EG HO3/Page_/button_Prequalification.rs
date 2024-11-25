@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Prequalification</name>
+   <tag></tag>
+   <elementGuidId>4f23311e-0c78-4e4f-b282-94b710058fb3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ef447ecd-2355-4afd-9985-9a87f44d9928</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-PrimaryButton</value>
+      <webElementGuid>4e34a04a-c7ea-4f19-b3d7-f5c0625027ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a333cbe5-c778-45cd-9655-ea57916133b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(400) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
+      <webElementGuid>7f98acbd-1487-4c23-9371-643c3a947dd3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Prequalification ></value>
+      <webElementGuid>5685a50c-ebdb-45c8-97d8-cd184251ff52</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-4 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
+      <webElementGuid>94d92b35-c93b-44ae-a041-7b4568779a2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>9100d95c-f8ab-4b20-847d-784171a3f704</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='button']</value>
+      <webElementGuid>2c297758-6fd4-4698-9549-2c2a0ecf1778</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[2]/div/button</value>
+      <webElementGuid>533f5e6e-09f8-4834-a0c6-ecbe02506d3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Policy'])[1]/following::button[1]</value>
+      <webElementGuid>0806162a-b036-4be3-af6f-258cedc9e26e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
+      <webElementGuid>9cddca29-85bb-4a92-a847-dc036e6be689</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quote Number: 1049234'])[1]/preceding::button[2]</value>
+      <webElementGuid>797eee8b-858d-4269-a36c-f6f94a953837</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Prequalification >']/parent::*</value>
+      <webElementGuid>d0c08303-a3c7-43b8-a9ac-c0175aa9b50f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button</value>
+      <webElementGuid>8023a215-5248-49e9-90d3-4b699d1145dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Prequalification >' or . = 'Prequalification >')]</value>
+      <webElementGuid>f67794dc-f161-4798-8c5a-2fd3fe621d13</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Billing</name>
+   <tag></tag>
+   <elementGuidId>6e8af40b-586b-4b14-bfc0-91db049905d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type = 'button' and (text() = 'Billing >')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a41f139f-e0e5-4036-9c7a-3181a5407d35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-PrimaryButton</value>
+      <webElementGuid>39ecffcc-3c1b-4b7c-b1b1-2e4bf66421d2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>0ca30812-6b96-41c0-b1e6-c7d75768df07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>(typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set')) &amp;&amp; PageValidation('NEXTPAGE') &amp;&amp; processQuoteCurrentPages(950) &amp;&amp; ShowLoadingSpinner() &amp;&amp; PrePostForm() &amp;&amp; (typeof this === 'undefined' || typeof this.id === 'undefined' || this.id=='' || DblClkTrap(this.id,'set',0,0)) &amp;&amp; this.form.submit();</value>
+      <webElementGuid>818362ac-f287-436b-955e-2e716ff2ff97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Billing ></value>
+      <webElementGuid>8eed625e-1402-4e3e-8ee4-ca35ae4b2230</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainForm&quot;)/div[@class=&quot;ISiA-MainWrapper&quot;]/div[@class=&quot;row justify-content-md-center w-100 px-2 pt-2 flex-nowrap HideOnShort&quot;]/div[@class=&quot;col-md-3 mx-3&quot;]/button[@class=&quot;w-100 btn ISiA-PrimaryButton&quot;]</value>
+      <webElementGuid>245bd416-7779-4be5-82d0-615f0a8700f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>5c3d8d8a-5d48-476f-af8d-4f1d36bbee6e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[2]</value>
+      <webElementGuid>e53b726d-6ed5-49e2-a661-7e6d43a0c8e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='mainForm']/div/div[2]/div[2]/button</value>
+      <webElementGuid>834f84e3-1153-43bc-91ea-bf6e77e75330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; Interests'])[1]/following::button[1]</value>
+      <webElementGuid>46fcab93-27cf-428f-af4d-c93e112a1d57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Statements'])[1]/following::button[2]</value>
+      <webElementGuid>415a2e0f-4d8e-4120-ad64-42dca31d8341</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exit'])[1]/preceding::button[1]</value>
+      <webElementGuid>ec76e6a7-e065-4d43-aa6d-023bf5b2f1ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quote Number: 1049475'])[1]/preceding::button[2]</value>
+      <webElementGuid>875a6979-c1fe-4164-a406-d497e6042e76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Billing >']/parent::*</value>
+      <webElementGuid>2fbd3d5e-12cc-4271-9427-62e42e6a357e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/button</value>
+      <webElementGuid>b5c6eec8-0925-4922-9e9a-5990cfe743ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Billing >' or . = 'Billing >')]</value>
+      <webElementGuid>6577b069-fc2f-42a4-b014-6680858052ca</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

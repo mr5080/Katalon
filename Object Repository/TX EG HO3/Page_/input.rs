@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input</name>
+   <tag></tag>
+   <elementGuidId>3c2a0883-31ae-42ce-86a3-43ca5a37b3be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Quick Quote']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#QuoteButtonDiv > input[type=&quot;button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>cfcebda4-0c66-4860-a3b8-be7df0418f51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>7d003da3-e040-4ed5-84ce-023af2aa0979</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Quick Quote</value>
+      <webElementGuid>67a10b4c-a8b5-4953-89c7-127b74b407e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>GenerateApplicantName();Submit2(this.form, 'Unified,1');</value>
+      <webElementGuid>38306909-574e-4b17-9893-7e18f5ef2e79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;QuoteButtonDiv&quot;)/input[1]</value>
+      <webElementGuid>b9fd9de6-8e7e-479f-8ab6-181ea74858af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>f7b746a6-1ad0-4b17-b257-84f7c97b4477</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Quick Quote']</value>
+      <webElementGuid>db55e1dc-b18d-4179-b4d9-db2b9458cb38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='QuoteButtonDiv']/input</value>
+      <webElementGuid>bb126309-4e31-4851-b843-2d7e1cee30f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/input</value>
+      <webElementGuid>32c8e0e2-5a63-4f6e-80d9-7672965c2edd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button']</value>
+      <webElementGuid>e83b6a92-a2f3-4f18-b749-0da4260ed8f2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
