@@ -68,7 +68,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'11/09/2024'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>2cf2d68c-3623-45b4-b1be-6a846e46ce2a</id>
       <masked>false</masked>

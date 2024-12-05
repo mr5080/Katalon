@@ -109,7 +109,7 @@
       <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO3'</defaultValue>
+      <defaultValue>'HO6'</defaultValue>
       <description></description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -200,14 +200,14 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'01/09/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>debbba29-b776-4f55-af4a-308fb85d4088</id>
       <masked>false</masked>
