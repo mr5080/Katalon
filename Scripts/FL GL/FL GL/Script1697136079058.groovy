@@ -53,34 +53,35 @@ String fullName = (randomFirstName + ' ') + randomLastName
 // get todays date - after katalon update 9.23.24
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 LocalDate todaysDate = LocalDate.now();
-def mydate = todaysDate.format(formatter)
+
+def myDate = todaysDate.format(formatter)
 def yesterdayDate = todaysDate.minusDays(1).format(formatter)
 def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
 
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 System.out.println('yesterdayDate = ' + yesterdayDate)
 System.out.println('tomorrowDate = ' + tomorrowDate)
 
 
 /*
 // get todays date
-mydate = new Date()
+myDate = new Date()
 System.out.println('myDate = ' + mydate)
 todaysDate = mydate.format('MM/dd/yyyy')
 */
 
 if(effectiveDate == '')
 {
-	effectiveDate = mydate
+	effectiveDate = myDate
 	System.out.println('effectiveDate = ' + effectiveDate)
 }
-System.out.println('mydate = ' + mydate)
+System.out.println('myDate = ' + myDate)
 
 
-todaysTimeStamp = mydate //.format(('MMddyyyy' + '-') + 'HHmm')
+todaysTimeStamp = myDate //.format(('MMddyyyy' + '-') + 'HHmm')
 System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 
-//currentYear = Integer.parseInt(mydate.format('yyyy'))
+//currentYear = Integer.parseInt(myDate.format('yyyy'))
 currentYear = todaysDate.getYear()
 System.out.println('currentYear = ' + currentYear)
  //return //System.exit(0)
@@ -187,7 +188,7 @@ if (isAgent == false) {
 //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '10100')
 //WebUI.click(findTestObject('Object Repository/FL GL/Page_/td_TEST AGENCY'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_Please select a county.ALACHUABAKERB_b6b0bb'), '12043', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_Please select a county.ALACHUABAKERB_b6b0bb'), '12001', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ProofPriorInsurance'), 'N', true)
 
@@ -331,25 +332,35 @@ WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_DisplayQuote'))
 // get Total Premium and Fees
 //div[@id='Wrapper-Right-TotalPremiumAndFees']
 totalPremium = WebUI.getAttribute(findTestObject('Object Repository/FL GL/Page_/div_TotalPremiumAndFees'), 'innerHTML')
-//System.out.println('totalPremium = ' + totalPremium)
+System.out.println('totalPremium = ' + totalPremium)
 
 String premium = totalPremium.toString()
 //String premium = totalPremium.toString().substring(1, 10)
 
 int premiumLength = premium.length()
-//System.out.println('premiumLength = ' + premiumLength )
+System.out.println('premiumLength = ' + premiumLength )
 premium = premium.substring(1, premium.length())
 
-//System.out.println('premium = ' + premium)
+
+// remove last 3 (decimal and 2 cents
+premium = premium.substring(0, premium.length() - 4)
+System.out.println('premium = ' + premium)
+
+//WebUI.delay(10)
+
+System.out.println('premium = ' + premium)
 premium = premium.replace(',', '')
-//System.out.println('premium = ' + premium)
+
+System.out.println('premium = ' + premium)
 premium = premium.replace('.00', '')
-//System.out.println('premium = ' + premium)
+
+
+System.out.println('premium = ' + premium)
 premium = premium.trim()
-//System.out.println('premium = ' + premium)
+System.out.println('premium = ' + premium)
 
 premiumInt = Integer.valueOf(premium)
-//System.out.println('premiumInt = ' + premiumInt)
+System.out.println('premiumInt = ' + premiumInt)
 
 WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_UWQuestions'))
 
@@ -629,8 +640,24 @@ else {
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('FL GL/writeFile'), [ //	('policyType') : policyType,
-		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
-		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('addClassCodes') : addClassCodes, ('environment') : environment,  ('numInterests') : numInterests,  ('paperless') : paperless, ('todaysTimeStamp') : todaysTimeStamp, ('addClassCodes') : addClassCodes], FailureHandling.STOP_ON_FAILURE)
+		('randomLastName') : randomLastName, 
+		('randomFirstName') : randomFirstName, 
+		('quoteNumber') : quoteNumber, 
+		('todaysDate') : todaysDate, 
+		
+		('myDate') : myDate,
+		
+		('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, 
+		('stateFL') : stateFL, 
+		('isAgent') : isAgent, 
+		('addClassCodes') : addClassCodes, 
+		('environment') : environment,  
+		('numInterests') : numInterests,  
+		('paperless') : paperless, 
+		('todaysTimeStamp') : todaysTimeStamp, 
+		('addClassCodes') : addClassCodes],
+		 FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('quoteNumber = ' + quoteNumber)
 

@@ -91,6 +91,7 @@ String fullName = (randomFirstName + ' ') + randomLastName
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 LocalDate todaysDate = LocalDate.now();
 def myDate = todaysDate.format(formatter)
+
 def yesterdayDate = todaysDate.minusDays(1).format(formatter)
 def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
 
@@ -1064,9 +1065,8 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
-System.out.println('fullName = ' + fullName)
-
-System.out.println('shouldBind = ' + shouldBind)
+//System.out.println('fullName = ' + fullName)
+//System.out.println('shouldBind = ' + shouldBind)
 
 }
 catch(e)

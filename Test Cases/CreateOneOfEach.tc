@@ -4,5 +4,6 @@
    <name>CreateOneOfEach</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>c2f51218-d3dd-43b7-ae34-b8de71c913d0</testCaseGuid>
 </TestCaseEntity>

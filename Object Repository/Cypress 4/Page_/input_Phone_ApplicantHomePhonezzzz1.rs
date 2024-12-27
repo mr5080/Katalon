@@ -11,6 +11,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +19,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>8b454d5b-5051-41ca-b4da-d68b3d27bd0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +27,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>41110604-3002-4b47-bb22-9d5ea4639fca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +35,7 @@
       <name>data-format</name>
       <type>Main</type>
       <value>ddd-ddd-dddd</value>
+      <webElementGuid>b3adf3fc-4ff9-4d21-895a-d6932a2df18c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,6 +43,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control phoneWidget</value>
+      <webElementGuid>11975281-5535-4c71-aaf4-397c4393cec0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,6 +51,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ApplicantHomePhonezzzz1</value>
+      <webElementGuid>38804fde-fed4-4a43-a43b-c27e2ad161d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,6 +59,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>12</value>
+      <webElementGuid>04b62d88-364f-4d29-be76-24cafda3ce2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,6 +67,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>validatePhoneNumber(this);</value>
+      <webElementGuid>35afb2a9-e618-4806-87a8-82457a243513</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,6 +75,7 @@
       <name>onkeyup</name>
       <type>Main</type>
       <value>maskPhoneNumber(this, event);</value>
+      <webElementGuid>52342840-0d9e-4722-b0fc-06420e00193e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,6 +83,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;Wrapper-Right-ApplicantHomePhonezzzz1&quot;)/input[@class=&quot;form-control phoneWidget&quot;]</value>
+      <webElementGuid>fc5c731c-3469-413b-ba65-05a3bb35503b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -81,6 +91,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>7d637aaa-1b02-4894-b208-2c93a2976b29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -88,6 +99,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@name='ApplicantHomePhonezzzz1']</value>
+      <webElementGuid>c0ae638e-a7be-461b-8291-25c3b16a2d54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,6 +107,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ApplicantHomePhonezzzz1']/input</value>
+      <webElementGuid>320a0a76-f8a6-4645-949b-ccd358d09bc5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,5 +115,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/div[2]/input</value>
+      <webElementGuid>d5391ea2-1da3-409c-9beb-cec70ea0f062</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

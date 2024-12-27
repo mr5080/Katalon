@@ -121,7 +121,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
 			//sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
-			sheet.getRow(rowCount).createCell(8).setCellValue("BR")
+			sheet.getRow(rowCount).createCell(8).setCellValue("BR " + state)
 			
 			sheet.getRow(rowCount).createCell(9).setCellValue(environment)
 			

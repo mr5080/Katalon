@@ -721,9 +721,9 @@ WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policy
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
-System.out.println('fullName = ' + fullName)
+//System.out.println('fullName = ' + fullName)
 
-System.out.println('shouldBind = ' + shouldBind)
+//System.out.println('shouldBind = ' + shouldBind)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/FL DP/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'MC', true)
 /*

@@ -340,11 +340,11 @@ WebUI.click(findTestObject('Object Repository/BR TX/Page_/button_Display Quote')
 //WebUI.waitForElementPresent(findTestObject('Object Repository/BR TX/Page_/div_totalPremiumWithFees'), 0)
 
 String totalPremium = ''
-if(isAgent == false)
-{
+//if(isAgent == false)
+//{
 	totalPremium = WebUI.getAttribute(findTestObject('Object Repository/BR TX/Page_/div_totalPremiumWithFees'), 'innerHTML')
 	System.out.println('totalPremium = ' + totalPremium)
-}
+//}
 
 WebUI.click(findTestObject('Object Repository/BR TX/Page_/button_BindSubmitApp'))
 
