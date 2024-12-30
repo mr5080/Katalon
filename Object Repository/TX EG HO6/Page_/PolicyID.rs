@@ -6,14 +6,15 @@
    <elementGuidId>87504a95-cc58-4a0c-984c-02e40ba3f3ba</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//table[@id='acct_header_table']/tbody/tr/td[4]/a</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>53138f15-3a64-41cc-8c3d-172b0316e014</webElementGuid>
+      <webElementGuid>68d7bcfe-7220-4a6f-b34a-70623240c658</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>DarkLink</value>
-      <webElementGuid>e3a435d4-a32e-4a87-b0b4-b393acd81215</webElementGuid>
+      <webElementGuid>b64fcdc1-4d9c-497e-a5d9-1c4b7a6180a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +38,7 @@
       <name>target</name>
       <type>Main</type>
       <value>Content</value>
-      <webElementGuid>8f732449-d6b8-4aec-9c23-17718ebde20f</webElementGuid>
+      <webElementGuid>35a48179-d94e-44e5-bb21-2d1159e39bdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +46,7 @@
       <name>href</name>
       <type>Main</type>
       <value>main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=177187&amp;DisplayAcctFrame=false</value>
-      <webElementGuid>0f9f7aa4-2061-4d70-9e24-32b63a08270d</webElementGuid>
+      <webElementGuid>85f1a88b-8efa-4538-a886-6ed5f0a97f58</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +54,7 @@
       <name>text</name>
       <type>Main</type>
       <value>177187</value>
-      <webElementGuid>4dd827f0-57b5-4180-9cfb-af881a35fa26</webElementGuid>
+      <webElementGuid>19ced76c-44d9-4a37-9b66-b181b244017d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +62,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PolicyDetailsMainDiv&quot;)/div[@class=&quot;ISiWhiteCanvasHeader&quot;]/table[@id=&quot;acct_header_table&quot;]/tbody[1]/tr[1]/td[@class=&quot;ISiPolicyHeader&quot;]/a[@class=&quot;DarkLink&quot;]</value>
-      <webElementGuid>4e1298fc-dcbe-4fde-8e15-3cebe8292e9e</webElementGuid>
+      <webElementGuid>77b3bba3-5584-437a-b849-b3d16a785afa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX Evergreen HO3-NOTUSED/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>e14e7197-f91f-4108-a12c-64e09b3e11eb</webElementGuid>
+      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <webElementGuid>c149e736-a96b-4262-838f-aa641fe2f8a0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +78,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//table[@id='acct_header_table']/tbody/tr/td[4]/a</value>
-      <webElementGuid>34c63436-c57f-4332-92ce-7f31917b157a</webElementGuid>
+      <webElementGuid>385c9eb5-e165-4819-8dd4-76a03e1ace90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'177187')]</value>
-      <webElementGuid>ecef178a-8793-49f1-bf44-a85a4a78acf4</webElementGuid>
+      <webElementGuid>513989e8-585f-492a-83ac-b5c03221c155</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='TEXAS Homeowners'])[1]/preceding::a[1]</value>
-      <webElementGuid>4ad64abd-7e63-48c5-bed4-fbaf97de1325</webElementGuid>
+      <webElementGuid>a1fd262e-de4e-4446-8206-b8038d00f052</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cypress Property &amp; Casualty Insurance Company'])[1]/preceding::a[1]</value>
-      <webElementGuid>f28a3bc8-4cc9-41a1-98c3-0685079dd310</webElementGuid>
+      <webElementGuid>ea3e2751-0279-4633-9711-7f4a6bccb4e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='177187']/parent::*</value>
-      <webElementGuid>36080229-bd90-4d53-8890-6eabbbc74338</webElementGuid>
+      <webElementGuid>52bb704a-0014-4c96-9e08-0a09967ea8c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +118,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=177187&amp;DisplayAcctFrame=false')]</value>
-      <webElementGuid>53a3f6b7-ae29-44b7-ab4b-ecf64ad05394</webElementGuid>
+      <webElementGuid>5e7864ea-e172-453d-8a8e-b52f614ee762</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[4]/a</value>
-      <webElementGuid>395cbcf8-9420-4dea-8ead-aaef20c803f6</webElementGuid>
+      <webElementGuid>8c7c3f91-4703-44dd-9bdb-78914463c4ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +134,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = 'main.cfm?view=acct&amp;pages=moneysummary&amp;PolicyID=177187&amp;DisplayAcctFrame=false' and (text() = '177187' or . = '177187')]</value>
-      <webElementGuid>40e986cc-45e8-4b13-9d17-1ec5574e43db</webElementGuid>
+      <webElementGuid>1ffee66c-861e-464e-aac1-3a5ef5fcaee1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
