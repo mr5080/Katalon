@@ -80,7 +80,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
       <masked>false</masked>
@@ -88,7 +88,7 @@
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>08/02/2024</description>
+      <description>12/29/2024</description>
       <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
       <masked>false</masked>
       <name>effectiveDate</name>

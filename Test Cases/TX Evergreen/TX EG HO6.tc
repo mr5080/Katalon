@@ -22,13 +22,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1891ee50-6ac3-4824-9add-7e71085fd224</variableId>
+      <variableId>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</variableId>
+      <variableId>1891ee50-6ac3-4824-9add-7e71085fd224</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -75,18 +75,18 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
-      <masked>false</masked>
-      <name>shouldBind</name>
-   </variable>
-   <variable>
       <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</id>
       <masked>false</masked>
       <name>environment</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
+      <masked>false</masked>
+      <name>shouldBind</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

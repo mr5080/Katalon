@@ -123,7 +123,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
