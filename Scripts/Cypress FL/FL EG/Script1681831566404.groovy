@@ -384,6 +384,7 @@ String DOB = (((month + '/') + day) + '/') + year
 //System.out.println("Random Date = " + randomBirthDate);
 //}
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-1234')
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
@@ -959,11 +960,12 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUn
 
 // these 2 are only present if effectiveDate is 2/1/22 (or some date around there) or after
 try {
-
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnsettledClaim'))
+	
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVELawsuit_1'))
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEAOB_1'))
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEPriorLawsuit'))
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEUnsettledClaim'))
+	
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEFirstParyLawsuit'))
 
 }
@@ -972,10 +974,8 @@ catch (e)
 	WebUI.comment('could not find new elements')
 }
 
-
-
-
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_No_NOSAVEAgentLiabilityExcl1_1'))
+
 
 'Billing button'
 WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
