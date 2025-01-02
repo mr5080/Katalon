@@ -78,7 +78,6 @@ System.out.println('mydate = ' + mydate)
 System.out.println('yesterdayDate = ' + yesterdayDate)
 System.out.println('tomorrowDate = ' + tomorrowDate)
 
-
 /*
 // get todays date
 mydate = new Date()
