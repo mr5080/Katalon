@@ -67,7 +67,7 @@ String updatedYOC = yearOfConstFLInt
 */
 String fullName = (randomFirstName + ' ') + randomLastName
 
-// get todays date - after katalon update 9.23.24
+// get todays date - after katalon update 9.22.24
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
 LocalDate todaysDate = LocalDate.now();
 def mydate = todaysDate.format(formatter)
