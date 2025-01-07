@@ -4,5 +4,6 @@
    <name>writeFile</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>50320964-ae91-4071-9e1d-ce881d8a91db</testCaseGuid>
 </TestCaseEntity>

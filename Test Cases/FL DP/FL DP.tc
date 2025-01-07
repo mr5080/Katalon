@@ -80,7 +80,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
       <masked>false</masked>
@@ -115,14 +115,14 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
       <masked>false</masked>
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
       <masked>false</masked>

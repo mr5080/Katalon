@@ -46,12 +46,13 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
  */
 	
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
-WebUI.openBrowser('')
+//WebUI.openBrowser('')
 
 try {
 
 if (environment == 'TEST') {
-    WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+	WebUI.openBrowser('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+    //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
     WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 }

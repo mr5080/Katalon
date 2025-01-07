@@ -700,7 +700,17 @@ WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') :
 if (shouldBind == true) {
     WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
 
-    String policyNumber = WebUI.getAttribute(findTestObject('null'), 'innerHTML')
+	
+	
+	
+    String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_/td_PolicyNumber'), 'innerHTML')
+	
+	//String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/BR FL/Page_/PolicyNumber'), 'innerHTML')
+	
+	
+	
+	
+	
 
     System.out.println('policyNumber = ' + policyNumber //WebUI.closeBrowser()
         // forces last name to be saved for Recurring payments
@@ -715,8 +725,22 @@ if (shouldBind == true) {
 
 // pass vars to write the file  9.16.21
 WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
-        ('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
-        , ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests,  ('paperless') : paperless, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+        ('randomLastName') : randomLastName, 
+		('randomFirstName') : randomFirstName, 
+		('quoteNumber') : quoteNumber, 
+		//('todaysDate') : todaysDate,
+		('mydate') : mydate,
+		 
+		('totalPremium') : totalPremium //	('policyType') : policyType,
+        , ('shouldBind') : shouldBind, 
+		('stateFL') : stateFL, 
+		('isAgent') : isAgent, 
+		('environment') : environment, 
+		('optionalCoverages') : optionalCoverages, 
+		('numInterests') : numInterests,  
+		('paperless') : paperless, 
+		('todaysTimeStamp') : todaysTimeStamp], 
+	FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
