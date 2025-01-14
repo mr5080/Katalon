@@ -221,7 +221,7 @@ if (isAgent == false) {
     WebUI.delay(1)
 
     /// update this to key down and then key up, can do the same thing for date pickers!
-    for (int x = 0; x < 5; x++) {
+    for (int x = 0; x < 10; x++) {
         try {
             WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
 
@@ -773,7 +773,12 @@ catch(e)
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 		
 	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
-	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+//works, no DP	//
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' +  + '-' + quoteNumber) + 'DP3 Failure.jpg')
+//	WebUI.takeScreenshot(((('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '- GL - ') + quoteNumber) + ' Failure.jpg' 
+
+	
+	
 	
 	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
 	

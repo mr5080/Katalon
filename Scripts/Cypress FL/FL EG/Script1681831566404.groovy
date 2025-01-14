@@ -326,7 +326,7 @@ if ((isAgent == false) && (realTestUser == false)) {
     // wait for dynamic table to populate?
     WebUI.delay(1)
 
-    for (int x = 0; x < 5; x++) 
+    for (int x = 0; x < 10; x++) 
 	{
         try {
             WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
@@ -384,7 +384,7 @@ String DOB = (((month + '/') + day) + '/') + year
 //System.out.println("users generated DOB = " + DOB)
 //System.out.println("Random Date = " + randomBirthDate);
 //}
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-1234')
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
@@ -1076,7 +1076,10 @@ catch(e)
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 		
 	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
-	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
+	// works no FL EG in file name
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'FL EG ' + policyType + ' Failure.jpg')
+	//WebUI.takeScreenshot(((('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '- FL - ' + policyType) + '-' + quoteNumber) + ' Failure.jpg' 
+
 	
 	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
 	
