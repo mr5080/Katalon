@@ -87,18 +87,24 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		{
 			//WebUI.waitForElementNotPresent(findTestObject('Object Repository/Cypress 4/Page_/button_CC Modal Window'), 10)
 			//WebUI.waitForElementClickable(findTestObject('Cypress 4/Page_/input - Bind Application'), 10)
+	
+			
+/*	 commented out 1.16.25 - writing wrong thing to file 		
 			if(addClassCodes)		// this logic needs investigated........11.2.23
 			{ 
 				sheet.getRow(rowCount).createCell(4).setCellValue("Send To Company button clicked")				
 		//		return //  break   not allowed here
 			}	
+			
+*/			
+			
 			'Bind Application > button'
 		//	WebUI.click(findTestObject('Cypress 4/Page_/input - Bind Application'))
 			
 			
 			//need to add a addClasscodes if in front of this if to make sure it does not wait for the policy number
-			if(addClassCodes == false)
-			{	
+////		if(addClassCodes == false)
+////		{	
 				if (WebUI.waitForElementPresent(findTestObject('Object Repository/FL GL/Page_/policyNumber'), 45))
 				{				
 					String policyNumber = WebUI.getAttribute(findTestObject('Object Repository/FL GL/Page_/policyNumber'), 'innerHTML')
@@ -106,7 +112,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 //					WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + " - " + policyNumber) + '-policyCreated.jpg')
 					sheet.getRow(rowCount).createCell(4).setCellValue(policyNumber)
 				}
-			}	
+////		}	
 		}
 		
 			// removes all chars from string
@@ -175,4 +181,4 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		}
 	*/	
 		
-		System.out.println("trying to write file for FL DP trying to write file part 2")
+	//	System.out.println("trying to write file for FL DP trying to write file part 2")

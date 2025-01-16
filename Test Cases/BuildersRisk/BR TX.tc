@@ -50,7 +50,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'seacoast1'</defaultValue>
+      <defaultValue>'seacoast2'</defaultValue>
       <description>seacoast1, seacoast2, tier3, dfw, panhandle, remainder</description>
       <id>b3f61504-221a-48bc-89ba-40cce45a9dab</id>
       <masked>false</masked>
