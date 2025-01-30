@@ -4,5 +4,6 @@
    <name>nameAddressSetup</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>4529ed19-2d8f-4078-93fd-29af9343edc9</testCaseGuid>
 </TestCaseEntity>

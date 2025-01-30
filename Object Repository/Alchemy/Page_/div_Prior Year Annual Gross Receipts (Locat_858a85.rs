@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Prior Year Annual Gross Receipts (Locat_858a85</name>
+   <tag></tag>
+   <elementGuidId>93c4fbb6-3aa2-4738-9b44-c57087d603bd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#Wrapper-Right-PriorYearGrossReceipts_1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='Wrapper-Right-PriorYearGrossReceipts_1']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6209e1c0-1778-47dc-bd99-70236a528eac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Wrapper-Right-PriorYearGrossReceipts_1</value>
+      <webElementGuid>5908906b-bceb-498a-aab1-17b10e8be0f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-md-2 p-1 ISiA-RequiredInput</value>
+      <webElementGuid>0e115476-fa64-410b-a665-4916d4b70c65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Right-PriorYearGrossReceipts_1&quot;)</value>
+      <webElementGuid>15d50ba9-1e42-4a9c-b945-8f978e466202</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Alchemy/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>1bb8793a-d8cc-4328-8ec7-43182036f8b3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Right-PriorYearGrossReceipts_1']</value>
+      <webElementGuid>738843cf-3d2d-4036-920b-e02ac412fdc7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='collapseNumberOfRisks1']/div/div[2]/div[2]/div[11]/div/div[2]</value>
+      <webElementGuid>b87b86ed-4aef-45c7-8a56-2118d32e62a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Prior Year Annual Gross Receipts (Location Specific)'])[1]/following::div[1]</value>
+      <webElementGuid>42df7e8d-7325-4229-b520-60dcbc57a28f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Projected Annual Gross Receipts (Location Specific)'])[1]/following::div[5]</value>
+      <webElementGuid>54d0dc3e-2a2d-4792-a301-5efb77eada47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of Employees (Location Specific)'])[1]/preceding::div[1]</value>
+      <webElementGuid>f479728f-dcdf-4bd4-8a11-61270d9af07f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Replacement Cost'])[1]/preceding::div[9]</value>
+      <webElementGuid>ce1005ca-c40f-412a-a5f0-7cc406c0f4e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[11]/div/div[2]</value>
+      <webElementGuid>eb0ed337-4c8f-49c4-865e-bb7ea30f6350</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'Wrapper-Right-PriorYearGrossReceipts_1']</value>
+      <webElementGuid>1ca8175e-ab87-4016-8a98-dce54a16bf88</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

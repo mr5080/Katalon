@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_510</name>
+   <name>select_WindHailDeductible</name>
    <tag></tag>
    <elementGuidId>84603eb5-bc0d-4c36-9f7b-92eb4cb6b074</elementGuidId>
    <selectorCollection>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

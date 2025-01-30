@@ -742,7 +742,7 @@ WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policy
 		('todaysTimeStamp') : todaysTimeStamp], 
 	FailureHandling.STOP_ON_FAILURE)
 
-System.out.println('quoteNumber = ' + quoteNumber)
+//System.out.println('quoteNumber = ' + quoteNumber)
 
 //System.out.println('fullName = ' + fullName)
 

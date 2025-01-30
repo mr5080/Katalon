@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_SearchForAgent</name>
+   <tag></tag>
+   <elementGuidId>e1ae95ef-d314-4571-9cb6-74e80eafb638</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>input.w-100.btn.ISiA-SecondaryButton.ISiA-SmallButton</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Agent Lookup']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>1379f4c6-99f8-4b6c-9fbe-64a8d9f94cf4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>1339ac18-10ab-48c1-9d56-dd3365cfef7b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-100 btn ISiA-SecondaryButton ISiA-SmallButton</value>
+      <webElementGuid>38491bd9-38e7-4105-bb4c-eb8f8e793dad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-toggle</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>ab3a8e82-95f0-484f-816d-896ed7fb57fc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-target</name>
+      <type>Main</type>
+      <value>#AgentLookUpModal</value>
+      <webElementGuid>be5b27a5-ff66-462d-8a7f-098d88f4dac7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Agent Lookup</value>
+      <webElementGuid>871ede8b-17c8-49f9-bbab-9ec792434525</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>processAgentModalValues('AgentCode', 'https://alchemytest.cogisi.com/is/', 'SubAgentCode')</value>
+      <webElementGuid>afc6054e-0977-487e-a629-4ae77646b5e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Wrapper-Right-AgentCode&quot;)/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-6 px-2&quot;]/input[@class=&quot;w-100 btn ISiA-SecondaryButton ISiA-SmallButton&quot;]</value>
+      <webElementGuid>4ac3cf12-50f3-4d56-a505-416b73b5ccb7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Alchemy/Page_/iframe_System FAQ_MainIS28test</value>
+      <webElementGuid>825e65b1-27ef-4ec9-9096-a0231c205ecd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Agent Lookup']</value>
+      <webElementGuid>a384af95-b645-45a1-9fe6-8f9252d0cbf5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='Wrapper-Right-AgentCode']/div/div[2]/input</value>
+      <webElementGuid>cab183e9-1fe1-4fcd-8fd4-900f4f7e7a97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/input</value>
+      <webElementGuid>78daa393-fdcb-446e-93ef-e2d94903858d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'button']</value>
+      <webElementGuid>8eabb852-bc83-4b6e-a9c8-307d872e1881</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -48,6 +48,10 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 //WebUI.openBrowser('')
 
+
+//System.out.println("counter(from FL EG) = " + counter)
+//System.out.println("policyType(from FL EG) = " + policyType)
+
 try {
 
 if (environment == 'TEST') {
@@ -385,7 +389,7 @@ String DOB = (((month + '/') + day) + '/') + year
 //System.out.println("Random Date = " + randomBirthDate);
 //}
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-1234')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '7177621234')
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')

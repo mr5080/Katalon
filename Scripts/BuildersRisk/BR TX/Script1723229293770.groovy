@@ -209,7 +209,7 @@ WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Applicant Last
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'IV')
 
-WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Address_ApplicantAddress1'), '1001 margherita ct')
+WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_Address_ApplicantAddress1'), '1000 margherita ct')
 
 WebUI.setText(findTestObject('Object Repository/BR TX/Page_/input_City, State, Zip, Zip4_ApplicantCity'), 'red lion')
 
@@ -238,8 +238,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_1
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_1,0002,5005,00010,000'), '5000', true)
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_510'), '10', true)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/BR TX/Page_/select_510'), 1)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/BR TX/Page_/select_WindHailDeductible'), '10', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/BR TX/Page_/select_WindHailDeductible'), 2)
 
 WebUI.click(findTestObject('Object Repository/BR TX/Page_/button_Rating'))
 

@@ -14,13 +14,13 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 		
 		// random num between 2 - 500 (first line in excel file is a header)
-		int randomFLaddress = 2 + ((Math.random() * ((220 - 2) + 1)) as int)
+		int randomFLaddress = 2 + ((Math.random() * ((700 - 2) + 1)) as int)
 		
 		// override randomness to specifiy address in file to use
 		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO
 		System.out.println(randomFLaddress)
 			
-		int randomFLaddressPrior = 2 + ((Math.random() * ((120 - 2) + 1)) as int)
+		int randomFLaddressPrior = 2 + ((Math.random() * ((700 - 2) + 1)) as int)
 		
 		System.out.println(randomFLaddressPrior)
 		
@@ -45,7 +45,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		
 		Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 		
-		int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
+		int randomFirstNameRow = 1 + ((Math.random() * ((1000 - 1) + 1)) as int)
 		
 		System.out.println(randomFirstNameRow)
 		
@@ -64,7 +64,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		// Last name from excel file
 		Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
 		
-		int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
+		int randomLastNameRow = 1 + ((Math.random() * ((1000 - 1) + 1)) as int)
 		
 		//String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
 		 randomLastName = lastNameData.getValue(1, randomLastNameRow)

@@ -7,10 +7,10 @@ if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'Mani',
 		'randomLastName': 'Marson',
-			'addressTX': '747 BUFFALO CT',
-			'cityTX': 'Larado',
+			'addressTX': '34994 KRETZ RD',
+			'cityTX': 'LOS FRESNOS',
 			'stateTX': 'TX',
-			'zipTX': '78045'
+			'zipTX': '78566'
 		]
 	return nameAddressData	
 }	
@@ -25,6 +25,12 @@ else if(manualAddress == 'PC10')	// address returns PC10
 			'zipTX': '76571'
 			]
 		return nameAddressData
+		
+		/* another PC10
+		 * 
+		  	33204 LAGO VIEJO DR
+			LA FERIA, TX 78559
+		 */		
 	}	
 
 else if(manualAddress == 'truerisk')
@@ -58,7 +64,7 @@ else if(manualAddress == 'claims')
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
-int randomTXaddress = 2 + ((Math.random() * ((310 - 2) + 1)) as int)
+int randomTXaddress = 2 + ((Math.random() * ((110 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomTXaddress = 510

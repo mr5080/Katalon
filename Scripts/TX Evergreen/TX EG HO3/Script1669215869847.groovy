@@ -157,7 +157,7 @@ catch (Exception e) {
 }
 
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 40)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input'))
 

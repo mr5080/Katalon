@@ -4,6 +4,7 @@
    <name>Cannabis-AZ</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1eb22c2c-e3b0-4dcd-982a-af4f9f54f11e</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -68,7 +69,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'06/15/2023'</defaultValue>
+      <defaultValue>'01/29/2025'</defaultValue>
       <description></description>
       <id>d907812a-21f8-45cd-8bbd-87653b9f5bb6</id>
       <masked>false</masked>

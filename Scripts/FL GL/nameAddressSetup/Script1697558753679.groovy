@@ -125,7 +125,7 @@ else if(manualAddress == 'lightspeed')
 	Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 //	C:\Users\JohnHughes\OneDrive - Cypress Property and Casualty Insurance Company\ProjectFiles\CypressData.xlsx
 // random num between 2 - 500 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((125 - 2) + 1)) as int)
+int randomFLaddress = 2 + ((Math.random() * ((400 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomFLaddress = counter	// uncomment this to use the exel file and look though it
@@ -141,7 +141,7 @@ countyFL = addressData.getValue(5, randomFLaddress - 1)
 yearOfConstFL = addressData.getValue(7, randomFLaddress - 1)	// if not found, will return randomly the street address...
 
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
-int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
+int randomFirstNameRow = 1 + ((Math.random() * ((1000 - 1) + 1)) as int)
 System.out.println(randomFirstNameRow)
 randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
 System.out.println('randomFirstName  =====    ' + randomFirstName)
@@ -149,7 +149,7 @@ randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
 
 // Last name from excel file
 Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
-int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
+int randomLastNameRow = 1 + ((Math.random() * ((1000 - 1) + 1)) as int)
 //String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
 randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name

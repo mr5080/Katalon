@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Start a New Quote</name>
+   <tag></tag>
+   <elementGuidId>3e8784c0-9cf0-4227-a665-3f11e53c9ad6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='TopDropMenuID']/td/ul/li/ul/li/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>74fe28b0-78b9-480f-94bb-9bdff1efad97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>MainIS28test</value>
+      <webElementGuid>5ce135bd-741d-41be-a856-baac6b2c49f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote</value>
+      <webElementGuid>f2bb1fbb-3e6a-4d91-96f4-5a44ae7545c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Start a New Quote</value>
+      <webElementGuid>8e3c3fde-6422-4d52-9499-60355f8477ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;TopDropMenuID&quot;)/td[1]/ul[@class=&quot;ISiTopMenu&quot;]/li[1]/ul[@class=&quot;ISiTopMenu-submenu&quot;]/li[1]/a[1]</value>
+      <webElementGuid>0126dbcb-9401-4e24-ac47-fdfc2c06a26a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//tr[@id='TopDropMenuID']/td/ul/li/ul/li/a</value>
+      <webElementGuid>70383776-20b1-4ff7-90c7-688b4298f34d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Start a New Quote')]</value>
+      <webElementGuid>35a62b52-1cbc-43ef-80c1-258eeea77084</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start'])[1]/following::a[1]</value>
+      <webElementGuid>8f2ce897-572b-4673-b4ca-d54b385954c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New Quote'])[1]/following::a[1]</value>
+      <webElementGuid>aa48c96a-ef72-4787-939d-ed35f0469e72</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View Quotes'])[1]/preceding::a[1]</value>
+      <webElementGuid>abea6333-8530-43dc-9a3c-35b4850d58b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View a Policy'])[1]/preceding::a[2]</value>
+      <webElementGuid>d4a64ec7-5d37-43fc-81cc-3e62e34a6b32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Start a New Quote']/parent::*</value>
+      <webElementGuid>bae7ca5a-f39d-4c4a-beb7-d1880eb4d156</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote')]</value>
+      <webElementGuid>4dc0f1cf-55c1-4103-bf9e-31ccec902473</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/a</value>
+      <webElementGuid>d465efb1-08c5-441d-a23f-2e885ada38ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'main.cfm?view=home&amp;TabView=Start&amp;Pages=NewQuote' and (text() = 'Start a New Quote' or . = 'Start a New Quote')]</value>
+      <webElementGuid>9911cf96-f6d1-4e38-9c1a-1e7133f45615</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
