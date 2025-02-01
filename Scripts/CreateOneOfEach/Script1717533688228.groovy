@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 int howMany = 20
-boolean shouldBind = true
+boolean shouldBind = false
 
 int counter = 1
 

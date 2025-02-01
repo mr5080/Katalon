@@ -50,11 +50,27 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://alchemytest.cogisi.com/is/root/logon/index.cfm')
 
+
+
+if (isAgent) 
+{
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_AGENT CODE_userloginid'), '9942806')
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'),    'TUSER006')
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_password'), 'Test@123')
+} 
+else 
+{
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_AGENT CODE_userloginid'), '0')
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'),    'jhughes')
+	WebUI.setEncryptedText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
+}
+/*
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_AGENT CODE_userloginid'), '0')
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_USERNAME_userloginname'),    'jhughes')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_password'), 'iJIOp32ulZH/iAm5HHInmA==')
+*/
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_TEST DATA alchemytest.cogisi.com/input_PASSWORD_LoginButton'))
 
@@ -74,7 +90,7 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Zip
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_Start a New Quote   Effective DateExpir_dc8146'))
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_button'))
+WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Application'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_NOSAVESELECTEDBUSINESS_1'))
 
@@ -90,18 +106,19 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Z
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantZip4_1'))
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Save and Continue'))
+//WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Save and Continue'))
+WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_SaveContinue'))
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_SearchForAgent'))
-WebUI.delay(1)
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '10100')
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_SelectAgent'))
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'))
-
+if (!isAgent)
+{	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_SearchForAgent'))
+	WebUI.delay(1)
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '9942806')
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_SelectAgent'))
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'))
+}
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVESetAll'))
-
+WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Coverages'))
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Phone Number_ApplicantPhonezzzz1'), '901-116-5145')
@@ -119,7 +136,7 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Mi
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'Drivers')
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'JR')
-
+/*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_United StatesUS TerritoryInternational'),  'domestic', true)
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Address_ApplicantAddress1'), '1158 S DORA AVE')
@@ -129,7 +146,7 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_City_Applica
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_StateAKALARAZCACOCTDCDEFLGAHIIAIDILI_28d72e'), 'AZ', true)
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Zip Code_ApplicantZip'), '85364')
-
+*/
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_DBA Name_DBANamezzzz1'), 'Pottys Pot Shop')
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Lightspeed'))
@@ -138,19 +155,24 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Lightspeed'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ProtectionClass'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 'NA', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 'Greater than 1 to 2 miles', true)
+if(!isAgent)
+{	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 'NA', true)
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Responding Fire Department_Responding_eb6df6'))
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '1', true)
+	//WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '99', true)
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Total Square Footage of Building_SqFo_d74970'), '672')
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1234'), '2', true)
+	
+}
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 'Greater than 1 to 2 miles', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_Less than 1000 feetOver 1000 feet'), 'LT1000', true)
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Responding Fire Department_Responding_eb6df6'))
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_NonePartialComplete'), 'PARTIAL', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '1', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_UngradedNot ApplicableNon-Participan_f398aa'), '99', true)
 
 WebUI.doubleClick(findTestObject('Object Repository/Alchemy/Page_/input_Electrical Updates_LastElectricalUpdate_1'))
 
@@ -162,11 +184,10 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Plumbing Upd
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Heating Updates_LastHeatingUpdate_1'), '2024')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_1234'), '2', true)
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_Owner Tenant Lessor'), 'OWNER', true)
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Total Square Footage of Building_SqFo_d74970'), '672')
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Building Limit_BuildingLimit_1'), '350000')
 
@@ -206,28 +227,32 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_History'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_AdditionalInsureds'))
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Internal'))
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Management'), '1.01')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location_IRPMLocation'), '1.01')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Building Features_BuildingFeatures'), '.99')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Premises And Equipment_PremisesAndEquipment'), '.99')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Employees_Employees'), '1.01')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Protection_Protection'), '1.01')
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_A. Description And Location of Premi_04ed73'),     'A', true)
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_BP 04 01_ExclusionSchedule'), 'Testing')
-
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Facultative Reinsurance Premium_Facul_ae8c61'), '0')
+if (!isAgent)
+{
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Internal'))
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Management'), '1.01')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location_IRPMLocation'), '1.01')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Building Features_BuildingFeatures'), '.99')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Premises And Equipment_PremisesAndEquipment'), '.99')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Employees_Employees'), '1.01')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Protection_Protection'), '1.01')
+	
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_A. Description And Location of Premi_04ed73'),     'A', true)
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_BP 04 01_ExclusionSchedule'), 'Testing')
+	
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Facultative Reinsurance Premium_Facul_ae8c61'), '0')
+	
+	
+}
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Statements'))
-
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Date business started_BusinessStartDate'), '01/01/2025')
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_Date business started'))
@@ -294,15 +319,18 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_BindSubmitApp
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Application'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/a_policyNumberLink'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'),10)
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_MORE'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/policyID'), 10)
+if(!isAgent)
+{
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/a_policyNumberLink'), 10)
+	
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'),10)
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_MORE'))
+	
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/policyID'), 10)
+	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'), 'innerHTML')
+	System.out.println('policyNumber = ' + policyNumber)	
+}
 
 System.out.println('quoteNumber = ' + quoteNumber)
-policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'), 'innerHTML')
-System.out.println('policyNumber = ' + policyNumber)
 

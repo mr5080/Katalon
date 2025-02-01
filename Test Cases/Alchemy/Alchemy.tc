@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>21efe324-f8ca-4b93-85bb-9251dcb70fe6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0509f3c5-1b6a-410f-89c3-85f16e258a55</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>0509f3c5-1b6a-410f-89c3-85f16e258a55</id>
+      <masked>false</masked>
+      <name>isAgent</name>
+   </variable>
 </TestCaseEntity>
