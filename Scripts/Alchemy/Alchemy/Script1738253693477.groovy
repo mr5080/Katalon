@@ -118,7 +118,7 @@ if (!isAgent)
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'))
 }
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVESetAll'))
-WebUI.delay(10)
+//WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Coverages'))
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Phone Number_ApplicantPhonezzzz1'), '901-116-5145')
@@ -332,5 +332,25 @@ if(!isAgent)
 	System.out.println('policyNumber = ' + policyNumber)	
 }
 
+// 2.5.25 copied over but not implemented.
+/*WebUI.callTestCase(findTestCase('Alchemy/writeFile'),
+	[('policyType') : policyType,
+	('randomLastName') : randomLastName,
+	('randomFirstName') : randomFirstName,
+	('quoteNumber') : quoteNumber,
+	('todaysDate') : todaysDate,
+	('myDate') : myDate,
+	('totalPremium') : totalPremium,
+//	('policyType') : policyType,
+	('shouldBind') : shouldBind,
+	('stateFL') : stateFL,
+	('isAgent') : isAgent,
+	('paperless') : paperless,
+	('environment') : environment,
+	('addInterest') : addInterest,
+	
+	('todaysTimeStamp') : todaysTimeStamp
+		], FailureHandling.STOP_ON_FAILURE)
+*/
 System.out.println('quoteNumber = ' + quoteNumber)
 

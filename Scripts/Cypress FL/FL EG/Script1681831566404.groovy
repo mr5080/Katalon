@@ -881,19 +881,19 @@ if (addInterest == true) {
 
     //WebUI.delay(3)
     //WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), randomFirstNameForInterest + " " + randomLastName)
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), '121 FINANCIAL CREDIT UNION')
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), '4373 NEWBERRY RD')
 
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestAddress'), 'PO BOX 16688')
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestAddress'), 'ISAOA/ATIMA')
 
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestCity'), 'Jacksonville')
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestCity'), 'GAINESVILLE')
 
     WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_InterestState'), 'FL', true)
 
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestZip'), '32245')
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestZip'), '32607')
 
     WebUI.sendKeys(findTestObject('Cypress 4/Page_/input - InterestZip'), Keys.chord(Keys.TAB))
 
-    /*	elementPresent = WebUI.waitForAlert(5)
+    	elementPresent = WebUI.waitForAlert(5)
 		if (elementPresent == true) {
 		alertText = WebUI.getAlertText()
 	
@@ -909,7 +909,7 @@ if (addInterest == true) {
 		 //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
 			
 	}
-	*/
+	
     /*
 	try {
 		// cant access any test object after accepting alert
@@ -926,6 +926,7 @@ if (addInterest == true) {
     WebUI.click(findTestObject('Cypress 4/Page_/input - InterestLoanNumber'))
 
     WebUI.sendKeys(findTestObject('Cypress 4/Page_/input - InterestLoanNumber'), '465487894')
+	WebUI.delay(1)
 }
 
 'Statements button'
@@ -985,9 +986,18 @@ WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentPlanOption'), payPlanOption, true)
 
+if (addInterest == true) 
+{
+	WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 2)
+	WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 2)
+	
+}
+else 
+{
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
-
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
+}
+
 
 'Display Quote button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Display Quote'))
@@ -1035,6 +1045,7 @@ if(paperless == true)
 //select payment method logic
 WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
+		('addInterest') : addInterest,
 		('fullName') : fullName,
 	 ('randomLastName') : randomLastName		
 		 ], FailureHandling.STOP_ON_FAILURE)
@@ -1062,6 +1073,7 @@ WebUI.callTestCase(findTestCase('Cypress FL/writeFile'),
 	('isAgent') : isAgent,
 	('paperless') : paperless,
 	('environment') : environment,
+	('addInterest') : addInterest,
 	
 	('todaysTimeStamp') : todaysTimeStamp	
 	    ], FailureHandling.STOP_ON_FAILURE)

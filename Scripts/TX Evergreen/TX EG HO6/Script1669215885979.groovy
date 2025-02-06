@@ -249,7 +249,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'S', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+//WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), '2015')
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), YOC)		// this is year to use with YOC variable
 
 

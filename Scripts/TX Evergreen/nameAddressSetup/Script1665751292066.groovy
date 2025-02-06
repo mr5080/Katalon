@@ -60,6 +60,28 @@ else if(manualAddress == 'claims')
 	// fill in eventually
 }
 	
+else if(manualAddress == 'creditReport')
+	{
+		
+		def nameAddressData = ['randomFirstName': 'PENELOPE',
+				'randomLastName': 'BARAJAS',
+				'addressTX': '2317 CAPITAN DR',
+				'cityTX': 'CORPUS CHRISTI',
+				'stateTX': 'TX',
+				'zipTX': '78414'
+				]
+			return nameAddressData
+		/*
+		def nameAddressData = ['randomFirstName': 'Victoria',
+				'randomLastName': 'Alsip',
+				'addressTX': '201 Yorkshire',
+				'cityTX': 'Victoria',
+				'stateTX': 'TX',
+				'zipTX': '77904'
+				]
+			return nameAddressData
+		*/
+	}
 
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)

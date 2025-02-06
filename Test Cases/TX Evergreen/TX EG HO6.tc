@@ -61,7 +61,7 @@
       <variableId>c157a9ab-b1c6-490e-a38f-4a6dbde755a3</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>04007e58-03ac-42bd-beb3-1e123de51091</id>
       <masked>false</masked>
@@ -82,15 +82,15 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>manual, claim, truerisk, PC10</description>
+      <defaultValue>'creditReport'</defaultValue>
+      <description>manual, claim, truerisk, PC10, creditReport</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>
       <name>manualAddress</name>
