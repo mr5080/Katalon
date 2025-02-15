@@ -5,12 +5,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'Mani',
-		'randomLastName': 'Marson',
-			'addressTX': '34994 KRETZ RD',
-			'cityTX': 'LOS FRESNOS',
+	def nameAddressData = ['randomFirstName': 'PENELOPE',
+		'randomLastName': 'BARAJAS ',
+			'addressTX': ' 2317 CAPITAN DR CORPUS',
+			'cityTX': 'CORPUS CHRISTI',
 			'stateTX': 'TX',
-			'zipTX': '78566'
+			'zipTX': '78414'
 		]
 	return nameAddressData	
 }	
@@ -38,7 +38,7 @@ else if(manualAddress == 'truerisk')
 	
 	def nameAddressData = ['randomFirstName': 'King',
 			'randomLastName': 'Kimley',
-			'addressTX': '1201 DULLES AV',
+			'addressTX': '1201 DULLES AVE',
 			'cityTX': 'STAFFORD',
 			'stateTX': 'TX',
 			'zipTX': '77477'
@@ -55,38 +55,36 @@ else if(manualAddress == 'truerisk')
 		return nameAddressData
 	*/
 }
-else if(manualAddress == 'claims')
+else if(manualAddress == 'claim')
 {
 	// fill in eventually
+	def nameAddressData = ['randomFirstName': 'Ruben',
+		'randomLastName': 'Smooth',
+		'addressTX': '320 Country Road 311',
+		'cityTX': 'Cleveland',
+		'stateTX': 'TX',
+		'zipTX': '77327'
+		]
+	return nameAddressData
+	
 }
 	
 else if(manualAddress == 'creditReport')
-	{
-		
-		def nameAddressData = ['randomFirstName': 'PENELOPE',
-				'randomLastName': 'BARAJAS',
-				'addressTX': '2317 CAPITAN DR',
-				'cityTX': 'CORPUS CHRISTI',
-				'stateTX': 'TX',
-				'zipTX': '78414'
-				]
-			return nameAddressData
-		/*
-		def nameAddressData = ['randomFirstName': 'Victoria',
-				'randomLastName': 'Alsip',
-				'addressTX': '201 Yorkshire',
-				'cityTX': 'Victoria',
-				'stateTX': 'TX',
-				'zipTX': '77904'
-				]
-			return nameAddressData
-		*/
-	}
+{	
+	def nameAddressData = ['randomFirstName': 'Victoria',
+			'randomLastName': 'Alsip',
+			'addressTX': '201 Yorkshire',
+			'cityTX': 'Victoria',
+			'stateTX': 'TX',
+			'zipTX': '77904'
+			]
+		return nameAddressData
+}
 
 
-Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
+Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'TX Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
-int randomTXaddress = 2 + ((Math.random() * ((110 - 2) + 1)) as int)
+int randomTXaddress = 2 + ((Math.random() * ((210 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomTXaddress = 510
@@ -99,7 +97,7 @@ cityTX = addressData.getValue(2, randomTXaddress - 1).toUpperCase()
 stateTX = addressData.getValue(3, randomTXaddress - 1).toUpperCase()
 zipTX = addressData.getValue(4, randomTXaddress - 1)
 
-Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
+Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
 System.out.println(randomFirstNameRow)
 randomFirstName = firstNameData.getValue(1, randomFirstNameRow)
@@ -107,7 +105,7 @@ System.out.println('randomFirstName  =====    ' + randomFirstName)
 randomFirstName = randomFirstName.replaceAll('[\\d.]', '')
 
 // Last name from excel file
-Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
+Object lastNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'LastName', false)
 int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
 //String randomLastName = lastNameData.getValue(1, randomLastNameRow).replaceAll("\\d","")
 randomLastName = lastNameData.getValue(1, randomLastNameRow)

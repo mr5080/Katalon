@@ -64,7 +64,7 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'coastal'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>highCrime, inland, coastal</description>
       <id>be05ae07-3316-4fc9-84a0-e79ca49aeac5</id>
       <masked>false</masked>

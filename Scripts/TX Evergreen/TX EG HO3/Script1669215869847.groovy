@@ -130,6 +130,26 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Z
 WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
 
+
+
+try {
+		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	System.out.println('clicked GEOCODE button')
+	WebUI.delay(6)
+}
+catch (Exception e) {
+	System.out.println('Exception - ' + e)
+}
+
+
+
+
+
+
+// try catch this? look at other code?, added code above 2.14.25, maybe that works???
+
+
+
 //WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
 
@@ -142,8 +162,8 @@ if(WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Pag
 else
 {
 	System.out.println('NO GEOCODE button')
-}*/
-
+}
+*/
 
 // uncommented try catch 8.5.24
 try {
@@ -209,7 +229,7 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2019')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2025')
 
 
 
@@ -229,9 +249,9 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant Su
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1980')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1950')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'M', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'X', true)
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -279,7 +299,7 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2019')
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -289,12 +309,12 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownOtherVeneer BrickMasonryAlumi_f7e94c'), 'VENEER', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 'FINISHED', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Slab - Closed FoundationCrawl Space _2f2f45'), 'PARTIAL', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEScreenedEnclosure_1'))
 
-//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 'V', true)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_FrameMasonryMasonry VeneerSuperior'), 3)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_ConstructionType'), 'V', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_ConstructionType'), 4)
 
 
 
@@ -302,14 +322,14 @@ String squareFoot = WebUI.getAttribute(findTestObject('Object Repository/TX EG H
 System.out.println("squareFoot = " + squareFoot)		// outputs default squareFoot value
 if(squareFoot.length() < 3)
 {
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1333')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '2143')
 	System.out.println("set squareFoot = 1333")
 }
 
 
 WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2025')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater fd')
 
@@ -359,7 +379,7 @@ else {
 
 
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_2530354045505560657075'), '45', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_2530354045505560657075'), '25', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1,0002,0003,0004,0005,000'), '5000', true)
 
@@ -406,7 +426,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEBu
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVECompanionPolicyDiscount_1'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_NoneLocalCentralFire Station'), 'LOCAL', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_NoneLocalCentralFire Station'), 'CENTRAL', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEMultiPolicyDiscount_1'))
 

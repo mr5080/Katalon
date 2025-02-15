@@ -647,7 +647,7 @@ if(policyType == 'HO3')
 {	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
 		   
-	WebUI.delay(5)
+	WebUI.delay(2)
 	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 	

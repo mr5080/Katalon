@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_FrameMasonryMasonry VeneerSuperior</name>
+   <name>select_ConstructionType</name>
    <tag></tag>
    <elementGuidId>766ee59c-3dfd-42b6-88fa-99a6b652a694</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='ConstructionType_1']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ConstructionType_1</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='ConstructionType_1']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -46,7 +46,7 @@ System.out.println("addInterest(from childTestCase) = " + addInterest)
 
 // copied from Cypress 4
 
-FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 
 	XSSFWorkbook workbook = new XSSFWorkbook(file)
 
@@ -136,7 +136,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			file.close()
 		
 			try {
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressAutoQuotes.xlsx'))				
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressAutoQuotes.xlsx'))				
 		
 				workbook.write(outFile)
 		
@@ -147,7 +147,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 		
 				WebUI.delay(20)
 				// try to write again, file is probably open...
-				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressAutoQuotes.xlsx'))
+				FileOutputStream outFile = new FileOutputStream(new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 		
 				workbook.write(outFile)
 		
