@@ -298,7 +298,7 @@ if (squareFoot.length() < 3) {
     System.out.println('set squareFoot = 1666')
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2011')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2022')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 
     'ARCHITECTURAL', true)
@@ -317,15 +317,15 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Less than 1000 feetOver 1000 feet'), 
     'LT1000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), '2500', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125_1'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), '2500', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,5005,000125_1_2'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), '2500', true)
 
 //WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '146000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '201000')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 

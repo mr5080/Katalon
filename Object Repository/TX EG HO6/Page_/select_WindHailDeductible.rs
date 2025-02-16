@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1,0002,5005,000125_1</name>
+   <name>select_WindHailDeductible</name>
    <tag></tag>
-   <elementGuidId>41290281-015c-40ca-8fe7-abf384a8cbf0</elementGuidId>
+   <elementGuidId>fa8a35ba-0c83-4360-9f49-e69e394d5142</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#StormDeductible_1</value>
+         <key>XPATH</key>
+         <value>//select[@id='WindHailDeductible_1']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='StormDeductible_1']</value>
+         <key>CSS</key>
+         <value>#WindHailDeductible_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>e4e6926e-b2e6-481a-9b86-9e7c83bdd37b</webElementGuid>
+      <webElementGuid>5edc3e55-f601-4b94-a6fd-fde6fa285a51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +31,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>8b277e20-f8d6-43c3-8c84-2d5b8c745768</webElementGuid>
+      <webElementGuid>e4b913cc-7c32-4ed7-999b-0180fc7e571b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +39,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>1cb33948-5324-4e4e-9777-cf5df7eef671</webElementGuid>
+      <webElementGuid>03faedf6-5346-4272-973a-3ed6c19b522b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,23 +47,23 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control </value>
-      <webElementGuid>2331b034-463a-42cc-8e2e-78260fde1bb2</webElementGuid>
+      <webElementGuid>7210f99b-06c8-41b7-a383-d4d4bd05a4ca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>StormDeductible_1</value>
-      <webElementGuid>266b65a6-44d8-4d7b-ae23-0da9b5abcfb9</webElementGuid>
+      <value>WindHailDeductible_1</value>
+      <webElementGuid>f07c1083-16a9-40ca-abcb-7da4708b7281</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>StormDeductible_1</value>
-      <webElementGuid>dbdf262e-ba37-471e-b0ca-d77b0899a8a9</webElementGuid>
+      <value>WindHailDeductible_1</value>
+      <webElementGuid>79bb202d-5d3a-4f3c-be1e-90fb8049c9a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +71,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalOnBlur();  GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>6ee3088d-a1ce-4dd0-8403-96fb7a2acdde</webElementGuid>
+      <webElementGuid>19e5acc2-e33f-498e-a89a-409bafc7eae8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +79,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
-      <webElementGuid>322d3321-939b-4390-a134-c3fa6abd0462</webElementGuid>
+      <webElementGuid>387bacc5-2614-41e3-8f7b-2ebcf5f32382</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -112,15 +113,15 @@
 								
 								
 				</value>
-      <webElementGuid>b12e760f-0c53-4515-92ef-596140ad2bd4</webElementGuid>
+      <webElementGuid>e9e45c0a-3649-420d-8cfc-c7b9578b3c0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;StormDeductible_1&quot;)</value>
-      <webElementGuid>44a3e28a-8f6b-4910-9d69-3d44806ec5e8</webElementGuid>
+      <value>id(&quot;WindHailDeductible_1&quot;)</value>
+      <webElementGuid>e9370964-9479-487a-9a01-1a070d5d2be9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -128,70 +129,70 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>ceecafce-3dd5-4a98-ad70-2a4bb4feff77</webElementGuid>
+      <webElementGuid>2cec62c7-50d3-48db-b922-6edca2f4b58e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//select[@id='StormDeductible_1']</value>
-      <webElementGuid>2edffe2a-4f97-42eb-bcb2-ebd5dfaf8e4e</webElementGuid>
+      <value>//select[@id='WindHailDeductible_1']</value>
+      <webElementGuid>54eaea1e-12ef-499c-b6f2-123be4bb752d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='Wrapper-Left-StormDeductible_1']/div[2]/select</value>
-      <webElementGuid>ba4e5d72-b0da-4ddf-a7c6-0922beae95ec</webElementGuid>
+      <value>//div[@id='Wrapper-Left-WindHailDeductible_1']/div[2]/select</value>
+      <webElementGuid>73995b5e-be03-4ab0-a3d1-4ce3ccf5a467</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Windstorm/Hail Deductible'])[1]/following::select[1]</value>
-      <webElementGuid>5f0ae01b-d6be-45e0-ad54-7e481e81e159</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hurricane Deductible'])[1]/following::select[1]</value>
+      <webElementGuid>74d0ed36-91b2-4704-aecf-0e5c963c7193</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='AOP'])[1]/following::select[2]</value>
-      <webElementGuid>76fd1042-07f2-4625-bc15-f0c9ae5c9867</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Windstorm/Hail Deductible'])[1]/following::select[2]</value>
+      <webElementGuid>f65a7898-c3d4-4393-ad6b-d3c4da2c264f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hurricane Deductible'])[1]/preceding::select[1]</value>
-      <webElementGuid>bc7edd0b-ab37-4cbb-a00e-cbd711aa7480</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Coverage'])[1]/preceding::select[1]</value>
+      <webElementGuid>d10e2222-1c20-4c56-978a-8983d2b95295</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Coverage'])[1]/preceding::select[2]</value>
-      <webElementGuid>b880591e-431a-4571-9ec6-930a1104c92e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dwelling - Cov A'])[1]/preceding::select[1]</value>
+      <webElementGuid>1f1b6fac-75aa-4a36-8427-4930858cf76a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[2]/select</value>
-      <webElementGuid>db517eee-aa2a-4b76-b0f3-d090620e93e1</webElementGuid>
+      <value>//div[3]/div[2]/select</value>
+      <webElementGuid>115864d0-6d3e-46c6-b0b7-63ec5ab80620</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//select[@name = 'StormDeductible_1' and @id = 'StormDeductible_1' and (text() = '
+      <value>//select[@name = 'WindHailDeductible_1' and @id = 'WindHailDeductible_1' and (text() = '
 					
 								
 									$1,000
@@ -244,6 +245,6 @@
 								
 								
 				')]</value>
-      <webElementGuid>47944c87-b769-4161-a68f-9a30171c5022</webElementGuid>
+      <webElementGuid>44a689ce-971c-475a-a2d7-6c63b6684b23</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
