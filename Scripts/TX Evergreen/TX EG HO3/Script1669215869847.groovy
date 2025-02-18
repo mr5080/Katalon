@@ -211,8 +211,6 @@ if (isAgent == false) {
 			// add key down/up here
 			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord(Keys.ENTER))  // was .TAB, trying soemthing new 11.17.22
 //			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-
-
 			
 		//	WebUI.delay(1)
 
@@ -229,7 +227,7 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2025')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2020')
 
 
 
@@ -249,7 +247,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant Su
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/1950')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/2000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'X', true)
 
@@ -261,6 +259,7 @@ System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
 {
+	
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 QUEEN ST')
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'HARRISBURG')
@@ -268,6 +267,24 @@ if (randomNumber == 0) // fill out US prior mailing address
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '17113')
+	
+// Prior Address credit data pulled	
+/*	
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '1716 Cherry Ln')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'LAKELAND')
+	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'FL', false)
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '33811')
+*/
+/*	
+	//hard coding prior address as Transunion credit report
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '817 Pipers Cay Dr')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'West Palm Beach')
+	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'FL', false)
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '33425')
+*/	
+	
+	
+			
 }
 else
 {
@@ -299,7 +316,7 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2016')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2011')
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -347,11 +364,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_UnknownNo ProtectionWood ShuttersBas_8ed146'), 'SHUTTERS', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1,0002,5005,000125'), '5', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_AOP'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1,0002,5005,000125_1'), '5', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_WindstormHail'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_125'), '5', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Hurricane'), '5', true)
 
 
 
@@ -507,16 +524,13 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Prequalification'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVE_1'))
-WebUI.comment("before clicking Coverage button")
+
 'Click Coverage button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Coverage'))
-WebUI.comment("after clicking Coverage button")
 
 'Click General button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_General'))
-WebUI.comment("after clicking General button")
 
-WebUI.comment("before trying to click copper")
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Protection Class 1Protection Class 2_2c389b'), '2', true)

@@ -213,14 +213,13 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Numb
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
 int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + 
-    randomEmail) + '@cornerops.com')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord(
-        '09/01/1978', Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1978', Keys.TAB))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M', 
-    true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'D',   true)
+
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2020')
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -314,31 +313,35 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 
     '01', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Less than 1000 feetOver 1000 feet'), 
-    'LT1000', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Less than 1000 feetOver 1000 feet'),   'GT1000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), '2500', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), '2500', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), '2500', true)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 1)
+/*
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1, true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 1, true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 1, true)
+*/
+
 
 //WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '201000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '119000')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '150000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '125000')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_20 of Cov C30 of Cov C40 of Cov C'), 
-    '30', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_20 of Cov C30 of Cov C40 of Cov C'), '40', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_100,000200,000300,000400,000500,000'), 
-    '300000', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_100,000200,000300,000400,000500,000'),  '200000', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,0003,0004,0005,000'), '3000', 
-    true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,0003,0004,0005,000'), '5000',  true)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), 'CONDO', true)
 // 0 = None, 1 = Edge, 2 = EdgePlus
@@ -389,7 +392,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Previous C
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Previous Expiration Date_PriorExpirat_a5430d'), effectiveDate)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Previous Policy_PriorPolicyNumber_1'), '1234560')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Previous Policy_PriorPolicyNumber_1'), '54858488')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_BOB'), 'N', true)
 
@@ -401,15 +404,13 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Coverage'))
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_General'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 
-    'COPPER', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'PEX', true)
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Is this a protected subdivision_NOSAV_0a5ef2'))
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
 //  not working 2.12.25
 if (isAgent == false) {
-    String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/select_ProtectionClass'), 
-        'value' // gets dropdown value
+    String protectionClass = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/select_ProtectionClass'),         'value' // gets dropdown value
         )
 
     System.out.println('protectionClass = ' + protectionClass // outputs dropdown value

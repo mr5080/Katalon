@@ -36,8 +36,8 @@ else if(manualAddress == 'PC10')	// address returns PC10
 else if(manualAddress == 'truerisk')
 {
 	
-	def nameAddressData = ['randomFirstName': 'King',
-			'randomLastName': 'Kimley',
+	def nameAddressData = ['randomFirstName': 'Michael',
+			'randomLastName': 'THATE',
 			'addressTX': '1201 DULLES AVE',
 			'cityTX': 'STAFFORD',
 			'stateTX': 'TX',
