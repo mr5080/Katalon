@@ -227,7 +227,7 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2020')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2018')
 
 
 
@@ -247,7 +247,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant Su
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '09/03/2000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '08/01/1977')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'X', true)
 
@@ -294,11 +294,11 @@ else
 
 	System.out.println('selectedAddressType = ' + selectedAddressType)
 
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '9584 saint international st')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '584 saint international st')
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 10010001')
 
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'Germany')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'China')
 }
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
@@ -316,7 +316,7 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2011')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2001')
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -339,14 +339,14 @@ String squareFoot = WebUI.getAttribute(findTestObject('Object Repository/TX EG H
 System.out.println("squareFoot = " + squareFoot)		// outputs default squareFoot value
 if(squareFoot.length() < 3)
 {
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '2143')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1243')
 	System.out.println("set squareFoot = 1333")
 }
 
 
 WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2018')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater fd')
 
@@ -373,7 +373,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '301500')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '401500')
 
 // check this div for 0.00, if it contains 0.00 then populate dwellingLimit_1 with something
 
@@ -384,7 +384,7 @@ String replacementCost360 = WebUI.getAttribute(findTestObject('Object Repository
 if(replacementCost360.contains("\$0.00"))
 {
 	System.out.println("replacement cost is 0.00, need to manually set value")
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '301500')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '401500')
 	//replacementCost360 = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/div_Suggested Replacement Cost'), 'innerHTML' )
 }
 else {

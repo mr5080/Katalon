@@ -9,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -125,7 +126,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Effective 
 //WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/a_8'))
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_First Name_ApplicantFirst'), randomFirstName)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Middle Name_ApplicantMiddle'), 'p')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Middle Name_ApplicantMiddle'), 'd')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Last Name_ApplicantLast'), randomLastName)
 
@@ -206,7 +207,7 @@ if (isAgent == false) {
     }
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2020')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2015')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-2255')
 
@@ -215,11 +216,11 @@ int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1966', Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1976', Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M',   true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2010')
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -254,7 +255,7 @@ if (randomNumber == 0) // fill out US prior mailing address
 
     WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 10010001')
 
-    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'Germany')
+    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'Spain')
 }
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectNoYes'), 'Y', true)
@@ -292,34 +293,52 @@ System.out.println('squareFoot = ' + squareFoot // outputs default squareFoot va
     )
 
 if (squareFoot.length() < 3) {
-    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '2196')
+    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1806')
 
     System.out.println('set squareFoot = 1666')
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2005')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2018')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 
-    'ARCHITECTURAL', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1 (Ground Floor)23456789101112131415_89fb3d'), 
-    '1', true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Responding Fire Department_Responding_eb6df6'), 'houston')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Protection Class 1Protection Class 2_2c389b'), 
-    '1', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), 
-    '01', true)
+TestObject numStories = findTestObject('Object Repository/TX EG HO6/Page_/select_NumStoriesBuilding')
+
+// Get the total number of options in the dropdown
+int totalStories = WebUI.getNumberOfTotalOption(numStories)
+System.out.println('totalStories = ' + totalStories)
+
+Random randomStories = new Random()
+int randomFloorNum = randomStories.nextInt(totalStories) 
+System.out.println('randomFloorNum = ' + randomFloorNum)
+WebUI.selectOptionByIndex(numStories, randomFloorNum)  // use this for random values
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), randomFloorNum)  
+
+// these manually set stories and floor
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NumStoriesBuilding'), '1', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), '1', true)
+
+
+
+
+
+
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Responding Fire Department_Responding_eb6df6'), 'beachey')
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Protection Class 1Protection Class 2_2c389b'),   '1', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'),  '01', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Less than 1000 feetOver 1000 feet'),   'GT1000', true)
 
 
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 2)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 2)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 1)
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1, true)
 
@@ -335,11 +354,11 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingL
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '99000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '102000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_20 of Cov C30 of Cov C40 of Cov C'), '40', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_100,000200,000300,000400,000500,000'),  '200000', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_100,000200,000300,000400,000500,000'),  '300000', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_1,0002,0003,0004,0005,000'), '5000',  true)
 

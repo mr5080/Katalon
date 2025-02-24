@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_1 (Ground Floor)23456789101112131415_89fb3d</name>
+   <name>select_UnitLocatedOnFloor</name>
    <tag></tag>
    <elementGuidId>45d1983d-c03c-479d-8a82-208849b00adf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#UnitFloorNumber_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='UnitFloorNumber_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#UnitFloorNumber_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
