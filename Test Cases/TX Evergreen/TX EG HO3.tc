@@ -54,6 +54,12 @@
       <value></value>
       <variableId>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e8d9805f-b6f4-4a17-90e5-2eef704481c8</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
@@ -62,14 +68,14 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'04/02/2025'</defaultValue>
+      <defaultValue>'04/05/2025'</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
@@ -109,5 +115,12 @@
       <id>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</id>
       <masked>false</masked>
       <name>paperless</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>e8d9805f-b6f4-4a17-90e5-2eef704481c8</id>
+      <masked>false</masked>
+      <name>overrideTier</name>
    </variable>
 </TestCaseEntity>

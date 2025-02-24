@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Effective Date_EffectiveDate</name>
+   <name>input_Yes_NOOverrideTier</name>
    <tag></tag>
-   <elementGuidId>eb3ea38c-8fbe-477a-84e1-ea47ea81ec7e</elementGuidId>
+   <elementGuidId>17a1ff62-8445-4a18-8cd9-8527592add3d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#EffectiveDate</value>
+         <value>#NOSAVEScreenedEnclosure_1No</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='EffectiveDate']</value>
+         <value>//input[@id='NOSAVEORTierYes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,79 +23,87 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>81eb04f0-3db2-41b3-bdc4-b265f3231eeb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>02b7a70a-5de7-4ef5-951a-cd092ff67961</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>EffectiveDate</value>
-      <webElementGuid>fa21a784-a168-48f4-a3bf-5d9e1b8272b9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>EffectiveDate</value>
-      <webElementGuid>616f5a11-8be4-45ef-af6b-42e6f481ca58</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>10/27/2022</value>
-      <webElementGuid>888558b0-f240-48a7-87fe-fc76500465a8</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onblur</name>
-      <type>Main</type>
-      <value>; chkDate(this) </value>
-      <webElementGuid>f5e5a9e5-de2f-48c8-abe6-ce4e9f98025c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeyup</name>
-      <type>Main</type>
-      <value>maskDate(this)</value>
-      <webElementGuid>e9bbfaf4-a72a-4ce0-be77-6a4f781f906f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>mm/dd/yyyy</value>
-      <webElementGuid>533ee24d-84b7-4138-b827-ee9907eebff7</webElementGuid>
+      <webElementGuid>be598d99-7672-4b87-b818-4df4e8cee46e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>hasDatepicker</value>
-      <webElementGuid>36de6458-21a3-443d-bd93-476b08cb6933</webElementGuid>
+      <value>form-check-input</value>
+      <webElementGuid>83eedc3c-ee31-4fbb-82b0-f485b8759b35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>radio</value>
+      <webElementGuid>6265cdc8-bd29-4a8d-9cf0-7d0b084fc8de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-disablemessagetrigger</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>3b3c6192-34f5-4c10-bde7-dddd25b2a578</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>NOSAVEScreenedEnclosure_1</value>
+      <webElementGuid>1b968c5b-1fdb-4644-9455-0596c5dcfb0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>NOSAVEScreenedEnclosure_1No</value>
+      <webElementGuid>332fe8a7-bcef-4f1b-842c-222a21a4588d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>N</value>
+      <webElementGuid>4d8d17e4-c1d6-41d8-aadc-acbb96436f0b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value>updateYesNoValue(this);  GlobalOnChange();  GlobalCheckDisable(this);</value>
+      <webElementGuid>9e2df5dc-a68b-4249-b545-c8ffcafc8cce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>;</value>
+      <webElementGuid>9441e98f-a619-4eee-a0ef-7025fabd63bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onblur</name>
+      <type>Main</type>
+      <value> GlobalOnBlur();  GlobalCheckDisable(this);</value>
+      <webElementGuid>d5117ea5-1c86-4c2a-84ab-9341028c866a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;EffectiveDate&quot;)</value>
-      <webElementGuid>c8047619-c920-4c31-968a-88b5883fdecc</webElementGuid>
+      <value>id(&quot;NOSAVEScreenedEnclosure_1No&quot;)</value>
+      <webElementGuid>cd1544e3-0557-465c-8f53-73435cb76759</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -103,6 +111,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>551b70c3-1607-4962-884f-b2a2600aad6e</webElementGuid>
+      <webElementGuid>a5346db6-6611-4aae-be46-6f7f26f27127</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

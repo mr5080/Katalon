@@ -373,7 +373,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '201500')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '301500')
 
 // check this div for 0.00, if it contains 0.00 then populate dwellingLimit_1 with something
 
@@ -384,7 +384,7 @@ String replacementCost360 = WebUI.getAttribute(findTestObject('Object Repository
 if(replacementCost360.contains("\$0.00"))
 {
 	System.out.println("replacement cost is 0.00, need to manually set value")
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '201500')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '301500')
 	//replacementCost360 = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/div_Suggested Replacement Cost'), 'innerHTML' )
 }
 else {
@@ -455,7 +455,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEPa
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1 or 2,
 randomBundle = (((Math.random() * 2) as int) + 1)
-randomBundle = 2
+//randomBundle = 2
 System.out.println('randomBundle = ' + randomBundle)
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
@@ -527,6 +527,42 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVE_1
 
 'Click Coverage button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Coverage'))
+
+
+// add override tier button, select random from dropdown
+
+if(overrideTier)
+{	
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOOverrideTier'))  // click yes
+	//WebUI.delay(1)
+	
+	
+	
+	// Locate the dropdown TestObject
+	TestObject dropdown = findTestObject('Object Repository/TX EG HO3/Page_/select_CreditTierOverride')
+	
+	// Get the total number of options in the dropdown
+	int totalOptions = WebUI.getNumberOfTotalOption(dropdown)
+	
+	// Generate a random index (between 1 and totalOptions)
+	Random rand = new Random()
+	int randomIndex = rand.nextInt(totalOptions) + 1  // Index starts from 1 in Katalon
+	//randomIndex = 10  // always use the same override option...
+	
+	
+	// Select a random option using the generated index
+	WebUI.selectOptionByIndex(dropdown, randomIndex)  // use this for random values
+	//WebUI.selectOptionByIndex(dropdown, totalOptions-1)	// use this to set manual selection
+	
+	
+//println "Random option selected: " + WebUI.getText(dropdown)
+	
+//	WebUI.delay(10)
+	//WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_CreditTierOverride'), 5)
+}
+
+
+
 
 'Click General button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_General'))
@@ -648,7 +684,7 @@ else
 	policyNumber = 'not bound with code'
 	// forces last name to be saved for Recurring payments
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoBackOnePage'))
-	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoForwardOnePage'))
+	//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_GoForwardOnePage'))
 	
 	/*
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote_1'))

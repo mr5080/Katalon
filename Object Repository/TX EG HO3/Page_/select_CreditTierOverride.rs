@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Effective Date_EffectiveDate</name>
+   <name>select_CreditTierOverride</name>
    <tag></tag>
-   <elementGuidId>eb3ea38c-8fbe-477a-84e1-ea47ea81ec7e</elementGuidId>
+   <elementGuidId>5f6b8d9c-0837-44f1-bcdd-5bf57c09c7e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#EffectiveDate</value>
+         <value>#Deductible_1</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='EffectiveDate']</value>
+         <value>//select[@id='ORRatingTier']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,80 +22,106 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>81eb04f0-3db2-41b3-bdc4-b265f3231eeb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>02b7a70a-5de7-4ef5-951a-cd092ff67961</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>EffectiveDate</value>
-      <webElementGuid>fa21a784-a168-48f4-a3bf-5d9e1b8272b9</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>EffectiveDate</value>
-      <webElementGuid>616f5a11-8be4-45ef-af6b-42e6f481ca58</webElementGuid>
+      <value>select</value>
+      <webElementGuid>e88274da-3874-4743-8305-ef527acbd1fe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>size</name>
       <type>Main</type>
-      <value>10/27/2022</value>
-      <webElementGuid>888558b0-f240-48a7-87fe-fc76500465a8</webElementGuid>
+      <value>1</value>
+      <webElementGuid>5d924563-72f7-4521-998f-0a37555b1489</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>onblur</name>
+      <name>data-disablemessagetrigger</name>
       <type>Main</type>
-      <value>; chkDate(this) </value>
-      <webElementGuid>f5e5a9e5-de2f-48c8-abe6-ce4e9f98025c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onkeyup</name>
-      <type>Main</type>
-      <value>maskDate(this)</value>
-      <webElementGuid>e9bbfaf4-a72a-4ce0-be77-6a4f781f906f</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>mm/dd/yyyy</value>
-      <webElementGuid>533ee24d-84b7-4138-b827-ee9907eebff7</webElementGuid>
+      <value>false</value>
+      <webElementGuid>9188d339-1bf1-47c7-be36-04791b7cbfa4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>hasDatepicker</value>
-      <webElementGuid>36de6458-21a3-443d-bd93-476b08cb6933</webElementGuid>
+      <value>form-control </value>
+      <webElementGuid>c0d2c6cc-1c83-453d-9ff7-de3bd9b88d71</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Deductible_1</value>
+      <webElementGuid>843eadb4-2f6d-4b60-aa62-ded8b7231072</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Deductible_1</value>
+      <webElementGuid>3985be4b-9083-48f2-b161-1b979aace22e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onblur</name>
+      <type>Main</type>
+      <value> GlobalOnBlur();  GlobalCheckDisable(this);  CheckRequired(false);</value>
+      <webElementGuid>ba949414-6836-439e-b861-bd4e5b2eb719</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onchange</name>
+      <type>Main</type>
+      <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
+      <webElementGuid>a14a4a3d-0fac-4d91-bcf6-ad187bb21028</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+					
+								
+									$1,000
+								
+								
+								
+									$2,500
+								
+								
+								
+									$5,000
+								
+								
+								
+									1%
+								
+								
+								
+									2%
+								
+								
+								
+									5%
+								
+								
+				</value>
+      <webElementGuid>8d265db9-a176-4d75-8187-21cf6458e929</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;EffectiveDate&quot;)</value>
-      <webElementGuid>c8047619-c920-4c31-968a-88b5883fdecc</webElementGuid>
+      <value>id(&quot;Deductible_1&quot;)</value>
+      <webElementGuid>c3d41562-1c3e-4055-96c4-9119e8e23914</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -103,6 +129,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>551b70c3-1607-4962-884f-b2a2600aad6e</webElementGuid>
+      <webElementGuid>f8aed994-2a8a-4c8f-a619-a049509d26d8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

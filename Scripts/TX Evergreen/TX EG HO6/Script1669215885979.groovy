@@ -215,11 +215,11 @@ int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1978', Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1966', Keys.TAB))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'D',   true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M',   true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2020')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2015')
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -292,12 +292,12 @@ System.out.println('squareFoot = ' + squareFoot // outputs default squareFoot va
     )
 
 if (squareFoot.length() < 3) {
-    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1966')
+    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '2196')
 
     System.out.println('set squareFoot = 1666')
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2022')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2005')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 
     'ARCHITECTURAL', true)
@@ -317,9 +317,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 1)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 2)
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1, true)
 
@@ -331,11 +331,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 //WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '119000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '168000')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '125000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '99000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_20 of Cov C30 of Cov C40 of Cov C'), '40', true)
 
@@ -402,9 +402,34 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSAVE_1
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Coverage'))
 
+if(overrideTier)
+	{
+		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOOverrideTier'))  // click yes		
+		// Locate the dropdown TestObject
+		TestObject dropdown = findTestObject('Object Repository/TX EG HO3/Page_/select_CreditTierOverride')
+		
+		// Get the total number of options in the dropdown
+		int totalOptions = WebUI.getNumberOfTotalOption(dropdown)
+		
+		// Generate a random index (between 1 and totalOptions)
+		Random rand = new Random()
+		int randomIndex = rand.nextInt(totalOptions) + 1  // Index starts from 1 in Katalon
+		
+		// Select a random option using the generated index
+		WebUI.selectOptionByIndex(dropdown, randomIndex)  // use this for random values
+		//WebUI.selectOptionByIndex(dropdown, totalOptions-1)	// use this to set manual selection
+		
+		
+	//println "Random option selected: " + WebUI.getText(dropdown)
+		
+	//	WebUI.delay(10)
+		//WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_CreditTierOverride'), 5)
+	}
+	
+
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_General'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'PEX', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Is this a protected subdivision_NOSAV_0a5ef2'))
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
@@ -472,7 +497,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSAVEGQ
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Full PaySemi Annual (55 down)Quarter_8dd4b0'), 
-    '4PAY', true)
+    'FULL', true)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Please SelectJOHN P SMITH SR'), 'Applicant1', 
     true)
@@ -524,7 +549,7 @@ else
 
     WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoBackOnePage'))
 
-    WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoForwardOnePage'))
+    //WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_GoForwardOnePage'))
 }
 
 // pass vars to write for TX  11.18.22
