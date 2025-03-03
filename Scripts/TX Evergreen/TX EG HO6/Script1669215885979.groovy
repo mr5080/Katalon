@@ -89,6 +89,8 @@ RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--star
 
 WebUI.openBrowser('')
 
+try
+{
 //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
     WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
@@ -207,7 +209,7 @@ if (isAgent == false) {
     }
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2018')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-2255')
 
@@ -216,7 +218,7 @@ int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1976', Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1986', Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M',   true)
 
@@ -293,12 +295,12 @@ System.out.println('squareFoot = ' + squareFoot // outputs default squareFoot va
     )
 
 if (squareFoot.length() < 3) {
-    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1806')
+    WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1509')
 
     System.out.println('set squareFoot = 1666')
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2018')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2020')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
@@ -336,9 +338,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 
 
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 1)
-WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 1)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 3)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindstormHail'), 2)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_WindHailDeductible'), 3)
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_AOP'), 1, true)
 
@@ -350,7 +352,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 //WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '168000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '198000')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
@@ -448,7 +450,7 @@ if(overrideTier)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_General'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_plumbingLines'), 'COPPER', true)
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Is this a protected subdivision_NOSAV_0a5ef2'))
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Subdivision_Subdivision_1'), 'johns acres')
@@ -582,4 +584,19 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'), [ //	('policyType') :
 WebUI.closeBrowser()
 
 System.out.println('quoteNumber = ' + quoteNumber)
+}
 
+catch(e)
+{
+	quoteNumber = quoteNumber.replace(':', '')
+	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
+	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+		
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure.jpg')
+		
+	/*
+	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+	*/
+}

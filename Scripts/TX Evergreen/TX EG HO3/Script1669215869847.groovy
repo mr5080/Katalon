@@ -85,6 +85,8 @@ System.out.println('currentYear = ' + currentYear)
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
 
+try {
+	
 //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
 	WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
@@ -247,7 +249,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant Su
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '08/01/1977')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '08/01/1997')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'X', true)
 
@@ -294,14 +296,14 @@ else
 
 	System.out.println('selectedAddressType = ' + selectedAddressType)
 
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '584 saint international st')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '9587 saint international st')
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 10010001')
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Country - International'), 'China')
 }
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectNoYes'), 'Y', true)  // make Y
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_PrimarySecondarySeasonal'), 'PRIMARY', true)
@@ -567,7 +569,7 @@ if(overrideTier)
 'Click General button'
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_General'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'COPPER', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_CopperGalvanizedPVCPolybutylenePEX'), 'PEX', true)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Protection Class 1Protection Class 2_2c389b'), '2', true)
 
@@ -717,3 +719,19 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 
 WebUI.closeBrowser()
 System.out.println('quoteNumber = ' + quoteNumber )
+
+}
+catch(e)
+{
+	quoteNumber = quoteNumber.replace(':', '')
+	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
+	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+		
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO3 Failure.jpg')
+	
+	/*
+	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,
+		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate, ('totalPremium') : totalPremium //	('policyType') : policyType,
+		, ('shouldBind') : shouldBind, ('stateFL') : stateFL, ('isAgent') : isAgent, ('environment') : environment, ('optionalCoverages') : optionalCoverages, ('numInterests') : numInterests, ('todaysTimeStamp') : todaysTimeStamp], FailureHandling.STOP_ON_FAILURE)
+	*/
+}

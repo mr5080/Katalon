@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_CopperGalvanizedPVCPolybutylenePEX</name>
+   <name>select_plumbingLines</name>
    <tag></tag>
    <elementGuidId>64a5e254-94da-4239-b523-5d64e3a36436</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PlumbingPipes_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='PlumbingPipes_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PlumbingPipes_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -19,14 +19,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
-int howMany = 10
+int howMany = 100
 
 int counter = 1
 
 while (counter <= howMany) 
 {
 	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO3'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-   // WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 
    // counter++
 
