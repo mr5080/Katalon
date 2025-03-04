@@ -222,7 +222,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Bi
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M',   true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2010')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2021')
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -352,11 +352,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 //WebUI.delay(10)
 //WebUI.doubleClick(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '198000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input__DwellingLimit_1'), '225001')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/div_Dwelling - Cov A  Personal Property - C_d7aaea'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '102000')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Personal Property - Cov C_ContentsLimit_1'), '59000')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_20 of Cov C30 of Cov C40 of Cov C'), '40', true)
 
@@ -387,9 +387,10 @@ if(Integer.parseInt(YOC) == 1982)
 WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\TXzip\\HO6 screenshots\\TXzip-' + zipTX + 'YOC-' + YOC) + '.jpg')	// take first screenshot
 */
 if (stopQQ) {
-    WebUI.delay(10)
-
-    return null //System.exit(0)
+    //WebUI.delay(10)
+    //return null //System.exit(0)
+	//return	// closes window
+	System.exit(0)  // keeps window open
 }
 
 /*
@@ -423,7 +424,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_Yes_NOSAVE_1
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Coverage'))
 
-if(overrideTier)
+if(overrideTier & !isAgent)
 	{
 		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOOverrideTier'))  // click yes		
 		// Locate the dropdown TestObject

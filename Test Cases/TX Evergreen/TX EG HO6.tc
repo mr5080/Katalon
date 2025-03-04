@@ -67,14 +67,14 @@
       <variableId>2f453729-3adc-4bcb-a131-81f72ace2668</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>04007e58-03ac-42bd-beb3-1e123de51091</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>'04/04/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>2cf2d68c-3623-45b4-b1be-6a846e46ce2a</id>
       <masked>false</masked>
@@ -88,7 +88,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
@@ -116,8 +116,8 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>'1995'</defaultValue>
-      <description>1983 = open for rating, 1982 = closed for rating</description>
+      <defaultValue>'2020'</defaultValue>
+      <description>HO6 only open for last 10 years, 3.4.25 COG06855</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>
       <name>YOC</name>

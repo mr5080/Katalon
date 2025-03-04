@@ -61,21 +61,21 @@
       <variableId>e8d9805f-b6f4-4a17-90e5-2eef704481c8</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>4331810b-2976-4406-98c7-47c38b584da1</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'04/05/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>

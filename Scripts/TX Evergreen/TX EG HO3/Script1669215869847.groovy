@@ -229,7 +229,7 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2018')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2022')
 
 
 
@@ -249,7 +249,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant Su
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '08/01/1997')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '08/01/1987')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_DivorcedMarriedSingleSeparated'), 'X', true)
 
@@ -318,7 +318,7 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2001')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2022')
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -348,7 +348,7 @@ if(squareFoot.length() < 3)
 
 WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2022')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater fd')
 
@@ -407,7 +407,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // opens 360 value modal
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
 	   
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 
@@ -533,7 +533,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Coverage'))
 
 // add override tier button, select random from dropdown
 
-if(overrideTier)
+if(overrideTier && !isAgent)	// only internal can override tier score
 {	
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOOverrideTier'))  // click yes
 	//WebUI.delay(1)

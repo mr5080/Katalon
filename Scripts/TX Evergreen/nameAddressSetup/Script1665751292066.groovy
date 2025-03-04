@@ -5,12 +5,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'PENELOPE',
-		'randomLastName': 'BARAJAS ',
-			'addressTX': ' 2317 CAPITAN DR CORPUS',
-			'cityTX': 'CORPUS CHRISTI',
+	def nameAddressData = ['randomFirstName': 'Kaloalaps',
+		'randomLastName': 'Kored',
+			'addressTX': '10843 W Dogwood Dr',
+			'cityTX': 'La Porte',
 			'stateTX': 'TX',
-			'zipTX': '78414'
+			'zipTX': '77571'
 		]
 	return nameAddressData	
 }	

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 int howMany = 100
 
-boolean shouldBind = false
+boolean shouldBind = true
 
 int counter = 1
 
