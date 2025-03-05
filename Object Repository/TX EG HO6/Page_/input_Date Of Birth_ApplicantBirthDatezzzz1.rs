@@ -6,15 +6,16 @@
    <elementGuidId>807d49f8-7538-4236-bba1-8e23273dcabf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantBirthDatezzzz1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='ApplicantBirthDatezzzz1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ApplicantBirthDatezzzz1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>d8adf7eb-0d8f-4449-86c5-c7e882fd3231</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

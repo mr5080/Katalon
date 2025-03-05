@@ -6,15 +6,16 @@
    <elementGuidId>6bf55c10-d289-4a4b-bda0-86bbfe7da2d3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEGQForSale_1No</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEGQForSale_1No']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEGQForSale_1No</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>7284822d-88f4-4718-88cc-8df722337542</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

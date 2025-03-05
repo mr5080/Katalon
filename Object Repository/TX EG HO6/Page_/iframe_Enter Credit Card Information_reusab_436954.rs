@@ -6,15 +6,16 @@
    <elementGuidId>45522dc9-ca9a-46f5-8d10-7caba57b5379</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#reusableiFrameBody</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//iframe[@id='reusableiFrameBody']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#reusableiFrameBody</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>e2323f04-e3f6-4333-89f0-6bae5a1c881f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

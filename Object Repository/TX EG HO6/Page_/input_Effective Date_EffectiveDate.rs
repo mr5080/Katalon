@@ -6,15 +6,16 @@
    <elementGuidId>0214d709-3161-44a5-a9bb-7f79adbd70a9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#EffectiveDate</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='EffectiveDate']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#EffectiveDate</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +102,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>74782bd7-58c1-4e95-bda7-efca7f730331</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

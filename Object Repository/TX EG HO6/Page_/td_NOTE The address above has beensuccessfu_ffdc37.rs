@@ -6,15 +6,16 @@
    <elementGuidId>92a941ba-f523-4d43-8798-d66f2a398475</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#GMDisplayGeocodeSuccess > td</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//tr[@id='GMDisplayGeocodeSuccess']/td</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#GMDisplayGeocodeSuccess > td</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +54,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>3b9489df-175b-4bfb-8098-28ceb8a6de2f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

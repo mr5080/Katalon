@@ -6,15 +6,16 @@
    <elementGuidId>9a55c388-878b-49cb-a8b3-3bcb48f0201d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ConstructionType_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='ConstructionType_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ConstructionType_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -123,7 +124,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>c317ffb7-8503-4c16-8baa-98a823cb6179</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

@@ -128,7 +128,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>2cec62c7-50d3-48db-b922-6edca2f4b58e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

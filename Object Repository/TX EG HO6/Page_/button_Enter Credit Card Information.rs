@@ -6,15 +6,16 @@
    <elementGuidId>3a57b23e-3b5b-4504-8cf5-3c542cc6feb2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEButtonnone</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@id='NOSAVEButtonnone']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEButtonnone</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>b3b35516-cf72-4f37-8fe0-41524cd2339d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

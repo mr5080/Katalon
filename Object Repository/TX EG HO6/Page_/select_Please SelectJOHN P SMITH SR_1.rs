@@ -6,15 +6,16 @@
    <elementGuidId>36744bf3-a2c1-4dc3-83f2-60341738af33</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#BillPolicyRen</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='BillPolicyRen']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#BillPolicyRen</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -111,7 +112,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>29d38e86-c2c9-48ab-bf4c-2c60613cadc1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

@@ -6,15 +6,16 @@
    <elementGuidId>b33d476d-7905-4a74-90ae-65134903ca25</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#RespondingFireStation_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='RespondingFireStation_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#RespondingFireStation_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>eff5c4b9-1757-49d3-82b7-dc1caa01e998</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

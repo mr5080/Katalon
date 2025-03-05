@@ -6,15 +6,16 @@
    <elementGuidId>2e9f134e-b718-4d65-a0a9-06b4651e695a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#QuoteButtonDiv > input[type=&quot;button&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@value='Quick Quote']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#QuoteButtonDiv > input[type=&quot;button&quot;]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +62,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>86f5cb28-bdf4-42bd-a019-452185fe161c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

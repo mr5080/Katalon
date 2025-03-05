@@ -6,15 +6,16 @@
    <elementGuidId>4b63db88-f01f-43fc-b5f6-fa67d8a0601f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ISiLeftAccordion-NewQuote</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//li[@id='ISiLeftAccordion-NewQuote']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ISiLeftAccordion-NewQuote</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +78,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>cd47ae32-4e00-4e32-853e-b6e941eff369</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

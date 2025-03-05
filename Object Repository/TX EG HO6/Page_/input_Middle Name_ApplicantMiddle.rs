@@ -6,15 +6,16 @@
    <elementGuidId>1599e068-5a7c-41b7-aac9-8d321b9b377b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantMiddle</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='ApplicantMiddle']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ApplicantMiddle</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>ffd27035-cb03-4bb9-96f6-6de40d5a743b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

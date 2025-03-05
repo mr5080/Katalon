@@ -6,15 +6,16 @@
    <elementGuidId>bdaf4dac-e572-4db1-baa1-26e90e2b7581</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PaymentPlanOption</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='PaymentPlanOption']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PaymentPlanOption</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -123,7 +124,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5f2fcf8d-c53a-429a-b9fa-7fb34a9e0fd1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

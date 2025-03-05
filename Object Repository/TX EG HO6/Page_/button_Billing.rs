@@ -6,15 +6,16 @@
    <elementGuidId>6e8af40b-586b-4b14-bfc0-91db049905d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@type = 'button' and (text() = 'Billing >')]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5c3d8d8a-5d48-476f-af8d-4f1d36bbee6e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

@@ -6,15 +6,16 @@
    <elementGuidId>dce4e6a5-a242-4cd7-90fc-bf31dd6b45e8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantSuffix</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='ApplicantSuffix']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ApplicantSuffix</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>6f344468-c07d-46ca-86bc-0198cec77009</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

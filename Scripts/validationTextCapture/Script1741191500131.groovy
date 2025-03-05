@@ -1,4 +1,3 @@
-
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -17,21 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-
-int howMany = 100
-int counter = 1
-
-while (counter <= howMany) 
-{
-	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO3'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-    System.out.println('counter = ' + counter)
-	if (counter == howMany) 
-	{
-		System.exit(0)
-	}
-	
-	counter++
-}
 

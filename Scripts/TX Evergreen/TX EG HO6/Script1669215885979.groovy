@@ -209,9 +209,9 @@ if (isAgent == false) {
     }
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2018')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/' + YOC)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-2255')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-762-2255')
 
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
 int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
@@ -222,7 +222,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Bi
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_DivorcedMarriedSingleSeparated'), 'M',   true)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2021')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/' + YOC)
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
@@ -300,7 +300,7 @@ if (squareFoot.length() < 3) {
     System.out.println('set squareFoot = 1666')
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), '2020')
+WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Architectural ShinglesAsbestos3-tab _9deaa1'), 'ARCHITECTURAL', true)
 
@@ -322,10 +322,6 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/sele
 // these manually set stories and floor
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NumStoriesBuilding'), '1', true)
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), '1', true)
-
-
-
-
 
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Responding Fire Department_Responding_eb6df6'), 'beachey')
@@ -376,6 +372,28 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
+
+
+
+try {
+// check for text 'Risk ineligible for automated rating.' check for validations text
+WebUI.switchToFrame( findTestObject('TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)		// not sure why but this is needed
+boolean ineligibleText = WebUI.verifyTextPresent('Risk ineligible for automated rating.', false)
+System.out.println('ineligibleText = ' + ineligibleText )
+
+WebUI.switchToDefaultContent()																					// not sure why but this is needed
+//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerHTML')
+//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'textContent')
+validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerText')
+System.out.println('validationText = ' + validationText)
+}
+
+catch(e)
+{
+	System.out.println('no validationText displayed')
+	WebUI.switchToDefaultContent()																				// not sure why but this is needed		
+}
+
 
 //WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Phone Number_ApplicantHomePhonezzzz1'),  Keys.chord('7177625555',  Keys.TAB,, Keys.TAB, Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP,Keys.ARROW_UP))
 /*
@@ -592,7 +610,11 @@ catch(e)
 	quoteNumber = quoteNumber.replace(':', '')
 	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
-		
+	System.out.println('validationText = ' + validationText)
+	
+	System.out.println('failed TX address = ' + addressTX)
+	
+	
 	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure.jpg')
 		
 	/*

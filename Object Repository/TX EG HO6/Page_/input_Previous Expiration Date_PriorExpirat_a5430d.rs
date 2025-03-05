@@ -6,15 +6,16 @@
    <elementGuidId>dc08d28f-9525-4953-97f4-aba539ce3eb1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PriorExpirationDate_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='PriorExpirationDate_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PriorExpirationDate_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>4ff03949-8730-4c40-aa57-768a8e9b4cbb</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

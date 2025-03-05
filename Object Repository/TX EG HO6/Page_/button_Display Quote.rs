@@ -6,15 +6,16 @@
    <elementGuidId>193f408d-bc51-4921-bd33-ec4f782c666d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@type = 'button' and (text() = 'Display Quote >')]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>3e67ac12-4b4b-4e7b-bf95-7c89fd53d6ca</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

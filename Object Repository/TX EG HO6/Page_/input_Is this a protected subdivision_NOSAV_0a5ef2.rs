@@ -6,15 +6,16 @@
    <elementGuidId>d1034278-e603-46d4-9b56-0a2bb411409d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVEPlannedSubdivision_1Yes</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVEPlannedSubdivision_1Yes']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVEPlannedSubdivision_1Yes</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>7eb6ead8-6ae2-471b-9e9e-728e480c7d20</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

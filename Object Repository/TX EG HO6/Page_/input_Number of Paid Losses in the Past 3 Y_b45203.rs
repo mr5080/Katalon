@@ -6,15 +6,16 @@
    <elementGuidId>b95fe116-fe8d-4dc5-af9e-3f67015dca34</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PriorClaimCount</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='PriorClaimCount']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PriorClaimCount</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5d5b59f1-852f-4d43-be69-b9468cb55e2a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

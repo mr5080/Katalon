@@ -6,15 +6,16 @@
    <elementGuidId>fa6a8ddd-4ff2-49a3-a8bf-472a58bb0709</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#DepositDate</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='DepositDate']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#DepositDate</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>59283f4f-9c33-4bd3-aefb-1dee3298e5ac</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

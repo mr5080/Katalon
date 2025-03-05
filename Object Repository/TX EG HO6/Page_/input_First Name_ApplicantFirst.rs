@@ -6,15 +6,16 @@
    <elementGuidId>22e996af-3a7d-4c81-a24a-3ae8e2ca4287</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantFirst</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='ApplicantFirst']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ApplicantFirst</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5255aff8-0294-4275-923a-c555f7cfb626</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

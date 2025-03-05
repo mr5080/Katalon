@@ -6,15 +6,16 @@
    <elementGuidId>6c9061b1-6b15-4b84-881e-ef6f20d97e3b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Subdivision_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='Subdivision_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Subdivision_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>e32e1ef0-a672-401c-8bf4-e63e6490e215</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

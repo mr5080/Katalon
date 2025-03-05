@@ -6,15 +6,16 @@
    <elementGuidId>47925646-a49a-4b44-b957-09e16abc37bd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#DwellingLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='DwellingLimit_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#DwellingLimit_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>238781ea-33c1-4dcd-86e3-1764eed18149</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

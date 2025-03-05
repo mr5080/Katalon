@@ -6,12 +6,12 @@
    <elementGuidId>a8b6b5d5-b206-425e-a5e3-609a6293c61b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@type = 'button' and (text() = 'Bind Application >')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.w-100.btn.ISiA-PrimaryButton.NoPaddingOnShort</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -70,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>d63ad321-43ea-4f61-80dc-e58c7daaf54d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

@@ -6,15 +6,16 @@
    <elementGuidId>e9a763d0-1a5f-4287-bffc-29e88f997b8b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#LossOfUseAmount_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='LossOfUseAmount_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LossOfUseAmount_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -115,7 +116,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>ff7db4a3-a8ee-41bb-ae93-9c984ed3fc18</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

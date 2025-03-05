@@ -285,6 +285,8 @@ junk  = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_
 junk2 = WebUI.waitForElementHasAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML', 15)
 junk3 = WebUI.waitForElementHasAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'id', 15)
 junk4 = WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 15)
+validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'textContent')
+
 System.out.println('junk = ' + junk )
 System.out.println('junk2 = ' + junk2 )
 System.out.println('junk3 = ' + junk3 )
@@ -292,11 +294,8 @@ System.out.println('junk4 = ' + junk4 )
 */
 //if (WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30))
 if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 30)) {
-    //quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/Cypress3/Page_/div_Quote Number 630'), 'innerHTML')
     geoCodeStatus = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'innerHTML')
-
     geoCodeStatusTest = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/td_GeoCodeSuccessful'), 'baseURI')
-
     System.out.println('geoCodeStatusTest = ' + geoCodeStatusTest)
 } else {
     System.out.println((('need to delete row ' + randomFLaddress) + ' and address = ') + addressFL)
@@ -1093,11 +1092,11 @@ catch(e)
 		
 	//WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'Failure.jpg')
 	// works no FL EG in file name
-	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots' + todaysTimeStamp + '-' + quoteNumber) + 'FL EG ' + policyType + ' Failure.jpg')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'FL EG ' + policyType + ' Failure.jpg')
+	//WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure.jpg')
+	
 	//WebUI.takeScreenshot(((('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp) + '- FL - ' + policyType) + '-' + quoteNumber) + ' Failure.jpg' 
 
-	
-	//WebUI.takeScreenshot('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressScreenShots\\Failure.jpg')
 	
 	/*
 	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,

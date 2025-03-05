@@ -6,15 +6,16 @@
    <elementGuidId>b0b3f828-8e75-4c5a-bc28-4659c2f71bf4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#Bundle_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='Bundle_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Bundle_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -111,7 +112,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>616062cf-9dd8-4779-945c-f3990c5dbb43</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

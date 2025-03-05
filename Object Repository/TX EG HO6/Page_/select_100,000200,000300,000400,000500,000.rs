@@ -6,15 +6,16 @@
    <elementGuidId>c4134ac6-d56c-4cca-8f92-0bb48130abfe</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PersonalLiabilityLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='PersonalLiabilityLimit_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PersonalLiabilityLimit_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -123,7 +124,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>22e3c2df-3a0d-4c77-82de-435cde5a1d3d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

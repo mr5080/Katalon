@@ -6,15 +6,16 @@
    <elementGuidId>7cb7286b-7ef9-4c04-ac4f-b6578cc1ae46</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#RoofConstruction_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='RoofConstruction_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#RoofConstruction_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -163,7 +164,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>f7395f99-cbd7-4357-a9ac-045b92e784b3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

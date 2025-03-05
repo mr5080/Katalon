@@ -6,15 +6,16 @@
    <elementGuidId>9206f90f-8512-400f-b413-376fec160363</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#PurchaseDate_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='PurchaseDate_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#PurchaseDate_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +94,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>4f963269-cbd5-4a60-a5d8-0edf85a44364</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

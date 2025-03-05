@@ -6,15 +6,16 @@
    <elementGuidId>2820e97b-b590-444d-b80c-6f7f232b5def</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#SquareFootage_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='SquareFootage_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#SquareFootage_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +126,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>cb00c10e-7b13-47c5-9938-787a6cec162f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

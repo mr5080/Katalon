@@ -6,15 +6,15 @@
    <elementGuidId>cf59c6fe-fc9a-4487-b0aa-f8ecffb333bc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//form[@id='mainForm']/div/div[3]/div/div[2]/div[6]/div[2]/div/div/div[2]/div/div/div/div[2]/div</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>35f49c79-2281-4869-8941-93ee5c7e0610</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

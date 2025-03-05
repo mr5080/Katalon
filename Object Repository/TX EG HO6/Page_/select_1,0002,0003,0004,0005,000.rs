@@ -6,15 +6,16 @@
    <elementGuidId>068c93f7-8d3a-4561-b348-07fd1041aa36</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#MedicalLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='MedicalLimit_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#MedicalLimit_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -123,7 +124,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5d963f8a-971e-4441-a516-1a3f5eccf660</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

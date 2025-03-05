@@ -6,15 +6,16 @@
    <elementGuidId>91812e5e-63bf-4be0-a672-9c4df65784bb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.ui-state-default.ui-state-hover</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='ui-datepicker-div']/table/tbody/tr[2]/td[3]/a</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.ui-state-default.ui-state-hover</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +62,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>154d622a-4e15-4299-abd5-b3d9b174b12d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

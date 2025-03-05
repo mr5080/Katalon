@@ -6,15 +6,16 @@
    <elementGuidId>b3042c2f-b04b-4af9-814f-b1d94fbf9582</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#NOSAVESwimmingPool_1No</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='NOSAVESwimmingPool_1No']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#NOSAVESwimmingPool_1No</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +110,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>6146b75a-89b4-43b1-bc22-eb6297441495</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

@@ -6,15 +6,16 @@
    <elementGuidId>a6b23eca-190a-4e09-affb-d7973da08dac</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ContentsLimit_1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='ContentsLimit_1']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ContentsLimit_1</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +142,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>5ddf1c65-95b5-4771-8b39-55117dce2609</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

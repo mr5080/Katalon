@@ -6,15 +6,16 @@
    <elementGuidId>cb359361-68ef-49ba-86b7-f5243afa31da</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#UAButton_2900_0_2</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//a[@id='UAButton_2900_0_2']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#UAButton_2900_0_2</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +86,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO6/Page_/iframe_Agent Transaction Report_MainIS21test</value>
+      <value>Object Repository/TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test</value>
       <webElementGuid>c997f38d-9577-4a8d-a6ca-b5aa4e11095c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
