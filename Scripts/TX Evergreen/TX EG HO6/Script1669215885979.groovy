@@ -374,8 +374,6 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of 
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
 
-
-
 try {
 	// check for text 'Risk ineligible for automated rating.' check for validations text
 	WebUI.switchToFrame( findTestObject('TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)		// not sure why but this is needed

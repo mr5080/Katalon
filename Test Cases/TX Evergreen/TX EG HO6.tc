@@ -102,7 +102,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
       <masked>false</masked>
@@ -116,7 +116,7 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>'2015'</defaultValue>
+      <defaultValue>'2010'</defaultValue>
       <description>HO6 only open for last 10 years, 3.4.25 COG06855</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>
