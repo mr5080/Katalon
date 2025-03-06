@@ -164,6 +164,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input'))
 WebUI.verifyElementPresent(findTestObject('Object Repository/TX EG HO6/Page_/div_Quote Number'), 10)
 
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_Quote Number'), 'innerHTML')
+quoteNumber = quoteNumber.replace(':', '')
 
 System.out.println('quoteNumber = ' + quoteNumber)
 
@@ -376,21 +377,34 @@ WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Co
 
 
 try {
-// check for text 'Risk ineligible for automated rating.' check for validations text
-WebUI.switchToFrame( findTestObject('TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)		// not sure why but this is needed
-boolean ineligibleText = WebUI.verifyTextPresent('Risk ineligible for automated rating.', false)
-System.out.println('ineligibleText = ' + ineligibleText )
-
-WebUI.switchToDefaultContent()																					// not sure why but this is needed
-//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerHTML')
-//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'textContent')
-validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerText')
-System.out.println('validationText = ' + validationText)
+	// check for text 'Risk ineligible for automated rating.' check for validations text
+	WebUI.switchToFrame( findTestObject('TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)		// not sure why but this is needed
+	boolean ineligibleText = WebUI.verifyTextPresent('Risk ineligible for automated rating.', false)
+	System.out.println('ineligibleText = ' + ineligibleText )
+	
+	WebUI.switchToDefaultContent()																					// not sure why but this is needed
+	//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerHTML')
+	//validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'textContent')
+	validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerText')
+	System.out.println('validationText = ' + validationText)
+	
+	
+	
+	
+	if (validationText.contains('ineligible')) 		
+	{
+	  System.out.println('validationText found')	  
+	  WebUI.sendKeys(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), Keys.chord(Keys.PAGE_UP, Keys.PAGE_UP))
+	  WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure - Validation.jpg')
+	} 
+	else 
+		{
+	  System.out.println('validationText NOT found')
+	}
 }
 
 catch(e)
-{
-	System.out.println('no validationText displayed')
+{	
 	WebUI.switchToDefaultContent()																				// not sure why but this is needed		
 }
 
