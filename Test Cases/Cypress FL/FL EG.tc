@@ -109,7 +109,7 @@
       <variableId>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO3'</defaultValue>
+      <defaultValue>'HO6'</defaultValue>
       <description>over ridden with passed in var if passed in</description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -172,14 +172,14 @@
       <name>realAPlusClaimReport</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
       <masked>false</masked>
       <name>manualNameAddress</name>
    </variable>
    <variable>
-      <defaultValue>4</defaultValue>
+      <defaultValue>2</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>

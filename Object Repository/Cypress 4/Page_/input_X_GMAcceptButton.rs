@@ -3,7 +3,7 @@
    <description></description>
    <name>input_X_GMAcceptButton</name>
    <tag></tag>
-   <elementGuidId>4196e645-92e0-469e-8dc2-b6e3e9068fbd</elementGuidId>
+   <elementGuidId>61bef200-e92c-49ef-accd-d31c3ec580e8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,8 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@id='GMAcceptButton'])[1]&#xd;
-</value>
+         <value>(//input[@id='GMAcceptButton'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>85b56b18-5995-46dd-9b26-cb4594d1a36f</webElementGuid>
+      <webElementGuid>74c2ee21-6ebf-44cf-b6df-4de8f2ad9084</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>GMAcceptButton</value>
-      <webElementGuid>9fbf9328-e380-436b-aefc-06ab70749f5e</webElementGuid>
+      <webElementGuid>1be2198e-e016-490d-b623-419db423a5fc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,7 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>c3fab959-298f-41fd-b454-99b6af5b88e8</webElementGuid>
+      <webElementGuid>128477a6-4ee2-42be-8405-495af1c45003</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +47,7 @@
       <name>value</name>
       <type>Main</type>
       <value>Geocode Now</value>
-      <webElementGuid>6b71e6df-56af-4785-8131-d7008a897e5e</webElementGuid>
+      <webElementGuid>e71bc2f4-02d2-4605-a957-f5ec24a64361</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -56,7 +55,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>processGMAcceptButtonDblClicked();</value>
-      <webElementGuid>6cf6caa6-7714-4844-aac4-e06006a8a864</webElementGuid>
+      <webElementGuid>52e8cfc8-ded7-4979-9ea7-86e28b8cc42b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,53 +63,21 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@id=&quot;GMDisplayDivMaster&quot;]/div[1]/div[3]/input[@id=&quot;GMAcceptButton&quot;]</value>
-      <webElementGuid>0410fb70-dc0f-4972-a8f7-afb66d591ac0</webElementGuid>
+      <webElementGuid>53fd3900-2573-4d50-ab3e-2cf1a5ea607b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/TX EG HO3/Page_/iframe_Agent Transaction Report_MainIS21test</value>
-      <webElementGuid>1e5703d0-c9b0-4565-9c3c-324954096c1b</webElementGuid>
+      <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>bea94ab9-eb43-4f71-a9e7-d95958012225</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//input[@id='GMAcceptButton']</value>
-      <webElementGuid>1073c970-db51-4fe7-8085-f6036b2df988</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//body/div[@id='GMDisplayDivMaster']/div/div/input[2]</value>
-      <webElementGuid>93006867-75f5-4dad-a8e6-016d8189bfbd</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//input[2]</value>
-      <webElementGuid>e0996e92-df59-45c3-b173-20510d68bef8</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//input[@id = 'GMAcceptButton' and @type = 'button']</value>
-      <webElementGuid>1687c225-b7bc-4fd5-83e5-f863447cc954</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
-      <value>//input[@id='GMAcceptButton']</value>
-      <webElementGuid>bdb8f0d9-2462-4c48-9b0e-c34996423ef9</webElementGuid>
+      <value>//*[@id=&quot;GMAcceptButton&quot;]</value>
+      <webElementGuid>e0dd634b-76c3-45a8-8feb-2d0f68e600ca</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

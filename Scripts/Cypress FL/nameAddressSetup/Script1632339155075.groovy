@@ -163,10 +163,10 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		 
 		randomFirstName = 'Dissy'
 		randomLastName = 'Pranters'
-		addressFL = '6827 ARIEL DR'
-		cityFL = 'Jacksonville'
+		addressFL = '377 SE Crossoak Ln'
+		cityFL = 'Port St. Lucie'
 		stateFL = 'FL'
-		zipFL = 32277
+		zipFL = 34984
 	}
 		
 	//def nameAddressData = [name: "Jerry", age: 42, city: "New York"]

@@ -194,6 +194,7 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Z
 WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
 
+
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord('Text String', Keys.TAB))
 //check value of city dropdown with what is in cityFL
 //WebUI.delay(5)
@@ -223,39 +224,19 @@ for (int i = 0; i < cityCount; i++) {
     System.out.println('selectedOption  = ' + selectedOption)
 }
 */
-//WebUI.switchToFrame( findTestObject('Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)
-// go back to try catch? even need this??? seems to be automatically accpeted?
-/*
-try {
-    // cant access any test object after accepting alert
-// 8.29.22 commented out to get rid of only WARNING during execution	WebUI.delay(5)
-	//WebUI.acceptAlert()
-	WebUI.dismissAlert()
-    System.out.println('Accept address validation has been accepted')
-}
-catch (Exception e) {
-    System.out.println('Exception - ' + e)
-} 
-*/
-//WebUI.delay(5)
-// seems to be working, if it is can remove the try/catch above - 12/18/20
-// USPS validation removed from Start a new Quote screen 4/23/21
-// geocode modal
-//WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 5)
-try
+
+
+// this works for Geocode button 3.8.25!!!
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'), 10))
 {
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
-	WebUI.waitForElementClickable(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 30)
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'))
+	System.out.println('clicked GEOCODE button')
 }
-catch(e)
-{
-	System.out.println('Exception - ' + e)
-}
-/*
-if (WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'), 10)) {
-    WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_Geocode Now'))
-}
-*/
+// end of this works for Geocode button 3.8.25!!!
+
+
+
+
 
 /*
 boolean elementPresent = WebUI.waitForAlert(5)

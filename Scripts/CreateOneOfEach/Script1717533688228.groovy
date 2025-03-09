@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 100
+int howMany = 50
 
-boolean shouldBind = true
+boolean shouldBind = false
 
 int counter = 1
 

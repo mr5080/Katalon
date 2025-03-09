@@ -133,9 +133,10 @@ WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property 
 
 
 
-
+WebUI.delay(5)
 try {
-		WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	//WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
 	System.out.println('clicked GEOCODE button')
 	WebUI.delay(6)
 }
@@ -143,15 +144,7 @@ catch (Exception e) {
 	System.out.println('Exception - ' + e)
 }
 
-
-
-
-
-
 // try catch this? look at other code?, added code above 2.14.25, maybe that works???
-
-
-
 //WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
 
@@ -166,20 +159,21 @@ else
 	System.out.println('NO GEOCODE button')
 }
 */
-
+/*
 // uncommented try catch 8.5.24
 try {
 //	WebUI.waitForElementClickable(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
-	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
 	System.out.println('clicked GEOCODE button')
 	WebUI.delay(6)
 }
 catch (Exception e) {
 	System.out.println('Exception - ' + e)
 }
+*/
 
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_NOTE The address above has beensuccessfu_ffdc37'), 40)
+WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td_geocodeSuccessful'), 40)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input'))
 

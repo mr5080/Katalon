@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_NOTE The address above has beensuccessfu_ffdc37</name>
+   <name>td_geocodeSuccessful</name>
    <tag></tag>
    <elementGuidId>dece44b7-091a-4524-bc1d-adfdf67bf6d7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//tr[@id='GMDisplayGeocodeSuccess']/td</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#GMDisplayGeocodeSuccess > td</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//tr[@id='GMDisplayGeocodeSuccess']/td</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

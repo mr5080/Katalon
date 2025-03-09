@@ -148,9 +148,7 @@ WebUI.delay(5)
 
 try {
     WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
-
     System.out.println('clicked GEOCODE button')
-
     WebUI.delay(6)
 }
 catch (Exception e) {
@@ -374,6 +372,8 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of 
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
 
+
+// this try/catch reads any validations displayed
 try {
 	// check for text 'Risk ineligible for automated rating.' check for validations text
 	WebUI.switchToFrame( findTestObject('TX EG HO6/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 2]), 10)		// not sure why but this is needed
@@ -386,9 +386,6 @@ try {
 	validationText = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO6/Page_/div_validationText'), 'innerText')
 	System.out.println('validationText = ' + validationText)
 	
-	
-	
-	
 	if (validationText.contains('ineligible')) 		
 	{
 	  System.out.println('validationText found')	  
@@ -400,7 +397,6 @@ try {
 	  System.out.println('validationText NOT found')
 	}
 }
-
 catch(e)
 {	
 	WebUI.switchToDefaultContent()																				// not sure why but this is needed		
