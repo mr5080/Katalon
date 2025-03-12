@@ -129,6 +129,24 @@ System.out.println('currentYear = ' + currentYear)
 
 
 
+/*
+date1 = new Date(effectiveDate);
+date2 = new Date('May 01, 2025');
+
+if (date1 < date2) 
+{
+  System.out.println("date1 is earlier than date2");
+} 
+else if (date1 > date2) 
+{
+  System.out.println("date1 is later than date2");
+} 
+else 
+{
+  System.out.println("date1 and date2 are the same");
+}
+*/
+
 
 //WebUI.delay(5)
 WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/button_PHPortal-Login'), 15)
@@ -226,7 +244,7 @@ for (int i = 0; i < cityCount; i++) {
 */
 
 
-// this works for Geocode button 3.8.25!!!
+// this works for Geocode button 3.8.25!!! UPDATE TX EG AND OTHER MANUALS
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'), 10))
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'))
@@ -384,12 +402,14 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Bi
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Profession'), 'EMPLOYED', true)
 
 // set purcahse date = todays date
-System.out.println('trying to set purcahse date to  = ' + todaysDate)
+//System.out.println('trying to set purcahse date to  = ' + todaysDate)
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), todaysDate)
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('01/02/2018', Keys.TAB))
+System.out.println('should have set purcahse date to  = 01/02/' + YOC)
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Purchase Date_PurchaseDate_1'), Keys.chord('01/02/' + YOC, Keys.TAB))
 
-System.out.println('should have set purcahse date to  = ' + todaysDate)
+
+//System.out.println('should have set purcahse date to  = ' + todaysDate)
 
 //WebUI.delay(7)
 //Construction Year - use DOB year if the input box is blank
@@ -425,7 +445,7 @@ if(censusBlockTest)
 */
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2015')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), YOC)
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
@@ -434,7 +454,7 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/but
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
 System.out.println('constructionYear  = ' + constructionYear)
 System.out.println('constructionYear.length()  = ' + constructionYear.length())
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
 
 //String constTest = WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
@@ -463,6 +483,7 @@ if (constructionYear.length() > 1) {
         WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
+
 
         System.out.println('constructionYear and roof year reset to ' + constructionYear)
     }
@@ -494,7 +515,22 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
             // city, province, zip,  PreviousAddress2
             // country name
             )
-    } else {
+			
+			
+			if(WebUI.waitForAlert(4))
+			{
+				WebUI.acceptAlert()
+				System.out.println('Accept address validation')
+			}
+			else
+			{
+				System.out.println('No addres validation alert')
+			}
+			
+				
+			
+    } 
+	else {
         WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
 
         String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
@@ -582,7 +618,7 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Y
     // using year for random year
     //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), year)
     // changed to 2018 due to validation of 'Year of Roof cannot be earlier than Construction Year.'
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2020')
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
     // sets to same as construction year (which is also the same as dob year
     System.out.println('set year')
@@ -846,6 +882,47 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_YesNo'), 'Y', true)
 
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 'CONCRETEBLOCK', true)
+
+
+
+// if effective date 5/1/25 or after, fill in water heater type, water heater year, PlumbingLines
+date1 = new Date(effectiveDate);
+date2 = new Date('May 01, 2025');
+
+if (date1 < date2)
+{
+  System.out.println("effectiveDate is before 5.1.25");
+}
+else // if (date1 >= date2)
+{
+  System.out.println("effectiveDate is 5.1.25 or later, need to fill in these fields");
+  
+  // this gets random number for dropdown
+  TestObject dropdown = findTestObject('Cypress 4/Page_/select_WaterHeaterType')
+  int totalOptions = WebUI.getNumberOfTotalOption(dropdown)
+  //System.out.println("totalOptions for water heater = " + totalOptions);
+  
+  int randomWaterHeater = 0
+  min = 1		// 1 because first option is blank, and blank is not allowed answer
+  randomWaterHeater = 1 + ((Math.random() * (totalOptions - min))  as int)
+  //System.out.println('randomWaterHeater = ' + randomWaterHeater)
+  WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
+
+//  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS
+  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
+  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
+}
+
+
+
+/*
+else
+{
+  System.out.println("date1 and date2 are the same");
+}
+*/
+
+
 
 'History button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - History'))

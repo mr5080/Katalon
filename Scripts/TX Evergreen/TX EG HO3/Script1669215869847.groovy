@@ -250,7 +250,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
-int randomNumber = 0
+//int randomNumber = 0
 System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address

@@ -160,7 +160,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		stateFL = 'FL'
 		zipFL = 33973
 		*/
-		 
+		 // THIS ADDRESS TRIGGERS THE MANUAL GEOCODE MODAL
 		randomFirstName = 'Dissy'
 		randomLastName = 'Pranters'
 		addressFL = '377 SE Crossoak Ln'
