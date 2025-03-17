@@ -887,7 +887,8 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall F
 
 // if effective date 5/1/25 or after, fill in water heater type, water heater year, PlumbingLines
 date1 = new Date(effectiveDate);
-date2 = new Date('May 01, 2025');
+date2 = new Date('05/01/2025');
+//date2 = new Date('May 01, 2025');
 
 if (date1 < date2)
 {
@@ -903,9 +904,8 @@ else // if (date1 >= date2)
   //System.out.println("totalOptions for water heater = " + totalOptions);
   
   int randomWaterHeater = 0
-  min = 1		// 1 because first option is blank, and blank is not allowed answer
+  min = 1		// 1 because first option is blank, and blank is not an allowed answer
   randomWaterHeater = 1 + ((Math.random() * (totalOptions - min))  as int)
-  //System.out.println('randomWaterHeater = ' + randomWaterHeater)
   WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
 
 //  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS

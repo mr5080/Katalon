@@ -129,7 +129,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
@@ -234,7 +234,7 @@
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2021'</defaultValue>
+      <defaultValue>'2019'</defaultValue>
       <description></description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>

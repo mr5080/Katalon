@@ -14,7 +14,7 @@ if(		realTransunionCreditReport == false  && 		realAPlusClaimReport == false   &
 		Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 		
 		// random num between 2 - 500 (first line in excel file is a header)
-		int randomFLaddress = 2 + ((Math.random() * ((700 - 2) + 1)) as int)
+		int randomFLaddress = 2 + ((Math.random() * ((685 - 2) + 1)) as int)
 		
 		// override randomness to specifiy address in file to use
 		//randomFLaddress = 510 // 105 causes address correction to pop, 130 WEST PALM BEACH CO

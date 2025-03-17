@@ -308,11 +308,14 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
 WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
 
+/* This modal was removed with COG06785	
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
 }
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2022')
+*/
+
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2021')
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -460,7 +463,9 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
-//WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))
+//force stop
+System.exit(0)  // keeps window open
+
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Continue'))
 
 

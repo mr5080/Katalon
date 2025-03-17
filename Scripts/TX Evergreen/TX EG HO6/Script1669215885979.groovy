@@ -268,18 +268,20 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Construction Year_ConstructionYear_1'), YOC // this is year to use with YOC variable
     )
 
+	
+	
+/*
+This modal was removed with COG06785	
 try {
     WebUI.delay(1)
-
     // need to click Close on popup warning if differenceYears > 40
     WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Close button -Modal window'))
-
-    System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' + 
-        (currentYear - constructionYearInt))
+    System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' +  (currentYear - constructionYearInt))
 }
 catch (Exception e) {
     System.out.println(e)
 } 
+*/
 
 //WebUI.delay(5)
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_Occupancy'), 'OWNER', true)
@@ -369,6 +371,11 @@ System.out.println('randomBundle = ' + randomBundle)
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), randomBundle)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+
+//force stop
+System.exit(0)  // keeps window open
+
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Rate and Continue'))
 
