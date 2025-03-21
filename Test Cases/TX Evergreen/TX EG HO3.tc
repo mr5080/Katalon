@@ -68,7 +68,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
@@ -96,7 +96,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>

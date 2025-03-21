@@ -132,8 +132,32 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Z
 WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), Keys.chord(Keys.TAB))
 
 
+boolean elementPresent = WebUI.waitForAlert(3)
 
-WebUI.delay(5)
+if (elementPresent == true) {
+	alertText = WebUI.getAlertText()
+	 System.out.println('The title of the alert is: \n' + alertText)
+	WebUI.delay(1)
+	WebUI.acceptAlert()
+	System.out.println('Accept address validation has been accepted')
+	//WebUI.switchToDefaultContent()
+//	WebUI.switchToFrame(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), 0)
+//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
+}
+
+WebUI.delay(2)
+
+// this works for FL EG Geocode button 3.8.25!!! UPDATE TX EG AND OTHER MANUALS
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 10))
+{
+	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
+	System.out.println('clicked GEOCODE button')
+}
+// end of this works for Geocode button 3.8.25!!!
+
+
+
+/*
 try {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'))
 	//WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
@@ -142,7 +166,9 @@ try {
 }
 catch (Exception e) {
 	System.out.println('Exception - ' + e)
-}
+}*/
+
+
 
 // try catch this? look at other code?, added code above 2.14.25, maybe that works???
 //WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/input_X_GMAcceptButton'), 5)
@@ -251,7 +277,6 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
 //int randomNumber = 0
-System.out.println('need to fill in prior mailing address stuff')
 
 if (randomNumber == 0) // fill out US prior mailing address
 {
@@ -464,7 +489,7 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
 //force stop
-System.exit(0)  // keeps window open
+//System.exit(0)  // keeps window open
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Continue'))
 

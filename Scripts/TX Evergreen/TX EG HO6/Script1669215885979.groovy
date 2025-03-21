@@ -146,6 +146,19 @@ WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property 
 
 WebUI.delay(5)
 
+ boolean elementPresent = WebUI.waitForAlert(3)
+ 
+ if (elementPresent == true) {
+	 alertText = WebUI.getAlertText()
+ 	 System.out.println('The title of the alert is: \n' + alertText)
+	 WebUI.delay(1)
+	 WebUI.acceptAlert()
+	 System.out.println('Accept address validation has been accepted')
+	 WebUI.switchToDefaultContent() 
+	 //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again		 
+ }
+
+
 try {
     WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/input_X_GMAcceptButton'))
     System.out.println('clicked GEOCODE button')
@@ -227,7 +240,7 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase D
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)
 
-int randomNumber = 1
+//int randomNumber = 1
 
 System.out.println('need to fill in prior mailing address stuff')
 
@@ -249,7 +262,7 @@ if (randomNumber == 0) // fill out US prior mailing address
     String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 
         'value')
 
-    System.out.println('selectedAddressType = ' + selectedAddressType)
+    //System.out.println('selectedAddressType = ' + selectedAddressType)
 
     WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), 
         '9584 saint international st')
@@ -297,8 +310,7 @@ System.out.println('squareFoot = ' + squareFoot // outputs default squareFoot va
 
 if (squareFoot.length() < 3) {
     WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Square feet_SquareFootage_1'), '1509')
-
-    System.out.println('set squareFoot = 1666')
+   // System.out.println('set squareFoot = 1666')
 }
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
@@ -365,15 +377,14 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1 
 randomBundle = (((Math.random() * 2) as int) + 0)
-
-System.out.println('randomBundle = ' + randomBundle)
+//System.out.println('randomBundle = ' + randomBundle)
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), randomBundle)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
 //force stop
-System.exit(0)  // keeps window open
+//System.exit(0)  // keeps window open
 
 
 

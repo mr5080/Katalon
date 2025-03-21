@@ -40,13 +40,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>99bdcabf-795f-48df-9a33-c87caed69970</variableId>
+      <variableId>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</variableId>
+      <variableId>99bdcabf-795f-48df-9a33-c87caed69970</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
@@ -88,7 +88,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
@@ -102,13 +102,6 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
-      <description></description>
-      <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
-      <masked>false</masked>
-      <name>stopQQ</name>
-   </variable>
-   <variable>
       <defaultValue>2</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</id>
@@ -116,7 +109,14 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>'1985'</defaultValue>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
+      <masked>false</masked>
+      <name>stopQQ</name>
+   </variable>
+   <variable>
+      <defaultValue>'2015'</defaultValue>
       <description>HO6 only open for last 10 years, 3.4.25 COG06855</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>

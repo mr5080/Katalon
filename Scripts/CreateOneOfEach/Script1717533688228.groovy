@@ -17,17 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 20
+int howMany = 10
 
-boolean shouldBind = true
+boolean shouldBind = false
 
 int counter = 1
 
 while (counter <= howMany) {
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
-/*
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
+
+    
     WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
@@ -43,7 +46,7 @@ while (counter <= howMany) {
     // use this one if you want to loop through excel file
     //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
     System.out.println('counter = ' + counter)
-*/
+
     if (counter == howMany) {
         System.exit(0)
     }

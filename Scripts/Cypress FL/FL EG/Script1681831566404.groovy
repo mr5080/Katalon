@@ -58,7 +58,8 @@ if (environment == 'TEST') {
 	WebUI.openBrowser('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
     //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
-    WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
+	WebUI.openBrowser('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
+    //WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
 }
 
 
@@ -1111,8 +1112,8 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 if (shouldBind == false)
 {
 	WebUI.comment('shouldBind = ' + shouldBind)
-	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoBackOnePage'))
-	WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoForwardOnePage'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_GoBackOnePage'))
+	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_GoForwardOnePage'))
 }
 
 // pass vars to write the file  9.16.21
