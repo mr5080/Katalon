@@ -52,24 +52,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9428647b-03b5-47e4-b285-2c304c3e479f</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>6b1e8d37-b114-489b-a67b-3a58f0fbe586</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>0f55fb94-4037-49e1-8157-77b70da486e1</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>444aedf9-b9e1-495f-81a1-95af3aeb75c0</variableId>
    </variableLinks>
    <variableLinks>
@@ -113,6 +95,12 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>a673d45d-9fee-461c-804f-1b03e6a01a5a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a7c73d2b-c536-4eb7-bf0e-63a9ba2feb3f</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'HO3'</defaultValue>
@@ -162,27 +150,6 @@
       <id>b90ad34a-d06a-4412-8bb1-ce8bfa3a0696</id>
       <masked>false</masked>
       <name>realTestUser</name>
-   </variable>
-   <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>9428647b-03b5-47e4-b285-2c304c3e479f</id>
-      <masked>false</masked>
-      <name>realTransunionCreditReport</name>
-   </variable>
-   <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>6b1e8d37-b114-489b-a67b-3a58f0fbe586</id>
-      <masked>false</masked>
-      <name>realAPlusClaimReport</name>
-   </variable>
-   <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
-      <id>0f55fb94-4037-49e1-8157-77b70da486e1</id>
-      <masked>false</masked>
-      <name>manualNameAddress</name>
    </variable>
    <variable>
       <defaultValue>2</defaultValue>
@@ -239,5 +206,12 @@
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>
       <name>YOC</name>
+   </variable>
+   <variable>
+      <defaultValue>'creditReport'</defaultValue>
+      <description>manual, claim, truerisk, PC10, creditReport</description>
+      <id>a7c73d2b-c536-4eb7-bf0e-63a9ba2feb3f</id>
+      <masked>false</masked>
+      <name>manualAddress</name>
    </variable>
 </TestCaseEntity>

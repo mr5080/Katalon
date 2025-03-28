@@ -65,10 +65,11 @@ if (environment == 'TEST') {
 
 // pass vars to different file  9.16.21
 def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSetup'),
-	[('realTransunionCreditReport') : realTransunionCreditReport,
-	('realAPlusClaimReport') : realAPlusClaimReport,
-	('manualNameAddress') : manualNameAddress], 
-FailureHandling.STOP_ON_FAILURE)
+//	[('realTransunionCreditReport') : realTransunionCreditReport,
+//	('realAPlusClaimReport') : realAPlusClaimReport,
+//	('manualNameAddress') : manualNameAddress], 
+	[('manualAddress') : manualAddress],
+	FailureHandling.STOP_ON_FAILURE)
 
 
 String randomFirstName = nameAddressData['randomFirstName']

@@ -89,7 +89,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, claim, truerisk, PC10, creditReport</description>
       <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>
