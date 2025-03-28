@@ -206,7 +206,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'05/01/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
@@ -234,7 +234,7 @@
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2019'</defaultValue>
+      <defaultValue>'2020'</defaultValue>
       <description></description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>

@@ -67,8 +67,8 @@ if (environment == 'TEST') {
 def nameAddressData = WebUI.callTestCase(findTestCase('Cypress FL/nameAddressSetup'),
 	[('realTransunionCreditReport') : realTransunionCreditReport,
 	('realAPlusClaimReport') : realAPlusClaimReport,
-	('manualNameAddress') : manualNameAddress	
-		 ], FailureHandling.STOP_ON_FAILURE)
+	('manualNameAddress') : manualNameAddress], 
+FailureHandling.STOP_ON_FAILURE)
 
 
 String randomFirstName = nameAddressData['randomFirstName']
@@ -257,22 +257,29 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_
 
 
 
+boolean elementPresent = WebUI.waitForAlert(3)
+if (elementPresent == true) {
+	alertText = WebUI.getAlertText()
+	 System.out.println('The title of the alert is: \n' + alertText)
+	WebUI.delay(1)
+	WebUI.acceptAlert()
+	System.out.println('Accept address validation has been accepted')
+	//WebUI.switchToDefaultContent()
+//	WebUI.switchToFrame(findTestObject('Object Repository/TX EG HO3/Page_/input_Property Zip Code_ApplicantZip'), 0)
+//	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again
+}
+
+
 /*
 boolean elementPresent = WebUI.waitForAlert(5)
-
 if (elementPresent == true) {
-    alertText = WebUI.getAlertText()
-
+   alertText = WebUI.getAlertText()
     System.out.println('The title of the alert is: \n' + alertText)
-
-    WebUI.delay(1)
-
+   WebUI.delay(1)
     WebUI.acceptAlert()
-
     System.out.println('Accept address validation has been accepted')
-
     WebUI.switchToDefaultContent( //	WebUI.setText(  findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress2') , 'apt 2')  // proves i have access to the screen again    
-        )
+    )
 }*/
 
 //WebUI.click(findTestObject('Cypress 4/Page_/td_GeoCodeSuccessful'))

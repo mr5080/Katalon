@@ -700,7 +700,8 @@ WebUI.delay(10)
 
     WebUI.switchToWindowIndex(0)
 
-    if (shouldBind == true) {
+    if (shouldBind == true) 
+	{
         if ((isAgent == true) && (addClassCodes == true)) {
             WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_SendToCompany'))
 
@@ -712,12 +713,15 @@ WebUI.delay(10)
 
             System.out.println('policyNumber = ' + policyNumber)
         }
-    } else {
+    } 
+	else 
+	{
+		// wrong xpath for Internal, commenting out 3.25.25
         WebUI.comment('shouldBind = ' + shouldBind)
-
+		/*
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoBackOnePage'))
-
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_GoForwardOnePage'))
+        */
     }
     
     // pass vars to write the file  9.16.21

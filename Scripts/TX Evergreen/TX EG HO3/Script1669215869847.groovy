@@ -133,7 +133,6 @@ WebUI.sendKeys(findTestObject('Object Repository/TX EG HO3/Page_/input_Property 
 
 
 boolean elementPresent = WebUI.waitForAlert(3)
-
 if (elementPresent == true) {
 	alertText = WebUI.getAlertText()
 	 System.out.println('The title of the alert is: \n' + alertText)

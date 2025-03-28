@@ -4,5 +4,6 @@
    <name>Create Multiple</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b3ed85d9-e120-43c9-8195-407455d60ca7</testCaseGuid>
 </TestCaseEntity>
