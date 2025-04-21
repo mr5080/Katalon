@@ -37,14 +37,7 @@ System.out.println("paperless(from childTestCase) = " + paperless)
 System.out.println("addInterest(from childTestCase) = " + addInterest)
 
 //System.out.println("censusBlock(from childTestCase) = " + censusBlock)
-
-
-
 //System.out.println("payPlanOption(from childTestCase) = " + payPlanOption)
-
-
-
-// copied from Cypress 4
 
 FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressAutoQuotes.xlsx'))
 

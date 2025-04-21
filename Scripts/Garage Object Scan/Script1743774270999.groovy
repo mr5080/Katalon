@@ -17,19 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 20
+import com.kazurayam.ks.testobject.gc.ObjectRepositoryGarbageCollector
 
-int counter = 1
+import groovy.json.JsonOutput
 
-while (counter <= howMany) {
-    WebUI.callTestCase(findTestCase('FL GL/FL GL'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+/**
+ * A demonstration of ObjectRepositoryGarbageCollector.
+ *
+ * This TestCase outputs a JSON file which contains a list of garbage Test Objects
+ * in the "Object Repository" folder.
+ *
+ * A "garbage" means a Test Object which is not used by any scripts
+ * in the "Test Cases" folder.
+ */
 
-    System.out.println('counter = ' + counter)
+// the Garbage Collector instance will scan 2 folders: "Object Repository" and "Test Cases"
 
-    if (counter == howMany) {
-        System.exit(0)
-    }
-    
-    counter++
-}
+ObjectRepositoryGarbageCollector gc = new ObjectRepositoryGarbageCollector.Builder().build()
 
+// gc.jsonifyGarbages() triggers scanning through the 2 folders and analyze the files.
+// All forward references from TestCase scripts to TestObject entities are identified.
+// Consequently, it can result a list of unused TestObjects.
+// Will output the result in a JSON string
+
+String json = gc.jsonifyGarbages()
+
+println JsonOutput.prettyPrint(json)

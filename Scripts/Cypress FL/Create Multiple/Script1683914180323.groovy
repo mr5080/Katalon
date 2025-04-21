@@ -17,10 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 20
+int howMany = 5
 
 int counter = 1
-boolean shouldBind = true
+boolean shouldBind = false
 
 while (counter <= howMany) {
    // WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)

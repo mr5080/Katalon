@@ -247,7 +247,7 @@ for (int i = 0; i < cityCount; i++) {
 
 
 // this works for Geocode button 3.8.25!!! UPDATE TX EG AND OTHER MANUALS
-if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'), 10))
+if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'), 10))  /// leave at 10 seconds!
 {
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'))
 	System.out.println('clicked GEOCODE button')
@@ -455,11 +455,12 @@ if(censusBlockTest)
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
 
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), YOC)
+/*
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
 }
-
+*/
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
 System.out.println('constructionYear  = ' + constructionYear)
 System.out.println('constructionYear.length()  = ' + constructionYear.length())
@@ -512,18 +513,13 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
     if (randomNumber == 0) // fill out US prior mailing address
     {
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), addressFLPrior)
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '1000 Margherita Ct')
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), cityFLPrior)
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Red Lion')
 
-        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), stateFLPrior, false)
+        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), zipFLPrior //
-            // outputs dropdown label
-            // street adddress
-            // city, province, zip,  PreviousAddress2
-            // country name
-            )
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), '17356')
 			
 			
 			if(WebUI.waitForAlert(4))
@@ -1121,7 +1117,7 @@ if (shouldBind == false)
 {
 	WebUI.comment('shouldBind = ' + shouldBind)
 	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_GoBackOnePage'))
-	WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_GoForwardOnePage'))
+	//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_GoForwardOnePage'))
 }
 
 // pass vars to write the file  9.16.21

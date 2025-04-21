@@ -60,35 +60,90 @@ else if(manualAddress == 'truerisk')
 }
 else if(manualAddress == 'claim')
 {
-	def nameAddressData = ['randomFirstName': 'Amal',
-		'randomLastName': 'Owens',
-		'addressFL': '4183 Orchid Dr',
-		'cityFL': 'Hernando Beach',
+	/*
+	def nameAddressData = ['randomFirstName': 'Filmore', // 1 claim
+		'randomLastName': 'Shevels',
+		'addressFL': '12108 Bayonne St',
+		'cityFL': 'Jacksonville',
 		'stateFL': 'FL',
-		'zipFL': '34607'
+		'zipFL': '32224'
 		]
 	return nameAddressData
-		
-	/*
-	randomFirstName = 'Lillie'.toUpperCase()	
-	randomLastName = 'Green'.toUpperCase()	
-	addressFL = '1139 Riverscape St'.toUpperCase()
-	cityFL = 'Bradenton'.toUpperCase()
-	stateFL = 'FL'
-	zipFL = 34208 
 	*/
-	/* second claim test case
-	randomFirstName = ('Corine').toUpperCase()
-	randomLastName = ('Green').toUpperCase()
-	addressFL = ('1139 Riverscape St').toUpperCase()
-	cityFL = ('Bradenton').toUpperCase()
-	stateFL = 'FL'
-	zipFL = 34208
-	*/	
+
+	/*	
+	def nameAddressData = ['randomFirstName': 'Christal',	// 1 claim - only 2 counts SMOKE WATER HAIL - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+		'randomLastName': 'Grishankov',
+		'addressFL': '3676 Casitas Dr',
+		'cityFL': 'Jacksonville',
+		'stateFL': 'FL',
+		'zipFL': '32224'
+		]
+	return nameAddressData
+	*/
+/*	
+	def nameAddressData = ['randomFirstName': 'Jori',	// 3 claims - only 1 counts HAIL WIND SMOKE - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+		'randomLastName': 'Porcher',
+		'addressFL': '3850 Vickers Lake Dr',
+		'cityFL': 'Jacksonville',
+		'stateFL': 'FL',
+		'zipFL': '32224'
+		]
+	return nameAddressData
+*/	
+/*	
+	def nameAddressData = ['randomFirstName': 'Stace',	// 3 claims - only 2 counts WIND RIOT ROBBERY  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+		'randomLastName': 'Pally',
+		'addressFL': '3682 Casitas Dr',
+		'cityFL': 'Jacksonville',
+		'stateFL': 'FL',
+		'zipFL': '32224'
+		]
+	return nameAddressData
+*/
+/*	
+	// this is good one, returns 3 claims
+	def nameAddressData = ['randomFirstName': 'Lynelle',	// 3 claims - 3 counts ID, GLASS, SMOKE  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+		'randomLastName': 'Sonnenschein',
+		'addressFL': '16307 Baycross Dr',
+		'cityFL': 'Lakewood Ranch',
+		'stateFL': 'FL',
+		'zipFL': '34202'
+		]
+	return nameAddressData
+*/	
+	
+	// this is good one, returns 3 claims
+	def nameAddressData = ['randomFirstName': 'Aggi',	// 3 claims - 3 counts ice, fire, sink  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+		'randomLastName': 'Alger',
+		'addressFL': '2630 Interlock Dr',
+		'cityFL': 'Kissimmee',
+		'stateFL': 'FL',
+		'zipFL': '34741'
+		]
+	return nameAddressData
+	
+	
 }
 	
 else if(manualAddress == 'creditReport')
 {
+	def nameAddressData = ['randomFirstName': 'LORI',    // new 4.15.2025 COG06918, data is returned, but the credit score will not match 00V77 column is not on the new data
+		'randomLastName': 'Oberman',
+		'addressFL': '1425 E Mulberry Dr',
+		'cityFL': 'Tampa',
+		'stateFL': 'FL',
+		'zipFL': '33604'
+		]
+	
+/*	
+		def nameAddressData = ['randomFirstName': 'Avel',    // new 4.15.2025 COG06918
+		'randomLastName': 'Maqueda',
+		'addressFL': '2220 NE 59th PL',
+		'cityFL': 'Ocala',
+		'stateFL': 'FL',
+		'zipFL': '34479'
+		]
 	def nameAddressData = ['randomFirstName': 'Kim',
 			'randomLastName': 'Mirian',
 			'addressFL': '1716 Cherry Ln',
@@ -96,7 +151,7 @@ else if(manualAddress == 'creditReport')
 			'stateFL': 'FL',
 			'zipFL': '33811'
 			]
-			
+*/			
 	/*
 		randomLastName = 'Kim'.toUpperCase()	
 		randomFirstName = 'Mirian'.toUpperCase()
@@ -111,7 +166,7 @@ else if(manualAddress == 'creditReport')
 
 Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)
 // random num between 2 - 500 (first line in excel file is a header)
-int randomFLaddress = 2 + ((Math.random() * ((210 - 2) + 1)) as int)
+int randomFLaddress = 2 + ((Math.random() * ((660 - 2) + 1)) as int)
 
 // override randomness to specifiy address in file to use
 //randomFLaddress = 510

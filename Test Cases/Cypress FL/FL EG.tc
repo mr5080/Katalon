@@ -152,7 +152,7 @@
       <name>realTestUser</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>
@@ -201,14 +201,14 @@
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2020'</defaultValue>
+      <defaultValue>'2018'</defaultValue>
       <description></description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>
       <name>YOC</name>
    </variable>
    <variable>
-      <defaultValue>'creditReport'</defaultValue>
+      <defaultValue>'claim'</defaultValue>
       <description>manual, claim, truerisk, PC10, creditReport</description>
       <id>a7c73d2b-c536-4eb7-bf0e-63a9ba2feb3f</id>
       <masked>false</masked>

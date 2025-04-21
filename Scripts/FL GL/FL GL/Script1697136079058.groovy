@@ -241,7 +241,7 @@ try {
 
         //WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
         WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '3')
-
+/*
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_AddClassCode'))
 
         WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'), '91341', true)
@@ -349,6 +349,7 @@ try {
 
         //WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
         WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '15')
+      */  
     }
     
     if (addInsured == true) {
@@ -640,7 +641,7 @@ if(addClassCodes == false)
 
     WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsSubcontractCosts'), '20000')
 
-    WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsGrossReceipts'), '110000')
+    WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__Prior12MonthsGrossReceipts'), '490000')
 
     //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_Prior Carrier_PriorCarrier'), 'geico')
     //WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input__PriorPremium'), '1500')

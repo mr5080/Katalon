@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Garage Object Scan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>75a7eded-cf9b-43af-b8b2-495dc2b52f6f</testCaseGuid>
+</TestCaseEntity>
