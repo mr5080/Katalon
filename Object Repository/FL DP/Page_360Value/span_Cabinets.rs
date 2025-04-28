@@ -6,16 +6,16 @@
    <elementGuidId>9db72ca2-3c92-4648-a155-4544b516c550</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//body[1]/iv360[1]/iv360-main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/iv360-wrapper[1]/valuation-entry-point[1]/iv360-valuation[1]/div[1]/form[1]/iv360-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/iv360-page-area[1]/div[1]/div[1]/iv360-quality-no-slider[1]/div[1]/iv360-quality-section[4]/div[1]/div[1]/div[1]/mat-radio-group[1]/mat-radio-button[3]
-</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#XT_CC_QUALITY-OPTION_2 > label.mat-radio-label > span.mat-radio-container > span.mat-radio-outer-circle</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[1]/iv360[1]/iv360-main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/iv360-wrapper[1]/valuation-entry-point[1]/iv360-valuation[1]/div[1]/form[1]/iv360-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/iv360-page-area[1]/div[1]/div[1]/iv360-quality-no-slider[1]/div[1]/iv360-quality-section[4]/div[1]/div[1]/div[1]/mat-radio-group[1]/mat-radio-button[3]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>72e0b113-fd95-4a14-97ff-0c2f0faaa351</webElementGuid>
+      <webElementGuid>1089565e-c7e1-4e31-a295-35efa5fc44ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mat-radio-outer-circle</value>
-      <webElementGuid>30af0875-6330-4f96-81aa-6dad13daa4cb</webElementGuid>
+      <webElementGuid>9e7c57d3-91a7-447c-9fb2-b6194fddeb27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,29 +39,20 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;XT_CC_QUALITY-OPTION_2&quot;)/label[@class=&quot;mat-radio-label&quot;]/span[@class=&quot;mat-radio-container&quot;]/span[@class=&quot;mat-radio-outer-circle&quot;]</value>
-      <webElementGuid>e37348cc-688e-45d6-a6c8-cb680574aa92</webElementGuid>
+      <webElementGuid>31d9d6e9-ee7b-4cd8-bd67-54b802e85059</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>#XT_CC_QUALITY-OPTION_2 > label.mat-radio-label > span.mat-radio-container > span.mat-radio-outer-circle</value>
+      <webElementGuid>82b76136-137e-44e5-983b-57e724472972</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//mat-radio-button[@id='XT_CC_QUALITY-OPTION_2']/label/span/span</value>
-      <webElementGuid>10359914-9b79-4a6c-8932-0b35618b3964</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//iv360-quality-section[4]/div/div/div/mat-radio-group/mat-radio-button[3]/label/span/span</value>
-      <webElementGuid>c9235203-38e8-45bb-b324-67003e5118cb</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//iv360-quality-section[@class='ng-tns-c305-15 ng-star-inserted']//mat-radio-button[2]</value>
-      <webElementGuid>3020d2f1-b23a-4cd8-a8c0-c5f9cdeeb20a</webElementGuid>
+      <webElementGuid>7c7222f1-c18c-4d1a-9f31-895c559edf87</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

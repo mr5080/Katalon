@@ -75,16 +75,91 @@ else if(manualAddress == 'truerisk')
 			]
 		return nameAddressData
 }
-else if(manualAddress == 'aplus')
+else if(manualAddress == 'claim')
 {
-	def nameAddressData = ['randomFirstName': 'JORI',
-			'randomLastName': 'PORCHER',
-			'addressFL': '3850 VICKERS LAKE DR',
-			'cityFL': 'JACKSONVILLE',
+	int randomClaim = 1 + ((Math.random() * ((7 - 1) + 1)) as int)
+	if(randomClaim == 1)
+	{	
+		def nameAddressData = ['randomFirstName': 'Filmore', // 1 claim
+			'randomLastName': 'Shevels',
+			'addressFL': '12108 Bayonne St',
+			'cityFL': 'Jacksonville',
+			'stateFL': 'FL',
+			'zipFL': '32224'
+			]
+			return nameAddressData
+	
+	}
+	else if(randomClaim == 2)
+	{	
+		def nameAddressData = ['randomFirstName': 'Christal',	// 1 claim - only 2 counts SMOKE WATER HAIL - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Grishankov',
+			'addressFL': '3676 Casitas Dr',
+			'cityFL': 'Jacksonville',
 			'stateFL': 'FL',
 			'zipFL': '32224'
 			]
 		return nameAddressData
+	}
+	else if(randomClaim == 2)
+	{	
+		def nameAddressData = ['randomFirstName': 'Jori',	// 3 claims - only 1 counts HAIL WIND SMOKE - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Porcher',
+			'addressFL': '3850 Vickers Lake Dr',
+			'cityFL': 'Jacksonville',
+			'stateFL': 'FL',
+			'zipFL': '32224'
+			]
+	return nameAddressData
+	}
+	else if(randomClaim == 3)
+	{
+		def nameAddressData = ['randomFirstName': 'Stace',	// 3 claims - only 2 counts WIND RIOT ROBBERY  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Pally',
+			'addressFL': '3682 Casitas Dr',
+			'cityFL': 'Jacksonville',
+			'stateFL': 'FL',
+			'zipFL': '32224'
+			]
+			return nameAddressData
+	}
+	else if(randomClaim == 4)
+	{	
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Lynelle',	// 3 claims - 3 counts ID, GLASS, SMOKE  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Sonnenschein',
+			'addressFL': '16307 Baycross Dr',
+			'cityFL': 'Lakewood Ranch',
+			'stateFL': 'FL',
+			'zipFL': '34202'
+			]
+	return nameAddressData
+	}
+	else if(randomClaim == 5)
+	{
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Aggi',	// 3 claims - 3 counts ice, fire, sink  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Alger',
+			'addressFL': '2630 Interlock Dr',
+			'cityFL': 'Kissimmee',
+			'stateFL': 'FL',
+			'zipFL': '34741'
+			]
+			return nameAddressData
+	}
+	else if(randomClaim == 6)
+	{
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Stella',	// 3 claims - 3 counts ice, fire, sink  - Claim types WIND, HAIL, LIGHT, WEATHER & FLOOD are excluded when determining number of claims from Property Report
+			'randomLastName': 'Forman',
+			'addressFL': '3371 Wellington Rd',
+			'cityFL': 'Pensacola',
+			'stateFL': 'FL',
+			'zipFL': '32504'
+			]
+		return nameAddressData
+	}
+	//return nameAddressData
 }
 	
 //C:\Users\john.hughes\CORNERSTONE OPERATIONS GROUP\Cannabis - Documents\Product Startup\Product Development\Approved for COG\Third Party\Verisk\LightSpeed

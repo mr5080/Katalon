@@ -57,16 +57,90 @@ else if(manualAddress == 'truerisk')
 }
 else if(manualAddress == 'claim')
 {
-	// fill in eventually
-	def nameAddressData = ['randomFirstName': 'Ruben',
-		'randomLastName': 'Smooth',
-		'addressTX': '320 Country Road 311',
-		'cityTX': 'Cleveland',
-		'stateTX': 'TX',
-		'zipTX': '77327'
-		]
-	return nameAddressData
+	int randomClaim = 1 + ((Math.random() * ((7 - 1) + 1)) as int)
+	randomClaim = 7
+	if(randomClaim == 1)
+	{
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Chris',	// this is a valid TX claim address with no validations!!!!!!!!!!!!!!
+			'randomLastName': 'Boyen',
+			'addressTX': '1931 Chandler Ln',
+			'cityTX': 'Arlington',
+			'stateTX': 'TX',
+			'zipTX': '76014'
+			]
+			return nameAddressData
+	}
+	else if(randomClaim == 2)		// this is a valid TX claim address with no validations!!!!!!!!!!!!!!
+	{
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Jemmy',
+			'randomLastName': 'Clayborn',
+			'addressTX': '18 Laguna Rd',
+			'cityTX': 'Montgomery',
+			'stateTX': 'TX',
+			'zipTX': '77356'
+			]
+			return nameAddressData
+	}		
+	else if(randomClaim == 3)
+	{	
+		def nameAddressData = ['randomFirstName': 'Ray', // 1 claim
+			'randomLastName': 'Hinkins',
+			'addressTX': '1381 Lakeview Dr',
+			'cityTX': 'Southlake',
+			'stateTX': 'TX',
+			'zipTX': '76092'
+			]
+			return nameAddressData
 	
+	}
+	else if(randomClaim == 4)
+	{	
+		def nameAddressData = ['randomFirstName': 'Pearl',	
+			'randomLastName': 'Dettmar',
+			'addressTX': '15205 Verela Dr',
+			'cityTX': 'Austin',
+			'stateTX': 'TX',
+			'zipTX': '78725'
+			]
+		return nameAddressData
+	}
+	else if(randomClaim == 5)
+	{	
+		def nameAddressData = ['randomFirstName': 'Tracy',	
+			'randomLastName': 'Bennison',
+			'addressTX': '3107 Ivy Falls Dr',
+			'cityTX': 'Houston',
+			'stateTX': 'TX',
+			'zipTX': '77068'
+			]
+	return nameAddressData
+	}
+	else if(randomClaim == 6)
+	{
+		def nameAddressData = ['randomFirstName': 'Brinna',	
+			'randomLastName': 'Lean',
+			'addressTX': '3519 Imperial Ave',
+			'cityTX': 'Midland',
+			'stateTX': 'TX',
+			'zipTX': '79707'
+			]
+			return nameAddressData
+	}
+	
+	else if(randomClaim == 7)
+	{
+	// this is good one, returns 3 claims
+		def nameAddressData = ['randomFirstName': 'Doralin',	
+			'randomLastName': 'Cowdry',
+			'addressTX': '11919 Waterdance Ln',
+			'cityTX': 'Houston',
+			'stateTX': 'TX',
+			'zipTX': '77095'
+			]
+		return nameAddressData
+	}
 }
 	
 else if(manualAddress == 'creditReport')

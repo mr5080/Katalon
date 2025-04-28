@@ -668,13 +668,28 @@ if(policyType == 'HO3')
 {	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
 		   
-	WebUI.delay(2)
+	WebUI.delay(5)
 	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 	
-	WebUI.delay(2)
+	WebUI.delay(3)
 	
 	WebUI.switchToWindowTitle('360Value')
+	
+	
+	// trying to update sq ft value
+	//String sqFt = WebUI.getText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
+	sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
+	if(sqFt > 2500)
+	{
+		sqFt = 2099
+	}	
+	System.out.println('sqFt = ' + sqFt)
+	
+	//findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt')
+	
+	
+	
 	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
 	
