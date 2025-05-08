@@ -494,7 +494,6 @@ if (constructionYear.length() > 1) {
 
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
 
-
         System.out.println('constructionYear and roof year reset to ' + constructionYear)
     }
 }
@@ -662,56 +661,49 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBa
 
 
 
-
-// opens 360 value modal
+// select Hurricane, AOP, Windstorm/Hail, will get updated if VA = true
 if(policyType == 'HO3')
 {	
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
-		   
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_HurricaneDed'), 3)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AOPDed'), 5)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_WindstormDed'), 10)
+}
+
+// opens 360 value modal
+if(policyType == 'HO3' && run360 == true)
+{	
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))   
 	WebUI.delay(5)
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
-	
 	WebUI.delay(3)
-	
 	WebUI.switchToWindowTitle('360Value')
 	
-	
-	// trying to update sq ft value
-	//String sqFt = WebUI.getText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
-	sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
+	// update sq ft value
+	int sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
 	if(sqFt > 2500)
 	{
-		sqFt = 2099
+		System.out.println('in the sqFt if statement')
+		System.out.println('before clear')
+		WebUI.clearText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
+		WebUI.delay(1)
+		WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), '1999')
+//		WebUI.delay(1)
 	}	
-	System.out.println('sqFt = ' + sqFt)
-	
-	//findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt')
-	
-	
-	
+//	sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
+//	System.out.println('sqFt = ' + sqFt)
 	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Exterior'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Interior'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Cabinets'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Continue'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_Calculate Now'))
-	
 	WebUI.closeWindowTitle('360Value')
 	
 	//WebUI.delay(2)
 	WebUI.switchToDefaultContent()
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
-	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
-	
 	WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
 }
 // end 360 code
@@ -721,8 +713,10 @@ if(policyType == 'HO3')
 // 0 = None, 1 = Edge, 2 = EdgePlus
 //for(int xx = 0; xx < 20; xx++)
 //{
-randomBundle = (((Math.random() * 2) as int) + 1 // generates random number, either 0 or 1 or 2,
-)
+
+// generates random number, either 0 or 1 or 2,
+randomBundle = (((Math.random() * 2) as int) + 1)
+
 
 if (policyType == 'HO6') {
     randomBundle = (randomBundle - 1 // because HO6 only has 1 bundle option
@@ -751,7 +745,6 @@ if(policyType == 'HO3')
 	else
 		WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOValueAdvantage-No'))
 }
-
 
 if(stopQQ)
 {
@@ -904,35 +897,36 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 'CONCRETEBLOCK', true)
 
 
-
-// if effective date 5/1/25 or after, fill in water heater type, water heater year, PlumbingLines
-date1 = new Date(effectiveDate);
-date2 = new Date('05/01/2025');
-//date2 = new Date('May 01, 2025');
-
-if (date1 < date2)
-{
-  System.out.println("effectiveDate is before 5.1.25");
+if(policyType == 'HO3')
+{	
+	// if effective date 5/1/25 or after, fill in water heater type, water heater year, PlumbingLines
+	date1 = new Date(effectiveDate);
+	date2 = new Date('06/09/2025');		// 05/01/2025 previously, got changed for some reason??? COG06471
+	//date2 = new Date('May 01, 2025');
+	
+	if (date1 < date2)
+	{
+	  System.out.println("effectiveDate is before 5.1.25");
+	}
+	else // if (date1 >= date2)
+	{
+	  System.out.println("effectiveDate is 5.1.25 or later, need to fill in these fields");
+	  
+	  // this gets random number for dropdown
+	  TestObject dropdown = findTestObject('Cypress 4/Page_/select_WaterHeaterType')
+	  int totalOptions = WebUI.getNumberOfTotalOption(dropdown)
+	  //System.out.println("totalOptions for water heater = " + totalOptions);
+	  
+	  int randomWaterHeater = 0
+	  min = 1		// 1 because first option is blank, and blank is not an allowed answer
+	  randomWaterHeater = 1 + ((Math.random() * (totalOptions - min))  as int)
+	  WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
+	
+	//  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS
+	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
+	  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
+	}
 }
-else // if (date1 >= date2)
-{
-  System.out.println("effectiveDate is 5.1.25 or later, need to fill in these fields");
-  
-  // this gets random number for dropdown
-  TestObject dropdown = findTestObject('Cypress 4/Page_/select_WaterHeaterType')
-  int totalOptions = WebUI.getNumberOfTotalOption(dropdown)
-  //System.out.println("totalOptions for water heater = " + totalOptions);
-  
-  int randomWaterHeater = 0
-  min = 1		// 1 because first option is blank, and blank is not an allowed answer
-  randomWaterHeater = 1 + ((Math.random() * (totalOptions - min))  as int)
-  WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
-
-//  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS
-  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
-  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
-}
-
 
 
 /*
@@ -958,7 +952,7 @@ if (addInterest == true) {
 
     //WebUI.delay(3)
     //WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), randomFirstNameForInterest + " " + randomLastName)
-    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), '4373 NEWBERRY RD')
+    WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestName'), 'JIMMY ADDINT1 JONES')
 
     WebUI.setText(findTestObject('Cypress 4/Page_/input - InterestAddress'), 'ISAOA/ATIMA')
 
@@ -1063,17 +1057,22 @@ WebUI.click(findTestObject('Cypress 4/Page_/button_Billing'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentPlanOption'), payPlanOption, true)
 
+/*  commenting this oug 4.30.25 - if Morgageee Billed To is selected, the policy is eventually canceled due to non payment
 if (addInterest == true) 
 {
 	WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 2)
 	WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 2)
-	
 }
 else 
 {
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 'Applicant1', true)
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 'Applicant1', true)
 }
+*/
+
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Premium Billed To'), 1)
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Renewal Billed To'), 1)
+
 
 
 'Display Quote button'

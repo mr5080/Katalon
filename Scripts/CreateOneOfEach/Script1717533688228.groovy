@@ -19,18 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 int howMany = 40
 
-boolean shouldBind = true
+boolean shouldBind = false
 
 int counter = 1
 
 // john did this and again
 while (counter <= howMany) {
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind],        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind],         FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
+    
     WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)

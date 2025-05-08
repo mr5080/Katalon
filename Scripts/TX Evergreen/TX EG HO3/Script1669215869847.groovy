@@ -428,13 +428,30 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 // opens 360 value modal
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
 	   
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.switchToWindowTitle('360Value')
+
+// trying to update sq ft value
+int sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
+if(sqFt > 2500)
+{
+	System.out.println('in the sqFt if statement')
+	System.out.println('before clear')
+	WebUI.clearText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
+	WebUI.delay(1)
+	WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), '1999')
+//		WebUI.delay(1)
+}
+//	sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
+//	System.out.println('sqFt = ' + sqFt)
+
+
+//findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt')
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_360Value/span_General Shape Style'))
 
