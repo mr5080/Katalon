@@ -87,6 +87,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://alchemytest.cogisi.com/is/root/logon/index.cfm')
 
+if (environment == 'TEST') {
+	WebUI.navigateToUrl('https://alchemytest.cogisi.com/is/root/logon/index.cfm')
+} else if (environment == 'STAGE') {
+	WebUI.navigateToUrl('https://alchemystage.cogisi.com/is/root/logon/index.cfm')
+}
+
 
 
 if (isAgent) 
@@ -171,13 +177,13 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Please choose a name type_NOSAVEAppli_f4d688'))
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), 'Andrea')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant First Name_NOSAVE-INDApplic_2cbe29'), 'Emilee')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Middle Name_NOSAVE-INDAppli_24c841'), 'Ann')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Middle Name_NOSAVE-INDAppli_24c841'), 'Q')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'Drivers')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'Read')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'JR')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'IV')
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_United StatesUS TerritoryInternational'),  'domestic', true)
 
@@ -307,9 +313,7 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEDeni
 
 // new question here
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEAnyCultivation'))
-
-
-
+WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVESamePremisesNo'))
 
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEAnyCooking'))
@@ -368,6 +372,41 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_BindSubmitApp
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Application'))
 
+
+if(isAgent)
+{	
+	// this is temporary logic
+	//System.out.println('quoteNumber = ' + quoteNumber)
+	//f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\\\FL-EG-'+policyType+'stoppedAtQQ.txt')
+	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
+	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
+	
+	def valueA = quoteNumber + '\n'
+	f.append(valueA)
+}
+else
+{
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/a_policyNumberLink'), 10)
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'),10)
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_MORE'))
+	
+	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/policyID'), 10)
+	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'), 'innerHTML')
+	System.out.println('policyNumber = ' + policyNumber)
+	
+	
+	
+	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
+	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
+	
+	def valueA = policyNumber + '\n'
+	f.append(valueA)
+	
+	
+}
+// end temp logic
+
+/* temp logic above replaced this
 if(!isAgent)
 {
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/a_policyNumberLink'), 10)
@@ -380,7 +419,8 @@ if(!isAgent)
 	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'), 'innerHTML')
 	System.out.println('policyNumber = ' + policyNumber)	
 }
-
+  	end  temp logic above replaced this
+*/ 	 
 // 2.5.25 copied over but not implemented.
 /*WebUI.callTestCase(findTestCase('Alchemy/writeFile'),
 	[('policyType') : policyType,

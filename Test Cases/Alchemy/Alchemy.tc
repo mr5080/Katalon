@@ -18,18 +18,31 @@
       <value></value>
       <variableId>bbc2c280-399c-4e41-9fe5-37be6085db7b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>854da17c-31bc-4d92-84fc-c59f4e7cf093</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>0509f3c5-1b6a-410f-89c3-85f16e258a55</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'08/13/2025'</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>bbc2c280-399c-4e41-9fe5-37be6085db7b</id>
       <masked>false</masked>
       <name>effectiveDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'TEST'</defaultValue>
+      <description>TEST or STAGE</description>
+      <id>854da17c-31bc-4d92-84fc-c59f4e7cf093</id>
+      <masked>false</masked>
+      <name>environment</name>
    </variable>
 </TestCaseEntity>
