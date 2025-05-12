@@ -12,11 +12,24 @@
       <value></value>
       <variableId>0509f3c5-1b6a-410f-89c3-85f16e258a55</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bbc2c280-399c-4e41-9fe5-37be6085db7b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
       <id>0509f3c5-1b6a-410f-89c3-85f16e258a55</id>
       <masked>false</masked>
       <name>isAgent</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>MM/DD/YYYY, or leave blank for todays date</description>
+      <id>bbc2c280-399c-4e41-9fe5-37be6085db7b</id>
+      <masked>false</masked>
+      <name>effectiveDate</name>
    </variable>
 </TestCaseEntity>

@@ -45,6 +45,43 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
+
+
+// get todays date - after katalon update 9.23.24
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
+LocalDate todaysDate = LocalDate.now();
+def myDate = todaysDate.format(formatter)
+
+def yesterdayDate = todaysDate.minusDays(1).format(formatter)
+def  tomorrowDate = todaysDate.plusDays(1).format(formatter)
+
+System.out.println('myDate = ' + myDate)
+System.out.println('yesterdayDate = ' + yesterdayDate)
+System.out.println('tomorrowDate = ' + tomorrowDate)
+
+
+/*
+// get todays date
+mydate = new Date()
+System.out.println('myDate = ' + mydate)
+todaysDate = mydate.format('MM/dd/yyyy')
+*/
+
+if(effectiveDate == '')
+{
+	effectiveDate = myDate
+	System.out.println('effectiveDate = ' + effectiveDate)
+}
+System.out.println('myDate = ' + myDate)
+
+
+todaysTimeStamp = myDate //.format(('MMddyyyy' + '-') + 'HHmm')
+System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
+
+//currentYear = Integer.parseInt(mydate.format('yyyy'))
+currentYear = todaysDate.getYear()
+System.out.println('currentYear = ' + currentYear)
+
 RunConfiguration.setWebDriverPreferencesProperty('args', ['--incognito', '--start-maximized', '--disable-infobars', 'enable-automation'])		// takes place instead of Project - Settings - Desired Capabilityes - Web
 WebUI.openBrowser('')
 
@@ -78,7 +115,12 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/label_Start'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/a_Start a New Quote'))
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Effective Date_EffectiveDate'), '01/31/2025')
+//WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Effective Date_EffectiveDate'), '01/31/2025')
+WebUI.clearText(findTestObject('Object Repository/Alchemy/Page_/input_Effective Date_EffectiveDate'))
+WebUI.sendKeys(findTestObject('Object Repository/Alchemy/Page_/input_Effective Date_EffectiveDate'),  Keys.chord(effectiveDate, Keys.TAB))
+//System.exit(0)
+
+//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(effectiveDate, Keys.TAB))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ALABAMAALASKAARIZONAARKANSASCOLORADO_85901c'), 'AZ', true)
 
@@ -262,6 +304,13 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEClai
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_No_NOSAVEAdminViolation'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEDeniedRenewal'))
+
+// new question here
+WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEAnyCultivation'))
+
+
+
+
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVEAnyCooking'))
 
