@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Calculate Now</name>
+   <name>span_Drywall over Steel Studs</name>
    <tag></tag>
-   <elementGuidId>db65e0f0-a1aa-48ca-b22b-8f9b76a85a65</elementGuidId>
+   <elementGuidId>903f3814-eb07-44b0-a5cf-4929fc5b6ac5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#iv360-calculate_now > span.mdc-button__label > span.iv360-button-text</value>
+         <key>XPATH</key>
+         <value>//mat-option[@id='mat-option-292']/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='iv360-calculate_now']/span[2]/span</value>
+         <key>CSS</key>
+         <value>#mat-option-292 > span.mdc-list-item__primary-text</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,94 +23,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>891300f6-709c-4b97-b59c-57be80f45c51</webElementGuid>
+      <webElementGuid>564ae808-68f8-46ed-be46-c99b19dc8c9a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>iv360-button-text</value>
-      <webElementGuid>7d4db28b-6036-4b20-8975-9dca309809fa</webElementGuid>
+      <value>mdc-list-item__primary-text</value>
+      <webElementGuid>0a07f478-9843-427f-90a3-499e70762383</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Calculate Now</value>
-      <webElementGuid>b67ad6fa-a8df-4704-9c0f-6ac1d226cfb2</webElementGuid>
+      <value> Drywall over Steel Studs </value>
+      <webElementGuid>20e73ea9-2a87-42d3-918c-b70d30678d5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;iv360-calculate_now&quot;)/span[@class=&quot;mdc-button__label&quot;]/span[@class=&quot;iv360-button-text&quot;]</value>
-      <webElementGuid>74b01736-38ab-4437-a351-291f5c7feafb</webElementGuid>
+      <value>id(&quot;mat-option-292&quot;)/span[@class=&quot;mdc-list-item__primary-text&quot;]</value>
+      <webElementGuid>9c78a6db-4d5e-4c4c-8cbe-ba5cccc55c50</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='iv360-calculate_now']/span[2]/span</value>
-      <webElementGuid>40d5fb58-67d7-47e9-9c79-c58ec42045dd</webElementGuid>
+      <value>//mat-option[@id='mat-option-292']/span</value>
+      <webElementGuid>e577056e-e447-4741-995b-c3a9ac3646b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[10]</value>
-      <webElementGuid>e099121a-5cbd-492a-aed8-1df631b48876</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Calculate Now'])[1]/following::span[6]</value>
+      <webElementGuid>3de64cf0-e36a-4b12-b3ec-34ea88b50d5b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Data Available'])[1]/following::span[18]</value>
-      <webElementGuid>08d8ce6e-fcf6-4eb1-8b1f-79b4d2db6736</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[16]</value>
+      <webElementGuid>0c56a618-457c-4d4f-bd87-c69cb7af0213</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::span[5]</value>
-      <webElementGuid>d1554fc7-ca4a-4637-b5bb-3cebb837a9cf</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Drywall over Wood Framing'])[1]/preceding::span[1]</value>
+      <webElementGuid>6525f554-9b47-4eda-9eba-9feff93af7fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[2]/preceding::span[6]</value>
-      <webElementGuid>e30a1e38-3f42-409e-a215-97c27adeb1d5</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Plaster over Framing'])[1]/preceding::span[2]</value>
+      <webElementGuid>29b8c3c3-294f-432f-9452-6f658d8aa183</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Calculate Now']/parent::*</value>
-      <webElementGuid>baa2bfb4-1d79-4880-8170-19732672ec72</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Drywall over Steel Studs']/parent::*</value>
+      <webElementGuid>53612e6e-c5ff-4e3b-88ac-a7c1e1743850</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/iv360-nav-button/button/span[2]/span</value>
-      <webElementGuid>5c67926d-519f-4231-a1f8-5da9bd8b0b85</webElementGuid>
+      <value>//mat-option[2]/span</value>
+      <webElementGuid>8555a061-1fcc-4f17-8518-fa762dd24b24</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Calculate Now' or . = 'Calculate Now')]</value>
-      <webElementGuid>180902f3-e69a-4166-bcce-d4a76d7fa9d7</webElementGuid>
+      <value>//span[(text() = ' Drywall over Steel Studs ' or . = ' Drywall over Steel Studs ')]</value>
+      <webElementGuid>be150c6d-6bc4-4be2-a99f-852bf4e58dc7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

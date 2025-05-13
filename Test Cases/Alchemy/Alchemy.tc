@@ -31,8 +31,8 @@
       <variableId>f5a9b5df-cbff-4a12-95f9-96fdf9d265a3</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
-      <description></description>
+      <defaultValue>false</defaultValue>
+      <description>always create as agent, as internal 360 has problems????</description>
       <id>0509f3c5-1b6a-410f-89c3-85f16e258a55</id>
       <masked>false</masked>
       <name>isAgent</name>
@@ -52,8 +52,8 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'BOPA'</defaultValue>
-      <description>BOPA, BOPW, BOPD</description>
+      <defaultValue>'BOPW'</defaultValue>
+      <description>BOPA, BOPW, BOPD - Agents can only do BOPA</description>
       <id>f5a9b5df-cbff-4a12-95f9-96fdf9d265a3</id>
       <masked>false</masked>
       <name>policyType</name>

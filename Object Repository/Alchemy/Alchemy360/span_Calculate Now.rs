@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Calculate Now</name>
+   <tag></tag>
+   <elementGuidId>6c16f8ca-4543-41e4-b1a0-c9aeeb119f17</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='iv360-calculate_now']/span[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#iv360-calculate_now > span.mdc-button__label > span.iv360-button-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d6376b47-7634-4302-bacb-66d02bd9350f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>iv360-button-text</value>
+      <webElementGuid>5d084d7c-3f24-4c47-97e1-c501a9c32efd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Calculate Now</value>
+      <webElementGuid>771b9d0e-e610-44e6-bd5b-77a21c028971</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;iv360-calculate_now&quot;)/span[@class=&quot;mdc-button__label&quot;]/span[@class=&quot;iv360-button-text&quot;]</value>
+      <webElementGuid>b3b35d97-53a2-4d50-9c1a-23ea9e2a6c73</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='iv360-calculate_now']/span[2]/span</value>
+      <webElementGuid>9ae1d6e7-79c6-47dc-98b9-db55af0dd0a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[10]</value>
+      <webElementGuid>bd66c56d-a57c-4f09-9adf-ca37a353b0c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Data Available'])[1]/following::span[18]</value>
+      <webElementGuid>60dd1504-ab8e-4615-98bd-60eac36bdc90</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::span[5]</value>
+      <webElementGuid>3d884e74-89f8-41e0-afea-75dca102efd0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[2]/preceding::span[6]</value>
+      <webElementGuid>db692b78-3111-4ee2-aa0d-03266201b2bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Calculate Now']/parent::*</value>
+      <webElementGuid>fbc504d0-9df3-4076-806e-b0d52efffc26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/iv360-nav-button/button/span[2]/span</value>
+      <webElementGuid>373bd280-28af-4cd1-9828-7a2c6d7eafb0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Calculate Now' or . = 'Calculate Now')]</value>
+      <webElementGuid>c11ac75c-d6e2-407c-ac6f-580dd1e64e3e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

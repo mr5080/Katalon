@@ -128,8 +128,14 @@ WebUI.sendKeys(findTestObject('Object Repository/Alchemy/Page_/input_Effective D
 
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(effectiveDate, Keys.TAB))
 
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_PolicyType'), policyType, true)
+if(isAgent)
+{
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_PolicyType'), 'BOPA', true)
+}
+else
+{
+	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_PolicyType'), policyType, true)
+}
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_State'), 'AZ', true)
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Address_ApplicantAddress1'), '1158 S DORA Ave')
@@ -201,20 +207,7 @@ if (!isAgent)
 	
 	
 	
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -314,15 +307,55 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Number of Empl
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Number of Employees (Location Specifi_54cae5'), '6')
 
-
-
 // 360 code
-
-
-
-
-
-
+if(isAgent) 
+	{
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Recalculate'))
+	WebUI.delay(3)
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Calculate'))
+	WebUI.delay(2)
+	WebUI.switchToWindowTitle('360Value')
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_(including attached)_PRI-XT_COMMERCIA_dd4062'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Primary Building_PRI-XT_COMMERCIAL_SQ_d14417'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Continue'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/div_Structural'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Exterior Wall Finish_PRI-XTOL_EWF-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Painted Masonry'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Window Density_PRI-XTOL_WD-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/mat-option_10 - 20'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Roof Type_PRI-XTOL_RO-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/mat-option_Mansard'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Roof Structure_PRI-XTOL_RFS-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Light Gauge Steel Frame'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Roof Material_PRI-XTOL_RC-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Composition - Architectural'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/input_Store - Drugstore_PRI-XTOL_IWS-SELECT_0'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Drywall over Steel Studs'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/span_Calculate Now'))
+	
+	WebUI.switchToWindowTitle('')
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Get Results'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/a_Close'))
+}
 // end 360 code
 
 

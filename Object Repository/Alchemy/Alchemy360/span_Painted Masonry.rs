@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Continue</name>
+   <name>span_Painted Masonry</name>
    <tag></tag>
-   <elementGuidId>d32d76ee-b72e-45ac-b586-5ee35909cc65</elementGuidId>
+   <elementGuidId>60ea7d01-cdb4-4f00-aff1-16fdd85a8d7e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#iv360-continue > span.mdc-button__label > span.iv360-button-text</value>
+         <key>XPATH</key>
+         <value>//mat-option[@id='mat-option-309']/span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='iv360-continue']/span[2]/span</value>
+         <key>CSS</key>
+         <value>#mat-option-309 > span.mdc-list-item__primary-text</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,94 +23,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>7508ee5b-c0e7-48f5-a945-868f67fb47b4</webElementGuid>
+      <webElementGuid>cd9108cd-efef-4405-8f95-8dda8269dbde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>iv360-button-text</value>
-      <webElementGuid>48bc170d-f69e-4793-9d28-e735c0c59730</webElementGuid>
+      <value>mdc-list-item__primary-text</value>
+      <webElementGuid>1daf814a-e521-4aa9-aee2-5b350a0c3927</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Continue</value>
-      <webElementGuid>6a883234-55da-4853-9fa9-eaac43a1851d</webElementGuid>
+      <value> Painted Masonry </value>
+      <webElementGuid>234cbbdd-c983-4bfe-9090-641719af1161</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;iv360-continue&quot;)/span[@class=&quot;mdc-button__label&quot;]/span[@class=&quot;iv360-button-text&quot;]</value>
-      <webElementGuid>f0092b07-e5df-4167-8557-b629b9303237</webElementGuid>
+      <value>id(&quot;mat-option-309&quot;)/span[@class=&quot;mdc-list-item__primary-text&quot;]</value>
+      <webElementGuid>11320a05-fdee-4411-b7ad-0fc25833e97f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//button[@id='iv360-continue']/span[2]/span</value>
-      <webElementGuid>3d9e1d62-aa76-485e-9446-c1337932e628</webElementGuid>
+      <value>//mat-option[@id='mat-option-309']/span</value>
+      <webElementGuid>c2756cb2-1395-4d3e-80ac-c53ab3a44788</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::span[10]</value>
-      <webElementGuid>dc10a4a8-07b4-4804-a9e9-3039970be26d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stone Veneer (Manufactured)'])[1]/following::span[1]</value>
+      <webElementGuid>41bf6c3f-5349-4620-b2d2-66bfefffe13f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='No Data Available'])[1]/following::span[18]</value>
-      <webElementGuid>6bd231bc-17b2-4968-b88c-b75977e9ef8a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stone Veneer (Natural)'])[1]/following::span[2]</value>
+      <webElementGuid>5bdea142-fc2c-417a-a0ad-fd184ac15371</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::span[5]</value>
-      <webElementGuid>39aa1680-18d7-4618-af50-349fb02c5427</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Siding - Vinyl'])[1]/preceding::span[1]</value>
+      <webElementGuid>e39b8428-b1d1-44e4-8e47-77d556a24dd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[2]/preceding::span[6]</value>
-      <webElementGuid>5b56e4b0-9c25-4fd0-8cc2-460cb4d1511c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Siding - Aluminum or Metal'])[1]/preceding::span[2]</value>
+      <webElementGuid>6323df1b-a654-4721-bb76-b19bece0f376</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Continue']/parent::*</value>
-      <webElementGuid>6a229b61-8b0b-428a-be3b-586127c5b3ad</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Painted Masonry']/parent::*</value>
+      <webElementGuid>c708a549-c081-4998-9a08-de6736829b17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/iv360-nav-button/button/span[2]/span</value>
-      <webElementGuid>389ff01e-f60a-49d3-8bd2-b87bef7db227</webElementGuid>
+      <value>//mat-option[9]/span</value>
+      <webElementGuid>7d05db23-5b29-407c-806a-ff41e4b8a8f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//span[(text() = 'Continue' or . = 'Continue')]</value>
-      <webElementGuid>ad1a84d3-c9c8-44bb-bbca-8daa0a97e311</webElementGuid>
+      <value>//span[(text() = ' Painted Masonry ' or . = ' Painted Masonry ')]</value>
+      <webElementGuid>df08db72-bf48-436e-83ad-75fd4a6a4e4e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
