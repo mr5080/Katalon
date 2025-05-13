@@ -160,11 +160,62 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_SaveContinue'
 if (!isAgent)
 {	
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_SearchForAgent'))
+	
+/*	
+//  trying to replace this section	
 	WebUI.delay(1)
 	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '9942806')
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_SelectAgent'))
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'))
+//	end trying to replace this section
+*/	
+	
+	
+	////////////////////////////////////////////////////////////////////
+	
+	for (int x = 0; x < 10; x++)
+		{
+			try {
+				WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), '')	
+				WebUI.sendKeys(findTestObject('Object Repository/Alchemy/Page_/input_Search Term_NOSAVEagentSearchAgentCode'), Keys.chord('9942806',  Keys.UP, Keys.TAB))
+				WebUI.delay(1)
+	
+				if (WebUI.waitForElementVisible(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'), 2)) {
+					WebUI.click(findTestObject('Object Repository/Alchemy/Page_/td_TEST AGENCY'))
+					break
+				}
+			}
+			catch (def e) {
+				System.out.println('didnt find it, trying again... ' + x)
+			}
+		}
+	
+	
+	
+	
+	
+	
+	////////////////////////////////////////////////////////////////////////
+	
+	
+	
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVESetAll'))
 //WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Coverages'))
