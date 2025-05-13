@@ -128,7 +128,9 @@ WebUI.sendKeys(findTestObject('Object Repository/Alchemy/Page_/input_Effective D
 
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Effective Date'),  Keys.chord(effectiveDate, Keys.TAB))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ALABAMAALASKAARIZONAARKANSASCOLORADO_85901c'), 'AZ', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_PolicyType'), policyType, true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_State'), 'AZ', true)
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Address_ApplicantAddress1'), '1158 S DORA Ave')
 
@@ -312,6 +314,23 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Number of Empl
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Number of Employees (Location Specifi_54cae5'), '6')
 
+
+
+// 360 code
+
+
+
+
+
+
+// end 360 code
+
+
+
+
+
+
+
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_IncludedExcluded'), 'Y', true)
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Loss History_PriorClaimCount'), '0')
@@ -427,12 +446,12 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Applicat
 if(isAgent)
 {	
 	// this is temporary logic
-	//System.out.println('quoteNumber = ' + quoteNumber)
+	System.out.println(' Agent -- quoteNumber = ' + quoteNumber)
 	//f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\\\FL-EG-'+policyType+'stoppedAtQQ.txt')
 	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
 	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
 	
-	def valueA = quoteNumber + '\n'
+	def valueA = quoteNumber + ',' + policyType + '\n'
 	f.append(valueA)
 }
 else
@@ -443,14 +462,12 @@ else
 	
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/policyID'), 10)
 	policyNumber = WebUI.getAttribute(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'), 'innerHTML')
-	System.out.println('policyNumber = ' + policyNumber)
-	
-	
+	System.out.println('policyNumber =' + policyNumber)
 	
 	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
 	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
 	
-	def valueA = policyNumber + '\n'
+	def valueA = policyNumber + ', ' + policyType + '\n'
 	f.append(valueA)
 	
 	

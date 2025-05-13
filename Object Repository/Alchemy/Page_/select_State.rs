@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_ALABAMAALASKAARIZONAARKANSASCOLORADO_85901c</name>
+   <name>select_State</name>
    <tag></tag>
    <elementGuidId>11e51dac-41db-4037-834b-e36ef2e46f6d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#ApplicantState</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='ApplicantState']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ApplicantState</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
