@@ -4,5 +4,6 @@
    <name>selectPaymentType</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b9034b5a-940d-4338-b942-8752cee6395d</testCaseGuid>
 </TestCaseEntity>

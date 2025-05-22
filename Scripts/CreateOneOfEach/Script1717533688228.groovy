@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 40
+int howMany = 20
 
-boolean shouldBind = false
+boolean shouldBind = true
 
 int counter = 1
 
@@ -33,7 +33,6 @@ while (counter <= howMany) {
 
     WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
-    
     WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)

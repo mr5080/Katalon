@@ -1,29 +1,10 @@
-/*import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-*/
-
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.time.*
 import java.time.temporal.TemporalAdjusters as TemporalAdjusters
 import java.time.format.DateTimeFormatter
 import java.time.LocalDate
 import java.lang.Integer as Integer
+import java.io.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 import org.openqa.selenium.Keys as Keys
@@ -44,8 +25,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
-
-
 
 // get todays date - after katalon update 9.23.24
 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy")
@@ -165,6 +144,7 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Z
 //WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Save and Continue'))
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_SaveContinue'))
 
+
 if (!isAgent)
 {	
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_SearchForAgent'))
@@ -215,9 +195,14 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Yes_NOSAVESetA
 //WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Coverages'))
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Phone Number_ApplicantPhonezzzz1'), '901-116-5145')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Phone Number_ApplicantPhonezzzz1'), '801-116-4545')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+//WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
+
+int randomEmail = 2 + ((Math.random() * ((999999999 - 2) + 1)) as int)
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+
+
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_Limited Liability CorporationCorporation'), 'LLC', true)
 
@@ -227,9 +212,9 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Fi
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Middle Name_NOSAVE-INDAppli_24c841'), 'Q')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'Read')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Last Name_NOSAVE-INDApplica_c58ad8'), 'ReadY')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'IV')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Applicant Suffix_NOSAVE-INDApplicantS_d9ac27'), 'VI')
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_United StatesUS TerritoryInternational'),  'domestic', true)
 
@@ -241,7 +226,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Zip Code_ApplicantZip'), '85364')
 */
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_DBA Name_DBANamezzzz1'), 'Pottys Pot Shop')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_DBA Name_DBANamezzzz1'), 'Potty Pot Shop')
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Lightspeed'))
 
@@ -283,9 +268,9 @@ WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Heating Upda
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_Owner Tenant Lessor'), 'OWNER', true)
 
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Building Limit_BuildingLimit_1'), '350000')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Building Limit_BuildingLimit_1'), '632000')
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Business Personal Property_BPPLimit_1'), '250000')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Business Personal Property_BPPLimit_1'), '270000')
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_CBP 40 01_ProductLimit_1'), '250000')
 
@@ -307,9 +292,9 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Number of Empl
 
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Number of Employees (Location Specifi_54cae5'), '6')
 
-// 360 code
+// 360 code, for some reason Internal users have issue with 360 xpaths... 5.15.25
 if(isAgent) 
-	{
+{
 	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Recalculate'))
 	WebUI.delay(3)
 	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Calculate'))
@@ -473,22 +458,23 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Display Quote
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_BindSubmitApplication'))
 
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Application'))
+//WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Application'))
 
 
 if(isAgent)
 {	
 	// this is temporary logic
-	System.out.println(' Agent -- quoteNumber = ' + quoteNumber)
+	System.out.println(' Agent -- quoteNumber = ' + quoteNumber + ' ')
 	//f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\\\FL-EG-'+policyType+'stoppedAtQQ.txt')
 	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
 	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
 	
-	def valueA = quoteNumber + ',' + policyType + '\n'
+	def valueA = quoteNumber + ', BOPA \n'
 	f.append(valueA)
 }
 else
 {
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Bind Application'))
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/a_policyNumberLink'), 10)
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Alchemy/Page_/div_PolicyNumberText'),10)
 	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_MORE'))
@@ -500,7 +486,7 @@ else
 	f = new File('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt')
 	//C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\AlchemyQuotes.txt
 	
-	def valueA = policyNumber + ', ' + policyType + '\n'
+	def valueA = policyNumber + ', ' + policyType + ' \n'
 	f.append(valueA)
 	
 	

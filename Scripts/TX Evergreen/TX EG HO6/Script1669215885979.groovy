@@ -633,7 +633,10 @@ System.out.println('quoteNumber = ' + quoteNumber)
 
 catch(e)
 {
+
 	quoteNumber = quoteNumber.replace(':', '')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure.jpg')
+	
 	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 	System.out.println('validationText = ' + validationText)
@@ -641,7 +644,7 @@ catch(e)
 	System.out.println('failed TX address = ' + addressTX)
 	
 	
-	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Failure.jpg')
+	
 		
 	/*
 	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,

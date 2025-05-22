@@ -89,7 +89,7 @@ if (howPayDeposit == 1) {
 	//WebUI.selectOptionByLabel(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 'Visa', false)
 	//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
 
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/27')
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CCName'), fullName)
 	
 
@@ -113,7 +113,7 @@ else if (howPayDeposit == 2) {
 
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Credit card number_NOSAVEACCT'), '4111 1111 1111 1111')
 
-	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/25')
+	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Expiration date_NOSAVEEXPDATE'), '12/27')
 	WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CCName'), fullName)
 	
 
