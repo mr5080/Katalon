@@ -698,6 +698,32 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quo
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
+
+
+///////////////////////////////////////////
+
+// generates random number, either 0, 1, 2 used to randomize payment method, if one is not set
+//randomNumber2 = ((Math.random() * 4) as int)
+
+String depositAmount = WebUI.getAttribute(findTestObject('TX EG HO3/Page_/td_RequiredDepositAmount'), 'innerHTML')
+
+System.out.println('depositAmount = ' + depositAmount)
+
+depositAmount = depositAmount.replaceAll('[^\\d.]', '')
+
+System.out.println('depositAmount = ' + depositAmount)
+
+if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC cant bind over 1000
+{
+	howPayDeposit = 4 // force EFT Recurring
+
+	System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
 //new paperless radio button
 if(paperless)
 {
