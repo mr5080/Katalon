@@ -86,7 +86,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d64539ab-85af-4871-87cb-16b6960e0d70</id>
       <masked>false</masked>
@@ -100,7 +100,7 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>5d2fba57-8901-4079-8020-e390048301d2</id>
       <masked>false</masked>
@@ -149,14 +149,14 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
       <masked>false</masked>
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>

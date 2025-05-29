@@ -43,14 +43,14 @@
       <variableId>3edb4bf0-55f6-496c-9370-af5f071a358b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description></description>
       <id>bbc6d12f-2e9d-4a59-8297-334e466b1957</id>
       <masked>false</masked>
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>ae738418-c220-469f-b118-e1bc2a099fe5</id>
       <masked>false</masked>

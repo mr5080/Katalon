@@ -495,7 +495,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEPa
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1 or 2,
 randomBundle = (((Math.random() * 2) as int) + 1)
-//randomBundle = 2
+randomBundle = 2
 System.out.println('randomBundle = ' + randomBundle)
 
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)

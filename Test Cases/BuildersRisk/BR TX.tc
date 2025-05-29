@@ -43,7 +43,7 @@
       <variableId>5b6edba8-5ed5-4dcd-bd19-dcd5f4b6ebbc</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>e11273fa-aea9-4d48-807a-8e493e8f7e10</id>
       <masked>false</masked>
@@ -57,7 +57,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST, STAGE</description>
       <id>401638ca-d4f3-457c-a849-f9d1ceca4214</id>
       <masked>false</masked>
