@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>mat-option</value>
-      <webElementGuid>75a71234-e43e-4e12-b77f-20b08370a372</webElementGuid>
+      <webElementGuid>e21dcae3-ca1b-4bf2-a740-a6522bdd1165</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>98292b7b-88a7-47ea-b032-99631bf52e9d</webElementGuid>
+      <webElementGuid>63f6e27e-c5d6-46d5-9fa4-4907f4d078fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mat-mdc-option mdc-list-item iv360-searchable-select-option ng-star-inserted ng-tns-c3964489799-33</value>
-      <webElementGuid>6538a03a-79a1-4657-ac96-2b75a910483e</webElementGuid>
+      <webElementGuid>05e850ff-8fba-4787-be14-c921c8948ef4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>id</name>
       <type>Main</type>
       <value>mat-option-322</value>
-      <webElementGuid>ebb5b0ba-4724-4c68-b553-f8a8e2da2a80</webElementGuid>
+      <webElementGuid>7c3143de-dd2d-427e-9476-340d9bf9ce46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5d4a2c8b-b294-4e81-952b-6042b6e890ee</webElementGuid>
+      <webElementGuid>8a5866db-3b0f-4cac-b3a1-36055c5f416f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>8c07eb3a-d0a3-4b03-b47c-499d104b0a8a</webElementGuid>
+      <webElementGuid>ae475dac-f650-474e-81e2-289e8146787d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,7 +71,7 @@
       <name>text</name>
       <type>Main</type>
       <value> 10 - 20% </value>
-      <webElementGuid>66b6b4c4-bd5b-4910-921b-70d91908bde4</webElementGuid>
+      <webElementGuid>82f89048-bb38-4eda-b4ea-02f6ad7fa4ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mat-option-322&quot;)</value>
-      <webElementGuid>d1469915-d86c-4799-b78d-477760890e2f</webElementGuid>
+      <webElementGuid>b2fb19a6-971e-40b7-9106-842d6b45fc95</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//mat-option[@id='mat-option-322']</value>
-      <webElementGuid>9e4a5fbf-bd63-4d32-8850-f265458a4e16</webElementGuid>
+      <webElementGuid>2c63f8d4-c98f-4f6b-9218-3150ec635d8a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='mat-autocomplete-8']/mat-option[3]</value>
-      <webElementGuid>3a8404f2-3e5a-47c5-a042-dfc881cc4a74</webElementGuid>
+      <webElementGuid>929898ac-63b0-4bd2-81d9-b7b73fb8abe3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Calculate Now'])[1]/following::mat-option[3]</value>
-      <webElementGuid>29540322-f6a9-4646-b888-063a8dd91f7e</webElementGuid>
+      <webElementGuid>d6c37996-c7ad-4e81-96de-f418117470e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -111,7 +111,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Back'])[1]/following::mat-option[3]</value>
-      <webElementGuid>c945e1d6-4e1e-412d-b2f0-6d2ccc92faf4</webElementGuid>
+      <webElementGuid>6c9152a7-b5c4-496b-86af-c3a7b3c0718e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -119,7 +119,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading...'])[1]/preceding::mat-option[3]</value>
-      <webElementGuid>82a7c3d6-21ac-4da9-9064-1ecaed7b5f34</webElementGuid>
+      <webElementGuid>a1eaffa0-449a-42fc-a3ec-1d3704db97e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,7 +127,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//mat-option[3]</value>
-      <webElementGuid>9a980b32-06c3-4822-84f3-a88bbfba4052</webElementGuid>
+      <webElementGuid>12126a78-36f0-4ae9-8374-a2c02556aa57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -135,6 +135,20 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//mat-option[@id = 'mat-option-322' and (text() = ' 10 - 20% ' or . = ' 10 - 20% ')]</value>
-      <webElementGuid>9c579bf6-5cb5-442c-a942-560e41fa9175</webElementGuid>
+      <webElementGuid>75748069-0407-46ad-bbd9-4b772b3c3b3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;PRI-XTOL_WD-SELECT_0&quot;]</value>
+      <webElementGuid>c4d4dfa5-a1f7-4628-ae58-c165a3e498bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html/body/iv360/iv360-main/div/div/div/div/div/div/iv360-wrapper/valuation-entry-point/iv360-valuation/div/form/iv360-page/div/div[2]/div/div/div/div/div/div/iv360-page-area/div/div/iv360-cmc-structure-options-page/div/iv360-cmc-source-tab-group/div/div[2]/iv360-cmc-structure-options-tab/div/iv360-page-area[3]/div/iv360-question-row/div/div[1]/div/div/div[2]/iv360-answer-group/div/form/div[1]/div/div[1]/div[2]/iv360-searchable-select/form/input</value>
+      <webElementGuid>56b111ce-c0bb-445d-986f-0d47c0d2ebd3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

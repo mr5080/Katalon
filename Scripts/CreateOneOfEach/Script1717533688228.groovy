@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 20
+int howMany = 10
 
-boolean shouldBind = false
+boolean shouldBind = true
 
 int counter = 1
 
@@ -43,8 +43,9 @@ while (counter <= howMany) {
 
     WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter, ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Alchemy/Alchemy'), [('counter') : counter, ('policyType') : 'BOPA', ('shouldBind') : shouldBind],         FailureHandling.CONTINUE_ON_FAILURE)
-	
+    WebUI.callTestCase(findTestCase('Alchemy/Alchemy'), [('counter') : counter, ('policyType') : 'BOPA', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
+
     // use this one if you want to loop through excel file
     //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
     System.out.println('counter = ' + counter)

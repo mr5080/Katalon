@@ -897,8 +897,8 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall Finish'), 'CONCRETEBLOCK', true)
 
 
-if(policyType == 'HO3')
-{	
+//if(policyType == 'HO3')
+//{	
 	// if effective date 5/1/25 or after, fill in water heater type, water heater year, PlumbingLines
 	date1 = new Date(effectiveDate);
 	date2 = new Date('06/09/2025');		// 05/01/2025 previously, got changed for some reason??? COG06471
@@ -926,7 +926,7 @@ if(policyType == 'HO3')
 	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
 	  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
 	}
-}
+//}
 
 
 /*

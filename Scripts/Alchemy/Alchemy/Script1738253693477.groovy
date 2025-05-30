@@ -115,32 +115,46 @@ else
 {
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_PolicyType'), policyType, true)
 }
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_State'), 'NV', true)
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Address_ApplicantAddress1'), '379 Canyon Mist Ct')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_City_ApplicantCity'), 'Henderson')
+WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Zip Code_ApplicantZip'), '89044')
+
+
+
+ 
+ /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_State'), 'AZ', true)
-
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Address_ApplicantAddress1'), '1158 S DORA Ave')
-
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_City_ApplicantCity'), 'YUMA')
-
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Location Zip Code_ApplicantZip'), '85364')
-
+*/
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/div_Start a New Quote   Effective DateExpir_dc8146'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Application'))
 
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_NOSAVESELECTEDBUSINESS_1'))
 
-WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Business Website_BusinessWebsite_1'), 'www.google.com')
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_ApplicantAddress1_1'))
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_ApplicantAddress2_1'))
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantCity_1'))
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantZip_1'))
-
-WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantZip4_1'))
-
+try
+{
+	WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Business Website_BusinessWebsite_1'), 'www.google.com')
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_ApplicantAddress1_1'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Address_ApplicantAddress2_1'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantCity_1'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantZip_1'))
+	
+	WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_City, State, Zip, Zip4_ApplicantZip4_1'))
+}
+catch (Exception e) {
+    System.out.println('error message = ' + e)
+} 
+	
 //WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Save and Continue'))
 WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_SaveContinue'))
 
@@ -232,7 +246,7 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/button_Lightspeed'))
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ProtectionClass'), '3', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ProtectionClass'), '2', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_ProtectionClass'), '2', true)
 
 if(!isAgent)
 {	
@@ -293,6 +307,7 @@ WebUI.click(findTestObject('Object Repository/Alchemy/Page_/input_Number of Empl
 WebUI.setText(findTestObject('Object Repository/Alchemy/Page_/input_Number of Employees (Location Specifi_54cae5'), '6')
 
 // 360 code, for some reason Internal users have issue with 360 xpaths... 5.15.25
+
 if(isAgent) 
 {
 	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/button_Recalculate'))
@@ -342,11 +357,6 @@ if(isAgent)
 	WebUI.click(findTestObject('Object Repository/Alchemy/Alchemy360/a_Close'))
 }
 // end 360 code
-
-
-
-
-
 
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Alchemy/Page_/select_IncludedExcluded'), 'Y', true)
