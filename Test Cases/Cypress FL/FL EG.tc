@@ -109,7 +109,7 @@
       <variableId>d1f1dedf-9949-4a6d-b0c8-8ac69eca0d4e</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'HO6'</defaultValue>
+      <defaultValue>'HO3'</defaultValue>
       <description>over ridden with passed in var if passed in</description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
@@ -123,14 +123,14 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -158,7 +158,7 @@
       <name>realTestUser</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>2</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>444aedf9-b9e1-495f-81a1-95af3aeb75c0</id>
       <masked>false</masked>
@@ -179,7 +179,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'07/11/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
@@ -200,14 +200,14 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>60e7bae8-3d21-493e-ac6a-ac1d71eb6f2a</id>
       <masked>false</masked>
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2018'</defaultValue>
+      <defaultValue>'2017'</defaultValue>
       <description></description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>

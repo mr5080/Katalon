@@ -57,7 +57,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST, STAGE</description>
       <id>401638ca-d4f3-457c-a849-f9d1ceca4214</id>
       <masked>false</masked>

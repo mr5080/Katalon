@@ -80,7 +80,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
       <masked>false</masked>
@@ -101,7 +101,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'claim'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, PC10, claim, geocode or xxxx</description>
       <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
       <masked>false</masked>

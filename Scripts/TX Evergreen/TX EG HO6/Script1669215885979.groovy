@@ -589,7 +589,7 @@ depositAmount = depositAmount.replaceAll('[^\\d.]', '')
 
 System.out.println('depositAmount = ' + depositAmount)
 
-if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC cant bind over 1000
+if (Double.parseDouble(depositAmount) > 950) // force EFT Recurring since CC cant bind over 1000
 {
 	howPayDeposit = 4 // force EFT Recurring
 

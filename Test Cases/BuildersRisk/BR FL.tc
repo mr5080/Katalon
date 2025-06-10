@@ -43,7 +43,7 @@
       <variableId>3edb4bf0-55f6-496c-9370-af5f071a358b</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description></description>
       <id>bbc6d12f-2e9d-4a59-8297-334e466b1957</id>
       <masked>false</masked>

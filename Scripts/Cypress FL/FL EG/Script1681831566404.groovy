@@ -403,6 +403,9 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_Appl
 int randomEmail = 2 + ((Math.random() * ((999999999 - 2) + 1)) as int)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
 
+// duplicating this from above to try to limit failed phone number entries. 6.6.25
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '7177621235')
+
 
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
@@ -1099,7 +1102,7 @@ depositAmount = depositAmount.replaceAll('[^\\d.]', '')
 
 System.out.println('depositAmount = ' + depositAmount)
 
-if (Double.parseDouble(depositAmount) > 999) // force EFT Recurring since CC cant bind over 1000
+if (Double.parseDouble(depositAmount) > 950) // force EFT Recurring since CC cant bind over 1000
 {
     howPayDeposit = 4 // force EFT Recurring
 
