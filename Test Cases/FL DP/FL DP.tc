@@ -136,7 +136,7 @@
       <name>numInterests</name>
    </variable>
    <variable>
-      <defaultValue>'9PAY'</defaultValue>
+      <defaultValue>'4PAY'</defaultValue>
       <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
       <id>3719e49c-24b3-4c87-98ea-2589d78e535b</id>
       <masked>false</masked>

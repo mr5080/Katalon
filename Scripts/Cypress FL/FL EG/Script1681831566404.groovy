@@ -345,7 +345,7 @@ if ((isAgent == false) && (realTestUser == false)) {
         //    WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'CORNERSTONE TEST ')
          //   WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), 'AGENCY ')
 		//	WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '10100')
-			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP, Keys.TAB))			
+			WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100', Keys.DOWN, Keys.UP, Keys.TAB))			
 			//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), Keys.chord('10100',  Keys.UP))
 
             WebUI.delay(1)
@@ -398,14 +398,11 @@ String DOB = (((month + '/') + day) + '/') + year
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '717-555-' + currentYear)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '7177621234')
 
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), ('testing' + year) + '@gmail.com')
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
 int randomEmail = 2 + ((Math.random() * ((999999999 - 2) + 1)) as int)
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
 
 // duplicating this from above to try to limit failed phone number entries. 6.6.25
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '7177621235')
-
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Phone_ApplicantHomePhonezzzz1'), '7177621555')
 
 
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), '01/08/1978')
@@ -575,10 +572,32 @@ else
 //PurchasePrice_1 = 150250
 
 if (policyType == 'HO6') {
-    WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
+/*
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), 1)
 
     //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CovC - HO6'), '245000')  // 360 now ordered on HO6
     WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Usage'), 0)
+*/	
+	
+	TestObject numStories = findTestObject('Object Repository/Cypress 4/Page_/select_NumStoriesBuilding')
+	
+	// Get the total number of options in the dropdown
+	int totalStories = WebUI.getNumberOfTotalOption(numStories)
+	System.out.println('totalStories = ' + totalStories)
+	
+	Random randomStories = new Random()
+	int randomFloorNum = randomStories.nextInt(totalStories)
+	//randomFloorNum = 0
+	System.out.println('randomFloorNum = ' + randomFloorNum)
+	WebUI.selectOptionByIndex(numStories, randomFloorNum)  // use this for random values
+	if(randomFloorNum == 0)
+	{	
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), randomFloorNum+1)
+	}
+	else
+	{
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/select_Floor Unit Located On'), randomFloorNum)
+	}	
 }
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') {

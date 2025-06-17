@@ -23,7 +23,6 @@ boolean shouldBind = false
 
 int counter = 1
 
-// john did this and again
 while (counter <= howMany) {
     WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], 
         FailureHandling.CONTINUE_ON_FAILURE)

@@ -61,7 +61,7 @@
       <variableId>e8d9805f-b6f4-4a17-90e5-2eef704481c8</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>4331810b-2976-4406-98c7-47c38b584da1</id>
       <masked>false</masked>

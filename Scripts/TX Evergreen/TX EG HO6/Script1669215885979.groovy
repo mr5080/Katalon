@@ -328,9 +328,19 @@ System.out.println('totalStories = ' + totalStories)
 
 Random randomStories = new Random()
 int randomFloorNum = randomStories.nextInt(totalStories) 
+//randomFloorNum = 0
 System.out.println('randomFloorNum = ' + randomFloorNum)
 WebUI.selectOptionByIndex(numStories, randomFloorNum)  // use this for random values
 WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), randomFloorNum)  
+
+if(randomFloorNum == 0)
+{
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), randomFloorNum+1)
+}
+else
+{
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_UnitLocatedOnFloor'), randomFloorNum)
+}
 
 // these manually set stories and floor
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NumStoriesBuilding'), '1', true)
