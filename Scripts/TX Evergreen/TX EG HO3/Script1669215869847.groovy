@@ -737,6 +737,9 @@ WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
 		('randomLastName') : randomLastName
 		 ], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '65464981')
+
 String policyNumber = ''
 if (shouldBind == true)
 {

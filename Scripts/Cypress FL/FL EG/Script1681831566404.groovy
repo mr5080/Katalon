@@ -1124,7 +1124,6 @@ System.out.println('depositAmount = ' + depositAmount)
 if (Double.parseDouble(depositAmount) > 950) // force EFT Recurring since CC cant bind over 1000
 {
     howPayDeposit = 4 // force EFT Recurring
-
     System.out.println('depositAmount to high, changing to EFT = ' + depositAmount)
 }
 
@@ -1147,6 +1146,12 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 		('fullName') : fullName,
 	 ('randomLastName') : randomLastName		
 		 ], FailureHandling.STOP_ON_FAILURE)
+
+
+
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '654948941891')
+
 
 
 if (shouldBind == false)

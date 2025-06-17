@@ -614,6 +614,10 @@ if (Double.parseDouble(depositAmount) > 950) // force EFT Recurring since CC can
 WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'), [('howPayDeposit') : howPayDeposit, ('fullName') : fullName
         , ('randomLastName') : randomLastName], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '89695818185')
+
+
 /*
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Credit CardCredit Card with Recurrin_fded8b'), 'PR', true)
 

@@ -713,6 +713,8 @@ WebUI.callTestCase(findTestCase('FL DP/selectPaymentType'), [('howPayDeposit') :
 	('randomLastName') : randomLastName], 
 	FailureHandling.STOP_ON_FAILURE)
 
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '89496841815')
 
 if (shouldBind == true) {
     WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Bind Application'))
