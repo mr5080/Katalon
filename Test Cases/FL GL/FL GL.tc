@@ -86,7 +86,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d64539ab-85af-4871-87cb-16b6960e0d70</id>
       <masked>false</masked>
@@ -149,14 +149,14 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1a4e0410-1b24-4bb8-a4f3-e8280a5f7945</id>
       <masked>false</masked>
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>

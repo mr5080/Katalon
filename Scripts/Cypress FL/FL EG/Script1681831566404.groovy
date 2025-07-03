@@ -518,8 +518,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
         WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), '17356')
-			
+        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), Keys.chord('17356', Keys.TAB))			
 			
 			if(WebUI.waitForAlert(4))
 			{
@@ -704,8 +703,6 @@ if(policyType == 'HO3' && run360 == true)
 	int sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
 	if(sqFt > 2500)
 	{
-		System.out.println('in the sqFt if statement')
-		System.out.println('before clear')
 		WebUI.clearText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
 		WebUI.delay(1)
 		WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), '1999')
