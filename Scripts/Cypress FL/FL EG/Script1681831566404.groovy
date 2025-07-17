@@ -1150,6 +1150,12 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSig
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '654948941891')
 
 
+// add document upload code here
+WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_AddFilesToQueue'))
+
+
+
+
 
 if (shouldBind == false)
 {

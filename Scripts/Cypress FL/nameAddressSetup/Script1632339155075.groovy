@@ -61,6 +61,8 @@ else if(manualAddress == 'truerisk')
 else if(manualAddress == 'claim')
 {
 	int randomClaim = 1 + ((Math.random() * ((7 - 1) + 1)) as int)
+	//System.out.println('randomClaim = ' + randomClaim)
+	
 	if(randomClaim == 1)
 	{	
 		def nameAddressData = ['randomFirstName': 'Filmore', // 1 claim

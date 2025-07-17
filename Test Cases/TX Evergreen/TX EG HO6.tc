@@ -81,7 +81,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'07/04/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>2cf2d68c-3623-45b4-b1be-6a846e46ce2a</id>
       <masked>false</masked>
@@ -95,7 +95,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'creditReport'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, claim, truerisk, PC10, creditReport</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>

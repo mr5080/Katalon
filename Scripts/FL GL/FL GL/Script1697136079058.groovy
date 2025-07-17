@@ -488,9 +488,9 @@ if(addClassCodes == false)
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDeniedRenewal'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoofs'))
+       // WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoofs'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEEmergencyMold'))
+      //  WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEEmergencyMold'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEExcavation'))
 

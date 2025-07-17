@@ -108,7 +108,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</id>
       <masked>false</masked>
