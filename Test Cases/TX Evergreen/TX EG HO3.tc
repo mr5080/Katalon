@@ -68,7 +68,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
@@ -103,7 +103,7 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>2</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>4b458079-95dd-4909-b01f-e1655c1dec0c</id>
       <masked>false</masked>
@@ -117,7 +117,7 @@
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>e8d9805f-b6f4-4a17-90e5-2eef704481c8</id>
       <masked>false</masked>

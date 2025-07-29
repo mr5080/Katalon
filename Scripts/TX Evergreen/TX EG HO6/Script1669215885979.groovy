@@ -583,6 +583,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 //return;
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Display Quote'))
+//WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Testing for validation about zips.jpg')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_BindSubmit Application'))
 

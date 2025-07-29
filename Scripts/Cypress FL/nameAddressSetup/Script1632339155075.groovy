@@ -34,6 +34,10 @@ else if(manualAddress == 'PC10')	// address returns PC10
 			7451 NW DEYSBROOK LN
 			PORT ST LUCIE, FL 34987
 			
+			
+			1835 S ATLANTIC AVE UNIT 803
+			COCOA BEACH, FL 32931
+
 		 */
 }
 

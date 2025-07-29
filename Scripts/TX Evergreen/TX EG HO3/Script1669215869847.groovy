@@ -56,7 +56,6 @@ System.out.println('myDate = ' + myDate)
 System.out.println('yesterdayDate = ' + yesterdayDate)
 System.out.println('tomorrowDate = ' + tomorrowDate)
 
-
 /*
 // get todays date
 mydate = new Date()
@@ -203,6 +202,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/td
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input'))
 
 quoteNumber = WebUI.getAttribute(findTestObject('Object Repository/TX EG HO3/Page_/div_Quote Number'), 'innerHTML')
+System.out.println('quoteNumber = ' + quoteNumber )
+quoteNumber = quoteNumber.replace(':', '')
 System.out.println('quoteNumber = ' + quoteNumber )
 
 'Agent Producer'
@@ -695,6 +696,12 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Please SelectSCARY A TERRY JR_1'), 'Applicant1', true)
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quote'))
+
+//temp testing
+//quoteNumber = quoteNumber.replace(':', '')
+//WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO3 Testing for validation about zips.jpg')
+
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 

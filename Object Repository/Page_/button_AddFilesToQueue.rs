@@ -3,15 +3,15 @@
    <description></description>
    <name>button_AddFilesToQueue</name>
    <tag></tag>
-   <elementGuidId>cd4d8e6f-90ab-4245-b0b3-135a75e18991</elementGuidId>
+   <elementGuidId>7401920d-69bf-4c59-a140-10116041d676</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='fileupload']</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>#fileupload</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>#JQFileUploadContainer > div.row.fileupload-buttonbar > div:nth-child(1) > div > div:nth-child(1) > span > input[type=file]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>form</value>
-      <webElementGuid>308bf31d-c5a5-4b1b-912f-a01f601a3b44</webElementGuid>
+      <webElementGuid>471b6d61-f081-4194-9c79-cd0b7aacb3d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <name>id</name>
       <type>Main</type>
       <value>fileupload</value>
-      <webElementGuid>04a15736-5272-4cbd-913d-901ba52b37cc</webElementGuid>
+      <webElementGuid>8572d8cb-9c90-4a38-9901-2991a5c37ee4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +39,7 @@
       <name>action</name>
       <type>Main</type>
       <value>index.cfm</value>
-      <webElementGuid>62371781-c60a-4ce3-9152-dd712471b779</webElementGuid>
+      <webElementGuid>0632ee31-8ff8-4949-92bd-e346c14e7837</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>method</name>
       <type>Main</type>
       <value>POST</value>
-      <webElementGuid>93dae913-1a34-4c15-8cd7-fb0a16957045</webElementGuid>
+      <webElementGuid>a407a0f3-4f86-4250-ab3e-583ba3884523</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -55,7 +55,7 @@
       <name>enctype</name>
       <type>Main</type>
       <value>multipart/form-data</value>
-      <webElementGuid>a4ec1816-f823-4fa6-86bd-2664ad266af4</webElementGuid>
+      <webElementGuid>697f3d6f-955b-456a-a279-92d84db443d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -166,7 +166,7 @@
 	
 
 	</value>
-      <webElementGuid>02a54ba7-f85b-4d7c-956f-3b186d731215</webElementGuid>
+      <webElementGuid>2814bf8f-6aaf-426c-b943-2c71030de145</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -174,15 +174,15 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;fileupload&quot;)</value>
-      <webElementGuid>97805add-3e31-4356-9adc-403a2cdf9f38</webElementGuid>
+      <webElementGuid>053d50ea-cf9c-4c02-b5f8-b32b37aab2f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Cypress 4/Page_/iframe_UploadFiles</value>
-      <webElementGuid>8b3cf1c3-c1ec-4aa7-b66d-a32110a7da72</webElementGuid>
+      <value>Object Repository/Page_/iframe_UploadFiles</value>
+      <webElementGuid>d5c4b3f9-12a4-4d6e-82d5-40270d37eebf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -190,7 +190,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//form[@id='fileupload']</value>
-      <webElementGuid>aa9192b8-8508-4370-a10f-820601ef23b7</webElementGuid>
+      <webElementGuid>561868fe-e0c5-4f28-8b84-273d2d9454ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -198,7 +198,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//form</value>
-      <webElementGuid>fe6f870f-50a3-4ffb-bdcd-d8eb9a311809</webElementGuid>
+      <webElementGuid>77315556-b754-4f48-88aa-4192ef8119c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -412,41 +412,6 @@
 	
 
 	&quot;))]</value>
-      <webElementGuid>18dd209d-014d-48a5-ae89-2f171c7a9cee</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>/html[1]/body[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/input[1]</value>
-      <webElementGuid>6faac238-d9f4-4b2c-bd04-316f6c5432c4</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>#JQFileUploadContainer > div.row.fileupload-buttonbar > div:nth-child(1) > div > div:nth-child(1) > span > input[type=file]</value>
-      <webElementGuid>457240af-7d0a-4a3f-8750-9309e7a7d8a6</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>/html/body/div/form/div[2]/div[1]/div[1]/div/div[1]/span/input</value>
-      <webElementGuid>51fbeade-f409-4e93-9906-d7a973b86f8a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//input[@name='files']</value>
-      <webElementGuid>df20e10d-9a30-479f-890f-1210d4aa7f37</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <type>Main</type>
-      <value>//button[contains(text(),'files')]</value>
-      <webElementGuid>fe48c540-653d-428b-ac22-52391b80b87b</webElementGuid>
+      <webElementGuid>dd714e68-bd30-46e7-867b-e71811c4cb2b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

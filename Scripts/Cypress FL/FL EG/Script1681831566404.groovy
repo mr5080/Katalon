@@ -7,7 +7,8 @@ import java.time.LocalDate
 import java.time.temporal.TemporalAdjusters as TemporalAdjusters
 import java.lang.Integer as Integer
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
-import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -244,7 +245,6 @@ for (int i = 0; i < cityCount; i++) {
     System.out.println('selectedOption  = ' + selectedOption)
 }
 */
-
 
 // this works for Geocode button 3.8.25!!! UPDATE TX EG AND OTHER MANUALS
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/Cypress 4/Page_/input_X_GMAcceptButton'), 10))  /// leave at 10 seconds!
@@ -1150,13 +1150,23 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSig
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '654948941891')
 
 
+/*
 // add document upload code here
+//WebUI.switchToFrame(findTestObject('Object Repository/Cypress 4/Page_/iframe_UploadFiles'), 0)
+//WebUI.switchToFrame(findTestObject('Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test', ['index' : 1]), 30)
 WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_AddFilesToQueue'))
+debUI.delay(10)
+*/
+
+//WebUI.switchToFrame(1)
+//WebUI.switchToFrame(findTestObject('Object Repository/Cypress 4/Page_/iframe_UploadFiles'), 5)	// this step doesnt fail
+//WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/button_AddFilesToQueue'))				// this stepf fails
+//debUI.delay(10)
 
 
 
 
-
+   
 if (shouldBind == false)
 {
 	WebUI.comment('shouldBind = ' + shouldBind)

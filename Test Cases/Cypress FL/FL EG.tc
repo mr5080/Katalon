@@ -207,14 +207,14 @@
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2019'</defaultValue>
+      <defaultValue>'2018'</defaultValue>
       <description></description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>
       <name>YOC</name>
    </variable>
    <variable>
-      <defaultValue>'claim'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, claim, truerisk, PC10, creditReport</description>
       <id>a7c73d2b-c536-4eb7-bf0e-63a9ba2feb3f</id>
       <masked>false</masked>
