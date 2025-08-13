@@ -221,7 +221,7 @@ if (isAgent == false) {
     }
 }
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/' + YOC)
+
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-762-2255')
 
@@ -236,6 +236,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/' + YOC)
 
+	
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
 randomNumber = ((Math.random() * 2) as int)

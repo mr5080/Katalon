@@ -41,27 +41,6 @@ else if(manualAddress == 'PC10')	// address returns PC10
 		 */
 }
 
-else if(manualAddress == 'truerisk')
-{
-	def nameAddressData = ['randomFirstName': 'Michael',
-			'randomLastName': 'THATE',
-			'addressFL': '1201 DULLES AVE',
-			'cityFL': 'STAFFORD',
-			'stateFL': 'FL',
-			'zipFL': '77477'
-			]
-		return nameAddressData
-	/*
-	def nameAddressData = ['randomFirstName': 'Victoria',
-			'randomLastName': 'Alsip',
-			'addressFL': '201 Yorkshire',
-			'cityFL': 'Victoria',
-			'stateFL': 'FL',
-			'zipFL': '77904'
-			]
-		return nameAddressData
-	*/
-}
 else if(manualAddress == 'claim')
 {
 	int randomClaim = 1 + ((Math.random() * ((7 - 1) + 1)) as int)
@@ -154,15 +133,15 @@ else if(manualAddress == 'claim')
 	
 else if(manualAddress == 'creditReport')
 {
-/*	def nameAddressData = ['randomFirstName': 'LORI',    // new 4.15.2025 COG06918, data is returned, but the credit score will not match 00V77 column is not on the new data
+	def nameAddressData = ['randomFirstName': 'LORI',    // new 4.15.2025 COG06918, data is returned, but the credit score will not match 00V77 column is not on the new data
 		'randomLastName': 'Oberman',
 		'addressFL': '1425 E Mulberry Dr',
 		'cityFL': 'Tampa',
 		'stateFL': 'FL',
 		'zipFL': '33604'
 		]
-*/	
 	
+/*	
 		def nameAddressData = ['randomFirstName': 'Avel',    // new 4.15.2025 COG06918
 		'randomLastName': 'Maqueda',
 		'addressFL': '2220 NE 59th PL',
@@ -170,14 +149,8 @@ else if(manualAddress == 'creditReport')
 		'stateFL': 'FL',
 		'zipFL': '34479'
 		]
-/*	def nameAddressData = ['randomFirstName': 'Kim',
-			'randomLastName': 'Mirian',
-			'addressFL': '1716 Cherry Ln',
-			'cityFL': 'Lakeland',
-			'stateFL': 'FL',
-			'zipFL': '33811'
-			]
-*/			
+*/		
+	
 	/*
 		randomLastName = 'Kim'.toUpperCase()	
 		randomFirstName = 'Mirian'.toUpperCase()

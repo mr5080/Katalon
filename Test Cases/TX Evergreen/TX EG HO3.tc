@@ -60,6 +60,12 @@
       <value></value>
       <variableId>e8d9805f-b6f4-4a17-90e5-2eef704481c8</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0d133553-c538-47ff-847f-b8de07c3c857</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
@@ -75,7 +81,7 @@
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'11/01/2025'</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
@@ -89,8 +95,8 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>manual, claim, truerisk, PC10, creditReport</description>
+      <defaultValue>'creditReport'</defaultValue>
+      <description>manual, claim, PC10, creditReport</description>
       <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>
       <name>manualAddress</name>
@@ -122,5 +128,12 @@
       <id>e8d9805f-b6f4-4a17-90e5-2eef704481c8</id>
       <masked>false</masked>
       <name>overrideTier</name>
+   </variable>
+   <variable>
+      <defaultValue>'2025'</defaultValue>
+      <description></description>
+      <id>0d133553-c538-47ff-847f-b8de07c3c857</id>
+      <masked>false</masked>
+      <name>YOC</name>
    </variable>
 </TestCaseEntity>

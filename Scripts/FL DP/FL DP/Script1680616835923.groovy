@@ -621,7 +621,7 @@ WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_History'))
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/body_Policy Prequalification Coverage Gener_128a19'))
 
-WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
+//WebUI.setText(findTestObject('Object Repository/FL DP/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Interests'))
 

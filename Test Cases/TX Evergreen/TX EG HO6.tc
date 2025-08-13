@@ -67,14 +67,14 @@
       <variableId>2f453729-3adc-4bcb-a131-81f72ace2668</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>04007e58-03ac-42bd-beb3-1e123de51091</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>1891ee50-6ac3-4824-9add-7e71085fd224</id>
       <masked>false</masked>
@@ -96,13 +96,13 @@
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>manual, claim, truerisk, PC10, creditReport</description>
+      <description>manual, claim, PC10, creditReport</description>
       <id>7837a4f3-a0dc-4287-b378-c5b92ef6dd05</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>0</defaultValue>
+      <defaultValue>4</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
       <id>42908ae8-3ee3-4b9f-9be4-6d86df1a42c5</id>
       <masked>false</masked>
@@ -116,8 +116,8 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>'2020'</defaultValue>
-      <description>HO6 only open for last 10 years, 3.4.25 COG06855</description>
+      <defaultValue>'2016'</defaultValue>
+      <description>HO6 only open for last 10 years, 3.4.25 COG06855.  must populate</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>
       <name>YOC</name>

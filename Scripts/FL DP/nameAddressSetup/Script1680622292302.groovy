@@ -205,7 +205,37 @@ else if(manualAddress == 'highCrime')
 			]
 		return nameAddressData
 	}
-			
+else if(manualAddress == 'creditReport')
+	{
+		def nameAddressData = ['randomFirstName': 'LORI',    // new 4.15.2025 COG06918, data is returned, but the credit score will not match 00V77 column is not on the new data
+			'randomLastName': 'Oberman',
+			'addressFL': '1425 E Mulberry Dr',
+			'cityFL': 'Tampa',
+			'stateFL': 'FL',
+			'zipFL': '33604'
+			]
+		
+	/*
+			def nameAddressData = ['randomFirstName': 'Avel',    // new 4.15.2025 COG06918
+			'randomLastName': 'Maqueda',
+			'addressFL': '2220 NE 59th PL',
+			'cityFL': 'Ocala',
+			'stateFL': 'FL',
+			'zipFL': '34479'
+			]
+	*/
+		
+		/*
+			randomLastName = 'Kim'.toUpperCase()
+			randomFirstName = 'Mirian'.toUpperCase()
+			addressFL = '1716 Cherry Ln'.toUpperCase()
+			cityFL = 'Lakeland'.toUpperCase()
+			stateFL = 'FL'
+			zipFL = 33811
+		 */
+			return nameAddressData
+	}
+
 
 // manualAddress  not set, uses random below
 //Object addressData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressData.xlsx', 'FL Addresses', true)

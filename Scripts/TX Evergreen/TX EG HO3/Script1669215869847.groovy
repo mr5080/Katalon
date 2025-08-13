@@ -215,7 +215,7 @@ if (isAgent == false) {
 
 	
 	/// update this to key down and then key up, can do the same thing for date pickers!
-	for (int x = 0; x < 5; x++)
+	for (int x = 0; x < 10; x++)
 	{
 		try {
 			WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_SearchTerm'), '')
@@ -249,7 +249,7 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2022')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2025')
 
 
 
@@ -340,7 +340,8 @@ if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_
 }
 */
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), '2021')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'), YOC)
+
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -370,7 +371,7 @@ if(squareFoot.length() < 3)
 
 WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), '2022')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater fd')
 
@@ -390,9 +391,9 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_AOP'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_WindstormHail'), '2', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_WindstormHail'), '2', true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Hurricane'), '5', true)
+//WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Hurricane'), '5', true)
 
 
 

@@ -6,11 +6,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 if(manualAddress == 'manual')	// set to something I want
 {
 	def nameAddressData = ['randomFirstName': 'Gramble',
-		'randomLastName': 'DDavid',
-			'addressTX': '506 BUENA VISTA AVE',
-			'cityTX': 'VICTORIA',
+		'randomLastName': 'Ovid',
+			'addressTX': '3900 Broadway Ste A, ',
+			'cityTX': 'San Antonio',
 			'stateTX': 'TX',
-			'zipTX': '77901'
+			'zipTX': '78209'
 		]
 	return nameAddressData	
 }	
@@ -33,28 +33,7 @@ else if(manualAddress == 'PC10')	// address returns PC10
 		 */		
 	}	
 
-else if(manualAddress == 'truerisk')
-{
-	
-	def nameAddressData = ['randomFirstName': 'Michael',
-			'randomLastName': 'THATE',
-			'addressTX': '1201 DULLES AVE',
-			'cityTX': 'STAFFORD',
-			'stateTX': 'TX',
-			'zipTX': '77477'
-			]
-		return nameAddressData
-	/*
-	def nameAddressData = ['randomFirstName': 'Victoria',
-			'randomLastName': 'Alsip',
-			'addressTX': '201 Yorkshire',
-			'cityTX': 'Victoria',
-			'stateTX': 'TX',
-			'zipTX': '77904'
-			]
-		return nameAddressData
-	*/
-}
+
 else if(manualAddress == 'claim')
 {
 	int randomClaim = 1 + ((Math.random() * ((7 - 1) + 1)) as int)
@@ -143,16 +122,44 @@ else if(manualAddress == 'claim')
 	}
 }
 	
-else if(manualAddress == 'creditReport')
-{	
-	def nameAddressData = ['randomFirstName': 'Victoria',
-			'randomLastName': 'Alsip',
-			'addressTX': '201 Yorkshire',
-			'cityTX': 'Victoria',
+
+else if(manualAddress == 'creditReport')  //Cypress TrueRisk Propery Test Cases - State - TX    ---   TRANSUNION --- 03.23.2022.xlsx  good as of 8.11.25
+{
+	int randomCredit = 1 + ((Math.random() * ((3 - 1) + 1)) as int)
+	//randomCredit = 3
+	if(randomCredit == 1)
+	{
+		def nameAddressData = ['randomFirstName': 'Billy',
+			'randomLastName': 'Anglin',
+			'addressTX': '72 Rugged',
+			'cityTX': 'Corpus Christi',
 			'stateTX': 'TX',
-			'zipTX': '77904'
+			'zipTX': '78413'
 			]
-		return nameAddressData
+			return nameAddressData
+	}
+	else if(randomCredit == 2)
+	{
+		def nameAddressData = ['randomFirstName': 'Manuel',
+			'randomLastName': 'ARINMENDI',
+			'addressTX': '3535 DALLAS',
+			'cityTX': 'Houston',
+			'stateTX': 'TX',
+			'zipTX': '77019'
+			]
+			return nameAddressData
+	}
+	else if(randomCredit == 3)
+	{
+		def nameAddressData = ['randomFirstName': 'Amir',
+			'randomLastName': 'Assar',
+			'addressTX': '3450 One Allen',
+			'cityTX': 'Houston',
+			'stateTX': 'TX',
+			'zipTX': '77002'
+			]
+			return nameAddressData
+	}
 }
 
 
