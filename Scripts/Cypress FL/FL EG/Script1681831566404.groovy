@@ -662,7 +662,21 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
+//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
+
+
+// randomize
+// this gets random number for dropdown
+TestObject constructionType = findTestObject('Cypress 4/Page_/select_Construction')
+int totalOptionsConstruction = WebUI.getNumberOfTotalOption(constructionType)
+System.out.println("totalOptions for totalOptionsConstruction = " + totalOptionsConstruction);
+
+int randomConstructionType = 0
+min = 1		// 1 because first option is blank, and blank is not an allowed answer
+randomConstructionType = 1 + ((Math.random() * (totalOptionsConstruction - min))  as int)
+System.out.println("totalOptions for randomConstructionType = " + randomConstructionType);
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Construction'), randomConstructionType)
+
 
 //WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
