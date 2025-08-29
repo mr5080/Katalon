@@ -3,12 +3,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
-if (addInterest == true)
-{
-	WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_PaymentMethod'), 'MB', false)
-}	
-else 
-{
+
 
 	if (howPayDeposit == 0) {
 		'Setup random using logic above'
@@ -165,7 +160,7 @@ else
 			// CC window takes forever to open...
 			 //WebUI.waitForElementPresent(findTestObject('Object Repository/Cypress 4/Page_/select_American ExpressDiscoverMasterCardVisa'), 40)
 	}
-}
+
 
 
 

@@ -240,8 +240,7 @@ for (int i = 0; i < cityCount; i++) {
         System.out.println((('selectedOption = ' + selectedOption) + ' and cityFL = ') + cityFL)
 
         break
-    }
-    
+    }    
     System.out.println('selectedOption  = ' + selectedOption)
 }
 */
@@ -478,21 +477,20 @@ if (constructionYear.length() > 1) {
 
     constructionYearInt = Integer.valueOf(constructionYear)
 
-    System.out.println('constructionYearInt - IF == ' + constructionYearInt // (constructionYearInt == '')
-		        )
+    System.out.println('constructionYearInt - IF == ' + constructionYearInt)
 
     System.out.println('constructionYear.toInteger() = ' + constructionYear.toInteger())
 
     System.out.println(('constructionYear.toInteger() - 1= ' + constructionYear.toInteger()) - 1)
 
     //constructionYear.toInteger() < 2010
-    if (constructionYear.toInteger() < 2015) {
+    if (constructionYear.toInteger() < 2015) {	// was previously 2015
         constructionYear = 2015
 	
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
         WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2016')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2000')
 
         System.out.println('constructionYear and roof year reset to ' + constructionYear)
     }
@@ -552,6 +550,54 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
+
+
+
+
+
+
+
+
+WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
+String construction = "S"
+
+for (int p = 0; p < 2; p++)
+{
+	int randomConstructionType = 1 + ((Math.random() * ((3) + 1)) as int) as int
+	System.out.println("totalOptions for randomConstructionType = " + randomConstructionType);
+	if(randomConstructionType == 1)
+	{
+		construction = "F"
+	}
+	else if(randomConstructionType == 2)
+	{
+		construction = "B"
+	}
+	else if(randomConstructionType == 3)
+	{
+		construction = "V"
+	}
+	else if(randomConstructionType == 4)
+	{
+		construction = "S"
+	}
+	else
+	{
+		construction = "S"
+	}
+		System.out.println("construction = " + construction);
+
+	//WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Construction'), randomConstructionType)
+	WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_ConstructionHO6'), construction, false)
+}
+
+
+
+
+
+
+
+
 
 //this line can be removed if 360 is working, 360 is not run for HO6
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
@@ -662,24 +708,35 @@ if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_S
         )
 }
 
-//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
 
 
-// randomize
+
+
+
+
+/*
 // this gets random number for dropdown
 TestObject constructionType = findTestObject('Cypress 4/Page_/select_Construction')
 int totalOptionsConstruction = WebUI.getNumberOfTotalOption(constructionType)
 System.out.println("totalOptions for totalOptionsConstruction = " + totalOptionsConstruction);
 
+for (int p = 0; p <100; p++)
+{	
 int randomConstructionType = 0
 min = 1		// 1 because first option is blank, and blank is not an allowed answer
 randomConstructionType = 1 + ((Math.random() * (totalOptionsConstruction - min))  as int)
 System.out.println("totalOptions for randomConstructionType = " + randomConstructionType);
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Construction'), randomConstructionType)
-
-
+}
+*/
 //WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
+
+
+
+
+
+
 
 if ((isAgent == false) && (realTestUser == false)) {
     // these fields are no longer mandatory
@@ -699,9 +756,9 @@ WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Yes_NOSAVEBa
 // select Hurricane, AOP, Windstorm/Hail, will get updated if VA = true
 if(policyType == 'HO3')
 {	
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_HurricaneDed'), 3)
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AOPDed'), 5)
-	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_WindstormDed'), 10)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_HurricaneDed'), 2)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AOPDed'), 4)
+	WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_WindstormDed'), 9)
 }
 
 // opens 360 value modal
@@ -956,7 +1013,8 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall F
 	  WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
 	
 	//  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS
-	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
+	  //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
+	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), '2018')
 	  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
 	}
 //}
@@ -968,9 +1026,52 @@ else
   System.out.println("date1 and date2 are the same");
 }
 */
+	
+	
+	
+	
+//WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_RoofGeometry'), "2")
 
+// randomly select Roof Geometry Shape WMRoofGeometry_1  select_RoofGeometry
+// this gets random number for dropdown
+//int randomRoof = 1 + ((Math.random() * ((3) + 1)) as int)
+//WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_RoofGeometry'), randomRoof)
+	
+	
+/*	
+TestObject roofType = findTestObject('Cypress 4/Page_/select_RoofGeometry')
+int totalOptionsRoofType = WebUI.getNumberOfTotalOption(roofType)
+System.out.println("totalOptions for totalOptionsRoofType = " + totalOptionsRoofType);
 
+int randomRoofType = 0
+min = 1		// 1 because first option is blank, and blank is not an allowed answer
+randomRoofType = 1 + ((Math.random() * (totalOptionsRoofType - min))  as int)
+System.out.println("totalOptions for randomRoofType = " + randomRoofType);
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_RoofGeometry'), randomRoofType)
+*/
+	
+	
+/*
+ * 
+ uncomment this and run more tests
+// randomly select Opening Protection   select_OpeningProtection
+// this gets random number for dropdown
+TestObject openingProtection = findTestObject('Cypress 4/Page_/OpeningProtection')
+int totalOptionsOpeningProtection = WebUI.getNumberOfTotalOption(openingProtection)
+System.out.println("totalOptions for totalOptionsOpeningProtection = " + totalOptionsOpeningProtection);
 
+int randomOpeningProtection = 0
+min = 1		// 1 because first option is blank, and blank is not an allowed answer
+randomOpeningProtection = 1 + ((Math.random() * (totalOptionsOpeningProtection - min))  as int)
+System.out.println("totalOptions for totalOptionsOpeningProtection = " + totalOptionsOpeningProtection);
+WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_OpeningProtection'), randomOpeningProtection)
+	*/
+	
+	
+	
+	
+
+	
 'History button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - History'))
 

@@ -88,6 +88,7 @@ try {
 	
 //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
+	//WebUI.navigateToUrl('https://chargetest.cogisi.com/is/root/logon/index.cfm')
 	WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
 	WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')

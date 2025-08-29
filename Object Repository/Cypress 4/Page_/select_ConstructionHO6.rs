@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Construction</name>
+   <name>select_ConstructionHO6</name>
    <tag></tag>
-   <elementGuidId>50223a37-489d-4c60-abb2-16b720f3c227</elementGuidId>
+   <elementGuidId>aab962de-2329-4cbd-9108-fc2f810f2ec3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//select[@id='ConstructionType_1']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ConstructionType_1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -19,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>select</value>
-      <webElementGuid>91ab1028-375e-427f-a475-0558327ac13a</webElementGuid>
+      <webElementGuid>8732aa48-79bf-417a-a39e-2e968a691cf4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -27,7 +31,7 @@
       <name>size</name>
       <type>Main</type>
       <value>1</value>
-      <webElementGuid>6d85fec2-3a25-4536-8117-2516696886d5</webElementGuid>
+      <webElementGuid>d9971fb1-345e-4f8e-b9c5-bfdeaff30778</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -35,7 +39,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>cba8e34c-0313-4a45-b9f9-f9d2d16b6b3f</webElementGuid>
+      <webElementGuid>85a129a6-bc8b-4be1-b830-a703ad163620</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,7 +47,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>1a169701-c2ca-4234-a446-6dd74b75771a</webElementGuid>
+      <webElementGuid>dc107b3c-54ab-4f9b-a6d2-4c86909b1294</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -51,7 +55,7 @@
       <name>name</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>e7ad1d02-988c-4072-92e2-cadf0cf04272</webElementGuid>
+      <webElementGuid>6b3bf307-b6a6-4258-a31c-e3fc4871b884</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -59,7 +63,7 @@
       <name>id</name>
       <type>Main</type>
       <value>ConstructionType_1</value>
-      <webElementGuid>c1819811-0b25-4719-9f95-277f6aa92d83</webElementGuid>
+      <webElementGuid>3f81ed3f-ee50-4bad-8d33-073dd3299911</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,7 +71,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalOnBlur();  GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>e1b0c5f1-ecd1-4123-83a0-a03989b8d611</webElementGuid>
+      <webElementGuid>c5cb2c15-a128-41ae-8dea-b6ffc88e4ea1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -75,7 +79,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value> GlobalOnChange();  GlobalCheckDisable(this);</value>
-      <webElementGuid>362ef41b-3e0e-4f6c-a6a0-1af9bb0974a6</webElementGuid>
+      <webElementGuid>ca9b83c0-9e14-4e24-97df-31d2e0a6a391</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -105,7 +109,7 @@
 									
 								
 						</value>
-      <webElementGuid>3dd9df12-5874-4074-b2cf-29bbf7f32426</webElementGuid>
+      <webElementGuid>702cf008-e536-4c76-8175-9fccd9a22e71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -113,7 +117,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;ConstructionType_1&quot;)</value>
-      <webElementGuid>677ca7c7-fa02-422e-af1c-fd1a53337eae</webElementGuid>
+      <webElementGuid>3fb03bea-83a1-4141-ba00-b33fef6cf552</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -121,7 +125,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>933cdf19-59c5-4507-8738-7389a8fde572</webElementGuid>
+      <webElementGuid>3b878531-1ab2-43e9-bd45-4a2b4c8becd4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -129,7 +133,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='ConstructionType_1']</value>
-      <webElementGuid>0da4f013-9ffc-4c0e-869d-c08763661b30</webElementGuid>
+      <webElementGuid>54df4c72-67c7-448a-85aa-1bb89d67afe5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -137,7 +141,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-ConstructionType_1']/div/div/select</value>
-      <webElementGuid>f3b6badc-9684-4b85-9819-0be334da6206</webElementGuid>
+      <webElementGuid>b31b0423-4809-4449-bb82-1cea3e434bd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -145,7 +149,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Construction'])[1]/following::select[1]</value>
-      <webElementGuid>1c98302d-4e0a-4b37-8b56-0a4902cf7498</webElementGuid>
+      <webElementGuid>463b9ddd-4238-4874-b8ca-c274d9124da0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -153,7 +157,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='General Information'])[1]/following::select[1]</value>
-      <webElementGuid>a57045ba-e423-439d-9d01-7070cd89395c</webElementGuid>
+      <webElementGuid>ac89bdd0-a4e8-40ea-8fbf-a72b9896bbb6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -161,7 +165,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Construction Year'])[1]/preceding::select[1]</value>
-      <webElementGuid>63ba290f-4952-468f-90f2-34a4f787daf1</webElementGuid>
+      <webElementGuid>0436de40-0b8a-479d-b606-e813bc3ca716</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -169,7 +173,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Screened Enclosure'])[1]/preceding::select[1]</value>
-      <webElementGuid>bde4c009-6228-42f3-a549-499856c6e1c4</webElementGuid>
+      <webElementGuid>5e01ce07-b229-4cf1-9c2f-7c7e5c0f45cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -177,6 +181,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[2]/div/div/div[2]/div/div/select</value>
-      <webElementGuid>39490c4f-0a78-41a7-8d7f-a2e64937c67e</webElementGuid>
+      <webElementGuid>270753db-7431-4e88-b97b-979c2bcd6153</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
