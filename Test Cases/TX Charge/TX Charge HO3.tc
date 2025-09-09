@@ -122,21 +122,21 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</id>
       <masked>false</masked>
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>e8d9805f-b6f4-4a17-90e5-2eef704481c8</id>
       <masked>false</masked>
       <name>overrideTier</name>
    </variable>
    <variable>
-      <defaultValue>'2019'</defaultValue>
+      <defaultValue>'2018'</defaultValue>
       <description></description>
       <id>0d133553-c538-47ff-847f-b8de07c3c857</id>
       <masked>false</masked>

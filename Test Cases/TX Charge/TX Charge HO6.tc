@@ -116,21 +116,21 @@
       <name>stopQQ</name>
    </variable>
    <variable>
-      <defaultValue>'2019'</defaultValue>
+      <defaultValue>'2022'</defaultValue>
       <description>HO6 only open for last 10 years, 3.4.25 COG06855.  must populate</description>
       <id>b4029606-61e4-48d5-9d3d-41a295646921</id>
       <masked>false</masked>
       <name>YOC</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>c157a9ab-b1c6-490e-a38f-4a6dbde755a3</id>
       <masked>false</masked>
       <name>paperless</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>2f453729-3adc-4bcb-a131-81f72ace2668</id>
       <masked>false</masked>
