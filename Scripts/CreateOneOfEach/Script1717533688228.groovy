@@ -26,28 +26,28 @@ String environment = 'TEST'
 int counter = 1
 
 while (counter <= howMany) {
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind
-            , ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind
-            , ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
   //  WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment],        FailureHandling.CONTINUE_ON_FAILURE)
 
   //  WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment],        FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('FL GL/FL GL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('FL GL/FL GL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO3'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO3'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
 
+
+	WebUI.callTestCase(findTestCase('TX Charge/TX Charge HO3'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('TX Charge/TX Charge HO6'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], FailureHandling.CONTINUE_ON_FAILURE)
+	
+	
     // WebUI.callTestCase(findTestCase('Alchemy/Alchemy'), [('counter') : counter, ('policyType') : 'BOPA', ('shouldBind') : shouldBind],FailureHandling.CONTINUE_ON_FAILURE)
     // use this one if you want to loop through excel file
     //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)

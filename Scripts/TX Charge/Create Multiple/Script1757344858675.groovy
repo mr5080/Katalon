@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 10
+int howMany = 25
 
 int counter = 1
 
 while (counter <= howMany) {
-//    WebUI.callTestCase(findTestCase('TX Charge/TX Charge HO3'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TX Charge/TX Charge HO3'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('TX Charge/TX Charge HO6'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
 
