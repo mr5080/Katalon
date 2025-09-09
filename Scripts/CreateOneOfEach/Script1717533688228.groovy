@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 100
+int howMany = 25
 
 boolean shouldBind = true
 
@@ -35,11 +35,9 @@ while (counter <= howMany) {
     WebUI.callTestCase(findTestCase('FL DP/FL DP'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
         FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+  //  WebUI.callTestCase(findTestCase('BuildersRisk/BR FL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment],        FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
-        FailureHandling.CONTINUE_ON_FAILURE)
+  //  WebUI.callTestCase(findTestCase('BuildersRisk/BR TX'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment],        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('FL GL/FL GL'), [('counter') : counter, ('shouldBind') : shouldBind, ('environment') : environment], 
         FailureHandling.CONTINUE_ON_FAILURE)

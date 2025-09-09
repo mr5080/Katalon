@@ -663,8 +663,8 @@ if(addClassCodes == false)
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPaperlessNo'))
     }
     
-	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input - AgentSignature'), 'jPHuGhEs')
-	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input - AgentLicense'), '848515747')
+//	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input - AgentSignature'), 'jPHuGhEs')
+//	WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input - AgentLicense'), '848515747')
 	
 	
     //select payment method logic

@@ -602,6 +602,27 @@ for (int p = 0; p < 2; p++)
 //this line can be removed if 360 is working, 360 is not run for HO6
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
 
+
+/*
+
+TestObject numPersProp = findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty')
+
+// Get the total number of options in the dropdown
+int totalPersProp = WebUI.getNumberOfTotalOption(numPersProp)
+System.out.println('totalPersProp  = ' + totalPersProp)
+int persPropSelected = (totalPersProp -3).toInteger()
+System.out.println('persPropSelected = ' + persPropSelected )
+
+
+WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty'), '50')
+*/
+
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty'), 45, true)
+
+//WebUI.selectOptionByIndex(numPersProp, totalPersProp)
+
+
+//WebUI.delay(10)
 /*
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
 {

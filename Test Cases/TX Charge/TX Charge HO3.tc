@@ -1,152 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>FL DP</name>
+   <name>TX Charge HO3</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>33e55b3c-b328-43ad-9de6-c2d1a3028a28</testCaseGuid>
+   <testCaseGuid>8c04433c-12c3-43a2-a0eb-d9a6c8175238</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7e79f726-c71d-4e96-a14f-3958c961d218</variableId>
+      <variableId>4331810b-2976-4406-98c7-47c38b584da1</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6745257c-3c3d-4660-82e9-32624ad715e3</variableId>
+      <variableId>d77d980b-af77-437d-8144-e65e3aab7147</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>027e53b9-3c7d-4b28-aba2-c840c16d7442</variableId>
+      <variableId>275d8bec-e434-4659-94e3-fcc0a73bd1b4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ec7d9091-ecd4-4a0f-9f5d-2a4eeebcae51</variableId>
+      <variableId>a356da4f-7349-4e28-87b8-2df5d9f8b75b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</variableId>
+      <variableId>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</variableId>
+      <variableId>de0f8b1c-8312-4110-9230-be9e9a707eb4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>143fbec3-766d-4e44-986a-66fe0dbde3b1</variableId>
+      <variableId>4b458079-95dd-4909-b01f-e1655c1dec0c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>cb7994ad-a4f9-4e16-afcf-649cedc936b7</variableId>
+      <variableId>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</variableId>
+      <variableId>e8d9805f-b6f4-4a17-90e5-2eef704481c8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3719e49c-24b3-4c87-98ea-2589d78e535b</variableId>
+      <variableId>0d133553-c538-47ff-847f-b8de07c3c857</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>306c68ac-2d6b-4762-a79a-fc4c9bc6e719</variableId>
+      <variableId>43dd806d-f584-492c-8a47-64b82ff1f192</variableId>
    </variableLinks>
    <variable>
       <defaultValue>true</defaultValue>
       <description></description>
-      <id>7e79f726-c71d-4e96-a14f-3958c961d218</id>
+      <id>4331810b-2976-4406-98c7-47c38b584da1</id>
       <masked>false</masked>
       <name>isAgent</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>6745257c-3c3d-4660-82e9-32624ad715e3</id>
+      <id>d77d980b-af77-437d-8144-e65e3aab7147</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>12/28/2024</description>
-      <id>027e53b9-3c7d-4b28-aba2-c840c16d7442</id>
+      <description>MM/DD/YYYY, or leave blank for todays date</description>
+      <id>275d8bec-e434-4659-94e3-fcc0a73bd1b4</id>
       <masked>false</masked>
       <name>effectiveDate</name>
    </variable>
    <variable>
       <defaultValue>'TEST'</defaultValue>
-      <description>TEST, STAGE</description>
-      <id>ec7d9091-ecd4-4a0f-9f5d-2a4eeebcae51</id>
+      <description>TEST or STAGE</description>
+      <id>a356da4f-7349-4e28-87b8-2df5d9f8b75b</id>
       <masked>false</masked>
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'PC10'</defaultValue>
-      <description>manual, PC10, claim, geocode or xxxx</description>
-      <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
+      <defaultValue>''</defaultValue>
+      <description>manual, claim, PC10, creditReport</description>
+      <id>0e0ff14c-22ae-4e00-8f65-2e16906fdc61</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</id>
+      <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>
       <name>stopQQ</name>
    </variable>
    <variable>
       <defaultValue>0</defaultValue>
       <description>0=Random, 1=CC, 2=RCC, 3=EFT, 4=REFT, 5=Check</description>
-      <id>143fbec3-766d-4e44-986a-66fe0dbde3b1</id>
+      <id>4b458079-95dd-4909-b01f-e1655c1dec0c</id>
       <masked>false</masked>
       <name>howPayDeposit</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>cb7994ad-a4f9-4e16-afcf-649cedc936b7</id>
+      <id>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</id>
       <masked>false</masked>
-      <name>optionalCoverages</name>
-   </variable>
-   <variable>
-      <defaultValue>0</defaultValue>
-      <description>0 - 6, add more </description>
-      <id>6b7d09e2-1f60-4288-a001-f7dcaa7ebe9a</id>
-      <masked>false</masked>
-      <name>numInterests</name>
-   </variable>
-   <variable>
-      <defaultValue>'4PAY'</defaultValue>
-      <description>FULL, SEMI, QUARTERLY, 4PAY, 9PAY</description>
-      <id>3719e49c-24b3-4c87-98ea-2589d78e535b</id>
-      <masked>false</masked>
-      <name>payPlanOption</name>
+      <name>paperless</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>306c68ac-2d6b-4762-a79a-fc4c9bc6e719</id>
+      <id>e8d9805f-b6f4-4a17-90e5-2eef704481c8</id>
       <masked>false</masked>
-      <name>paperless</name>
+      <name>overrideTier</name>
+   </variable>
+   <variable>
+      <defaultValue>'2019'</defaultValue>
+      <description></description>
+      <id>0d133553-c538-47ff-847f-b8de07c3c857</id>
+      <masked>false</masked>
+      <name>YOC</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>43dd806d-f584-492c-8a47-64b82ff1f192</id>
+      <masked>false</masked>
+      <name>run360</name>
    </variable>
 </TestCaseEntity>

@@ -394,6 +394,9 @@ WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/sele
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
 
+
+
+
 //force stop
 //System.exit(0)  // keeps window open
 

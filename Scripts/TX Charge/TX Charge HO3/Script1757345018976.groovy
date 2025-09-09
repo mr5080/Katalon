@@ -31,7 +31,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 
 //  pass vars to another test case
-def nameAddressData = WebUI.callTestCase(findTestCase('TX Evergreen/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
+def nameAddressData = WebUI.callTestCase(findTestCase('TX Charge/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
 
 
 String randomFirstName = nameAddressData['randomFirstName']
@@ -89,9 +89,9 @@ try {
 //WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
 if (environment == 'TEST') {
 	//WebUI.navigateToUrl('https://chargetest.cogisi.com/is/root/logon/index.cfm')
-	WebUI.navigateToUrl('https://cypresstest.cogisi.com/is/root/logon/index.cfm')
+	WebUI.navigateToUrl('https://chargetest.cogisi.com/is/root/logon/index.cfm')
 } else if (environment == 'STAGE') {
-	WebUI.navigateToUrl('https://cypressstage.cogisi.com/is/root/logon/index.cfm')
+	WebUI.navigateToUrl('https://chargestage.cogisi.com/is/root/logon/index.cfm')
 }
 
 
@@ -290,20 +290,20 @@ if (randomNumber == 0) // fill out US prior mailing address
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '17113')
 	
-// Prior Address credit data pulled	
-/*	
+// Prior Address credit data pulled
+/*
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '1716 Cherry Ln')
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'LAKELAND')
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'FL', false)
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '33811')
 */
-/*	
+/*
 	//hard coding prior address as Transunion credit report
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '817 Pipers Cay Dr')
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'West Palm Beach')
 	WebUI.selectOptionByLabel(findTestObject('Object Repository/TX EG HO3/Page_/select_State - Prior Mailing Address'), 'FL', false)
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Zip - Prior Mailing Address'), '33425')
-*/	
+*/
 	
 	
 			
@@ -334,7 +334,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
 WebUI.clearText(findTestObject('Object Repository/TX EG HO3/Page_/input_Construction Year_ConstructionYear_1'))
 
-/* This modal was removed with COG06785	
+/* This modal was removed with COG06785
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_CloseModal'))
@@ -430,7 +430,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 // opens 360 value modal
 if(run360 == true)
-{
+{	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))
 		   
 	WebUI.delay(5)
@@ -478,10 +478,11 @@ if(run360 == true)
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Get Results'))
 	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/a_Close'))
-	
+
 	WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/div_Suggested Replacement Cost'), 5)
-	// end 360 code
-}	
+}
+// end 360 code
+
 
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEBuildersRisk_1'))
@@ -503,7 +504,7 @@ randomBundle = (((Math.random() * 2) as int) + 1)
 randomBundle = 2
 System.out.println('randomBundle = ' + randomBundle)
 
-// broken by defect 9087
+// this is commented out because defect 9087
 //WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
 
 
@@ -580,7 +581,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Coverage'))
 // add override tier button, select random from dropdown
 
 if(overrideTier && !isAgent)	// only internal can override tier score
-{	
+{
 	WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOOverrideTier'))  // click yes
 	//WebUI.delay(1)
 	
@@ -743,7 +744,7 @@ if(paperless)
 }
 
 //select payment method logic
-WebUI.callTestCase(findTestCase('TX Evergreen/selectPaymentType'),
+WebUI.callTestCase(findTestCase('TX Charge/selectPaymentType'),
 	[('howPayDeposit') : howPayDeposit,
 		('fullName') : fullName,
 		('randomLastName') : randomLastName
@@ -777,7 +778,7 @@ else
 }
 	
 // pass vars to write for TX  11.18.22
-WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
+WebUI.callTestCase(findTestCase('TX Charge/writeFile'),
 	[
 //	('policyType') : policyType,
 	('randomLastName') : randomLastName,
@@ -787,7 +788,7 @@ WebUI.callTestCase(findTestCase('TX Evergreen/writeFile'),
 	('todaysDate') : todaysDate,
 	('myDate') : myDate,
 //	('totalPremium') : totalPremium,
-	('policyType') : 'HO3',
+	('policyType') : 'Charge HO3',
 	('shouldBind') : shouldBind,
 	('stateTX') : stateTX,
 	('isAgent') : isAgent,
@@ -808,7 +809,7 @@ catch(e)
 	System.out.println('quoteNumber failed to fully create = ' + quoteNumber)
 	System.out.println('todaysTimeStamp = ' + todaysTimeStamp)
 		
-	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO3 Failure.jpg')
+	WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX Charge HO3 Failure.jpg')
 	
 	/*
 	WebUI.callTestCase(findTestCase('FL DP/writeFile'), [ //	('policyType') : policyType,

@@ -116,21 +116,21 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>8ae164bd-a990-4a61-86bc-caedd27fc51a</id>
       <masked>false</masked>
       <name>shouldBind</name>
    </variable>
    <variable>
-      <defaultValue>'HO3'</defaultValue>
+      <defaultValue>'HO6'</defaultValue>
       <description>over ridden with passed in var if passed in</description>
       <id>e8b080f9-add2-4b14-a930-a0b43bed39e1</id>
       <masked>false</masked>
       <name>policyType</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>ba2e8535-dca9-4655-8035-60d080537613</id>
       <masked>false</masked>
@@ -179,7 +179,7 @@
       <name>variable</name>
    </variable>
    <variable>
-      <defaultValue>'10/15/2025'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>MM/DD/YYYY, or leave blank for todays date</description>
       <id>9c91a35f-64b8-409a-ad44-109a1ee4ec49</id>
       <masked>false</masked>
@@ -207,14 +207,14 @@
       <name>valueAdvantage</name>
    </variable>
    <variable>
-      <defaultValue>'2016'</defaultValue>
+      <defaultValue>'2020'</defaultValue>
       <description>must but entered</description>
       <id>a673d45d-9fee-461c-804f-1b03e6a01a5a</id>
       <masked>false</masked>
       <name>YOC</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'PC10'</defaultValue>
       <description>manual, claim, PC10, creditReport</description>
       <id>a7c73d2b-c536-4eb7-bf0e-63a9ba2feb3f</id>
       <masked>false</masked>

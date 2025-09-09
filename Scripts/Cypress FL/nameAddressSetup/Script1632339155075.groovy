@@ -5,12 +5,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 if(manualAddress == 'manual')	// set to something I want
 {
-	def nameAddressData = ['randomFirstName': 'manny',
-		'randomLastName': 'Pored',
-			'addressFL': '8340 EARL CIR W',
-			'cityFL': 'Jacksonville',
+	def nameAddressData = ['randomFirstName': 'PC',		// PC 10
+		'randomLastName': 'TEN',
+			'addressFL': '7451 NW DEYSBROOK LN',
+			'cityFL': 'PORT ST LUCIE',
 			'stateFL': 'FL',
-			'zipFL': '32219'
+			'zipFL': '34987'
 		]
 	return nameAddressData
 }
@@ -37,6 +37,11 @@ else if(manualAddress == 'PC10')	// address returns PC10
 			
 			1835 S ATLANTIC AVE UNIT 803
 			COCOA BEACH, FL 32931
+
+			
+			225 E END RD
+			SAN MATEO, FL 32187
+			
 
 		 */
 }
