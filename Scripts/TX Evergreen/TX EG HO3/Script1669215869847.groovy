@@ -522,7 +522,7 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Rate and Co
 
 if(stopQQ)
 {
-	
+	System.out.println('quoteNumber = ' + quoteNumber )
 	//return	// closes window
 	System.exit(0)  // keeps window open
 }

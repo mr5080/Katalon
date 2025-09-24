@@ -542,7 +542,7 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 
         WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
+       // WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
     }
 }
 
@@ -826,12 +826,16 @@ if(policyType == 'HO3' && run360 == true)
 //{
 
 // generates random number, either 0 or 1 or 2,
-randomBundle = (((Math.random() * 2) as int) + 1)
+//randomBundle = (((Math.random() * 2) as int) + 1)
 
+//copilot suggestion 9.16.25, replacing above line
 
-if (policyType == 'HO6') {
-    randomBundle = (randomBundle - 1 // because HO6 only has 1 bundle option
-    )
+// Generate a random number: 1 or 2
+def randomBundle = 1 + new Random().nextInt(2)  // returns either 1 or 2
+
+if (policyType == 'HO6') // because HO6 only has 1 bundle option
+{
+    randomBundle = (randomBundle - 1)
 }
 //randomBundle = 0
 System.out.println('randomBundle = ' + randomBundle)
@@ -864,7 +868,9 @@ if(stopQQ)
 	def valueA = quoteNumber + '\n'		
 	f.append(valueA)
 		
-	return	
+	//return	// closes window
+	System.exit(0)  // keeps window open
+
 }
 	
 'Proceed to Application button'
@@ -1282,8 +1288,8 @@ WebUI.callTestCase(findTestCase('Cypress FL/selectPaymentType'),
 
 
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '654948941891')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentSignature'), 'jPHuGhEs')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input - AgentLicense'), '654948941891')
 
 
 /*

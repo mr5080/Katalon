@@ -94,21 +94,21 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST, STAGE</description>
       <id>ec7d9091-ecd4-4a0f-9f5d-2a4eeebcae51</id>
       <masked>false</masked>
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>'PC10'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>manual, PC10, claim, geocode or xxxx</description>
       <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
       <masked>false</masked>
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>a4443c99-2de4-4cb8-b73c-5aa2f0e580ca</id>
       <masked>false</masked>

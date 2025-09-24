@@ -94,7 +94,7 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'TEST'</defaultValue>
+      <defaultValue>'STAGE'</defaultValue>
       <description>TEST or STAGE</description>
       <id>a356da4f-7349-4e28-87b8-2df5d9f8b75b</id>
       <masked>false</masked>
@@ -108,7 +108,7 @@
       <name>manualAddress</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
+      <defaultValue>true</defaultValue>
       <description></description>
       <id>de0f8b1c-8312-4110-9230-be9e9a707eb4</id>
       <masked>false</masked>
@@ -122,7 +122,7 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>4f12e54d-8ca5-4cd8-9e35-b7d54e2515bb</id>
       <masked>false</masked>
@@ -136,7 +136,7 @@
       <name>overrideTier</name>
    </variable>
    <variable>
-      <defaultValue>'2018'</defaultValue>
+      <defaultValue>'2013'</defaultValue>
       <description></description>
       <id>0d133553-c538-47ff-847f-b8de07c3c857</id>
       <masked>false</masked>

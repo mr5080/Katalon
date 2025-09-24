@@ -31,7 +31,7 @@ System.out.println("quoteNumber(from childTestCase) = " + quoteNumber)
 System.out.println("policyNumber(from childTestCase) = " + policyNumber)
 System.out.println("todaysDate(from childTestCase) = " + todaysDate)
 System.out.println("todaysDate(from childTestCase) = " + myDate)
-//System.out.println("totalPremium(from childTestCase) = " + totalPremium)
+System.out.println("totalPremium(from childTestCase) = " + totalPremium)
 System.out.println("policyType(from childTestCase) = " + policyType)
 System.out.println("isAgent(from childTestCase) = " + isAgent)
 System.out.println("environment(from childTestCase) = " + environment)
@@ -117,7 +117,7 @@ FileInputStream file = new FileInputStream(new File('C:\\Users\\JohnHughes\\OneD
 			sheet.getRow(rowCount).createCell(6).setCellValue(policyCreated)
 			
 	
-	//		sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
+			sheet.getRow(rowCount).createCell(7).setCellValue(totalPremium)
 	
 			sheet.getRow(rowCount).createCell(8).setCellValue(policyType)
 			

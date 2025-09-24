@@ -6,12 +6,12 @@
    <elementGuidId>71514168-381a-48dd-877f-42db40b61452</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/iv360[1]/iv360-main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/iv360-wrapper[1]/valuation-entry-point[1]/iv360-valuation[1]/div[1]/form[1]/iv360-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/iv360-page-area[1]/div[1]/div[1]/iv360-quality-no-slider[1]/div[1]/iv360-quality-section[3]/div[1]/div[1]/div[1]/mat-radio-group[1]/mat-radio-button[2]/div[1]/div[1]/input[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#XT_INTERIOR_QUALITY-OPTION_2 > label.mat-radio-label > span.mat-radio-container > span.mat-radio-outer-circle</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='XT_INTERIOR_QUALITY-OPTION_1-input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>d5e0768c-677b-45c4-b4ce-c914f53724f8</webElementGuid>
+      <webElementGuid>2f22b7a9-5f24-4ec1-8efc-95f8f7643720</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>mat-radio-outer-circle</value>
-      <webElementGuid>d650e0de-7d6c-4193-921c-64d14749fb45</webElementGuid>
+      <webElementGuid>a20fe93b-c96d-4c4f-80ab-09c89894ed03</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;XT_INTERIOR_QUALITY-OPTION_2&quot;)/label[@class=&quot;mat-radio-label&quot;]/span[@class=&quot;mat-radio-container&quot;]/span[@class=&quot;mat-radio-outer-circle&quot;]</value>
-      <webElementGuid>6a1cd3c7-52a2-418a-939f-0a0e4021683e</webElementGuid>
+      <webElementGuid>92c0ef2d-0b0e-451a-b985-79284e88dd1e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -47,7 +47,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//mat-radio-button[@id='XT_INTERIOR_QUALITY-OPTION_2']/label/span/span</value>
-      <webElementGuid>d012b656-9318-4940-a3d2-45da2dd83051</webElementGuid>
+      <webElementGuid>727de97e-78f4-4baf-ad6f-0a66d2675634</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -55,6 +55,13 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//iv360-quality-section[3]/div/div/div/mat-radio-group/mat-radio-button[3]/label/span/span</value>
-      <webElementGuid>47d4a6bd-225f-4b6c-8795-0ab590e0a033</webElementGuid>
+      <webElementGuid>44d954ff-29a3-48c0-a7fb-5b6aee16f030</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>/html[1]/body[1]/iv360[1]/iv360-main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/iv360-wrapper[1]/valuation-entry-point[1]/iv360-valuation[1]/div[1]/form[1]/iv360-page[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[7]/iv360-page-area[1]/div[1]/div[1]/iv360-quality-no-slider[1]/div[1]/iv360-quality-section[3]/div[1]/div[1]/div[1]/mat-radio-group[1]/mat-radio-button[2]/div[1]/div[1]/input[1]</value>
+      <webElementGuid>f906f6fe-fadd-4898-8914-08fe065b93ce</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

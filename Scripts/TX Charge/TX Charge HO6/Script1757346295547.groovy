@@ -226,8 +226,9 @@ if (isAgent == false) {
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-762-2255')
 
 //WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john@cog.com')
-int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+//int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
 
+def randomEmail = 2 + new Random().nextInt(99999998)
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Email Address_ApplicantEmailzzzz1'), ('john.hughes+' + randomEmail) + '@cornerops.com')
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Date Of Birth_ApplicantBirthDatezzzz1'), Keys.chord('09/01/1986', Keys.TAB))
@@ -389,10 +390,11 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), 'CONDO', true)
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1
-randomBundle = (((Math.random() * 2) as int) + 0)
+//randomBundle = (((Math.random() * 2) as int) + 0)
+def randomBundle = new Random().nextInt(2)
 //System.out.println('randomBundle = ' + randomBundle)
 
-//WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), randomBundle)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO6/Page_/select_NoneEvergreen Edge Condo'), randomBundle)
 
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO6/Page_/input_Number of Paid Losses in the Past 3 Y_b45203'), '0')
@@ -591,6 +593,14 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO6/Page_/sele
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_Display Quote'))
 //WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressScreenShots\\' + todaysTimeStamp + '-' + quoteNumber) + 'TX EG HO6 Testing for validation about zips.jpg')
 
+// get Total Premium and Fees
+//div[@id='Wrapper-Right-TotalPremiumAndFees']
+totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+
+System.out.println('totalPremium = ' + totalPremium)
+
+
+
 WebUI.click(findTestObject('Object Repository/TX EG HO6/Page_/button_BindSubmit Application'))
 
 ///////////////////////////////////////////
@@ -667,7 +677,7 @@ else
 // pass vars to write for TX  11.18.22
 WebUI.callTestCase(findTestCase('TX Charge/writeFile'), [ //	('policyType') : policyType,
 		('randomLastName') : randomLastName, ('randomFirstName') : randomFirstName, ('quoteNumber') : quoteNumber, ('todaysDate') : todaysDate
-		, ('myDate') : myDate, ('policyNumber') : policyNumber, //	('totalPremium') : totalPremium,
+		, ('myDate') : myDate, ('policyNumber') : policyNumber, ('totalPremium') : totalPremium,
 		('policyType') : 'Charge HO6', ('shouldBind') : shouldBind, ('stateTX') : stateTX, ('isAgent') : isAgent, ('environment') : environment //	,('todaysTimeStamp') : todaysTimeStamp
 	], FailureHandling.STOP_ON_FAILURE)
 

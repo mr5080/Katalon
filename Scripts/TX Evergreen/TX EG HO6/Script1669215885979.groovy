@@ -445,6 +445,7 @@ if(Integer.parseInt(YOC) == 1982)
 WebUI.takeScreenshot(('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\TXzip\\HO6 screenshots\\TXzip-' + zipTX + 'YOC-' + YOC) + '.jpg')	// take first screenshot
 */
 if (stopQQ) {
+	System.out.println('quoteNumber = ' + quoteNumber )
     //WebUI.delay(10)
     //return null //System.exit(0)
 	//return	// closes window

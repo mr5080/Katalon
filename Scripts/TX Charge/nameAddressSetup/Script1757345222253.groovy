@@ -1,6 +1,6 @@
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
+import com.github.javafaker.Faker
 
 
 if(manualAddress == 'manual')	// set to something I want
@@ -178,6 +178,15 @@ cityTX = addressData.getValue(2, randomTXaddress - 1).toUpperCase()
 stateTX = addressData.getValue(3, randomTXaddress - 1).toUpperCase()
 zipTX = addressData.getValue(4, randomTXaddress - 1)
 
+
+def Faker faker = new Faker()
+
+String randomFirstName = faker.name().firstName()
+String randomLastName = faker.name().lastName()
+System.out.println('randomFirstName = ' + randomFirstName )
+System.out.println('randomLastName = ' + randomLastName )
+
+/*
 Object firstNameData = ExcelFactory.getExcelDataWithDefaultSheet('C:\\Users\\JohnHughes\\OneDrive - CORNERSTONE OPERATIONS GROUP\\ProjectFiles\\CypressData.xlsx', 'FirstName', false)
 int randomFirstNameRow = 1 + ((Math.random() * ((835 - 1) + 1)) as int)
 System.out.println(randomFirstNameRow)
@@ -192,7 +201,7 @@ int randomLastNameRow = 1 + ((Math.random() * ((800 - 1) + 1)) as int)
 randomLastName = lastNameData.getValue(1, randomLastNameRow)
 // removes any numbers from last name
 randomLastName = randomLastName.replaceAll('[\\d.]', '')
-
+*/
 
 //def nameAddressData = [name: "Jerry", age: 42, city: "New York"]
 def nameAddressData = ['randomFirstName': randomFirstName,

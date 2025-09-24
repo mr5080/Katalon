@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 int howMany = 25
 
-boolean shouldBind = true
+boolean shouldBind = false
 
 String environment = 'TEST'
 

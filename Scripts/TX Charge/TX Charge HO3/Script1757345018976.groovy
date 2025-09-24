@@ -1,6 +1,6 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import java.time.*
-import java.time.temporal.TemporalAdjusters as TemporalAdjusters
+//import java.time.*
+//import java.time.temporal.TemporalAdjusters as TemporalAdjusters
 import java.time.format.DateTimeFormatter
 import java.time.LocalDate
 
@@ -27,11 +27,22 @@ import internal.GlobalVariable as GlobalVariable
 
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
-
-
-
 //  pass vars to another test case
 def nameAddressData = WebUI.callTestCase(findTestCase('TX Charge/nameAddressSetup'),	[('manualAddress') : manualAddress], FailureHandling.STOP_ON_FAILURE)
+
+
+//String randomFirstName = nameAddressData['randomFirstName']
+//String randomLastName = nameAddressData['randomLastName']
+//System.out.println('randomFirstName = ' + randomFirstName )
+
+/*
+def Faker faker = new Faker()
+
+String randomFirstName = faker.name().firstName()
+String randomLastName = faker.name().lastName()
+System.out.println('randomFirstName = ' + randomFirstName )
+*/
+
 
 
 String randomFirstName = nameAddressData['randomFirstName']
@@ -254,11 +265,21 @@ WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase D
 
 
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-5555')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-906-5475')
 
-//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
-int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+//int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+//WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+
+
+def randomEmail = 2 + new Random().nextInt(99999998)
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
+
+
+
+
+
+
+
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))
 
@@ -276,13 +297,14 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 // prior mailing address stuff
 // generates random number, either 0 or 1, used to randomize US/international
-randomNumber = ((Math.random() * 2) as int)
+//randomNumber = ((Math.random() * 2) as int)
+def randomNumber = 1 + new Random().nextInt(2)
 //int randomNumber = 0
 
 if (randomNumber == 0) // fill out US prior mailing address
 {
 	
-	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '850 QUEEN ST')
+	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '880 QUEEN ST')
 
 	WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'HARRISBURG')
 
@@ -374,9 +396,9 @@ WebUI.doubleClick(findTestObject('Object Repository/TX EG HO3/Page_/input_Year o
 
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwater fd')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Responding Fire Department_Responding_eb6df6'), 'clearwaters fd')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), '02', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_1 Mile or LessGreater Than 1 to 2 Mi_7c5769'), '03', true)
 
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_Protection Class 1Protection Class 2_2c389b'), '1', true)
 
@@ -399,7 +421,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/sele
 
 
 //WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'))
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '401500')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input__DwellingLimit_1'), '400500')
 
 // check this div for 0.00, if it contains 0.00 then populate dwellingLimit_1 with something
 
@@ -449,7 +471,7 @@ if(run360 == true)
 		System.out.println('before clear')
 		WebUI.clearText(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'))
 		WebUI.delay(1)
-		WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), '1999')
+		WebUI.sendKeys(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), '1997')
 	//		WebUI.delay(1)
 	}
 	//	sqFt = WebUI.getAttribute(findTestObject('Object Repository/FL DP/Page_360Value/input_360_sqFt'), 'value').toInteger()
@@ -500,12 +522,13 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Yes_NOSAVEPa
 //WebUI.selectOptionByValue(findTestObject('Object Repository/TX EG HO3/Page_/select_NoneEvergreen Edge CoverageEvergreen_d28c8c'), 'NONE', true) //EDGE NONE EDGEPLUS
 // 0 = None, 1 = Edge, 2 = EdgePlus
 // generates random number, either 0 or 1 or 2,
-randomBundle = (((Math.random() * 2) as int) + 1)
-randomBundle = 2
+//randomBundle = (((Math.random() * 2) as int) + 1)
+//randomBundle = 2
+def randomBundle = 1 + new Random().nextInt(2)
 System.out.println('randomBundle = ' + randomBundle)
 
 // this is commented out because defect 9087
-//WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
+WebUI.selectOptionByIndex(findTestObject('Object Repository/TX EG HO3/Page_/select_Bundle'), randomBundle)
 
 
 
@@ -709,6 +732,14 @@ WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_Display Quo
 
 
 
+// get Total Premium and Fees
+//div[@id='Wrapper-Right-TotalPremiumAndFees']
+totalPremium = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/div_TotalPremiumAndFees'), 'innerHTML')
+
+System.out.println('totalPremium = ' + totalPremium)
+
+
+
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/button_BindSubmit Application'))
 
 
@@ -787,7 +818,7 @@ WebUI.callTestCase(findTestCase('TX Charge/writeFile'),
 	('policyNumber') : policyNumber,
 	('todaysDate') : todaysDate,
 	('myDate') : myDate,
-//	('totalPremium') : totalPremium,
+	('totalPremium') : totalPremium,
 	('policyType') : 'Charge HO3',
 	('shouldBind') : shouldBind,
 	('stateTX') : stateTX,
