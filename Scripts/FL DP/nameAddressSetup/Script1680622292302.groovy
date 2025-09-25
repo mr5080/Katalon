@@ -10,10 +10,10 @@ if(manualAddress == 'manual')	// set to something I want
 	{
 		def nameAddressData = ['randomFirstName': 'MANNI',
 			'randomLastName': 'EMANUALA',
-				'addressFL': '5714 BRAIT AVE',
-				'cityFL': 'JACKSONVILLE',
+				'addressFL': '5597 W Tirana LN',
+				'cityFL': 'Dunnellon',
 				'stateFL': 'FL',
-				'zipFL': '32209'
+				'zipFL': '34433'
 			]	
 		return nameAddressData
 	}

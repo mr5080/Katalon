@@ -73,7 +73,7 @@
       <variableId>306c68ac-2d6b-4762-a79a-fc4c9bc6e719</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>7e79f726-c71d-4e96-a14f-3958c961d218</id>
       <masked>false</masked>
@@ -101,7 +101,7 @@
       <name>environment</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'manual'</defaultValue>
       <description>manual, PC10, claim, geocode or xxxx</description>
       <id>0a7b4e03-5a90-4502-80f6-0361ba8b8b90</id>
       <masked>false</masked>

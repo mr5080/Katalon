@@ -517,12 +517,14 @@ WebUI.takeScreenshot(('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\CypressS
 if (stopQQ) {
     System.out.println('quoteNumber = ' + quoteNumber)
 	//f = new File('C:\\Users\\john.hughes\\Documents\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
-	f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
+/*	f = new File('C:\\Users\\JohnHughes\\OneDrive - Cypress Property and Casualty Insurance Company\\ProjectFiles\\FL-DP-stoppedAtQQ.txt')
 	
 	def valueA = quoteNumber + '\n'
 	f.append(valueA)
-
-    return //System.exit(0)
+*/
+	System.out.println('quoteNumber = ' + quoteNumber )
+    //return //System.exit(0)
+	System.exit(0)  // keeps window open
 }
 
 WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Rate and Continue' // click Rate and Continue on QQ for first time
