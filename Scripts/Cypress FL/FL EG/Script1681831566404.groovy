@@ -453,70 +453,41 @@ if(censusBlockTest)
 */
 //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), '2016')
 
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), YOC)
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), YOC)
 /*
 if(WebUI.waitForElementVisible(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'), 2))
 {
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_CloseModal'))
 }
 */
+
+
+
+
+
+
+/*
 String constructionYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
 System.out.println('constructionYear  = ' + constructionYear)
 System.out.println('constructionYear.length()  = ' + constructionYear.length())
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
+*/
 
 
-//String constTest = WebUI.getText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value')
-//System.out.println('constTest  = ' + constTest)
-
-
-int constructionYearInt = 0
-
-if (constructionYear.length() > 1) {
-    System.out.println('in the if')
-
-    constructionYearInt = Integer.valueOf(constructionYear)
-
-    System.out.println('constructionYearInt - IF == ' + constructionYearInt)
-
-    System.out.println('constructionYear.toInteger() = ' + constructionYear.toInteger())
-
-    System.out.println(('constructionYear.toInteger() - 1= ' + constructionYear.toInteger()) - 1)
-
-    //constructionYear.toInteger() < 2010
-    if (constructionYear.toInteger() < 2015) {	// was previously 2015
-        constructionYear = 2015
+	// generates random number, either 0 or 1, used to randomize US/international, // randomNumber = 1 // force International or not. 0 = US, 1 = International
+	int randomNumber = new Random().nextInt(2)  // Generates either 0 or 1
 	
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), constructionYear)
-        WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
-		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
+	System.out.println('need to fill in prior mailing address stuff')
 
-        System.out.println('constructionYear and roof year reset to ' + constructionYear)
-    }
-}
+	if (randomNumber == 0) // fill out US prior mailing address
+	{
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '1000 Margherita Ct')
 
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Red Lion')
 
-// this logic changed week of 3/19/21 should probably update the prior address logic?
-if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing Address  300 force Prior mailing address, else should be 3
-{
-    int randomNumber = 0
+		WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 'PA', false)
 
-    // generates random number, either 0 or 1, used to randomize US/international
-    randomNumber = ((Math.random() * 2) as int)
-   // randomNumber = 1 // force International or not. 0 = US, 1 = International
-
-    System.out.println('need to fill in prior mailing address stuff')
-
-    if (randomNumber == 0) // fill out US prior mailing address
-    {
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '1000 Margherita Ct')
-
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_City_ApplicantCity - Prior Mailing Address'), 'Red Lion')
-
-        WebUI.selectOptionByLabel(findTestObject('Cypress 4/Page_/select_State - Prior Mailing Address'), 'PA', false)
-
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), Keys.chord('17356', Keys.TAB))			
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Zip - Prior Mailing Address'), Keys.chord('17356', Keys.TAB))
 			
 			if(WebUI.waitForAlert(4))
 			{
@@ -530,54 +501,50 @@ if ((currentYear - constructionYearInt) <= 300) //need to fill in Prior Mailing 
 			
 				
 			
-    } 
+	}
 	else {
-        WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
+		WebUI.selectOptionByIndex(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 1)
 
-        String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
+		String selectedAddressType = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/Select_AddressType'), 'value')
 
-        System.out.println('selectedAddressType = ' + selectedAddressType)
+		System.out.println('selectedAddressType = ' + selectedAddressType)
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '9584 saint international st')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Address_ApplicantAddress1 - Prior Mailing Address'), '9584 saint international st')
 
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
+		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
 
-       // WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
-    }
-}
-
+	   // WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
+	}
+	
+	
+	
+	
 // need to click somewhere to get rid of the datepicker popup.
 //WebUI.click(findTestObject('Cypress 4/Page_/input_PriorInsurance'))
 //WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'))
 WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/input_Prior Insurance_NOSAVEPriorInsurance_1'), 'Y', true)
 
 
-
-
-
-
-
-
-WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
+//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Construction'), 'S', true)
 String construction = "S"
 
-for (int p = 0; p < 2; p++)
+for (int p = 0; p <2 ; p++)
 {
-	int randomConstructionType = 1 + ((Math.random() * ((3) + 1)) as int) as int
-	System.out.println("totalOptions for randomConstructionType = " + randomConstructionType);
-	if(randomConstructionType == 1)
+	int randomConstructionType = new Random().nextInt(4)
+	System.out.println("randomConstructionType = " + randomConstructionType);
+	if(randomConstructionType == 0)
 	{
 		construction = "F"
 	}
-	else if(randomConstructionType == 2)
+	else if(randomConstructionType == 1)
 	{
 		construction = "B"
 	}
-	else if(randomConstructionType == 3)
+	else if(randomConstructionType == 2)
 	{
 		construction = "V"
 	}
-	else if(randomConstructionType == 4)
+	else if(randomConstructionType == 3)
 	{
 		construction = "S"
 	}
@@ -591,38 +558,31 @@ for (int p = 0; p < 2; p++)
 	WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_ConstructionHO6'), construction, false)
 }
 
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(YOC, Keys.TAB))
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
 
-
-
-
-
-
+// 9.25.25 - maybe remove these 3 lines if no more issues with roof and YOC inputs holding their values when set. was previously a problem which is why they were addd
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), YOC)
+//WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
 
 //this line can be removed if 360 is working, 360 is not run for HO6
-WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
+//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
 
 
-/*
+
 
 TestObject numPersProp = findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty')
 
 // Get the total number of options in the dropdown
 int totalPersProp = WebUI.getNumberOfTotalOption(numPersProp)
 System.out.println('totalPersProp  = ' + totalPersProp)
-int persPropSelected = (totalPersProp -3).toInteger()
-System.out.println('persPropSelected = ' + persPropSelected )
+int randomPersProp = new Random().nextInt(totalPersProp)
+WebUI.selectOptionByIndex(numPersProp, randomPersProp)
 
 
-WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty'), '50')
-*/
-
-//WebUI.selectOptionByValue(findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty'), 45, true)
-
-//WebUI.selectOptionByIndex(numPersProp, totalPersProp)
-
-
-//WebUI.delay(10)
+//WebUI.delay(20)
 /*
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), 'value') == '0.00') 
 {
@@ -666,98 +626,22 @@ if (policyType == 'HO6') {
 	}	
 }
 
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), 'value') == '') {
-    System.out.println('getting in here because construction year was not set, still blank at this point?')
-
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(year, Keys.TAB))
-
-    System.out.println('just clicked into, tabbed out of Construction Year')
-
-    System.out.println('currentYear = ' + currentYear)
-
-    System.out.println('constructionYearInt = ' + constructionYearInt)
-
-    int differenceYears = currentYear - constructionYearInt
-
-    System.out.println('differenceYears = ' + differenceYears)
-
-    // if Construction Year is more than 40 years old, need to dismiss the alert
-    if (differenceYears >= 40) {
-        try {
-            WebUI.delay(1)
-
-            // need to click Close on popup warning if differenceYears > 40
-            WebUI.click(findTestObject('Object Repository/Cypress 4/Page_/input - Close button -Modal window'))
-
-            System.out.println('Successfully closed the 40+ year old Construction year ---   currentYear - constructionYearInt ' + (currentYear - constructionYearInt))
-        }
-        catch (Exception e) {
-            System.out.println(e)
-        } 
-    }
-}
-
-//Year of Roof, sets it incase it is blank
-String roofYear = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 'value')
-
-System.out.println('roofYear = ' + roofYear)
-
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), 'value') == '') {
-    if (constructionYear == 2015) {
-        WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), '2015')
-    }
-    
-    // using year for random year
-    //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), year)
-    // changed to 2018 due to validation of 'Year of Roof cannot be earlier than Construction Year.'
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Roof_RoofConstructionYear_1'), YOC)
-
-    // sets to same as construction year (which is also the same as dob year
-    System.out.println('set year')
-}
-
 // Square Feet, sets it incase it is blank
 String squareFeet = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value')
-
 System.out.println('sqaureFeet = ' + squareFeet)
 
 if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value') == '') {
     // using year for random year
-    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), year)
-
-    System.out.println('set square footage' // sets to same as construction year (which is also the same as dob year)
-        )
+	int min = 1200
+	int max = 2500
+	int randomSqFt = new Random().nextInt((max - min) + 1) + min
+	
+    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), randomSqFt)
+    System.out.println('set square footage with random number') 
 }
 
 
-
-
-
-
-
-/*
-// this gets random number for dropdown
-TestObject constructionType = findTestObject('Cypress 4/Page_/select_Construction')
-int totalOptionsConstruction = WebUI.getNumberOfTotalOption(constructionType)
-System.out.println("totalOptions for totalOptionsConstruction = " + totalOptionsConstruction);
-
-for (int p = 0; p <100; p++)
-{	
-int randomConstructionType = 0
-min = 1		// 1 because first option is blank, and blank is not an allowed answer
-randomConstructionType = 1 + ((Math.random() * (totalOptionsConstruction - min))  as int)
-System.out.println("totalOptions for randomConstructionType = " + randomConstructionType);
-WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Construction'), randomConstructionType)
-}
-*/
-//WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Roof Construction'), 'ARCHITECTURAL', true)
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
-
-
-
-
-
-
 
 if ((isAgent == false) && (realTestUser == false)) {
     // these fields are no longer mandatory
@@ -786,9 +670,9 @@ if(policyType == 'HO3')
 if(policyType == 'HO3' && run360 == true)
 {	
 	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Recalculate' ))   
-	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
 	WebUI.delay(3)
+	WebUI.click(findTestObject('Object Repository/FL DP/Page_/button_Calculate'))
+	WebUI.delay(2)
 	WebUI.switchToWindowTitle('360Value')
 	
 	// update sq ft value
@@ -928,16 +812,14 @@ if (randomNumber == 0) // fill out US prior mailing address
 // needed till fix is implemented on Stage
 //WebUI.delay(10)
 
-WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'Geico')
-
-String randomPolicy = ((Math.random() * 99999) as int)
-
+WebUI.setText(findTestObject('Cypress 4/Page_/input_PriorInsurance'), 'TRAVELERS')
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_PreviousCarrierExpDate'), Keys.chord(effectiveDate, Keys.TAB))
 
-
+String randomPolicy = String.format('%08d', new Random().nextInt(100000000))
 WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Previous Policy _PriorPolicyNumber_1'), randomPolicy)
 
-System.out.println('trying to click PreQUALIFICATION BUTTON')
+
+//System.out.println('trying to click PreQUALIFICATION BUTTON')
 
 'Prequalification button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - Prequalification'))
@@ -1094,11 +976,7 @@ System.out.println("totalOptions for totalOptionsOpeningProtection = " + totalOp
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_OpeningProtection'), randomOpeningProtection)
 	*/
 	
-	
-	
-	
-
-	
+		
 'History button'
 WebUI.click(findTestObject('Cypress 4/Page_/input - History'))
 
