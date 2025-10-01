@@ -250,14 +250,16 @@ if (isAgent == false) {
 }
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Effective Date_EffectiveDate'))
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '02/02/2025')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Purchase Date_PurchaseDate_1'), '03/03/2025')
 
 
 
-WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-555-5555')
+WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Phone Number_ApplicantHomePhonezzzz1'), '717-666-9854')
 
 //WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes@cornerops.com')
-int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+
+//int randomEmail = 2 + ((Math.random() * ((99999999 - 2) + 1)) as int)
+int randomEmail = 2 + (Math.random() * 99999998).toInteger()
 WebUI.setText(findTestObject('Object Repository/TX EG HO3/Page_/input_Email Address_ApplicantEmailzzzz1'), 'john.hughes+'+randomEmail+'@cornerops.com')
 
 WebUI.click(findTestObject('Object Repository/TX EG HO3/Page_/input_Applicant First Name_ApplicantFirstzzzz1'))

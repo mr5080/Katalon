@@ -88,7 +88,7 @@
       <name>effectiveDate</name>
    </variable>
    <variable>
-      <defaultValue>'STAGE'</defaultValue>
+      <defaultValue>'TEST'</defaultValue>
       <description>TEST or STAGE</description>
       <id>0bc043cd-70c2-4a10-a9fb-74b2bfa1d3bc</id>
       <masked>false</masked>
@@ -109,7 +109,7 @@
       <name>howPayDeposit</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>99bdcabf-795f-48df-9a33-c87caed69970</id>
       <masked>false</masked>

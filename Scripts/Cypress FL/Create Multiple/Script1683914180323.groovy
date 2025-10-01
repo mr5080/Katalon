@@ -17,18 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int howMany = 10
+int howMany = 25
 
 int counter = 1
+
 boolean shouldBind = false
 
 while (counter <= howMany) {
-   // WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind], FailureHandling.CONTINUE_ON_FAILURE)
-	
+    // WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO3', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
+
+    WebUI.callTestCase(findTestCase('Cypress FL/FL EG'), [('counter') : counter, ('policyType') : 'HO6', ('shouldBind') : shouldBind], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     // use this one if you want to loop through excel file
     //	WebUI.callTestCase(findTestCase('TX Evergreen/TX EG HO6'),	[('counter') : counter], FailureHandling.CONTINUE_ON_FAILURE)

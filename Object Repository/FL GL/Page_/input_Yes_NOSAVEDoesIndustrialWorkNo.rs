@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Yes_NOSAVEHazardDisposal</name>
+   <name>input_Yes_NOSAVEDoesIndustrialWorkNo</name>
    <tag></tag>
-   <elementGuidId>581d08e1-b636-46ac-b687-aa9346c54eea</elementGuidId>
+   <elementGuidId>09330be1-7366-4a19-972f-79ad33bcf7e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='NOSAVEDoesMedicalWasteNo']</value>
+         <value>//*[@id=&quot;NOSAVEDoesIndustrialWorkNo&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>c87a3c6b-7d56-45fe-ae59-6d8629152674</webElementGuid>
+      <webElementGuid>879a92eb-2585-48f6-8938-ee7de208a302</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-check-input</value>
-      <webElementGuid>20af0745-99a4-41f3-8433-c54e2119309b</webElementGuid>
+      <webElementGuid>cb073ef5-fe51-413f-9ace-9d5d9282844e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>radio</value>
-      <webElementGuid>4336ea6c-1dd1-4c59-9e4d-5c346a981d56</webElementGuid>
+      <webElementGuid>f84db0bb-0a85-48c2-9607-a6ee74515b95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +47,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>27b132f9-6d3a-49bd-89e1-0024f89ad827</webElementGuid>
+      <webElementGuid>25bf5d32-fb70-4677-b31d-d3779a93607a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <name>name</name>
       <type>Main</type>
       <value>NOSAVEDoesRoads</value>
-      <webElementGuid>44068f9e-cec1-4b04-b9bc-2fd80aef6c90</webElementGuid>
+      <webElementGuid>bbc330e0-97e6-45c8-8591-43a0f0052291</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -63,7 +63,7 @@
       <name>id</name>
       <type>Main</type>
       <value>NOSAVEDoesRoadsNo</value>
-      <webElementGuid>01193d2b-c5c8-45f8-8be1-e153556fbfe0</webElementGuid>
+      <webElementGuid>ac607b99-5577-4d01-92da-2393e9470757</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>value</name>
       <type>Main</type>
       <value>N</value>
-      <webElementGuid>613963de-588f-48a4-9a7e-45aa7f8a04aa</webElementGuid>
+      <webElementGuid>c663b81e-61f2-428c-b7ed-fc354c63ab19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>updateYesNoValue(this);setIfPresent(this,'DoesRoadsRemarks','','input');  GlobalCheckDisable(this);</value>
-      <webElementGuid>eb630c94-b2a6-4470-8b9b-5cf6b80c465e</webElementGuid>
+      <webElementGuid>d9af6e76-294f-4f1c-9765-5da8170565d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>onclick</name>
       <type>Main</type>
       <value>;</value>
-      <webElementGuid>936552c5-25ab-4c86-adfa-c1a9469beeb3</webElementGuid>
+      <webElementGuid>3b665d16-a40a-4c33-b0c3-1d7789d98089</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value> GlobalCheckDisable(this);  CheckRequired(false);</value>
-      <webElementGuid>f786f027-e650-4ea5-bc25-0e806a479c34</webElementGuid>
+      <webElementGuid>445b4125-3671-4ce3-9e47-1833ce0b0cc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -103,7 +103,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;NOSAVEDoesRoadsNo&quot;)</value>
-      <webElementGuid>4f2b7ab6-0c72-4635-9b5e-1195857cce05</webElementGuid>
+      <webElementGuid>4b6ed581-4303-4127-b8bb-3f0c8813b018</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -111,6 +111,6 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/FL GL/Page_/iframe_RTR Quotes_MainIS21test</value>
-      <webElementGuid>3c7f612a-06e3-476b-9d0d-158b6c617f0d</webElementGuid>
+      <webElementGuid>d4c83fbe-9e5f-482f-b084-dd684a857530</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

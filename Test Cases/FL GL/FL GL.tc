@@ -86,7 +86,7 @@
       <name>isAgent</name>
    </variable>
    <variable>
-      <defaultValue>true</defaultValue>
+      <defaultValue>false</defaultValue>
       <description></description>
       <id>d64539ab-85af-4871-87cb-16b6960e0d70</id>
       <masked>false</masked>
@@ -156,8 +156,8 @@
       <name>addInsured</name>
    </variable>
    <variable>
-      <defaultValue>false</defaultValue>
-      <description></description>
+      <defaultValue>true</defaultValue>
+      <description>must be false, broken, 9.30.25</description>
       <id>5e5cbccf-99ce-4619-8d21-b8c0b2f084b0</id>
       <masked>false</masked>
       <name>addClassCodes</name>

@@ -513,7 +513,7 @@ System.out.println('constructionYear.length()  = ' + constructionYear.length())
 
 		WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_CityProvinceZip - International'), 'Deiging, Beiengly, 8944851')
 
-	   // WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
+	    WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Country - International'), 'GERMANY')
 	}
 	
 	
@@ -567,19 +567,21 @@ WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Year of Ro
 //WebUI.sendKeys(findTestObject('Object Repository/Cypress 4/Page_/input_Construction Year_ConstructionYear_1'), Keys.chord(Keys.TAB))
 
 
-//this line can be removed if 360 is working, 360 is not run for HO6
-//WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
+//leave this line in, so if 360 fails, the fields is still populated and can move on
+WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_DwellingLimit-Hack'), '350000')
 
 
 
-
-TestObject numPersProp = findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty')
-
-// Get the total number of options in the dropdown
-int totalPersProp = WebUI.getNumberOfTotalOption(numPersProp)
-System.out.println('totalPersProp  = ' + totalPersProp)
-int randomPersProp = new Random().nextInt(totalPersProp)
-WebUI.selectOptionByIndex(numPersProp, randomPersProp)
+if(policyType == 'HO3')
+{	
+	TestObject numPersProp = findTestObject('Object Repository/Cypress 4/Page_/select_ContentsPersonalProperty')
+	
+	// Get the total number of options in the dropdown
+	int totalPersProp = WebUI.getNumberOfTotalOption(numPersProp)
+	System.out.println('totalPersProp  = ' + totalPersProp)
+	int randomPersProp = new Random().nextInt(totalPersProp)
+	WebUI.selectOptionByIndex(numPersProp, randomPersProp)
+}
 
 
 //WebUI.delay(20)
@@ -627,20 +629,21 @@ if (policyType == 'HO6') {
 }
 
 // Square Feet, sets it incase it is blank
-String squareFeet = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value')
-System.out.println('sqaureFeet = ' + squareFeet)
+//String squareFeet = WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value')
+//System.out.println('sqaureFeet = ' + squareFeet)
 
-if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value') == '') {
-    // using year for random year
+if (WebUI.getAttribute(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), 'value') == '') 
+{
 	int min = 1200
 	int max = 2500
-	int randomSqFt = new Random().nextInt((max - min) + 1) + min
+	String randomSqFt = new Random().nextInt((max - min) + 1) + min
 	
+	WebUI.clearText(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'))
     WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_Square feet_SquareFootage_1'), randomSqFt)
-    System.out.println('set square footage with random number') 
+    System.out.println('set square footage with random number = ' + randomSqFt )
 }
 
-
+// dont randomize this due to some roof types are just ineligable
 WebUI.selectOptionByIndex(findTestObject('Cypress 4/Page_/select_Roof Construction'), 2)
 
 if ((isAgent == false) && (realTestUser == false)) {
@@ -922,8 +925,8 @@ WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_Exterior Wall F
 	  WebUI.selectOptionByIndex(dropdown, randomWaterHeater)  // use this for random values
 	
 	//  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_WaterHeaterType'), 'TANKLESS', true) // TANKLESS
-	  //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
-	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), '2018')
+	  WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), YOC)
+	  //WebUI.setText(findTestObject('Object Repository/Cypress 4/Page_/input_WaterHeaterYear'), '2018')
 	  WebUI.selectOptionByValue(findTestObject('Cypress 4/Page_/select_PlumbingPipes'), 'COPPER', true)  
 	}
 //}

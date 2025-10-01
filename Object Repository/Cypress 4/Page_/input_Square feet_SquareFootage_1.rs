@@ -7,10 +7,12 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='SquareFootage_1']</value>
+         <value>//input[@id='SquareFootage_1']&#xd;
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +20,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>05156077-6e01-47a7-aae0-993f45ad978a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -25,6 +28,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>c7766f2c-bb44-49ae-b4de-eea8474e6707</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -32,6 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control numberWidget fromPageValidated</value>
+      <webElementGuid>72a12430-6adf-4527-a3c0-118d96eb9881</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,6 +44,7 @@
       <name>name</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
+      <webElementGuid>b5a87b8a-3614-4103-aca9-d8d6a244b3c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,6 +52,7 @@
       <name>data-disablemessagetrigger</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>93ee376c-2760-48df-b623-17af1d0a3038</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,6 +60,7 @@
       <name>id</name>
       <type>Main</type>
       <value>SquareFootage_1</value>
+      <webElementGuid>2b4967d9-885a-409f-b05d-8cceb2cd5553</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,6 +68,7 @@
       <name>onblur</name>
       <type>Main</type>
       <value>isNumberJS(this);; GlobalOnBlur();   CheckRequired(false);</value>
+      <webElementGuid>c747674e-0683-44bb-9041-4cb2972393ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -67,6 +76,7 @@
       <name>onchange</name>
       <type>Main</type>
       <value>; GlobalOnChange(); </value>
+      <webElementGuid>11b545ea-eac8-47a0-a6c0-c8b3fb3c093b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,6 +84,7 @@
       <name>numbertype</name>
       <type>Main</type>
       <value>integer</value>
+      <webElementGuid>4d0ffba6-5e80-4021-9736-4b8329b28051</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -81,6 +92,7 @@
       <name>aria-describedby</name>
       <type>Main</type>
       <value>popover464756</value>
+      <webElementGuid>cf7559f7-c68d-407a-8b26-aca130fc89ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -88,6 +100,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;SquareFootage_1&quot;)</value>
+      <webElementGuid>e072699d-3d30-47a2-b356-bbc918a78759</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -95,6 +108,7 @@
       <name>ref_element</name>
       <type>Main</type>
       <value>Object Repository/Cypress 4/Page_/iframe_RTR Quotes_MainIS21test</value>
+      <webElementGuid>ce6f6e39-5e79-44f0-9e34-5bd7e4371c76</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -102,6 +116,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='SquareFootage_1']</value>
+      <webElementGuid>bfe8327b-e881-41aa-bf92-118892811a28</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +124,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='Wrapper-Right-SquareFootage_1']/input</value>
+      <webElementGuid>546c9255-f61f-4249-a4fc-ad14028ae6c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,5 +132,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div[8]/input</value>
+      <webElementGuid>c422559f-015e-4fa5-91f2-e7b73da7f89c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

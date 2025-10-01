@@ -125,20 +125,10 @@ else if(manualAddress == 'claim')
 
 else if(manualAddress == 'creditReport')  //Cypress TrueRisk Propery Test Cases - State - TX    ---   TRANSUNION --- 03.23.2022.xlsx  good as of 8.11.25
 {
-	int randomCredit = 1 + ((Math.random() * ((3 - 1) + 1)) as int)
-	//randomCredit = 3
+	int randomCredit = 1 + ((Math.random() * ((2 - 1) + 1)) as int)
+	randomCredit = 2
+	
 	if(randomCredit == 1)
-	{
-		def nameAddressData = ['randomFirstName': 'Billy',
-			'randomLastName': 'Anglin',
-			'addressTX': '72 Rugged',
-			'cityTX': 'Corpus Christi',
-			'stateTX': 'TX',
-			'zipTX': '78413'
-			]
-			return nameAddressData
-	}
-	else if(randomCredit == 2)
 	{
 		def nameAddressData = ['randomFirstName': 'Manuel',
 			'randomLastName': 'ARINMENDI',
@@ -149,7 +139,7 @@ else if(manualAddress == 'creditReport')  //Cypress TrueRisk Propery Test Cases 
 			]
 			return nameAddressData
 	}
-	else if(randomCredit == 3)
+	else if(randomCredit == 2)
 	{
 		def nameAddressData = ['randomFirstName': 'Amir',
 			'randomLastName': 'Assar',

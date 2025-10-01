@@ -241,7 +241,7 @@ try {
 
         //WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
         WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '3')
-/*
+
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/button_AddClassCode'))
 
         WebUI.selectOptionByValue(findTestObject('Object Repository/FL GL/Page_/select_ClassCode'), '91341', true)
@@ -349,7 +349,7 @@ try {
 
         //WebUI.clearText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'))
         WebUI.setText(findTestObject('Object Repository/FL GL/Page_/input_NumberOfPeople'), '15')
-      */  
+        
     }
     
     if (addInsured == true) {
@@ -448,6 +448,10 @@ try {
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEResaleEquipment'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECOI'))
+		
+		
+		
+		
     }
     
     //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesGradingLand'))
@@ -466,7 +470,7 @@ if(addClassCodes == false)
 */
     //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesTreeRemoval'))
     //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesGardeningClass'))
-    //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesNewConstruction'))
+    WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesNewConstruction'))
     if (addClassCodes) {
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEHasPremises'))
 
@@ -488,8 +492,10 @@ if(addClassCodes == false)
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDeniedRenewal'))
 
-       // WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoofs'))
+        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesRoofs'))
 
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_NOSAVEDoesWaterRemovalNo'))
+		
       //  WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEEmergencyMold'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEExcavation'))
@@ -499,27 +505,31 @@ if(addClassCodes == false)
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEHazardDisposal'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEInstallComputers'))
+		
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesIndustrialWorkNo'))
+		
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEOtherThanResidentialNo'))
+		
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEProductsSold'))
 
         //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEResaleEquipment'))
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesExcavationWork' // moved inside here 11.4.23
-                ))
+		// moved inside here 11.4.23
+        //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesExcavationWork'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEHeavy'))
+       // WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEHeavy'))
 
         //WebUI.scrollToElement(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWaterProofingRoofs'), 10)
         //WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWaterProofingRoofs'), Keys.chord(Keys.PAGE_UP))
         //WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEWaterProofingRoofs'))
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEResidential'))
+      //  WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEResidential'))
 
         //WebUI.sendKeys(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVESalvage'), Keys.chord(Keys.PAGE_UP, Keys.PAGE_UP))
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDigging'))
+      //  WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDigging'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPoleToPole'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEFence' /// not correct?
-                ))
+        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEFence'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVERoadWork'))
 
@@ -557,13 +567,13 @@ if(addClassCodes == false)
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVECarpentryInterior'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEParkingLots'))
+       WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEParkingLots'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVESellOrInstall'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEExteriorWork'))
 
-        WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPoleToPole2'))
+       WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEPoleToPole2'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEServiceContracts'))
 
@@ -574,6 +584,9 @@ if(addClassCodes == false)
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVELifeSafety'))
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEInstallFlooring'))
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesCarpentry'))
+		WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVEDoesTVClass'))
+		
 
         WebUI.click(findTestObject('Object Repository/FL GL/Page_/input_Yes_NOSAVERepairFurniture'))
 
